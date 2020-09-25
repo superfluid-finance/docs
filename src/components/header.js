@@ -1,51 +1,51 @@
 /** @jsx jsx */
-import React from 'react'
-import {jsx} from 'theme-ui'
-import {IconButton} from '@theme-ui/components'
-import Search from './search'
-import Link from './link'
-import {motion} from 'framer-motion'
+import React from "react";
+import { jsx } from "theme-ui";
+import { IconButton } from "@theme-ui/components";
+import Search from "./search";
+import Link from "./link";
+import { motion } from "framer-motion";
 
 export default props => {
-  const [isToggled, setToggled] = React.useState(false)
+  const [isToggled, setToggled] = React.useState(false);
 
   return (
     <header
       sx={{
         zIndex: 100,
-        position: ['fixed', 'static'],
-        background: ['white', 'none'],
-        boxShadow: ['small', 'none'],
-        display: 'grid',
-        gridTemplateColumns: isToggled ? '1fr' : '3fr 5fr',
+        position: ["fixed", "static"],
+        background: ["white", "none"],
+        boxShadow: ["small", "none"],
+        display: "grid",
+        gridTemplateColumns: isToggled ? "1fr" : "3fr 5fr",
         maxHeight: [60, 60, 119],
-        maxWidth: props.showToc ? 1200 : '70ch',
-        width: '100%',
-        mx: 'auto',
+        maxWidth: props.showToc ? 1200 : "70ch",
+        width: "100%",
+        mx: "auto",
         px: [2, 3, 3, 1],
         py: [isToggled ? 1 : 2, 3, 4],
         ul: {
-          listStyle: 'inherit',
-          marginLeft: '0',
+          listStyle: "inherit",
+          marginLeft: "0"
         },
         li: {
-          pl: 0,
-        },
+          pl: 0
+        }
       }}
     >
       {!isToggled && (
         <motion.div
-          sx={{display: 'flex', alignItems: 'center'}}
-          initial={{opacity: 1}}
-          animate={{opacity: 1}}
-          exit={{opacity: 0}}
+          sx={{ display: "flex", alignItems: "center" }}
+          initial={{ opacity: 1 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
         >
           <Link
             to="/"
             sx={{
-              display: 'flex',
-              alignItems: 'center',
-              svg: {maxWidth: [180, 180, 208]},
+              display: "flex",
+              alignItems: "center",
+              svg: { maxWidth: [180, 180, 208] }
             }}
           >
             <svg
@@ -56,7 +56,7 @@ export default props => {
               xmlns="http://www.w3.org/2000/svg"
               xmlnsXlink="http://www.w3.org/1999/xlink"
             >
-              <title>How to egghead</title>
+              <title>Superfluid Docs</title>
               <g
                 id="Page-1"
                 stroke="none"
@@ -65,7 +65,7 @@ export default props => {
                 fillRule="evenodd"
               >
                 <g id="Group" fillRule="nonzero">
-                  <g id="egghead-logo-white">
+                  <g id="logo-white">
                     <path
                       d="M22.5763636,45.9783681 C13.1809091,45.9905294 5.43272727,38.6832941 4.965,29.3737059 L4.965,29.3398824 C3.24996278,29.1256097 1.84239515,27.8906947 1.41818182,26.2281176 C0.925909091,24.3150588 0.259090909,21.4576471 0.18,18.7111765 C0.128690469,17.1224681 1.05219346,15.6611593 2.51590909,15.0149412 C3.95318182,14.375 6.00272727,13.8514118 8.58681818,13.455 C10.0322727,10.1402941 11.7381818,7.25852941 13.5422727,5.08705882 C16.3527273,1.71147059 19.3922727,0 22.5763636,0 C25.7604545,0 28.7972727,1.71147059 31.6036364,5.08841176 C33.3995455,7.25988235 35.1122727,10.1375882 36.555,13.4455294 C39.1213636,13.8297647 41.1681818,14.3560588 42.645,15.0081765 C44.1079157,15.6518747 45.0320405,17.1106395 44.9822727,18.6976471 C44.9031818,21.459 44.2377273,24.3177647 43.7454545,26.2267647 C43.3219543,27.8925959 41.9114368,29.1298106 40.1931818,29.3425882 L40.1931818,29.3737059 C39.712364,38.6819497 31.9623196,45.9827307 22.5681818,45.977 L22.575,45.9783681 L22.5763636,45.9783681 Z"
                       id="Path"
@@ -135,22 +135,22 @@ export default props => {
       )}
       <div
         sx={{
-          visibility: ['visible', 'hidden'],
-          display: ['flex', 'none'],
-          alignItems: 'center',
-          justifyContent: isToggled ? 'space-between' : 'flex-end',
+          visibility: ["visible", "hidden"],
+          display: ["flex", "none"],
+          alignItems: "center",
+          justifyContent: isToggled ? "space-between" : "flex-end"
         }}
       >
         {isToggled ? (
           <motion.div
-            initial={{opacity: 0}}
-            animate={{opacity: 1}}
-            exit={{opacity: 0}}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
             sx={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'space-between',
-              width: '100%',
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+              width: "100%"
             }}
           >
             <Search isToggled={isToggled} />
@@ -202,9 +202,9 @@ export default props => {
         ) : (
           <div
             sx={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'flex-end',
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "flex-end"
             }}
           >
             <IconButton
@@ -228,9 +228,11 @@ export default props => {
           </div>
         )}
       </div>
-      <div sx={{visibility: ['hidden', 'visible'], display: ['none', 'block']}}>
+      <div
+        sx={{ visibility: ["hidden", "visible"], display: ["none", "block"] }}
+      >
         <Search isToggled={isToggled} />
       </div>
     </header>
-  )
-}
+  );
+};
