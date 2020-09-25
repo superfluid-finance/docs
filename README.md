@@ -4,7 +4,7 @@
 
 ### Development
 
-Using Gatsby with GH Pages: https://www.gatsbyjs.com/docs/how-gatsby-works-with-github-pages/
+Read [Deploying to a GitHub Pages subdomain](https://www.gatsbyjs.com/docs/how-gatsby-works-with-github-pages/#deploying-to-a-github-pages-subdomain-at-githubio)
 
 ```bash
 # Install
