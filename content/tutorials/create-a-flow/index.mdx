@@ -1,39 +1,63 @@
 ---
 date: 2020-09-28
-title: "Create a Superfluid Stream"
-description: "In this tutorial we will create a stream using Gorli and the Truffle console"
+title: "🔀 Create a Superfluid Flow"
+description: "In this tutorial we will create a Flow using the Javascript SDK"
 categories: ["tutorial"]
 published: true
 showToc: true
 ---
 
-## Getting started
+By the end of this tutorial you will learn:
 
-Get some Görli ETH using the faucets here https://goerli.net/
+- How to use the Superfluid javascript SDK
+- How to open and close a Flow
 
-### Install SF tools & contracts
+## Introduction
+
+A **Constant Flow Agreement** is a transfer of value from a `sender` to a `receiver` at a constant `flowRate` measured in _amount per second_.
+
+Great! Now that you understand the first major concept of Superfluid, lets get to the fun part. Here is an overview of the Constant Flow Agreement contract. Did someone say _CRUD_?
+
+```sol
+interface IConstantFlowAgreementV1 {
+  function createFlow( ...
+  function updateFlow( ...
+  function deleteFlow( ...
+}
+```
+
+Seem straightforward enough? Let's take the contracts for a test-drive.
+
+## Set Up
+
+The Superfluid contracts have already been deployed on the Gorli testnet for you. If you've used Truffle console before, then this development flow will feel very familiar to you. Here are the steps we'll take:
+
+1. Obtain some Gorli testnet ETH
+2. Install the Superfluid javascript SDK
+3. Open the Truffle console
+4. Use the SDK to create and delete a flow
+
+### Obtain Görli ETH
+
+To obtain some Görli testnet ETH, use on of the faucets listed here https://goerli.net/
+
+### Install the Superfluid javascript SDK
+
+Download the example repo, which includes the SDK
+
+```bash
+git clone REPO URL PLACEHOLDER
+cd PLACEHOLDER && npm i
+```
+
+If you haven't already, install truffle and jq.
 
 ```bash
 sudo apt-get install jq
-npm i -g truffle ganache-cli
+npm i -g truffle
 ```
 
-Start Ganache on the default port `8545`
-
-```bash
-# Progress blocks every 1 second, and store the state so we don't need to redeploy
-ganache-cli -b 1 --db ~/.ganache --mnemonic sweet
-```
-
-> Warning: Disk-space is continuously consumed using the "-b" automining and "--db" save database flags. Be sure to stop it when not in use. If it gets to large, you can always delete it with `rm -rf ~/.ganache`.
-
-Install the contracts repo, build and deploy the contracts
-
-```bash
-npm i
-npm run build
-npx truffle --network ganache exec scripts/deploy-framework.js
-```
+## TODO: Update next section to work with deployed contracts
 
 Find the`Resolver address` from the previous step
 
