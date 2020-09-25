@@ -180,15 +180,15 @@ module.exports = {
         matomoUrl: "https://superfluidfinance.matomo.cloud",
         siteUrl: "https://docs.superfluid.io"
       }
-    },
+    }
 
-    {
-      resolve: "gatsby-redirect-from",
-      options: {
-        query: "allMdx"
-      }
-    },
-    `gatsby-plugin-meta-redirect`
+    // {
+    //   resolve: "gatsby-redirect-from",
+    //   options: {
+    //     query: "allMdx"
+    //   }
+    // },
+    // `gatsby-plugin-meta-redirect`
 
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline

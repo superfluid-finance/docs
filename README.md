@@ -1,29 +1,69 @@
-# Superfluid Documentation
+<h1 align="center">Welcome to Superfluid Doc Site 👋</h1>
+<p>
+  <a href="https://twitter.com/SuperfluidF" target="_blank">
+    <img alt="Twitter: SuperfluidF" src="https://img.shields.io/twitter/follow/SuperfluidF.svg?style=social" />
+  </a>
+</p>
 
-> Gatsby + Github Pages for Superfluid documentation. Forked from https://github.com/eggheadio/how-to-egghead
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 
-Hosted at https://docs.superfluid.finance/ (alternative: https://superfluid-finance.github.io/superfluid-protocol-docs/)
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
 
-### Development
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-Read [Deploying to a GitHub Pages subdomain](https://www.gatsbyjs.com/docs/how-gatsby-works-with-github-pages/#deploying-to-a-github-pages-subdomain-at-githubio)
+> Documentation and tutorials for Superfluid
 
-```bash
-# Install
-yarn
-# Start app at port http://localhost:8000
+### 🏠 [Homepage](https://docs.superfluid.io)
+
+## Install
+
+```sh
+yarn install
+```
+
+## Usage
+
+```sh
 yarn start
 ```
 
 If you have issues, try running
 
-```bash
+```sh
 npm i -g gatsby-cli
 gastby clean
 ```
 
-### TODO
+## Deploy
 
-- Update seo
-- Udpate Matomo siteId
-- Add algola support, and insert the search bar (uncomment in layout)
+Read [Deploying to a GitHub Pages subdomain](https://www.gatsbyjs.com/docs/how-gatsby-works-with-github-pages/#deploying-to-a-github-pages-subdomain-at-githubio)
+
+```sh
+yarn deploy
+```
+
+## Author
+
+👤 **Superfluid**
+
+- Website: https://superfluid.finance/
+  - Twitter: [@SuperfluidF](https://twitter.com/SuperfluidF)
+  - GitHub: [@superfluid-finance](https://github.com/superfluid-finance)
+
+## Contribute
+
+Contributions welcome! All contributors must abide by the [Code of Conduct](./code-of-conduct.md).
+
+## Contributors ✨
+
+- [@pi0neerpat](https://github.com/pi0neerpat)
+- [@eggheadio](https://github.com/eggheadio/)
+
+## 📝 License
+
+Copyright © 2020 [superfluid.finance](https://github.com/superfluid-finance).<br />
+This project is [MIT](https://github.com/superfluid-finance/superfluid-protocol-docs/blob/source/LICENSE) licensed.
+
+---
+
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
