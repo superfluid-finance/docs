@@ -119,7 +119,7 @@ export default props => {
           </Link>
         </motion.div>
       )}
-      <div
+      {/*   <div
         sx={{
           visibility: ["visible", "hidden"],
           display: ["flex", "none"],
@@ -139,7 +139,7 @@ export default props => {
               width: "100%"
             }}
           >
-            <Search isToggled={isToggled} />
+           <Search isToggled={isToggled} />
             <IconButton
               aria-label="Toggle site search"
               onClick={() => setToggled(!isToggled)}
@@ -213,12 +213,13 @@ export default props => {
             </IconButton>
           </div>
         )}
+
       </div>
       <div
         sx={{ visibility: ["hidden", "visible"], display: ["none", "block"] }}
       >
         <Search isToggled={isToggled} />
-      </div>
+      </div>*/}
     </header>
   );
 };
