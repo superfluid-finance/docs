@@ -27,7 +27,7 @@ yarn install
 yarn start
 ```
 
-If you have issues, try running
+If you have issues while developing, stop the server and run
 
 ```sh
 npm i -g gatsby-cli
@@ -52,7 +52,7 @@ yarn deploy
 
 ## Contribute
 
-Contributions welcome! All contributors must abide by the [Code of Conduct](./code-of-conduct.md).
+Contributions welcome! All contributors must abide by the [Code of Conduct](./CODE_OF_CONDUCT.md).
 
 ## Contributors ✨
 

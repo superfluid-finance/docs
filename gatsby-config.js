@@ -22,12 +22,12 @@ module.exports = {
           default: path.resolve("./src/components/layout.js")
         },
         gatsbyRemarkPlugins: [
-          // {
-          //   resolve: `gatsby-remark-autolink-headers`,
-          //   options: {
-          //     className: 'autolink-header',
-          //   },
-          // },
+          {
+            resolve: `gatsby-remark-autolink-headers`,
+            options: {
+              className: "autolink-header"
+            }
+          },
           {
             resolve: `gatsby-remark-prismjs`,
             options: {
@@ -96,8 +96,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: "how-to-egghead",
-        short_name: "egghead",
+        name: "Superfluid Docs",
+        short_name: "SF Docs",
         start_url: "/",
         background_color: "#3852E4",
         theme_color: "#3852E4",
