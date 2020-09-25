@@ -1,6 +1,8 @@
 # Superfluid Documentation
 
-> Gatsby + Github Pages for https://docs.superfluid.finance/. Forked from https://github.com/eggheadio/how-to-egghead
+> Gatsby + Github Pages for Superfluid documentation. Forked from https://github.com/eggheadio/how-to-egghead
+
+Hosted at https://docs.superfluid.finance/ (alternative: https://superfluid-finance.github.io/superfluid-protocol-docs/)
 
 ### Development
 

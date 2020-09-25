@@ -1,0 +1,121 @@
+---
+date: 2020-09-28
+title: "Perform an Instant Distribution"
+description: "In this tutorial we will perform an Instant Distribution using Gorli and the Truffle console"
+categories: ["tutorial"]
+published: true
+showToc: true
+---
+
+# Instant Distribution
+
+> If you want to reset ganache, now is a good time to do so! Bear in mind you'll need to redeploy the SF contracts if you do.
+
+The first step to creating an Instant Distribution Agreement (IDA) is to create a **publishing index**. Once created, the publishing index will be used by bob to send tokens at some point in the future.
+
+Create a new reference index from bob using `createIndex`
+
+```bash
+sf.host.callAgreement(sf.agreements.ida.address, sf.agreements.ida.contract.methods.createIndex(daix.address, 42, "0x").encodeABI(), { from: bob })
+```
+
+Here bob is the "publisher" since he is creating the "index" #42.
+
+Alice is now given some "units" using `updateSubscription`
+
+> (??) "Units" behave the same as stock "shares"
+
+```bash
+sf.host.callAgreement(sf.agreements.ida.address, sf.agreements.ida.contract.methods.updateSubscription(daix.address, 42, alice, 100, "0x").encodeABI(), { from: bob })
+```
+
+Dan is given some units too, however he did not `approveSubscription`
+
+```bash
+sf.host.callAgreement(sf.agreements.ida.address, sf.agreements.ida.contract.methods.updateSubscription(daix.address, 42, dan, 200, "0x").encodeABI(), { from: bob })
+```
+
+Now alice will subscribe using `approveSubscription`.
+
+```bash
+sf.host.callAgreement(sf.agreements.ida.address, sf.agreements.ida.contract.methods.approveSubscription(daix.address, bob, 42, "0x").encodeABI(), { from: alice })
+```
+
+Check balances before the distribution occurs.
+
+```bash
+(await daix.balanceOf(bob)).toString() / 1e18
+> 50
+(await daix.balanceOf(alice)).toString() / 1e18
+> 0
+(await daix.balanceOf(dan)).toString() / 1e18
+> 0
+```
+
+New we will actually perform an Instant Distribution. We use `updateIndex` with a value of **0.01 ETH**. The link
+
+```bash
+sf.host.callAgreement(sf.agreements.ida.address, sf.agreements.ida.contract.methods.updateIndex(daix.address, 42, web3.utils.toWei("0.01", "ether"), "0x").encodeABI(), { from: bob })
+```
+
+0.01 DAI/Units (the new index value we called) _ 300 Total Units = 3 DAI being distributed
+Since alice owns 100 Units, she earns 100 / 300 _ 3 DAI = 1 DAI
+Since dan owns 200 Units, he earns 200 / 300 \* 3 DAI = 2 DAI
+
+Lets check the balances to confirm.
+
+```bash
+(await daix.balanceOf(alice)).toString() / 1e18
+> 1
+(await daix.balanceOf(dan)).toString() / 1e18
+> 0
+```
+
+Dan has not received his DAI in the context of the token `balanceOf`, since he has not called `approveSubscription` for this index. He _does own 2 DAI_ but the SF contracts did not actually distribute it to him.
+
+> SF Contracts Tip: Every account can only subscribe to a total of 256 indexes. This is why the SF contracts cannot automatically distribute the DAI to Dan. It is a prevention mechanism to keep spammers from "filling" up a users 256 subscriptions.
+
+> Alternatively, whenever bob updates the index, the SF contracts will see that there is an unclaimed distribution, and will perform the distribution automatically as a side-effect during the index update.
+
+To perform another distribution we must increase the index amount. To send another 1 DAI to alice and 1 DAI to dan we must \_increment the index by 0.01** for a **total of 0.02\_\_
+
+```bash
+sf.host.callAgreement(sf.agreements.ida.address, sf.agreements.ida.contract.methods.updateIndex(daix.address, 42, web3.utils.toWei("0.02", "ether"), "0x").encodeABI(), { from: bob })
+```
+
+The total amount distributed to dan is now 100 units _ 0.02 = 2 DAI
+The total amount distributed to dan is now 200 units _ 0.02 = 4 DAI
+
+TODO: simplify the example to not have this weird dan scenario. It can be added later.
+
+Lets check the balances to confirm.
+
+```bash
+(await daix.balanceOf(alice)).toString() / 1e18
+> 2
+(await daix.balanceOf(dan)).toString() / 1e18
+> 4
+```
+
+### Create an App
+
+Now create an example app. "cfa" is constant flow agreement
+
+```bash
+mfa = await MultiFlowsApp.new(sf.agreements.cfa.address, sf.host.address)
+
+# Create a flow
+sf.host.callAppAction(mfa.address, mfa.contract.methods.createMultiFlows(daix.wrapperAddress, [alice, carol], [6,4], "0x").encodeABI(), { from: bob })
+```
+
+The app is now configured, so when Bob sends a constant flow to MFA app, it will split the flow between alice and carol, with a ratio of 6:4
+
+```bash
+sf.host.callAgreement(sf.agreements.cfa.address, sf.agreements.cfa.contract.methods.createFlow(daix.wrapperAddress, mfa.address, "385802469135802", "0x").encodeABI(), { from: bob })
+```
+
+TBC
+
+By default Ganache doesn't mint blocks, so we need to use a convenience command to progress "-b" blocks automatically
+
+> -b, --blockTime Block time in seconds for automatic mining. Will instantly mine a new block for every transaction if option omitted. Avoid using unless your test cases require a specific
