@@ -1,5 +1,7 @@
 ## Getting started
 
+Get some Görli ETH using the faucets here https://goerli.net/
+
 ### Install SF tools & contracts
 
 ```bash

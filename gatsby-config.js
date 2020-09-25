@@ -10,7 +10,8 @@ module.exports = {
   siteMetadata: {
     title: "Superfluid Docs",
     description: "Tutorials and documentation for building with Superfuid.",
-    author: "superfluid.finance"
+    author: "superfluid.finance",
+    baseURL: "https://docs.superfluid.finance"
   },
   plugins: [
     `gatsby-plugin-theme-ui`,

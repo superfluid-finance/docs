@@ -1,9 +1,9 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
-import {StaticQuery, graphql} from 'gatsby'
-import metaImage from '../images/social-card.png'
-import {capitalize} from 'lodash'
+import React from "react";
+import PropTypes from "prop-types";
+import Helmet from "react-helmet";
+import { StaticQuery, graphql } from "gatsby";
+import metaImage from "../images/social-card.png";
+import { capitalize } from "lodash";
 
 function SEO({
   description,
@@ -13,131 +13,134 @@ function SEO({
   title,
   image,
   timeToRead,
-  categories,
+  categories
 }) {
   return (
     <StaticQuery
       query={detailsQuery}
       render={data => {
         const metaDescription =
-          description || data.site.siteMetadata.description
+          description || data.site.siteMetadata.description;
         return (
           <Helmet
             htmlAttributes={{
-              lang,
+              lang
             }}
             title={title}
             titleTemplate={`%s | ${data.site.siteMetadata.title}`}
             meta={[
               {
-                name: 'description',
-                content: metaDescription,
+                name: "description",
+                content: metaDescription
               },
               {
-                property: 'og:title',
-                content: title,
+                property: "og:title",
+                content: title
               },
               {
-                property: 'og:description',
-                content: metaDescription,
+                property: "og:description",
+                content: metaDescription
               },
               {
-                property: 'og:type',
-                content: 'website',
+                property: "og:type",
+                content: "website"
               },
               {
-                name: 'twitter:card',
-                content: 'summary_large_image',
+                name: "twitter:card",
+                content: "summary_large_image"
               },
               {
-                name: 'twitter:creator',
-                content: data.site.siteMetadata.author,
+                name: "twitter:creator",
+                content: data.site.siteMetadata.author
               },
               {
-                name: 'twitter:title',
-                content: title,
+                name: "twitter:title",
+                content: title
               },
               {
-                name: 'twitter:description',
-                content: metaDescription,
+                name: "twitter:description",
+                content: metaDescription
               },
               {
-                name: 'twitter:image',
-                content: image || `https://howtoegghead.com${metaImage}`,
+                name: "twitter:image",
+                content:
+                  image || `${data.site.siteMetadata.baseURL}${metaImage}`
               },
               {
-                name: 'image',
-                content: image || `https://howtoegghead.com${metaImage}`,
+                name: "image",
+                content:
+                  image || `${data.site.siteMetadata.baseURL}${metaImage}`
               },
               {
-                name: 'og:image',
-                content: image || `https://howtoegghead.com${metaImage}`,
+                name: "og:image",
+                content:
+                  image || `${data.site.siteMetadata.baseURL}${metaImage}`
               },
               {
-                name: 'twitter:label1',
-                content: 'Time to read',
+                name: "twitter:label1",
+                content: "Time to read"
               },
               {
-                name: 'twitter:data1',
+                name: "twitter:data1",
                 content: `${
                   timeToRead
-                    ? `${timeToRead} ${timeToRead === 1 ? 'minute' : 'minutes'}`
-                    : '< 1 minute'
-                }`,
+                    ? `${timeToRead} ${timeToRead === 1 ? "minute" : "minutes"}`
+                    : "< 1 minute"
+                }`
               },
               {
-                name: 'twitter:label2',
+                name: "twitter:label2",
                 content: `${
                   categories && categories.length > 1
-                    ? 'Categories'
-                    : 'Category'
-                }`,
+                    ? "Categories"
+                    : "Category"
+                }`
               },
               {
-                name: 'twitter:data2',
+                name: "twitter:data2",
                 content: `${
                   categories
                     ? categories.map(
                         (category, i) =>
-                          `${i !== 0 ? ' ' : ''}${capitalize(
-                            category.replace('-', ' ')
+                          `${i !== 0 ? " " : ""}${capitalize(
+                            category.replace("-", " ")
                           )}`
                       )
-                    : 'egghead.io'
-                }`,
-              },
+                    : "egghead.io"
+                }`
+              }
             ]
               .concat(
                 keywords.length > 0
                   ? {
-                      name: 'keywords',
-                      content: keywords.join(', '),
+                      name: "keywords",
+                      content: keywords.join(", ")
                     }
                   : []
               )
               .concat(meta)}
           />
-        )
+        );
       }}
     />
-  )
+  );
 }
 
 SEO.defaultProps = {
-  lang: 'en',
+  lang: "en",
   meta: [],
-  keywords: [],
-}
+  keywords: []
+};
 
 SEO.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.array,
   keywords: PropTypes.arrayOf(PropTypes.string),
-  title: PropTypes.string.isRequired,
-}
+  title: PropTypes.string.isRequired
+};
 
-export default SEO
+export default SEO;
 
 const detailsQuery = graphql`
   query DefaultSEOQuery {
@@ -146,7 +149,8 @@ const detailsQuery = graphql`
         title
         description
         author
+        baseURL
       }
     }
   }
-`
+`;

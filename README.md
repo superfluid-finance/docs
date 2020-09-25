@@ -13,6 +13,13 @@ yarn
 yarn start
 ```
 
+If you have issues, try running
+
+```bash
+npm i -g gatsby-cli
+gastby clean
+```
+
 ### TODO
 
 - Update seo
