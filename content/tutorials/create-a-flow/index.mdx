@@ -162,7 +162,7 @@ Now that bob has some Superfluid-enabled DAI, he wants to send 100 DAI per month
 
 ### createFlow()
 
-To achieve this, we will create a **Constand Flow Agreement**. In this, we will define the _amount per second_ and `recipient` which the DAI should flow to.
+To achieve this, we will create a **Constant Flow Agreement**. In this, we will define the _amount per second_ and `recipient` which the DAI should flow to.
 
 ```bash
 sf.host.callAgreement(sf.agreements.cfa.address, sf.agreements.cfa.contract.methods.createFlow(daix.address, alice, "385802469135802", "0x").encodeABI(), { from: bob })
@@ -181,11 +181,11 @@ So what is this weird number "385802469135802"? This is the amount of DAI to tra
 99.99999999999989
 ```
 
-> HUH?! How is bob able to send 100 DAI per month, but he only has 50 Superfluid enabled DAI? The answer is that the sender isn't required to have the full amount up-front. As long as he has DAI, the flow will continue to run.
+> HUH?! How is bob able to send 100 DAI per month if he only has 50 Superfluid enabled DAI? The answer is that the sender isn't required to have the full amount to start a flow. The flow will continue to run as long as he has DAI.
 
 ### Inspect the Flow
 
-The flow is now active. Let's check alice and bob's balance, which are updated every second.
+The flow is now active, so let's check alice and bob's balances to see the change. Their balances will be updated every second.
 
 ```bash
 (await daix.balanceOf(bob)).toString() / 1e18
@@ -196,14 +196,14 @@ The flow is now active. Let's check alice and bob's balance, which are updated e
 
 > Note: These amounts should not add up to bob's original balance of 50 SuperDAI, due to a refundable depost which will be explained in a later tutorial.
 
-To see activity for bob, we can check his `net flow`, which shows the sum of all inflow/outflows for his account. Here we can see the flow we just created, with the same "385802469135802" in units of wei.
+To get an idea of all Flow activity for bob, we can check his `net flow`. This will show us the sum of all inflow/outflows for his account. Here we can see the flow we just created, with the same "385802469135802" in units of wei.
 
 ```bash
 (await sf.agreements.cfa.getNetFlow(daix.address, bob)).toString() / 10e18
 > -0.0000385802469135802
 ```
 
-If bob had multiple flows, this would be reflected here as well.
+If bob had multiple flows, this would be reflected here. Since his net flow is negative, he'll need to remember to keep enough DAI in his wallet!
 
 ### Stop the Flow
 
@@ -213,60 +213,13 @@ Now lets stop the flow by deleting it. We call `deleteFlow` and select the flow 
 sf.host.callAgreement(sf.agreements.cfa.address, sf.agreements.cfa.contract.methods.deleteFlow(daix.address, bob, alice, "0x").encodeABI(), { from: bob })
 ```
 
-If we check their balances, we'll see that they now add up to 50
+If we check their balances, we'll see that they now add up to 50 since the refundable deposit has been returned.
 
 ```bash
 (await daix.balanceOf(bob)).toString() / 1e18
-> 48.55092592592593
+> 47.316580926
 (await daix.balanceOf(alice)).toString() / 1e18
-> 0.006674382716049375
+> 2.683419074
 ```
 
-Since the flow is stopped, the refundable deposit has been returned, so bob's `rtb` is 0. If we check `balanceOf` and add them, we should get back the original sum of 50 DAI (and some truncation error "dust")
-
-```bash
-a=(await daix.balanceOf(bob)).toString() / 1e18
-b=(await daix.balanceOf(alice)).toString() / 1e18
-a + b
-50.00000000000001
-```
-
-. You must provide the timestamp for the current moment.
-
-> Note: you can also provide a future time, which is useful for off-chain components to know when bob will run out of money.
-
-```bash
-rtb = await daix.realtimeBalanceOf(bob, parseInt((Date.now())/1000))
-(await rtb.deposit).toString() / 1e18
-> 0
-```
-
-Great job!
-
-### Update a flow
-
-Start the flow back again
-
-```bash
-sf.host.callAgreement(sf.agreements.cfa.address, sf.agreements.cfa.contract.methods.createFlow(daix.address, alice, "385802469135802", "0x").encodeABI(), { from: bob })
-```
-
-Check the flow rate to ensure its running
-
-```cd
-(await sf.agreements.cfa.getFlow(daix.address, bob, alice)).toString()
-```
-
-TODO: add docs for updating flow. Here is the .sol interface
-
-```sol
-function updateFlow(
-        ISuperToken token,
-        address receiver,
-        int96 flowRate,
-        bytes calldata ctx
-    )
-        external
-        virtual
-        returns(bytes memory newCtx);
-```
+Great job! You just minted some Superfluid-enabled DAI, and created your first Flow.
