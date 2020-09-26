@@ -30,18 +30,14 @@ Seem straightforward enough? Let's take the contracts for a test-drive.
 
 ## Set Up
 
-The Superfluid contracts have already been deployed on the Gorli testnet for you. If you've used Truffle console before, then this development flow will feel very familiar to you. Here are the steps we'll take:
+The Superfluid contracts have already been deployed on the Gorli testnet for you. Here are the steps we'll take:
 
-1. Obtain some Gorli testnet ETH
-2. Install the Superfluid javascript SDK
-3. Open the Truffle console
-4. Use the SDK to create and delete a flow
+1. Install SDK
+2. Obtain Gorli ETH
+3. Open Truffle console
+4. Mint some SuperDAI
 
-### Obtain Görli ETH
-
-To obtain some Görli testnet ETH, use on of the faucets listed here https://goerli.net/
-
-### Install the Superfluid javascript SDK
+### Install the SDK
 
 Download the example repo, which includes the SDK
 
@@ -57,120 +53,75 @@ sudo apt-get install jq
 npm i -g truffle
 ```
 
-## TODO: Update next section to work with deployed contracts
-
-Find the`Resolver address` from the previous step
-
-```
-TestResolver.new: started
-TestResolver.new: done, gas used 163231, gas price 20 Gwei
-Resolver address 0xF935C0947D30a2dc45B8bd99376fED0b6dC90A26
-```
-
-Then export it as `TEST_RESOLVER_ADDRESS` in the same shell:
-
-```
-export TEST_RESOLVER_ADDRESS=0xF935C0947D30a2dc45B8bd99376fED0b6dC90A26
-```
-
-Run the deployment script again. The resolver address will be used to find the upgradeable contract. If the code matches our `/build` folder, then it will not deploy again.
+Now build the contracts using truffle.
 
 ```bash
-npx truffle --network ganache exec scripts/deploy-framework.js
+yarn build
 ```
 
-Deploy an example token to use with the Superfluid contracts. This also registers the token in the SF resolver.
+### Obtain Görli ETH
 
-```bash
-npx truffle exec --network ganache scripts/deploy-test-token.js : fDAI
-# Take note of underlying token fDAI (fake DAI)
-> Token fDAI address 0xdb5d87471bC53cEF0B6ea1727ec99782A6aF59ff
+Before we can get testnet ETH, we need a 12-word mnemonic to generate our wallets. If you don't have a mnemonic, we can use truffle to create one for us. Never put any real funds into it.
 
 ```
+truffle develop
 
-Create token wrapper for fDAI
+> Accounts:
+> (0) 0x627306090abab3a6e1400e9345bc60c78a8bef57
+> (1) 0xf17f52151ebef6c7334fad080c5704d77216b732
 
-```bash
-npx truffle exec --network ganache scripts/deploy-super-token.js : fDAI
-# Take note of wrapper
-> SuperToken wrapper address:  0xbaF5f08c899D27D8947a1E1856D4FeE90A07c167
+> Mnemonic: rigid cradle south tribe juice harvest unit walk section grab quiz wire
 ```
 
-Open Truffle console to interact with the contracts
+Copy the first address and use the Görli testnet faucet to obtain some ETH https://goerli.net/
+
+Exit the truffle develop tool before continuing.
+
+### Open Truffle console
+
+Now we are ready to open the Truffle console
 
 ```bash
-npx truffle --network ganache console
+npx truffle --network goerli console -mnemonic "rigid cradle south ..."
 ```
 
-Then in the console
+Let's load the SDK and initialize it with the contracts.
 
 ```bash
-# loads the package.json "main" entrypoint js-sdk/index.js
 SuperfluidSDK = require(".")
 
-# Load the framework with version "test"
-# web3 is global variable provided by Truffle console
-sf = new SuperfluidSDK.Framework({version: "test", web3Provider: web3.currentProvider })
-```
+sf = new SuperfluidSDK.Framework({version: "PLACEHOLDER_VERSION", web3Provider: web3.currentProvider })
 
-> Default version is "test" `const version = process.env.RELEASE_VERSION || "test";`
-
-Initialize many objects using the Truffle artifacts and the resolver address we exported earlier. The artifacts are stored at `sf.contracts`
-
-```bash
 await sf.initialize()
 
-Resolver at 0xF935C0947D30a2dc45B8bd99376fED0b6dC90A26
-Resolving contracts with version test
-Superfluid 0xC38B...
-ConstantFlowAgreementV1 0x7E...
-InstantDistributionAgreementV1 0xA0D..
+> Resolver at 0xF935...
+> Resolving contracts with version test
+> Superfluid 0xC38B...
+> ConstantFlowAgreementV1 0x7E...
+> InstantDistributionAgreementV1 0xA0D..
 ```
 
-Get helpers and create an alias for wallet addresses. This makes it reference each account.
+> What just happened? The SF SDK used the `resolver` contract deployed on Gorli to fetch all the relevant protocol addresses. Then the Truffle artifacts in the `/build` folder were used to create each contract object.
+
+Now we'll load a web3 utility library and create an alias for two of our wallet addresses.
 
 ```bash
 const { toWad, toBN, fromWad, wad4human } = require("@decentral.ee/web3-helpers")
 
 bob = accounts[0]
 alice = accounts[1]
-carol = accounts[2]
-dan = accounts[3]
 ```
 
-Get the fDAI token address from the SF resolver
+### Mint some SuperDAI
+
+For this tutorial, our Flow will be using an ERC20 token called "fake DAI" or just DAI for short. Let's get the address for this token using the resolver, and create a Truffle contract object so we can interact with it.
 
 ```bash
 daiAddress = await sf.resolver.get("tokens.fDAI")
-```
-
-Load the underlying token using the dai Truffle contract object
-
-```bash
 dai = await sf.contracts.TestToken.at(daiAddress)
 ```
 
-Get the address of the SF wrapped fDAI token. The wrapper address is deterministic, even if the wrapper contract was not created.
-
-```bash
-daixWrapper = await sf.getERC20Wrapper(dai)
-
-daixWrapper
- Result {
-  "0": "0xbf0d4CC8D9DBab083738747aF52fccd454b3a755",
-  "1": true,
-  wrapperAddress: "0xbf0d4CC8D9DBab083738747aF52fccd454b3a755",
-  created: true # Whether the wrapper was created or not
- }
-```
-
-Now create the Truffle contract object for the SF wrapped fDAI token- daix aka SuperDAI
-
-```bash
-daix = await sf.contracts.ISuperToken.at(daixWrapper.wrapperAddress)
-```
-
-Mint some DAI (really fDAI) for bob & check that it worked (minting is open for anyone to call in the test ERC20 contract)
+Let's mint bob 100 DAI (minting is open for anyone to call here)
 
 ```bash
 dai.mint(bob, web3.utils.toWei("100", "ether"), { from: bob })
@@ -179,36 +130,62 @@ dai.mint(bob, web3.utils.toWei("100", "ether"), { from: bob })
 > '100.00000'
 ```
 
-Approve DAIX to upgrade your DAI.
+Now bob has some boring DAI.
+
+![](./cmon.png)
+
+Let's **upgrade** our DAI token so it can be used with Superfluid. First we need to get the wrapped DAI contract using the `SuperToken` wrapper.
+
+```bash
+daixWrapper = await sf.getERC20Wrapper(dai)
+daix = await sf.contracts.ISuperToken.at(daixWrapper.wrapperAddress)
+```
+
+Now we can upgrade half of bob's DAI.
 
 ```bash
 dai.approve(daix.address, "1"+"0".repeat(42), { from: bob })
-```
 
-DAIX now will "upgrade" 50 DAI from Bob's wallet, wrap it and return 50 DAIX
-
-```bash
 daix.upgrade(web3.utils.toWei("50", "ether"), { from: bob })
+
 (async () => (wad4human(await daix.balanceOf(bob))))()
 > '50.00000'
 ```
 
-### Create a Constant Flow Agreement "CFA"
+Hurrah, we now have 50 Superfluid-enabled DAI or "SuperDAI" 🦸.
 
-Tell SF that Bob wants to send 100 DAI per month to alice. This is using the cfa contract in SuperFluid. A flow is defined by the amount per second which should flow.
+We're almost to the finish line, stick with it!
+
+## Create a Constant Flow Agreement "CFA"
+
+Now that bob has some Superfluid-enabled DAI, he wants to send 100 DAI per month to alice.
+
+### createFlow()
+
+To achieve this, we will create a **Constand Flow Agreement**. In this, we will define the _amount per second_ and `recipient` which the DAI should flow to.
 
 ```bash
 sf.host.callAgreement(sf.agreements.cfa.address, sf.agreements.cfa.contract.methods.createFlow(daix.address, alice, "385802469135802", "0x").encodeABI(), { from: bob })
 ```
 
-The calculation here is done like. Multiply by seconds in one hour, 24 hours, 30 days, divide by 10e18 wei per DAI returns the amount of DAI per month that should flow. Superfluid uses the block timestamp when performing its calculations.
+If we unwind this command, we'll see that the main points are:
+
+1. We made a call to the `host` contract using `callAgreements`
+2. We specify we want to use a **Constant Flow Agreement** with `cfa.address`
+3. We are using the method `createFlow`, and pass the arguments for the DAI token, recipient, and the amount "385802469135802"
+
+So what is this weird number "385802469135802"? This is the amount of DAI to transfer per second, which is equivalent to 100 DAI per month.
 
 ```python
 >>> (385802469135802 * 3600 * 24 * 30) / 10e18
 99.99999999999989
 ```
 
-Now, since automining is turned on, the flow should be running automatically. alice and bobs balance are updated every second. Take note that these amounts do not add up to the original amount of 50 DAI, which will be explained later.
+> HUH?! How is bob able to send 100 DAI per month, but he only has 50 Superfluid enabled DAI? The answer is that the sender isn't required to have the full amount up-front. As long as he has DAI, the flow will continue to run.
+
+### Inspect the Flow
+
+The flow is now active. Let's check alice and bob's balance, which are updated every second.
 
 ```bash
 (await daix.balanceOf(bob)).toString() / 1e18
@@ -217,40 +194,44 @@ Now, since automining is turned on, the flow should be running automatically. al
 > 0.006674382716049375
 ```
 
-### Inspect the flow
+> Note: These amounts should not add up to bob's original balance of 50 SuperDAI, due to a refundable depost which will be explained in a later tutorial.
 
-Check the net flow for bob. The `net flow` is the current sum of all inflow/outflows for an account. We will see the same "385802469135802" we used (in units of wei) to create the flow for 100 DAI per month.
+To see activity for bob, we can check his `net flow`, which shows the sum of all inflow/outflows for his account. Here we can see the flow we just created, with the same "385802469135802" in units of wei.
 
 ```bash
 (await sf.agreements.cfa.getNetFlow(daix.address, bob)).toString() / 10e18
 > -0.0000385802469135802
 ```
 
-When bob created a flow, he also made a deposit. This explains why when we used `balanceOf` to calculate the balances of alice and bob, they did not add to 50 DAI. We can see bob's "real time balance", which also includes the deposit using these commands.
-
-```bash
-rtb = await daix.realtimeBalanceOf(bob, parseInt((Date.now())/1000))
-
-(await rtb.availableBalance).toString() / 1e18
-```
-
-So how much did bob `deposit` to create the flow? We can query this directly, using `rtb`.
-
-```bash
-(await rtb.deposit).toString() / 1e18
-```
-
-This amount will be returned when bob stops the flow. It serves as insurance in case bob starts running out of money. When this happens, the off-chain components earn the deposit as payment for submitting an on-chain transaction to stop the flow.
+If bob had multiple flows, this would be reflected here as well.
 
 ### Stop the Flow
 
-Now lets stop the flow by deleting it.
+Now lets stop the flow by deleting it. We call `deleteFlow` and select the flow between bob and alice.
 
 ```
 sf.host.callAgreement(sf.agreements.cfa.address, sf.agreements.cfa.contract.methods.deleteFlow(daix.address, bob, alice, "0x").encodeABI(), { from: bob })
 ```
 
-Check real time balance again. You must provide the timestamp for the current moment.
+If we check their balances, we'll see that they now add up to 50
+
+```bash
+(await daix.balanceOf(bob)).toString() / 1e18
+> 48.55092592592593
+(await daix.balanceOf(alice)).toString() / 1e18
+> 0.006674382716049375
+```
+
+Since the flow is stopped, the refundable deposit has been returned, so bob's `rtb` is 0. If we check `balanceOf` and add them, we should get back the original sum of 50 DAI (and some truncation error "dust")
+
+```bash
+a=(await daix.balanceOf(bob)).toString() / 1e18
+b=(await daix.balanceOf(alice)).toString() / 1e18
+a + b
+50.00000000000001
+```
+
+. You must provide the timestamp for the current moment.
 
 > Note: you can also provide a future time, which is useful for off-chain components to know when bob will run out of money.
 
@@ -258,15 +239,6 @@ Check real time balance again. You must provide the timestamp for the current mo
 rtb = await daix.realtimeBalanceOf(bob, parseInt((Date.now())/1000))
 (await rtb.deposit).toString() / 1e18
 > 0
-```
-
-Since the flow is stopped, the deposit has been returned, so bob's `rtb` is 0. If we check `balanceOf` and add them, we should get back the original sum of 50 DAI (and some truncation error "dust")
-
-```bash
-a=(await daix.balanceOf(bob)).toString() / 1e18
-b=(await daix.balanceOf(alice)).toString() / 1e18
-a + b
-50.00000000000001
 ```
 
 Great job!
