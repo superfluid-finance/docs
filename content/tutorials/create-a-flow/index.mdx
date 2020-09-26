@@ -30,7 +30,7 @@ Seem straightforward enough? Let's take the contracts for a test-drive.
 
 ## Set Up
 
-The Superfluid contracts have already been deployed on the Gorli testnet for you. Here are the steps we'll take:
+The Superfluid contracts have already been deployed on the Görli testnet for you. Here are the steps we'll take:
 
 1. Install SDK
 2. Obtain Gorli ETH
@@ -101,7 +101,7 @@ await sf.initialize()
 > InstantDistributionAgreementV1 0xA0D..
 ```
 
-> What just happened? The SF SDK used the `resolver` contract deployed on Gorli to fetch all the relevant protocol addresses. Then the Truffle artifacts in the `/build` folder were used to create each contract object.
+> What just happened? The SF SDK used the `resolver` contract deployed on Görli to fetch all the relevant protocol addresses. Then the Truffle artifacts in the `/build` folder were used to create each contract object.
 
 Now we'll load a web3 utility library and create an alias for two of our wallet addresses.
 
@@ -112,9 +112,9 @@ bob = accounts[0]
 alice = accounts[1]
 ```
 
-### Mint some SuperDAI
+### Mint some DAIx (Superfluid DAI)
 
-For this tutorial, our Flow will be using an ERC20 token called "fake DAI" or just DAI for short. Let's get the address for this token using the resolver, and create a Truffle contract object so we can interact with it.
+For this tutorial, our Flow will be using an ERC20 token called "fake DAI" or just fDAI for short. Let's get the address for this token using the resolver, and create a Truffle contract object so we can interact with it.
 
 ```bash
 daiAddress = await sf.resolver.get("tokens.fDAI")
@@ -152,7 +152,7 @@ daix.upgrade(web3.utils.toWei("50", "ether"), { from: bob })
 > '50.00000'
 ```
 
-Hurrah, we now have 50 Superfluid-enabled DAI or "SuperDAI" 🦸.
+Hurrah, we now have 50 Superfluid-enabled DAI or "DAIx" 🦸.
 
 We're almost to the finish line, stick with it!
 
@@ -194,7 +194,7 @@ The flow is now active, so let's check alice and bob's balances to see the chang
 > 0.006674382716049375
 ```
 
-> Note: These amounts should not add up to bob's original balance of 50 SuperDAI, due to a refundable depost which will be explained in a later tutorial.
+> Note: These amounts should not add up to bob's original balance of 50 SuperDAI, due to a refundable deposit which will be explained in a later tutorial.
 
 To get an idea of all Flow activity for bob, we can check his `net flow`. This will show us the sum of all inflow/outflows for his account. Here we can see the flow we just created, with the same "385802469135802" in units of wei.
 
