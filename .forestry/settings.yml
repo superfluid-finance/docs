@@ -7,17 +7,15 @@ sections:
 - type: document
   path: content/index.mdx
   label: Home Page
-  match: "**/*"
 - type: document
   path: content/tutorials/index.md
   label: Tutorial Page
-  match: "**/*"
 - type: directory
   path: content/docs
   label: Docs
   create: all
   match: "**/*"
-  new_doc_ext: ".mdx"
+  new_doc_ext: mdx
 - type: directory
   path: content/tutorials
   label: Tutorials
