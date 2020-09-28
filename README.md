@@ -1,7 +1,7 @@
 <h1 align="center">Welcome to Superfluid Doc Site 👋</h1>
 <p>
-  <a href="https://twitter.com/SuperfluidF" target="_blank">
-    <img alt="Twitter: SuperfluidF" src="https://img.shields.io/twitter/follow/SuperfluidF.svg?style=social" />
+  <a href="https://twitter.com/Superfluid_HQ" target="_blank">
+    <img alt="Twitter: Superfluid_HQ" src="https://img.shields.io/twitter/follow/Superfluid_HQ.svg?style=social" />
   </a>
 </p>
 
@@ -47,7 +47,7 @@ yarn deploy
 👤 **Superfluid**
 
 - Website: https://superfluid.finance/
-  - Twitter: [@SuperfluidF](https://twitter.com/SuperfluidF)
+  - Twitter: [@Superfluid_HQ](https://twitter.com/Superfluid_HQ)
   - GitHub: [@superfluid-finance](https://github.com/superfluid-finance)
 
 ## Contribute
