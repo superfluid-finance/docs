@@ -1,0 +1,20 @@
+/data
+/node_modules
+/coverage.json
+/coverage
+/.env
+/data
+*.ignore.*
+yarn.lock
+.DS_Store
+
+*.env
+
+.vscode/
+
+
+# NOT PUBLIC YET
+/.github
+/maths
+/contracts/superfluid
+/contracts/agreements
