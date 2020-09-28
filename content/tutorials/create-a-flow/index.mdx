@@ -152,21 +152,20 @@ dai.approve(daix.address, "1"+"0".repeat(42), { from: bob })
 
 daix.upgrade(web3.utils.toWei("50", "ether"), { from: bob })
 
+# Check DAIx balance
 (async () => (wad4human(await daix.balanceOf(bob))))()
 > '50.00000'
 ```
 
-Hurrah, we now have 50 Superfluid DAI or "DAIx" 🦸.
-
-We're almost to the finish line, stick with it!
+Hurrah, we now have 50 Superfluid-enabled DAI or "DAIx". We are ready to start using Flows.
 
 ## Create a Constant Flow Agreement "CFA"
 
-Now that bob has some Superfluid-enabled DAI, he wants to send 100 DAI per month to alice.
+Now that bob has some Superfluid-enabled DAI, he wants to send 100 DAIx per month to alice.
 
 ### createFlow()
 
-To achieve this, we will create a **Constant Flow Agreement**. In this, we will define the _amount per second_ and `recipient` which the DAI should flow to.
+To achieve this, we will create a **Constant Flow Agreement**. In this agreement, we define the _amount per second_ and `recipient` where DAIx should flow.
 
 ```bash
 sf.host.callAgreement(sf.agreements.cfa.address, sf.agreements.cfa.contract.methods.createFlow(daix.address, alice, "385802469135802", "0x").encodeABI(), { from: bob })
