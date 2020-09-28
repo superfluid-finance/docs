@@ -51,7 +51,12 @@ module.exports = {
       }
     },
     "gatsby-remark-images",
-    "gatsby-transformer-remark",
+    {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        plugins: ["gatsby-remark-relative-images"]
+      }
+    },
     "gatsby-plugin-react-helmet",
     {
       resolve: `gatsby-source-filesystem`,
