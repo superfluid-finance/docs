@@ -150,7 +150,7 @@ daix.upgrade(web3.utils.toWei("50", "ether"), { from: bob })
 > '50.00000'
 ```
 
-Hurrah, we now have 50 Superfluid-enabled DAI or "DAIx". We are ready to start using SuperFluid.
+Hurrah, we now have 50 Superfluid-enabled DAI or "DAIx". We are ready to start using Superfluid.
 
 ## Perform an Instant Distribution
 
@@ -189,7 +189,7 @@ Here is the breakdown:
 1. We again use `callAgreement()` and specify this is an IDA by passing `sf.agreements.ida.address`
 2. Using the method `updateSubscription()`, we pass the arguments for the `token` DAIx, `indexId` "42", `recipient` alice, and an amount of `units` "200".
 
-Let's do the same for dan, but for only "100" `units`. 
+Let's do the same for dan, but for only "100" `units`.
 
 ```bash
 sf.host.callAgreement(sf.agreements.ida.address, sf.agreements.ida.contract.methods.updateSubscription(daix.address, 42, dan, 100, "0x").encodeABI(), { from: bob })
@@ -201,9 +201,9 @@ Since alice has twice as many units as dan, she will always receive double the a
 
 ### Subscribe to a Publishing Index
 
-This step is optional, but allows alice's DAIx balance to be updated instantly when an Instant Distribution occurs.
+In the previous step, we created two subscriptions for bob's Publishing Index. Now the recipients have the option to **approve subscription**. By doing so, their DAIx balance will be updated instantly when an Instant Distribution occurs. If they do not approve it, they will still receive the funds, but they may have to perform an additional transaction.
 
-Alice can **subscribe** to bob's Publishing Index using `approveSubscription()`. 
+Alice can approve subscription to bob's Publishing Index using `approveSubscription()`.
 
 ```bash
 sf.host.callAgreement(sf.agreements.ida.address, sf.agreements.ida.contract.methods.approveSubscription(daix.address, bob, 42, "0x").encodeABI(), { from: alice })
