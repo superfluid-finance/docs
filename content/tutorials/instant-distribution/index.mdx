@@ -168,7 +168,7 @@ Here is the breakdown:
 
 1. An Instant Distribution is a type of agreement, so we use `callAgreement()`
 2. We specify we want an **Instant Distribution Agreement** by selecting `sf.agreements.ida.address`
-3. Using the method `createIndex()`, we pass the arguments for the DAIx token, and the index ID "42".
+3. Using the method `createIndex()`, we pass the arguments for the DAIx token, and `indexId` "42".
 
 > A publisher can create virtually unlimited indexes.
 
@@ -176,7 +176,7 @@ Now that we have an index, lets specify it's behavior. In this tutorial, bob wan
 
 ![](/img/instant-distribution-42.png)
 
-We do this by creating a **subscription** for each recipient. Let's go ahead and `updateSubscription()` for alice. 
+We do this by creating a **subscription** for each recipient. Let's go ahead and `updateSubscription()` for alice.
 
 ```bash
 sf.host.callAgreement(sf.agreements.ida.address, sf.agreements.ida.contract.methods.updateSubscription(daix.address, 42, alice, 100, "0x").encodeABI(), { from: bob })
@@ -184,9 +184,9 @@ sf.host.callAgreement(sf.agreements.ida.address, sf.agreements.ida.contract.meth
 
 Here is the breakdown:
 
-1. An Instant Distribution is a type of agreement, so we use `callAgreement()`
+1. We again use `callAgreement()`
 2. We specify we want an **Instant Distribution Agreement** by selecting `sf.agreements.ida.address`
-3. Using the method `createIndex()`, we pass the arguments for the DAIx token, and the index ID "42".
+3. Using the method `updateSubscription()`, we pass the arguments for the DAIx token, `indexId` "42".
 
 Dan is given some units too, however he did not `approveSubscription()`
 
