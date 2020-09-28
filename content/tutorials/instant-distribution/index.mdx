@@ -63,7 +63,7 @@ Before we can get testnet ETH, we need a 12-word mnemonic to create some test wa
     
     > Mnemonic: rigid cradle south ...
 
-Copy the first address and use one of the Görli testnet faucets listed at [https://goerli.net/](https://goerli.net/ "https://goerli.net/") to obtain some ETH
+Copy the first address and use one of the Görli testnet faucets listed at [https://goerli.net/](https://goerli.net/ "https://goerli.net/") to obtain some ETH.
 
 Exit the truffle develop tool before continuing.
 
@@ -151,19 +151,19 @@ daix.upgrade(web3.utils.toWei("50", "ether"), { from: bob })
 > '50.00000'
 ```
 
-Hurrah, we now have 50 Superfluid-enabled DAI or "DAIx". We are ready to start using Flows.
+Hurrah, we now have 50 Superfluid-enabled DAI or "DAIx". We are ready to start using SuperFluid.
 
 ## Perform an Instant Distribution
 
+> If you have any active flows, please stop them before continuing.
+
 The first step to creating an Instant Distribution Agreement (IDA) is to create a **publishing index**. Once created, the publishing index will be used by bob to send tokens at some point in the future.
 
-Create a new reference index from bob using `createIndex`
+Create a new index from bob using `createIndex()`. Bob is the _publisher_ since he creates the index.
 
 ```bash
 sf.host.callAgreement(sf.agreements.ida.address, sf.agreements.ida.contract.methods.createIndex(daix.address, 42, "0x").encodeABI(), { from: bob })
 ```
-
-Here bob is the "publisher" since he is creating the "index" #42.
 
 Alice is now given some "units" using `updateSubscription`
 
