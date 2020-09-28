@@ -55,6 +55,8 @@ sudo apt-get install jq
 npm i -g truffle
 ```
 
+The contracts have already built and are located in the `/build` folder (note: the contract source code may not be included).
+
 ### Obtain Görli ETH
 
 Before we can get testnet ETH, we need a 12-word mnemonic to create some test wallets. If you don't have a mnemonic, we can use Truffle to create one. 
@@ -71,12 +73,17 @@ Copy the first address and use one of the Görli testnet faucets listed at [http
 
 Exit the truffle develop tool before continuing.
 
+Now create a file named `.env` and add your mnemonic and web3 provider for Görli network.
+
+    GOERLI_MNEMONIC=rigid cradle south ...
+    GOERLI_PROVIDER_URL=https://goerli.infura.io/v3/<API_KEY>
+
 ### Open Truffle console
 
-Now we are ready to open the Truffle console using the same mnemonic from earlier.
+We are ready to open the Truffle console.
 
 ```bash
-npx truffle --network goerli console -mnemonic "rigid cradle south ..."
+npx truffle --network goerli console
 ```
 
 Let's load the SDK and initialize it with the contracts.
@@ -88,11 +95,11 @@ sf = new SuperfluidSDK.Framework({version: "preview-20200928", web3Provider: web
 
 await sf.initialize()
 
-> Resolver at 0xF935...
-> Resolving contracts with version test
-> Superfluid 0xC38B...
-> ConstantFlowAgreementV1 0x7E...
-> InstantDistributionAgreementV1 0xA0D..
+> Resolver at 0xDC200aA39Aa1D9B28CE458979602eb79046A1C9f
+> Resolving contracts with version preview-20200928
+> Superfluid 0xa401e671eCA4309BDdADA860d5B25C722118b5A1
+> ConstantFlowAgreementV1 0x33A225eAcDbB27B48503Dd9D1d028D5fa35754b0
+> InstantDistributionAgreementV1 0x1354e201Ca565773D29C573FE9278D04f03E62F5
 ```
 
 > What just happened? The Superfluid SDK used the `resolver` contract deployed on Görli to fetch all the Superfluid contracts for the version "preview-20200928". Then the contract objects were created using the Truffle artifacts in the `/build` folder.
@@ -108,34 +115,37 @@ alice = accounts[1]
 
 ### Mint some DAIx (Superfluid DAI)
 
-For this tutorial, our Flow will be using an ERC20 token called "fake DAI" or just fDAI for short. Let's get the address for this token using the resolver, and create a Truffle contract object so we can interact with it.
+For this tutorial, we'll be using an ERC20 token "fake DAI" to represent DAI. Let's get the address for this token using the resolver, and create a Truffle contract object so we can interact with it.
 
 ```bash
 daiAddress = await sf.resolver.get("tokens.fDAI")
 dai = await sf.contracts.TestToken.at(daiAddress)
 ```
 
-Let's mint bob 100 DAI (minting is open for anyone to call here)
+Let's mint bob 100 DAI (minting is open for anyone to call).
 
 ```bash
 dai.mint(bob, web3.utils.toWei("100", "ether"), { from: bob })
 
+# Check bob's balance
 (async () => (wad4human(await dai.balanceOf(bob))))()
 > '100.00000'
 ```
 
-Now bob has some boring DAI.
+Now bob has some normal DAI.
 
 ![](/img/cmon.png)
 
-Let's **upgrade** our DAI token so it can get Superfluid capabilities. First we need to get the wrapped DAI contract using the `SuperToken` wrapper.
+Before we can use DAI with Superfluid, we need to **upgrade** it to the Superfluid version "DAIx". 
+
+This is done using a `SuperToken` wrapper contract. Generally, there is a single wrapper for each ERC20. Let's get the SuperToken wrapper for DAI.
 
 ```bash
 daixWrapper = await sf.getERC20Wrapper(dai)
 daix = await sf.contracts.ISuperToken.at(daixWrapper.wrapperAddress)
 ```
 
-Now we can upgrade half of bob's DAI.
+Now we can upgrade 50 of bob's DAI by calling `approve()` followed by `upgrade()`
 
 ```bash
 dai.approve(daix.address, "1"+"0".repeat(42), { from: bob })
