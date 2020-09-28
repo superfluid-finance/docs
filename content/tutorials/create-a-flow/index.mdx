@@ -35,7 +35,7 @@ The Superfluid contracts have already been deployed on the Görli testnet for yo
 1. Install SDK
 2. Obtain Gorli ETH
 3. Open Truffle console
-4. Mint some SuperDAI
+4. Mint some Superfluid DAI (DAIx)
 
 ### Install the SDK
 
@@ -134,7 +134,7 @@ Now bob has some boring DAI.
 
 ![](./cmon.png)
 
-Let's **upgrade** our DAI token so it can be used with Superfluid. First we need to get the wrapped DAI contract using the `SuperToken` wrapper.
+Let's **upgrade** our DAI token so it can get Superfluid capabilities. First we need to get the wrapped DAI contract using the `SuperToken` wrapper.
 
 ```bash
 daixWrapper = await sf.getERC20Wrapper(dai)
@@ -152,7 +152,7 @@ daix.upgrade(web3.utils.toWei("50", "ether"), { from: bob })
 > '50.00000'
 ```
 
-Hurrah, we now have 50 Superfluid-enabled DAI or "DAIx" 🦸.
+Hurrah, we now have 50 Superfluid DAI or "DAIx" 🦸.
 
 We're almost to the finish line, stick with it!
 
