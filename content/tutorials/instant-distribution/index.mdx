@@ -296,20 +296,19 @@ Now if we check dan's balance, we'll see the distribution was successful.
 
 ### Making additional Distributions
 
-To perform additional distributions, we can increase the `indexValue` amount. To send another 2 DAI to alice and 1 DAI to dan we must increment the index by another "0.01" for a total of 0.02 DAIx per `units`
+To perform additional distributions, we can increase the `indexValue` amount. To send another 2 DAI to alice and 1 DAI to dan we must increment the index by another 0.01 for a total of 0.02 DAIx per `units`
 
 ```bash
 sf.host.callAgreement(sf.agreements.ida.address, sf.agreements.ida.contract.methods.updateIndex(daix.address, 42, web3.utils.toWei("0.02", "ether"), "0x").encodeABI(), { from: bob })
 ```
 
-The `indexValue` can only ever increase, since funds can only flow from the _publisher to the subscriber(s)._
+The `indexValue` can only ever increase, since funds can only flow from the _publisher to the subscriber(s)._ Let's check their new balances.
 
 ```bash
 (await daix.balanceOf(alice)).toString() / 1e18
-> 2
+> 4
 (await daix.balanceOf(dan)).toString() / 1e18
-> 0
+> 2
 ```
 
-The total amount distributed to dan is now 100 units _ 0.02 = 2 DAI
-The total amount distributed to dan is now 200 units _ 0.02 = 4 DAI
+Excellent work! You learned how to perform an Instant Distribution using the Superfluid SDK. Now that you have the basics down, its time to start building a dapp.
