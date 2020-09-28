@@ -1,16 +1,17 @@
 ---
 date: 2020-09-28
-title: "🔀 Create a Superfluid Flow"
-description: "In this tutorial we will create a Flow using the Javascript SDK"
-categories: ["tutorial"]
+title: "\U0001F500 Create a Superfluid Flow"
+description: In this tutorial we will create a Flow using the Javascript SDK
+categories:
+- tutorial
 published: true
 showToc: true
----
 
+---
 By the end of this tutorial you will learn:
 
-- How to use the Superfluid javascript SDK
-- How to open and close a Flow
+* How to use the Superfluid javascript SDK
+* How to open and close a Flow
 
 ## Introduction
 
@@ -63,15 +64,13 @@ yarn build
 
 Before we can get testnet ETH, we need a 12-word mnemonic to generate our wallets. If you don't have a mnemonic, we can use truffle to create one for us. Never put any real funds into it.
 
-```
-truffle develop
-
-> Accounts:
-> (0) 0x627306090abab3a6e1400e9345bc60c78a8bef57
-> (1) 0xf17f52151ebef6c7334fad080c5704d77216b732
-
-> Mnemonic: rigid cradle south tribe juice harvest unit walk section grab quiz wire
-```
+    truffle develop
+    
+    > Accounts:
+    > (0) 0x627306090abab3a6e1400e9345bc60c78a8bef57
+    > (1) 0xf17f52151ebef6c7334fad080c5704d77216b732
+    
+    > Mnemonic: rigid cradle south tribe juice harvest unit walk section grab quiz wire
 
 Copy the first address and use the Görli testnet faucet to obtain some ETH https://goerli.net/
 
@@ -132,7 +131,7 @@ dai.mint(bob, web3.utils.toWei("100", "ether"), { from: bob })
 
 Now bob has some boring DAI.
 
-![](./cmon.png)
+![](/img/cmon.png)
 
 Let's **upgrade** our DAI token so it can get Superfluid capabilities. First we need to get the wrapped DAI contract using the `SuperToken` wrapper.
 
@@ -209,9 +208,7 @@ If bob had multiple flows, this would be reflected here. Since his net flow is n
 
 Now lets stop the flow by deleting it. We call `deleteFlow` and select the flow between bob and alice.
 
-```
-sf.host.callAgreement(sf.agreements.cfa.address, sf.agreements.cfa.contract.methods.deleteFlow(daix.address, bob, alice, "0x").encodeABI(), { from: bob })
-```
+    sf.host.callAgreement(sf.agreements.cfa.address, sf.agreements.cfa.contract.methods.deleteFlow(daix.address, bob, alice, "0x").encodeABI(), { from: bob })
 
 If we check their balances, we'll see that they now add up to 50 since the refundable deposit has been returned.
 
