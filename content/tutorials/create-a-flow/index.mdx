@@ -171,46 +171,52 @@ To achieve this, we will create a **Constant Flow Agreement**. In this agreement
 sf.host.callAgreement(sf.agreements.cfa.address, sf.agreements.cfa.contract.methods.createFlow(daix.address, alice, "385802469135802", "0x").encodeABI(), { from: bob })
 ```
 
-If we unwind this command, we'll see that the main points are:
+Here is the breakdown for this command:
 
-1. We made a call to the `host` contract using `callAgreements`
-2. We specify we want to use a **Constant Flow Agreement** with `cfa.address`
-3. We are using the method `createFlow`, and pass the arguments for the DAI token, recipient, and the amount "385802469135802"
+1. A flow is a type of agreement, so we use `callAgreement()` 
+2. We specify we want to use a **Constant Flow Agreement** by selecting `cfa.address`
+3. Usiung the method `createFlow()`, we pass the arguments for the DAIx token, recipient, and the amount "385802469135802"
 
-So what is this weird number "385802469135802"? This is the amount of DAI to transfer per second, which is equivalent to 100 DAI per month.
+So what is this weird number "385802469135802"? This is the amount of DAIx to transfer per second, which is equivalent to 100 DAIx per month.
 
 ```python
 >>> (385802469135802 * 3600 * 24 * 30) / 10e18
-99.99999999999989
+99.99999999999989 DAIx per month
 ```
 
-> HUH?! How is bob able to send 100 DAI per month if he only has 50 Superfluid enabled DAI? The answer is that the sender isn't required to have the full amount to start a flow. The flow will continue to run as long as he has DAI.
+> HUH?! How is bob able to send 100 DAIx per month if he only has 50 Superfluid enabled DAI? The answer is that the sender isn't required to have the full amount to start a flow. The flow will continue to run as long as he has DAIx.
+
+#### 🎉 Excellent work, you just started your first Superfluid Flow! 
+
+![](/img/paid-every-second-meme.png)
 
 ### Inspect the Flow
 
-The flow is now active, so let's check alice and bob's balances to see the change. Their balances will be updated every second.
+The flow is now active, so let's check alice and bob's balances to see what changed. Their balances are updated every second, and reflected on-chain at every new block.
 
 ```bash
 (await daix.balanceOf(bob)).toString() / 1e18
-> 48.55092592592593
+> 48.36226851851852
 (await daix.balanceOf(alice)).toString() / 1e18
-> 0.006674382716049375
+> 0.2546296296296293
 ```
 
-> Note: These amounts should not add up to bob's original balance of 50 SuperDAI, due to a refundable deposit which will be explained in a later tutorial.
+> Note: These amounts will not add up to 50 DAIx, due to a refundable deposit.
 
-To get an idea of all Flow activity for bob, we can check his `net flow`. This will show us the sum of all inflow/outflows for his account. Here we can see the flow we just created, with the same "385802469135802" in units of wei.
+To get an idea of all Flow activity for bob, we can check his **net flow**. This will show us the sum of all inflow/outflows for his account. 
+
+We can use `getNetFlow()` to see the flow we just created.
 
 ```bash
 (await sf.agreements.cfa.getNetFlow(daix.address, bob)).toString() / 10e18
-> -0.0000385802469135802
+> -0.0000385802469135802 # units of wei
 ```
 
-If bob had multiple flows, this would be reflected here. Since his net flow is negative, he'll need to remember to keep enough DAI in his wallet!
+Since he only has one flow to alice, his net flow is negative. If bob had multiple flows, this would be an easy way to get an overall picture of bob's activity. 
 
 ### Stop the Flow
 
-Now lets stop the flow by deleting it. We call `deleteFlow` and select the flow between bob and alice.
+Now lets stop the flow by deleting it. Call `deleteFlow()` and select the flow between bob and alice.
 
     sf.host.callAgreement(sf.agreements.cfa.address, sf.agreements.cfa.contract.methods.deleteFlow(daix.address, bob, alice, "0x").encodeABI(), { from: bob })
 
@@ -218,9 +224,11 @@ If we check their balances, we'll see that they now add up to 50 since the refun
 
 ```bash
 (await daix.balanceOf(bob)).toString() / 1e18
-> 47.316580926
+> 49.53125
 (await daix.balanceOf(alice)).toString() / 1e18
-> 2.683419074
+> 0.4745370370370365
 ```
 
-Great job! You just minted some Superfluid-enabled DAI, and created your first Flow.
+Great job! You minted some Superfluid-enabled DAI, and created your first Flow.
+
+Head to the next tutorial
