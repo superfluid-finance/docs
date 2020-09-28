@@ -49,7 +49,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     createNodeField({
       name: "github",
       node,
-      value: `${process.env.REPO_ROOT}/${rootFilePath}`
+      value: `https://github.com/superfluid-finance/superfluid-protocol-docs/tree/source/${rootFilePath}`
     });
   }
 };
