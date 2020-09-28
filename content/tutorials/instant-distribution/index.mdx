@@ -24,8 +24,7 @@ An **Instant Distribution Agreement (IDA)** is used to send funds as a one-time-
 
 ## Set Up
 
-> If you've already set up your Truffle console, you can skip this section
-
+> Skip this section if you've already set up your Truffle console with the Superfluid SDK.
 
 The Superfluid contracts have already been deployed on the Görli testnet for you. Here are the steps we'll take to get set up:
 
@@ -50,18 +49,18 @@ sudo apt-get install jq
 npm i -g truffle
 ```
 
-The contracts have already built and are located in the `/build` folder (note: the contract source code may not be included).
+The contracts have already been built and are located in the `/build` folder (note: the contract source code may not be included).
 
 ### Obtain Görli ETH
 
 Before we can get testnet ETH, we need a 12-word mnemonic to create some test wallets. If you don't have a mnemonic, we can use Truffle to create one.
 
     truffle develop
-
+    
     > Accounts:
     > (0) 0x627306090abab3a6e1400e9345bc60c78a8bef57
     > (1) 0xf17f52151ebef6c7334fad080c5704d77216b732
-
+    
     > Mnemonic: rigid cradle south ...
 
 Copy the first address and use one of the Görli testnet faucets listed at [https://goerli.net/](https://goerli.net/ "https://goerli.net/") to obtain some ETH
@@ -153,7 +152,6 @@ daix.upgrade(web3.utils.toWei("50", "ether"), { from: bob })
 ```
 
 Hurrah, we now have 50 Superfluid-enabled DAI or "DAIx". We are ready to start using Flows.
-
 
 ## Perform an Instant Distribution
 
