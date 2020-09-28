@@ -20,6 +20,28 @@ By the end of this tutorial you will learn how to:
 
 An **Instant Distribution Agreement (IDA)** is used to send funds as one-time-payments. It consists of a **Publishing** **Index** with `indexId` and one or more **subscriptions**.
 
+Great! Now you understand the second major concept of Superfluid. Here is an overview of the Instant Distribution Agreement contract we'll use in this tutorial. 
+
+```sol
+contract IInstantDistributionAgreementV1 is ISuperAgreement {
+  function createIndex(
+      ISuperToken token,
+      uint32 indexId,
+      bytes calldata ctx)
+          external
+          virtual
+          returns(bytes memory newCtx);
+          
+   function updateIndex(
+      ISuperToken token,
+      uint32 indexId,
+      uint128 indexValue,
+      bytes calldata ctx)
+          external
+          virtual
+          returns(bytes memory newCtx);
+```
+
 ## Set Up
 
 > Skip this section if you're already running Truffle console with the Superfluid SDK.
@@ -201,7 +223,7 @@ Since alice has twice as many units as dan, she will always receive double the a
 
 ### Subscribe to a Publishing Index
 
-In the previous step, we created two subscriptions for bob's Publishing Index. Now the recipients have the option to **approve subscription**. By doing so, their DAIx balance will be updated instantly when an Instant Distribution occurs. If they do not approve it, they will still receive the funds, but they may have to perform an additional transaction.
+In the previous step, we created two subscriptions for bob's Publishing Index. Now the recipients have the option to **approve subscription**. By doing so, their DAIx balance will be updated instantly when an Instant Distribution occurs. They will still receive the funds if they don't perform this step, but they may have to perform an additional transaction.
 
 Alice can approve subscription to bob's Publishing Index using `approveSubscription()`.
 
@@ -224,7 +246,7 @@ Let's check everyone's balances before we distribute DAIx.
 > 0
 ```
 
-Now we perform an Instant Distribution using `updateIndex()` with a value of **0.01** (units of ether).
+Now we will perform an Instant Distribution using `updateIndex()` with an `indexValue` of "0.01".
 
 ```bash
 sf.host.callAgreement(sf.agreements.ida.address, sf.agreements.ida.contract.methods.updateIndex(daix.address, 42, web3.utils.toWei("0.01", "ether"), "0x").encodeABI(), { from: bob })
@@ -233,11 +255,13 @@ sf.host.callAgreement(sf.agreements.ida.address, sf.agreements.ida.contract.meth
 Here is the breakdown:
 
 1. We again use `callAgreement()` and specify this is an IDA by passing `sf.agreements.ida.address`
-2. Using the method `updateIndex()`, we pass the arguments for `token` DAIx, `indexId` "42", and the desired `amount`.
+2. Using the method `updateIndex()`, we pass the arguments for `token` DAIx, `indexId` "42", and the desired `indexValue`.
 
-0\.01 DAI/Units (the new index value we called) _ 300 Total Units = 3 DAI being distributed
-Since alice owns 100 Units, she earns 100 / 300 _ 3 DAI = 1 DAI
-Since dan owns 200 Units, he earns 200 / 300 * 3 DAI = 2 DAI
+The "0.01" we passed represents 0.01 _DAIx per unit_. So since alice has 200 units, she receives `0.01 * 200 units = 2 DAIx`. Similarly, dan received 1 DAIx.
+
+We can get the total amount distributed by multiplying the
+
+the new index value we called) _ 300 Total Units = 3 DAI being distributed Since alice owns 100 Units, she earns 100 / 300 _ 3 DAI = 1 DAI Since dan owns 200 Units, he earns 200 / 300 * 3 DAI = 2 DAI
 
 Lets check the balances to confirm.
 
