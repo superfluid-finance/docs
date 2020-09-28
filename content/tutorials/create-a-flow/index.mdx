@@ -59,7 +59,7 @@ The contracts have already built and are located in the `/build` folder (note: t
 
 ### Obtain Görli ETH
 
-Before we can get testnet ETH, we need a 12-word mnemonic to create some test wallets. If you don't have a mnemonic, we can use Truffle to create one. 
+Before we can get testnet ETH, we need a 12-word mnemonic to create some test wallets. If you don't have a mnemonic, we can use Truffle to create one.
 
     truffle develop
     
@@ -69,7 +69,7 @@ Before we can get testnet ETH, we need a 12-word mnemonic to create some test wa
     
     > Mnemonic: rigid cradle south ...
 
-Copy the first address and use one of the Görli testnet faucets listed at [https://goerli.net/](https://goerli.net/ "https://goerli.net/") to obtain some ETH 
+Copy the first address and use one of the Görli testnet faucets listed at [https://goerli.net/](https://goerli.net/ "https://goerli.net/") to obtain some ETH
 
 Exit the truffle develop tool before continuing.
 
@@ -136,7 +136,7 @@ Now bob has some normal DAI.
 
 ![](/img/cmon.png)
 
-Before we can use DAI with Superfluid, we need to **upgrade** it to the Superfluid version "DAIx". 
+Before we can use DAI with Superfluid, we need to **upgrade** it to the Superfluid version "DAIx".
 
 This is done using a `SuperToken` wrapper contract. Generally, there is a single wrapper for each ERC20. Let's get the SuperToken wrapper for DAI.
 
@@ -173,7 +173,7 @@ sf.host.callAgreement(sf.agreements.cfa.address, sf.agreements.cfa.contract.meth
 
 Here is the breakdown for this command:
 
-1. A flow is a type of agreement, so we use `callAgreement()` 
+1. A flow is a type of agreement, so we use `callAgreement()`
 2. We specify we want to use a **Constant Flow Agreement** by selecting `cfa.address`
 3. Usiung the method `createFlow()`, we pass the arguments for the DAIx token, recipient, and the amount "385802469135802"
 
@@ -186,7 +186,7 @@ So what is this weird number "385802469135802"? This is the amount of DAIx to tr
 
 > HUH?! How is bob able to send 100 DAIx per month if he only has 50 Superfluid enabled DAI? The answer is that the sender isn't required to have the full amount to start a flow. The flow will continue to run as long as he has DAIx.
 
-#### 🎉 Excellent work, you just started your first Superfluid Flow! 
+#### 🎉 Excellent work, you just started your first Superfluid Flow!
 
 ![](/img/paid-every-second-meme.png)
 
@@ -203,7 +203,7 @@ The flow is now active, so let's check alice and bob's balances to see what chan
 
 > Note: These amounts will not add up to 50 DAIx, due to a refundable deposit.
 
-To get an idea of all Flow activity for bob, we can check his **net flow**. This will show us the sum of all inflow/outflows for his account. 
+To get an idea of all Flow activity for bob, we can check his **net flow**. This will show us the sum of all inflow/outflows for his account.
 
 We can use `getNetFlow()` to see the flow we just created.
 
@@ -212,7 +212,7 @@ We can use `getNetFlow()` to see the flow we just created.
 > -0.0000385802469135802 # units of wei
 ```
 
-Since he only has one flow to alice, his net flow is negative. If bob had multiple flows, this would be an easy way to get an overall picture of bob's activity. 
+Since he only has one flow to alice, his net flow is negative. If bob had multiple flows, this would be an easy way to get an overall picture of bob's activity.
 
 ### Stop the Flow
 
@@ -231,4 +231,14 @@ If we check their balances, we'll see that they now add up to 50 since the refun
 
 Great job! You minted some Superfluid-enabled DAI, and created your first Flow.
 
-Head to the next tutorial
+Next we'll learn about another agreement, called **Instant Distribution**
+
+<Card href="/tutorials/instant-distribution/" variant="primary" >
+
+# 🔀
+
+<div>
+
+## Perform an Instant Distribution
+
+Use the Javascript SDK to perform an Instant Distribution </div> </Card>
