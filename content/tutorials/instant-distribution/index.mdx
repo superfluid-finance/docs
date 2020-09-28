@@ -20,7 +20,7 @@ By the end of this tutorial you will learn how to:
 
 ## Introduction
 
-An **Instant Distribution Agreement (IDA)** is used to send funds as a one-time-payment.
+An **Instant Distribution Agreement (IDA)** is used to send funds as one-time-payments. It consists of an **Index** with `indexId` and one or more **subscriptions**. 
 
 ## Set Up
 
@@ -169,7 +169,9 @@ Here is the breakdown:
 
 1. An Instant Distribution is a type of agreement, so we use `callAgreement()`
 2. We specify we want an **Instant Distribution Agreement** by selecting `sf.agreements.ida.address`
-3. Using the method `createIndex()`, we pass the arguments for the DAIx token, and the index ID.
+3. Using the method `createIndex()`, we pass the arguments for the DAIx token, and the index ID "42".
+
+> A publisher can create unlimited `indexId`, limited to 32 bits.
 
 Alice is now given some "units" using `updateSubscription()`
 
