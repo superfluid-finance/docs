@@ -13,7 +13,7 @@
 
 > Documentation and tutorials for Superfluid
 
-### 🏠 [Homepage](https://docs.superfluid.io)
+### 🏠 [Homepage](https://docs.superfluid.finance)
 
 ## Install
 
@@ -66,4 +66,4 @@ This project is [MIT](https://github.com/superfluid-finance/superfluid-protocol-
 
 ---
 
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
+_This README was generated with ❤️  by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
