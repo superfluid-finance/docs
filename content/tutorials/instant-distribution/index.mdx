@@ -172,17 +172,21 @@ Here is the breakdown:
 
 > A publisher can create virtually unlimited indexes.
 
-Now that we have an index, lets specify it's behavior. In this tutorial, bob wants to send funds to alice and dan,
+Now that we have an index, lets specify it's behavior. In this tutorial, bob wants to send funds to both alice and dan. He also wants alice to receive twice the amount that dan receives.
 
-We do this by creating **subscriptions** for each recipient to receive funds.  
+![](/img/instant-distribution-42.png)
 
-Alice is now given some "units" using `updateSubscription()`
-
-> (??) "Units" behave the same as stock "shares"
+We do this by creating a **subscription** for each recipient. Let's go ahead and `updateSubscription()` for alice. 
 
 ```bash
 sf.host.callAgreement(sf.agreements.ida.address, sf.agreements.ida.contract.methods.updateSubscription(daix.address, 42, alice, 100, "0x").encodeABI(), { from: bob })
 ```
+
+Here is the breakdown:
+
+1. An Instant Distribution is a type of agreement, so we use `callAgreement()`
+2. We specify we want an **Instant Distribution Agreement** by selecting `sf.agreements.ida.address`
+3. Using the method `createIndex()`, we pass the arguments for the DAIx token, and the index ID "42".
 
 Dan is given some units too, however he did not `approveSubscription()`
 
