@@ -8,9 +8,152 @@ published: true
 showToc: true
 
 ---
-# Instant Distribution
+🚧 This tutorial is under construction. Please check back later.
 
-> If you want to reset ganache, now is a good time to do so! Bear in mind you'll need to redeploy the SF contracts if you do.
+By the end of this tutorial you will learn how to:
+
+\* Use the Superfluid javascript SDK
+
+\* Mint Superfluid DAI (DAIx)
+
+\* Perform an instant distribution
+
+## Introduction
+
+An **Instant Distribution Agreement (IDA)** is used to send funds as a one-time-payment.
+
+## Set Up
+
+> Skip this section if you've already set up your Truffle console with the Superfluid SDK.
+
+The Superfluid contracts have already been deployed on the Görli testnet for you. Here are the steps we'll take to get set up:
+
+1. Install the SDK
+2. Obtain Gorli ETH
+3. Open Truffle console
+4. Mint some Superfluid DAI (DAIx)
+
+### Install the SDK
+
+Download the example repo, which includes the Superfluid JavaScript software development kit.
+
+```bash
+git clone https://github.com/superfluid-finance/superfluid-protocol-preview/
+cd superfluid-protocol-preview/ethereum-contracts && yarn install
+```
+
+If you haven't already, install truffle and jq.
+
+```bash
+sudo apt-get install jq
+npm i -g truffle
+```
+
+The contracts have already been built and are located in the `/build` folder (note: the contract source code may not be included).
+
+### Obtain Görli ETH
+
+Before we can get testnet ETH, we need a 12-word mnemonic to create some test wallets. If you don't have a mnemonic, we can use Truffle to create one.
+
+    truffle develop
+    
+    > Accounts:
+    > (0) 0x627306090abab3a6e1400e9345bc60c78a8bef57
+    > (1) 0xf17f52151ebef6c7334fad080c5704d77216b732
+    
+    > Mnemonic: rigid cradle south ...
+
+Copy the first address and use one of the Görli testnet faucets listed at [https://goerli.net/](https://goerli.net/ "https://goerli.net/") to obtain some ETH
+
+Exit the truffle develop tool before continuing.
+
+Now create a file named `.env` and add your mnemonic and web3 provider for Görli network.
+
+    GOERLI_MNEMONIC=rigid cradle south ...
+    GOERLI_PROVIDER_URL=https://goerli.infura.io/v3/<API_KEY>
+
+### Open Truffle console
+
+We are ready to open the Truffle console.
+
+```bash
+npx truffle --network goerli console
+```
+
+Let's load the SDK and initialize it with the contracts.
+
+```bash
+SuperfluidSDK = require(".")
+
+sf = new SuperfluidSDK.Framework({version: "preview-20200928", web3Provider: web3.currentProvider })
+
+await sf.initialize()
+
+> Resolver at 0xDC200aA39Aa1D9B28CE458979602eb79046A1C9f
+> Resolving contracts with version preview-20200928
+> Superfluid 0xa401e671eCA4309BDdADA860d5B25C722118b5A1
+> ConstantFlowAgreementV1 0x33A225eAcDbB27B48503Dd9D1d028D5fa35754b0
+> InstantDistributionAgreementV1 0x1354e201Ca565773D29C573FE9278D04f03E62F5
+```
+
+> What just happened? The Superfluid SDK used the `resolver` contract deployed on Görli to fetch all the Superfluid contracts for the version "preview-20200928". Then the contract objects were created using the Truffle artifacts in the `/build` folder.
+
+Now we'll load a web3 utility library and create an alias for two of our wallet addresses.
+
+```bash
+const { toWad, toBN, fromWad, wad4human } = require("@decentral.ee/web3-helpers")
+
+bob = accounts[0]
+alice = accounts[1]
+```
+
+### Mint some DAIx (Superfluid DAI)
+
+For this tutorial, we'll be using an ERC20 token "fake DAI" to represent DAI. Let's get the address for this token using the resolver, and create a Truffle contract object so we can interact with it.
+
+```bash
+daiAddress = await sf.resolver.get("tokens.fDAI")
+dai = await sf.contracts.TestToken.at(daiAddress)
+```
+
+Let's mint bob 100 DAI (minting is open for anyone to call).
+
+```bash
+dai.mint(bob, web3.utils.toWei("100", "ether"), { from: bob })
+
+# Check bob's balance
+(async () => (wad4human(await dai.balanceOf(bob))))()
+> '100.00000'
+```
+
+Now bob has some normal DAI.
+
+![](/img/cmon.png)
+
+Before we can use DAI with Superfluid, we need to **upgrade** it to the Superfluid version "DAIx".
+
+This is done using a `SuperToken` wrapper contract. Generally, there is a single wrapper for each ERC20. Let's get the SuperToken wrapper for DAI.
+
+```bash
+daixWrapper = await sf.getERC20Wrapper(dai)
+daix = await sf.contracts.ISuperToken.at(daixWrapper.wrapperAddress)
+```
+
+Now we can upgrade 50 of bob's DAI by calling `approve()` followed by `upgrade()`
+
+```bash
+dai.approve(daix.address, "1"+"0".repeat(42), { from: bob })
+
+daix.upgrade(web3.utils.toWei("50", "ether"), { from: bob })
+
+# Check DAIx balance
+(async () => (wad4human(await daix.balanceOf(bob))))()
+> '50.00000'
+```
+
+Hurrah, we now have 50 Superfluid-enabled DAI or "DAIx". We are ready to start using Flows.
+
+## Perform an Instant Distribution
 
 The first step to creating an Instant Distribution Agreement (IDA) is to create a **publishing index**. Once created, the publishing index will be used by bob to send tokens at some point in the future.
 
@@ -59,9 +202,9 @@ New we will actually perform an Instant Distribution. We use `updateIndex` with 
 sf.host.callAgreement(sf.agreements.ida.address, sf.agreements.ida.contract.methods.updateIndex(daix.address, 42, web3.utils.toWei("0.01", "ether"), "0x").encodeABI(), { from: bob })
 ```
 
-0.01 DAI/Units (the new index value we called) _ 300 Total Units = 3 DAI being distributed
+0\.01 DAI/Units (the new index value we called) _ 300 Total Units = 3 DAI being distributed
 Since alice owns 100 Units, she earns 100 / 300 _ 3 DAI = 1 DAI
-Since dan owns 200 Units, he earns 200 / 300 \* 3 DAI = 2 DAI
+Since dan owns 200 Units, he earns 200 / 300 * 3 DAI = 2 DAI
 
 Lets check the balances to confirm.
 
@@ -78,7 +221,7 @@ Dan has not received his DAI in the context of the token `balanceOf`, since he h
 
 > Alternatively, whenever bob updates the index, the SF contracts will see that there is an unclaimed distribution, and will perform the distribution automatically as a side-effect during the index update.
 
-To perform another distribution we must increase the index amount. To send another 1 DAI to alice and 1 DAI to dan we must \_increment the index by 0.01** for a **total of 0.02\_\_
+To perform another distribution we must increase the index amount. To send another 1 DAI to alice and 1 DAI to dan we must _increment the index by 0.01** for a **total of 0.02__
 
 ```bash
 sf.host.callAgreement(sf.agreements.ida.address, sf.agreements.ida.contract.methods.updateIndex(daix.address, 42, web3.utils.toWei("0.02", "ether"), "0x").encodeABI(), { from: bob })
