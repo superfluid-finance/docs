@@ -172,26 +172,25 @@ Here is the breakdown:
 
 > A publisher can create virtually unlimited indexes.
 
-Now that we have an index, lets specify it's behavior. In this tutorial, bob wants to send funds to both alice and dan. He also wants alice to receive twice the amount that dan receives.
+Now that we have an index, lets specify it's behavior. In this tutorial, bob wants to send funds to both alice and dan. He also would like alice to receive twice the amount that dan receives, whenever a distribution occurs.
 
 ![](/img/instant-distribution-42.png)
 
-We do this by creating a **subscription** for each recipient. Let's go ahead and `updateSubscription()` for alice.
+We do this by creating a **subscription** for each recipient. Let's go ahead and call `updateSubscription()` for alice.
 
 ```bash
-sf.host.callAgreement(sf.agreements.ida.address, sf.agreements.ida.contract.methods.updateSubscription(daix.address, 42, alice, 100, "0x").encodeABI(), { from: bob })
+sf.host.callAgreement(sf.agreements.ida.address, sf.agreements.ida.contract.methods.updateSubscription(daix.address, 42, alice, 200, "0x").encodeABI(), { from: bob })
 ```
 
 Here is the breakdown:
 
-1. We again use `callAgreement()`
-2. We specify we want an **Instant Distribution Agreement** by selecting `sf.agreements.ida.address`
-3. Using the method `updateSubscription()`, we pass the arguments for the DAIx token, `indexId` "42".
+1. We again use `callAgreement()` and specify this is an IDA by using `sf.agreements.ida.address`
+2. Using the method `updateSubscription()`, we pass the arguments for the DAIx token, `indexId` "42", `recipient` alice, and an amount of `units` "200".
 
-Dan is given some units too, however he did not `approveSubscription()`
+Let's do the same for dan, but for "100" `units`. 
 
 ```bash
-sf.host.callAgreement(sf.agreements.ida.address, sf.agreements.ida.contract.methods.updateSubscription(daix.address, 42, dan, 200, "0x").encodeABI(), { from: bob })
+sf.host.callAgreement(sf.agreements.ida.address, sf.agreements.ida.contract.methods.updateSubscription(daix.address, 42, dan, 100, "0x").encodeABI(), { from: bob })
 ```
 
 Now alice will subscribe using `approveSubscription()`.
