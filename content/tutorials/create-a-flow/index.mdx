@@ -21,7 +21,7 @@ A **Constant Flow Agreement** is a transfer of value from a `sender` to a `recei
 Great! Now that you understand the first major concept of Superfluid, lets get to the fun part. Here is an overview of the Constant Flow Agreement contract. Did someone say _CRUD_?
 
 ```sol
-interface IConstantFlowAgreementV1 {
+contract IConstantFlowAgreementV1 is ISuperAgreement {
   function createFlow( ...
   function updateFlow( ...
   function deleteFlow( ...
@@ -62,11 +62,11 @@ The contracts have already been built and are located in the `/build` folder (no
 Before we can get testnet ETH, we need a 12-word mnemonic to create some test wallets. If you don't have a mnemonic, we can use Truffle to create one.
 
     truffle develop
-    
+
     > Accounts:
     > (0) 0x627306090abab3a6e1400e9345bc60c78a8bef57
     > (1) 0xf17f52151ebef6c7334fad080c5704d77216b732
-    
+
     > Mnemonic: rigid cradle south ...
 
 Copy the first address and use one of the Görli testnet faucets listed at [https://goerli.net/](https://goerli.net/ "https://goerli.net/") to obtain some ETH.
