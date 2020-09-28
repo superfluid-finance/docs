@@ -224,11 +224,16 @@ Let's check everyone's balances before we distribute DAIx.
 > 0
 ```
 
-To perform an Instant Distribution we use `updateIndex()` with a value of **0.01 ETH**. The link
+Now we perform an Instant Distribution using `updateIndex()` with a value of **0.01** (units of ether).
 
 ```bash
 sf.host.callAgreement(sf.agreements.ida.address, sf.agreements.ida.contract.methods.updateIndex(daix.address, 42, web3.utils.toWei("0.01", "ether"), "0x").encodeABI(), { from: bob })
 ```
+
+Here is the breakdown:
+
+1. We again use `callAgreement()` and specify this is an IDA by passing `sf.agreements.ida.address`
+2. Using the method `updateIndex()`, we pass the arguments for `token` DAIx, `indexId` "42", and the desired `amount`.
 
 0\.01 DAI/Units (the new index value we called) _ 300 Total Units = 3 DAI being distributed
 Since alice owns 100 Units, she earns 100 / 300 _ 3 DAI = 1 DAI
