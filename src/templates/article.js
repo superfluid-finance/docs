@@ -35,24 +35,11 @@ const ArticleTemplate = ({ data }) => {
     )
   );
 
-  const image = `https://og-image-react-egghead.now.sh/instructor-guide/${encodeURI(
-    article.frontmatter.title
-  ).replace("?", "")}${
-    article.frontmatter.shareImage
-      ? `?bgImage=${encodeURI(article.frontmatter.shareImage)}&y=20200407`
-      : "?y=20200407"
-  }`;
-
   const description = article.frontmatter.description || article.excerpt;
 
   return (
     <Layout
       title={article.frontmatter.title}
-      image={
-        article.frontmatter.title
-          ? image
-          : `https://howtoegghead.com${defaultShareCard}`
-      }
       description={description}
       github={github}
       timeToRead={article.timeToRead}
