@@ -279,10 +279,12 @@ Every account can only subscribe to a total of 256 Publishing Indexes. This is w
 
 The next time bob calls `updateIndex()`, the IDA contract will see there is an "unclaimed" distribution, and will perform the distribution automatically as a _side-effect_.
 
-However, dan is eager to receive his DAIx, and wants it immediately. Let's have dan use the `claim()` function to get his well-earned DAIx.
+However, dan is eager to receive his DAIx, and wants it immediately. Let's have dan use the `claim()` function to get his well-earned DAIx. He should also `approveSubscription()` so he won't need to perform this step again.
 
 ```bash
 sf.host.callAgreement(sf.agreements.ida.address, sf.agreements.ida.contract.methods.claim(daix.address, bob, 42, "0x").encodeABI(), { from: dan })
+
+sf.host.callAgreement(sf.agreements.ida.address, sf.agreements.ida.contract.methods.approveSubscription(daix.address, bob, 42, "0x").encodeABI(), { from: dan })
 ```
 
 Now if we check dan's balance, we'll see the distribution was successful.
@@ -294,14 +296,13 @@ Now if we check dan's balance, we'll see the distribution was successful.
 
 ### Making additional Distributions
 
-To perform another distribution we must increase the index amount. To send another 1 DAI to alice and 1 DAI to dan we must _increment the index by 0.01** for a **total of 0.02__
+To perform additional distributions, we can increase the `indexValue` amount. To send another 2 DAI to alice and 1 DAI to dan we must increment the index by another "0.01" for a total of 0.02 DAIx per `units`
 
 ```bash
 sf.host.callAgreement(sf.agreements.ida.address, sf.agreements.ida.contract.methods.updateIndex(daix.address, 42, web3.utils.toWei("0.02", "ether"), "0x").encodeABI(), { from: bob })
 ```
 
-The total amount distributed to dan is now 100 units _ 0.02 = 2 DAI
-The total amount distributed to dan is now 200 units _ 0.02 = 4 DAI
+The `indexValue` can only ever increase, since funds can only flow from the _publisher to the subscriber(s)._
 
 ```bash
 (await daix.balanceOf(alice)).toString() / 1e18
@@ -309,3 +310,6 @@ The total amount distributed to dan is now 200 units _ 0.02 = 4 DAI
 (await daix.balanceOf(dan)).toString() / 1e18
 > 0
 ```
+
+The total amount distributed to dan is now 100 units _ 0.02 = 2 DAI
+The total amount distributed to dan is now 200 units _ 0.02 = 4 DAI
