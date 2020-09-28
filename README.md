@@ -46,7 +46,7 @@ yarn deploy
 
 👤 **Superfluid**
 
-- Website: https://superfluid.finance/
+- Website: https://www.superfluid.finance/
   - Twitter: [@Superfluid_HQ](https://twitter.com/Superfluid_HQ)
   - GitHub: [@superfluid-finance](https://github.com/superfluid-finance)
 
