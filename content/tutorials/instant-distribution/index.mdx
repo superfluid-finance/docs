@@ -20,7 +20,7 @@ By the end of this tutorial you will learn how to:
 
 An **Instant Distribution Agreement (IDA)** is used to send funds as one-time-payments. It consists of a **Publishing** **Index** with `indexId` and one or more **subscriptions**.
 
-Great! Now you understand the second major concept of Superfluid. Here is an overview of the Instant Distribution Agreement contract we'll use in this tutorial. 
+Great! Now you understand the second major concept of Superfluid. Here is an overview of the Instant Distribution Agreement contract we'll use in this tutorial.
 
 ```sol
 contract IInstantDistributionAgreementV1 is ISuperAgreement {
@@ -44,7 +44,7 @@ contract IInstantDistributionAgreementV1 is ISuperAgreement {
 
 ## Set Up
 
-> Skip this section if you're already running Truffle console with the Superfluid SDK.
+> Skip this section if you're already running Truffle console with the Superfluid SDK. You may need to deposit more Görli ETH into your accounts.
 
 The Superfluid contracts have already been deployed on the Görli testnet for you. Here are the steps we'll take to get set up:
 
@@ -80,10 +80,11 @@ Before we can get testnet ETH, we need a 12-word mnemonic to create some test wa
     > Accounts:
     > (0) 0x627306090abab3a6e1400e9345bc60c78a8bef57
     > (1) 0xf17f52151ebef6c7334fad080c5704d77216b732
+    > (3) 0x9ff32c1748bc935f02b43d66751d290927de49e4
     
     > Mnemonic: rigid cradle south ...
 
-Copy the first address and use one of the Görli testnet faucets listed at [https://goerli.net/](https://goerli.net/ "https://goerli.net/") to obtain some ETH.
+Copy the first 3 address and use one of the Görli testnet faucets listed at [https://goerli.net/](https://goerli.net/ "https://goerli.net/") to obtain some ETH for each account.
 
 Exit the truffle develop tool before continuing.
 
@@ -257,26 +258,41 @@ Here is the breakdown:
 1. We again use `callAgreement()` and specify this is an IDA by passing `sf.agreements.ida.address`
 2. Using the method `updateIndex()`, we pass the arguments for `token` DAIx, `indexId` "42", and the desired `indexValue`.
 
-The "0.01" we passed represents 0.01 _DAIx per unit_. So since alice has 200 units, she receives `0.01 * 200 units = 2 DAIx`. Similarly, dan received 1 DAIx.
+The "0.01" `indexValue` we passed represents 0.01 _DAIx per unit_. Since alice has 200 `units`, she receives `0.01 * 200 units = 2 DAIx`. Similarly, dan received 1 DAIx.
 
-We can get the total amount distributed by multiplying the
-
-the new index value we called) _ 300 Total Units = 3 DAI being distributed Since alice owns 100 Units, she earns 100 / 300 _ 3 DAI = 1 DAI Since dan owns 200 Units, he earns 200 / 300 * 3 DAI = 2 DAI
+We can always get the total amount distributed by multiplying the `indexValue` by the total `units` for a Publishing Index.
 
 Lets check the balances to confirm.
 
 ```bash
 (await daix.balanceOf(alice)).toString() / 1e18
-> 1
+> 2
 (await daix.balanceOf(dan)).toString() / 1e18
 > 0
 ```
 
-Dan has not received his DAI in the context of the token `balanceOf`, since he has not called `approveSubscription` for this index. He _does own 2 DAI_ but the SF contracts did not actually distribute it to him.
+Great! Alice received her portion of the distribution immediately. However, dan has not received his yet, since he did not call `approveSubscription()` ahead of time.
 
-> SF Contracts Tip: Every account can only subscribe to a total of 256 indexes. This is why the SF contracts cannot automatically distribute the DAI to Dan. It is a prevention mechanism to keep spammers from "filling" up a users 256 subscriptions.
+### Claim "unclaimed" tokens
 
-> Alternatively, whenever bob updates the index, the SF contracts will see that there is an unclaimed distribution, and will perform the distribution automatically as a side-effect during the index update.
+Every account can only subscribe to a total of 256 Publishing Indexes. This is why the SF contracts cannot automatically distribute the DAIx to Dan. It is a prevention mechanism to keep spammers from "filling" up all 256 subscriptions.
+
+The next time bob calls `updateIndex()`, the IDA contract will see there is an "unclaimed" distribution, and will perform the distribution automatically as a _side-effect_.
+
+However, dan is eager to receive his DAIx, and wants it immediately. Let's have dan use the `claim()` function to get his well-earned DAIx.
+
+```bash
+sf.host.callAgreement(sf.agreements.ida.address, sf.agreements.ida.contract.methods.claim(daix.address, bob, 42, "0x").encodeABI(), { from: dan })
+```
+
+Now if we check dan's balance, we'll see the distribution was successful.
+
+```bash
+(await daix.balanceOf(dan)).toString() / 1e18
+> 1
+```
+
+### Making additional Distributions
 
 To perform another distribution we must increase the index amount. To send another 1 DAI to alice and 1 DAI to dan we must _increment the index by 0.01** for a **total of 0.02__
 
@@ -287,36 +303,9 @@ sf.host.callAgreement(sf.agreements.ida.address, sf.agreements.ida.contract.meth
 The total amount distributed to dan is now 100 units _ 0.02 = 2 DAI
 The total amount distributed to dan is now 200 units _ 0.02 = 4 DAI
 
-TODO: simplify the example to not have this weird dan scenario. It can be added later.
-
-Lets check the balances to confirm.
-
 ```bash
 (await daix.balanceOf(alice)).toString() / 1e18
 > 2
 (await daix.balanceOf(dan)).toString() / 1e18
-> 4
+> 0
 ```
-
-### Create an App
-
-Now create an example app. "cfa" is constant flow agreement
-
-```bash
-mfa = await MultiFlowsApp.new(sf.agreements.cfa.address, sf.host.address)
-
-# Create a flow
-sf.host.callAppAction(mfa.address, mfa.contract.methods.createMultiFlows(daix.wrapperAddress, [alice, carol], [6,4], "0x").encodeABI(), { from: bob })
-```
-
-The app is now configured, so when Bob sends a constant flow to MFA app, it will split the flow between alice and carol, with a ratio of 6:4
-
-```bash
-sf.host.callAgreement(sf.agreements.cfa.address, sf.agreements.cfa.contract.methods.createFlow(daix.wrapperAddress, mfa.address, "385802469135802", "0x").encodeABI(), { from: bob })
-```
-
-TBC
-
-By default Ganache doesn't mint blocks, so we need to use a convenience command to progress "-b" blocks automatically
-
-> -b, --blockTime Block time in seconds for automatic mining. Will instantly mine a new block for every transaction if option omitted. Avoid using unless your test cases require a specific
