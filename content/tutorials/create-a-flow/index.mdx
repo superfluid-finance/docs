@@ -69,7 +69,7 @@ Before we can get testnet ETH, we need a 12-word mnemonic to create some test wa
 
     > Mnemonic: rigid cradle south ...
 
-Copy the first address and use one of the Görli testnet faucets listed at [https://goerli.net/](https://goerli.net/ "https://goerli.net/") to obtain some ETH
+Copy the first address and use one of the Görli testnet faucets listed at [https://goerli.net/](https://goerli.net/ "https://goerli.net/") to obtain some ETH.
 
 Exit the truffle develop tool before continuing.
 
@@ -157,7 +157,7 @@ daix.upgrade(web3.utils.toWei("50", "ether"), { from: bob })
 > '50.00000'
 ```
 
-Hurrah, we now have 50 Superfluid-enabled DAI or "DAIx". We are ready to start using Flows.
+Hurrah, we now have 50 Superfluid-enabled DAI or "DAIx". We are ready to start using Superfluid.
 
 ## Create a Constant Flow Agreement "CFA"
 
@@ -171,11 +171,11 @@ To achieve this, we will create a **Constant Flow Agreement**. In this agreement
 sf.host.callAgreement(sf.agreements.cfa.address, sf.agreements.cfa.contract.methods.createFlow(daix.address, alice, "385802469135802", "0x").encodeABI(), { from: bob })
 ```
 
-Here is the breakdown for this command:
+Here is the breakdown:
 
 1. A flow is a type of agreement, so we use `callAgreement()`
-2. We specify we want to use a **Constant Flow Agreement** by selecting `cfa.address`
-3. Usiung the method `createFlow()`, we pass the arguments for the DAIx token, recipient, and the amount "385802469135802"
+2. We specify we want a **Constant Flow Agreement** by selecting `sf.agreements.cfa.address`
+3. Using the method `createFlow()`, we pass the arguments for the DAIx token, recipient, and the amount "385802469135802"
 
 So what is this weird number "385802469135802"? This is the amount of DAIx to transfer per second, which is equivalent to 100 DAIx per month.
 
