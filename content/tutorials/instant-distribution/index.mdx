@@ -18,7 +18,7 @@ By the end of this tutorial you will learn how to:
 
 An **Instant Distribution Agreement (IDA)** is used to send funds as one-time-payments. It consists of a **Publishing Index** with `indexId`, an `indexValue`, and one or more **subscribers**.
 
-Great! Now you understand the second major concept of Superfluid. Here is an overview of the Instant Distribution Agreement contract we'll use in this tutorial.
+This is the second major concept of Superfluid. Here is an overview of the Instant Distribution Agreement contract we'll use in this tutorial.
 
 ```sol
 contract IInstantDistributionAgreementV1 is ISuperAgreement {
@@ -177,11 +177,11 @@ Hurrah, we now have 50 Superfluid-enabled DAI or "DAIx". We are ready to start u
 
 > If you have any active flows, please stop them before continuing.
 
-The first step to creating an Instant Distribution Agreement (IDA) is to create a **publishing index**. Once created, the publishing index can be used by bob to send tokens at any point in the future.
+The first step to creating an Instant Distribution Agreement (IDA) is to create a **Publishing Index**. Once created, the Publishing Index can be used by bob to send tokens at any point in the future.
 
 ### Create a Publishing Index
 
-Create a new index from bob using `createIndex()`. Bob is the _publisher_ since he is creating the Publishing Index.
+Create a new Publishing Index from bob using `createIndex()`. Bob is the _publisher_ in this scenario.
 
 ```bash
 sf.host.callAgreement(sf.agreements.ida.address, sf.agreements.ida.contract.methods.createIndex(daix.address, 42, "0x").encodeABI(), { from: bob })
@@ -193,7 +193,7 @@ Here is the breakdown:
 2. We specify we want an **Instant Distribution Agreement** by selecting `sf.agreements.ida.address`
 3. Using the method `createIndex()`, we pass the arguments for `token` DAIx and `indexId` "42".
 
-> A publisher can create virtually unlimited indexes.
+> A publisher can create virtually unlimited Publishing Indexes.
 
 Now that we have a Publishing Index, lets specify it's behavior. In this tutorial, bob wants to send funds to both alice and dan. He also would like alice to receive twice the amount that dan receives, whenever a distribution occurs.
 
