@@ -6,8 +6,8 @@ categories:
 - tutorial
 published: true
 showToc: true
-
 ---
+
 By the end of this tutorial you will learn how to:
 
 * Use the Superfluid javascript SDK
@@ -209,8 +209,8 @@ To get an idea of all Flow activity for bob, we can check his **net flow**. This
 We can use `getNetFlow()` to see the flow we just created.
 
 ```bash
-(await sf.agreements.cfa.getNetFlow(daix.address, bob)).toString() / 10e18
-> -0.0000385802469135802 # units of wei
+(await sf.agreements.cfa.getNetFlow(daix.address, bob)).toString() / 1e18
+> -0.000385802469135802 # units of wei
 ```
 
 Since he only has one flow to alice, his net flow is negative. If bob had multiple flows, this would be an easy way to get an overall picture of bob's activity.
