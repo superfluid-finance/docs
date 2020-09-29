@@ -9,7 +9,9 @@ published: true
 ---
 # Introduction
 
-The Superfluid Protocol is a framework that realizes real-time finance. The first implementation of the framework is on Ethereum, it consists of these key components:
+Superfluid is a smart contract framework on L1 Ethereum, enabling you to move assets on-chain following predefined rules called agreements. With a single on-chain tx, the money will flow from your balance to the receiver in real time! No other tx required. Feels like magic ✨
+
+![Sparkles](https://abs-0.twimg.com/emoji/v2/svg/2728.svg)The first implementation of the framework consists of these key components:
 
 * _Super Agreement Framework_: a set of white-listed _super agreements_ contracts as building blocks.
 * _Super App Framework_: a development framework for building real-time finance apps.
@@ -17,6 +19,33 @@ The Superfluid Protocol is a framework that realizes real-time finance. The firs
 * _Batch Call & Meta Tx_: for users (contracts or EOA) to interact with the system in batch on-chain, or off-chain through meta transactions.
 * _Governance_: a external contract for managing protocol parameters and contract upgrades.
 * _Solvency Agents_: an off-chain network of agents ensuring the solvency of the system.
+
+# Cheat Sheet
+
+One-liners to keep you moving along. Use these after you've set up the Superfluid SDK in Truffle console (see [tutorial](/tutorials/create-a-flow) for instructions).
+
+### Balances
+
+**DAI and DAIx**
+
+    (await dai.balanceOf(bob)).toString() / 1e18
+    (await daix.balanceOf(bob)).toString() / 1e18
+
+### Flows
+
+**`createFlow()` **
+
+    sf.host.callAgreement(sf.agreements.cfa.address, sf.agreements.cfa.contract.methods.createFlow(daix.address, alice, "385802469135802", "0x").encodeABI(), { from: bob })
+
+**`getNetFlow()`**
+
+    (await sf.agreements.cfa.getNetFlow(daix.address, bob)).toString() / 1e18
+
+**`deleteFlow()`**
+
+        sf.host.callAgreement(sf.agreements.cfa.address, sf.agreements.cfa.contract.methods.deleteFlow(daix.address, bob, alice, "0x").encodeABI(), { from: bob })
+
+### Instant Distributions
 
 # Agreements
 
