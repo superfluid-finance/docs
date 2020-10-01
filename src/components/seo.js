@@ -78,18 +78,6 @@ function SEO({
               },
               {
                 name: "twitter:label1",
-                content: "Time to read"
-              },
-              {
-                name: "twitter:data1",
-                content: `${
-                  timeToRead
-                    ? `${timeToRead} ${timeToRead === 1 ? "minute" : "minutes"}`
-                    : "< 1 minute"
-                }`
-              },
-              {
-                name: "twitter:label2",
                 content: `${
                   categories && categories.length > 1
                     ? "Categories"
@@ -97,7 +85,7 @@ function SEO({
                 }`
               },
               {
-                name: "twitter:data2",
+                name: "twitter:data1",
                 content: `${
                   categories
                     ? categories.map(
@@ -106,7 +94,7 @@ function SEO({
                             category.replace("-", " ")
                           )}`
                       )
-                    : "egghead.io"
+                    : "docs.superfluid.finance"
                 }`
               }
             ]
