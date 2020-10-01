@@ -69,7 +69,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "NODE_ENV=development gatsby develop -H 0.0.0.0",
+    "develop": "NODE_ENV=development gatsby develop -H 0.0.0.0 -p 8080",
     "start": "npm run develop",
     "format": "prettier --write \"src/**/*.js\"",
     "test": "echo \"Error: no test specified\" && exit 1",
