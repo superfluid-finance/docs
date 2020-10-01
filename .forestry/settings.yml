@@ -22,6 +22,9 @@ sections:
   create: all
   match: "**/*"
   new_doc_ext: mdx
+- type: document
+  path: package.json
+  label: Scripts
 upload_dir: static/img
 public_path: "/img"
 front_matter_path: ''
