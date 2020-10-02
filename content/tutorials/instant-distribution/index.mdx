@@ -1,6 +1,6 @@
 ---
 date: 2020-09-28
-title: "\U0001F4B0 Perform an Instant Distribution"
+title: "💰 Perform an Instant Distribution"
 description: Use the Javascript SDK to perform an Instant Distribution
 categories:
 - tutorial
@@ -29,7 +29,7 @@ contract IInstantDistributionAgreementV1 is ISuperAgreement {
           external
           virtual
           returns(bytes memory newCtx);
-          
+
    function updateIndex(
       ISuperToken token,
       uint32 indexId,
@@ -74,12 +74,12 @@ The contracts have already been built and are located in the `/build` folder (no
 Before we can get testnet ETH, we need a 12-word mnemonic to create some test wallets. If you don't have a mnemonic, we can use Truffle to create one.
 
     truffle develop
-    
+
     > Accounts:
     > (0) 0x627306090abab3a6e1400e9345bc60c78a8bef57
     > (1) 0xf17f52151ebef6c7334fad080c5704d77216b732
     > (3) 0x9ff32c1748bc935f02b43d66751d290927de49e4
-    
+
     > Mnemonic: rigid cradle south ...
 
 Copy the first 3 address and use one of the Görli testnet faucets listed at [https://goerli.net/](https://goerli.net/ "https://goerli.net/") to obtain some ETH for each account.

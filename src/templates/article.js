@@ -157,7 +157,6 @@ export const pageQuery = graphql`
       }
       frontmatter {
         title
-        shareImage
         categories
         showToc
       }
