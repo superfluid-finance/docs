@@ -95,18 +95,18 @@ Let's load the SDK and initialize it with the contracts.
 ```bash
 SuperfluidSDK = require(".")
 
-sf = new SuperfluidSDK.Framework({version: "preview-20200928", web3Provider: web3.currentProvider })
+sf = new SuperfluidSDK.Framework({version: "0.1.2-preview-20201014", web3Provider: web3.currentProvider })
 
 await sf.initialize()
 
 > Resolver at 0xDC200aA39Aa1D9B28CE458979602eb79046A1C9f
-> Resolving contracts with version preview-20200928
+> Resolving contracts with version 0.1.2-preview-20201014
 > Superfluid 0xa401e671eCA4309BDdADA860d5B25C722118b5A1
 > ConstantFlowAgreementV1 0x33A225eAcDbB27B48503Dd9D1d028D5fa35754b0
 > InstantDistributionAgreementV1 0x1354e201Ca565773D29C573FE9278D04f03E62F5
 ```
 
-> What just happened? The Superfluid SDK used the `resolver` contract deployed on Görli to fetch all the Superfluid contracts for the version "preview-20200928". Then the contract objects were created using the Truffle artifacts in the `/build` folder.
+> What just happened? The Superfluid SDK used the `resolver` contract deployed on Görli to fetch all the Superfluid contracts for the version "0.1.2-preview-20201014". Then the contract objects were created using the Truffle artifacts in the `/build` folder.
 
 Now we'll load a web3 utility library and create an alias for two of our wallet addresses.
 
