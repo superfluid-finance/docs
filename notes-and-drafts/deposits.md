@@ -1,4 +1,4 @@
-### Flow deposits
+# Flow deposits
 
 When bob created a flow, he also made a deposit. This explains why when we used `balanceOf` to calculate the balances of alice and bob, they did not add to 50 DAI. We can see bob's "real time balance", which also includes the deposit using these commands.
 
@@ -15,3 +15,4 @@ So how much did bob `deposit` to create the flow? We can query this directly, us
 ```
 
 This amount will be returned when bob stops the flow. It serves as insurance in case bob starts running out of money. When this happens, the off-chain components earn the deposit as payment for submitting an on-chain transaction to stop the flow.
+

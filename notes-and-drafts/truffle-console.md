@@ -1,6 +1,6 @@
-## Getting started
+# Getting started
 
-Get some Görli ETH using the faucets here https://goerli.net/
+Get some Görli ETH using the faucets here [https://goerli.net/](https://goerli.net/)
 
 ### Install SF tools & contracts
 
@@ -28,7 +28,7 @@ npx truffle --network ganache exec scripts/deploy-framework.js
 
 Find the`Resolver address` from the previous step
 
-```
+```text
 TestResolver.new: started
 TestResolver.new: done, gas used 163231, gas price 20 Gwei
 Resolver address 0xF935C0947D30a2dc45B8bd99376fED0b6dC90A26
@@ -36,7 +36,7 @@ Resolver address 0xF935C0947D30a2dc45B8bd99376fED0b6dC90A26
 
 Then export it as `TEST_RESOLVER_ADDRESS` in the same shell:
 
-```
+```text
 export TEST_RESOLVER_ADDRESS=0xF935C0947D30a2dc45B8bd99376fED0b6dC90A26
 ```
 
@@ -52,7 +52,6 @@ Deploy an example token to use with the Superfluid contracts. This also register
 npx truffle exec --network ganache scripts/deploy-test-token.js : fDAI
 # Take note of underlying token fDAI (fake DAI)
 > Token fDAI address 0xdb5d87471bC53cEF0B6ea1727ec99782A6aF59ff
-
 ```
 
 Create token wrapper for fDAI
@@ -137,7 +136,7 @@ Now create the Truffle contract object for the SF wrapped fDAI token- daix aka S
 daix = await sf.contracts.ISuperToken.at(daixWrapper.wrapperAddress)
 ```
 
-Mint some DAI (really fDAI) for bob & check that it worked (minting is open for anyone to call in the test ERC20 contract)
+Mint some DAI \(really fDAI\) for bob & check that it worked \(minting is open for anyone to call in the test ERC20 contract\)
 
 ```bash
 dai.mint(bob, web3.utils.toWei("100", "ether"), { from: bob })
@@ -186,7 +185,7 @@ Now, since automining is turned on, the flow should be running automatically. al
 
 ### Inspect the flow
 
-Check the net flow for bob. The `net flow` is the current sum of all inflow/outflows for an account. We will see the same "385802469135802" we used (in units of wei) to create the flow for 100 DAI per month.
+Check the net flow for bob. The `net flow` is the current sum of all inflow/outflows for an account. We will see the same "385802469135802" we used \(in units of wei\) to create the flow for 100 DAI per month.
 
 ```bash
 (await sf.agreements.cfa.getNetFlow(daix.address, bob)).toString() / 10e18
@@ -213,7 +212,7 @@ This amount will be returned when bob stops the flow. It serves as insurance in 
 
 Now lets stop the flow by deleting it.
 
-```
+```text
 sf.host.callAgreement(sf.agreements.cfa.address, sf.agreements.cfa.contract.methods.deleteFlow(daix.address, bob, alice, "0x").encodeABI(), { from: bob })
 ```
 
@@ -227,7 +226,7 @@ rtb = await daix.realtimeBalanceOf(bob, parseInt((Date.now())/1000))
 > 0
 ```
 
-Since the flow is stopped, the deposit has been returned, so bob's `rtb` is 0. If we check `balanceOf` and add them, we should get back the original sum of 50 DAI (and some truncation error "dust")
+Since the flow is stopped, the deposit has been returned, so bob's `rtb` is 0. If we check `balanceOf` and add them, we should get back the original sum of 50 DAI \(and some truncation error "dust"\)
 
 ```bash
 a=(await daix.balanceOf(bob)).toString() / 1e18
@@ -248,13 +247,13 @@ sf.host.callAgreement(sf.agreements.cfa.address, sf.agreements.cfa.contract.meth
 
 Check the flow rate to ensure its running
 
-```cd
+```text
 (await sf.agreements.cfa.getFlow(daix.address, bob, alice)).toString()
 ```
 
 TODO: add docs for updating flow. Here is the .sol interface
 
-```sol
+```text
 function updateFlow(
         ISuperToken token,
         address receiver,
@@ -266,11 +265,11 @@ function updateFlow(
         returns(bytes memory newCtx);
 ```
 
-# Instant Distribution
+## Instant Distribution
 
 > If you want to reset ganache, now is a good time to do so! Bear in mind you'll need to redeploy the SF contracts if you do.
 
-The first step to creating an Instant Distribution Agreement (IDA) is to create a **publishing index**. Once created, the publishing index will be used by bob to send tokens at some point in the future.
+The first step to creating an Instant Distribution Agreement \(IDA\) is to create a **publishing index**. Once created, the publishing index will be used by bob to send tokens at some point in the future.
 
 Create a new reference index from bob using `createIndex`
 
@@ -278,11 +277,11 @@ Create a new reference index from bob using `createIndex`
 sf.host.callAgreement(sf.agreements.ida.address, sf.agreements.ida.contract.methods.createIndex(daix.address, 42, "0x").encodeABI(), { from: bob })
 ```
 
-Here bob is the "publisher" since he is creating the "index" #42.
+Here bob is the "publisher" since he is creating the "index" \#42.
 
 Alice is now given some "units" using `updateSubscription`
 
-> (??) "Units" behave the same as stock "shares"
+> \(??\) "Units" behave the same as stock "shares"
 
 ```bash
 sf.host.callAgreement(sf.agreements.ida.address, sf.agreements.ida.contract.methods.updateSubscription(daix.address, 42, alice, 100, "0x").encodeABI(), { from: bob })
@@ -317,9 +316,7 @@ New we will actually perform an Instant Distribution. We use `updateIndex` with 
 sf.host.callAgreement(sf.agreements.ida.address, sf.agreements.ida.contract.methods.updateIndex(daix.address, 42, web3.utils.toWei("0.01", "ether"), "0x").encodeABI(), { from: bob })
 ```
 
-0.01 DAI/Units (the new index value we called) _ 300 Total Units = 3 DAI being distributed
-Since alice owns 100 Units, she earns 100 / 300 _ 3 DAI = 1 DAI
-Since dan owns 200 Units, he earns 200 / 300 \* 3 DAI = 2 DAI
+0.01 DAI/Units \(the new index value we called\)  _300 Total Units = 3 DAI being distributed Since alice owns 100 Units, she earns 100 / 300_  3 DAI = 1 DAI Since dan owns 200 Units, he earns 200 / 300 \* 3 DAI = 2 DAI
 
 Lets check the balances to confirm.
 
@@ -333,17 +330,16 @@ Lets check the balances to confirm.
 Dan has not received his DAI in the context of the token `balanceOf`, since he has not called `approveSubscription` for this index. He _does own 2 DAI_ but the SF contracts did not actually distribute it to him.
 
 > SF Contracts Tip: Every account can only subscribe to a total of 256 indexes. This is why the SF contracts cannot automatically distribute the DAI to Dan. It is a prevention mechanism to keep spammers from "filling" up a users 256 subscriptions.
-
+>
 > Alternatively, whenever bob updates the index, the SF contracts will see that there is an unclaimed distribution, and will perform the distribution automatically as a side-effect during the index update.
 
-To perform another distribution we must increase the index amount. To send another 1 DAI to alice and 1 DAI to dan we must \_increment the index by 0.01** for a **total of 0.02\_\_
+To perform another distribution we must increase the index amount. To send another 1 DAI to alice and 1 DAI to dan we must \_increment the index by 0.01 **for a** total of 0.02\_\_
 
 ```bash
 sf.host.callAgreement(sf.agreements.ida.address, sf.agreements.ida.contract.methods.updateIndex(daix.address, 42, web3.utils.toWei("0.02", "ether"), "0x").encodeABI(), { from: bob })
 ```
 
-The total amount distributed to dan is now 100 units _ 0.02 = 2 DAI
-The total amount distributed to dan is now 200 units _ 0.02 = 4 DAI
+The total amount distributed to dan is now 100 units  _0.02 = 2 DAI The total amount distributed to dan is now 200 units_  0.02 = 4 DAI
 
 TODO: simplify the example to not have this weird dan scenario. It can be added later.
 
@@ -378,3 +374,4 @@ TBC
 By default Ganache doesn't mint blocks, so we need to use a convenience command to progress "-b" blocks automatically
 
 > -b, --blockTime Block time in seconds for automatic mining. Will instantly mine a new block for every transaction if option omitted. Avoid using unless your test cases require a specific
+

@@ -1,3 +1,5 @@
+# ganache-testing-instructions
+
 Start Ganache on the default port `8545`
 
 ```bash
@@ -17,7 +19,7 @@ npx truffle --network ganache exec scripts/deploy-framework.js
 
 Find the`Resolver address` from the previous step
 
-```
+```text
 TestResolver.new: started
 TestResolver.new: done, gas used 163231, gas price 20 Gwei
 Resolver address 0xF935C0947D30a2dc45B8bd99376fED0b6dC90A26
@@ -25,7 +27,7 @@ Resolver address 0xF935C0947D30a2dc45B8bd99376fED0b6dC90A26
 
 Then export it as `TEST_RESOLVER_ADDRESS` in the same shell:
 
-```
+```text
 export TEST_RESOLVER_ADDRESS=0xF935C0947D30a2dc45B8bd99376fED0b6dC90A26
 ```
 
@@ -41,7 +43,6 @@ Deploy an example token to use with the Superfluid contracts. This also register
 npx truffle exec --network ganache scripts/deploy-test-token.js : fDAI
 # Take note of underlying token fDAI (fake DAI)
 > Token fDAI address 0xdb5d87471bC53cEF0B6ea1727ec99782A6aF59ff
-
 ```
 
 Create token wrapper for fDAI
@@ -126,7 +127,7 @@ Now create the Truffle contract object for the SF wrapped fDAI token- daix aka S
 daix = await sf.contracts.ISuperToken.at(daixWrapper.wrapperAddress)
 ```
 
-Mint some DAI (really fDAI) for bob & check that it worked (minting is open for anyone to call in the test ERC20 contract)
+Mint some DAI \(really fDAI\) for bob & check that it worked \(minting is open for anyone to call in the test ERC20 contract\)
 
 ```bash
 dai.mint(bob, web3.utils.toWei("100", "ether"), { from: bob })
@@ -149,7 +150,7 @@ daix.upgrade(web3.utils.toWei("50", "ether"), { from: bob })
 > '50.00000'
 ```
 
-### Create a Constant Flow Agreement "CFA"
+## Create a Constant Flow Agreement "CFA"
 
 Tell SF that Bob wants to send 100 DAI per month to alice. This is using the cfa contract in SuperFluid. A flow is defined by the amount per second which should flow.
 
@@ -173,9 +174,9 @@ Now, since automining is turned on, the flow should be running automatically. al
 > 0.006674382716049375
 ```
 
-### Inspect the flow
+## Inspect the flow
 
-Check the net flow for bob. The `net flow` is the current sum of all inflow/outflows for an account. We will see the same "385802469135802" we used (in units of wei) to create the flow for 100 DAI per month.
+Check the net flow for bob. The `net flow` is the current sum of all inflow/outflows for an account. We will see the same "385802469135802" we used \(in units of wei\) to create the flow for 100 DAI per month.
 
 ```bash
 (await sf.agreements.cfa.getNetFlow(daix.address, bob)).toString() / 10e18
@@ -198,11 +199,11 @@ So how much did bob `deposit` to create the flow? We can query this directly, us
 
 This amount will be returned when bob stops the flow. It serves as insurance in case bob starts running out of money. When this happens, the off-chain components earn the deposit as payment for submitting an on-chain transaction to stop the flow.
 
-### Stop the Flow
+## Stop the Flow
 
 Now lets stop the flow by deleting it.
 
-```
+```text
 sf.host.callAgreement(sf.agreements.cfa.address, sf.agreements.cfa.contract.methods.deleteFlow(daix.address, bob, alice, "0x").encodeABI(), { from: bob })
 ```
 
@@ -216,7 +217,7 @@ rtb = await daix.realtimeBalanceOf(bob, parseInt((Date.now())/1000))
 > 0
 ```
 
-Since the flow is stopped, the deposit has been returned, so bob's `rtb` is 0. If we check `balanceOf` and add them, we should get back the original sum of 50 DAI (and some truncation error "dust")
+Since the flow is stopped, the deposit has been returned, so bob's `rtb` is 0. If we check `balanceOf` and add them, we should get back the original sum of 50 DAI \(and some truncation error "dust"\)
 
 ```bash
 a=(await daix.balanceOf(bob)).toString() / 1e18
@@ -227,7 +228,7 @@ a + b
 
 Great job!
 
-### Update a flow
+## Update a flow
 
 Start the flow back again
 
@@ -237,13 +238,13 @@ sf.host.callAgreement(sf.agreements.cfa.address, sf.agreements.cfa.contract.meth
 
 Check the flow rate to ensure its running
 
-```cd
+```text
 (await sf.agreements.cfa.getFlow(daix.address, bob, alice)).toString()
 ```
 
 TODO: add docs for updating flow. Here is the .sol interface
 
-```sol
+```text
 function updateFlow(
         ISuperToken token,
         address receiver,
@@ -254,3 +255,4 @@ function updateFlow(
         virtual
         returns(bytes memory newCtx);
 ```
+
