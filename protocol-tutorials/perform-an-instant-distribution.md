@@ -4,7 +4,7 @@ description: Learning how to see the instant token distribution in the action
 
 # 💰 Perform an Instant Distribution
 
-\(add illustration\)
+![](../.gitbook/assets/image%20%284%29.png)
 
 ## Goal of this tutorial
 

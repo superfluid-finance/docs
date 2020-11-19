@@ -4,7 +4,7 @@ description: Deploying SuperApp to the Görli network
 
 # 🔀 Create a Superfluid Flow
 
-\(add illustration\)
+![](../.gitbook/assets/image%20%285%29.png)
 
 ## Goal of this tutorial
 

@@ -4,6 +4,8 @@ description: Ethereum education resources
 
 # Learn about Ethereum
 
+![](../.gitbook/assets/image%20%287%29.png)
+
 ## Overview 
 
 **Where to go to for knowledge** 
