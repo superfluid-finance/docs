@@ -1,15 +1,10 @@
-<h1 align="center">Welcome to Superfluid Doc Site 👋</h1>
-<p>
-  <a href="https://twitter.com/Superfluid_HQ" target="_blank">
-    <img alt="Twitter: Superfluid_HQ" src="https://img.shields.io/twitter/follow/Superfluid_HQ.svg?style=social" />
-  </a>
-</p>
+# README
 
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+Welcome to Superfluid Doc Site 👋
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+ [![Twitter: Superfluid\_HQ](https://img.shields.io/twitter/follow/Superfluid_HQ.svg?style=social)](https://twitter.com/Superfluid_HQ)
 
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](./#contributors-)
 
 > Documentation and tutorials for Superfluid
 
@@ -17,19 +12,19 @@
 
 ## Install
 
-```sh
+```bash
 yarn install
 ```
 
 ## Usage
 
-```sh
+```bash
 yarn start
 ```
 
 If you have issues while developing, stop the server and run
 
-```sh
+```bash
 npm i -g gatsby-cli
 gastby clean
 ```
@@ -38,7 +33,7 @@ gastby clean
 
 Read [Deploying to a GitHub Pages subdomain](https://www.gatsbyjs.com/docs/how-gatsby-works-with-github-pages/#deploying-to-a-github-pages-subdomain-at-githubio)
 
-```sh
+```bash
 yarn deploy
 ```
 
@@ -46,24 +41,23 @@ yarn deploy
 
 👤 **Superfluid**
 
-- Website: https://www.superfluid.finance/
-  - Twitter: [@Superfluid_HQ](https://twitter.com/Superfluid_HQ)
-  - GitHub: [@superfluid-finance](https://github.com/superfluid-finance)
+* Website: [https://www.superfluid.finance/](https://www.superfluid.finance/)
+  * Twitter: [@Superfluid\_HQ](https://twitter.com/Superfluid_HQ)
+  * GitHub: [@superfluid-finance](https://github.com/superfluid-finance)
 
 ## Contribute
 
-Contributions welcome! All contributors must abide by the [Code of Conduct](./CODE_OF_CONDUCT.md).
+Contributions welcome! All contributors must abide by the [Code of Conduct](code_of_conduct.md).
 
 ## Contributors ✨
 
-- [@pi0neerpat](https://github.com/pi0neerpat)
-- [@eggheadio](https://github.com/eggheadio/)
+* [@pi0neerpat](https://github.com/pi0neerpat)
+* [@eggheadio](https://github.com/eggheadio/)
 
 ## 📝 License
 
-Copyright © 2020 [superfluid.finance](https://github.com/superfluid-finance).<br />
-This project is [MIT](https://github.com/superfluid-finance/superfluid-protocol-docs/blob/source/LICENSE) licensed.
+Copyright © 2020 [superfluid.finance](https://github.com/superfluid-finance).  
+ This project is [MIT](https://github.com/superfluid-finance/superfluid-protocol-docs/blob/source/LICENSE) licensed.
 
----
+_This README was generated with ❤️ by_ [_readme-md-generator_](https://github.com/kefranabg/readme-md-generator)
 
-_This README was generated with ❤️  by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
