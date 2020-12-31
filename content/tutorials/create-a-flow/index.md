@@ -12,9 +12,9 @@ showToc: true
 
 By the end of this tutorial you will learn how to:
 
-* Use the Superfluid JavaScript SDK
-* Mint Superfluid DAI \(DAIx\)
-* Open and close a Flow
+- Use the Superfluid JavaScript SDK
+- Mint Superfluid DAI \(DAIx\)
+- Open and close a Flow
 
 ## Introduction
 
@@ -98,10 +98,12 @@ npx truffle --network goerli console
 
 Let's load the SDK and initialize it with the contracts.
 
+FIXME: update version name
+
 ```bash
 SuperfluidSDK = require(".")
 
-sf = new SuperfluidSDK.Framework({version: "0.1.2-preview-20201014", web3Provider: web3.currentProvider })
+sf = new SuperfluidSDK.Framework({version: "test", web3Provider: web3.currentProvider, tokens: ["fDAI"] })
 
 await sf.initialize()
 
@@ -110,14 +112,30 @@ await sf.initialize()
 > Superfluid 0x8EA403f69173CB3271DBBa1916DD99d8E294B46f
 > ConstantFlowAgreementV1 0x270a86E3F664b4c6db6a1CD6f7309Ca2E468Fc85
 > InstantDistributionAgreementV1 0x265F42856aF54ff630B3C6297d4d125f9c8ED60f
+> chainId 1609410758276
+> Resolver at 0x248E358f8B1981Ab6d488Ec800ab5969A05F4bdf
+> Resolving contracts with version test
+> Superfluid host contract: TruffleContract .host @0x9CFBD0602ec5cd00c70A2702432f2728Cb73E017
+> ConstantFlowAgreementV1: TruffleContract .agreements.cfa @0x48e582dA07017377EfD5F2341b7B31f540B9f71e | Helper .cfa
+> InstantDistributionAgreementV1: TruffleContract .agreements.ida @0x5B1E93D08A46979F987668B7BEFc98f903ACa058 | Helper .ida
+> fDAI: ERC20WithTokenInfo .tokens["fDAI"] @0xe849331e2A747c91C73e03B0b83BaC99621eDEcc
+> fDAIx: ISuperToken .tokens["fDAIx"] @0x24FC433e6402ed142E3244a220AE03eddD9746e1
 ```
 
-> What just happened? The Superfluid SDK used the `resolver` contract deployed on Görli to fetch all the Superfluid contracts for the version "0.1.2-preview-20201014". Then the contract objects were created using the Truffle artifacts in the `/build` folder.
+> What just happened? The Superfluid SDK used the `resolver` contract deployed on Görli to fetch all the Superfluid contracts for the version "test". Then the contract objects were created using the Truffle artifacts in the `/build` folder.
+> Make sure you are using the latest _version_ name!
 
-Now we'll load a web3 utility library and create an alias for two of our wallet addresses.
+For this tutorial, we'll be using _fake_ ERC20 tokens called fDAI. If you need more than one token, you can easily add fUSDC and fTUSD as parameters when creating the sf object.
+
+> Superfluid SDK created a Truffle object for our test token, and its superToken wrapper, at _sf.tokens.fDAI_ and _sf.tokens.fDAIx_
+
+Now we'll load a web3 utility library and create an alias for two of our wallet addresses, as well as friendlier aliases for our tokens.
 
 ```bash
 const { toWad, toBN, fromWad, wad4human } = require("@decentral.ee/web3-helpers")
+
+const dai = await TestToken.at(sf.tokens.fDAI.address)
+const daix = sf.tokens.fDAIx
 
 bob = accounts[0]
 alice = accounts[1]
@@ -126,14 +144,7 @@ dan = accounts[2]
 
 ### Mint some DAIx \(Superfluid DAI\)
 
-For this tutorial, we'll be using an ERC20 token "fake DAI" to represent DAI. Let's get the address for this token using the resolver, and create a Truffle contract object so we can interact with it.
-
-```bash
-daiAddress = await sf.resolver.get("tokens.fDAI")
-dai = await sf.contracts.TestToken.at(daiAddress)
-```
-
-Let's mint bob 100 DAI \(minting is open for anyone to call\).
+Let's mint bob 100 DAI \(in testnet, minting is open for anyone to call\).
 
 ```bash
 dai.mint(bob, web3.utils.toWei("100", "ether"), { from: bob })
@@ -143,20 +154,15 @@ dai.mint(bob, web3.utils.toWei("100", "ether"), { from: bob })
 > '100.00000'
 ```
 
-Now bob has some normal DAI.
+Now bob has some **normal** DAI.
 
 ![](https://github.com/superfluid-finance/superfluid-protocol-docs/tree/c0acd5ac6cab2baecb39b5b01b35daa9f175c468/img/cmon.png)
 
 Before we can use DAI with Superfluid, we need to **upgrade** it to the Superfluid version "DAIx".
 
-This is done using a `SuperToken` wrapper contract. Generally, there is a single wrapper for each ERC20. Let's get the SuperToken wrapper for DAI.
+This is done using a `SuperToken` wrapper contract. Generally, there is a single wrapper for each ERC20.
 
-```bash
-daixWrapper = await sf.getERC20Wrapper(dai)
-daix = await sf.contracts.ISuperToken.at(daixWrapper.wrapperAddress)
-```
-
-Now we can upgrade 50 of bob's DAI by calling `approve()` followed by `upgrade()`
+Because we previously got the daix object when initializing the contract, we can now upgrade 50 of bob's DAI by calling `approve()` followed by `upgrade()`
 
 ```bash
 dai.approve(daix.address, "1"+"0".repeat(42), { from: bob })
@@ -179,23 +185,23 @@ Now that bob has some Superfluid-enabled DAI, he wants to send 100 DAIx per mont
 To achieve this, we will create a **Constant Flow Agreement**. In this agreement, we define the _amount per second_ and `recipient` where DAIx should flow.
 
 ```bash
-sf.host.callAgreement(sf.agreements.cfa.address, sf.agreements.cfa.contract.methods.createFlow(daix.address, alice, "385802469135802", "0x").encodeABI(), { from: bob })
+await sf.cfa.createFlow({ superToken: daix.address, sender: bob, receiver: alice, flowRate: "385802469135802"})
 ```
 
 Here is the breakdown:
 
-1. A flow is a type of agreement, so we use `callAgreement()`
-2. We specify we want a **Constant Flow Agreement** by selecting `sf.agreements.cfa.address`
-3. Using the method `createFlow()`, we pass the arguments for the DAIx token, recipient, and the amount "385802469135802"
+1. A flow is a type of agreement, called a _Constant Flow Agreement_, **CFA** in short
+2. We want to send a flow of DAI, so we specify _superToken: daix.address_
+3. Using the method `createFlow()`, we pass the arguments for the DAIx token, sender, receiver, and the amount "385802469135802"
 
-So what is this weird number "385802469135802"? This is the amount of DAIx to transfer per second, which is equivalent to 100 DAIx per month.
+So what is this weird number "385802469135802"? This is the amount of DAIx to transfer per second, which is equivalent to 1000 DAIx per month.
 
 ```python
->>> (385802469135802 * 3600 * 24 * 30) / 10e18
-99.99999999999989 DAIx per month
+>>> (385802469135802 * 3600 * 24 * 30) / 1e18
+999.99999999999989 DAIx per month
 ```
 
-> HUH?! How is bob able to send 100 DAIx per month if he only has 50 Superfluid enabled DAI? The answer is that the sender isn't required to have the full amount to start a flow. The flow will continue to run as long as he has DAIx.
+> HUH?! How is bob able to send 1000 DAIx per month if he only has 50 Superfluid enabled DAI? The answer is that the sender isn't required to have the full amount to start a flow. The flow will continue to run as long as he has DAIx.
 
 #### 🎉 Excellent work, you just started your first Superfluid Flow!
 
@@ -206,9 +212,9 @@ So what is this weird number "385802469135802"? This is the amount of DAIx to tr
 The flow is now active, so let's check alice and bob's balances to see what changed. Their balances are updated every second, and reflected on-chain at every new block.
 
 ```bash
-(await daix.balanceOf(bob)).toString() / 1e18
+(async () => wad4human((await daix.balanceOf(bob))))()
 > 48.36226851851852
-(await daix.balanceOf(alice)).toString() / 1e18
+(async () => wad4human((await daix.balanceOf(alice))))()
 > 0.2546296296296293
 ```
 
@@ -219,27 +225,37 @@ To get an idea of all Flow activity for bob, we can check his **net flow**. This
 We can use `getNetFlow()` to see the flow we just created.
 
 ```bash
-(await sf.agreements.cfa.getNetFlow(daix.address, bob)).toString() / 1e18
-> -0.000385802469135802 # units of wei
+(await sf.cfa.getNetFlow({superToken: daix.address, account: bob})).toString()
+> "-385802469135802" # units of wei
 ```
 
-Since he only has one flow to alice, his net flow is negative. If bob had multiple flows, this would be an easy way to get an overall picture of bob's activity.
+Since Bob only has one flow to alice, his net flow is negative. If bob had multiple flows, this would be an easy way to get an overall picture of bob's activity.
+Let's check it's the right amount:
+
+```bash
+(-385802469135802 *3600 * 24 * 30) / 1e18
+> -999.9999999999989
+```
 
 ### Stop the Flow
 
 Now lets stop the flow by deleting it. Call `deleteFlow()` and select the flow between bob and alice.
 
-```text
-sf.host.callAgreement(sf.agreements.cfa.address, sf.agreements.cfa.contract.methods.deleteFlow(daix.address, bob, alice, "0x").encodeABI(), { from: bob })
+```bash
+sf.cfa.deleteFlow({superToken: daix.address, sender: bob, receiver: alice, by: bob})
 ```
+
+Streams are identified by token, sender, and receiver.
+
+The parameter "by" defines who is closing the stream. Streams can be closed by both sender and receiver.
 
 If we check their balances, we'll see that they now add up to 50 since the refundable deposit has been returned.
 
 ```bash
 (await daix.balanceOf(bob)).toString() / 1e18
-> 49.53125
+> '49.04360'
 (await daix.balanceOf(alice)).toString() / 1e18
-> 0.4745370370370365
+> '0.95640'
 ```
 
 Great job! You minted some Superfluid-enabled DAI, and created your first Flow.
@@ -247,4 +263,3 @@ Great job! You minted some Superfluid-enabled DAI, and created your first Flow.
 Next we'll learn about another agreement, called **Instant Distribution**
 
 [💰 Perform an Instant Distribution](https://github.com/superfluid-finance/superfluid-protocol-docs/tree/c0acd5ac6cab2baecb39b5b01b35daa9f175c468/tutorials/instant-distribution/README.md)
-
