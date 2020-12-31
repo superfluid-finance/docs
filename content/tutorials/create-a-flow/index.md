@@ -45,6 +45,8 @@ The Superfluid contracts have already been deployed on the Görli testnet for yo
 
 Download the example repo, which includes the Superfluid JavaScript software development kit.
 
+FIXME: update when new preview is deployed
+
 ```bash
 git clone https://github.com/superfluid-finance/superfluid-protocol-preview/
 cd superfluid-protocol-preview/ethereum-contracts && yarn install
