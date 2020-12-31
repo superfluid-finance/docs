@@ -293,11 +293,15 @@ Every account can only subscribe to a total of 256 Publishing Indexes. This is w
 
 The next time bob calls `updateIndex()`, the IDA contract will see there is an "unclaimed" distribution, and will perform the distribution automatically as a _side-effect_.
 
-However, dan is eager to receive his DAIx, and wants it immediately. Let's have dan use the `claim()` function to get his well-earned DAIx. He should also `approveSubscription()` so he won't need to perform this step again.
+However, dan is eager to receive his DAIx, and wants it immediately. Let's have dan use the `claim()` function to get his well-earned DAIx. Anyone can claim for anyone else, so we need to specify "dan" as the fourth parameter.
 
 ```bash
 sf.host.callAgreement(sf.agreements.ida.address, sf.agreements.ida.contract.methods.claim(daix.address, bob, 42, dan, "0x").encodeABI(), { from: dan })
+```
 
+He should also `approveSubscription()` so he won't need to perform this step again.
+
+```bash
 sf.host.callAgreement(sf.agreements.ida.address, sf.agreements.ida.contract.methods.approveSubscription(daix.address, bob, 42, "0x").encodeABI(), "0x", { from: dan })
 ```
 

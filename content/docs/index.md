@@ -1,5 +1,5 @@
 ---
-date: '2020-09-28T00:00:00.000Z'
+date: "2020-09-28T00:00:00.000Z"
 title: Documentation
 description: Superfluid docs
 categories:
@@ -22,12 +22,12 @@ Superfluid is a smart contract framework on L1 Ethereum, enabling you to move as
 
 The initial version of Superfluid is comprised of the following key elements:
 
-* _Super Agreement Framework_: a set of white-listed _super agreements_ contracts as building blocks.
-* _Super App Framework_: a development framework for building real-time finance apps.
-* _Super Token Framework_: an extended [ERC-777](https://eips.ethereum.org/EIPS/eip-777) implementation with real-time finance capability, and a registry.
-* _Batch Call & Meta Tx_: for users \(contracts or EOA\) to interact with the system in batch on-chain, or off-chain through meta transactions.
-* _Governance_: a external contract for managing protocol parameters and contract upgrades.
-* _Solvency Agents_: an off-chain network of agents ensuring the solvency of the system.
+- _Super Agreement Framework_: a set of white-listed _super agreements_ contracts as building blocks.
+- _Super App Framework_: a development framework for building real-time finance apps.
+- _Super Token Framework_: an extended [ERC-777](https://eips.ethereum.org/EIPS/eip-777) implementation with real-time finance capability, and a registry.
+- _Batch Call & Meta Tx_: for users \(contracts or EOA\) to interact with the system in batch on-chain, or off-chain through meta transactions.
+- _Governance_: a external contract for managing protocol parameters and contract upgrades.
+- _Solvency Agents_: an off-chain network of agents ensuring the solvency of the system.
 
 ## Cheat Sheet
 
@@ -50,11 +50,17 @@ exec ../test-scripts/console-quick-start.js
 ```text
 (await daix.balanceOf(bob)).toString() / 1e18
 (await dai.balanceOf(bob)).toString() / 1e18
+
+or
+
+(async () => wad4human(await dai.balanceOf(bob))()
+(async () => wad4human(await daix.balanceOf(bob))()
+
 ```
 
 **`upgrade()`**
 
-```text
+```bash
 dai.approve(daix.address, "1"+"0".repeat(42), { from: bob })
 daix.upgrade(web3.utils.toWei("50", "ether"), { from: bob })
 ```
@@ -63,20 +69,38 @@ daix.upgrade(web3.utils.toWei("50", "ether"), { from: bob })
 
 **`createFlow()`**
 
-```text
-sf.host.callAgreement(sf.agreements.cfa.address, sf.agreements.cfa.contract.methods.createFlow(daix.address, alice, "385802469135802", "0x").encodeABI(), { from: bob })
+```bash
+sf.cfa.createFlow({ superToken: daix.address, sender: bob, receiver: alice, flowRate: "385802469135802"})
+```
+
+**`updateFlow()`**
+
+```bash
+sf.cfa.createFlow({ superToken: daix.address, sender: bob, receiver: alice, flowRate: "632802469135333"})
 ```
 
 **`deleteFlow()`**
 
 ```text
-sf.host.callAgreement(sf.agreements.cfa.address, sf.agreements.cfa.contract.methods.deleteFlow(daix.address, bob, alice, "0x").encodeABI(), { from: bob })
+sf.cfa.deleteFlow({superToken: daix.address, sender: bob, receiver: alice, by: bob})
 ```
 
 **`getNetFlow()`**
 
 ```text
-(await sf.agreements.cfa.getNetFlow(daix.address, bob)).toString() / 1e18
+(await sf.cfa.getNetFlow({superToken: daix.address, account: bob})).toString()
+```
+
+**`getFlow()`**
+
+```text
+(await sf.cfa.getFlow({superToken: daix.address, sender: bob, receiver: alice})).toString()
+```
+
+**`listFlows()`**
+
+```text
+await sf.cfa.listFlows({superToken: daix.address, account: bob})
 ```
 
 #### Instant Distributions
@@ -84,31 +108,31 @@ sf.host.callAgreement(sf.agreements.cfa.address, sf.agreements.cfa.contract.meth
 **`createIndex()`** \(sent from _publisher\)_
 
 ```text
-sf.host.callAgreement(sf.agreements.ida.address, sf.agreements.ida.contract.methods.createIndex(daix.address, 42, "0x").encodeABI(), { from: bob })
+sf.host.callAgreement(sf.agreements.ida.address, sf.agreements.ida.contract.methods.createIndex(daix.address, 42, "0x").encodeABI(), "0x", { from: bob })
 ```
 
 **`updateSubscription()`** \(sent from _publisher\)_
 
 ```text
-sf.host.callAgreement(sf.agreements.ida.address, sf.agreements.ida.contract.methods.updateSubscription(daix.address, 42, dan, 100, "0x").encodeABI(), { from: bob })
+sf.host.callAgreement(sf.agreements.ida.address, sf.agreements.ida.contract.methods.updateSubscription(daix.address, 42, dan, 100, "0x").encodeABI(), "0x", { from: bob })
 ```
 
 **`approveSubscription()`** \(sent from _subscriber\)_
 
 ```text
-sf.host.callAgreement(sf.agreements.ida.address, sf.agreements.ida.contract.methods.approveSubscription(daix.address, bob, 42, "0x").encodeABI(), { from: alice })
+sf.host.callAgreement(sf.agreements.ida.address, sf.agreements.ida.contract.methods.approveSubscription(daix.address, bob, 42, "0x").encodeABI(), "0x", { from: alice })
 ```
 
 **`updateIndex()`** \(sent from _publisher\)_
 
 ```text
-sf.host.callAgreement(sf.agreements.ida.address, sf.agreements.ida.contract.methods.updateIndex(daix.address, 42, web3.utils.toWei("0.01", "ether"), "0x").encodeABI(), { from: bob })
+sf.host.callAgreement(sf.agreements.ida.address, sf.agreements.ida.contract.methods.updateIndex(daix.address, 42, web3.utils.toWei("0.01", "ether"), "0x").encodeABI(), "0x", { from: bob })
 ```
 
 **`claim()`** \(sent from _subscriber\)_
 
 ```text
-sf.host.callAgreement(sf.agreements.ida.address, sf.agreements.ida.contract.methods.claim(daix.address, bob, 42, "0x").encodeABI(), { from: dan })
+sf.host.callAgreement(sf.agreements.ida.address, sf.agreements.ida.contract.methods.claim(daix.address, bob, 42, dan, "0x").encodeABI(), "0x", { from: dan })
 ```
 
 ## Agreements
@@ -120,4 +144,3 @@ A **Constant Flow Agreement** is a transfer of value from a `sender` to a `recei
 ### Instant Distribution Agreement \(IDA\)
 
 An **Instant Distribution Agreement \(IDA\)** is used to send funds as one-time-payments. It consists of a **Publishing Index** with `indexId`, an `indexValue`, and one or more **subscribers**.
-
