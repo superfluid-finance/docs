@@ -17,4 +17,5 @@
 ## Resources
 
 * [Learn about Ethereum](resources/learn-about-ethereum.md)
+* [Network Directory](resources/networks.md)
 
