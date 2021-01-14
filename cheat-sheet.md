@@ -10,11 +10,11 @@ description: One-liners to keep you "in the flow".
 
 Setup the SDK in Truffle console and mint DAIx. See the [tutorial](https://github.com/superfluid-finance/superfluid-protocol-docs/tree/c0acd5ac6cab2baecb39b5b01b35daa9f175c468/tutorial/create-a-flow/README.md) for a full walk-through.
 
-```javascript
-npx truffle --network goerli conole
+<!-- ```javascript
+npx truffle --network goerli console
 # Then in console
 exec ../test-scripts/console-quick-start.js
-```
+``` -->
 
 #### Tokens
 
@@ -156,34 +156,62 @@ await sf.cfa.listFlows({superToken: daix.address, account: bob})
 
 #### Instant Distributions
 
+Remember there is one _distributor_, and many _subscribers_.
+
 **`createIndex()`** \(sent from _publisher\)_
 
-```text
-sf.host.callAgreement(sf.agreements.ida.address, sf.agreements.ida.contract.methods.createIndex(daix.address, 42, "0x").encodeABI(), "0x", { from: bob })
+```js
+sf.ida.createIndex({
+  superToken: daix.address,
+  indexId: 1,
+  sender: bob.address
+});
 ```
 
 **`updateSubscription()`** \(sent from _publisher\)_
 
-```text
-sf.host.callAgreement(sf.agreements.ida.address, sf.agreements.ida.contract.methods.updateSubscription(daix.address, 42, dan, 100, "0x").encodeABI(), "0x", { from: bob })
+```js
+sf.ida.updateSubscription({
+  superToken: daix.address,
+  indexId: 1,
+  subscriber: carol.address, //who is receiving the units
+  sender: bob.address, //the publisher
+  units: "100"
+});
 ```
 
 **`approveSubscription()`** \(sent from _subscriber\)_
 
-```text
-sf.host.callAgreement(sf.agreements.ida.address, sf.agreements.ida.contract.methods.approveSubscription(daix.address, bob, 42, "0x").encodeABI(), "0x", { from: alice })
+```js
+sf.ida.approveSubscription({
+  superToken: daix.address,
+  indexId: 1,
+  publisher: bob.address, // the publisher
+  sender: carol.address // who is receiving the units and sending this tx
+});
 ```
 
-**`updateIndex()`** \(sent from _publisher\)_
+**`distribute()`** \(sent from _publisher\)_
 
-```text
-sf.host.callAgreement(sf.agreements.ida.address, sf.agreements.ida.contract.methods.updateIndex(daix.address, 42, web3.utils.toWei("0.01", "ether"), "0x").encodeABI(), "0x", { from: bob })
+```js
+sf.ida.distribute({
+  superToken: daix.address,
+  indexId: 1,
+  amount: 100 * 1e18, // amount to distribute
+  sender: bob.address // the Publisher
+});
 ```
 
 **`claim()`** \(sent from _subscriber\)_
 
-```text
-sf.host.callAgreement(sf.agreements.ida.address, sf.agreements.ida.contract.methods.claim(daix.address, bob, 42, dan, "0x").encodeABI(), "0x", { from: dan })
+```js
+sf.ida.claim({
+  superToken: daix.address,
+  publisher: bob.address,
+  indexId: 1,
+  subscriber: carol.address,
+  sender: carol.address // because ANYONE can send this tx
+});
 ```
 
 ## Agreements
@@ -194,4 +222,4 @@ A **Constant Flow Agreement** is a transfer of value from a `sender` to a `recei
 
 ### Instant Distribution Agreement \(IDA\)
 
-An **Instant Distribution Agreement \(IDA\)** is used to send funds as one-time-payments. It consists of a **Publishing Index** with `indexId`, an `indexValue`, and one or more **subscribers**.
+An **Instant Distribution Agreement \(IDA\)** is used to send funds as one-time-payments. It consists of a **Publishing Index** with `indexId`, an `indexValue` which is update every time `distribute()` is called, and one or more **subscribers**.

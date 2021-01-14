@@ -1,18 +1,17 @@
 ---
-description: Deploying SuperApp to the Görli network
+date: 2020-09-28T00:00:00.000Z
+title: "\U0001F500 Create a Superfluid Flow"
+description: In this tutorial we will create a Flow using the Javascript SDK
+categories:
+  - tutorial
+published: true
+showToc: true
 ---
 
-# 🔀 Create a Superfluid Flow
+# index
 
-![](../.gitbook/assets/image%20%285%29.png)
-
-## Goal of this tutorial
-
-**By the end of this tutorial you will learn how to**:
-
-* Use the Superfluid JavaScript SDK
-* Mint Superfluid DAI \(DAIx\)
-* Open and close a Flow
+By the end of this tutorial you will learn how to:
+_Open and close a Flow_
 
 ## Introduction
 
@@ -20,7 +19,7 @@ A **Constant Flow Agreement** is a transfer of value from a `sender` to a `recei
 
 Great! Now that you understand the first major concept of Superfluid, lets get to the fun part. Here is an overview of the Constant Flow Agreement contract. Did someone say _CRUD_?
 
-```text
+```javascript
 contract IConstantFlowAgreementV1 is ISuperAgreement {
   function createFlow( ...
   function updateFlow( ...
@@ -28,188 +27,118 @@ contract IConstantFlowAgreementV1 is ISuperAgreement {
 }
 ```
 
-Seem straightforward enough? Let's take the contracts for a test-drive.
+Seem straightforward enough? Let's go!
 
 ## Set Up
 
-The Superfluid contracts have already been deployed on the Görli testnet for you. Here are the steps we'll take to get set up:
-
-1. Install the SDK
-2. Obtain Gorli ETH
-3. Open Truffle console
-4. Mint some Superfluid DAI \(DAIx\)
-
-## Install the SDK
-
-Download the example repo, which includes the Superfluid JavaScript software development kit.
-
-```text
-git clone https://github.com/superfluid-finance/superfluid-protocol-preview/
-cd superfluid-protocol-preview/ethereum-contracts && yarn install
-```
-
-If you haven't already, install truffle and jq.
-
-```text
-# Linux
-sudo apt-get install jq
-# Mac
-brew install jq
-
-npm i -g truffle
-```
-
-The contracts have already been built and are located in the `/build` folder .
-
-Note: _the contract source code may not be included._
-
-## Obtain Görli ETH
-
-Before we can get testnet ETH, we need a 12-word mnemonic to create some test wallets. If you don't have a mnemonic, we can use Truffle to create one.
-
-```text
-truffle develop
-
-> Accounts:
-> (0) 0x627306090abab3a6e1400e9345bc60c78a8bef57
-> (1) 0xf17f52151ebef6c7334fad080c5704d77216b732
-
-> Mnemonic: rigid cradle south ...
-```
-
-Copy the first address and use one of the Görli testnet faucets listed at [https://goerli.net/](https://goerli.net/) to obtain some ETH.
-
-Exit the truffle develop tool before continuing.
-
-Now create a file named `.env` and add your mnemonic and web3 provider for Görli network.
-
-```text
-GOERLI_MNEMONIC=rigid cradle south ...
-GOERLI_PROVIDER_URL=https://goerli.infura.io/v3/<API_KEY>
-```
-
-## Open Truffle Console
-
-We are ready to open the Truffle console.
-
-```text
-npx truffle --network goerli console
-```
-
-Let's load the SDK and initialize it with the contracts.
-
-```text
-SuperfluidSDK = require(".")
-
-sf = new SuperfluidSDK.Framework({version: "0.1.2-preview-20201014", web3Provider: web3.currentProvider })
-
-await sf.initialize()
-
-> Resolver at 0x3710AB3fDE2B61736B8BB0CE845D6c61F667a78E
-> Resolving contracts with version 0.1.2-preview-20201014
-> Superfluid 0x8EA403f69173CB3271DBBa1916DD99d8E294B46f
-> ConstantFlowAgreementV1 0x270a86E3F664b4c6db6a1CD6f7309Ca2E468Fc85
-> InstantDistributionAgreementV1 0x265F42856aF54ff630B3C62
-```
-
-> What just happened? The Superfluid SDK used the resolver contract deployed on Görli to fetch all the Superfluid contracts for the version "0.1.2-preview-20201014". Then the contract objects were created using the Truffle artifacts in the /build folder.
-
-Now we'll load a web3 utility library and create an alias for two of our wallet addresses.
-
-```text
-const { toWad, toBN, fromWad, wad4human } = require("@decentral.ee/web3-helpers")
-
-bob = accounts[0]
-alice = accounts[1]
-dan = accounts[2]
-```
-
-## Mint some DAIx \(Superfluid DAI\)
-
-For this tutorial, we'll be using an ERC20 token "fake DAI" to represent DAI. Let's get the address for this token using the resolver, and create a Truffle contract object so we can interact with it.
-
-```text
-daiAddress = await sf.resolver.get("tokens.fDAI")
-dai = await sf.contracts.TestToken.at(daiAddress)
-```
-
-Let's mint bob 100 DAI \(minting is open for anyone to call\).
-
-```text
-dai.mint(bob, web3.utils.toWei("100", "ether"), { from: bob })
-
-# Check bob's balance
-(async () => (wad4human(await dai.balanceOf(bob))))()
-> '100.00000'
-```
-
-Now Bob has some normal DAI.
-
-![](https://docs.superfluid.finance/img/cmon.png)
-
-Before we can use DAI with Superfluid, we need to **upgrade** it to the Superfluid version "DAIx".
-
-This is done using a `SuperToken` wrapper contract. Generally, there is a single wrapper for each ERC20. Let's get the SuperToken wrapper for DAI.
-
-```text
-daixWrapper = await sf.getERC20Wrapper(dai)
-daix = await sf.contracts.ISuperToken.at(daixWrapper.wrapperAddress)
-```
-
-Now we can upgrade 50 of bob's DAI by calling `approve()` followed by `upgrade()`
-
-```text
-dai.approve(daix.address, "1"+"0".repeat(42), { from: bob })
-
-daix.upgrade(web3.utils.toWei("50", "ether"), { from: bob })
-
-# Check DAIx balance
-(async () => (wad4human(await daix.balanceOf(bob))))()
-> '50.00000'
-```
-
-Hurrah, we now have 50 Superfluid-enabled DAI or "DAIx". We are ready to start using Superfluid.
+If you haven't done this before, follow (this guide)[] to setup your environment in the Görli testnet
 
 ## Create a Constant Flow Agreement "CFA"
 
-Now that bob has some Superfluid-enabled DAI, he wants to send 100 DAIx per month to Alice.
+Now that bob has some Superfluid-enabled DAI, he wants to send 100 DAIx per month to alice.
 
-#### createFlow\(\) <a id="createflow"></a>
+### user\(\)
+
+First of all, we need to create a user() object for Bob.
+We'll need to add his address, and specify the currency he is going to use
+
+```javascript
+const userBob = sf.user({
+  address: bob,
+  token: daix.address
+});
+```
+
+### flow\(\)
+
+Now we have a user, Bob.
+Let's send a stream to Alice
+
+```javascript
+await userBob.flow({
+  recipient: alice,
+  flowRate: "385802469135802"
+});
+```
+
+So what is this weird number "385802469135802"? This is the amount of DAIx to transfer per second, which is equivalent to 1000 DAIx per month.
+
+But is the flow actually happening?
+check it out yourself by checking his balance a few times:
+
+```javascript
+(async () => wad4human(await daix.balanceOf(bob)))()(
+```
+
+But where can I see these flows?
+
+```javascript
+await userBob.details(); // full object
+(await userBob.details()).cfa.flows; // detailed flows view
+```
+
+There can only ever be one flow from: alice to: bob, so if you call flow() again, you will be able to edit this stream:
+
+```javascript
+await userBob.flow({
+  recipient: alice,
+  flowRate: "1000000000000000" // 2592 per month, transformed to seconds, with 18 decimals
+});
+```
+
+Now if we want to close the stream off
+
+```javascript
+userBob.flow({
+  recipient: alice,
+  flowRate: "0"
+});
+```
+
+# Go lower level
+
+If you want a bit more freedom to customize, you can go one level deeper into our SDK
+
+### createFlow\(\)
 
 To achieve this, we will create a **Constant Flow Agreement**. In this agreement, we define the _amount per second_ and `recipient` where DAIx should flow.
 
-```text
-sf.host.callAgreement(sf.agreements.cfa.address, sf.agreements.cfa.contract.methods.createFlow(daix.address, alice, "385802469135802", "0x").encodeABI(), { from: bob })
+```javascript
+await sf.cfa.createFlow({
+  superToken: daix.address,
+  sender: bob,
+  receiver: alice,
+  flowRate: "385802469135802" // 1000 per month
+});
 ```
 
 Here is the breakdown:
 
-1. A flow is a type of agreement, so we use `callAgreement()`
-2. We specify we want a **Constant Flow Agreement** by selecting `sf.agreements.cfa.address`
-3. Using the method `createFlow()`, we pass the arguments for the DAIx token, recipient, and the amount "385802469135802"
+1. A flow is a type of agreement, called a _Constant Flow Agreement_, **CFA** in short
+2. We want to send a flow of DAI, so we specify _superToken: daix.address_
+3. Using the method `createFlow()`, we pass the arguments for the DAIx token, sender, receiver, and the amount "385802469135802"
 
-So what is this weird number "385802469135802"? This is the amount of DAIx to transfer per second, which is equivalent to 100 DAIx per month.
+So what is this weird number "385802469135802"? This is the amount of DAIx to transfer per second, which is equivalent to 1000 DAIx per month.
 
-```text
->>> (385802469135802 * 3600 * 24 * 30) / 10e18
-99.99999999999989 DAIx per month
+```python
+>>> (385802469135802 * 3600 * 24 * 30) / 1e18
+999.99999999999989 DAIx per month
 ```
 
-> HUH?! How is bob able to send 100 DAIx per month if he only has 50 Superfluid enabled DAI? The answer is that the sender isn't required to have the full amount to start a flow. The flow will continue to run as long as he has DAIx.
+> HUH?! How is bob able to send 1000 DAIx per month if he only has 50 Superfluid enabled DAI? The answer is that the sender isn't required to have the full amount to start a flow. The flow will continue to run as long as he has DAIx.
 
-**🎉 Excellent work, you just started your first Superfluid Flow!**
+#### 🎉 Excellent work, you just started your first Superfluid Flow!
 
-![](https://docs.superfluid.finance/img/paid-every-second-meme.png)
+![](https://github.com/superfluid-finance/superfluid-protocol-docs/tree/c0acd5ac6cab2baecb39b5b01b35daa9f175c468/img/paid-every-second-meme.png)
 
-## Inspect the Flow
+### Inspect the Flow
 
 The flow is now active, so let's check alice and bob's balances to see what changed. Their balances are updated every second, and reflected on-chain at every new block.
 
-```text
-(await daix.balanceOf(bob)).toString() / 1e18
-> 48.36226851851852
-(await daix.balanceOf(alice)).toString() / 1e18
-> 0.2546296296296293
+```javascript
+(async () => wad4human(await daix.balanceOf(bob)))() >
+  48.36226851851852(async () => wad4human(await daix.balanceOf(alice)))() >
+  0.2546296296296293;
 ```
 
 > Note: These amounts will not add up to 50 DAIx, due to a refundable deposit.
@@ -218,35 +147,45 @@ To get an idea of all Flow activity for bob, we can check his **net flow**. This
 
 We can use `getNetFlow()` to see the flow we just created.
 
-```text
-(await sf.agreements.cfa.getNetFlow(daix.address, bob)).toString() / 1e18
-> -0.000385802469135802 # units of wei
+```javascript
+(await sf.cfa.getNetFlow({superToken: daix.address, account: bob})).toString()
+> "-385802469135802" # units of wei
 ```
 
-Since he only has one flow to alice, his net flow is negative. If bob had multiple flows, this would be an easy way to get an overall picture of bob's activity.
+Since Bob only has one flow to alice, his net flow is negative. If bob had multiple flows, this would be an easy way to get an overall picture of bob's activity.
+Let's check it's the right amount:
 
-## Stop the Flow
+```javascript
+(-385802469135802 * 3600 * 24 * 30) / 1e18 > -999.9999999999989;
+```
+
+### Stop the Flow
 
 Now lets stop the flow by deleting it. Call `deleteFlow()` and select the flow between bob and alice.
 
-```text
-sf.host.callAgreement(sf.agreements.cfa.address, sf.agreements.cfa.contract.methods.deleteFlow(daix.address, bob, alice, "0x").encodeABI(), { from: bob })
+```javascript
+sf.cfa.deleteFlow({
+  superToken: daix.address,
+  sender: bob,
+  receiver: alice,
+  by: bob
+});
 ```
+
+Streams are identified by token, sender, and receiver.
+
+The parameter "by" defines who is closing the stream. Streams can be closed by both sender and receiver.
 
 If we check their balances, we'll see that they now add up to 50 since the refundable deposit has been returned.
 
-```text
-(await daix.balanceOf(bob)).toString() / 1e18
-> 49.53125
-(await daix.balanceOf(alice)).toString() / 1e18
-> 0.4745370370370365
+```javascript
+(await daix.balanceOf(bob)).toString() / 1e18 >
+  "49.04360"(await daix.balanceOf(alice)).toString() / 1e18 >
+  "0.95640";
 ```
 
 Great job! You minted some Superfluid-enabled DAI, and created your first Flow.
 
 Next we'll learn about another agreement, called **Instant Distribution**
 
-[💰 Perform an Instant Distribution](https://docs.superfluid.finance/tutorials/instant-distribution)
-
-
-
+[💰 Perform an Instant Distribution](https://github.com/superfluid-finance/superfluid-protocol-docs/tree/c0acd5ac6cab2baecb39b5b01b35daa9f175c468/tutorials/instant-distribution/README.md)
