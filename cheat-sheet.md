@@ -50,20 +50,24 @@ const alice = sf.user({ address: aliceAddress, token: daix.address });
 **`bob.details()`**
 
 ```javascript
-const { cfa } = await bob.details();
+const details = await bob.details();
 
 // returns an object
-cfa: {
-    flows: {
-        inFlows: [
-            { sender, receiver, flowRate }
-        ],
-        outFlows: [
-            { sender, receiver, flowRate }
-        ]
-    },
-    netFlow: ""
-}
+details: {
+    cfa: {
+        flows: {
+            inFlows: [
+                { sender, receiver, flowRate }
+            ],
+            outFlows: [
+                { sender, receiver, flowRate }
+            ]
+        },
+        netFlow: ""
+    }
+    ida: {
+        subscriptions: []
+    }
 ```
 
 **`bob.flow()`**
@@ -81,6 +85,25 @@ bob.flow({ recipient: alice, flowRate: "0" });
 // add custom userData parameters
 const userData = { message: "here's a flow Alice", flowId: "007" };
 bob.flow({ recipient: alice, flowRate: 1 * 1e18, options: { userData } });
+```
+
+**`bob.createPool()`**
+
+```js
+await bob.createPool({ poolId: 1 });
+```
+
+**`bob.giveShares()`**
+
+```js
+await bob.giveShares({ poolId: 1, recipient: alice, shares: 90 });
+await bob.giveShares({ poolId: 1, recipient: carol, shares: 10 });
+```
+
+**`bob.distributeToPool()`**
+
+```js
+await bob.distributeToPool({ poolId: 1, amount: 1000 });
 ```
 
 #### Flows
