@@ -10,12 +10,6 @@ description: One-liners to keep you "in the flow".
 
 Setup the SDK in Truffle console and mint DAIx. See the [tutorial](https://github.com/superfluid-finance/superfluid-protocol-docs/tree/c0acd5ac6cab2baecb39b5b01b35daa9f175c468/tutorial/create-a-flow/README.md) for a full walk-through.
 
-<!-- ```javascript
-npx truffle --network goerli console
-# Then in console
-exec ../test-scripts/console-quick-start.js
-``` -->
-
 #### Tokens
 
 **`balanceOf()`**
@@ -28,7 +22,6 @@ or
 
 (async () => wad4human(await dai.balanceOf(bob))()
 (async () => wad4human(await daix.balanceOf(bob))()
-
 ```
 
 **`upgrade()`**
@@ -89,20 +82,20 @@ bob.flow({ recipient: alice, flowRate: 1 * 1e18, options: { userData } });
 
 **`bob.createPool()`**
 
-```js
+```javascript
 await bob.createPool({ poolId: 1 });
 ```
 
 **`bob.giveShares()`**
 
-```js
+```javascript
 await bob.giveShares({ poolId: 1, recipient: alice, shares: 90 });
 await bob.giveShares({ poolId: 1, recipient: carol, shares: 10 });
 ```
 
 **`bob.distributeToPool()`**
 
-```js
+```javascript
 await bob.distributeToPool({ poolId: 1, amount: 1000 });
 ```
 
@@ -160,7 +153,7 @@ Remember there is one _distributor_, and many _subscribers_.
 
 **`createIndex()`** \(sent from _publisher\)_
 
-```js
+```javascript
 sf.ida.createIndex({
   superToken: daix.address,
   indexId: 1,
@@ -170,7 +163,7 @@ sf.ida.createIndex({
 
 **`updateSubscription()`** \(sent from _publisher\)_
 
-```js
+```javascript
 sf.ida.updateSubscription({
   superToken: daix.address,
   indexId: 1,
@@ -182,7 +175,7 @@ sf.ida.updateSubscription({
 
 **`approveSubscription()`** \(sent from _subscriber\)_
 
-```js
+```javascript
 sf.ida.approveSubscription({
   superToken: daix.address,
   indexId: 1,
@@ -193,7 +186,7 @@ sf.ida.approveSubscription({
 
 **`distribute()`** \(sent from _publisher\)_
 
-```js
+```javascript
 sf.ida.distribute({
   superToken: daix.address,
   indexId: 1,
@@ -204,7 +197,7 @@ sf.ida.distribute({
 
 **`claim()`** \(sent from _subscriber\)_
 
-```js
+```javascript
 sf.ida.claim({
   superToken: daix.address,
   publisher: bob.address,
@@ -223,3 +216,4 @@ A **Constant Flow Agreement** is a transfer of value from a `sender` to a `recei
 ### Instant Distribution Agreement \(IDA\)
 
 An **Instant Distribution Agreement \(IDA\)** is used to send funds as one-time-payments. It consists of a **Publishing Index** with `indexId`, an `indexValue` which is update every time `distribute()` is called, and one or more **subscribers**.
+

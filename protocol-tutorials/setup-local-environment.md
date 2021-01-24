@@ -2,7 +2,7 @@
 description: Deploying SuperApp to the Görli network
 ---
 
-# 🔀 Setup your local environment
+# 🖥️ Setup your local environment
 
 ![](../.gitbook/assets/image%20%285%29.png)
 
@@ -10,8 +10,8 @@ description: Deploying SuperApp to the Görli network
 
 **By the end of this tutorial you will learn how to**:
 
-- Be ready to use the Superfluid JavaScript SDK
-- Mint Superfluid DAI \(DAIx\)
+* Be ready to use the Superfluid JavaScript SDK
+* Mint Superfluid DAI \(DAIx\)
 
 ## Introduction
 
@@ -113,8 +113,7 @@ fDAI: ERC20WithTokenInfo .tokens["fDAI"] @0x88271d333C72e51516B67f5567c728E702b3
 fDAIx: ISuperToken .tokens["fDAIx"] @0xF2d68898557cCb2Cf4C10c3Ef2B034b2a69DAD00
 ```
 
-> What just happened? The Superfluid SDK used the `resolver` contract deployed on Görli to fetch all the Superfluid contracts for the version "test". Then the contract objects were created using the Truffle artifacts in the `/build` folder.
-> Make sure you are using the latest _version_ name!
+> What just happened? The Superfluid SDK used the `resolver` contract deployed on Görli to fetch all the Superfluid contracts for the version "test". Then the contract objects were created using the Truffle artifacts in the `/build` folder. Make sure you are using the latest _version_ name!
 
 For this tutorial, we'll be using _fake_ ERC20 tokens called fDAI. If you need more than one token, you can easily add fUSDC and fTUSD as parameters when creating the sf object.
 
@@ -173,8 +172,6 @@ daix.upgrade(web3.utils.toWei("50", "ether"), { from: bob })
 
 Hurrah, we now have 50 Superfluid-enabled DAI or "DAIx". We are ready to start using Superfluid.
 
----
-
 Great job! You minted some Superfluid-enabled DAI
 
 Next we'll learn how to use superfluid agreements, starting with streaming money: **Constant Flow Agreement**
@@ -182,3 +179,4 @@ Next we'll learn how to use superfluid agreements, starting with streaming money
 [💰 Create a Superfluid Flow](https://github.com/superfluid-finance/superfluid-protocol-docs/tree/c0acd5ac6cab2baecb39b5b01b35daa9f175c468/tutorials/instant-distribution/README.md)
 
 FIXME: fix Link!
+

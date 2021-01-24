@@ -1,5 +1,5 @@
 ---
-date: 2020-09-28T00:00:00.000Z
+date: '2020-09-28T00:00:00.000Z'
 title: "\U0001F500 Create a Superfluid Flow"
 description: In this tutorial we will create a Flow using the Javascript SDK
 categories:
@@ -8,12 +8,13 @@ published: true
 showToc: true
 ---
 
-# index
+# 🔀 Create a Superfluid Flow
 
-By the end of this tutorial you will learn how to:
-_Open and close a Flow_
+## index
 
-## Introduction
+By the end of this tutorial you will learn how to: _Open and close a Flow_
+
+### Introduction
 
 A **Constant Flow Agreement** is a transfer of value from a `sender` to a `receiver` at a constant `flowRate` measured in _amount per second_.
 
@@ -29,18 +30,17 @@ contract IConstantFlowAgreementV1 is ISuperAgreement {
 
 Seem straightforward enough? Let's go!
 
-## Set Up
+### Set Up
 
-If you haven't done this before, follow (this guide)[] to setup your environment in the Görli testnet
+If you haven't done this before, follow [this guide](setup-local-environment.md) to setup your environment in the Görli testnet
 
-## Create a Constant Flow Agreement "CFA"
+### Create a Constant Flow Agreement "CFA"
 
 Now that bob has some Superfluid-enabled DAI, he wants to send 100 DAIx per month to alice.
 
-### user\(\)
+#### user\(\)
 
-First of all, we need to create a user() object for Bob.
-We'll need to add his address, and specify the currency he is going to use
+First of all, we need to create a user\(\) object for Bob. We'll need to add his address, and specify the currency he is going to use
 
 ```javascript
 const userBob = sf.user({
@@ -49,10 +49,9 @@ const userBob = sf.user({
 });
 ```
 
-### flow\(\)
+#### flow\(\)
 
-Now we have a user, Bob.
-Let's send a stream to Alice
+Now we have a user, Bob. Let's send a stream to Alice
 
 ```javascript
 await userBob.flow({
@@ -63,8 +62,7 @@ await userBob.flow({
 
 So what is this weird number "385802469135802"? This is the amount of DAIx to transfer per second, which is equivalent to 1000 DAIx per month.
 
-But is the flow actually happening?
-check it out yourself by checking his balance a few times:
+But is the flow actually happening? check it out yourself by checking his balance a few times:
 
 ```javascript
 (async () => wad4human(await daix.balanceOf(bob)))()(
@@ -77,7 +75,7 @@ await userBob.details(); // full object
 (await userBob.details()).cfa.flows; // detailed flows view
 ```
 
-There can only ever be one flow from: alice to: bob, so if you call flow() again, you will be able to edit this stream:
+There can only ever be one flow from: alice to: bob, so if you call flow\(\) again, you will be able to edit this stream:
 
 ```javascript
 await userBob.flow({
@@ -95,11 +93,11 @@ userBob.flow({
 });
 ```
 
-# Go lower level
+## Go lower level
 
 If you want a bit more freedom to customize, you can go one level deeper into our SDK
 
-### createFlow\(\)
+#### createFlow\(\)
 
 To achieve this, we will create a **Constant Flow Agreement**. In this agreement, we define the _amount per second_ and `recipient` where DAIx should flow.
 
@@ -127,11 +125,11 @@ So what is this weird number "385802469135802"? This is the amount of DAIx to tr
 
 > HUH?! How is bob able to send 1000 DAIx per month if he only has 50 Superfluid enabled DAI? The answer is that the sender isn't required to have the full amount to start a flow. The flow will continue to run as long as he has DAIx.
 
-#### 🎉 Excellent work, you just started your first Superfluid Flow!
+**🎉 Excellent work, you just started your first Superfluid Flow!**
 
 ![](https://github.com/superfluid-finance/superfluid-protocol-docs/tree/c0acd5ac6cab2baecb39b5b01b35daa9f175c468/img/paid-every-second-meme.png)
 
-### Inspect the Flow
+#### Inspect the Flow
 
 The flow is now active, so let's check alice and bob's balances to see what changed. Their balances are updated every second, and reflected on-chain at every new block.
 
@@ -152,14 +150,13 @@ We can use `getNetFlow()` to see the flow we just created.
 > "-385802469135802" # units of wei
 ```
 
-Since Bob only has one flow to alice, his net flow is negative. If bob had multiple flows, this would be an easy way to get an overall picture of bob's activity.
-Let's check it's the right amount:
+Since Bob only has one flow to alice, his net flow is negative. If bob had multiple flows, this would be an easy way to get an overall picture of bob's activity. Let's check it's the right amount:
 
 ```javascript
 (-385802469135802 * 3600 * 24 * 30) / 1e18 > -999.9999999999989;
 ```
 
-### Stop the Flow
+#### Stop the Flow
 
 Now lets stop the flow by deleting it. Call `deleteFlow()` and select the flow between bob and alice.
 
@@ -189,3 +186,4 @@ Great job! You minted some Superfluid-enabled DAI, and created your first Flow.
 Next we'll learn about another agreement, called **Instant Distribution**
 
 [💰 Perform an Instant Distribution](https://github.com/superfluid-finance/superfluid-protocol-docs/tree/c0acd5ac6cab2baecb39b5b01b35daa9f175c468/tutorials/instant-distribution/README.md)
+

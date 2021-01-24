@@ -1,6 +1,6 @@
 # Network Directory
 
-Superfluid is deployed on many different networks. 
+Superfluid is deployed on many different networks.
 
 Navigate all the deployed contracts using the tables below
 
@@ -44,6 +44,4 @@ Navigate all the deployed contracts using the tables below
 | fTUSDx | [0xC5191A51982983B8105eC4Fbbbf35b9466EE0179](http://ropsten.etherscan.io/address/0xC5191A51982983B8105eC4Fbbbf35b9466EE0179) |
 {% endtab %}
 {% endtabs %}
-
-
 

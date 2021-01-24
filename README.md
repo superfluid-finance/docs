@@ -11,7 +11,7 @@ description: >-
 
 ## About Superfluid
 
-Superfluid is a smart contract framework on L1 Ethereum, enabling you to move assets on-chain following predefined rules called agreements With a single on-chain tx, the money will flow from your balance to the receiver in real time! No other tx required works like magic ✨
+Superfluid is a smart contract framework on L1 Ethereum, enabling you to move assets on-chain following predefined rules called agreements. With a single on-chain tx, the money will flow from your balance to the receiver in real time! No other tx required works like magic ✨
 
 
 
