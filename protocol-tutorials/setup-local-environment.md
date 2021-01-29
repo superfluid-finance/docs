@@ -4,7 +4,7 @@ description: Deploying SuperApp to the Görli network
 
 # 🖥️ Setup your local environment
 
-![](../.gitbook/assets/image%20%285%29.png)
+![](../.gitbook/assets/image%20%286%29%20%283%29%20%281%29.png)
 
 ## Goal of this tutorial
 
@@ -37,8 +37,7 @@ The Superfluid contracts have already been deployed on the Görli testnet for yo
 Download the example repo, which includes the Superfluid JavaScript software development kit.
 
 ```bash
-git clone https://github.com/superfluid-finance/ethereum-contracts
-cd ethereum-contracts
+git clone https://github.com/superfluid-finance/protocol-monorepo
 yarn install
 yarn build
 ```

@@ -64,7 +64,5 @@ Navigate all the deployed contracts using the tables below
 | fUSDCx | [0x42bb40bF79730451B11f6De1CbA222F17b87Afd7](https://explorer-mumbai.maticvigil.com/address/0x42bb40bF79730451B11f6De1CbA222F17b87Afd7) |
 | fTUSDx | [0x918E0d5C96cAC79674E2D38066651212be3C9C48](https://explorer-mumbai.maticvigil.com/address/0x918E0d5C96cAC79674E2D38066651212be3C9C48) |
 {% endtab %}
-
-
 {% endtabs %}
 
