@@ -60,6 +60,10 @@ await sf.initialize()
 
 Head over to [app.superfluid.finance](https://app.superfluid.finance) using MetaMask or your favorite browser wallet. During log-in you will be sent some goerli ETH and test tokens to play with. 
 
+You can upgrade these test tokens to SuperTokens in the **Currencies** tab by clicking the "+" **Upgrade** button.
+
+![](../../.gitbook/assets/image%20%281%29.png)
+
 ## Up next
 
 Next we'll learn how to stream money in [🔀 Create a Superfluid Flow](../create-a-superfluid-flow.md)

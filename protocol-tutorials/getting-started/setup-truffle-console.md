@@ -150,5 +150,5 @@ Hurrah, we now have 50 Superfluid-enabled DAI or "DAIx". We are ready to start u
 
 ## Up next
 
-Next we'll learn how to stream money See 
+Next we'll learn how to stream money in [🔀 Create a Superfluid Flow](../create-a-superfluid-flow.md)
 
