@@ -5,7 +5,7 @@ description: >-
   irregular basis.
 ---
 
-# Superfluid
+# Get started with Superfluid
 
 ![](.gitbook/assets/image.png)
 
