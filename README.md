@@ -5,15 +5,19 @@ description: >-
   irregular basis.
 ---
 
-# Get started with Superfluid
+# Superfluid
+
+{% page-ref page="cheat-sheet.md" %}
+
+{% page-ref page="resources/networks.md" %}
 
 ![](.gitbook/assets/image.png)
+
+
 
 ## About Superfluid
 
 Superfluid is a smart contract framework on L1 Ethereum, enabling you to move assets on-chain following predefined rules called agreements. With a single on-chain tx, the money will flow from your balance to the receiver in real time! No other tx required works like magic ✨
-
-
 
 ## Handy Links
 
@@ -25,7 +29,7 @@ Superfluid is a smart contract framework on L1 Ethereum, enabling you to move as
 
 \*\*\*\*[**Medium blogs**](https://medium.com/superfluid-blog)\*\*\*\*
 
-You may want to check out our ****[**help page**](http://help.superfluid.finance/)\*\*\*\*
+You may want to check out our **\*\*\[**help page_\*\]\(_[http://help.superfluid.finance/\)\](http://help.superfluid.finance/%29\)\*\*\*
 
 Feel free to reach out to our team at **support@superfluid.finance**
 

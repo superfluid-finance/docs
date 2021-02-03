@@ -2,7 +2,7 @@
 description: One-liners to keep you "in the flow".
 ---
 
-# Cheat Sheet
+# Cheat Sheet 😎
 
 ![](.gitbook/assets/image%20%283%29.png)
 

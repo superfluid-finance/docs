@@ -2,9 +2,9 @@
 
 * [Superfluid](README.md)
 * [Introduction](introduction.md)
-* [Cheat Sheet](cheat-sheet.md)
+* [Cheat Sheet 😎](cheat-sheet.md)
 
-## Protocol Tutorials
+## Protocol Tutorials 📚
 
 * [🖥️ Setup your local environment](protocol-tutorials/setup-local-environment.md)
 * [🔀 Create a Superfluid Flow](protocol-tutorials/create-a-superfluid-flow.md)
@@ -18,5 +18,5 @@
 ## Resources
 
 * [Learn about Ethereum](resources/learn-about-ethereum.md)
-* [Network Directory](resources/networks.md)
+* [Network Directory 🔗](resources/networks.md)
 

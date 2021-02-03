@@ -185,5 +185,3 @@ Great job! You minted some Superfluid-enabled DAI, and created your first Flow.
 
 Next we'll learn about another agreement, called **Instant Distribution**
 
-[💰 Perform an Instant Distribution](https://github.com/superfluid-finance/superfluid-protocol-docs/tree/c0acd5ac6cab2baecb39b5b01b35daa9f175c468/tutorials/instant-distribution/README.md)
-

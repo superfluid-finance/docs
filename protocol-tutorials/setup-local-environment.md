@@ -4,7 +4,7 @@ description: Deploying SuperApp to the Görli network
 
 # 🖥️ Setup your local environment
 
-![](../.gitbook/assets/image%20%286%29%20%283%29%20%281%29.png)
+![](../.gitbook/assets/image%20%286%29%20%283%29%20%284%29%20%281%29.png)
 
 ## Goal of this tutorial
 
@@ -174,8 +174,4 @@ Hurrah, we now have 50 Superfluid-enabled DAI or "DAIx". We are ready to start u
 Great job! You minted some Superfluid-enabled DAI
 
 Next we'll learn how to use superfluid agreements, starting with streaming money: **Constant Flow Agreement**
-
-[💰 Create a Superfluid Flow](https://github.com/superfluid-finance/superfluid-protocol-docs/tree/c0acd5ac6cab2baecb39b5b01b35daa9f175c468/tutorials/instant-distribution/README.md)
-
-FIXME: fix Link!
 
