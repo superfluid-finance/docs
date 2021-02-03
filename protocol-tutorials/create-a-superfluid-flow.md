@@ -1,7 +1,7 @@
 ---
 date: '2020-09-28T00:00:00.000Z'
 title: "\U0001F500 Create a Superfluid Flow"
-description: In this tutorial we will create a Flow using the Javascript SDK
+description: Create a Flow using @superfluid-finance/js-sdk
 categories:
   - tutorial
 published: true
@@ -10,11 +10,12 @@ showToc: true
 
 # 🔀 Create a Superfluid Flow
 
-## index
+**In this tutorial we will**:
 
-By the end of this tutorial you will learn how to: _Open and close a Flow_
+* Use `@superfluid-financ/js-sdk`in the Truffle console 
+* Open and close a flow
 
-### Introduction
+## Introduction
 
 A **Constant Flow Agreement** is a transfer of value from a `sender` to a `receiver` at a constant `flowRate` measured in _amount per second_.
 
@@ -30,17 +31,20 @@ contract IConstantFlowAgreementV1 is ISuperAgreement {
 
 Seem straightforward enough? Let's go!
 
-### Set Up
+## Prerequisites
 
-If you haven't done this before, follow [this guide](setup-local-environment.md) to setup your environment in the Görli testnet
+This tutorial can be used in multiple environments. To see how to get things set up, see the links below
 
-### Create a Constant Flow Agreement "CFA"
+* [Setup - Truffle console](getting-started/)
+* Setup - Frontend / NodeJS
 
-Now that bob has some Superfluid-enabled DAI, he wants to send 100 DAIx per month to alice.
+## Create a Constant Flow Agreement "CFA"
 
-#### user\(\)
+Bob has some DAIx, and he wants to send 100 per month to alice.
 
-First of all, we need to create a user\(\) object for Bob. We'll need to add his address, and specify the currency he is going to use
+### Create a User object
+
+First let's create a new `User` object for Bob. 
 
 ```javascript
 const userBob = sf.user({
@@ -49,9 +53,9 @@ const userBob = sf.user({
 });
 ```
 
-#### flow\(\)
+### user.flow\(\)
 
-Now we have a user, Bob. Let's send a stream to Alice
+Now let's have Bob start a flow to Alice
 
 ```javascript
 await userBob.flow({
@@ -60,9 +64,9 @@ await userBob.flow({
 });
 ```
 
-So what is this weird number "385802469135802"? This is the amount of DAIx to transfer per second, which is equivalent to 1000 DAIx per month.
+So what is this weird number `385802469135802`? This is the amount of DAIx to transfer per second, which is equivalent to 1000 DAIx per month.
 
-But is the flow actually happening? check it out yourself by checking his balance a few times:
+You may be asking, how can I tell tokens are flowing? check it out yourself by checking his balance a few times:
 
 ```javascript
 (async () => wad4human(await daix.balanceOf(bob)))()(

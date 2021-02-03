@@ -4,9 +4,11 @@
 * [Introduction](introduction.md)
 * [Cheat Sheet 😎](cheat-sheet.md)
 
-## Protocol Tutorials 📚
+## 📑 Protocol Tutorials
 
-* [🖥️ Setup your local environment](protocol-tutorials/setup-local-environment.md)
+* [Getting started](protocol-tutorials/getting-started/README.md)
+  * [💅 Frontend + NodeJS](protocol-tutorials/getting-started/frontend-+-nodejs.md)
+  * [🍫 Truffle Console](protocol-tutorials/getting-started/setup-truffle-console.md)
 * [🔀 Create a Superfluid Flow](protocol-tutorials/create-a-superfluid-flow.md)
 * [💰 Perform an Instant Distribution](protocol-tutorials/perform-an-instant-distribution.md)
 

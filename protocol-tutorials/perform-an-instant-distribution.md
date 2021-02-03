@@ -38,7 +38,7 @@ contract IInstantDistributionAgreementV1 is ISuperAgreement {
 
 ## Set Up
 
-If you haven't done this before, follow [this guide](setup-local-environment.md) to setup your environment in the Görli testnet
+If you haven't done this before, follow [this guide](getting-started/) to setup your environment in the Görli testnet
 
 > If you have any active flows, please stop them before continuing.
 
