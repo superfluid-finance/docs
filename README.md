@@ -7,8 +7,6 @@ description: >-
 
 # Superfluid
 
-<button>Go To Discord</button>
-
 ![](.gitbook/assets/image.png)
 
 ## About Superfluid
