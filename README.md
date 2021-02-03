@@ -7,9 +7,6 @@ description: >-
 
 # Superfluid
 
-<Button.Toolbar><Button style="primary">Tutorials</Button><Button style="marketing-primary">Cheat Sheet</Button></Button.Toolbar>
-
-
 ![](.gitbook/assets/image.png)
 
 ## About Superfluid
