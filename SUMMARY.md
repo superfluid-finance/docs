@@ -2,7 +2,7 @@
 
 * [Superfluid](README.md)
 * [Introduction](introduction.md)
-* [Cheat Sheet 😎](cheat-sheet.md)
+* [😎 Cheat Sheet](cheat-sheet.md)
 
 ## 📑 Protocol Tutorials
 
@@ -20,5 +20,6 @@
 ## Resources
 
 * [Learn about Ethereum](resources/learn-about-ethereum.md)
-* [Network Directory 🔗](resources/networks.md)
+* [🔗 Network Directory](resources/networks.md)
+* [🏗Hack Ideas!](https://www.notion.so/Hack-On-Superfluid-92f7cb4ccf264518814d54d50f067ac1)
 

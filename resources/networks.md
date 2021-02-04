@@ -1,4 +1,4 @@
-# Network Directory 🔗
+# 🔗 Network Directory
 
 Superfluid is deployed on many different networks.
 

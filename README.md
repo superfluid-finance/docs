@@ -6,7 +6,7 @@ description: Monetize your application with magic money streams
 
 Superfluid is a smart contract framework on L1 Ethereum, enabling you to move assets on-chain following predefined rules called agreements. With a single on-chain tx, the money will flow from your balance to the receiver in real time! No other tx required works like magic ✨
 
-| [**Website**](https://www.superfluid.finance/) **🌐**      | [**GitHub**](https://github.com/superfluid-finance) **👾**     | [**Discord**](https://discord.gg/qPg6Y3d) 💬    | <img src="https://miro.medium.com/fit/c/262/262/1*sHhtYhaCe2Uc3IU0IgKwIQ.png" width="32" height=32 />[**Blog**](https://medium.com/superfluid-blog) |
+| ![](.gitbook/assets/github.png) [**GitHub**](https://github.com/superfluid-finance) | ![](.gitbook/assets/github.png) [Examples](https://github.com/superfluid-finance/protocol-monorepo/tree/master/examples) | ![](.gitbook/assets/discord-logo.png) [**Discord**](https://discord.gg/qPg6Y3d) | ![](.gitbook/assets/medium.png) [**Blog**](https://medium.com/superfluid-blog)       **** |
 | :---: | :---: | :---: | :---: |
 
 
@@ -20,7 +20,7 @@ Superfluid is a smart contract framework on L1 Ethereum, enabling you to move as
 
 This Gitbook is Work-In-Progress which means new materials can be added, deleted, rephrased on irregular basis.
 
-If you need any help or have any questions, please join our Discord [**Discord**](https://discord.gg/qPg6Y3d) ****or ****Check out our [**help page**](http://help.superfluid.finance/)
+If you need any help or have any questions, please join our [**Discord**](https://discord.gg/qPg6Y3d) or check out our [**help page**](http://help.superfluid.finance/)
 
 Feel free to reach out to our team at **support@superfluid.finance**
 

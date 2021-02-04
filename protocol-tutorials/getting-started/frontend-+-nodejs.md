@@ -62,7 +62,7 @@ Head over to [app.superfluid.finance](https://app.superfluid.finance) using Meta
 
 You can upgrade these test tokens to SuperTokens in the **Currencies** tab by clicking the "+" **Upgrade** button.
 
-![](../../.gitbook/assets/image%20%281%29.png)
+![](../../.gitbook/assets/image%20%284%29.png)
 
 ## Up next
 
