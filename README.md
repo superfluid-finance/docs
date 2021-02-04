@@ -6,7 +6,7 @@ description: Monetize your application with magic money streams
 
 Superfluid is a smart contract framework on L1 Ethereum, enabling you to move assets on-chain following predefined rules called agreements. With a single on-chain tx, the money will flow from your balance to the receiver in real time! No other tx required works like magic ✨
 
-| [**Website**](https://www.superfluid.finance/) **🌐**      | [**GitHub**](https://github.com/superfluid-finance) **👾**     | [**Discord**](https://discord.gg/qPg6Y3d) 💬    | [**Medium blogs**](https://medium.com/superfluid-blog) **📙** |
+| [**Website**](https://www.superfluid.finance/) **🌐**      | [**GitHub**](https://github.com/superfluid-finance) **👾**     | [**Discord**](https://discord.gg/qPg6Y3d) 💬    | <img src="https://miro.medium.com/fit/c/262/262/1*sHhtYhaCe2Uc3IU0IgKwIQ.png" width="40" height="40" />[**Blog**](https://medium.com/superfluid-blog) |
 | :---: | :---: | :---: | :---: |
 
 
