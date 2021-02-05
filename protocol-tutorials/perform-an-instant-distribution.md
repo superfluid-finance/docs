@@ -1,20 +1,14 @@
 ---
-description: Learning how to see the instant token distribution in the action
+description: Create a pool and distribute tokens using @superfluid-financ/js-sdk
 ---
 
 # 💰 Perform an Instant Distribution
 
-![](../.gitbook/assets/image%20%286%29%20%283%29%20%284%29%20%283%29%20%282%29.png)
-
-## Goal of this tutorial
-
-By the end of this tutorial you will learn how to _Perform an Instant Distribution_
-
 ## Introduction
 
-An **Instant Distribution Agreement \(IDA\)** is used to send funds as one-time-payments. It consists of a **Publishing Index** with `indexId`, an `indexValue`, and one or more **subscribers**.
+An **Instant Distribution Agreement \(IDA\)** can be used to make one-time-payments to multiple recipients. Use-cases include revenue sharing or recurring airdrops.  It consists of a **Publishing Index** with `indexId`, an `indexValue`, and one or more **subscribers**.
 
-This is the second major concept of Superfluid. Here is an overview of the Instant Distribution Agreement contract we'll use in this tutorial.
+Here is an quick glimpse at the IDA contract we'll use in this tutorial. Don't worry, you don't need to memorize this.
 
 ```javascript
 contract IInstantDistributionAgreementV1 is ISuperAgreement {
@@ -36,34 +30,33 @@ contract IInstantDistributionAgreementV1 is ISuperAgreement {
           returns(bytes memory newCtx);
 ```
 
-## Set Up
+## Prerequisites
 
-If you haven't done this before, follow [this guide](getting-started/) to setup your environment in the Görli testnet
+This tutorial can be used in multiple environments. To learn how to get started, see the links below
 
-> If you have any active flows, please stop them before continuing.
+* [Getting Started - 🍫 Truffle Console](getting-started/setup-truffle-console.md)
+* [Getting Started - 💅 Frontend / NodeJS](getting-started/frontend-+-nodejs.md)
 
-## Perform an Instant Distribution
+Make sure you have some test goerl ETH and tokens as well. We'll airdrop everything you need when you log in to [https://app.superfluid.finance](https://app.superfluid.finance)
 
-The first step to creating an Instant Distribution Agreement \(IDA\) is to create a **Publishing Index**. Once created, the Publishing Index can be used by bob to send tokens at any point in the future.
+## Create a Pool
 
-An **Instant Distribution Agreement \(IDA\)** can be used to make one-time-payments to multiple recipients. Use-cases include revenue sharing or recurring air-drops. An IDA consists of a **Publisher** with one or more **Subscribers**. To simplify things in this process, the SDK wraps much of the IDA logic.
+The first step to using an IDA is to create a **Publishing Index**. Once created, the Publishing Index can be used to send tokens at any point in the future. To make things easier, we will just call this `poolId`
 
-## Steps
-
-The first step is to create a new **pool** with a unique `poolId`
+Lets create a new **pool:**
 
 ```javascript
 await alice.createPool({ poolId: 1 });
 ```
 
-Then we give out shares
+Now that we have our Plublishing Index / pool, we can assign it some **Subscribers**. We do this by _giving shares_ to other people like this:
 
 ```javascript
 await alice.giveShares({ poolId: 1, recipient: dan, shares: 90 });
 await alice.giveShares({ poolId: 1, recipient: carol, shares: 10 });
 ```
 
-And finally we can distribute funds to everyone in the pool, based on the amount of shares they have.
+And finally we can _distribute funds_ to everyone in the pool, based on the amount of shares they have.
 
 ```javascript
 await alice.distributeToPool({ poolId: 1, amount: 1000 });
@@ -75,5 +68,5 @@ Thats it! One thing to pay attention - for a recipient's balance to reflect the 
 
 ## Excellent work!
 
-You learned how to perform an Instant Distribution using the Superfluid SDK. Now that you have the basics down, its time to start building a dapp.
+You learned how to perform an Instant Distribution using the Superfluid SDK. Now that you have the basics down, its time to start building your app.
 

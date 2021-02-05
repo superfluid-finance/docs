@@ -1,7 +1,7 @@
 ---
 date: '2020-09-28T00:00:00.000Z'
 title: "\U0001F500 Create a Superfluid Flow"
-description: Create a Flow using @superfluid-finance/js-sdk
+description: Open and close a flow using @superfluid-finance/js-sdk
 categories:
   - tutorial
 published: true
@@ -10,16 +10,11 @@ showToc: true
 
 # 🔀 Create a Superfluid Flow
 
-**In this tutorial we will**:
-
-* Use `@superfluid-financ/js-sdk`in the Truffle console 
-* Open and close a flow
-
 ## Introduction
 
-A **Constant Flow Agreement** is a transfer of value from a `sender` to a `receiver` at a constant `flowRate` measured in _amount per second_.
+A **Constant Flow Agreement \(CFA\)** is a transfer of value from a `sender` to a `receiver` at a constant `flowRate` measured in _amount per second_.
 
-Great! Now that you understand the first major concept of Superfluid, lets get to the fun part. Here is an overview of the Constant Flow Agreement contract. Did someone say _CRUD_?
+Here is glimpse at the CFA contract. Did someone say _CRUD ?_
 
 ```javascript
 contract IConstantFlowAgreementV1 is ISuperAgreement {
@@ -33,10 +28,12 @@ Seem straightforward enough? Let's go!
 
 ## Prerequisites
 
-This tutorial can be used in multiple environments. To see how to get things set up, see the links below
+This tutorial can be used in multiple environments. To learn how to get started, see the links below
 
-* [Setup - Truffle console](getting-started/)
-* Setup - Frontend / NodeJS
+* [Getting Started - 🍫 Truffle Console](getting-started/setup-truffle-console.md)
+* [Getting Started - 💅 Frontend / NodeJS](getting-started/frontend-+-nodejs.md)
+
+Make sure you have some test goerl ETH and tokens as well. We'll airdrop everything you need when you log in to [https://app.superfluid.finance](https://app.superfluid.finance)
 
 ## Create a Constant Flow Agreement "CFA"
 
@@ -47,9 +44,10 @@ Bob has some DAIx, and he wants to send 100 per month to alice.
 First let's create a new `User` object for Bob. 
 
 ```javascript
+const bobAddress = "0xbbb...." // address of the sender's wallet
 const userBob = sf.user({
-  address: bob,
-  token: daix.address
+  address: bobAddress, 
+  token: daix.address // address of the SuperToken
 });
 ```
 
@@ -58,37 +56,35 @@ const userBob = sf.user({
 Now let's have Bob start a flow to Alice
 
 ```javascript
+const aliceAddress = "0xaaa...", // address of the receiver's wallet
+
 await userBob.flow({
-  recipient: alice,
+  recipient: aliceAddress,
   flowRate: "385802469135802"
 });
 ```
 
+**🎉 Excellent work, you just started your first Superfluid Flow!**
+
 So what is this weird number `385802469135802`? This is the amount of DAIx to transfer per second, which is equivalent to 1000 DAIx per month.
 
-You may be asking, how can I tell tokens are flowing? check it out yourself by checking his balance a few times:
-
-```javascript
-(async () => wad4human(await daix.balanceOf(bob)))()(
-```
-
-But where can I see these flows?
+But how can I see these flows? We can call `details()` to see a bunch of info about our user:
 
 ```javascript
 await userBob.details(); // full object
 (await userBob.details()).cfa.flows; // detailed flows view
 ```
 
-There can only ever be one flow from: alice to: bob, so if you call flow\(\) again, you will be able to edit this stream:
+If we call `flow()` again, we can edit this stream:
 
 ```javascript
 await userBob.flow({
-  recipient: alice,
-  flowRate: "1000000000000000" // 2592 per month, transformed to seconds, with 18 decimals
+  recipient: aliceAddress,
+  flowRate: "1000000000000000" // 2592 DAIx per month
 });
 ```
 
-Now if we want to close the stream off
+To stop a stream, just pass a `0` value:
 
 ```javascript
 userBob.flow({
@@ -96,6 +92,10 @@ userBob.flow({
   flowRate: "0"
 });
 ```
+
+Awesome work. You're now ready for the next tutorial [💰 Perform an Instant Distribution](perform-an-instant-distribution.md)
+
+Or you can keep reading to peek behind the scenes.
 
 ## Go lower level
 
@@ -129,9 +129,7 @@ So what is this weird number "385802469135802"? This is the amount of DAIx to tr
 
 > HUH?! How is bob able to send 1000 DAIx per month if he only has 50 Superfluid enabled DAI? The answer is that the sender isn't required to have the full amount to start a flow. The flow will continue to run as long as he has DAIx.
 
-**🎉 Excellent work, you just started your first Superfluid Flow!**
-
-![](https://github.com/superfluid-finance/superfluid-protocol-docs/tree/c0acd5ac6cab2baecb39b5b01b35daa9f175c468/img/paid-every-second-meme.png)
+\*\*\*\*
 
 #### Inspect the Flow
 
