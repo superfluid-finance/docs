@@ -1,5 +1,5 @@
 ---
-description: Monetize your application with magic money streams
+description: A new DeFi primitive to automate recurring transactions and monetize Web3
 ---
 
 # Superfluid
