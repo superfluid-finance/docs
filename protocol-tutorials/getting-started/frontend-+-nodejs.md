@@ -6,7 +6,7 @@ description: Get started in a frontend or nodejs environment
 
 **In this tutorial we will**:
 
-* Use `@superfluid-financ/js-sdk` with goerli testnet
+* Use `@superfluid-finance/js-sdk` with goerli testnet
 * Obtain SuperTokens 
 * Check SuperToken balances 
 

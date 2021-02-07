@@ -6,7 +6,7 @@ description: Get started using Truffle Console
 
 **In this tutorial we will**:
 
-* Use `@superfluid-financ/js-sdk` in the truffle console with goerli testnet
+* Use `@superfluid-finance/js-sdk` in the truffle console with goerli testnet
 * Mint Superfluid DAI \(DAIx\)
 * Check Supertoken balances 
 
