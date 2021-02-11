@@ -8,7 +8,7 @@ description: One-liners to keep you "in the flow".
 
 #### Quick-start
 
-Setup the SDK in Truffle console and mint DAIx. See the [tutorial](https://github.com/superfluid-finance/superfluid-protocol-docs/tree/c0acd5ac6cab2baecb39b5b01b35daa9f175c468/tutorial/create-a-flow/README.md) for a full walk-through.
+Setup the SDK in Truffle console and mint DAIx. See the [tutorial](https://docs.superfluid.finance/superfluid/protocol-tutorials/create-a-superfluid-flow) for a full walk-through.
 
 #### Tokens
 
