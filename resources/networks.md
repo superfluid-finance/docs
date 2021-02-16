@@ -18,6 +18,7 @@ Navigate all the deployed contracts using the tables below
 | fDAIx | [0xF2d68898557cCb2Cf4C10c3Ef2B034b2a69DAD00](http://goerli.etherscan.io/address/0xF2d68898557cCb2Cf4C10c3Ef2B034b2a69DAD00) |
 | fUSDCx | [0x8aE68021f6170E5a766bE613cEA0d75236ECCa9a](http://goerli.etherscan.io/address/0x8aE68021f6170E5a766bE613cEA0d75236ECCa9a) |
 | fTUSDx | [0x95697ec24439E3Eb7ba588c7B279b9B369236941](http://goerli.etherscan.io/address/0x95697ec24439E3Eb7ba588c7B279b9B369236941) |
+| ETHx | [0x5943F705aBb6834Cad767e6E4bB258Bc48D9C947](https://goerli.etherscan.io/address/0x5943F705aBb6834Cad767e6E4bB258Bc48D9C947) |
 {% endtab %}
 
 {% tab title="Rinkeby" %}
@@ -33,6 +34,7 @@ Navigate all the deployed contracts using the tables below
 | fDAIx | [0x745861AeD1EEe363b4AaA5F1994Be40b1e05Ff90](http://rinkeby.etherscan.io/address/0x745861AeD1EEe363b4AaA5F1994Be40b1e05Ff90) |
 | fUSDCx | [0x0F1D7C55A2B133E000eA10EeC03c774e0d6796e8](http://rinkeby.etherscan.io/address/0x0F1D7C55A2B133E000eA10EeC03c774e0d6796e8) |
 | fTUSDx | [0xdF7B8461a1d9f57f12F88d97FC6131E36d302d81](http://rinkeby.etherscan.io/address/0xdF7B8461a1d9f57f12F88d97FC6131E36d302d81) |
+| ETHx | [0xa623b2DD931C5162b7a0B25852f4024Db48bb1A0](https://rinkeby.etherscan.io/address/0xa623b2DD931C5162b7a0B25852f4024Db48bb1A0) |
 {% endtab %}
 
 {% tab title="Ropsten" %}
@@ -48,6 +50,7 @@ Navigate all the deployed contracts using the tables below
 | fDAIx | [0xBF6201a6c48B56d8577eDD079b84716BB4918E8A](http://ropsten.etherscan.io/address/0xBF6201a6c48B56d8577eDD079b84716BB4918E8A) |
 | fUSDCx | [0x2dC36872a445adF0bFf63cc0eeee52A2b801625f](http://ropsten.etherscan.io/address/0x2dC36872a445adF0bFf63cc0eeee52A2b801625f) |
 | fTUSDx | [0xC5191A51982983B8105eC4Fbbbf35b9466EE0179](http://ropsten.etherscan.io/address/0xC5191A51982983B8105eC4Fbbbf35b9466EE0179) |
+| ETHx | [0x6fC99F5591b51583ba15A8C2572408257A1D2797](https://ropsten.etherscan.io/address/0x6fC99F5591b51583ba15A8C2572408257A1D2797) |
 {% endtab %}
 
 {% tab title="Mumbai" %}
