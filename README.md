@@ -4,21 +4,26 @@ description: A new DeFi primitive to automate recurring transactions and monetiz
 
 # Superfluid
 
-Superfluid is a smart contract framework on L1 Ethereum, enabling you to move assets on-chain following predefined rules called agreements. With a single on-chain tx, the money will flow from your balance to the receiver in real time! No other tx required works like magic ✨
+Superfluid is a smart contract framework on EVM-compatible networks, enabling you to move assets on-chain following predefined rules called agreements. With a single on-chain tx, the money will flow from your balance to the receiver in real time! No other tx required works like magic ✨
 
-| ![](.gitbook/assets/github.png) [**GitHub**](https://github.com/superfluid-finance) | ![](.gitbook/assets/github.png) [Examples](https://github.com/superfluid-finance/protocol-monorepo/tree/master/examples) | ![](.gitbook/assets/discord-logo.png) [**Discord**](https://discord.gg/qPg6Y3d) | ![](.gitbook/assets/medium.png) [**Blog**](https://medium.com/superfluid-blog)       **** |
-| :---: | :---: | :---: | :---: |
+| 🛠 [Examples](resources/examples.md) | ![](.gitbook/assets/discord-logo.png) [**Discord**](https://discord.gg/qPg6Y3d) | ![](.gitbook/assets/medium.png) [**Blog**](https://medium.com/superfluid-blog)       **** |
+| :---: | :---: | :---: |
 
 
-{% page-ref page="cheat-sheet.md" %}
+Software developers, check out [Getting started](protocol-tutorials/getting-started.md)
 
-{% page-ref page="resources/networks.md" %}
+Not a developer, or only have 5 minutes? Head to [🚚 Primitives](protocol-tutorials/primitives.md)
+
+Other useful resources:
+
+* [😎 Cheat Sheet](resources/cheat-sheet.md)
+* [🔗 Network Directory](resources/networks.md)
+
+The Superfluid documenation is growing. Feel free to make suggestions and tell us what you like or don't like.
 
 ![](.gitbook/assets/image.png)
 
 ## Get Help
-
-This Gitbook is Work-In-Progress which means new materials can be added, deleted, rephrased on irregular basis.
 
 If you need any help or have any questions, please join our [**Discord**](https://discord.gg/qPg6Y3d) or check out our [**help page**](http://help.superfluid.finance/)
 

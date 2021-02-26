@@ -2,11 +2,11 @@
 description: Create a pool and distribute tokens using @superfluid-financ/js-sdk
 ---
 
-# 💰 Perform an Instant Distribution
+# 💰 Instant Distribution
 
 ## Introduction
 
-An **Instant Distribution Agreement \(IDA\)** can be used to make one-time-payments to multiple recipients. Use-cases include revenue sharing or recurring airdrops.  It consists of a **Publishing Index** with `indexId`, an `indexValue`, and one or more **subscribers**.
+Let's take a look at another Superfluid Agreement. The **Instant Distribution Agreement \(IDA\)** can be used to make one-time-payments to multiple recipients. The IDA could be used for revenue sharing or airdrops.  It consists of a **Publishing Index** with `indexId`, an `indexValue`, and one or more **subscribers**.
 
 Here is an quick glimpse at the IDA contract we'll use in this tutorial. Don't worry, you don't need to memorize this.
 
@@ -32,12 +32,10 @@ contract IInstantDistributionAgreementV1 is ISuperAgreement {
 
 ## Prerequisites
 
-This tutorial can be used in multiple environments. To learn how to get started, see the links below
+Before starting this tutorial you should: 
 
-* [Getting Started - 🍫 Truffle Console](getting-started/setup-truffle-console.md)
-* [Getting Started - 💅 Frontend / NodeJS](getting-started/frontend-+-nodejs.md)
-
-Make sure you have some test goerl ETH and tokens as well. We'll airdrop everything you need when you log in to [https://app.superfluid.finance](https://app.superfluid.finance)
+* Complete the [@superfluid-finance/js-sdk](frontend-+-nodejs.md) tutorial
+* Have some goerli ETH and tokens in your wallet from the dashboard [https://app.superfluid.finance](https://app.superfluid.finance)
 
 ## Create a Pool
 
@@ -64,9 +62,9 @@ await alice.distributeToPool({ poolId: 1, amount: 1000 });
 
 In this example, bob will receive 90% of the tokens alice sent, while carol only receives 10%. Bob will have 900 and carol will have 100.
 
-Thats it! One thing to pay attention - for a recipient's balance to reflect the distribution event, they should first call `approveSubscription` one time. If they fail to do this, no worries, they can still receive their tokens after calling the `claim` function at any time.
+Thats it! One thing to pay attention - for a recipient's balance to reflect the distribution event, they should first call `approveSubscription` one time. If they fail to do this, don't worry, they can still receive their tokens after calling the `claim` function at any time.
 
-## Excellent work!
 
-You learned how to perform an Instant Distribution using the Superfluid SDK. Now that you have the basics down, its time to start building your app.
+
+⚔ Look at you now, with two agreements at your disposal. You can duel-wield! Its time to learn more about Super Tokens.
 

@@ -1,5 +1,5 @@
 ---
-description: Description of the Superfluid protocol
+description: Welcome to the Superfluid protocol
 ---
 
 # Introduction
@@ -22,7 +22,7 @@ Superfluid is a smart contract framework on L1 Ethereum, enabling you to move as
 
 The initial version of Superfluid is comprised of the following key elements:
 
-* _**Super Agreement Framework**_**:** a set of white-listed _super agreements_ contracts as building blocks.
+* _**Super Agreement Framework**_**:** a set of approved _super agreements_ contracts as building blocks.
 * _**Super App Framework**_**:** a development framework for building real-time finance apps.
 * _**Super Token Framework**_**:** an extended [ERC-777](https://eips.ethereum.org/EIPS/eip-777) implementation with real-time finance capability, and a registry.
 * _**Batch Call & Meta Tx**_**:** for users \(contracts or EOA\) to interact with the system in batch on-chain, or off-chain through meta transactions.
