@@ -10,7 +10,7 @@ If you want to learn more about Polygon network, such as websocket connections, 
 
 ### Mumbai Test network 
 
-To test on the Mumbai testnet with superfluid, you'll need an RPC URL to connect your metamask or application to a Polygon node.
+To test on the Mumbai testnet with superfluid, you'll need a RPC URL to connect your metamask or application to a Polygon node.
 
 <table>
   <thead>
@@ -57,7 +57,7 @@ The public RPC is not recommended because the rate limit is not high enough to a
 
 ### Matic-Mainnet
 
-To use Matic-Mainnet with Superfluid, you'll need an RPC URL to connect your metamask or application to a Polygon node.
+To use Matic-Mainnet with Superfluid, you'll need a RPC URL to connect your metamask or application to a Polygon node.
 
 <table>
   <thead>
@@ -107,5 +107,5 @@ To use Matic-Mainnet with Superfluid, you'll need an RPC URL to connect your met
 What's happening is that the `@superfluid-finance/js-sdk` is calling too many `eth_getLogs` and hitting the maximum rate limit for your RPC connection.  
 
 1. Obtain a better RPC URL from [https://rpc.maticvigil.com/](https://rpc.maticvigil.com/)
-2. Don't use the functions `user.details` or `sf.cfa.listFlows`\(there may be more\)
+2. Don't use the functions `user.details` or `sf.cfa.listFlows`\(there may be others as well\)
 
