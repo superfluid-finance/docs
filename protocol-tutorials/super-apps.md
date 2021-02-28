@@ -24,14 +24,14 @@ Once it loads, you should see `TradeableCashflow.sol` in the editor window.
 
 ![](../.gitbook/assets/image%20%281%29.png)
 
-Open the gist in the file explorer to see all the contracts. `TradeableCashflow.sol` is our main contract, which inherits `RedirectAll` from the local file, and the `ERC721` contract from the  Open Zeppelin Github repo.
+Open the gist in the file explorer to see all the contracts. `TradeableCashflow.sol` is our main contract, which inherits `RedirectAll` from the local file, and the `ERC721` contract from the Open Zeppelin Github repo.
 
-The main components of this contract is:
+The two main components you should understand in `TradeableCashflow.sol` are:
 
-1. We create a new ERC721 and mint a single NFT 
-2. Whenever we transfer the NFT, the `_beforeTokenTransfer` hook will execute `_changeReceiver` 
+1. Create a new ERC721 and mint a single NFT 
+2. Whenever we transfer the NFT, the `_beforeTokenTransfer()` hook will call `_changeReceiver()` 
 
-Ok, so let's look at what `_changeReceiver` does in `RedirectAll.sol`
+Ok, so let's look at what `_changeReceiver()` does in `RedirectAll.sol`
 
 ```javascript
     // @dev Change the Receiver of the total flow
@@ -69,19 +69,38 @@ Ok, so let's look at what `_changeReceiver` does in `RedirectAll.sol`
     }
 ```
 
-The notation here will look different from what we've covered so far, since we are interacting with the contracts directly. In comparison, here is how it might look if you performed the action using the SDK: `flow({recipient: oldRecipient, flowRate: "0" })` followed by `flow({recipient: newRecipient, flowRate: newFlowRate })` 
+The notation here will look different from what we've covered so far, since we are interacting with the contracts directly. In comparison, here's how it would look using `@superfluid-finance/js-sdk` :
 
-Note that we are using `getNetFlow` to calculate the current flowRate.
+```javascript
+// Get the new incoming flow rate
+const newFlowRate = await sf.cfa.getNetFlow({ 
+                        superToken: _acceptedToken,
+                        account: myContract.address
+                      })
 
-Cool so now we have an idea how a contract can change and update flows. How about reacting to incoming flows? For this we need to use Super App callbacks.
+// Stop flow to the current recipient
+await flow({recipient: recipient, flowRate: "0" });
+
+// Start a flow to the new recipient
+await flow({recipient: newRecipient, flowRate: newFlowRate });
+
+// Reassign the recipient to the newRecipient
+recipient = newRecipient
+```
+
+Now we see how to update flows using a contract. But what about reacting to incoming flows automatically? To respond to changes in an agreement, we need to use Super App **callbacks**.
 
 ## Callbacks
 
-This is how your app can respond to someone opening a new flow, without actually calling a function on the contract itself. For example, a user can open a new flow to your contract via the dashboard. More docs on this coming soon!
+This is how your app can respond to someone opening a new flow, _without needing to call a function on the contract itself_. For example, a user can simply start a new flow to your contract using the dashboard, and this can trigger business logic within your contract automatically. 
+
+🚧 Section Under Construction. Updates coming soon 🚧 
 
 ## Deployment
 
-Switch back to `TradeableCashflow.sol` file in the editor window. Now in the Compiler tab, make sure you're using the same version as whats listed in the contract, and hit "compile".
+Now that we have a basic idea of how our Super App works, its time to take it for a spin!
+
+Switch back to `TradeableCashflow.sol` in the editor window. Now in the Compiler tab, make sure you're using the same version as whats listed in the contract, and hit "compile".
 
 ![](../.gitbook/assets/image%20%2810%29.png)
 
@@ -91,15 +110,13 @@ To deploy the contract, switch to the "Deploy and Run Transactions" tab, and sel
 * CFA: 0xEd6BcbF6907D4feEEe8a8875543249bEa9D308E8
 * Accepted Token \(fDAIx\): 0xf2d68898557ccb2cf4c10c3ef2b034b2a69dad00
 
-
-
 ## Usage
 
-From any account, start a flow using the _acceptedToken_ fDAIx, to the deployed contract.
+From any account, start a flow using the _acceptedToken_ **fDAIx**, to the address of the deployed contract.
 
 Once you transfer the NFT, the flow will update automatically to the new Holy Grail holder.
 
-More docs coming soon!
+🚧 Section Under Construction. Updates coming soon 🚧 
 
 ## Resources
 
