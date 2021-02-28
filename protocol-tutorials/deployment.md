@@ -8,7 +8,7 @@ So far in the tutorial we have used contracts already deployed to a public testn
 
 However, you may eventually need the skills to deploy the entire framework yourself to a local test network. Once your Super App is more developed, you will ned to write tests. Using a public testnet for testing is not an option, due to the relatively slow execution time. 
 
-> Even a 1 second block time is too long, considering a full test-suite may include over 1000 tests. We need millisecond blocktimes 🏎
+> Even a 1 second block time is too long, considering a full test-suite may include thousands of transactions. We need millisecond blocktimes 🏎
 
 ### Set up Hardhat
 

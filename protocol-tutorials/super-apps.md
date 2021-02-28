@@ -114,7 +114,7 @@ To deploy the contract, switch to the "Deploy and Run Transactions" tab, and sel
 
 From any account, start a flow using the _acceptedToken_ **fDAIx**, to the address of the deployed contract.
 
-Once you transfer the NFT, the flow will update automatically to the new Holy Grail holder.
+Once you transfer the NFT, the flow will be re-directed automatically to the new NFT holder.
 
 🚧 Section Under Construction. Updates coming soon 🚧 
 
