@@ -18,7 +18,9 @@
 * [🔀 Constant Flow Agreement](docs/constant-flow-agreement.md)
 * [🍫 Truffle Console](docs/setup-truffle-console.md)
 * [Polygon Network \(Matic\)](docs/polygon-network-matic.md)
+* [xDAI Chain](docs/xdai-chain.md)
 * [Deploying Contracts](docs/production-deployment.md)
+* [Super App](docs/super-app.md)
 
 ## Resources
 

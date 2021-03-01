@@ -21,7 +21,9 @@ Before starting this tutorial you should:
 
 ## ERC777 Callbacks
 
-Tokens which can "react" to certain events using callbacks [erc777.org](https://www.erc777.org/). More docs coming soon!
+Tokens which can "react" to certain events using callbacks [erc777.org](https://www.erc777.org/). 
+
+🚧 Section Under Construction. Updates coming soon 🚧
 
 ## **Batch Call** 
 
@@ -37,9 +39,7 @@ To change the token, replace the address in the URL.
 
 ## **Meta-transactions**
 
-Submit transactions on behalf of another account. More docs coming soon!
+Submit transactions on behalf of another account. 
 
- 
-
-
+🚧 Section Under Construction. Updates coming soon 🚧 
 
