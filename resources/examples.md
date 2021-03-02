@@ -99,3 +99,11 @@ const testPool = async () => {
 testPool();
 ```
 
+## Videos
+
+Adding a simple "Donate" button to an app:
+
+{% embed url="https://www.youtube.com/watch?v=RmOogQK5VHY" %}
+
+
+
