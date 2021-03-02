@@ -12,6 +12,7 @@
 * [🦸‍♀️ Super Tokens](protocol-tutorials/super-tokens.md)
 * [🦾 Super Apps](protocol-tutorials/super-apps.md)
 * [✨ Deployment](protocol-tutorials/deployment.md)
+* [Deploying Contracts](protocol-tutorials/production-deployment.md)
 
 ## Docs
 
@@ -19,7 +20,7 @@
 * [🍫 Truffle Console](docs/setup-truffle-console.md)
 * [Polygon Network \(Matic\)](docs/polygon-network-matic.md)
 * [xDAI Chain](docs/xdai-chain.md)
-* [Deploying Contracts](docs/production-deployment.md)
+* [Superfluid Deployment Guide](https://www.notion.so/superfluidhq/Superfluid-Protocol-Deployment-Guide-ccbaf8f0850a48cbb06c39dc7c9ebfe4#9e9d825d63af400ebe07f33c0113bdff)
 * [Super App](docs/super-app.md)
 
 ## Resources
