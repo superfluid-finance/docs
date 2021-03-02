@@ -6,7 +6,9 @@ description: See how others implemented Superfluid in their application
 
 ## Apps
 
-There are several forkable apps which are available on Github
+### Official 
+
+These examples are maintained by the Superfluid team. We will try to continue to update them as we make improvments. Some of them can be easily forked to get started quickly
 
 * **Dividend Rights Token -** Distribute IDA shares using an ERC20 token
 * **Holy Grail -** Whoever holds this NFT receives a CFA stream
@@ -14,7 +16,22 @@ There are several forkable apps which are available on Github
 * **Developer Playground** - A full-stack playground built with RedwoodJS
 * and more...
 
+Click here to see the official examples:
+
 {% embed url="https://github.com/superfluid-finance/protocol-monorepo/tree/dev/examples" caption="Superlfuid App Examples" %}
+
+### Community
+
+Our community makes some awesome things we want to showcase: 
+
+> ⚠ We do not maintain these examples. If you run into problems, check the versions for `@superfluid-finance/js-sdk` and `@superfluid-finance/ethereum-contracts`
+
+* **Stream Rent** -  _Create NFTs using offchain resources, and gain income by renting them out_
+  * Hackathon submission: [https://devfolio.co/submissions/stream-rent-d208](https://devfolio.co/submissions/stream-rent-d208)
+  * Source: [https://github.com/Jayashrri/StreamRent](https://github.com/Jayashrri/StreamRent)
+* more soon!
+
+## Ideas
 
 Want ideas? Check out _hack.superfluid.finance_ to connect with other community members and brainstorm ideas:
 
