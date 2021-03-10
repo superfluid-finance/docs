@@ -202,7 +202,7 @@ Next select the **TradeableCashflow** contract to deploy, and use the following 
 
 This will deploy the Holy Grail contract, mint a single NFT, and transfer it to the owner. Once the transaction is confirmed, copy the address of the deployed contract. 
 
-![](../.gitbook/assets/image%20%2825%29.png)
+![](../.gitbook/assets/image%20%2817%29%20%281%29.png)
 
 
 

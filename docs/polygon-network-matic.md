@@ -6,9 +6,9 @@ description: Using Superfluid on Polygon
 
 ## Networks
 
-If you want to learn more about Polygon network, such as websocket connections, the full documentation is here:  [https://docs.matic.network/docs/develop/network-details/network](https://docs.matic.network/docs/develop/network-details/network)
+If you want to learn more about Polygon network, such as websocket connections, the full documentation is here: [https://docs.matic.network/docs/develop/network-details/network](https://docs.matic.network/docs/develop/network-details/network)
 
-### Mumbai Test network 
+### Mumbai Test network
 
 To test on the Mumbai testnet with superfluid, you'll need a RPC URL to connect your metamask or application to a Polygon node.
 
@@ -36,26 +36,21 @@ To test on the Mumbai testnet with superfluid, you'll need a RPC URL to connect 
     <tr>
       <td style="text-align:left">RPC</td>
       <td style="text-align:left">
-        <p>
-          <b>(Option 1) Use Superfluid Public RPC Endpoint</b>
-          <p>
-            <br />&#x26A0;<em> Warning, only metamasks extensions on Firefox and Chrome are supported</em>
-          </p>
-          <code>https://7umjaj2e9d.execute-api.eu-west-2.amazonaws.com/development/mumbai</code>
+        <p> <b>(Option 1) Use Superfluid Public RPC Endpoint</b>
         </p>
-        <br/>
         <p>
-          <b>(Option 2) Get a free RPC URL here:  </b>
-          <code>https://rpc.maticvigil.com/</code>
+          <br />&#x26A0; <em>Warning, only metamasks extensions on Firefox and Chrome are supported</em>  <code>https://7umjaj2e9d.execute-api.eu-west-2.amazonaws.com/development/mumbai</code>
         </p>
-        <br/>
+        <p> <b>(Option 2) Get a free RPC URL here:</b>  <code>https://rpc.maticvigil.com/</code>
+          <br
+          />
+        </p>
+        <p> <b>(Option 3)</b>
+        </p>
         <p>
-          <b>(Option 3)</b>
-          <p>
-            <br />&#x26A0;<em> Warning, these public RPC endpoints are not recommended to use with Superfluid:</em>
-          </p>
-          <code>https://rpc-mumbai.maticvigil.com/</code> or
-          <br /><code>https://rpc-mumbai.matic.today</code>
+          <br />&#x26A0; <em>Warning, these public RPC endpoints are not recommended to use with Superfluid:</em>  <code>https://rpc-mumbai.maticvigil.com/</code> or
+          <br
+          /><code>https://rpc-mumbai.matic.today</code>
         </p>
       </td>
     </tr>
@@ -67,7 +62,7 @@ To test on the Mumbai testnet with superfluid, you'll need a RPC URL to connect 
   </tbody>
 </table>
 
-The public RPC is not recommended because the rate limit is not high enough to access the Superfluid Dashboard. 
+The public RPC is not recommended because the rate limit is not high enough to access the Superfluid Dashboard.
 
 ### Matic-Mainnet
 
@@ -97,29 +92,22 @@ To use Matic-Mainnet with Superfluid, you'll need a RPC URL to connect your meta
     <tr>
       <td style="text-align:left">RPC</td>
       <td style="text-align:left">
-        <p>
-          <b>(Option 1) Use Superfluid Public RPC Endpoint</b>
-          <p>
-            <br />&#x26A0;<em> Warning, only metamasks extensions on Firefox and Chrome are supported</em>
-          </p>
-          <code>https://7umjaj2e9d.execute-api.eu-west-2.amazonaws.com/development/matic</code>
+        <p> <b>(Option 1) Use Superfluid Public RPC Endpoint</b>
         </p>
-        <br/>
         <p>
-          <b>(Option 2)Get a free RPC URL here:  </b>
-          <p>
-            <br />&#x26A0;<em> Warning, there may be rate limit issue, see "Troubleshooting"</em>
-          </p>
-          <code>https://rpc.maticvigil.com/</code>
+          <br />&#x26A0; <em>Warning, only metamasks extensions on Firefox and Chrome are supported</em>  <code>https://7umjaj2e9d.execute-api.eu-west-2.amazonaws.com/development/matic</code>
         </p>
-        <br/>
+        <p> <b>(Option 2)Get a free RPC URL here:</b>
+        </p>
         <p>
-          <b>(Option 3)</b>
-          <p>
-            <br />&#x26A0;<em> Warning, these public RPC endpoints are not recommended to use with Superfluid:</em>
-          </p>
-          <code>https://rpc-mainnet.maticvigil.com/</code> or <br />
-          <code>https://rpc-mainnet.matic.today</code>
+          <br />&#x26A0; <em>Warning, there may be rate limit issue, see &quot;Troubleshooting&quot;</em>  <code>https://rpc.maticvigil.com/</code>
+        </p>
+        <p> <b>(Option 3)</b>
+        </p>
+        <p>
+          <br />&#x26A0; <em>Warning, these public RPC endpoints are not recommended to use with Superfluid:</em>  <code>https://rpc-mainnet.maticvigil.com/</code> or
+          <br
+          /> <code>https://rpc-mainnet.matic.today</code>
         </p>
       </td>
     </tr>
@@ -135,7 +123,7 @@ To use Matic-Mainnet with Superfluid, you'll need a RPC URL to connect your meta
 
 #### - JSON-RPC error eth\_getLogs "Blockheight too far in the past"
 
-What's happening is that the `@superfluid-finance/js-sdk` is calling too many `eth_getLogs` and hitting the maximum rate limit for your RPC connection.  
+What's happening is that the `@superfluid-finance/js-sdk` is calling too many `eth_getLogs` and hitting the maximum rate limit for your RPC connection.
 
 1. Obtain a better RPC URL from [https://rpc.maticvigil.com/](https://rpc.maticvigil.com/)
 2. Don't use the functions `user.details` or `sf.cfa.listFlows`\(there may be others as well\)

@@ -10,7 +10,7 @@ At this point, you are familiar with the concept of upgrading an ERC20 token to 
 
 Just to recap from earlier, Super Tokens have a new token address after an upgrade. To denote this, we just append "x" to the token symbol.
 
-![](../.gitbook/assets/image%20%286%29.png)
+![](../.gitbook/assets/image%20%288%29.png)
 
 ## Prerequisites
 
