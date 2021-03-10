@@ -37,20 +37,24 @@ To test on the Mumbai testnet with superfluid, you'll need a RPC URL to connect 
       <td style="text-align:left">RPC</td>
       <td style="text-align:left">
         <p>
-          <br />&#x26A0;<em> Warning, only metamasks extensions on Firefox and Chrome are supported</em>
-        </p>
-        <p>
-          <b>Use Superfluid Public RPC Endpoint</b>
+          <b>(Option 1) Use Superfluid Public RPC Endpoint</b>
+          <p>
+            <br />&#x26A0;<em> Warning, only metamasks extensions on Firefox and Chrome are supported</em>
+          </p>
           <code>https://7umjaj2e9d.execute-api.eu-west-2.amazonaws.com/development/mumbai</code>
         </p>
+        <br/>
         <p>
-          <b>Get a free RPC URL here:  </b>
+          <b>(Option 2) Get a free RPC URL here:  </b>
           <code>https://rpc.maticvigil.com/</code>
         </p>
+        <br/>
         <p>
-          <br />&#x26A0;<em> Warning, these public RPC endpoints are not recommended to use with Superfluid:</em>
-        </p>
-        <p><code>https://rpc-mumbai.maticvigil.com/</code> or
+          <b>(Option 3)</b>
+          <p>
+            <br />&#x26A0;<em> Warning, these public RPC endpoints are not recommended to use with Superfluid:</em>
+          </p>
+          <code>https://rpc-mumbai.maticvigil.com/</code> or
           <br /><code>https://rpc-mumbai.matic.today</code>
         </p>
       </td>
@@ -94,23 +98,26 @@ To use Matic-Mainnet with Superfluid, you'll need a RPC URL to connect your meta
       <td style="text-align:left">RPC</td>
       <td style="text-align:left">
         <p>
-          <br />&#x26A0;<em> Warning, only metamasks extensions on Firefox and Chrome are supported</em>
-        </p>
-        <p>
-          <b>Use Superfluid Public RPC Endpoint</b>
+          <b>(Option 1) Use Superfluid Public RPC Endpoint</b>
+          <p>
+            <br />&#x26A0;<em> Warning, only metamasks extensions on Firefox and Chrome are supported</em>
+          </p>
           <code>https://7umjaj2e9d.execute-api.eu-west-2.amazonaws.com/development/matic</code>
         </p>
+        <br/>
         <p>
-          <br />&#x26A0;<em> Warning, there may be rate limit issue, see "Troubleshooting"</em>
-        </p>
-        <p>
-          <b>Get a free RPC URL here:  </b>
+          <b>(Option 2)Get a free RPC URL here:  </b>
+          <p>
+            <br />&#x26A0;<em> Warning, there may be rate limit issue, see "Troubleshooting"</em>
+          </p>
           <code>https://rpc.maticvigil.com/</code>
         </p>
+        <br/>
         <p>
-          <br />&#x26A0;<em> Warning, these public RPC endpoints are not recommended to use with Superfluid:</em>
-        </p>
-        <p>
+          <b>(Option 3)</b>
+          <p>
+            <br />&#x26A0;<em> Warning, these public RPC endpoints are not recommended to use with Superfluid:</em>
+          </p>
           <code>https://rpc-mainnet.maticvigil.com/</code> or <br />
           <code>https://rpc-mainnet.matic.today</code>
         </p>
