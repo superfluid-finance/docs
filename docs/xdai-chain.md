@@ -4,17 +4,15 @@ description: Using Superfluid on xDAI Chain
 
 # xDAI Chain
 
-If you want to learn more about xDAI network, such as websocket connections, the full documentation is here: [https://www.xdaichain.com/](https://www.xdaichain.com/)
-
-### xDAI 
-
 To use Superfluid with xDAI chain, you'll need a RPC URL to connect your metamask or application to a xDAI node.
+
+> If you want to learn more about xDAI network, such as websocket connections, the full documentation is here: [https://www.xdaichain.com/](https://www.xdaichain.com/)
 
 _Easy button coming soon_! Until then, you'll need to add this information manually to Metamask. Click the network button at the top and select **Custom RPC**.
 
 ![](../.gitbook/assets/image%20%286%29.png)
 
-| NetworkName | **Mumbai** |
+| NetworkName | **xDAI** |
 | :--- | :--- |
 | ParentChain | Ethereum Mainnet |
 | chainId | 100 |
