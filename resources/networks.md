@@ -1,6 +1,8 @@
-# 🔗 Network Directory
+---
+description: Superfluid contract addresses for all networks
+---
 
-Superfluid is deployed on many different networks.
+# 🔗 Network Directory
 
 ## Test Networks
 
