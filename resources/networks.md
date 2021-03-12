@@ -2,7 +2,7 @@
 
 Superfluid is deployed on many different networks.
 
-Navigate all the deployed contracts using the tables below
+## Test Networks
 
 {% tabs %}
 {% tab title="Goerli" %}
@@ -66,6 +66,22 @@ Navigate all the deployed contracts using the tables below
 | fDAIx | [0x5D8B4C2554aeB7e86F387B4d6c00Ac33499Ed01f](https://explorer-mumbai.maticvigil.com/address/0x5D8B4C2554aeB7e86F387B4d6c00Ac33499Ed01f) |
 | fUSDCx | [0x42bb40bF79730451B11f6De1CbA222F17b87Afd7](https://explorer-mumbai.maticvigil.com/address/0x42bb40bF79730451B11f6De1CbA222F17b87Afd7) |
 | fTUSDx | [0x918E0d5C96cAC79674E2D38066651212be3C9C48](https://explorer-mumbai.maticvigil.com/address/0x918E0d5C96cAC79674E2D38066651212be3C9C48) |
+{% endtab %}
+{% endtabs %}
+
+## Mainnet Networks
+
+{% tabs %}
+{% tab title="xDAI" %}
+| Resource | Address |
+| :--- | :--- |
+| Resolver | [0xD2009765189164b495c110D61e4D301729079911](https://blockscout.com/poa/xdai/address/0xD2009765189164b495c110D61e4D301729079911) |
+{% endtab %}
+
+{% tab title="Matic" %}
+| Resource | Address |
+| :--- | :--- |
+| Resolver | 0x8C54C83FbDe3C59e59dd6E324531FB93d4F504d3 |
 {% endtab %}
 {% endtabs %}
 
