@@ -19,7 +19,7 @@ Other useful resources:
 * [😎 Cheat Sheet](resources/cheat-sheet.md)
 * [🔗 Network Directory](resources/networks.md)
 
-The Superfluid documenation is growing. Feel free to make suggestions and tell us what you like or don't like.
+The Superfluid documentation is growing. Feel free to make suggestions and tell us what you like or don't like.
 
 ![](.gitbook/assets/image.png)
 
