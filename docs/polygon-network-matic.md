@@ -39,7 +39,7 @@ To test on the Mumbai testnet with superfluid, you'll need a RPC URL to connect 
         <p> <b>(Option 1) Use Superfluid Public RPC Endpoint</b>
         </p>
         <p>
-          <br />&#x26A0; <em>Warning, only metamasks extensions on Firefox and Chrome are supported</em>  <code>https://7umjaj2e9d.execute-api.eu-west-2.amazonaws.com/development/mumbai</code>
+          <br />&#x26A0; <em>Warning, only metamasks extensions on Firefox and Chrome are supported</em>  <code>https://rpc-endpoints.superfluid.dev/mumbai</code>
         </p>
         <p> <b>(Option 2) Get a free RPC URL here:</b>  <code>https://rpc.maticvigil.com/</code>
           <br
@@ -95,7 +95,7 @@ To use Matic-Mainnet with Superfluid, you'll need a RPC URL to connect your meta
         <p> <b>(Option 1) Use Superfluid Public RPC Endpoint</b>
         </p>
         <p>
-          <br />&#x26A0; <em>Warning, only metamasks extensions on Firefox and Chrome are supported</em>  <code>https://7umjaj2e9d.execute-api.eu-west-2.amazonaws.com/development/matic</code>
+          <br />&#x26A0; <em>Warning, only metamasks extensions on Firefox and Chrome are supported</em>  <code>https://rpc-endpoints.superfluid.dev/matic</code>
         </p>
         <p> <b>(Option 2)Get a free RPC URL here:</b>
         </p>
