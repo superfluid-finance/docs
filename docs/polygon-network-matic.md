@@ -16,7 +16,7 @@ To test on the Mumbai testnet with superfluid, you'll need a RPC URL to connect 
   <thead>
     <tr>
       <th style="text-align:left">NetworkName</th>
-      <th style="text-align:left"><b>Mumbai</b>
+      <th style="text-align:left"><b>Matic (Mumbai)</b>
       </th>
     </tr>
   </thead>
@@ -72,7 +72,7 @@ To use Matic-Mainnet with Superfluid, you'll need a RPC URL to connect your meta
   <thead>
     <tr>
       <th style="text-align:left">NetworkName</th>
-      <th style="text-align:left"><b>Mumbai</b>
+      <th style="text-align:left"><b>Matic (Mainnet)</b>
       </th>
     </tr>
   </thead>
