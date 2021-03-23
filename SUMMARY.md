@@ -22,6 +22,7 @@
 * [xDAI Chain](docs/xdai-chain.md)
 * [Deploying Contracts](docs/production-deployment.md)
 * [Super App](docs/super-app.md)
+* [Super Tokens](docs/super-tokens.md)
 
 ## Resources
 
