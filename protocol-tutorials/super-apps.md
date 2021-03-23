@@ -16,6 +16,14 @@ We will call the app **Holy Grail**, since whoever is in possession of the NFT i
 
 ![A chalice is handed to another person \(https://unsplash.com/@reskp\)](../.gitbook/assets/image%20%2821%29.png)
 
+## Video
+
+If you'd prefer to listen and code along, I've made a video version of this tutorial section:
+
+{% embed url="https://youtu.be/6AcaI6DGpNY" %}
+
+
+
 ## Prerequisites
 
 Before starting this tutorial you should: 

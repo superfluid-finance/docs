@@ -36,4 +36,5 @@
 
 * [Using Resolver](video-tutorials/using-resolver.md)
 * [Create a Constant Flow Agreement](video-tutorials/create-a-constant-flow-agreement.md)
+* [Super App](video-tutorials/super-app.md)
 
