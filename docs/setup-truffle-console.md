@@ -8,7 +8,7 @@ description: Get started using Truffle Console
 
 * Use `@superfluid-finance/js-sdk` in the truffle console with goerli testnet
 * Mint Superfluid DAI \(DAIx\)
-* Check Supertoken balances 
+* Check Super Token balances 
 
 ## Installation
 

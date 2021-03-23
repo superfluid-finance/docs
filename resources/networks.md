@@ -78,12 +78,24 @@ description: Superfluid contract addresses for all networks
 | Resource | Address |
 | :--- | :--- |
 | Resolver | [0xD2009765189164b495c110D61e4D301729079911](https://blockscout.com/poa/xdai/address/0xD2009765189164b495c110D61e4D301729079911) |
+| Host | [0x2dFe937cD98Ab92e59cF3139138f18c823a4efE7](https://blockscout.com/poa/xdai/address/0x2dFe937cD98Ab92e59cF3139138f18c823a4efE7) |
+| CFAv1 | [0xEbdA4ceF883A7B12c4E669Ebc58927FBa8447C7D](https://blockscout.com/poa/xdai/address/0xEbdA4ceF883A7B12c4E669Ebc58927FBa8447C7D) |
+| IDAv1 | [0x7888ac96F987Eb10E291F34851ae0266eF912081](https://blockscout.com/poa/xdai/address/0x7888ac96F987Eb10E291F34851ae0266eF912081) |
+| xDAI | Native token  |
+| xDAIx | [0x59988e47A3503AaFaA0368b9deF095c818Fdca01](https://blockscout.com/poa/xdai/address/0x59988e47A3503AaFaA0368b9deF095c818Fdca01) |
 {% endtab %}
 
 {% tab title="Matic" %}
 | Resource | Address |
 | :--- | :--- |
-| Resolver | 0x8C54C83FbDe3C59e59dd6E324531FB93d4F504d3 |
+| Resolver | [0xE0cc76334405EE8b39213E620587d815967af39C](https://explorer-mainnet.maticvigil.com/address/0xE0cc76334405EE8b39213E620587d815967af39C) |
+| Host | [0x3E14dC1b13c488a8d5D310918780c983bD5982E7](https://explorer-mainnet.maticvigil.com/address/0x3E14dC1b13c488a8d5D310918780c983bD5982E7) |
+| CFAv1 | [0x6EeE6060f715257b970700bc2656De21dEdF074C](https://explorer-mainnet.maticvigil.com/address/0x6EeE6060f715257b970700bc2656De21dEdF074C) |
+| IDAv1 | [0xB0aABBA4B2783A72C52956CDEF62d438ecA2d7a1](https://explorer-mainnet.maticvigil.com/address/0xB0aABBA4B2783A72C52956CDEF62d438ecA2d7a1) |
+| MATIC | Native token |
+| MATICx | [0x3aD736904E9e65189c3000c7DD2c8AC8bB7cD4e3](https://explorer-mainnet.maticvigil.com/address/0x3aD736904E9e65189c3000c7DD2c8AC8bB7cD4e3) |
 {% endtab %}
 {% endtabs %}
+
+
 

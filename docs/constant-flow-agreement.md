@@ -45,7 +45,7 @@ First let's create a new `User` object for Bob.
 const bobAddress = "0xbbb...." // address of the sender's wallet
 const userBob = sf.user({
   address: bobAddress, 
-  token: daix.address // address of the SuperToken
+  token: daix.address // address of the Super Token
 });
 ```
 
