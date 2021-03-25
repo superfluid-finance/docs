@@ -81,6 +81,7 @@ description: Superfluid contract addresses for all networks
 | Host | [0x2dFe937cD98Ab92e59cF3139138f18c823a4efE7](https://blockscout.com/poa/xdai/address/0x2dFe937cD98Ab92e59cF3139138f18c823a4efE7) |
 | CFAv1 | [0xEbdA4ceF883A7B12c4E669Ebc58927FBa8447C7D](https://blockscout.com/poa/xdai/address/0xEbdA4ceF883A7B12c4E669Ebc58927FBa8447C7D) |
 | IDAv1 | [0x7888ac96F987Eb10E291F34851ae0266eF912081](https://blockscout.com/poa/xdai/address/0x7888ac96F987Eb10E291F34851ae0266eF912081) |
+| SuperTokenFactory | [0x23410e2659380784498509698ed70E414D384880](https://blockscout.com/xdai/mainnet/address/0x23410e2659380784498509698ed70E414D384880) |
 | xDAI | Native token  |
 | xDAIx | [0x59988e47A3503AaFaA0368b9deF095c818Fdca01](https://blockscout.com/poa/xdai/address/0x59988e47A3503AaFaA0368b9deF095c818Fdca01) |
 {% endtab %}
