@@ -2,7 +2,7 @@
 description: Get started in the frontend
 ---
 
-# @superfluid-finance/js-sdk
+# 📦 @superfluid-finance/js-sdk
 
 ## **Overview**
 
@@ -56,7 +56,7 @@ await sf.initialize()
 {% endtab %}
 {% endtabs %}
 
-By default,  the SDK will load Version 1 of the contracts, for whichever network the wallet is connected to. See [🔗 Network Directory](../resources/networks.md) for the full list of contract addresses.
+By default,  the SDK will load Version 1 of the contracts, for whichever network the wallet is connected to. See [🔗 Network Directory](../networks/networks.md) for the full list of contract addresses.
 
 ### Create a User
 
@@ -78,7 +78,7 @@ const carol = sf.user({
 });
 ```
 
-You'll notice we passed a token address when we created the User. Over in [🔗 Network Directory](../resources/networks.md) we can see this is the `fDAIx` token, which is a test **Super Token** on Goerli network.
+You'll notice we passed a token address when we created the User. Over in [🔗 Network Directory](../networks/networks.md) we can see this is the `fDAIx` token, which is a test **Super Token** on Goerli network.
 
 What's a Super Token? It's just a "wrapped" or **upgraded** ERC20 token. This is what enables the cool super-powers like streaming, batch calls, and more. 
 

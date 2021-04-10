@@ -2,7 +2,7 @@
 description: Choosing your environment
 ---
 
-# Getting started
+# ⭐ Getting started
 
 👋 Howdy and welcome to the Superfluid tutorial. This should take you about 1 hour to complete, and will cover all the main features of Superfluid. You'll be hacking away in no time! 
 

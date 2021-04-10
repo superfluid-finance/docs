@@ -2,7 +2,7 @@
 description: Get started using Truffle Console
 ---
 
-# 🍫 Truffle Console
+# Truffle Console
 
 **In this tutorial we will**:
 

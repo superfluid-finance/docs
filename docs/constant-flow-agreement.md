@@ -8,7 +8,7 @@ published: true
 showToc: true
 ---
 
-# 🔀 Constant Flow Agreement
+# Constant Flow Agreement
 
 ## Introduction
 

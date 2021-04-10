@@ -6,53 +6,57 @@ description: A new DeFi primitive to automate recurring transactions and monetiz
 
 Superfluid is a smart contract framework on EVM-compatible networks, enabling you to move assets on-chain following predefined rules called agreements. With a single on-chain tx, the money will flow from your balance to the receiver in real time! No other tx required works like magic ✨
 
-| 🛠 [Examples](resources/examples.md) | ![](.gitbook/assets/discord-logo.png) [**Discord**](https://discord.gg/qPg6Y3d) | ![](.gitbook/assets/medium.png) [**Blog**](https://medium.com/superfluid-blog)       **** |
-| :---: | :---: | :---: |
+### CONTRACT ADDRESSES
 
+{% page-ref page="networks/networks.md" %}
 
-Software developers, check out [Getting started](protocol-tutorials/getting-started.md)
+### START THE TUTORIAL
 
-Not a developer, or only have 5 minutes? Head to [🚚 Primitives](protocol-tutorials/primitives.md)
+{% page-ref page="protocol-tutorials/getting-started.md" %}
 
-Other useful resources:
+### CONNECT TO XDAI, POLYGON, ETC.
 
-* [😎 Cheat Sheet](resources/cheat-sheet.md)
-* [🔗 Network Directory](resources/networks.md)
+* [xDAI Chain](networks/xdai-chain.md)
+* [Polygon \(Matic\)](networks/polygon-network-matic.md)
 
-The Superfluid documentation is growing. Feel free to make suggestions and tell us what you like or don't like.
+### EXAMPLE APPS
 
-![](.gitbook/assets/image.png)
+{% page-ref page="resources/examples.md" %}
 
-## Get Help
+### COMMUNITY + HELP
 
-If you need any help or have any questions, please join our [**Discord**](https://discord.gg/qPg6Y3d) or check out our [**help page**](http://help.superfluid.finance/)
+If you need any help or have any questions, please join our [**Discord**](https://discord.gg/qPg6Y3d), ****check out our [**help page**](http://help.superfluid.finance/), or reach out to our team at **support@superfluid.finance**
 
-Feel free to reach out to our team at **support@superfluid.finance**
+> The Superfluid documentation is growing. Tell us what you dislike about it so we can make it better.
 
-## Superfluid Contributor & Community Code of Conduct
+### **BLOG**
 
-**Contributor & Community Code of Conduct**
+![](.gitbook/assets/medium.png) [**Blog**](https://medium.com/superfluid-blog)   ****
 
-As contributors and maintainers of this project, and in the interest of fostering an open and welcoming community, we pledge to respect all people who contribute through reporting issues, posting feature requests, updating documentation, submitting pull requests or patches, and other activities.
+### **GITHUB**
 
-We are committed to making participation in this project a harassment-free experience for everyone, regardless of level of experience, gender, gender identity and expression, sexual orientation, disability, personal appearance, body size, race, ethnicity, language proficiency, age, religion, or nationality.
+{% embed url="https://github.com/superfluid-finance/protocol-monorepo" %}
 
-Examples of unacceptable behaviour by participants include:
+## INTRODUCTION 
 
-* The use of sexualised language or imagery
-* Personal attacks
-* Trolling or insulting/derogatory comments
-* Public or private harassment
-* Publishing other's private information, such as physical or electronic addresses, without explicit permission
-* Fraudulent or deceitful conduct
+Superfluid is a smart contract framework on L1 Ethereum, enabling you to move assets on-chain following predefined rules called agreements. With a single on-chain transaction, the money will flow from your wallet to the receiver in real time! No further transactions required- it works like magic ✨
 
-Project maintainers have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, or to ban temporarily or permanently any contributor for other behaviours that they deem inappropriate, threatening, offensive, or harmful.
+**Superfluid enables:**
 
-By adopting this Code of Conduct, project maintainers commit themselves to fairly and consistently applying these principles to every aspect of managing this project. Project maintainers who do not follow or enforce the Code of Conduct may be permanently removed from the project team.
+💸 **Real money streaming** - constant flows on-chain with no capital lockups.
 
-This Code of Conduct applies both within project spaces and in public spaces when an individual is representing the project or its community.
+🎁 **Rewards distributions** - Fixed cost distribution in a single transaction for any number of receivers.
 
-Instances of abusive, harassing, or otherwise unacceptable behaviour may be reported by contacting a project maintainer at [support@superfluid.finance](mailto:support@superfluid.finance) All complaints will be reviewed and investigated and will result in a response that is deemed necessary and appropriate to the circumstances. Maintainers are obligated to maintain confidentiality with regard to the reporter of an incident.
+🔮 **Anything you can imagine** - Superfluid is very flexible!
 
-This Code of Conduct is adapted from the [Contributor Covenant](http://contributor-covenant.org/),[ version 1.3.0](http://contributor-covenant.org/version/1/3/0/).
+**Superfluid Components:** 
+
+The current version of Superfluid is composed of the following key elements:
+
+* _**Super Agreement Framework**_**:** a set of approved _super agreements_ contracts as building blocks.
+* _**Super App Framework**_**:** a development framework for building real-time finance apps.
+* _**Super Token Framework**_**:** an extended [ERC-777](https://eips.ethereum.org/EIPS/eip-777) implementation with real-time finance capability, and a registry.
+* _**Batch Call & Meta Tx**_**:** for users \(contracts or EOA\) to interact with the system in batch on-chain, or off-chain through meta transactions.
+* _**Governance**_**:** an external contract for managing protocol parameters and contract upgrades.
+* _**Solvency Agents**_**:** an off-chain network of agents ensuring the solvency of the system. [Read more](docs/super-tokens.md)
 

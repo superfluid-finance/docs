@@ -2,7 +2,7 @@
 description: Create a new set of Superfluid contracts
 ---
 
-# ✨ Deployment
+# 🤖 Deployment
 
 So far in the tutorial we have used contracts already deployed to a public testnet. For simple applications, its totally fine to keep using these contract.
 
