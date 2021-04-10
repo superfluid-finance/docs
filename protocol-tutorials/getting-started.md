@@ -1,18 +1,22 @@
 ---
-description: Choosing your environment
+description: The Official Superfluid Tutorial
 ---
 
 # ⭐ Getting started
 
-👋 Howdy and welcome to the Superfluid tutorial. This should take you about 1 hour to complete, and will cover all the main features of Superfluid. You'll be hacking away in no time! 
+### 👋 Howdy! Welcome to the Superfluid tutorial
 
-Here is how the tutorial is laid out:
+This should take about 1 hour to complete - grab a bev and throw on some tunes 🎶 
+
+### What you'll accomplish
+
+Once complete, you'll understand all the major features of Superfluid and can start building your own apps. There are plenty more resources to explore as well - check out the **Docs** for an in-depth guide on each topic.
+
+### What you'll do
 
 1. Explore all the features of Superfluid using the `@superfluid-finance/js-sdk` 
 2. Create a Super App
-3. Deploy the contracts using `@superfluid-finance/contracts` on a local testnet
+3. Deploy the Super App using `@superfluid-finance/contracts` on a local testnet
 
-> Want to skip ahead and hack away in the console? Check out [🍫 Truffle Console](../docs/setup-truffle-console.md)
-
-Let's get started!
+### ...let's get started!
 
