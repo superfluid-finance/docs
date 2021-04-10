@@ -4,8 +4,6 @@ description: A new DeFi primitive to automate recurring transactions and monetiz
 
 # Superfluid
 
-Superfluid is a smart contract framework on EVM-compatible networks, enabling you to move assets on-chain following predefined rules called agreements. With a single on-chain tx, the money will flow from your balance to the receiver in real time! No other tx required works like magic ✨
-
 ### CONTRACT ADDRESSES
 
 {% page-ref page="networks/networks.md" %}
