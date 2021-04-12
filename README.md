@@ -19,7 +19,7 @@ description: A new DeFi primitive to automate recurring transactions and monetiz
 
 ### EXAMPLE APPS
 
-{% page-ref page="resources/examples.md" %}
+{% page-ref page="resources/examples/" %}
 
 ### COMMUNITY + HELP
 

@@ -26,6 +26,8 @@ description: Superfluid contract addresses for all networks
 | :--- | :--- |
 | xDAI | Native token |
 | xDAIx | [0x59988e47A3503AaFaA0368b9deF095c818Fdca01](https://blockscout.com/xdai/mainnet/address/0x59988e47A3503AaFaA0368b9deF095c818Fdca01) |
+
+Don't see your token listed? Get it added using the form [here](https://www.notion.so/Add-New-Tokens-to-Superfluid-8464f8c116c24cd6a0c5cb4f4174bb2d)
 {% endtab %}
 
 {% tab title="Matic" %}

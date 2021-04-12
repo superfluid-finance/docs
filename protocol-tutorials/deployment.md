@@ -28,5 +28,5 @@ You made it to the end! When you're ready, here are some additional resources to
 
 * Get ideas + connect with other builders at [https://hack.superfluid.finance](http://hack.superfluid.finance%20) 
 * Ask questions and chat in our Discord at [https://discord.superfluid.finance](https://discord.superfluid.finance)
-* Check out some [🛠️ Examples](../resources/examples.md)
+* Check out some [🛠️ Examples](../resources/examples/)
 

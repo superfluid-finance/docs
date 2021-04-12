@@ -20,7 +20,6 @@
 * [Super App](docs/super-app.md)
 * [Super Tokens](docs/super-tokens.md)
 * [Resolver](docs/resolver.md)
-* [Superfluid Deployment Guide](https://www.notion.so/superfluidhq/Superfluid-Protocol-Deployment-Guide-ccbaf8f0850a48cbb06c39dc7c9ebfe4#9e9d825d63af400ebe07f33c0113bdff)
 
 ## Networks
 
@@ -30,10 +29,12 @@
 
 ## Resources
 
-* [🛠️ Examples](resources/examples.md)
+* [🛠️ Examples](resources/examples/README.md)
+  * [🥤Soda Machine](resources/examples/soda-machine.md)
 * [😎 Cheat Sheet](resources/cheat-sheet.md)
 * [🏗Hack Ideas!](https://www.notion.so/Hack-On-Superfluid-92f7cb4ccf264518814d54d50f067ac1)
 * [🎥 Videos](resources/videos.md)
+* [Superfluid Deployment Guide](https://www.notion.so/superfluidhq/Superfluid-Protocol-Deployment-Guide-ccbaf8f0850a48cbb06c39dc7c9ebfe4#9e9d825d63af400ebe07f33c0113bdff)
 * [Learn about Ethereum](resources/learn-about-ethereum.md)
 * [Code of Conduct](resources/code-of-conduct.md)
 
