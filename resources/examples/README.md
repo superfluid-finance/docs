@@ -14,13 +14,13 @@ Fork-able apps from the main repo:
 * **Developer Playground** - A full-stack playground built with RedwoodJS
 * and more...
 
-Click here to see the official examples:
+Click here to see all the official examples:
 
 {% embed url="https://github.com/superfluid-finance/protocol-monorepo/tree/dev/examples" caption="Fork me!" %}
 
 ## 🧑‍🤝‍🧑 Community Examples
 
-Your app could end up here. We don't maintain these, so if you run into problems, check the versions for `@superfluid-finance/js-sdk` and `@superfluid-finance/ethereum-contracts`
+Show off your app here! We don't maintain these, so if you run into problems, be sure to check package versions.
 
 * **Stream Rent** -  _Create NFTs using offchain resources, and gain income by renting them out_
   * Hackathon submission: [https://devfolio.co/submissions/stream-rent-d208](https://devfolio.co/submissions/stream-rent-d208)
@@ -29,9 +29,9 @@ Your app could end up here. We don't maintain these, so if you run into problems
 
 ## 💡 Ideas
 
-Want ideas? Check out _hack.superfluid.finance_ to connect with other community members and brainstorm ideas:
+Want ideas? Check out ****[**hack.superfluid.finance**](http://hack.superfluid.finance/) to connect with other community members and brainstorm ideas.
 
-## Snippets
+## ✂️ Code Snippets
 
 ### Constant Flow Agreement
 
@@ -109,12 +109,4 @@ const testPool = async () => {
   
 testPool();
 ```
-
-## Videos
-
-Adding a simple "Donate" button to an app:
-
-{% embed url="https://www.youtube.com/watch?v=RmOogQK5VHY" %}
-
-
 

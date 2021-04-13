@@ -63,12 +63,21 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 
 {% tabs %}
 {% tab title="Goerli" %}
+### Framework
+
 | Resource | Address |
 | :--- | :---: |
 | Resolver | [0x3710AB3fDE2B61736B8BB0CE845D6c61F667a78E](http://goerli.etherscan.io/address/0x3710AB3fDE2B61736B8BB0CE845D6c61F667a78E) |
 | Host | [0x22ff293e14F1EC3A09B137e9e06084AFd63adDF9](http://goerli.etherscan.io/address/0x22ff293e14F1EC3A09B137e9e06084AFd63adDF9) |
 | CFAv1 | [0xEd6BcbF6907D4feEEe8a8875543249bEa9D308E8](http://goerli.etherscan.io/address/0xEd6BcbF6907D4feEEe8a8875543249bEa9D308E8) |
 | IDAv1 | [0xfDdcdac21D64B639546f3Ce2868C7EF06036990c](http://goerli.etherscan.io/address/0xfDdcdac21D64B639546f3Ce2868C7EF06036990c) |
+| SuperTokenFactory | [0x94f26B4c8AD12B18c12f38E878618f7664bdcCE2](https://goerli.etherscan.io/address/0x94f26B4c8AD12B18c12f38E878618f7664bdcCE2#code) |
+|  | Ge |
+
+### Tokens
+
+| Resource | Address |
+| :--- | :---: |
 | fDAI | [0x88271d333C72e51516B67f5567c728E702b3eeE8](http://goerli.etherscan.io/address/0x88271d333C72e51516B67f5567c728E702b3eeE8) |
 | fUSDC | [0xc94dd466416A7dFE166aB2cF916D3875C049EBB7](http://goerli.etherscan.io/address/0xc94dd466416A7dFE166aB2cF916D3875C049EBB7) |
 | fTUSD | [0x53d00397f03147A9bD9c40443A105A82780deAF1](http://goerli.etherscan.io/address/0x53d00397f03147A9bD9c40443A105A82780deAF1) |
@@ -136,12 +145,19 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 {% tab title="Mumbai" %}
 ### See [Polygon \(Matic\)](polygon-network-matic.md) for more help
 
+### Framework
+
 | Resource | Address |
 | :--- | :---: |
 | Resolver | [0x8C54C83FbDe3C59e59dd6E324531FB93d4F504d3](https://explorer-mumbai.maticvigil.com/address/0x8C54C83FbDe3C59e59dd6E324531FB93d4F504d3) |
 | Host | [0xEB796bdb90fFA0f28255275e16936D25d3418603](https://explorer-mumbai.maticvigil.com/address/0xEB796bdb90fFA0f28255275e16936D25d3418603) |
 | CFAv1 | [0x49e565Ed1bdc17F3d220f72DF0857C26FA83F873](https://explorer-mumbai.maticvigil.com/address/0x49e565Ed1bdc17F3d220f72DF0857C26FA83F873) |
 | IDAv1 | [0x804348D4960a61f2d5F9ce9103027A3E849E09b8](https://explorer-mumbai.maticvigil.com/address/0x804348D4960a61f2d5F9ce9103027A3E849E09b8) |
+
+### Tokens
+
+| Resource | Address |
+| :--- | :---: |
 | fDAI | [0x15F0Ca26781C3852f8166eD2ebce5D18265cceb7](https://explorer-mumbai.maticvigil.com/address/0x15F0Ca26781C3852f8166eD2ebce5D18265cceb7) |
 | fUSDC | [0xbe49ac1EadAc65dccf204D4Df81d650B50122aB2](https://explorer-mumbai.maticvigil.com/address/0xbe49ac1EadAc65dccf204D4Df81d650B50122aB2) |
 | fTUSD | [0xA794C9ee519FD31BbCE643e8D8138f735E97D1DB](https://explorer-mumbai.maticvigil.com/address/0xA794C9ee519FD31BbCE643e8D8138f735E97D1DB) |
