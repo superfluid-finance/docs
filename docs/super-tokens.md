@@ -4,12 +4,20 @@ description: Tokens with super-powers ✨
 
 # Super Tokens
 
-Super Tokens come in two different types: 
+Super Tokens are one of the 3 main primitives of the Superfluid Protocol. Here's a list of the super-powers that all Super Tokens enjoy:
 
-* **ERC20 Wrapper Super Token**
-* **Custom** **Super Token**
+* **ERC777 -** can "react" to certain events using callbacks \([erc777.org](https://www.erc777.org/)\)
+* **Batch capabilities -** can do multiple things in a single transaction
+* **Meta-transactions** - allow for submitting transactions on behalf of another account
 
-Both types receive all the same benefits of Super Tokens. Choosing which primary type is easy, since existing tokens must use the ERC20 Wrapper.
+## Varieties
+
+All Super Tokens share the same basic features, however not all Super Tokens are alike. Super Tokens come in two primary types: 
+
+* **ERC20 Wrapper** Super Token
+* **Custom** Super Token
+
+Choosing the type you need is easy, since an existing ERC20 token should use the ERC20 Wrapper.
 
 ![](../.gitbook/assets/image%20%2814%29.png)
 
