@@ -25,11 +25,13 @@ Choosing the type you need is easy, since an existing ERC20 token should use the
 
 This is the simplest option, and should be used whenever an ERC20 token already exists. Anyone can create a wrapper for any existing ERC20 token. We've already deployed some of the more popular defi tokens like DAI, USDC, and TUSD for you. See [🔗 Network Directory](../networks/networks.md) for the full list.
 
-The main step for creating a new ERC20 Wrapper for your token is calling `createERC20Wrapper()` on the [SuperTokenFactory](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/superfluid/SuperTokenFactory.sol) contract. There are scripts in `@superfluid-finaince/ethereum-contracts` to assist in this process \(explained below\).
+The main step for creating a new ERC20 Wrapper for your token is calling `createERC20Wrapper()` on the [SuperTokenFactory](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/superfluid/SuperTokenFactory.sol) contract.
 
 ### Deploy an ERC20 Wrapper
 
-We've created some handy scripts for deploying the Super Token wrapper contract for existing ERC20 tokens. Anyone can deploy the wrapper for any token, since the deployer does not receive any control or admin powers.
+Anyone can deploy the ERC20 wrapper for any ERC20 token. The deployer account does not receive any control or admin powers, and all Super Token logic upgrades are handled by Superfluid Protocol Governance. 
+
+We've created some handy scripts for deploying the ERC20 Wrapper contract.
 
 ```bash
 git clone https://github.com/superfluid-finance/protocol-monorepo/
@@ -60,7 +62,7 @@ A Custom Super Token is a Super Token which typically does not have an underlyin
 
 ![](../.gitbook/assets/image%20%2825%29.png)
 
-A Custom Super Tokens are ERC777 and ERC20 compliant, so they can still interact with all your favorite Defi protocols. We haven't tested every use-case yet, so if you find something doesn't work we'd love to hear about it!
+Custom Super Tokens are ERC777 and ERC20 compliant, so they can still interact with all your favorite Defi protocols. We haven't tested every use-case yet, so if you find something doesn't work we'd love to hear about it!
 
 We've already seen several companies launch their tokens as a Custom Super Token, such as Minerva Wallet and Opolis. This means they have all the benefits of Super Tokens starting from day one.
 
@@ -70,38 +72,40 @@ We'll explain the differences and how to choose a Custom Super Token type later.
 
 We use the term "native", since these tokens are **born inside the Superfluid protocol**. A Native Super Token reduces the cognitive load for your users, and **simplifies development**. After all, one token is better than two if they are serving the exact same purpose. 
 
-Native tokens benefit from having the Superfluid Governance manage upgrading their logic.
+Native Super Tokens also have the benefit of having all Super Token logic upgrades handled by the Superfluid Protocol Governance. 
 
 ### Custom "Independent" Super Token
 
-The term "independent" is used to describe how these tokens are fully separate from the Superfluid Governance. All upgrades are managed solely by the token developers. This type hasn't been created before, and we don't recommend it. If you do decide to go down this path, please let us know so we can assist you.
+The term "independent" denotes that these tokens are fully separate from Superfluid Protocol Governance. All upgrades are managed solely by the token developers. This type hasn't been created before, and we don't recommend it. If you do decide to go down this path, please let us know so we can assist you.
 
 ### Choosing a Type
 
-There are a few different decisions to be made when deploying a Custom Super Token. This guide will help you in deciding which approach is best. 
+This guide will help you in deciding which approach is best. 
 
-In order for a token to serve as a Super Token in the protocol, it must implement the [ISuperfluidToken](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/interfaces/superfluid/ISuperfluidToken.sol) ****interface. To make your life easier, we recommend using an ERC1822 proxy for deploying any type of Super Token. This allows the Superfluid Protocol Governance to perform necessary upgrades, which helps to keep the entire Super Token ecosystem secure and up-to-date with the latest features. 
+In order for a token to serve as a Super Token in the protocol, it must implement the [ISuperfluidToken](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/interfaces/superfluid/ISuperfluidToken.sol) ****interface. To make your life easier, the recommended approach for deploying any type of Super Token is to use an ERC1822 proxy. This allows the Superfluid Protocol Governance to perform necessary upgrades, which helps to keep the entire Super Token ecosystem secure and up-to-date with the latest features. 
 
-However, since the interface is the only strict requirement, you are free to "break-out" and manage your own upgrades for the Super Token logic. This approach is not recommended, but listed here for completeness. Keep in mind that the Superfluid governance is only making decisions about the Super Token Logic, not any custom logic you define \(discussed below\).
+However, since the interface is the only strict requirement, you are free to "break-out" and manage your own upgrades for the Super Token logic. This approach is not recommended, but listed here for completeness. Keep in mind that the Superfluid Protocol Governance is used only to upgrade the Super Token logic, not your custom logic.
 
 To reiterate, the two categories for Custom Super Tokens are:
 
-* **Native** - Super Token logic upgrades managed by Superfluid governance
+* **Native** - Super Token logic upgrades managed by Superfluid Protocol Governance
 * **Independent** - You are fully responsible for all upgrades
 
 Now that you've determined who will manage upgrades for the _**Super Token logic**_, you must decide how to handle upgrades for your \(optional\) _**custom logic**._ Examples of custom logic you might want to add are:
 
 * Token pre-mine
 * Access control and admin management
-* Approve / reject list for wallet addresses
+* Approve / reject list of wallet addresses
 
-These are all features which are not provided by the Super Token logic, and you would need to add yourself to your token . You can use this chart to help you decide which approach to take:
+These are all features which are not provided by the Super Token logic, which you would need to add yourself. 
+
+You can use this chart to help you decide which approach to take:
 
 ![](../.gitbook/assets/image%20%2829%29.png)
 
 ### Deploy a Custom Super Token
 
-If you'd like to deploy a Custom Super Token you can use the [NativeSuperToken.sol](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/tokens/NativeSuperToken.sol) contract and the [deployment script](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/scripts/deploy-native-supertoken.js). Also check out the [🥤Soda Machine](../resources/examples/soda-machine.md) for an easy example of a Native Super Token embedded inside a Super App 🤯. We will add more documenation here as more community members deploy more Custom Super Tokens.
+If you'd like to deploy a Custom Super Token you can use the [NativeSuperToken.sol](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/tokens/NativeSuperToken.sol) contract and the [deployment script](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/scripts/deploy-native-supertoken.js). Also check out the [🥤Soda Machine](../resources/examples/soda-machine.md) for an example of a Native Super Token deployed with a Super App. We will add documenation as more community members deploy Custom Super Tokens.
 
 ## Edge-case Super Tokens
 
