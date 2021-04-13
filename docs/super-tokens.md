@@ -4,8 +4,6 @@ description: Tokens with super-powers ✨
 
 # Super Tokens
 
-🚧 Section Under Construction. Updates coming soon 🚧 
-
 Super Tokens come in two different types: 
 
 * **ERC20 Wrapper Super Token**
