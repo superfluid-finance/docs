@@ -4,7 +4,7 @@ description: 'Money flows in, soda flows out'
 
 # 🥤Soda Machine
 
-For this exampl, we will create an app for **purchasing soda in real-time**. The soda will only flow while we are paying, so we'll be in charge of how much we want in our cup!
+For this example, we will create an app for **purchasing soda in real-time**. The soda will only flow while we are paying, so we'll be in charge of how much we want in our cup!
 
 ![](../../.gitbook/assets/sam-battaglieri-9uufylbkojw-unsplash.jpg)
 
@@ -34,6 +34,8 @@ Before starting you should:
 
 Click this link to load the contracts in Remix:
 
+{% embed url="https://remix.ethereum.org/\#version=soljson-v0.7.6+commit.7338295f.js&optimize=false&runs=200&gist=" %}
+
 Select and deploy **Example.sol** on Goerli network using the following parameters:
 
 | Parameter | Value |
@@ -45,9 +47,19 @@ Select and deploy **Example.sol** on Goerli network using the following paramete
 
 If you want to deploy on a different network, use the [🔗 Network Directory](../../networks/networks.md)
 
-Next call the function `deploySodaMachine()` which will deploy SodaMachine.sol and create and register a new Native Super Token. 
+During deployment, several things will happen:
 
-Now you can call the function `getMachineAddress()` to get the address for our new Soda machine. Finally, load the `SodaMachine.sol` contract at this address.
+* Deploy and initialize a Custom Super Token "SODA"
+* Deploy the Soda Machine, and register it as an ERC777 recipient \(so it can receive SODA\)
+* Mint 1M SODA and send them to the Soda Machine
+
+## Stream some SODA
+
+Now that you've deployed the example contract, you can check the values for `_sodaMachine` and `_sodaToken` and load the appropriate contracts in Remix. Keep in mind that the interface you should use for `_sodaToken` is `ISuperToken` and not the proxy interface `NativeSuperToken`.  
+
+Once you have the address for the Soda Machine, start sending it some DAI \(accepted token\) using the [dashboard](https://app.superfluid.finance/). Once your DAI stream begins, SODA will immediately begin flowing back to you! To stop the flow of SODA, simply stop your DAI stream.
+
+You can check you balance of SODA using the contract in Remix, since the token won't appear in the dashboard.
 
 ## Callbacks
 

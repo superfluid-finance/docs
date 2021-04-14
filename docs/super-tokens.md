@@ -93,7 +93,7 @@ To reiterate, the two categories for Custom Super Tokens are:
 
 Now that you've determined who will manage upgrades for the _**Super Token logic**_, you must decide how to handle upgrades for your \(optional\) _**custom logic**._ Examples of custom logic you might want to add are:
 
-* Token pre-mine
+* Pre-mint initial supply
 * Access control and admin management
 * Approve / reject list of wallet addresses
 
