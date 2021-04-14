@@ -4,9 +4,9 @@ description: 'Money flows in, soda flows out'
 
 # 🥤Soda Machine
 
-For this example, we will create an app for **purchasing soda in real-time**. The soda will only flow while we are paying, so we'll be in charge of how much we want in our cup!
+{% embed url="https://youtu.be/CUVIKcEQVuQ" %}
 
-![](../../.gitbook/assets/sam-battaglieri-9uufylbkojw-unsplash.jpg)
+For this example, we will create a Super App for **purchasing soda in real-time**. The soda will only flow while we are paying, so we'll be in charge of how much we want in our cup!
 
 ## $1 DAI = 1 SODA
 
@@ -28,7 +28,7 @@ Customer can start flowing DAIx to the Soda Machine contract address using any a
 
 Before starting you should: 
 
-* Have some goerli ETH and tokens in your wallet from the dashboard [https://app.superfluid.finance](https://app.superfluid.finance)
+* Have some goerli ETH and test tokens in your wallet from the dashboard [https://app.superfluid.finance](https://app.superfluid.finance)
 
 ## Setup
 
