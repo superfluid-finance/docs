@@ -61,7 +61,3 @@ Once you have the address for the Soda Machine, start sending it some DAI \(acce
 
 You can check you balance of SODA using the contract in Remix, since the token won't appear in the dashboard.
 
-## Callbacks
-
-Since our Soda Machine needs to automatically react to incoming DAIx streams, we'll use Super App Callbacks. The Callbacks is where we'll check the incoming token stream, and start flowing SODA tokens back to the customer.
-
