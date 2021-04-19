@@ -48,9 +48,10 @@ To test on the Mumbai testnet with superfluid, you'll need a RPC URL to connect 
         <p> <b>(Option 3)</b>
         </p>
         <p>
-          <br />&#x26A0; <em>Warning, these public RPC endpoints are not recommended to use with Superfluid:</em>  <code>https://rpc-mumbai.maticvigil.com/</code> or
-          <br
-          /><code>https://rpc-mumbai.matic.today</code>
+          <br />&#x26A0; <em>Warning, these public RPC endpoints are not recommended to use with Superfluid:</em><br/>
+          <code>https://rpc-mumbai.maticvigil.com/</code> or<br/>
+          <code>https://matic-mumbai.chainstacklabs.com</code> or<br/>
+          <code>https://matic-testnet-archive-rpc.bwarelabs.com</code>
         </p>
       </td>
     </tr>
@@ -105,9 +106,12 @@ To use Matic-Mainnet with Superfluid, you'll need a RPC URL to connect your meta
         <p> <b>(Option 3)</b>
         </p>
         <p>
-          <br />&#x26A0; <em>Warning, these public RPC endpoints are not recommended to use with Superfluid:</em>  <code>https://rpc-mainnet.maticvigil.com/</code> or
-          <br
-          /> <code>https://rpc-mainnet.matic.today</code>
+          <br />&#x26A0; <em>Warning, these public RPC endpoints are not recommended to use with Superfluid:</em><br/>
+          <code>https://rpc-mainnet.maticvigil.com/</code> or<br/>
+          <code>https://rpc-mainnet.matic.quiknode.pro</code> or<br/>
+          <code>https://matic-mainnet.chainstacklabs.com</code> or<br/>
+          <code>https://matic-mainnet-full-rpc.bwarelabs.com/</code> or<br/>
+          <code>https://matic-mainnet-archive-rpc.bwarelabs.com</code>
         </p>
       </td>
     </tr>
