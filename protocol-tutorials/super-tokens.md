@@ -27,15 +27,21 @@ Tokens which can "react" to certain events using callbacks [erc777.org](https://
 
 ## **Batch Call** 
 
-The simplest example for a batchcall is to perform multiple token transfers in one transaction. You can test this out and see the code in the playground app.
+All Super Tokens include the **batchCall** feature, which allows you to perform multiple tasks in a single transaction. 
+
+You can even mix-n-match your tasks, including upgrade/downgrade, calling agreements \(CFA, IDA, etc\), execute Super App functions, and make simple transfers. The world is your Oyster!
 
 ![Developer Playground batchcall transfer feature](../.gitbook/assets/image%20%289%29.png)
 
-**Playground example App**: [https://playground.superfluid.finance/batchtransfer/0xf2d68898557ccb2cf4c10c3ef2b034b2a69dad00](https://playground.superfluid.finance/batchtransfer/0xf2d68898557ccb2cf4c10c3ef2b034b2a69dad00)
+ 🤾♂ See it in action using the Developer Playground. We have some helpful tools for both batchCall transfers ****and batchCall streams!
 
-**Source code**: [https://github.com/superfluid-finance/protocol-monorepo/tree/dev/examples/dev-playground/web/src/utils/batchTransfer.js](https://github.com/superfluid-finance/protocol-monorepo/tree/dev/examples/dev-playground/web/src/utils/batchTransfer.js)
+**Batch Transfer:** [https://playground.superfluid.finance/batchtransfer/0xf2d68898557ccb2cf4c10c3ef2b034b2a69dad00](https://playground.superfluid.finance/batchtransfer/0xf2d68898557ccb2cf4c10c3ef2b034b2a69dad00)
 
-To change the token, replace the address in the URL.
+**Batch Stream:** [https://playground.superfluid.finance/batchstream/0xf2d68898557ccb2cf4c10c3ef2b034b2a69dad00](https://playground.superfluid.finance/batchstream/0xf2d68898557ccb2cf4c10c3ef2b034b2a69dad00)
+
+Source code: [https://github.com/superfluid-finance/protocol-monorepo/tree/dev/examples/dev-playground/web/src/utils/batchTransfer.js](https://github.com/superfluid-finance/protocol-monorepo/tree/dev/examples/dev-playground/web/src/utils/batchTransfer.js)
+
+
 
 ## **Meta-transactions**
 
