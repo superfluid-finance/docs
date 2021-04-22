@@ -30,7 +30,7 @@ description: Superfluid contract addresses for all networks
 Don't see your token listed? Get it added using the form [here](https://www.notion.so/Add-New-Tokens-to-Superfluid-8464f8c116c24cd6a0c5cb4f4174bb2d)
 {% endtab %}
 
-{% tab title="Matic" %}
+{% tab title="Polygon" %}
 ### See [Polygon \(Matic\)](polygon-network-matic.md) for more help
 
 ### Framework

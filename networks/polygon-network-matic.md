@@ -1,5 +1,5 @@
 ---
-description: Using Superfluid on Polygon
+description: Using Superfluid on Polygon network
 ---
 
 # Polygon \(Matic\)
@@ -8,67 +8,11 @@ description: Using Superfluid on Polygon
 
 If you want to learn more about Polygon network, such as websocket connections, the full documentation is here: [https://docs.matic.network/docs/develop/network-details/network](https://docs.matic.network/docs/develop/network-details/network)
 
-### Mumbai Test network
-
-To test on the Mumbai testnet with superfluid, you'll need a RPC URL to connect your metamask or application to a Polygon node.
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">NetworkName</th>
-      <th style="text-align:left"><b>Matic (Mumbai)</b>
-      </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">ParentChain</td>
-      <td style="text-align:left">Go&#xEB;rli</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">chainId</td>
-      <td style="text-align:left">80001</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">Gas token</td>
-      <td style="text-align:left">Matic token</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">RPC</td>
-      <td style="text-align:left">
-        <p> <b>(Option 1) Use Superfluid Public RPC Endpoint</b>
-        </p>
-        <p>
-          <br />&#x26A0; <em>Warning, only metamasks extensions on Firefox and Chrome are supported</em>  <code>https://rpc-endpoints.superfluid.dev/mumbai</code>
-        </p>
-        <p> <b>(Option 2) Get a free RPC URL here:</b>  <code>https://rpc.maticvigil.com/</code>
-          <br
-          />
-        </p>
-        <p> <b>(Option 3)</b>
-        </p>
-        <p>
-          <br />&#x26A0; <em>Warning, these public RPC endpoints are not recommended to use with Superfluid:</em>
-          <br
-          /> <code>https://rpc-mumbai.maticvigil.com/</code> or
-          <br /> <code>https://matic-mumbai.chainstacklabs.com</code> or
-          <br /> <code>https://matic-testnet-archive-rpc.bwarelabs.com</code>
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">Block Explorer</td>
-      <td style="text-align:left"><a href="https://explorer-mumbai.maticvigil.com/">https://explorer-mumbai.maticvigil.com/</a>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-The public RPC is not recommended because the rate limit is not high enough to access the Superfluid Dashboard.
+The naming can be a little confusing. "**Matic**" is used to describe the _main network_ for Polygon. The _test network_ for Polygon is called "**Mumbai**".
 
 ### Matic-Mainnet
 
-To use Matic-Mainnet with Superfluid, you'll need a RPC URL to connect your metamask or application to a Polygon node.
+To use Matic-Mainnet with Superfluid, you'll need a **RPC URL** to connect your metamask or application to a Polygon node.
 
 <table>
   <thead>
@@ -94,19 +38,17 @@ To use Matic-Mainnet with Superfluid, you'll need a RPC URL to connect your meta
     <tr>
       <td style="text-align:left">RPC</td>
       <td style="text-align:left">
-        <p> <b>(Option 1) Use Superfluid Public RPC Endpoint</b>
+        <p> <b>(Option 1) Superfluid Public RPC Endpoint</b>
+          <br />&#x26A0; <em>Warning, only metamasks extensions on Firefox and Chrome are supported</em> 
         </p>
-        <p>
-          <br />&#x26A0; <em>Warning, only metamasks extensions on Firefox and Chrome are supported</em>  <code>https://rpc-endpoints.superfluid.dev/matic</code>
+        <p><code>https://rpc-endpoints.superfluid.dev/matic</code>
         </p>
-        <p> <b>(Option 2)Get a free RPC URL here:</b>
-        </p>
-        <p>
+        <p>&lt;code&gt;&lt;/code&gt;</p>
+        <p> <b>(Option 2) Get your own free RPC</b>
           <br />&#x26A0; <em>Warning, there may be rate limit issue, see &quot;Troubleshooting&quot;</em>  <code>https://rpc.maticvigil.com/</code>
         </p>
-        <p> <b>(Option 3)</b>
-        </p>
-        <p>
+        <p>&lt;code&gt;&lt;/code&gt;</p>
+        <p> <b>(Option 3) Public RPC</b><code> </code>
           <br />&#x26A0; <em>Warning, these public RPC endpoints are not recommended to use with Superfluid:</em>
           <br
           /> <code>https://rpc-mainnet.maticvigil.com/</code> or
@@ -124,6 +66,65 @@ To use Matic-Mainnet with Superfluid, you'll need a RPC URL to connect your meta
     </tr>
   </tbody>
 </table>
+
+## Mumbai Test Network
+
+To use the Mumbai testnet with superfluid, you'll need a **RPC URL** to connect your metamask or application to a Mumbai node.
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">NetworkName</th>
+      <th style="text-align:left"><b>Matic (Mumbai)</b>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">ParentChain</td>
+      <td style="text-align:left">Go&#xEB;rli</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">chainId</td>
+      <td style="text-align:left">80001</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Gas token</td>
+      <td style="text-align:left">Matic token</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">RPC</td>
+      <td style="text-align:left">
+        <p> <b>(Option 1) Superfluid Public RPC Endpoint</b>
+        </p>
+        <p>&#x26A0; <em>Warning, only metamasks extensions on Firefox and Chrome are supported</em> 
+        </p>
+        <p><code>https://rpc-endpoints.superfluid.dev/mumbai</code>
+        </p>
+        <p>&lt;code&gt;&lt;/code&gt;</p>
+        <p> <b>(Option 2) Get your own free RPC </b>
+        </p>
+        <p><code>https://rpc.maticvigil.com/</code>
+          <br />
+        </p>
+        <p> <b>(Option 3) Public RPC</b>
+          <br />&#x26A0; <em>Warning, these public RPC endpoints are not recommended to use with Superfluid:</em>
+          <br
+          /> <code>https://rpc-mumbai.maticvigil.com/</code> or
+          <br /> <code>https://matic-mumbai.chainstacklabs.com</code> or
+          <br /> <code>https://matic-testnet-archive-rpc.bwarelabs.com</code>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Block Explorer</td>
+      <td style="text-align:left"><a href="https://explorer-mumbai.maticvigil.com/">https://explorer-mumbai.maticvigil.com/</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+The public RPC is not recommended because the rate limit is not high enough to access the Superfluid Dashboard.
 
 ## Troubleshooting
 
