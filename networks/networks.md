@@ -102,13 +102,13 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 
 | Resource | Address |
 | :--- | :---: |
-| fDAI |  |
-| fUSDC |  |
-| fTUSD |  |
-| fDAIx |  |
-| fUSDCx |  |
-| fTUSDx |  |
-| ETHx |  |
+| [fDAI](https://kovan.etherscan.io/address/0xb64845d53a373d35160b72492818f0d2f51292c0) | 0xb64845d53a373d35160b72492818f0d2f51292c0 |
+| [fUSDC](https://kovan.etherscan.io/address/0x2eb320e2100a043401e3b3b132d4134f235a6a04) | 0x2eb320e2100a043401e3b3b132d4134f235a6a04 |
+| [fTUSD](https://kovan.etherscan.io/address/0x8607d0ab76985e845b03a6011aa13edd1cb21126) | 0x8607d0ab76985e845b03a6011aa13edd1cb21126 |
+| [fDAIx](https://kovan.etherscan.io/address/0xe3cb950cb164a31c66e32c320a800d477019dcff) | 0xe3cb950cb164a31c66e32c320a800d477019dcff |
+| [fUSDCx](https://kovan.etherscan.io/address/0x25b5cd2e6ebaedaa5e21d0ecf25a567ee9704aa7) | 0x25b5cd2e6ebaedaa5e21d0ecf25a567ee9704aa7 |
+| [fTUSDx](https://kovan.etherscan.io/address/0xb20200908d60f1d7bc68594f677bc15070a87504) | 0xb20200908d60f1d7bc68594f677bc15070a87504 |
+| [ETHx](https://kovan.etherscan.io/address/0xdd5462a7db7856c9128bc77bd65c2919ee23c6e1) | 0xdd5462a7db7856c9128bc77bd65c2919ee23c6e1 |
 {% endtab %}
 
 {% tab title="Rinkeby" %}
