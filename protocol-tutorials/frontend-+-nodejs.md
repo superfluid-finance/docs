@@ -17,13 +17,13 @@ The sdk can be used with both `web3.js` and `ethers`. A peer dependency for cont
 {% tabs %}
 {% tab title="ethers" %}
 ```bash
-yarn install @superfluid-finance/js-sdk @ethersproject/contracts
+yarn add @superfluid-finance/js-sdk @ethersproject/contracts
 ```
 {% endtab %}
 
 {% tab title="web3" %}
 ```
-yarn install @superfluid-finance/js-sdk @truffle/contract
+yarn add @superfluid-finance/js-sdk @truffle/contract
 ```
 {% endtab %}
 {% endtabs %}
