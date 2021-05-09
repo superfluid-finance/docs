@@ -38,3 +38,7 @@
 * [Learn about Ethereum](resources/learn-about-ethereum.md)
 * [Code of Conduct](resources/code-of-conduct.md)
 
+## Tokens
+
+* [$WORK Super Token](tokens/work.md)
+
