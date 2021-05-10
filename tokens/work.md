@@ -4,7 +4,7 @@ description: How Superfluid gives the WORK token super-powers
 
 # $WORK Super Token
 
-> **UPDATE 5/10/21**: We are actively working on verifying the source-code on Blockscout for the xDAI Super Token. Due to the nature of proxies, verification tooling is not straight-forward.
+> **UPDATE 5/10/21**: We are actively working on verifying the source-code on Blockscout for the WORK Super Token on xDAI. Due to the nature of proxies, verification tooling is not very straight-forward. We appreciate your patience.
 
 The WORK token is an **ERC20 Wrapper Super Token**. This means there is an underlying ERC20 token, which is called _protoWORK_. The protoWORK is wrapped  __or "upgraded" to enable Super Token features like streaming, batch calls, and Super App interactivity. 
 
