@@ -20,6 +20,7 @@
 * [Super App](docs/super-app.md)
 * [Super Tokens](docs/super-tokens.md)
 * [Resolver](docs/resolver.md)
+* [Subgraph](docs/subgraph.md)
 
 ## Networks
 
