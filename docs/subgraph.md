@@ -4,9 +4,11 @@ description: Hungry for data? Hot n' fresh Superfluid subgraphs ready to consume
 
 # Subgraph
 
+Get useful insights into Superfluid using our subgraphs. Use the GraphQL Playground to start testing on any network.
+
 ## URLs 
 
-Click a link to start testing queries in the graphql playground:
+Click a link to start testing queries in the playground:
 
 | Network | URL |
 | :--- | :--- |
