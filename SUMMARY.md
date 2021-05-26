@@ -19,6 +19,7 @@
 * [Deploying Contracts](docs/production-deployment.md)
 * [Super App](docs/super-app.md)
 * [Super Tokens](docs/super-tokens.md)
+* [Batch Call](docs/batch-call.md)
 * [Resolver](docs/resolver.md)
 * [Subgraph](docs/subgraph.md)
 

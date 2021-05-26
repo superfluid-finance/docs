@@ -7,7 +7,7 @@ description: Tokens with super-powers ✨
 Super Tokens are one of the 3 main primitives of the Superfluid Protocol. Here's a list of the super-powers that all Super Tokens enjoy:
 
 * **ERC777 -** can "react" to certain events using callbacks \([erc777.org](https://www.erc777.org/)\)
-* **Batch capabilities -** can do multiple things in a single transaction
+* **Batch call -** can do multiple things in a single transaction
 * **Meta-transactions** - allow for submitting transactions on behalf of another account
 
 ## Varieties
