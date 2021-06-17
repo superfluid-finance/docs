@@ -6,7 +6,7 @@ description: Create a new set of Superfluid contracts
 
 So far in the tutorial we have used contracts already deployed to a public testnet. For simple applications, its totally fine to keep using these contract.
 
-However, you may eventually need the skills to deploy the entire framework yourself to a local test network. Once your Super App is more developed, you will ned to write tests. Using a public testnet for testing is not an option, due to the relatively slow execution time. 
+However, you may eventually need the skills to deploy the entire framework yourself to a local test network. Once your Super App is more developed, you will need to write tests. Using a public testnet for testing is not an option, due to the relatively slow execution time. 
 
 > Even a 1 second block time is too long, considering a full test-suite may include thousands of transactions. We need millisecond blocktimes 🏎
 
