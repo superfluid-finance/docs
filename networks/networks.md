@@ -37,26 +37,26 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 
 | Resource | Address |
 | :--- | :--- |
-| [Resolver](https://explorer-mainnet.maticvigil.com/address/0xE0cc76334405EE8b39213E620587d815967af39C) | 0xE0cc76334405EE8b39213E620587d815967af39C |
-| [Host](https://explorer-mainnet.maticvigil.com/address/0x3E14dC1b13c488a8d5D310918780c983bD5982E7) | 0x3E14dC1b13c488a8d5D310918780c983bD5982E7 |
-| [CFAv1](https://explorer-mainnet.maticvigil.com/address/0x6EeE6060f715257b970700bc2656De21dEdF074C) | 0x6EeE6060f715257b970700bc2656De21dEdF074C |
-| [IDAv1](https://explorer-mainnet.maticvigil.com/address/0xB0aABBA4B2783A72C52956CDEF62d438ecA2d7a1) | 0xB0aABBA4B2783A72C52956CDEF62d438ecA2d7a1 |
-| [SuperTokenFactory](https://explorer-mainnet.maticvigil.com/address/0x2C90719f25B10Fc5646c82DA3240C76Fa5BcCF34) | 0x2C90719f25B10Fc5646c82DA3240C76Fa5BcCF34 |
+| [Resolver](https://polygonscan.com/address/0xE0cc76334405EE8b39213E620587d815967af39C) | 0xE0cc76334405EE8b39213E620587d815967af39C |
+| [Host](https://polygonscan.com/address/0x3E14dC1b13c488a8d5D310918780c983bD5982E7) | 0x3E14dC1b13c488a8d5D310918780c983bD5982E7 |
+| [CFAv1](https://polygonscan.com/address/0x6EeE6060f715257b970700bc2656De21dEdF074C) | 0x6EeE6060f715257b970700bc2656De21dEdF074C |
+| [IDAv1](https://polygonscan.com/address/0xB0aABBA4B2783A72C52956CDEF62d438ecA2d7a1) | 0xB0aABBA4B2783A72C52956CDEF62d438ecA2d7a1 |
+| [SuperTokenFactory](https://polygonscan.com/address/0x2C90719f25B10Fc5646c82DA3240C76Fa5BcCF34) | 0x2C90719f25B10Fc5646c82DA3240C76Fa5BcCF34 |
 
 ### Tokens
 
 | Resource | Address |
 | :--- | :--- |
 | MATIC | Native token |
-| [MATICx](https://explorer-mainnet.maticvigil.com/address/0x3aD736904E9e65189c3000c7DD2c8AC8bB7cD4e3) | 0x3aD736904E9e65189c3000c7DD2c8AC8bB7cD4e3 |
-| [WETH](https://explorer-mainnet.maticvigil.com/address/0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619/read-contract) | 0x7ceb23fd6bc0add59e62ac25578270cff1b9f619 |
-| [ETHx](https://explorer-mainnet.maticvigil.com/address/0x27e1e4E6BC79D93032abef01025811B7E4727e85) | 0x27e1e4E6BC79D93032abef01025811B7E4727e85 |
-| [USDC](https://explorer-mainnet.maticvigil.com/address/0x2791bca1f2de4661ed88a30c99a7a9449aa84174/read-proxy) | 0x2791bca1f2de4661ed88a30c99a7a9449aa84174 |
-| [USDCx](https://explorer-mainnet.maticvigil.com/address/0xCAa7349CEA390F89641fe306D93591f87595dc1F) | 0xCAa7349CEA390F89641fe306D93591f87595dc1F |
-| [DAI](https://explorer-mainnet.maticvigil.com/address/0x8f3cf7ad23cd3cadbd9735aff958023239c6a063/read-proxy) | 0x8f3cf7ad23cd3cadbd9735aff958023239c6a063 |
-| [DAIx](https://explorer-mainnet.maticvigil.com/address/0x1305F6B6Df9Dc47159D12Eb7aC2804d4A33173c2) | 0x1305F6B6Df9Dc47159D12Eb7aC2804d4A33173c2 |
-| [WBTC](https://explorer-mainnet.maticvigil.com/address/0x1BFD67037B42Cf73acF2047067bd4F2C47D9BfD6/read-proxy) | 0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6 |
-| [WBTCx](https://explorer-mainnet.maticvigil.com/address/0x4086eBf75233e8492F1BCDa41C7f2A8288c2fB92) | 0x4086eBf75233e8492F1BCDa41C7f2A8288c2fB92 |
+| [MATICx](https://polygonscan.com/address/0x3aD736904E9e65189c3000c7DD2c8AC8bB7cD4e3) | 0x3aD736904E9e65189c3000c7DD2c8AC8bB7cD4e3 |
+| [WETH](https://polygonscan.com/address/0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619/read-contract) | 0x7ceb23fd6bc0add59e62ac25578270cff1b9f619 |
+| [ETHx](https://polygonscan.com/address/0x27e1e4E6BC79D93032abef01025811B7E4727e85) | 0x27e1e4E6BC79D93032abef01025811B7E4727e85 |
+| [USDC](https://polygonscan.com/address/0x2791bca1f2de4661ed88a30c99a7a9449aa84174/read-proxy) | 0x2791bca1f2de4661ed88a30c99a7a9449aa84174 |
+| [USDCx](https://polygonscan.com/address/0xCAa7349CEA390F89641fe306D93591f87595dc1F) | 0xCAa7349CEA390F89641fe306D93591f87595dc1F |
+| [DAI](https://polygonscan.com/address/0x8f3cf7ad23cd3cadbd9735aff958023239c6a063/read-proxy) | 0x8f3cf7ad23cd3cadbd9735aff958023239c6a063 |
+| [DAIx](hhttps://polygonscan.com/address/0x1305F6B6Df9Dc47159D12Eb7aC2804d4A33173c2) | 0x1305F6B6Df9Dc47159D12Eb7aC2804d4A33173c2 |
+| [WBTC](https://polygonscan.com/address/0x1BFD67037B42Cf73acF2047067bd4F2C47D9BfD6/read-proxy) | 0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6 |
+| [WBTCx](https://polygonscan.com/address/0x4086eBf75233e8492F1BCDa41C7f2A8288c2fB92) | 0x4086eBf75233e8492F1BCDa41C7f2A8288c2fB92 |
 {% endtab %}
 {% endtabs %}
 
