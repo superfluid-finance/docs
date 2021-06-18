@@ -54,7 +54,7 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 | [USDC](https://polygonscan.com/address/0x2791bca1f2de4661ed88a30c99a7a9449aa84174/read-proxy) | 0x2791bca1f2de4661ed88a30c99a7a9449aa84174 |
 | [USDCx](https://polygonscan.com/address/0xCAa7349CEA390F89641fe306D93591f87595dc1F) | 0xCAa7349CEA390F89641fe306D93591f87595dc1F |
 | [DAI](https://polygonscan.com/address/0x8f3cf7ad23cd3cadbd9735aff958023239c6a063/read-proxy) | 0x8f3cf7ad23cd3cadbd9735aff958023239c6a063 |
-| [DAIx](hhttps://polygonscan.com/address/0x1305F6B6Df9Dc47159D12Eb7aC2804d4A33173c2) | 0x1305F6B6Df9Dc47159D12Eb7aC2804d4A33173c2 |
+| [DAIx](https://polygonscan.com/address/0x1305F6B6Df9Dc47159D12Eb7aC2804d4A33173c2) | 0x1305F6B6Df9Dc47159D12Eb7aC2804d4A33173c2 |
 | [WBTC](https://polygonscan.com/address/0x1BFD67037B42Cf73acF2047067bd4F2C47D9BfD6/read-proxy) | 0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6 |
 | [WBTCx](https://polygonscan.com/address/0x4086eBf75233e8492F1BCDa41C7f2A8288c2fB92) | 0x4086eBf75233e8492F1BCDa41C7f2A8288c2fB92 |
 {% endtab %}
