@@ -82,7 +82,7 @@ You'll notice we passed a token address when we created the User. Over in [🔗 
 
 What's a Super Token? It's just a "wrapped" or **upgraded** ERC20 token. This is what enables the cool super-powers like streaming, batch calls, and more. 
 
-![](../.gitbook/assets/image%20%288%29%20%281%29%20%281%29.png)
+![](../.gitbook/assets/image%20%288%29%20%281%29%20%281%29%20%281%29.png)
 
 After upgrading an ERC20 to Super Token, it will have a new token address. To denote this, we just append "x" to the token symbol. Since the fDAI in our example is named "Fake DAI", it now becomes "Super Fake DAI"... pretty funny name right? 
 
