@@ -50,7 +50,7 @@ await alice.createPool({ poolId: 1 });
 Now that we have our Plublishing Index / pool, we can assign it some **Subscribers**. We do this by _giving shares_ to other people like this:
 
 ```javascript
-await alice.giveShares({ poolId: 1, recipient: dan, shares: 90 });
+await alice.giveShares({ poolId: 1, recipient: bob, shares: 90 });
 await alice.giveShares({ poolId: 1, recipient: carol, shares: 10 });
 ```
 
