@@ -104,7 +104,7 @@ sf.cfa.createFlow({
 **`updateFlow()`**
 
 ```javascript
-sf.cfa.createFlow({
+sf.cfa.updateFlow({
   superToken: daix.address,
   sender: bob,
   receiver: alice,
