@@ -166,22 +166,22 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 
 | Resource | Address |
 | :--- | :---: |
-| [Resolver](https://explorer-mumbai.maticvigil.com/address/0x8C54C83FbDe3C59e59dd6E324531FB93d4F504d3) | 0x8C54C83FbDe3C59e59dd6E324531FB93d4F504d3 |
-| [Host](https://explorer-mumbai.maticvigil.com/address/0xEB796bdb90fFA0f28255275e16936D25d3418603) | 0xEB796bdb90fFA0f28255275e16936D25d3418603 |
-| [CFAv1](https://explorer-mumbai.maticvigil.com/address/0x49e565Ed1bdc17F3d220f72DF0857C26FA83F873) | 0x49e565Ed1bdc17F3d220f72DF0857C26FA83F873 |
-| [IDAv1](https://explorer-mumbai.maticvigil.com/address/0x804348D4960a61f2d5F9ce9103027A3E849E09b8) | 0x804348D4960a61f2d5F9ce9103027A3E849E09b8 |
-| [SuperTokenFactory](https://explorer-mumbai.maticvigil.com/address/0x200657E2f123761662567A1744f9ACAe50dF47E6) | 0x200657E2f123761662567A1744f9ACAe50dF47E6 |
+| [Resolver](https://mumbai.polygonscan.com/address/0x8C54C83FbDe3C59e59dd6E324531FB93d4F504d3) | 0x8C54C83FbDe3C59e59dd6E324531FB93d4F504d3 |
+| [Host](https://mumbai.polygonscan.com/address/0xEB796bdb90fFA0f28255275e16936D25d3418603) | 0xEB796bdb90fFA0f28255275e16936D25d3418603 |
+| [CFAv1](https://mumbai.polygonscan.com/address/0x49e565Ed1bdc17F3d220f72DF0857C26FA83F873) | 0x49e565Ed1bdc17F3d220f72DF0857C26FA83F873 |
+| [IDAv1](https://mumbai.polygonscan.com/address/0x804348D4960a61f2d5F9ce9103027A3E849E09b8) | 0x804348D4960a61f2d5F9ce9103027A3E849E09b8 |
+| [SuperTokenFactory](https://mumbai.polygonscan.com/address/0x200657E2f123761662567A1744f9ACAe50dF47E6) | 0x200657E2f123761662567A1744f9ACAe50dF47E6 |
 
 ### Tokens
 
 | Resource | Address |
 | :--- | :---: |
-| [fDAI](https://explorer-mumbai.maticvigil.com/address/0x15F0Ca26781C3852f8166eD2ebce5D18265cceb7) | 0x15F0Ca26781C3852f8166eD2ebce5D18265cceb7 |
-| [fUSDC](https://explorer-mumbai.maticvigil.com/address/0xbe49ac1EadAc65dccf204D4Df81d650B50122aB2) | 0xbe49ac1EadAc65dccf204D4Df81d650B50122aB2 |
-| [fTUSD](https://explorer-mumbai.maticvigil.com/address/0xA794C9ee519FD31BbCE643e8D8138f735E97D1DB) | 0xA794C9ee519FD31BbCE643e8D8138f735E97D1DB |
-| [fDAIx](https://explorer-mumbai.maticvigil.com/address/0x5D8B4C2554aeB7e86F387B4d6c00Ac33499Ed01f) | 0x5D8B4C2554aeB7e86F387B4d6c00Ac33499Ed01f |
-| [fUSDCx](https://explorer-mumbai.maticvigil.com/address/0x42bb40bF79730451B11f6De1CbA222F17b87Afd7) | 0x42bb40bF79730451B11f6De1CbA222F17b87Afd7 |
-| [fTUSDx](https://explorer-mumbai.maticvigil.com/address/0x918E0d5C96cAC79674E2D38066651212be3C9C48) | 0x918E0d5C96cAC79674E2D38066651212be3C9C48 |
+| [fDAI](https://mumbai.polygonscan.com/address/0x15F0Ca26781C3852f8166eD2ebce5D18265cceb7) | 0x15F0Ca26781C3852f8166eD2ebce5D18265cceb7 |
+| [fUSDC](https://mumbai.polygonscan.com/address/0xbe49ac1EadAc65dccf204D4Df81d650B50122aB2) | 0xbe49ac1EadAc65dccf204D4Df81d650B50122aB2 |
+| [fTUSD](https://mumbai.polygonscan.com/address/0xA794C9ee519FD31BbCE643e8D8138f735E97D1DB) | 0xA794C9ee519FD31BbCE643e8D8138f735E97D1DB |
+| [fDAIx](https://mumbai.polygonscan.com/address/0x5D8B4C2554aeB7e86F387B4d6c00Ac33499Ed01f) | 0x5D8B4C2554aeB7e86F387B4d6c00Ac33499Ed01f |
+| [fUSDCx](https://mumbai.polygonscan.com/address/0x42bb40bF79730451B11f6De1CbA222F17b87Afd7) | 0x42bb40bF79730451B11f6De1CbA222F17b87Afd7 |
+| [fTUSDx](https://mumbai.polygonscan.com/address/0x918E0d5C96cAC79674E2D38066651212be3C9C48) | 0x918E0d5C96cAC79674E2D38066651212be3C9C48 |
 {% endtab %}
 {% endtabs %}
 
