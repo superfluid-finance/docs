@@ -194,7 +194,7 @@ sf.ida.approveSubscription({
   superToken: daix.address,
   indexId: 1,
   publisher: bob.address, // the publisher
-  sender: carol.address // who is receiving the units and sending this tx
+  subscriber: carol.address // who is receiving the units and sending this tx
 });
 ```
 

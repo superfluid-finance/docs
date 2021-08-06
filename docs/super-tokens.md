@@ -105,7 +105,7 @@ You can use this chart to help you decide which approach to take:
 
 ### Deploy a Custom Super Token
 
-If you'd like to deploy a Custom Super Token you can use the [NativeSuperToken.sol](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/tokens/NativeSuperToken.sol) contract and the [deployment script](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/scripts/deploy-native-supertoken.js). Also check out the [🥤Soda Machine](../resources/examples/soda-machine.md) for an example of a Native Super Token deployed with a Super App. We will add documenation as more community members deploy Custom Super Tokens.
+If you'd like to deploy a Custom Super Token you can use the [NativeSuperToken.sol](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/tokens/NativeSuperToken.sol) contract and the [deployment script](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/scripts/deploy-native-super-token.js). Also check out the [🥤Soda Machine](../resources/examples/soda-machine.md) for an example of a Native Super Token deployed with a Super App. We will add documenation as more community members deploy Custom Super Tokens.
 
 ## Edge-case Super Tokens
 
