@@ -19,6 +19,7 @@ description: Superfluid contract addresses for all networks
 | [CFAv1](https://blockscout.com/poa/xdai/address/0xEbdA4ceF883A7B12c4E669Ebc58927FBa8447C7D) | 0xEbdA4ceF883A7B12c4E669Ebc58927FBa8447C7D |
 | [IDAv1](https://blockscout.com/poa/xdai/address/0x7888ac96F987Eb10E291F34851ae0266eF912081) | 0x7888ac96F987Eb10E291F34851ae0266eF912081 |
 | [SuperTokenFactory](https://blockscout.com/xdai/mainnet/address/0x23410e2659380784498509698ed70E414D384880) | 0x23410e2659380784498509698ed70E414D384880 |
+| [SuperfluidLoader v1](https://blockscout.com/xdai/mainnet/address/0x21d4E9fbB9DB742E6ef4f29d189a7C18B0b59136) | 0x21d4E9fbB9DB742E6ef4f29d189a7C18B0b59136 |
 
 ### Tokens
 
@@ -42,6 +43,7 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 | [CFAv1](https://polygonscan.com/address/0x6EeE6060f715257b970700bc2656De21dEdF074C) | 0x6EeE6060f715257b970700bc2656De21dEdF074C |
 | [IDAv1](https://polygonscan.com/address/0xB0aABBA4B2783A72C52956CDEF62d438ecA2d7a1) | 0xB0aABBA4B2783A72C52956CDEF62d438ecA2d7a1 |
 | [SuperTokenFactory](https://polygonscan.com/address/0x2C90719f25B10Fc5646c82DA3240C76Fa5BcCF34) | 0x2C90719f25B10Fc5646c82DA3240C76Fa5BcCF34 |
+| [SuperfluidLoader v1](https://polygonscan.com/address/0x15F0Ca26781C3852f8166eD2ebce5D18265cceb7) | 0x15F0Ca26781C3852f8166eD2ebce5D18265cceb7 |
 
 ### Tokens
 
@@ -73,6 +75,7 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 | [CFAv1](http://goerli.etherscan.io/address/0xEd6BcbF6907D4feEEe8a8875543249bEa9D308E8) | 0xEd6BcbF6907D4feEEe8a8875543249bEa9D308E8 |
 | [IDAv1](http://goerli.etherscan.io/address/0xfDdcdac21D64B639546f3Ce2868C7EF06036990c) | 0xfDdcdac21D64B639546f3Ce2868C7EF06036990c |
 | [SuperTokenFactory](https://goerli.etherscan.io/address/0x94f26B4c8AD12B18c12f38E878618f7664bdcCE2#code) | 0x94f26B4c8AD12B18c12f38E878618f7664bdcCE2 |
+| [SuperfluidLoader v1](https://goerli.etherscan.io/address/0x74d860243Ff08A243d5485899f343117EbDa6eA8) | 0x74d860243Ff08A243d5485899f343117EbDa6eA8 |
 
 ### Tokens
 
@@ -97,6 +100,7 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 | [CFAv1](https://kovan.etherscan.io/address/0xECa8056809e7e8db04A8fF6e4E82cD889a46FE2F) | 0xECa8056809e7e8db04A8fF6e4E82cD889a46FE2F |
 | [IDAv1](https://kovan.etherscan.io/address/0x556ba0b3296027Dd7BCEb603aE53dEc3Ac283d2b) | 0x556ba0b3296027Dd7BCEb603aE53dEc3Ac283d2b |
 | [SuperTokenFactory](https://kovan.etherscan.io/address/0xF5F666AC8F581bAef8dC36C7C8828303Bd4F8561) | 0xF5F666AC8F581bAef8dC36C7C8828303Bd4F8561 |
+| [SuperfluidLoader v1](https://kovan.etherscan.io/address/0x9F73208FAFf97465CEC27fd93F10EB3D78289339) | 0x9F73208FAFf97465CEC27fd93F10EB3D78289339 |
 
 ### Tokens
 
@@ -121,6 +125,7 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 | [CFAv1](http://rinkeby.etherscan.io/address/0xF4C5310E51F6079F601a5fb7120bC72a70b96e2A) | 0xF4C5310E51F6079F601a5fb7120bC72a70b96e2A |
 | [IDAv1](http://rinkeby.etherscan.io/address/0x32E0ecb72C1dDD92B007405F8102c1556624264D) | 0x32E0ecb72C1dDD92B007405F8102c1556624264D |
 | [SuperTokenFactory](https://rinkeby.etherscan.io/address/0xd465e36e607d493cd4CC1e83bea275712BECd5E0) | 0xd465e36e607d493cd4CC1e83bea275712BECd5E0 |
+| [SuperfluidLoader v1](https://rinkeby.etherscan.io/address/0x70A755e96d321dccd26111233a297095910784C7) | 0x70A755e96d321dccd26111233a297095910784C7 |
 
 ### Tokens
 
@@ -145,6 +150,7 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 | [CFAv1](http://ropsten.etherscan.io/address/0xaD2F1f7cd663f6a15742675f975CcBD42bb23a88) | 0xaD2F1f7cd663f6a15742675f975CcBD42bb23a88 |
 | [IDAv1](http://ropsten.etherscan.io/address/0xAD1e87F0C74341ecAFc1d27349dD6e650f5bAdD7) | 0xAD1e87F0C74341ecAFc1d27349dD6e650f5bAdD7 |
 | [SuperTokenFactory](https://ropsten.etherscan.io/address/0x6FA165d10b907592779301C23C8Ac9d1F79ca930) | 0x6FA165d10b907592779301C23C8Ac9d1F79ca930 |
+| [SuperfluidLoader v1](https://ropsten.etherscan.io/address/0x23e9A1D629AC39e60c60C7592EB12fB8247Bd52A) | 0x23e9A1D629AC39e60c60C7592EB12fB8247Bd52A |
 
 ### Tokens
 
@@ -171,6 +177,7 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 | [CFAv1](https://mumbai.polygonscan.com/address/0x49e565Ed1bdc17F3d220f72DF0857C26FA83F873) | 0x49e565Ed1bdc17F3d220f72DF0857C26FA83F873 |
 | [IDAv1](https://mumbai.polygonscan.com/address/0x804348D4960a61f2d5F9ce9103027A3E849E09b8) | 0x804348D4960a61f2d5F9ce9103027A3E849E09b8 |
 | [SuperTokenFactory](https://mumbai.polygonscan.com/address/0x200657E2f123761662567A1744f9ACAe50dF47E6) | 0x200657E2f123761662567A1744f9ACAe50dF47E6 |
+| [SuperfluidLoader v1](https://mumbai.polygonscan.com/address/0x0d56ED56b63382B0FC964490feB9AE438B6B4b79) | 0x0d56ED56b63382B0FC964490feB9AE438B6B4b79 |
 
 ### Tokens
 
