@@ -7,29 +7,6 @@ description: Superfluid contract addresses for all networks
 ## Mainnet Networks
 
 {% tabs %}
-{% tab title="xDAI" %}
-### ​​ ​​ ❓ See [xDAI Chain](xdai-chain.md) for more help
-
-### Framework
-
-| Resource | Address |
-| :--- | :--- |
-| [Resolver](https://blockscout.com/poa/xdai/address/0xD2009765189164b495c110D61e4D301729079911) | 0xD2009765189164b495c110D61e4D301729079911 |
-| [Host](https://blockscout.com/poa/xdai/address/0x2dFe937cD98Ab92e59cF3139138f18c823a4efE7) | 0x2dFe937cD98Ab92e59cF3139138f18c823a4efE7 |
-| [CFAv1](https://blockscout.com/poa/xdai/address/0xEbdA4ceF883A7B12c4E669Ebc58927FBa8447C7D) | 0xEbdA4ceF883A7B12c4E669Ebc58927FBa8447C7D |
-| [IDAv1](https://blockscout.com/poa/xdai/address/0x7888ac96F987Eb10E291F34851ae0266eF912081) | 0x7888ac96F987Eb10E291F34851ae0266eF912081 |
-| [SuperTokenFactory](https://blockscout.com/xdai/mainnet/address/0x23410e2659380784498509698ed70E414D384880) | 0x23410e2659380784498509698ed70E414D384880 |
-| [SuperfluidLoader v1](https://blockscout.com/xdai/mainnet/address/0x21d4E9fbB9DB742E6ef4f29d189a7C18B0b59136) | 0x21d4E9fbB9DB742E6ef4f29d189a7C18B0b59136 |
-
-### Tokens
-
-| Resource | Address |
-| :--- | :--- |
-| xDAI | Native token |
-| [xDAIx](https://blockscout.com/xdai/mainnet/address/0x59988e47A3503AaFaA0368b9deF095c818Fdca01) | 0x59988e47A3503AaFaA0368b9deF095c818Fdca01 |
-
-Don't see your token listed? Get it added using the form [here](https://www.notion.so/Add-New-Tokens-to-Superfluid-8464f8c116c24cd6a0c5cb4f4174bb2d)
-{% endtab %}
 
 {% tab title="Matic" %}
 ### ​​ ❓See [Polygon \(Matic\)](polygon-network-matic.md) for more help
@@ -60,6 +37,32 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 | [WBTC](https://polygonscan.com/address/0x1BFD67037B42Cf73acF2047067bd4F2C47D9BfD6/read-proxy) | 0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6 |
 | [WBTCx](https://polygonscan.com/address/0x4086eBf75233e8492F1BCDa41C7f2A8288c2fB92) | 0x4086eBf75233e8492F1BCDa41C7f2A8288c2fB92 |
 {% endtab %}
+
+
+{% tab title="xDAI" %}
+### ​​ ​​ ❓ See [xDAI Chain](xdai-chain.md) for more help
+
+### Framework
+
+| Resource | Address |
+| :--- | :--- |
+| [Resolver](https://blockscout.com/poa/xdai/address/0xD2009765189164b495c110D61e4D301729079911) | 0xD2009765189164b495c110D61e4D301729079911 |
+| [Host](https://blockscout.com/poa/xdai/address/0x2dFe937cD98Ab92e59cF3139138f18c823a4efE7) | 0x2dFe937cD98Ab92e59cF3139138f18c823a4efE7 |
+| [CFAv1](https://blockscout.com/poa/xdai/address/0xEbdA4ceF883A7B12c4E669Ebc58927FBa8447C7D) | 0xEbdA4ceF883A7B12c4E669Ebc58927FBa8447C7D |
+| [IDAv1](https://blockscout.com/poa/xdai/address/0x7888ac96F987Eb10E291F34851ae0266eF912081) | 0x7888ac96F987Eb10E291F34851ae0266eF912081 |
+| [SuperTokenFactory](https://blockscout.com/xdai/mainnet/address/0x23410e2659380784498509698ed70E414D384880) | 0x23410e2659380784498509698ed70E414D384880 |
+| [SuperfluidLoader v1](https://blockscout.com/xdai/mainnet/address/0x21d4E9fbB9DB742E6ef4f29d189a7C18B0b59136) | 0x21d4E9fbB9DB742E6ef4f29d189a7C18B0b59136 |
+
+### Tokens
+
+| Resource | Address |
+| :--- | :--- |
+| xDAI | Native token |
+| [xDAIx](https://blockscout.com/xdai/mainnet/address/0x59988e47A3503AaFaA0368b9deF095c818Fdca01) | 0x59988e47A3503AaFaA0368b9deF095c818Fdca01 |
+
+Don't see your token listed? Get it added using the form [here](https://www.notion.so/Add-New-Tokens-to-Superfluid-8464f8c116c24cd6a0c5cb4f4174bb2d)
+{% endtab %}
+
 {% endtabs %}
 
 ## Test Networks
