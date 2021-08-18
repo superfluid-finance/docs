@@ -138,12 +138,12 @@ console.log(details);
 We can call it again to change the flow rate, or stop it by passing a `0` flowRate:
 
 ```javascript
-await alice.flow({
+await carol.flow({
   recipient: '0xA8f3447922d786045CB582B0C825723B744a54df',
   flowRate: '1000000000000000' // 2592 DAIx per month
 });
 
-await alice.flow({
+await carol.flow({
   recipient: '0xA8f3447922d786045CB582B0C825723B744a54df',
   flowRate: '0' 
 });
