@@ -38,17 +38,22 @@ To use Matic-Mainnet with Superfluid, you'll need a **RPC URL** to connect your 
     <tr>
       <td style="text-align:left">RPC</td>
       <td style="text-align:left">
-        <p> <b>(Option 1) Superfluid Public RPC Endpoint</b>
+        <p> <b>(Option 1) Polygon RPC Project</b>
+          <br />&#x26A0; <em>polygon-rpc.com aims to provide a fast and reliable RPC gateway to the Polygon network.</em> 
+        </p>
+        <p><code>https://polygon-rpc.com/</code>
+        </p>
+        <p> <b>(Option 2) Superfluid Public RPC Endpoint</b>
           <br />&#x26A0; <em>Warning, only metamasks extensions on Firefox and Chrome are supported</em> 
         </p>
         <p><code>https://rpc-endpoints.superfluid.dev/matic</code>
         </p>
         <p>&lt;code&gt;&lt;/code&gt;</p>
-        <p> <b>(Option 2) Get your own free RPC</b>
+        <p> <b>(Option 3) Get your own free RPC</b>
           <br />&#x26A0; <em>Warning, there may be rate limit issue, see &quot;Troubleshooting&quot;</em>  <code>https://rpc.maticvigil.com/</code>
         </p>
         <p>&lt;code&gt;&lt;/code&gt;</p>
-        <p> <b>(Option 3) Public RPC</b><code> </code>
+        <p> <b>(Option 4) Public RPC</b><code> </code>
           <br />&#x26A0; <em>Warning, these public RPC endpoints are not recommended to use with Superfluid:</em>
           <br
           /> <code>https://rpc-mainnet.maticvigil.com/</code> or
