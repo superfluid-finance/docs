@@ -20,7 +20,9 @@ Agreements set the "rules" of how a Super Token can behave. The Superfluid frame
 
 In the previous section, you used the **Constant Flow Agreement**, which enables you to flow tokens from your wallet.  There is also the **Instant Distribution Agreement**, which allows sending tokens to multiple recipients in a single transaction. If you want to read the Solidity code, here are all the agreements:
 
-{% embed url="https://github.com/superfluid-finance/protocol-monorepo/tree/dev/packages/ethereum-contracts/contracts/agreements" caption="packages/ethereum-contracts/contracts/agreements/" %}
+{% embed url="https://github.com/superfluid-finance/protocol-monorepo/tree/dev/packages/ethereum-contracts/contracts/agreements" %}
+packages/ethereum-contracts/contracts/agreements/
+{% endembed %}
 
 The Superfluid community is exploring the possibilites of what these two agreements can do. Eventually there will be more agreements, and there's an open invitation to help build and create them.
 
@@ -28,13 +30,15 @@ The Superfluid community is exploring the possibilites of what these two agreeme
 
 In addition to agreements, the Superfluid framework also provides features at the token level. Here's a short list of super-powers:
 
-* **ERC777 -** tokens which can "react" to certain events using callbacks \([erc777.org](https://www.erc777.org/)\)
-* **Batch capabilities -** you can do multiple things in a single transaction
+* **ERC777 - **tokens which can "react" to certain events using callbacks ([erc777.org](https://www.erc777.org))
+* **Batch capabilities - **you can do multiple things in a single transaction
 * **Meta-transactions** - submit transactions on behalf of another account
 
 Dive into the Solidity here: 
 
-{% embed url="https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/superfluid/SuperToken.sol" caption="packages/ethereum-contracts/contracts/superfluid/SuperToken.sol" %}
+{% embed url="https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/superfluid/SuperToken.sol" %}
+packages/ethereum-contracts/contracts/superfluid/SuperToken.sol
+{% endembed %}
 
 ## 3. Super Apps
 
@@ -49,5 +53,4 @@ A Super App can "manage" agreements and respond to changes. This is where you ca
 
 
 
-☕ Still awake? Now that you know the primitives, let's code our way through each one.
-
+:coffee: Still awake? Now that you know the primitives, let's code our way through each one.

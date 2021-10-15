@@ -4,9 +4,9 @@ description: The Official Superfluid Tutorial
 
 # ⭐ Getting started
 
-### 👋 Howdy! Welcome to the Superfluid tutorial
+### :wave: Howdy! Welcome to the Superfluid tutorial
 
-This should take about 1 hour to complete - grab a bev and throw on some tunes 🎶 
+This should take about 1 hour to complete - grab a bev and throw on some tunes :notes: 
 
 ### What you'll accomplish
 
@@ -19,4 +19,3 @@ Once complete, you'll understand all the major features of Superfluid and can st
 3. Deploy the Super App using `@superfluid-finance/contracts` on a local testnet
 
 ### ...let's get started!
-

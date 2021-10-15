@@ -6,7 +6,7 @@ description: Create a pool and distribute tokens using @superfluid-financ/js-sdk
 
 ## Introduction
 
-Let's take a look at another Superfluid Agreement. The **Instant Distribution Agreement \(IDA\)** can be used to make one-time-payments to multiple recipients. The IDA could be used for revenue sharing or airdrops.  It consists of a **Publishing Index** with `indexId`, an `indexValue`, and one or more **subscribers**.
+Let's take a look at another Superfluid Agreement. The **Instant Distribution Agreement (IDA)** can be used to make one-time-payments to multiple recipients. The IDA could be used for revenue sharing or airdrops. It consists of a **Publishing Index** with `indexId`, an `indexValue`, and one or more **subscribers**.
 
 Here is an quick glimpse at the IDA contract we'll use in this tutorial. Don't worry, you don't need to memorize this.
 
@@ -32,7 +32,7 @@ contract IInstantDistributionAgreementV1 is ISuperAgreement {
 
 ## Prerequisites
 
-Before starting this tutorial you should: 
+Before starting this tutorial you should:
 
 * Complete the [@superfluid-finance/js-sdk](frontend-+-nodejs.md) tutorial
 * Have some goerli ETH and tokens in your wallet from the dashboard [https://app.superfluid.finance](https://app.superfluid.finance)
@@ -64,7 +64,4 @@ In this example, bob will receive 90% of the tokens alice sent, while carol only
 
 Thats it! One thing to pay attention - for a recipient's balance to reflect the distribution event, they should first call `approveSubscription` one time. If they fail to do this, don't worry, they can still receive their tokens after calling the `claim` function at any time.
 
-
-
 ⚔ Look at you now, with two agreements at your disposal. You can duel-wield! Its time to learn more about Super Tokens.
-

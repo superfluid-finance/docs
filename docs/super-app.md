@@ -38,4 +38,3 @@ Example:
         return updateAsset(_ctx, userData);
     }
 ```
-

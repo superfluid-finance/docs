@@ -6,7 +6,7 @@ description: Perform multiple steps in a single transaction
 
 The Batch Call feature allows you to perform multiple steps in a single transaction, including calls for Super Tokens, Super Apps, and both at the same time.
 
-The primary goal of the Batch Call is to provide you \(and your users\) with an easy on/off-ramp to your Super App. It allows smooth user-experiences, without spending precious resources on solidity research and engineering for ad-hoc multi-step transactions. 
+The primary goal of the Batch Call is to provide you (and your users) with an easy on/off-ramp to your Super App. It allows smooth user-experiences, without spending precious resources on solidity research and engineering for ad-hoc multi-step transactions. 
 
 Instead, you can focus on writing your Super App quickly and intuitively. Once you're satisfied with the basic functionality, it's only a matter of "wrapping up" functions into a Batch Call. 
 
@@ -20,7 +20,7 @@ To get a better understanding of what is possible, lets look at the canonical "F
 4. Call the app function `participate` to pay the ticket fee
 5. Start a new flow of DAIx to the app
 
-Since step \#1 in the list above involves the DAI ERC20 contract, we cannot batch this. However, we can combine steps \#2-5 into a single transaction, since the user is now within the Superfluid Framework.
+Since step #1 in the list above involves the DAI ERC20 contract, we cannot batch this. However, we can combine steps #2-5 into a single transaction, since the user is now within the Superfluid Framework.
 
 ```javascript
 function createPlayBatchCall(upgradeAmount = 0) {
@@ -75,13 +75,13 @@ To see full code, check out the [Flow Lottery example](https://github.com/superf
 
 ### Usage
 
-In total, there are three main types of batch calls. Each type executes a function on either the host contract \(Superfluid.sol\), or a specific SuperToken. This table shows each possible combination:
+In total, there are three main types of batch calls. Each type executes a function on either the host contract (Superfluid.sol), or a specific SuperToken. This table shows each possible combination:
 
-| Type | interface | internal call |
-| :--- | :--- | :--- |
+| Type        | interface       | internal call                                                                            |
+| ----------- | --------------- | ---------------------------------------------------------------------------------------- |
 | Super Token | ISuperToken.sol | `operationApprove`, `operationTransferFrom`, `operationUpgrade`, or `operationDowngrade` |
-| Agreement | Superfluid.sol | `_callAgreement` |
-| Super App | Superfluid.sol | `_callAppAction` |
+| Agreement   | Superfluid.sol  | `_callAgreement`                                                                         |
+| Super App   | Superfluid.sol  | `_callAppAction`                                                                         |
 
 In order to select which operation you want, the `BatchOperation` helper library is provided, which just stores constants like this:
 
@@ -119,14 +119,14 @@ sf.host.batchCall([
 
 Alternatively, you can manually enter the numerical value for the operation you want. Use the quick-reference table here to see all available options: 
 
-| Operation | Value |
-| :--- | :--- |
-| OPERATION\_TYPE\_ERC20\_APPROVE | 1 |
-| OPERATION\_TYPE\_ERC20\_TRANSFER\_FROM | 2 |
-| OPERATION\_TYPE\_SUPERTOKEN\_UPGRADE | 101 |
-| OPERATION\_TYPE\_SUPERTOKEN\_DOWNGRADE | 102 |
-| OPERATION\_TYPE\_SUPERFLUID\_CALL\_AGREEMENT | 201 |
-| OPERATION\_TYPE\_SUPERFLUID\_CALL\_APP\_ACTION | 202 |
+| Operation                                 | Value |
+| ----------------------------------------- | ----- |
+| OPERATION_TYPE_ERC20\_APPROVE             | 1     |
+| OPERATION_TYPE_ERC20\_TRANSFER_FROM       | 2     |
+| OPERATION_TYPE_SUPERTOKEN_UPGRADE         | 101   |
+| OPERATION_TYPE_SUPERTOKEN_DOWNGRADE       | 102   |
+| OPERATION_TYPE_SUPERFLUID_CALL_AGREEMENT  | 201   |
+| OPERATION_TYPE_SUPERFLUID_CALL_APP_ACTION | 202   |
 
 For example in your Super App you would write the following:
 
@@ -154,9 +154,9 @@ Depending on which operation you select, the host contract will execute the appr
         amount);
 ```
 
-For an agreement call \(IDA or CFA\) thie host executes the following:
+For an agreement call (IDA or CFA) thie host executes the following:
 
-```text
+```
 } else if (operationType == BatchOperation.OPERATION_TYPE_SUPERFLUID_CALL_AGREEMENT) {
     (bytes memory callData, bytes memory userData) = abi.decode(operations[i].data, (bytes, bytes));
     _callAgreement(
@@ -173,4 +173,3 @@ Now that you understand what is possible, you should ask yourself the following 
 * **Onboarding**: What tokens does the user show up with? How can I quickly get them "into the system" with as few transactions as possible?
 * **Ongoing Actions**: What types of transactions are users making often? Can I combine them together to reduce the user's burden?
 * **Exiting**: Users should typically leave with a feeling of accomplishment. How can I leave a lasting impression on users while they are exiting. 
-

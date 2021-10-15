@@ -6,15 +6,15 @@ description: Manage Flows and IDAs using a smart contract
 
 A Super App can "manage" agreements and respond to changes. This is where you can write your own custom logic/behavior. In this section we will deploy a new Super App using Remix. 
 
-![](../.gitbook/assets/image%20%2812%29.png)
+![](<../.gitbook/assets/image (9).png>)
 
-So what will our app do? Our app will accept incoming CFA flows, and use some internal logic to determine where to redirect it. The reciever of all the incoming flows will be decided by whoever owns a ERC721 Non-fungible Token \(NFT\). 
+So what will our app do? Our app will accept incoming CFA flows, and use some internal logic to determine where to redirect it. The reciever of all the incoming flows will be decided by whoever owns a ERC721 Non-fungible Token (NFT). 
 
 _If the NFT is transferred to a new owner, all token flows are redirected to the new owner_. 
 
 We will call the app **Holy Grail**, since whoever is in possession of the NFT is blessed with great power.
 
-![A chalice is handed to another person \(https://unsplash.com/@reskp\)](../.gitbook/assets/image%20%2821%29.png)
+![A chalice is handed to another person (https://unsplash.com/@reskp)](<../.gitbook/assets/image (12).png>)
 
 ## Video
 
@@ -34,13 +34,15 @@ Before starting this tutorial you should:
 
 Click the link to load the contracts in Remix:
 
-{% embed url="https://remix.ethereum.org/\#gist=2d2c1e51a21ff5496c69397454c1eee5&call=fileManager//open//browser/gists/2d2c1e51a21ff5496c69397454c1eee5/TradeableCashflow.sol&version=soljson-v0.7.0+commit.9e61f92b.js" caption="Holy Grail Super App" %}
+{% embed url="https://remix.ethereum.org/#version=soljson-v0.7.0+commit.9e61f92b.js&optimize=false&runs=200&gist=631e2ce201ff75e965c40378853269c9&evmVersion=null" %}
+Holy Grail Super App
+{% endembed %}
 
-Once it loads, you should see `TradeableCashflow.sol` in the editor window. 
+Once it loads, you should see `TradeableCashflow.sol` and `RedirectAll.sol` in the editor window. 
 
-![](../.gitbook/assets/image%20%281%29.png)
+![](<../.gitbook/assets/Screen Shot 2021-10-13 at 5.50.22 PM.png>)
 
-In the file explorer, click to expand gist "2d2c1..." to view both contracts. `TradeableCashflow.sol` is our main contract, which inherits `RedirectAll` from the local file, and the `ERC721` contract from the Open Zeppelin Github repo.
+In the file explorer, click to expand gist "631e2..." to view both contracts. `TradeableCashflow.sol` is our main contract, which inherits `RedirectAll` from the local file, and the `ERC721` contract from the Open Zeppelin Github repo.
 
 The two main concepts of `TradeableCashflow.sol` are:
 
@@ -149,7 +151,7 @@ Using the modifier `onlyExpected` allows use to only execute this when the agree
 
 Assuming all the checks pass, then we can trigger `_updateOutFlow` which combines the new incoming flow and creates the new flow
 
-![](../.gitbook/assets/image%20%2818%29.png)
+![](<../.gitbook/assets/image (15).png>)
 
 Now that you understand the two main components of a Super App, its time to deploy it!
 
@@ -159,58 +161,26 @@ Switch back to `TradeableCashflow.sol` in the editor window.
 
 Now in the Compiler tab, make sure you're using compiler version `0.7.0` and hit "compile".
 
-![](../.gitbook/assets/image%20%2816%29.png)
+![](<../.gitbook/assets/image (16).png>)
 
 Once compilation is complete, switch to the "Deploy and Run Transactions" tab. Select Environment “Injected Web3”, and in your wallet switch to Goerli test network. 
 
-![](../.gitbook/assets/image%20%2824%29.png)
+![](<../.gitbook/assets/image (17).png>)
 
 Next select the **TradeableCashflow** contract to deploy, and use the following parameters to deploy:
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Parameter</th>
-      <th style="text-align:left">Value</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">OWNER</td>
-      <td style="text-align:left">(Use your address)</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">_NAME</td>
-      <td style="text-align:left">Holy Grail</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">_SYMBOL</td>
-      <td style="text-align:left">GRAIL</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <p></p>
-        <p>Host</p>
-      </td>
-      <td style="text-align:left">
-        <p></p>
-        <p>0x22ff293e14F1EC3A09B137e9e06084AFd63adDF9</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">CFA</td>
-      <td style="text-align:left">0xEd6BcbF6907D4feEEe8a8875543249bEa9D308E8</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">ACCEPTEDTOKEN</td>
-      <td style="text-align:left">0xf2d68898557ccb2cf4c10c3ef2b034b2a69dad00</td>
-    </tr>
-  </tbody>
-</table>
+| Parameter          | Value                                                    |
+| ------------------ | -------------------------------------------------------- |
+| OWNER              | (Use your address)                                       |
+| \_NAME             | Holy Grail                                               |
+| \_SYMBOL           | GRAIL                                                    |
+| <p></p><p>Host</p> | <p></p><p>0x22ff293e14F1EC3A09B137e9e06084AFd63adDF9</p> |
+| CFA                | 0xEd6BcbF6907D4feEEe8a8875543249bEa9D308E8               |
+| ACCEPTEDTOKEN      | 0xf2d68898557ccb2cf4c10c3ef2b034b2a69dad00               |
 
 This will deploy the Holy Grail contract, mint a single NFT, and transfer it to the owner. Once the transaction is confirmed, copy the address of the deployed contract. 
 
-![](../.gitbook/assets/image%20%2817%29%20%281%29%20%281%29%20%281%29.png)
+![](<../.gitbook/assets/image (17) (1) (1) (1).png>)
 
 
 
@@ -218,19 +188,18 @@ This will deploy the Holy Grail contract, mint a single NFT, and transfer it to 
 
 Now comes the magic part. Since we used **callbacks** in our Super App, we can create a new flow from the Superfluid Dashboard. Our Super App will react to this automatically. 
 
-Using the address you copied in the previous step, start a new flow using fDAIx \(shown as DAIx in the Dashboard\) to your Super App.
+Using the address you copied in the previous step, start a new flow using fDAIx (shown as DAIx in the Dashboard) to your Super App.
 
-![](../.gitbook/assets/image%20%2820%29.png)
+![](<../.gitbook/assets/image (18).png>)
 
-After the transaction is confirmed, you will see both an incoming and outgoing flow from the same address. This is because you are the owner of the NFT, __so you're effectively streaming to yourself via the Super App. 
+After the transaction is confirmed, you will see both an incoming and outgoing flow from the same address. This is because you are the owner of the NFT,_ _so you're effectively streaming to yourself via the Super App. 
 
-![](../.gitbook/assets/image%20%2819%29.png)
+![](<../.gitbook/assets/image (19).png>)
 
 Now let's transfer the Holy Grail NFT to someone else using `transferFrom()`. Since there is only a single NFT, the `tokenId` will be always be `1`.
 
-![](../.gitbook/assets/image%20%2823%29.png)
+![](<../.gitbook/assets/image (20).png>)
 
 Upon transfer, all incoming flows will be re-directed to the new NFT holder. You can verify this by logging into the Superfluid Dashboard using the receiver's account.
 
 Excellent! Now you know how a Super App works. In the next section we will discuss deploying the Superfluid Framework so you can easily test your own Super App using a local blockchain.
-

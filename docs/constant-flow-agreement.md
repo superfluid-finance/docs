@@ -1,18 +1,12 @@
 ---
-date: '2020-09-28T00:00:00.000Z'
-title: "\U0001F500 Create a Superfluid Flow"
 description: Open and close a flow using @superfluid-finance/js-sdk
-categories:
-  - tutorial
-published: true
-showToc: true
 ---
 
 # Constant Flow Agreement
 
 ## Introduction
 
-A **Constant Flow Agreement \(CFA\)** is a transfer of value from a `sender` to a `receiver` at a constant `flowRate` measured in _amount per second_.
+A **Constant Flow Agreement (CFA)** is a transfer of value from a `sender` to a `receiver` at a constant `flowRate` measured in _amount per second_.
 
 Here is overview of the CFA contract. Did someone say _CRUD ?_
 
@@ -49,7 +43,7 @@ const userBob = sf.user({
 });
 ```
 
-### user.flow\(\)
+### user.flow()
 
 Now let's have Bob start a flow to Alice
 
@@ -62,7 +56,7 @@ await userBob.flow({
 });
 ```
 
-\*\*\*\*
+****
 
 So what is this weird number `385802469135802`? This is the amount of DAIx to transfer per second, which is equivalent to 1000 DAIx per month.
 
@@ -99,7 +93,7 @@ Or you can keep reading to take a deeper dive.
 
 If you want a bit more freedom to customize, you can go one level deeper into our SDK
 
-#### createFlow\(\)
+#### createFlow()
 
 To achieve this, we will create a **Constant Flow Agreement**. In this agreement, we define the _amount per second_ and `recipient` where DAIx should flow.
 
@@ -127,7 +121,7 @@ So what is this weird number "385802469135802"? This is the amount of DAIx to tr
 
 > HUH?! How is bob able to send 1000 DAIx per month if he only has 50 Superfluid enabled DAI? The answer is that the sender isn't required to have the full amount to start a flow. The flow will continue to run as long as he has DAIx.
 
-\*\*\*\*
+****
 
 #### Inspect the Flow
 
@@ -204,4 +198,3 @@ Technically, anyone can close stream during the Critical or Insolvent states, ho
 If the Licensed Agent has not closed the stream, and the deposit has been completely consumed,  then the Insolvent state begins. The stream will continue to the receiver, however since these tokens don't actually exist in the sender's wallet, we must keep track of this debt so that the Super Token itself can remain solvent within the Superfluid Protocol. We call this debt the "**Delay**". 
 
 Once the Licensed Agent, or anyone closes the stream, the Delay is taken from their Bond as a slashing fee. This slashing fee is then burned, to offset the tokens created during insolvency.
-

@@ -14,5 +14,3 @@ In this video I explain the Resolver using a visual programming platform called 
 
 {% embed url="https://youtu.be/oXZfXDqR37E" %}
 
-
-

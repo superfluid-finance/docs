@@ -7,7 +7,7 @@ description: Get started using Truffle Console
 **In this tutorial we will**:
 
 * Use `@superfluid-finance/js-sdk` in the truffle console with goerli testnet
-* Mint Superfluid DAI \(DAIx\)
+* Mint Superfluid DAI (DAIx)
 * Check Super Token balances 
 
 ## Installation
@@ -35,7 +35,7 @@ brew install jq
 
 Before we can get testnet ETH, we need a 12-word mnemonic to create some test wallets. If you don't have a mnemonic, we can use Truffle to create one.
 
-```text
+```
 truffle develop
 
 > Accounts:
@@ -45,11 +45,11 @@ truffle develop
 > Mnemonic: rigid cradle south ...
 ```
 
-Copy the first address and use one of the Görli testnet faucets listed at [https://goerli.net/](https://goerli.net/) to obtain some ETH. You can also add it to MetaMask, but please don't use it for mainnet / real tokens! If you opt for the MetaMask method, our [dashboard ](https://app.superfluid.finance)will also send you testnet ETH when logging in. 
+Copy the first address and use one of the Görli testnet faucets listed at [https://goerli.net/](https://goerli.net) to obtain some ETH. You can also add it to MetaMask, but please don't use it for mainnet / real tokens! If you opt for the MetaMask method, our [dashboard ](https://app.superfluid.finance)will also send you testnet ETH when logging in. 
 
 Now exit from truffle develop, and create a file named `.env` in `packages/ethereum-contracts.` Add the mnemonic you just created, and your web3 provider URL for goerli test network.
 
-```text
+```
 cd packages/ethereum-contracts 
 cp .env.template .env
 
@@ -110,11 +110,11 @@ dan = accounts[2];
 carol = accounts[3];
 ```
 
-### Mint some DAIx \(Superfluid DAI\)
+### Mint some DAIx (Superfluid DAI)
 
 > If you used MetaMask and the Superfluid Dashboard with this wallet, then your should already have some DAIx tokens. You can skip ahead to checking balance.
 
-Let's mint bob 100 DAI \(in testnet, minting is open for anyone to call\). 
+Let's mint bob 100 DAI (in testnet, minting is open for anyone to call). 
 
 ```javascript
 await dai.mint(bob, web3.utils.toWei("100", "ether"), { from: bob })
@@ -151,4 +151,3 @@ Hurrah, we now have 50 Superfluid-enabled DAI or "DAIx". We are ready to start u
 ## Up next
 
 Next we'll learn how to stream money in [🔀 Create a Superfluid Flow](constant-flow-agreement.md)
-

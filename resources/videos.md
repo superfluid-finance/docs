@@ -26,5 +26,3 @@ Add a simple "Donate" button to an app. See the[ code](https://github.com/pi0nee
 
 {% embed url="https://youtu.be/RmOogQK5VHY" %}
 
-
-

@@ -10,7 +10,7 @@ At this point, you are familiar with the concept of upgrading an ERC20 token to 
 
 Just to recap from earlier, Super Tokens have a new token address after an upgrade. To denote this, we just append "x" to the token symbol.
 
-![](../.gitbook/assets/image%20%288%29%20%281%29%20%281%29.png)
+![](<../.gitbook/assets/image (8) (1) (1) (1).png>)
 
 ## Prerequisites
 
@@ -21,23 +21,23 @@ Before starting this tutorial you should:
 
 ## ERC777 Callbacks
 
-Tokens which can "react" to certain events using callbacks [erc777.org](https://www.erc777.org/). 
+Tokens which can "react" to certain events using callbacks [erc777.org](https://www.erc777.org). 
 
 🚧 Section Under Construction. Updates coming soon 🚧
 
-## **Batch Call** 
+## **Batch Call **
 
-All Super Tokens include the **batchCall** feature, which allows you to perform multiple tasks in a single transaction. 
+All Super Tokens include the **batchCall **feature, which allows you to perform multiple tasks in a single transaction. 
 
-You can even mix-n-match your tasks, including upgrade/downgrade, calling agreements \(CFA, IDA, etc\), execute Super App functions, and make simple transfers. The world is your Oyster!
+You can even mix-n-match your tasks, including upgrade/downgrade, calling agreements (CFA, IDA, etc), execute Super App functions, and make simple transfers. The world is your Oyster!
 
-![Developer Playground batchcall transfer feature](../.gitbook/assets/image%20%289%29.png)
+![Developer Playground batchcall transfer feature](<../.gitbook/assets/image (11).png>)
 
- 🤾♂ See it in action using the Developer Playground. We have some helpful tools for both batchCall transfers ****and batchCall streams!
+ :man_playing_handball: See it in action using the Developer Playground. We have some helpful tools for both batchCall transfers** **and batchCall streams!
 
-**Batch Transfer:** [https://playground.superfluid.finance/batchtransfer/0xf2d68898557ccb2cf4c10c3ef2b034b2a69dad00](https://playground.superfluid.finance/batchtransfer/0xf2d68898557ccb2cf4c10c3ef2b034b2a69dad00)
+**Batch Transfer: **[https://playground.superfluid.finance/batchtransfer/0xf2d68898557ccb2cf4c10c3ef2b034b2a69dad00](https://playground.superfluid.finance/batchtransfer/0xf2d68898557ccb2cf4c10c3ef2b034b2a69dad00)
 
-**Batch Stream:** [https://playground.superfluid.finance/batchstream/0xf2d68898557ccb2cf4c10c3ef2b034b2a69dad00](https://playground.superfluid.finance/batchstream/0xf2d68898557ccb2cf4c10c3ef2b034b2a69dad00)
+**Batch Stream: **[https://playground.superfluid.finance/batchstream/0xf2d68898557ccb2cf4c10c3ef2b034b2a69dad00](https://playground.superfluid.finance/batchstream/0xf2d68898557ccb2cf4c10c3ef2b034b2a69dad00)
 
 Source code: [https://github.com/superfluid-finance/protocol-monorepo/tree/dev/examples/dev-playground/web/src/utils/batchTransfer.js](https://github.com/superfluid-finance/protocol-monorepo/tree/dev/examples/dev-playground/web/src/utils/batchTransfer.js)
 
@@ -48,4 +48,3 @@ Source code: [https://github.com/superfluid-finance/protocol-monorepo/tree/dev/e
 Submit transactions on behalf of another account. 
 
 🚧 Section Under Construction. Updates coming soon 🚧 
-

@@ -4,7 +4,7 @@ description: One-liners to keep you "in the flow".
 
 # 😎 Cheat Sheet
 
-![](../.gitbook/assets/image%20%283%29.png)
+![](<../.gitbook/assets/image (1).png>)
 
 #### Quick-start
 
@@ -14,7 +14,7 @@ Setup the SDK in Truffle console and mint DAIx. See the [tutorial](https://docs.
 
 **`balanceOf()`**
 
-```text
+```
 (await daix.balanceOf(bob)).toString() / 1e18
 (await dai.balanceOf(bob)).toString() / 1e18
 
@@ -65,11 +65,11 @@ details: {
 
 ## Agreements
 
-### Constant Flow Agreement \(CFA\)
+### Constant Flow Agreement (CFA)
 
 A **CFA** is a transfer of value from a `sender` to a `receiver` at a constant `flowRate` measured in _amount per second_.
 
-#### User Class \(easy mode\)
+#### User Class (easy mode)
 
 **`bob.flow()`**
 
@@ -88,7 +88,7 @@ const userData = { message: "here's a flow Alice", flowId: "007" };
 bob.flow({ recipient: alice, flowRate: 1 * 1e18, options: { userData } });
 ```
 
-#### Agreement Helper Class \(hard mode\)
+#### Agreement Helper Class (hard mode)
 
 **`createFlow()`**
 
@@ -114,35 +114,35 @@ sf.cfa.updateFlow({
 
 **`deleteFlow()`**
 
-```text
+```
 sf.cfa.deleteFlow({superToken: daix.address, sender: bob, receiver: alice, by: bob})
 ```
 
 **`getNetFlow()`**
 
-```text
+```
 (await sf.cfa.getNetFlow({superToken: daix.address, account: bob})).toString()
 ```
 
 **`getFlow()`**
 
-```text
+```
 (await sf.cfa.getFlow({superToken: daix.address, sender: bob, receiver: alice})).toString()
 ```
 
 **`listFlows()`**
 
-```text
+```
 await sf.cfa.listFlows({superToken: daix.address, account: bob})
 ```
 
-### Instant Distribution Agreement \(IDA\)
+### Instant Distribution Agreement (IDA)
 
 An **IDA** is used to send funds as one-time-payments. It consists of a **Publishing Index** with `indexId`, an `indexValue` which is updated every time `distribute()` is called, and one or more **subscribers**.
 
 Remember there is one _distributor_, and many _subscribers_.
 
-#### User Class \(easy mode\)
+#### User Class (easy mode)
 
 **`bob.createPool()`**
 
@@ -163,9 +163,9 @@ await bob.giveShares({ poolId: 1, recipient: carol, shares: 10 });
 await bob.distributeToPool({ poolId: 1, amount: 1000 });
 ```
 
-#### Agreement Helper Class \(hard mode\)
+#### Agreement Helper Class (hard mode)
 
-**`createIndex()`** \(sent from _publisher\)_
+**`createIndex()`** (sent from _publisher)_
 
 ```javascript
 sf.ida.createIndex({
@@ -175,7 +175,7 @@ sf.ida.createIndex({
 });
 ```
 
-**`updateSubscription()`** \(sent from _publisher\)_
+**`updateSubscription()`** (sent from _publisher)_
 
 ```javascript
 sf.ida.updateSubscription({
@@ -187,7 +187,7 @@ sf.ida.updateSubscription({
 });
 ```
 
-**`approveSubscription()`** \(sent from _subscriber\)_
+**`approveSubscription()`** (sent from _subscriber)_
 
 ```javascript
 sf.ida.approveSubscription({
@@ -198,7 +198,7 @@ sf.ida.approveSubscription({
 });
 ```
 
-**`distribute()`** \(sent from _publisher\)_
+**`distribute()`** (sent from _publisher)_
 
 ```javascript
 sf.ida.distribute({
@@ -209,7 +209,7 @@ sf.ida.distribute({
 });
 ```
 
-**`claim()`** \(sent from _subscriber\)_
+**`claim()`** (sent from _subscriber)_
 
 ```javascript
 sf.ida.claim({
@@ -220,8 +220,3 @@ sf.ida.claim({
   sender: carol.address // because ANYONE can send this tx
 });
 ```
-
-## 
-
-### 
-
