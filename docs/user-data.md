@@ -180,7 +180,7 @@ Next up: a tutorial on how to leverage UserData within your applications.
 
 In this tutorial, we make a small tweak to the contracts used in the TradeableCashflow Super App to test out Superfluid's userData parameters. We set up a Scaffold-eth based repo, remove (comment out) some of the extra front end stuff, and then create a few scripts to allow us to easily create, read, update, and delete flows (we love CRUD).&#x20;
 
-> NOTE: We recommend reading through our Super Apps tutorial before completing this tutorial.
+> NOTE: We recommend reading through our [Super Apps tutoria](https://docs.superfluid.finance/superfluid/protocol-tutorials/super-apps)l before completing this tutorial.
 
 Our dapp will turn the TradeableCashflow into a tradeable NFT billboard that can be rented with streams. The message displayed on our billboard will be the parameter passed in as userData. If the billboard is traded, all rental cashflows will be redirected toward the new owner.
 
