@@ -2,7 +2,7 @@
 
 * [Superfluid](README.md)
 
-## Tutorial <a id="protocol-tutorials"></a>
+## Tutorial <a href="protocol-tutorials" id="protocol-tutorials"></a>
 
 * [⭐ Getting started](protocol-tutorials/getting-started.md)
 * [📦 @superfluid-finance/js-sdk](protocol-tutorials/frontend-+-nodejs.md)
@@ -20,13 +20,14 @@
 * [Super App](docs/super-app.md)
 * [Super Tokens](docs/super-tokens.md)
 * [Batch Call](docs/batch-call.md)
+* [User Data](docs/user-data.md)
 * [Resolver](docs/resolver.md)
 * [Subgraph](docs/subgraph.md)
 
 ## Networks
 
 * [🔗 Network Directory](networks/networks.md)
-* [Polygon \(Matic\)](networks/polygon-network-matic.md)
+* [Polygon (Matic)](networks/polygon-network-matic.md)
 * [xDAI Chain](networks/xdai-chain.md)
 
 ## Resources
@@ -43,4 +44,3 @@
 ## Tokens
 
 * [$WORK Super Token](tokens/work.md)
-
