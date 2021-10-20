@@ -32,7 +32,7 @@
 
 ## Resources
 
-* [🛠️ Examples](resources/examples/README.md)
+* [🛠 Examples](resources/examples/README.md)
   * [🥤Soda Machine](resources/examples/soda-machine.md)
 * [😎 Cheat Sheet](resources/cheat-sheet.md)
 * [🏗 Hack Ideas!](https://www.notion.so/Hack-On-Superfluid-92f7cb4ccf264518814d54d50f067ac1)

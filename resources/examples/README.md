@@ -2,7 +2,7 @@
 description: Example apps that show how Superfluid can be used
 ---
 
-# 🛠️ Examples
+# 🛠 Examples
 
 ## 🟢 Official Examples
 
