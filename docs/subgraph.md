@@ -6,7 +6,7 @@ description: Hungry for data? Hot n' fresh Superfluid subgraphs ready to consume
 
 Get useful insights into Superfluid using our subgraphs. Use the GraphQL Playground to start testing on any network.
 
-## URLs 
+## URLs&#x20;
 
 Click a link to start testing queries in the playground:
 
@@ -22,7 +22,7 @@ Click a link to start testing queries in the playground:
 
 ## Resources
 
-* :star:**New to GraphQL required reading** - [https://graphql.org/learn/](https://graphql.org/learn/)  
+* :star:**New to GraphQL required reading** - [https://graphql.org/learn/](https://graphql.org/learn/) &#x20;
 * **How to make subgraph queries** - [https://thegraph.com/docs/graphql-api#queries](https://thegraph.com/docs/graphql-api#queries)
 * **Deploy your own subgraph -** [https://thegraph.com/docs/deploy-a-subgraph#create-a-graph-explorer-account](https://thegraph.com/docs/deploy-a-subgraph#create-a-graph-explorer-account)
 * **GraphQL Schema for Superfluid** - [https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/subgraph/schema.graphql](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/subgraph/schema.graphql)
@@ -58,9 +58,9 @@ The number of items returned by a query can sometimes be limited. In this exampl
 
 ### How much USDCx has Alice streamed to Bob?
 
-The Subgraph can only return a flow's `sum` since the last on-chain event (`flowUpdated`, `flowCreated`, or `flowDeleted`). Therefore, if `flowRate` is greater than zero, you will need to calculate the tokens flowed since the last event. Use this equation to get the the total sum of tokens flowed:  
+The Subgraph can only return a flow's `sum` since the last on-chain event (`flowUpdated`, `flowCreated`, or `flowDeleted`). Therefore, if `flowRate` is greater than zero, you will need to calculate the tokens flowed since the last event. Use this equation to get the the total sum of tokens flowed: &#x20;
 
-$$totalSum = sum + flowRate(currentTimestamp-lastUpdate)$$ 
+$$totalSum = sum + flowRate(currentTimestamp-lastUpdate)$$&#x20;
 
 ```javascript
 {
@@ -73,7 +73,7 @@ $$totalSum = sum + flowRate(currentTimestamp-lastUpdate)$$
         ) {
             sum
             flowRate
-      			lastUpdate
+      	    lastUpdate
         }
     }
 }
