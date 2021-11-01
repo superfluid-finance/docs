@@ -386,7 +386,7 @@ Click a link to start testing queries in the playground:
 
 The Legacy schema contains fewer entities and some subtle differences in schema. These differences are outlined in the above sections, but you can find the previous schema in full here:
 
-{% embed url="https://github.com/superfluid-finance/protocol-monorepo/blob/tradeablecashflow-userdata/packages/subgraph/schema.graphql" %}
+{% embed url="https://github.com/superfluid-finance/protocol-monorepo/blob/ethereum-contracts%40v1.0.0-rc.7/packages/subgraph/schema.graphql" %}
 
 > NOTE: Please refer to the above section on Breaking Changes as of October 2021, and the section on Streams vs Flows in the above section on the V1 Subgraph documentation. For example, you'll notice in the below example that the `Flow` type is used in a query. This type has been deprecated.
 
