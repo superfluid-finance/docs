@@ -12,13 +12,13 @@ Click a link to start testing queries in the playground:
 
 | Network | URL                                                                                                                                                                        |
 | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| xDAI    | [https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-xdai](https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-dev-goerli)    |
-| Matic   | [https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-matic](https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-dev-goerli)   |
-| Mumbai  | [https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-mumbai](https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-dev-goerli)  |
-| Goerli  | [https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-goerli](https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-dev-goerli)  |
-| Ropsten | [https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-ropsten](https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-dev-goerli) |
-| Kovan   | [https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-kovan](https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-dev-goerli)   |
-| Rinkeby | [https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-rinkeby](https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-dev-goerli) |
+| xDAI    | [https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-xdai](https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-xdai)       |
+| Matic   | [https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-matic](https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-matic)     |
+| Mumbai  | [https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-mumbai](https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-mumbai)   |
+| Goerli  | [https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-goerli](https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-goerli)   |
+| Ropsten | [https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-ropsten](https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-ropsten) |
+| Kovan   | [https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-kovan](https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-kovan)     |
+| Rinkeby | [https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-rinkeby](https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-rinkeby) |
 
 ## Resources
 
