@@ -27,6 +27,20 @@ This is the simplest option, and should be used whenever an ERC20 token already 
 
 The main step for creating a new ERC20 Wrapper for your token is calling `createERC20Wrapper()` on the [SuperTokenFactory](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/superfluid/SuperTokenFactory.sol) contract.
 
+### Create Token from Block Explorer
+
+1. Go to the Superfluid [**Network Directory**](https://docs.superfluid.finance/superfluid/networks/networks) and search for the token explorer in the right network.
+2. Click on the "SuperTokenFactory" for your preferred network
+3. Navigate the tabs to Contract > WriteAsProxy. Here's a **direct link for **[**Polygon**](https://polygonscan.com/address/0x2C90719f25B10Fc5646c82DA3240C76Fa5BcCF34#writeProxyContract)
+4. Connect your wallet to be able to write
+5. Search for the `createERC20Wrapper` function, and input the required parameters, with **no additional characters**
+   1. underlyingToken (address) ⇒ The `address` of the token you want to wrap
+   2. upgradeability (uint8) ⇒ `1` will give the Superfluid Governance semi-upgradeability
+   3. name (string) ⇒ `Super` + the current name of your token (ex. `Super Dog Token`)
+   4. symbol (string) ⇒ The current symbol in upper case + lower case `x` (ex. `DOGx`)
+6. Confirm by pressing `write` and confirming through your wallet. Congrats, you've created a new Super Token Wrapper!
+7. Search for the new token's address in the event log of the transaction, or use the top right search tab (input `DOGx` and wait for your newly created token to appear in the dropdown)
+
 ### Deploy an ERC20 Wrapper
 
 Anyone can deploy the ERC20 wrapper for any ERC20 token. The deployer account does not receive any control or admin powers, and all Super Token logic upgrades are handled by Superfluid Protocol Governance.
