@@ -29,7 +29,7 @@ description: A new DeFi primitive to automate recurring transactions and monetiz
 
 ### COMMUNITY + HELP
 
-If you need any help or have any questions, please join our [**Discord**](https://discord.gg/qPg6Y3d),** **check out our [**help page**](http://help.superfluid.finance), or reach out to our team at **support@superfluid.finance**
+If you need any help or have any questions, please join our [**Discord**](http://discord.superfluid.finance),** **check out our [**help page**](http://help.superfluid.finance), or reach out to our team at **support@superfluid.finance**
 
 > The Superfluid documentation is growing. Tell us what you dislike about it so we can make it better.
 
@@ -41,7 +41,7 @@ If you need any help or have any questions, please join our [**Discord**](https:
 
 {% embed url="https://github.com/superfluid-finance/protocol-monorepo" %}
 
-## INTRODUCTION 
+## INTRODUCTION&#x20;
 
 Superfluid is a smart contract framework on L1 Ethereum, enabling you to move assets on-chain following predefined rules called agreements. With a single on-chain transaction, the money will flow from your wallet to the receiver in real time! No further transactions required- it works like magic ✨
 
