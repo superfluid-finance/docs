@@ -81,11 +81,9 @@ An entity that contains subscription data for a `subscriber` account of a partic
 
 An entity that represents the lifetime of a stream between a `sender` and a `receiver`. An account can create a stream or update its flow rate, but when they delete it, it is considered "dead." The next stream that is created between the same `sender` and `receiver` will generate a new stream entity. Therefore, multiple stream entities can be created between the same `sender` and `receiver`.
 
-
-
 **`StreamPeriod`**
 
-`An` entity that represents a period of time in a `Stream` with a specific constant flowRate. You can think of it as a portion of a `Stream`. Each time a Stream's `flowRate` is updated, a new `StreamPeriod` will be created.
+An entity that represents a period of time in a `Stream` with a specific constant flowRate. You can think of it as a portion of a `Stream`. Each time a Stream's `flowRate` is updated, a new `StreamPeriod` will be created.
 
 > Note: the stream type is a replacement for the previously used Flow type (as of October '21). The below image provides a good visual outline of how the `Stream` and `StreamPeriod` types compare to the previously used `Flow` type.
 
