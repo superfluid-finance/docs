@@ -1,5 +1,5 @@
 ---
-description: Create a pool and distribute tokens using @superfluid-financ/js-sdk
+description: Create a pool and distribute tokens using @superfluid-finance/js-sdk
 ---
 
 # 💰 Instant Distribution

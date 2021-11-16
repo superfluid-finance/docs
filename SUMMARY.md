@@ -23,6 +23,7 @@
 * [User Data](docs/user-data.md)
 * [Resolver](docs/resolver.md)
 * [Subgraph](docs/subgraph.md)
+* [Liquidations & TOGA](docs/liquidations-and-toga.md)
 
 ## Networks
 

@@ -20,6 +20,7 @@ description: Superfluid contract addresses for all networks
 | [IDAv1](https://polygonscan.com/address/0xB0aABBA4B2783A72C52956CDEF62d438ecA2d7a1)               | 0xB0aABBA4B2783A72C52956CDEF62d438ecA2d7a1 |
 | [SuperTokenFactory](https://polygonscan.com/address/0x2C90719f25B10Fc5646c82DA3240C76Fa5BcCF34)   | 0x2C90719f25B10Fc5646c82DA3240C76Fa5BcCF34 |
 | [SuperfluidLoader v1](https://polygonscan.com/address/0x15F0Ca26781C3852f8166eD2ebce5D18265cceb7) | 0x15F0Ca26781C3852f8166eD2ebce5D18265cceb7 |
+| [TOGA](https://polygonscan.com/address/0x1b18770E5198983AF04B3735d01E09A57d27bD43)                | 0x1b18770E5198983AF04B3735d01E09A57d27bD43 |
 
 ### Tokens
 
@@ -50,6 +51,7 @@ description: Superfluid contract addresses for all networks
 | [IDAv1](https://blockscout.com/poa/xdai/address/0x7888ac96F987Eb10E291F34851ae0266eF912081)                   | 0x7888ac96F987Eb10E291F34851ae0266eF912081 |
 | [SuperTokenFactory](https://blockscout.com/xdai/mainnet/address/0x23410e2659380784498509698ed70E414D384880)   | 0x23410e2659380784498509698ed70E414D384880 |
 | [SuperfluidLoader v1](https://blockscout.com/xdai/mainnet/address/0x21d4E9fbB9DB742E6ef4f29d189a7C18B0b59136) | 0x21d4E9fbB9DB742E6ef4f29d189a7C18B0b59136 |
+| [TOGA](https://blockscout.com/xdai/mainnet/address/0x0942570634A80bcd096873afC9b112A900492fd7/contracts)      | 0x0942570634A80bcd096873afC9b112A900492fd7 |
 
 ### Tokens
 
