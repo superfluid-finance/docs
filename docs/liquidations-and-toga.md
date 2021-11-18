@@ -6,7 +6,7 @@ description: How does Superfluid keep streams solvent? Who's job is it?
 
 ## Liquidation and Solvency
 
-When opening a stream, a user must lock a certain amount of `buffer` or `deposit` which is taken out of their balance. This is the main incentives for users to close their Superfluid streams. By leaving their streams open, they lose the `buffer`. It is a user's own responsibility to close their stream.
+When opening a stream, a user must lock a certain amount of tokens as a `buffer `or `deposit` which is taken out of their balance. By leaving their streams open for too long, they stand to lose the `buffer`. This mechanism creates the main incentive for users to close their Superfluid streams before running out of tokens. It is a user's own responsibility to close their stream.
 
 `superApps` can also draw an `owedDeposit`, allowing them to open a stream of the same size, without needing an initial balance.&#x20;
 
@@ -18,7 +18,7 @@ Everyone is in good standing. The sender's balance is greater than 0. The stream
 
 #### **2. Critical**
 
-The sender's balance is now zero, and the permissions on the stream now allow anyone to close it. Until the stream is actually closed, funds are paid to the receiver's wallet using the sender's initial buffer.&#x20;
+The sender's balance is now zero, and the permissions on the stream now allow anyone to close it. Until the stream is actually closed, funds are paid to the receiver's wallet using the sender's initial `buffer`.&#x20;
 
 When the stream is closed, any remaining `buffer` is added to the `rewardAddress` (the _**TOGA**_ contract), which adds it to the current _**Patrician**_'s `stake`.
 
@@ -26,17 +26,17 @@ When the stream is closed, any remaining `buffer` is added to the `rewardAddress
 
 If the stream isn't closed, and the sender's deposit is completely consumed, then the insolvent period begins. The stream will continue to the receiver, however since these tokens don't actually exist in the sender's wallet, we must keep track of this `deficit` so that the Super Token itself can remain solvent within the Superfluid Protocol.
 
-When the stream is eventually closed, the `deficit` is taken from their Stake as a slashing fee. This slashing fee is then burned, to offset the tokens created by the insolvent stream. At the same time, a reward is issued to the account closing the stream, whom we call a _**Pirate**_.
+When the stream is eventually closed, the `deficit` is taken from their Stake as a slashing fee. This slashing fee is then burned, to offset the tokens created by the insolvent stream. At the same time, a reward is issued to the account closing the stream, whom we call (depending on who closes it and when) a _**Patrician**_ or a _**Pirate.**_
 
 ### Patricians and Pirates
 
 Each token has an account called a PIC (Patrician in Charge).
 
-Every time a stream is closed while Critical, the rewards are taken by a Patrician.
+Every time a stream is closed while Critical, the remaining amount of the `buffer` balance of the closed stream is taken as a reward by a Patrician.&#x20;
 
-Every time a stream is closed while Insolvent, the Patrician is slashed, and the Pirate is rewarded.
+Every time a stream is closed while Insolvent, the Patrician is slashed, and the Pirate is rewarded as a result.&#x20;
 
-Patricians have Priority and do the bulk of the work, Pirates must be always vigilant, and are essential in keeping the Patrician in check.
+Patricians have Priority and do the bulk of the work. Pirates must be always vigilant, and are essential in keeping the Patrician in check. Remember, a Pirate can be rewarded for closing streams that Patricians _miss_.
 
 ### TOGA - Transparent OnGoing Auction
 
