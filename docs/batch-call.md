@@ -6,9 +6,9 @@ description: Perform multiple steps in a single transaction
 
 The Batch Call feature allows you to perform multiple steps in a single transaction, including calls for Super Tokens, Super Apps, and both at the same time.
 
-The primary goal of the Batch Call is to provide you (and your users) with an easy on/off-ramp to your Super App. It allows smooth user-experiences, without spending precious resources on solidity research and engineering for ad-hoc multi-step transactions. 
+The primary goal of the Batch Call is to provide you (and your users) with an easy on/off-ramp to your Super App. It allows smooth user-experiences, without spending precious resources on solidity research and engineering for ad-hoc multi-step transactions.&#x20;
 
-Instead, you can focus on writing your Super App quickly and intuitively. Once you're satisfied with the basic functionality, it's only a matter of "wrapping up" functions into a Batch Call. 
+Instead, you can focus on writing your Super App quickly and intuitively. Once you're satisfied with the basic functionality, it's only a matter of "wrapping up" functions into a Batch Call.&#x20;
 
 ### Example
 
@@ -117,16 +117,16 @@ sf.host.batchCall([
 )
 ```
 
-Alternatively, you can manually enter the numerical value for the operation you want. Use the quick-reference table here to see all available options: 
+Alternatively, you can manually enter the numerical value for the operation you want. Use the quick-reference table here to see all available options:&#x20;
 
-| Operation                                 | Value |
-| ----------------------------------------- | ----- |
-| OPERATION_TYPE_ERC20\_APPROVE             | 1     |
-| OPERATION_TYPE_ERC20\_TRANSFER_FROM       | 2     |
-| OPERATION_TYPE_SUPERTOKEN_UPGRADE         | 101   |
-| OPERATION_TYPE_SUPERTOKEN_DOWNGRADE       | 102   |
-| OPERATION_TYPE_SUPERFLUID_CALL_AGREEMENT  | 201   |
-| OPERATION_TYPE_SUPERFLUID_CALL_APP_ACTION | 202   |
+| Operation                                      | Value |
+| ---------------------------------------------- | ----- |
+| OPERATION\_TYPE\_ERC20\_APPROVE                | 1     |
+| OPERATION\_TYPE\_ERC20\_TRANSFER\_FROM         | 2     |
+| OPERATION\_TYPE\_SUPERTOKEN\_UPGRADE           | 101   |
+| OPERATION\_TYPE\_SUPERTOKEN\_DOWNGRADE         | 102   |
+| OPERATION\_TYPE\_SUPERFLUID\_CALL\_AGREEMENT   | 201   |
+| OPERATION\_TYPE\_SUPERFLUID\_CALL\_APP\_ACTION | 202   |
 
 For example in your Super App you would write the following:
 
@@ -172,4 +172,10 @@ Now that you understand what is possible, you should ask yourself the following 
 
 * **Onboarding**: What tokens does the user show up with? How can I quickly get them "into the system" with as few transactions as possible?
 * **Ongoing Actions**: What types of transactions are users making often? Can I combine them together to reduce the user's burden?
-* **Exiting**: Users should typically leave with a feeling of accomplishment. How can I leave a lasting impression on users while they are exiting. 
+* **Exiting**: Users should typically leave with a feeling of accomplishment. How can I leave a lasting impression on users while they are exiting.&#x20;
+
+### Other Resources
+
+If you want a visual example on how batch calls can be used and stacked together, we'd highly suggest checking out [https://build-a-batchcall.com/](https://build-a-batchcall.com). You can drag and drop batch call operations together with no code, and get a sense of how they can be used in practice 🤯
+
+**Note**: the Build a Batch Call application is for educational purposes only and was created by [https://github.com/JoshuaTrujillo15/JoshuaTrujillo15](https://github.com/JoshuaTrujillo15/JoshuaTrujillo15) - an active member of the Superfluid community.
