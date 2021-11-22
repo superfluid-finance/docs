@@ -17,7 +17,7 @@
 * [Constant Flow Agreement](docs/constant-flow-agreement.md)
 * [Truffle Console](docs/setup-truffle-console.md)
 * [Deploying Contracts](docs/production-deployment.md)
-* [Super App](docs/super-app.md)
+* [Super Apps](docs/super-app.md)
 * [Super Tokens](docs/super-tokens.md)
 * [Batch Call](docs/batch-call.md)
 * [User Data](docs/user-data.md)
