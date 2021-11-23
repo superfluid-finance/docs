@@ -35,7 +35,9 @@ For a Super App to be able to use callbacks, it must first be 'registered' with 
 // are forwarded to a SuperApp.
 // If you inherit from SuperAppBase, there's a default implementation
 // for each callback which will revert.
-// Since SuperApp callbacks are never allowed to revert (otherwise it's jailed)
+// Developers will want to avoid reverting in Super App callbacks, 
+// In particular, you want to avoid reverting within the termination callback
+// (see rules below regarding the termination callback for more info)
 // you need to make sure only those actually implemented (overridden)
 // are ever invoked. That's achieved by setting the _NOOP flag for those
 // callbacks which you don't need and didn't implement.
@@ -189,7 +191,7 @@ These rules have been written into the protocol at the software level, and are s
 3\) Gas limit operations within the termination callback (`afterAgreementTerminated()`)
 
 * There is a limit of gas limit send in a callback function (_3000000 gas units)_
-* If Super App reverts on terminations calls because of an _out-of-gas_ error, it will be jailed.
+* If the Super App reverts on terminations calls because of an _out-of-gas_ error, it will be jailed.
 * For legitimate cases where the app reverts for _out-of-gas_ (below the gas limit), the Super App is subject to user decision to send a new transaction with more gas. If the app still reverts, it will be jailed.
 * To protect against these cases, **don't create Super Apps that require too much gas within the termination callback**.
 
