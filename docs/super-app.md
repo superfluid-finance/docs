@@ -160,10 +160,6 @@ One additional thing to note about the `beforeAgreement` callbacks is that they 
 
 **`ctx`** - this contains data about the call to the constant flow agreement contract itself. 'Ctx' is short for 'context' and is explained in depth inside of our tutorial on userData (which you can access inside of the `ctx` value).
 
-### **What About Instant Distribution Agreements and Super App Callbacks?**
-
-Calls to the IDA do not impact Super Apps at this time.
-
 ### Super App Rules (Jail System)
 
 Super Apps are a powerful concept within the Superfluid ecosystem. They allow for new levels of creativity - specifically related to _programmable cash flows._
