@@ -101,7 +101,7 @@ import {
     BatchOperation
 } from "@superfluid-finance/ethereum-contracts/interfaces/superfluid/ISuperfluid.sol";
 
-sf.host.batchCall([
+await sf.host.batchCall([
         BatchOperation.OPERATION_TYPE_ERC20_APPROVE,
         daix.address,
         web3.eth.abi.encodeParameters(
