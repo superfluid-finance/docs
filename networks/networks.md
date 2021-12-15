@@ -192,4 +192,81 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 | [fUSDCx](https://mumbai.polygonscan.com/address/0x42bb40bF79730451B11f6De1CbA222F17b87Afd7) | 0x42bb40bF79730451B11f6De1CbA222F17b87Afd7 |
 | [fTUSDx](https://mumbai.polygonscan.com/address/0x918E0d5C96cAC79674E2D38066651212be3C9C48) | 0x918E0d5C96cAC79674E2D38066651212be3C9C48 |
 {% endtab %}
+
+{% tab title="Optimism Kovan" %}
+### Framework
+
+| Resource                                                                                                 |                   Address                  |
+| -------------------------------------------------------------------------------------------------------- | :----------------------------------------: |
+| [Resolver](https://kovan-optimistic.etherscan.io/address/0x218B65780615Ff134f9Ad810CB98839534D3C0D6)            | 0x218B65780615Ff134f9Ad810CB98839534D3C0D6 |
+| [Host](https://kovan-optimistic.etherscan.io/address/0x74b57883f8ce9F2BD330286E884CfD8BB24AC4ED)                | 0x74b57883f8ce9F2BD330286E884CfD8BB24AC4ED |
+| [CFAv1](https://kovan-optimistic.etherscan.io/address/0x523481a8a5455efB1F301C6e00B5525Eb12a51da)               | 0x523481a8a5455efB1F301C6e00B5525Eb12a51da |
+| [IDAv1](https://kovan-optimistic.etherscan.io/address/0x98E5E5d915Bf79ceeF02c72D1bf8f5b26f0bcBaA)               | 0x98E5E5d915Bf79ceeF02c72D1bf8f5b26f0bcBaA |
+| [SuperTokenFactory](https://kovan-optimistic.etherscan.io/address/0xB5f0501908ca8A99fD31bEFCAc1cA458F3588671)   | 0xB5f0501908ca8A99fD31bEFCAc1cA458F3588671 |
+| [SuperfluidLoader v1](https://kovan-optimistic.etherscan.io/address/0x777Be25F9fdcA87e8a0E06Ad4be93d65429FCb9f) | 0x777Be25F9fdcA87e8a0E06Ad4be93d65429FCb9f |
+
+### Tokens
+
+| Resource                                                                                    |                   Address                  |
+| ------------------------------------------------------------------------------------------- | :----------------------------------------: |
+| [fDAI](https://kovan-optimistic.etherscan.io/address/0xbe49ac1EadAc65dccf204D4Df81d650B50122aB2)   | 0xbe49ac1EadAc65dccf204D4Df81d650B50122aB2 |
+| [fUSDC](https://kovan-optimistic.etherscan.io/address/0xA794C9ee519FD31BbCE643e8D8138f735E97D1DB)  | 0xA794C9ee519FD31BbCE643e8D8138f735E97D1DB |
+| [fTUSD](https://kovan-optimistic.etherscan.io/address/0x642332562BC60a4Bd9681E7bb1588f7456A497aC)  | 0x642332562BC60a4Bd9681E7bb1588f7456A497aC |
+| [fDAIx](https://kovan-optimistic.etherscan.io/address/0x04d4f73e9DE52a8fEC544087a66BBbA660A35957)  | 0x04d4f73e9DE52a8fEC544087a66BBbA660A35957 |
+| [fUSDCx](https://kovan-optimistic.etherscan.io/address/0xaA1EA30cEe569fA70B8561c0F52F10Da249Aecb5) | 0xaA1EA30cEe569fA70B8561c0F52F10Da249Aecb5 |
+| [fTUSDx](https://kovan-optimistic.etherscan.io/address/0xeacC35377202982EFCB01B4a56fcA9F5eFF8A5f1) | 0xeacC35377202982EFCB01B4a56fcA9F5eFF8A5f1 |
+| [ETHx](https://kovan-optimistic.etherscan.io/address/0xe72f289584eDA2bE69Cfe487f4638F09bAc920Db) | 0xe72f289584eDA2bE69Cfe487f4638F09bAc920Db |
+{% endtab %}
+
+{% tab title="Arbitrum Rinkeby" %}
+### Framework
+
+Note: Arbiscan currenly lacks support for contract verification, thus not all contracts could be verified yet.
+
+| Resource                                                                                                 |                   Address                  |
+| -------------------------------------------------------------------------------------------------------- | :----------------------------------------: |
+| [Resolver](https://testnet.arbiscan.io/address/0xa2C0C70A1E922f5f060ec20EE3aF002C163b4567)            | 0xa2C0C70A1E922f5f060ec20EE3aF002C163b4567 |
+| [Host](https://testnet.arbiscan.io/address/0xE01F8743677Da897F4e7De9073b57Bf034FC2433)                | 0xE01F8743677Da897F4e7De9073b57Bf034FC2433 |
+| [CFAv1](https://testnet.arbiscan.io/address/0xcA0569223e56B479FaC6d554FA0D3867A4384657)               | 0xcA0569223e56B479FaC6d554FA0D3867A4384657 |
+| [IDAv1](https://testnet.arbiscan.io/address/0x038405394F2B791F71c2C68d36dc91C568DfAB05)               | 0x038405394F2B791F71c2C68d36dc91C568DfAB05 |
+| [SuperTokenFactory](https://testnet.arbiscan.io/address/0xc11eC618c1d559705E853741e366663Fe9302362)   | 0xc11eC618c1d559705E853741e366663Fe9302362 |
+| [SuperfluidLoader v1](https://testnet.arbiscan.io/address/0x777Be25F9fdcA87e8a0E06Ad4be93d65429FCb9f) | 0x777Be25F9fdcA87e8a0E06Ad4be93d65429FCb9f |
+
+### Tokens
+
+| Resource                                                                                    |                   Address                  |
+| ------------------------------------------------------------------------------------------- | :----------------------------------------: |
+| [fDAI](https://testnet.arbiscan.io/address/0xf8d8f02b788DE5191Ecd20f7BDb07D80963410B5)   | 0xf8d8f02b788DE5191Ecd20f7BDb07D80963410B5 |
+| [fUSDC](https://testnet.arbiscan.io/address/0xb8F12031d79615F3fAf6eC5F9795057E55e3069A)  | 0xb8F12031d79615F3fAf6eC5F9795057E55e3069A |
+| [fTUSD](https://testnet.arbiscan.io/address/0x67270eB3a30c1a787f216Cf711cF1dBD8326266d)  | 0x67270eB3a30c1a787f216Cf711cF1dBD8326266d |
+| [fDAIx](https://testnet.arbiscan.io/address/0x4B746F88fb25516731D54cEfB1c2d00eadEFf366)  | 0x4B746F88fb25516731D54cEfB1c2d00eadEFf366 |
+| [fUSDCx](https://testnet.arbiscan.io/address/0xb9Fef3d4054f1B40f8Dcf4ae975F3486aDF6327C) | 0xb9Fef3d4054f1B40f8Dcf4ae975F3486aDF6327C |
+| [fTUSDx](https://testnet.arbiscan.io/address/0x8E64a3b0A7997D1E5Fb77Ad914A753B7dFe28729) | 0x8E64a3b0A7997D1E5Fb77Ad914A753B7dFe28729 |
+| [ETHx](https://testnet.arbiscan.io/address/0xbF7BCcE8D60A9C3F6bFaEc9346Aa85B9f781a4e9) | 0xbF7BCcE8D60A9C3F6bFaEc9346Aa85B9f781a4e9 |
+{% endtab %}
+
+{% tab title="Avalanche Fuji" %}
+### Framework
+
+| Resource                                                                                                 |                   Address                  |
+| -------------------------------------------------------------------------------------------------------- | :----------------------------------------: |
+| [Resolver](https://testnet.snowtrace.io/address/0x141920741bC45b962B59c833cd849bA617F7ef38)            | 0x141920741bC45b962B59c833cd849bA617F7ef38 |
+| [Host](https://testnet.snowtrace.io/address/0xf04F2C525819691ed9ABD3D2B7109E1633795e68)                | 0xf04F2C525819691ed9ABD3D2B7109E1633795e68 |
+| [CFAv1](https://testnet.snowtrace.io/address/0xED74d30B8034152b0638CB03cc5c3c906dd1c482)               | 0xED74d30B8034152b0638CB03cc5c3c906dd1c482 |
+| [IDAv1](https://testnet.snowtrace.io/address/0x997d745884F54a93E6662b055c5e6c09F688718b)               | 0x997d745884F54a93E6662b055c5e6c09F688718b |
+| [SuperTokenFactory](https://testnet.snowtrace.io/address/0xA25dbEa94C5824892006b30a629213E7Bf238624)   | 0xA25dbEa94C5824892006b30a629213E7Bf238624 |
+| [SuperfluidLoader v1](https://testnet.snowtrace.io/address/0x777Be25F9fdcA87e8a0E06Ad4be93d65429FCb9f) | 0x777Be25F9fdcA87e8a0E06Ad4be93d65429FCb9f |
+
+### Tokens
+
+| Resource                                                                                    |                   Address                  |
+| ------------------------------------------------------------------------------------------- | :----------------------------------------: |
+| [fDAI](https://testnet.snowtrace.io/address/0x87E00Dced5670e01BEe33a9a724B1dac790937eF)   | 0x87E00Dced5670e01BEe33a9a724B1dac790937eF |
+| [fUSDC](https://testnet.snowtrace.io/address/0xE01F8743677Da897F4e7De9073b57Bf034FC2433)  | 0xE01F8743677Da897F4e7De9073b57Bf034FC2433 |
+| [fTUSD](https://testnet.snowtrace.io/address/0x1031b9bD6544d266A7B462744dF28Dc4A7A08CAe)  | 0x1031b9bD6544d266A7B462744dF28Dc4A7A08CAe |
+| [fDAIx](https://testnet.snowtrace.io/address/0x296E9c01f80D408741f6e15d62013DDbe1041f1D)  | 0x296E9c01f80D408741f6e15d62013DDbe1041f1D |
+| [fUSDCx](https://testnet.snowtrace.io/address/0x896C3e90446237be3e27eB4D67e0D3c97FB3b03F) | 0x896C3e90446237be3e27eB4D67e0D3c97FB3b03F |
+| [fTUSDx](https://testnet.snowtrace.io/address/0x36BBF94e66f0c953CB451b302e345D6E50c2A215) | 0x36BBF94e66f0c953CB451b302e345D6E50c2A215 |
+| [AVAXx](https://testnet.snowtrace.io/address/0x5735C32C38f5Af0FB04a7c77C832Ba4D7aBfFeC8) | 0x5735C32C38f5Af0FB04a7c77C832Ba4D7aBfFeC8 |
+{% endtab %}
 {% endtabs %}
