@@ -2,13 +2,13 @@
 
 * [Superfluid](README.md)
 
-## Tutorial <a href="protocol-tutorials" id="protocol-tutorials"></a>
+## Tutorial <a href="#protocol-tutorials" id="protocol-tutorials"></a>
 
 * [⭐ Getting started](protocol-tutorials/getting-started.md)
 * [📦 @superfluid-finance/js-sdk](protocol-tutorials/frontend-+-nodejs.md)
-* [🚚  Primitives](protocol-tutorials/primitives.md)
+* [🚚 Primitives](protocol-tutorials/primitives.md)
 * [💰 Instant Distribution](protocol-tutorials/perform-an-instant-distribution.md)
-* [🦸♀ Super Tokens](protocol-tutorials/super-tokens.md)
+* [🦸♀ 🦸♀ Super Tokens](protocol-tutorials/super-tokens.md)
 * [🦾 Super Apps](protocol-tutorials/super-apps.md)
 * [🤖 Deployment](protocol-tutorials/deployment.md)
 
