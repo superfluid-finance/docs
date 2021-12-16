@@ -262,7 +262,7 @@ function afterAgreementCreated(
     onlyHost
     returns (bytes memory newCtx)
 {
-	 //passing in the ctx which is sent to the callback here
+//passing in the ctx which is sent to the callback here
    return _createFlowInCallback(_ctx, _host, _cfa, _acceptedToken, _receiver, _flowrate); 
 }
 ```
@@ -303,8 +303,8 @@ function afterAgreementCreated(
     onlyHost
     returns (bytes memory newCtx)
 {
-	 //passing in the ctx which is sent to the callback here
-	 //createFlowWithCtx makes use of callAgreementWithContext
+//passing in the ctx which is sent to the callback here
+//createFlowWithCtx makes use of callAgreementWithContext
    return cfaV1.createFlowWithCtx(_ctx, receiver, token, flowRate);
 }
 ```
@@ -346,7 +346,7 @@ function afterAgreementCreated(
     returns (bytes memory newCtx)
 {
    newCtx = cfaV1.createFlowWithCtx(_ctx, receiver, token, flowRate); //passing in the ctx which is sent to the callback here
-	 newCtx = cfaV1.createFlowWithCtx(newCtx, receiver, token, flowRate); //passing in the ctx which is returned from the first call here
+   newCtx = cfaV1.createFlowWithCtx(newCtx, receiver, token, flowRate); //passing in the ctx which is returned from the first call here
 			 
 }
 ```
@@ -387,7 +387,7 @@ function afterAgreementCreated(
     onlyHost
     returns (bytes memory newCtx)
   {
-	newCtx = +ctx;
+	newCtx = _ctx;
 	 (newCtx,) = _host.callAgreementwithContext(
 	      _cfa,
 	      abi.encodeWithSelector(
