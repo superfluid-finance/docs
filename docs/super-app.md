@@ -223,30 +223,30 @@ The process looks like this:
 ```
 //a function which we'll use to create a flow within a callback
 function _createFlowInCallback(
-		bytes calldata ctx,
-		ISuperfluid _host, 
-		IConstantFlowAgreementV1 _cfa,
-		ISuperfluidToken _acceptedToken,
-		address _receiver, 
-		int96 _flowRate	
-	)
-		private
-		returns (bytes memory newCtx)
-{
-newCtx = ctx;
+        bytes calldata ctx,
+        ISuperfluid _host, 
+        IConstantFlowAgreementV1 _cfa,    
+        ISuperfluidToken _acceptedToken,
+        address _receiver, 
+        int96 _flowRate	
+    )
+	private
+	returns (bytes memory newCtx)
+    {
+        newCtx = ctx;
 
-(newCtx,) = _host.callAgreementwithContext(
-			_cfa,
-			abi.encodeWithSelector(
-	      _cfa.deleteFlow.selector,
-	      _acceptedToken,
-	      address(this),
-	      _receiver,
-        new bytes(0) // placeholder
-      ),
-      "0x", //placeholder userdata value
-      newCtx //passing in the context from the super app callback
-   );	
+        (newCtx,) = _host.callAgreementwithContext(
+	    _cfa,
+            abi.encodeWithSelector(
+            _cfa.deleteFlow.selector,
+            _acceptedToken,
+            address(this),
+	    _receiver,
+            new bytes(0) // placeholder
+          ),
+          "0x", //placeholder userdata value
+          newCtx //passing in the context from the super app callback
+       );	
 }
 
 function afterAgreementCreated(
@@ -283,9 +283,9 @@ using CFALibraryV1 for CFALibraryV1.InitData;
     cfaV1 = CFALibraryV1.InitData(
        host,
        IConstantFlowAgreementV1(
-	       address(host.getAgreementClass(
+	  address(host.getAgreementClass(
            keccak256("org.superfluid-finance.agreements.ConstantFlowAgreement.v1")
-	        ))
+	   ))
         )
      );
    }
@@ -325,9 +325,9 @@ using CFALibraryV1 for CFALibraryV1.InitData;
     cfaV1 = CFALibraryV1.InitData(
        host,
        IConstantFlowAgreementV1(
-	       address(host.getAgreementClass(
+	  address(host.getAgreementClass(
            keccak256("org.superfluid-finance.agreements.ConstantFlowAgreement.v1")
-	        ))
+	    ))
         )
      );
    }
@@ -368,8 +368,8 @@ function afterAgreementCreated(
     onlyHost
     returns (bytes memory newCtx)
 {
-	 //passing in the ctx which is sent to the callback here
-	 //createFlowWithCtx makes use of callAgreementWithContext
+   //passing in the ctx which is sent to the callback here
+   //createFlowWithCtx makes use of callAgreementWithContext
    return cfaV1.createFlowWithCtx(_ctx, receiver, token, flowRate, userData);
 }
 
@@ -386,11 +386,11 @@ function afterAgreementCreated(
     onlyExpected(_superToken, _agreementClass)
     onlyHost
     returns (bytes memory newCtx)
-{
+  {
 	newCtx = +ctx;
 	 (newCtx,) = _host.callAgreementwithContext(
-			_cfa,
-			abi.encodeWithSelector(
+	      _cfa,
+	      abi.encodeWithSelector(
 	      _cfa.deleteFlow.selector,
 	      _acceptedToken,
 	      address(this),
@@ -400,8 +400,8 @@ function afterAgreementCreated(
       userData, //userData goes here
       newCtx //passing in the context from the super app callback
    );	
-}
-}
+ }
+
 
 ```
 
