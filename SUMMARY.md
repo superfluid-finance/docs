@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Superfluid](README.md)
+* [🌊 Superfluid](README.md)
 
 ## Tutorial <a href="#protocol-tutorials" id="protocol-tutorials"></a>
 
@@ -33,6 +33,7 @@
 
 ## Resources
 
+* [⚙ Superfluid Console](http://console.superfluid.finance)
 * [🛠 Examples](resources/examples/README.md)
   * [🥤Soda Machine](resources/examples/soda-machine.md)
 * [😎 Cheat Sheet](resources/cheat-sheet.md)
