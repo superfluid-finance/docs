@@ -6,7 +6,7 @@ description: How does Superfluid keep streams solvent? Who's job is it?
 
 ## Liquidation and Solvency
 
-When opening a stream, a user must lock a certain amount of tokens as a `buffer `or `deposit` which is taken out of their balance. By leaving their streams open for too long, they stand to lose the `buffer`. This mechanism creates the main incentive for users to close their Superfluid streams before running out of tokens. It is a user's own responsibility to close their stream.
+When opening a stream, a user must lock a certain amount of tokens as a `buffer` or `deposit` which is taken out of their balance. By leaving their streams open for too long, they stand to lose the `buffer`. This mechanism creates the main incentive for users to close their Superfluid streams before running out of tokens. It is a user's own responsibility to close their stream.
 
 `superApps` can also draw an `owedDeposit`, allowing them to open a stream of the same size, without needing an initial balance.&#x20;
 
@@ -50,7 +50,7 @@ All liquidation rewards are added to the `stake`.&#x20;
 
 The TOGA contract leverages the ERC777 callbacks, so you can become the PIC by simply sending a regular transfer to the right contract address! In this case, the `exitRate` will be set at the default rate.
 
-Check out the [network directory](../networks/networks.md#mainnet-networks) for the** **contract address on different networks.
+Check out the [network directory](../networks/networks.md#mainnet-networks) for the **** contract address on different networks.
 
 ### Current Parameters
 
@@ -98,6 +98,12 @@ Check out the [network directory](../networks/networks.md#mainnet-networks) for 
 {% endtab %}
 {% endtabs %}
 
-These parameters can be changed by Governance decision. Previously established `deposit` for Constant Flow Agreements is _grandFathered, _so future changes can't impact existing agreements.&#x20;
+These parameters can be changed by Governance decision. Previously established `deposit` for Constant Flow Agreements is _grandFathered,_ so future changes can't impact existing agreements.&#x20;
 
 The TOGA contract is set as the `rewardAddress` in the Superfluid host. The `rewardAddress` may be changed to a different address. Every SuperToken may have a different `rewardAddress`, so it's possible that different SuperTokens have different implementations.
+
+### Running a Sentinel
+
+Sentinels are the key player observing the network, and closing streams. They could be operating as Patrician, Pirates, or even just watching! The system is permissionless, and anyone can close streams by monitoring and interacting directly with the blockchain.
+
+For convenience, you can also run our reference implementation of sentinel software, which has settings for all most common use-cases, and is fully open source. The readme in the [Superfluid-Sentinel repository](https://github.com/superfluid-finance/superfluid-sentinel) is the most up to date source on how to get started!
