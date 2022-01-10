@@ -10,7 +10,7 @@ Let's walk through creating Superfluid streams using the Superfluid Core-SDK. We
 
 Creating a flow requires you to call `sf.cfaV1.createFlow()` and pass in the sender, receiver, flowRate, and superToken. There's also an optional field you can use called `userData` - which you can learn more about [in our guide on the topic](../../docs/user-data.md).&#x20;
 
-See below for an example of how this works. You can enter your own Ethereum address and `flowRate` (i.e. how much DAIx you want to send in in wei/second) to send yourself a stream of DAIx. Scroll down in the React App page to see your flowRate converted into DAIx per month.
+See below for an example of how this works. You can enter your own Ethereum address and `flowRate` (i.e. how much DAIx you want to send in in wei/second) to send yourself a stream of DAIx. Scroll down in the React App page (on the right side of the screen below) to see your flowRate converted into DAIx per month.
 
 {% embed url="https://codesandbox.io/embed/cfa-createflow-walkthrough-new-ougpu?expanddevtools=1&fontsize=12&hidenavigation=1&module=%2Fsrc%2FCreateFlow.js&theme=dark&view=split" %}
 
