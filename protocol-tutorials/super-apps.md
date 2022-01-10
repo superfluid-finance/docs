@@ -190,7 +190,7 @@ Using the address you copied in the previous step, start a new flow using fDAIx 
 
 ![](<../.gitbook/assets/image (18).png>)
 
-After the transaction is confirmed, you will see both an incoming and outgoing flow from the same address. This is because you are the owner of the NFT,_ _so you're effectively streaming to yourself via the Super App.&#x20;
+After the transaction is confirmed, you will see both an incoming and outgoing flow from the same address. This is because you are the owner of the NFT, __ so you're effectively streaming to yourself via the Super App.&#x20;
 
 ![](<../.gitbook/assets/image (19).png>)
 

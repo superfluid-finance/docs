@@ -2,7 +2,7 @@
 description: The 3 major components of the Superfluid framework
 ---
 
-# 🚚  Primitives
+# 🚚 Primitives
 
 Now that you've opened your first token flow, you're hooked to learn more right? I promise I'll keep this brief so we can get back to hacking. There are three primitives of Superfluid:
 
@@ -10,7 +10,7 @@ Now that you've opened your first token flow, you're hooked to learn more right?
 2. Super Tokens
 3. Super Apps
 
-Each primitive enables new features, however you don't have to use all of them. You can mix and match them depending your needs. 
+Each primitive enables new features, however you don't have to use all of them. You can mix and match them depending your needs.&#x20;
 
 ## 1. Agreements
 
@@ -30,11 +30,11 @@ The Superfluid community is exploring the possibilites of what these two agreeme
 
 In addition to agreements, the Superfluid framework also provides features at the token level. Here's a short list of super-powers:
 
-* **ERC777 - **tokens which can "react" to certain events using callbacks ([erc777.org](https://www.erc777.org))
-* **Batch capabilities - **you can do multiple things in a single transaction
+* **ERC777 -** tokens which can "react" to certain events using callbacks ([erc777.org](https://www.erc777.org))
+* **Batch capabilities -** you can do multiple things in a single transaction
 * **Meta-transactions** - submit transactions on behalf of another account
 
-Dive into the Solidity here: 
+Dive into the Solidity here:&#x20;
 
 {% embed url="https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/superfluid/SuperToken.sol" %}
 packages/ethereum-contracts/contracts/superfluid/SuperToken.sol
@@ -44,12 +44,12 @@ packages/ethereum-contracts/contracts/superfluid/SuperToken.sol
 
 Now for the really juicy stuff! A Superfluid App or "Super App" is a contract that can react to agreement calls. For example:
 
-* If a user starts a token flow to the contract, automatically flow another token back using the CFA. 
+* If a user starts a token flow to the contract, automatically flow another token back using the CFA.&#x20;
 * If a user calls `buyShares`, distribute the ETH to all current shareholders using the IDA.
 
 > See more examples and ideas in [🛠️ Examples](../resources/examples/)
 
-A Super App can "manage" agreements and respond to changes. This is where you can write your own custom logic/behavior. Let's get creative! 
+A Super App can "manage" agreements and respond to changes. This is where you can write your own custom logic/behavior. Let's get creative!&#x20;
 
 
 

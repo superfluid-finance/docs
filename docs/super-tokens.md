@@ -31,7 +31,7 @@ The main step for creating a new ERC20 Wrapper for your token is calling `create
 
 1. Go to the Superfluid [**Network Directory**](https://docs.superfluid.finance/superfluid/networks/networks) and search for the token explorer in the right network.
 2. Click on the "SuperTokenFactory" for your preferred network
-3. Navigate the tabs to Contract > WriteAsProxy. Here's a **direct link for **[**Polygon**](https://polygonscan.com/address/0x2C90719f25B10Fc5646c82DA3240C76Fa5BcCF34#writeProxyContract)
+3. Navigate the tabs to Contract > WriteAsProxy. Here's a **direct link for** [**Polygon**](https://polygonscan.com/address/0x2C90719f25B10Fc5646c82DA3240C76Fa5BcCF34#writeProxyContract)
 4. Connect your wallet to be able to write
 5. Search for the `createERC20Wrapper` function, and input the required parameters, with **no additional characters**
    1. underlyingToken (address) ⇒ The `address` of the token you want to wrap

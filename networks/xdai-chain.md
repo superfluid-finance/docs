@@ -17,11 +17,11 @@ _Easy button coming soon_! Until then, you'll need to add this information manua
 | ParentChain    | Ethereum Mainnet                                                                    |
 | chainId        | 100                                                                                 |
 | Gas token      | xDAI (stablecoin pegged to the price of USD)                                        |
-| RPC            | **Public RPC URL: **[**https://rpc.xdaichain.com/**](https://rpc.xdaichain.com)**** |
+| RPC            | **Public RPC URL:** [**https://rpc.xdaichain.com/**](https://rpc.xdaichain.com)**** |
 | Block Explorer | [https://blockscout.com/poa/xdai/](https://blockscout.com/poa/xdai/)                |
 
 ###
 
 ### Troubleshooting
 
-#### - Have an issue? Let us know so we can share the solution with others 
+#### - Have an issue? Let us know so we can share the solution with others&#x20;

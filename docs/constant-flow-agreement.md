@@ -22,9 +22,9 @@ Seem straightforward enough? Let's go!
 
 ## Prerequisites
 
-Before starting this tutorial you should: 
+Before starting this tutorial you should:&#x20;
 
-* Complete the [@superfluid-finance/js-sdk](../protocol-tutorials/frontend-+-nodejs.md) tutorial
+* Complete the [@superfluid-finance/js-sdk](../resources/frontend-+-nodejs/) tutorial
 * Have some goerli ETH and tokens in your wallet from the dashboard [https://app.superfluid.finance](https://app.superfluid.finance)
 
 ## Create a Constant Flow Agreement "CFA"
@@ -33,7 +33,7 @@ Bob has some DAIx, and he wants to send 100 per month to alice.
 
 ### Create a User object
 
-First let's create a new `User` object for Bob. 
+First let's create a new `User` object for Bob.&#x20;
 
 ```javascript
 const bobAddress = "0xbbb...." // address of the sender's wallet
@@ -85,7 +85,7 @@ userBob.flow({
 });
 ```
 
-Awesome work. You're now ready for the next tutorial [💰 Perform an Instant Distribution](../protocol-tutorials/perform-an-instant-distribution.md)
+Awesome work. You're now ready for the next tutorial [💰 Perform an Instant Distribution](../resources/frontend-+-nodejs/perform-an-instant-distribution.md)
 
 Or you can keep reading to take a deeper dive.
 
@@ -181,20 +181,20 @@ Next we'll learn about another agreement, called **Instant Distribution**
 
 ## Liquidation and Solvency
 
-Here's the general flow of solvency states for Super Tokens in a Constant Flow Agreement. 
+Here's the general flow of solvency states for Super Tokens in a Constant Flow Agreement.&#x20;
 
 #### **1.** **Solvent**
 
-Everyone is in good standing. The sender's balance shows greater than 0 on the dashboard. The  stream flows to the receiver. 
+Everyone is in good standing. The sender's balance shows greater than 0 on the dashboard. The  stream flows to the receiver.&#x20;
 
 #### **2. Critical**
 
-The sender's balance shows 0 on the dashboard, and the stream is now able to be closed by a Licensed Agent. Until the stream is actually closed, funds are paid to the receiver's wallet using the sender's initial deposit. Licensed agents are incentivized to close the stream as soon as possible, since they earn the remaining balance of the sender's deposit. 
+The sender's balance shows 0 on the dashboard, and the stream is now able to be closed by a Licensed Agent. Until the stream is actually closed, funds are paid to the receiver's wallet using the sender's initial deposit. Licensed agents are incentivized to close the stream as soon as possible, since they earn the remaining balance of the sender's deposit.&#x20;
 
 Technically, anyone can close stream during the Critical or Insolvent states, however only Licensed Agents can receive deposit rewards.
 
 #### **3. Insolvent**
 
-If the Licensed Agent has not closed the stream, and the deposit has been completely consumed,  then the Insolvent state begins. The stream will continue to the receiver, however since these tokens don't actually exist in the sender's wallet, we must keep track of this debt so that the Super Token itself can remain solvent within the Superfluid Protocol. We call this debt the "**Delay**". 
+If the Licensed Agent has not closed the stream, and the deposit has been completely consumed,  then the Insolvent state begins. The stream will continue to the receiver, however since these tokens don't actually exist in the sender's wallet, we must keep track of this debt so that the Super Token itself can remain solvent within the Superfluid Protocol. We call this debt the "**Delay**".&#x20;
 
 Once the Licensed Agent, or anyone closes the stream, the Delay is taken from their Bond as a slashing fee. This slashing fee is then burned, to offset the tokens created during insolvency.

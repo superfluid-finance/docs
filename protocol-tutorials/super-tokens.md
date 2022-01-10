@@ -16,7 +16,7 @@ Just to recap from earlier, Super Tokens have a new token address after an upgra
 
 Before starting this tutorial you should:&#x20;
 
-* Complete the [@superfluid-finance/js-sdk](frontend-+-nodejs.md) tutorial
+* Complete the [@superfluid-finance/js-sdk](../resources/frontend-+-nodejs/) tutorial
 * Have some goerli ETH and tokens in your wallet from the dashboard [https://app.superfluid.finance](https://app.superfluid.finance)
 
 ## ERC777 Callbacks

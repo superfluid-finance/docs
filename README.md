@@ -2,7 +2,7 @@
 description: A new DeFi primitive to automate recurring transactions and monetize Web3
 ---
 
-# Superfluid
+# 🌊 Superfluid
 
 ### CONTRACT ADDRESSES
 
@@ -12,8 +12,8 @@ description: A new DeFi primitive to automate recurring transactions and monetiz
 
 ### START THE TUTORIAL
 
-{% content-ref url="protocol-tutorials/getting-started.md" %}
-[getting-started.md](protocol-tutorials/getting-started.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 ### CONNECT TO XDAI, POLYGON, ETC.
@@ -29,13 +29,13 @@ description: A new DeFi primitive to automate recurring transactions and monetiz
 
 ### COMMUNITY + HELP
 
-If you need any help or have any questions, please join our [**Discord**](http://discord.superfluid.finance),** **check out our [**help page**](http://help.superfluid.finance), or reach out to our team at **support@superfluid.finance**
+If you need any help or have any questions, please join our [**Discord**](http://discord.superfluid.finance), **** check out our [**help page**](http://help.superfluid.finance), or reach out to our team at **support@superfluid.finance**
 
 > The Superfluid documentation is growing. Tell us what you dislike about it so we can make it better.
 
 ### **BLOG**
 
-![](<.gitbook/assets/medium (1).png>) [**Blog**](https://medium.com/superfluid-blog)**   **
+![](<.gitbook/assets/medium (1).png>) [**Blog**](https://medium.com/superfluid-blog)   ****  &#x20;
 
 ### **GITHUB**
 
@@ -53,13 +53,13 @@ Superfluid is a smart contract framework on L1 Ethereum, enabling you to move as
 
 🔮 **Anything you can imagine** - Superfluid is very flexible!
 
-**Superfluid Components: **
+**Superfluid Components:**&#x20;
 
 The current version of Superfluid is composed of the following key elements:
 
 * _**Super Agreement Framework**_**:** a set of approved _super agreements_ contracts as building blocks.
 * _**Super App Framework**_**:** a development framework for building real-time finance apps.
-* _**Super Token Framework**_**: **an extended [ERC-777](https://eips.ethereum.org/EIPS/eip-777) implementation with real-time finance capability, and a registry.
+* _**Super Token Framework**_**:** an extended [ERC-777](https://eips.ethereum.org/EIPS/eip-777) implementation with real-time finance capability, and a registry.
 * _**Batch Call & Meta Tx**_**:** for users (contracts or EOA) to interact with the system in batch on-chain, or off-chain through meta transactions.
 * _**Governance**_**:** an external contract for managing protocol parameters and contract upgrades.
 * _**Solvency Agents**_**:** an off-chain network of agents ensuring the solvency of the system. [Read more](docs/super-tokens.md)

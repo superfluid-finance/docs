@@ -12,7 +12,7 @@ For this example, we will create a Super App for **purchasing soda in real-time*
 
 To make things simple, we'll sell our SODA for $1 DAI
 
-However, instead of discrete payments, like handing a single dollar bill to a cashier, the machine will only dispense SODA _while we are actively paying_. 
+However, instead of discrete payments, like handing a single dollar bill to a cashier, the machine will only dispense SODA _while we are actively paying_.&#x20;
 
 Stream DAI to the machine- it turns on. Stop streaming DAI- it turns off.
 
@@ -20,13 +20,13 @@ Stream DAI to the machine- it turns on. Stop streaming DAI- it turns off.
 
 ## Operating the machine
 
-When we deploy the contract, we can automatically mint 1M SODA tokens. This should be enough for many happy customers. We also set the **accepted token **we wish to earn, which in this case is DAIx (Superfluid DAI). 
+When we deploy the contract, we can automatically mint 1M SODA tokens. This should be enough for many happy customers. We also set the **accepted token** we wish to earn, which in this case is DAIx (Superfluid DAI).&#x20;
 
 Customer can start flowing DAIx to the Soda Machine contract address using any available interface- such as the [Superfluid Dashboard](https://app.superfluid.finance). Once they've received the desired amount, they can cancel their DAIx stream.
 
 ## Prerequisites
 
-Before starting you should: 
+Before starting you should:&#x20;
 
 * Have some goerli ETH and test tokens in your wallet from the dashboard [https://app.superfluid.finance](https://app.superfluid.finance)
 
@@ -55,7 +55,7 @@ During deployment, several things will happen:
 
 ## Stream some SODA
 
-Now that you've deployed the example contract, you can check the values for `_sodaMachine` and `_sodaToken` and load the appropriate contracts in Remix. Keep in mind that the interface you should use for `_sodaToken` is `ISuperToken` and not the proxy interface `NativeSuperToken`.  
+Now that you've deployed the example contract, you can check the values for `_sodaMachine` and `_sodaToken` and load the appropriate contracts in Remix. Keep in mind that the interface you should use for `_sodaToken` is `ISuperToken` and not the proxy interface `NativeSuperToken`. &#x20;
 
 Once you have the address for the Soda Machine, start sending it some DAI (accepted token) using the [dashboard](https://app.superfluid.finance). Once your DAI stream begins, SODA will immediately begin flowing back to you! To stop the flow of SODA, simply stop your DAI stream.
 
