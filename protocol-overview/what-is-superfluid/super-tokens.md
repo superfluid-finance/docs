@@ -10,13 +10,13 @@ At this point, you are familiar with the concept of upgrading an ERC20 token to 
 
 Just to recap from earlier, Super Tokens have a new token address after an upgrade. To denote this, we just append "x" to the token symbol.
 
-![](<../.gitbook/assets/image (8) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (8) (1) (1) (1).png>)
 
 ## Prerequisites
 
 Before starting this tutorial you should:&#x20;
 
-* Complete the [@superfluid-finance/js-sdk](../resources/frontend-+-nodejs/) tutorial
+* Complete the [@superfluid-finance/js-sdk](../../resources/archived-tutorials-docs/frontend-+-nodejs.md) tutorial
 * Have some goerli ETH and tokens in your wallet from the dashboard [https://app.superfluid.finance](https://app.superfluid.finance)
 
 ## ERC777 Callbacks
@@ -31,7 +31,7 @@ All Super Tokens include the **batchCall** feature, which allows you to perform 
 
 You can even mix-n-match your tasks, including upgrade/downgrade, calling agreements (CFA, IDA, etc), execute Super App functions, and make simple transfers. The world is your Oyster!
 
-![Developer Playground batchcall transfer feature](<../.gitbook/assets/image (11).png>)
+![Developer Playground batchcall transfer feature](<../../.gitbook/assets/image (11).png>)
 
 &#x20;:man\_playing\_handball: See it in action using the Developer Playground. We have some helpful tools for both batchCall transfers **** and batchCall streams!
 

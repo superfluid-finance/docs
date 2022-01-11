@@ -2,7 +2,7 @@
 description: Hungry for data? Hot n' fresh Superfluid subgraphs ready to consume!
 ---
 
-# Subgraph
+# 🖥 Subgraph
 
 The Graph is the indexing layer of our industry. There is an ocean of open data created by blockchain networks, and the Graph will help you query it.  You can use the Graph to get data on activity in the Superfluid ecosystem as well as many other types of on-chain data. You can also use the [GraphQL Playground](https://thegraph.com/hosted-service/) to start getting Superfluid specific data on any network.
 
@@ -134,7 +134,7 @@ The following query will allow us to answer the following questions for an activ
 
 `currentFlowRate` will return the current flow rate of the stream.
 
-`streamedUntilUpdatedAt` will return the amount streamed until `updatedAtTimestamp`/`updatedAtBlock `
+`streamedUntilUpdatedAt` will return the amount streamed until `updatedAtTimestamp`/`updatedAtBlock`&#x20;
 
 > Note: to get the current (dynamic) total amount streamed, you can use the following formula: _**streamedUntilUpdatedAt + ((current time in seconds) - updatedAtTimestamp) \* currentFlowRate**_
 

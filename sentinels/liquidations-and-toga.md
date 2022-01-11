@@ -2,7 +2,7 @@
 description: How does Superfluid keep streams solvent? Who's job is it?
 ---
 
-# Liquidations & TOGA
+# 🥅 Liquidations & TOGA
 
 ## Liquidation and Solvency
 
@@ -50,7 +50,7 @@ All liquidation rewards are added to the `stake`.&#x20;
 
 The TOGA contract leverages the ERC777 callbacks, so you can become the PIC by simply sending a regular transfer to the right contract address! In this case, the `exitRate` will be set at the default rate.
 
-Check out the [network directory](../networks/networks.md#mainnet-networks) for the **** contract address on different networks.
+Check out the [network directory](../protocol-developers/networks/#mainnet-networks) for the **** contract address on different networks.
 
 ### Current Parameters
 
@@ -102,8 +102,3 @@ These parameters can be changed by Governance decision. Previously established `
 
 The TOGA contract is set as the `rewardAddress` in the Superfluid host. The `rewardAddress` may be changed to a different address. Every SuperToken may have a different `rewardAddress`, so it's possible that different SuperTokens have different implementations.
 
-### Running a Sentinel
-
-Sentinels are the key player observing the network, and closing streams. They could be operating as Patrician, Pirates, or even just watching! The system is permissionless, and anyone can close streams by monitoring and interacting directly with the blockchain.
-
-For convenience, you can also run our reference implementation of sentinel software, which has settings for all most common use-cases, and is fully open source. The readme in the [Superfluid-Sentinel repository](https://github.com/superfluid-finance/superfluid-sentinel) is the most up to date source on how to get started!

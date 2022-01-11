@@ -45,7 +45,7 @@ Select and deploy **Example.sol** on Goerli network using the following paramete
 | ACCEPTEDTOKEN     | 0xf2d68898557ccb2cf4c10c3ef2b034b2a69dad00 |
 | SUPERTOKENFACTORY | 0x94f26B4c8AD12B18c12f38E878618f7664bdcCE2 |
 
-If you want to deploy on a different network, use the [🔗 Network Directory](../../networks/networks.md)
+If you want to deploy on a different network, use the [🔗 Network Directory](../../protocol-developers/networks/)
 
 During deployment, several things will happen:
 

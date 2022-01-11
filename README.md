@@ -4,22 +4,34 @@ description: A new DeFi primitive to automate recurring transactions and monetiz
 
 # 🌊 Superfluid
 
-### CONTRACT ADDRESSES
+### PROTOCOL OVERVIEW ⬇️
 
-{% content-ref url="networks/networks.md" %}
-[networks.md](networks/networks.md)
+{% content-ref url="protocol-overview/what-is-superfluid/" %}
+[what-is-superfluid](protocol-overview/what-is-superfluid/)
 {% endcontent-ref %}
 
-### START THE TUTORIAL
+### DEVELOPERS ⬇️
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="protocol-developers/getting-started.md" %}
+[getting-started.md](protocol-developers/getting-started.md)
+{% endcontent-ref %}
+
+### SENTINELS ⬇️
+
+{% content-ref url="sentinels/liquidations-and-toga.md" %}
+[liquidations-and-toga.md](sentinels/liquidations-and-toga.md)
+{% endcontent-ref %}
+
+### CONTRACT ADDRESSES
+
+{% content-ref url="protocol-developers/networks/" %}
+[networks](protocol-developers/networks/)
 {% endcontent-ref %}
 
 ### CONNECT TO XDAI, POLYGON, ETC.
 
-* [xDAI Chain](networks/xdai-chain.md)
-* [Polygon (Matic)](networks/polygon-network-matic.md)
+* [xDAI Chain](protocol-developers/networks/xdai-chain.md)
+* [Polygon (Matic)](protocol-developers/networks/polygon-network-matic.md)
 
 ### EXAMPLE APPS
 
@@ -40,26 +52,3 @@ If you need any help or have any questions, please join our [**Discord**](http:/
 ### **GITHUB**
 
 {% embed url="https://github.com/superfluid-finance/protocol-monorepo" %}
-
-## INTRODUCTION&#x20;
-
-Superfluid is a smart contract framework on L1 Ethereum, enabling you to move assets on-chain following predefined rules called agreements. With a single on-chain transaction, the money will flow from your wallet to the receiver in real time! No further transactions required- it works like magic ✨
-
-**Superfluid enables:**
-
-💸 **Real money streaming** - constant flows on-chain with no capital lockups.
-
-🎁 **Rewards distributions** - Fixed cost distribution in a single transaction for any number of receivers.
-
-🔮 **Anything you can imagine** - Superfluid is very flexible!
-
-**Superfluid Components:**&#x20;
-
-The current version of Superfluid is composed of the following key elements:
-
-* _**Super Agreement Framework**_**:** a set of approved _super agreements_ contracts as building blocks.
-* _**Super App Framework**_**:** a development framework for building real-time finance apps.
-* _**Super Token Framework**_**:** an extended [ERC-777](https://eips.ethereum.org/EIPS/eip-777) implementation with real-time finance capability, and a registry.
-* _**Batch Call & Meta Tx**_**:** for users (contracts or EOA) to interact with the system in batch on-chain, or off-chain through meta transactions.
-* _**Governance**_**:** an external contract for managing protocol parameters and contract upgrades.
-* _**Solvency Agents**_**:** an off-chain network of agents ensuring the solvency of the system. [Read more](docs/super-tokens.md)

@@ -2,14 +2,14 @@
 description: Example apps that show how Superfluid can be used
 ---
 
-# 🛠 Examples
+# 🛠 Example Projects
 
 ## 🟢 Official Examples
 
 Fork-able apps from the main repo:
 
 * **Dividend Rights Token -** Distribute IDA shares using an ERC20 token
-* **Holy Grail -** Whoever holds this NFT receives a CFA stream (see [🦾 Super Apps](../../protocol-tutorials/super-apps.md))
+* **Holy Grail -** Whoever holds this NFT receives a CFA stream (see [🦾 Super Apps](../../protocol-developers/super-apps/))
 * **Continuous Auction** - The winner is whoever has the largest CFA stream
 * **Developer Playground** - A full-stack playground built with RedwoodJS
 * and more...

@@ -184,7 +184,7 @@ In this tutorial, we make a small tweak to the contracts used in the TradeableCa
 
 Our dapp will turn the TradeableCashflow into a tradeable NFT billboard that can be rented with streams. The message displayed on our billboard will be the parameter passed in as userData. If the billboard is traded, all rental cashflows will be redirected toward the new owner.
 
-![This tutorial is most certainly NOT investment advice, but we'll assume that someone out there will want others to HODL their favorite assets...a decent use case for a billboard](<../.gitbook/assets/Screen Shot 2021-10-13 at 8.34.19 PM.png>)
+![This tutorial is most certainly NOT investment advice, but we'll assume that someone out there will want others to HODL their favorite assets...a decent use case for a billboard](<../../.gitbook/assets/Screen Shot 2021-10-13 at 8.34.19 PM.png>)
 
 You can follow along with the video version of this tutorial on Youtube, and fork the repo here as well:
 
@@ -194,9 +194,9 @@ You can follow along with the video version of this tutorial on Youtube, and for
 
 Before we get started with project setup, you'll also want to head over to the [Superfluid Dashboard](http://app.superfluid.finance) to claim testnet Super DAI (fDAIx) in at least one account on the network you'd like to use for the tutorial (I would suggest claiming these tokens on Mumbai, the Matic Testnet). To claim test DAI, you can head to the currencies tab in the dashboard and click the plus button on the far right in the DAI row to get your hands on some test Super DAIx.
 
-![](<../.gitbook/assets/Screen Shot 2021-10-16 at 8.45.29 AM.png>)
+![](<../../.gitbook/assets/Screen Shot 2021-10-16 at 8.45.29 AM.png>)
 
-![](<../.gitbook/assets/Screen Shot 2021-10-15 at 11.24.31 AM (2).png>)
+![](<../../.gitbook/assets/Screen Shot 2021-10-15 at 11.24.31 AM (2).png>)
 
 You'll want to have 2 Ethereum addresses ready: one of which you'll need your private key for (that has our test tokens), the other which we'll just be observing.
 
@@ -204,9 +204,9 @@ You'll want to have 2 Ethereum addresses ready: one of which you'll need your pr
 
 #### Scaffold-Eth and Hardhat Configuration
 
-![](<../.gitbook/assets/Screen Shot 2021-10-14 at 10.48.18 AM (1).png>)
+![](<../../.gitbook/assets/Screen Shot 2021-10-14 at 10.48.18 AM (1).png>)
 
-![To get your URL, click on your project, select 'View Key' and copy the HTTP URL.](<../.gitbook/assets/Screen Shot 2021-10-14 at 10.49.45 AM.png>)
+![To get your URL, click on your project, select 'View Key' and copy the HTTP URL.](<../../.gitbook/assets/Screen Shot 2021-10-14 at 10.49.45 AM.png>)
 
 You'll want to create a new .env file and put this URL there - in my case I've called it `MUMBAI_ALCHEMY_URL`.
 

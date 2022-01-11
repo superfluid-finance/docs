@@ -24,7 +24,7 @@ Seem straightforward enough? Let's go!
 
 Before starting this tutorial you should:&#x20;
 
-* Complete the [@superfluid-finance/js-sdk](../resources/frontend-+-nodejs/) tutorial
+* Complete the [@superfluid-finance/js-sdk](../../resources/archived-tutorials-docs/frontend-+-nodejs.md) tutorial
 * Have some goerli ETH and tokens in your wallet from the dashboard [https://app.superfluid.finance](https://app.superfluid.finance)
 
 ## Create a Constant Flow Agreement "CFA"
@@ -85,7 +85,7 @@ userBob.flow({
 });
 ```
 
-Awesome work. You're now ready for the next tutorial [💰 Perform an Instant Distribution](../resources/frontend-+-nodejs/perform-an-instant-distribution.md)
+Awesome work. You're now ready for the next tutorial [💰 Perform an Instant Distribution](../interactive-tutorials/perform-an-instant-distribution.md)
 
 Or you can keep reading to take a deeper dive.
 

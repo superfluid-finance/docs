@@ -1,8 +1,4 @@
----
-description: Create a pool and distribute tokens using @superfluid-finance/js-sdk
----
-
-# 💰 Instant Distribution w the JS-SDK
+# Instant Distribution with JS-SDK
 
 ## Introduction
 
@@ -34,7 +30,7 @@ contract IInstantDistributionAgreementV1 is ISuperAgreement {
 
 Before starting this tutorial you should:
 
-* Complete the [@superfluid-finance/js-sdk](./) tutorial
+* Complete the [@superfluid-finance/js-sdk](frontend-+-nodejs.md) tutorial
 * Have some goerli ETH and tokens in your wallet from the dashboard [https://app.superfluid.finance](https://app.superfluid.finance)
 
 ## Create a Pool

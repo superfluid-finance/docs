@@ -2,9 +2,9 @@
 description: One-liners to keep you "in the flow".
 ---
 
-# 😎 Cheat Sheet
+# Cheat Sheet
 
-![](<../.gitbook/assets/image (1).png>)
+![](<../../.gitbook/assets/image (1).png>)
 
 #### Quick-start
 

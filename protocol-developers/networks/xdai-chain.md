@@ -10,7 +10,7 @@ To use Superfluid with xDAI chain, you'll need a RPC URL to connect your metamas
 
 _Easy button coming soon_! Until then, you'll need to add this information manually to Metamask. Click the network button at the top and select **Custom RPC**.
 
-![](<../.gitbook/assets/image (21).png>)
+![](<../../.gitbook/assets/image (21).png>)
 
 | NetworkName    | **xDAI**                                                                            |
 | -------------- | ----------------------------------------------------------------------------------- |
