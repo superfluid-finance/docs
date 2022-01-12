@@ -58,7 +58,7 @@ await sf.initialize()
 {% endtab %}
 {% endtabs %}
 
-By default, the SDK will load Version 1 of the contracts, for whichever network the wallet is connected to. See [🔗 Network Directory](../../protocol-developers/networks/) for the full list of contract addresses.
+By default, the SDK will load Version 1 of the contracts, for whichever network the wallet is connected to. See [🔗 Network Directory](../../../protocol-developers/networks/) for the full list of contract addresses.
 
 ### Create a User
 
@@ -80,11 +80,11 @@ const carol = sf.user({
 });
 ```
 
-You'll notice we passed a token address when we created the User. Over in [🔗 Network Directory](../../protocol-developers/networks/) we can see this is the `fDAIx` token, which is a test **Super Token** on Goerli network.
+You'll notice we passed a token address when we created the User. Over in [🔗 Network Directory](../../../protocol-developers/networks/) we can see this is the `fDAIx` token, which is a test **Super Token** on Goerli network.
 
 What's a Super Token? It's just a "wrapped" or **upgraded** ERC20 token. This is what enables the cool super-powers like streaming, batch calls, and more.
 
-![](<../../.gitbook/assets/image (8) (1).png>)
+![](<../../../.gitbook/assets/image (8) (1).png>)
 
 After upgrading an ERC20 to Super Token, it will have a new token address. To denote this, we just append "x" to the token symbol. Since the fDAI in our example is named "Fake DAI", it now becomes "Super Fake DAI"... pretty funny name right?
 
@@ -110,7 +110,7 @@ Head to [app.superfluid.finance](https://app.superfluid.finance). During log-in 
 
 If you're using the fDAIx token as shown in this guide, the you need to upgrade your DAI (token symbols don't always match exactly on testnet).
 
-![](<../../.gitbook/assets/image (7).png>)
+![](<../../../.gitbook/assets/image (7).png>)
 
 You'll be prompted to "Allow Superfluid to spend your DAI". Then you'll call the upgrade function, which will take the DAI token from your wallet, and send back the same amount of DAIx. Use the handy "Add to Metamask" button to see DAIx in your wallet.
 

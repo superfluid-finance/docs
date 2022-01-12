@@ -1,8 +1,8 @@
 ---
-description: Open and close a flow using @superfluid-finance/js-sdk
+description: Interacting with the Constant Flow Agreement Using the JS-SDK
 ---
 
-# Constant Flow Agreement
+# 🚰 Money Streaming with JS-SDK
 
 ## Introduction
 
@@ -24,7 +24,7 @@ Seem straightforward enough? Let's go!
 
 Before starting this tutorial you should:&#x20;
 
-* Complete the [@superfluid-finance/js-sdk](../../resources/archived-tutorials-docs/frontend-+-nodejs.md) tutorial
+* Complete the [@superfluid-finance/js-sdk](./) tutorial
 * Have some goerli ETH and tokens in your wallet from the dashboard [https://app.superfluid.finance](https://app.superfluid.finance)
 
 ## Create a Constant Flow Agreement "CFA"
@@ -178,23 +178,3 @@ If we check their balances, we'll see that they now add up to 50 since the refun
 Great job! You minted some Superfluid-enabled DAI, and created your first Flow.
 
 Next we'll learn about another agreement, called **Instant Distribution**
-
-## Liquidation and Solvency
-
-Here's the general flow of solvency states for Super Tokens in a Constant Flow Agreement.&#x20;
-
-#### **1.** **Solvent**
-
-Everyone is in good standing. The sender's balance shows greater than 0 on the dashboard. The  stream flows to the receiver.&#x20;
-
-#### **2. Critical**
-
-The sender's balance shows 0 on the dashboard, and the stream is now able to be closed by a Licensed Agent. Until the stream is actually closed, funds are paid to the receiver's wallet using the sender's initial deposit. Licensed agents are incentivized to close the stream as soon as possible, since they earn the remaining balance of the sender's deposit.&#x20;
-
-Technically, anyone can close stream during the Critical or Insolvent states, however only Licensed Agents can receive deposit rewards.
-
-#### **3. Insolvent**
-
-If the Licensed Agent has not closed the stream, and the deposit has been completely consumed,  then the Insolvent state begins. The stream will continue to the receiver, however since these tokens don't actually exist in the sender's wallet, we must keep track of this debt so that the Super Token itself can remain solvent within the Superfluid Protocol. We call this debt the "**Delay**".&#x20;
-
-Once the Licensed Agent, or anyone closes the stream, the Delay is taken from their Bond as a slashing fee. This slashing fee is then burned, to offset the tokens created during insolvency.
