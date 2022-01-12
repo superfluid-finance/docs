@@ -5,7 +5,7 @@
 ## Developers <a href="#protocol-developers" id="protocol-developers"></a>
 
 * [⭐ Interactive Tutorials](protocol-developers/interactive-tutorials/README.md)
-  * [🌊 Money Streaming](protocol-developers/interactive-tutorials/money-streaming.md)
+  * [🌊 Money Streaming](protocol-developers/interactive-tutorials/money-streaming-1.md)
   * [⚡ Instant Distribution](protocol-developers/interactive-tutorials/instant-distribution.md)
 * [🦾 Super Apps](protocol-developers/super-apps/README.md)
   * [Super App Remix Example](protocol-developers/super-apps/super-app-remix-example.md)

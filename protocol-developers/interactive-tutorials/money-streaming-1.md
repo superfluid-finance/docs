@@ -69,7 +69,7 @@ We've also provided an unlocked address that is loaded up with test net Super To
   });
 ```
 
-> **NOTE**: In the above sections, you'll be able to send yourself test tokens. Please don't take egregious amounts of tokens from the example address used. It will never be used to hold real value. You'll just be making this tutorial worse for everyone else who comes here trying to learn (and you're 100% NGMI if you can't figure out how to get free test tokens from our [dashboard](money-streaming.md#creating-a-flow)).&#x20;
+> **NOTE**: In the above sections, you'll be able to send yourself test tokens. Please don't take egregious amounts of tokens from the example address used. It will never be used to hold real value. You'll just be making this tutorial worse for everyone else who comes here trying to learn (and you're 100% NGMI if you can't figure out how to get free test tokens from our [dashboard](money-streaming-1.md#creating-a-flow)).&#x20;
 
 ### FlowRates
 
