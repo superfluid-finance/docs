@@ -1,4 +1,4 @@
-# Instant Distribution with JS-SDK
+# 💰 Instant Distribution with JS-SDK
 
 ## Introduction
 

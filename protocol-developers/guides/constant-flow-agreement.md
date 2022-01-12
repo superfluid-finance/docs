@@ -85,7 +85,7 @@ userBob.flow({
 });
 ```
 
-Awesome work. You're now ready for the next tutorial [💰 Perform an Instant Distribution](../interactive-tutorials/perform-an-instant-distribution.md)
+Awesome work. You're now ready for the next tutorial [💰 Perform an Instant Distribution](broken-reference)
 
 Or you can keep reading to take a deeper dive.
 

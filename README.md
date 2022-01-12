@@ -12,8 +12,8 @@ description: A new DeFi primitive to automate recurring transactions and monetiz
 
 ### DEVELOPERS ⬇️
 
-{% content-ref url="protocol-developers/getting-started.md" %}
-[getting-started.md](protocol-developers/getting-started.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 ### SENTINELS ⬇️

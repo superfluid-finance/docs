@@ -1,3 +1,0 @@
-# SDK-Redux
-
-**under construction**
