@@ -78,6 +78,7 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 | [IDAv1](http://goerli.etherscan.io/address/0xfDdcdac21D64B639546f3Ce2868C7EF06036990c)                   | 0xfDdcdac21D64B639546f3Ce2868C7EF06036990c |
 | [SuperTokenFactory](https://goerli.etherscan.io/address/0x94f26B4c8AD12B18c12f38E878618f7664bdcCE2#code) | 0x94f26B4c8AD12B18c12f38E878618f7664bdcCE2 |
 | [SuperfluidLoader v1](https://goerli.etherscan.io/address/0x74d860243Ff08A243d5485899f343117EbDa6eA8)    | 0x74d860243Ff08A243d5485899f343117EbDa6eA8 |
+| [TOGA](https://goerli.etherscan.io/address/0xa54FC15FC75693447d70a57262F37a70B614721b)                   | 0xa54FC15FC75693447d70a57262F37a70B614721b |
 
 #### Tokens
 
