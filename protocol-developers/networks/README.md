@@ -7,7 +7,7 @@ description: Superfluid contract addresses for all networks
 ## Mainnet Networks
 
 {% tabs %}
-{% tab title="Matic" %}
+{% tab title="Polygon" %}
 #### ​​ ❓See [Polygon (Matic)](polygon-network-matic.md) for more help
 
 #### Framework
