@@ -32,7 +32,7 @@
 
 * [💡 What is Superfluid?](protocol-overview/what-is-superfluid/README.md)
   * [🚚 Primitives](protocol-overview/what-is-superfluid/primitives.md)
-  * [🦸♀ Super Tokens](protocol-overview/what-is-superfluid/super-tokens.md)
+  * [🦸♀ 🦸♀ Super Tokens](protocol-overview/what-is-superfluid/super-tokens.md)
 
 ## Sentinels
 
