@@ -145,4 +145,4 @@ Some applications (notably Etherscan) rely on `transfer` __ events to first star
 
 In order to work around this, applications looking to support Super Tokens should look not only to `transfer` events, but also to Superfluid's `AgreementStateUpdated` event. This is triggered every time an account's state changes, which is likely to indicate a future change in their balance.
 
-Once you know you need to track an account, the best way to get an up to date balance is by simply calling the `balanceOf` function.
+Once you know you need to track an account, the best way to get an up to date balance is by calling the `balanceOf` function. As you know by now, Superfluid enables a number of new ways to move funds. Only tracking transfers won't cut it!&#x20;
