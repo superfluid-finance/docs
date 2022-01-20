@@ -7,6 +7,7 @@
 * [⭐ Interactive Tutorials](protocol-developers/interactive-tutorials/README.md)
   * [🌊 Money Streaming](protocol-developers/interactive-tutorials/money-streaming-1.md)
   * [⚡ Instant Distribution](protocol-developers/interactive-tutorials/instant-distribution.md)
+* [💻 Solidity Examples](protocol-developers/solidity-examples.md)
 * [🦾 Super Apps](protocol-developers/super-apps/README.md)
   * [Super App Remix Example](protocol-developers/super-apps/super-app-remix-example.md)
   * [Super App Callbacks](protocol-developers/super-apps/super-app-callbacks/README.md)
