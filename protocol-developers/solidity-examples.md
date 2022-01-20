@@ -54,7 +54,7 @@ host.callAgreement(
 
 ### The CFA Library
 
-If you're making use of the Constant Flow Agreement library, then the syntax for creating, updating, and deleting flows will look similar to what you may have already seen in the [core-sdk](https://github.com/superfluid-finance/protocol-monorepo/tree/dev/packages/sdk-core). For a more advanced set of examples using the CFA Library, you can refer to [this mock contract](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/mocks/CFALibraryMock.sol).
+If you're making use of the [Constant Flow Agreement library](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/apps/CFAv1Library.sol) (`CFAv1Library.sol)`, then the syntax for creating, updating, and deleting flows will look similar to what you may have already seen in the [core-sdk](https://github.com/superfluid-finance/protocol-monorepo/tree/dev/packages/sdk-core). For a more advanced set of examples using the CFA Library, you can refer to [this mock contract](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/mocks/CFALibraryMock.sol).
 
 ```
 // initializing the CFA Library
