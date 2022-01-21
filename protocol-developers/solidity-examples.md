@@ -6,17 +6,17 @@ description: Working with the CFA & IDA in Solidity - and using the CFA Library
 
 ### Call Agreement
 
-If you'd like to interact with the constant flow agreement or instant distribution agreement in solidity, you need to make a function call first to the Superfluid host contract.
+Inside of the Interactive Tutorials section, you can learn how to use the Superfluid Core SDK to work with money streams or instant distribution agreements. Under the hood, what you're really doing is interacting with Superfluid _agreements_. Money streams are created by interacting primarily with the [constant flow agreement (CFA)](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/agreements/ConstantFlowAgreementV1.sol), while calls related to instant distributions are done by working with the [instant distribution agreement (IDA)](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/agreements/InstantDistributionAgreementV1.sol).&#x20;
 
-You'll call the `callAgreement` or `callAgreementWithContext` function on the host (`ISuperfluid.sol`), and pass in a few parameters:
+If you'd like to interact with a Superfluid agreement directly by using solidity, you need to make a function call first to the Superfluid host contract. You'll call the `callAgreement` or `callAgreementWithContext` function on the host contract ([`Superfluid.sol`](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/superfluid/Superfluid.sol)), and pass in a few parameters:
 
-`ISuperAgreement agreementClass` - the address of the agreement you're going to interact with (either the CFA or IDA)
+**`ISuperAgreement agreementClass`** - the address of the agreement you're going to interact with (either the CFA or IDA)
 
-`bytes memory calldata` - the transaction you're calling on the agreement you're interacting with, compiled to bytecode
+**`bytes memory calldata`** - the transaction you're calling on the agreement you're interacting with, compiled to bytecode (using one of solidity's [encoding methods](https://docs.soliditylang.org/en/v0.8.10/abi-spec.html#argument-encoding))
 
-`bytes memory userData` - any additional data you'd like to include with your function call. If you don't plan to add userData, you can pass in an empty bytes value (i.e. "0x"). You can learn more about this parameter [here](guides/user-data.md).
+**`bytes memory userData`** - any additional data you'd like to include with your function call. If you don't plan to add userData, you can pass in an empty bytes value (i.e. `"0x"`). You can learn more about this parameter [here](guides/user-data.md).
 
-Here's an example of how this looks in action when interacting with the constant flow agreement. This pattern will be the same whether your're creating, updating, or deleting flows.
+Here's an example of how this looks in action when interacting with the constant flow agreement. This pattern will be the same whether you're creating, updating, or deleting flows.
 
 ```
 //creating a flow in pure solidity
@@ -153,8 +153,6 @@ function afterAgreementCreated(
     return cfaV1.createFlowWithCtx(ctx, receiver,token, flowRate);
 }
 ```
-
-
 
 The final parameter passed into the callback - `ctx`, will be passed as the `ctx` value to the withCtx functions within the library.
 
