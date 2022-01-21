@@ -125,17 +125,18 @@ If you need to perform operations with the Constant Flow Agreement inside of Sup
 
 ```
 // with Ctx - to be used inside of super app callbacks
+// NOTE: ctx is a bytes value
 cfaV1.createFlowWithCtx(ctx, receiver,token, flowRate);
 cfaV1.updateFlowWithCtx(ctx, receiver,token, flowRate);
 cfaV1.deleteFlowWithCtx(ctx, sender, receiver,token);
 
 //withCtx & userData - to be used inside of super app callbacks
-cfaV1.createFlowWithCtx(ctx, receiver,token, flowRate);
-cfaV1.updateFlowWithCtx(ctx, receiver,token, flowRate);
-cfaV1.deleteFlowWithCtx(ctx, sender, receiver,token);
+cfaV1.createFlowWithCtx(ctx, receiver, token, flowRate, userData);
+cfaV1.updateFlowWithCtx(ctx, receiver, token, flowRate, userData);
+cfaV1.deleteFlowWithCtx(ctx, sender, receiver,token, userData);
 ```
 
-All other variable fields will are the same as detailed in the previous section, but `ctx` will be the `ctx` which is passed in to the Super App callback by the framework where these functions are being called. For example, in the afterAgreementCreated callback:
+All other variable fields will are the same as detailed in the previous section, but `ctx` will be the `ctx` which is passed in to the Super App callback by the framework where these functions are being called. This `ctx` value is of type **`bytes`**. For example, in the afterAgreementCreated callback:
 
 ```
 //in super app callback
@@ -147,7 +148,7 @@ function afterAgreementCreated(
     bytes calldata ,// _cbdata,
     bytes calldata ctx
 ) external returns (bytes memory newCtx) {
-
+    
     //this function takes the callback's ctx value as the first param
     //and returns an updated ctx value upon completion
     return cfaV1.createFlowWithCtx(ctx, receiver,token, flowRate);
