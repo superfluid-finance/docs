@@ -10,13 +10,13 @@ We're thrilled you're here! Here's how to navigate this Tutorials section:
 
 **Are you here to learn about creating your own Superfluid streams?**&#x20;
 
-Start with our [**Money Streaming**](money-streaming-1.md) tutorial
+Start with our [**Money Streaming**](money-streaming-1.md) tutorial.
 
 **Interested in making use of the Instant Distribution Agreement for scalable recurring transfers?** Check out the [**Instant Distribution**](instant-distribution.md) Tutorial.
 
 **Are you here to build decentralized applications around programmable,** [**networked cash flows**](https://multicoin.capital/2021/07/13/networked-cash-flows/)**?**
 
-If you know your way around solidity, you can skip to the next section on [**Super Apps**](../super-apps/)**.**
+If you know your way around solidity, you can skip to the next section on [**Solidity Examples**](../solidity-examples.md), or get started building [**Super Apps**](../super-apps/)**.**
 
 ### How to Get Help
 
