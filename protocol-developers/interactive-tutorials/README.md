@@ -12,7 +12,7 @@ We're thrilled you're here! Here's how to navigate this Tutorials section:
 
 Start with our [**Money Streaming**](money-streaming-1.md) tutorial.
 
-**Interested in making use of the Instant Distribution Agreement for scalable recurring transfers?** Check out the [**Instant Distribution**](instant-distribution.md) Tutorial.
+**Interested in making use of the Instant Distribution Agreement for scalable recurring transfers?** Check out the [**Instant Distribution**](instant-distribution.md) tutorial.
 
 **Are you here to build decentralized applications around programmable,** [**networked cash flows**](https://multicoin.capital/2021/07/13/networked-cash-flows/)**?**
 
