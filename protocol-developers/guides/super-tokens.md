@@ -68,7 +68,7 @@ exec scripts/deploy-unlisted-super-token.js : \
 <SuperToken Symbol>
 ```
 
-**Dont forget!** If you are wrapping an existing token, like DAI or USDC, please use suffix "x" in the SuperToken symbol. If you need a refresher on naming conventions, see the tutorial section on[🦸‍♀️ Super Tokens](../../protocol-overview/what-is-superfluid/super-tokens.md).
+**Dont forget!** If you are wrapping an existing token, like DAI or USDC, please use suffix "x" in the SuperToken symbol. If you need a refresher on naming conventions, see the tutorial section on[🦸‍♀️ Super Tokens](../tools/super-tokens.md).
 
 ## Custom Super Token
 

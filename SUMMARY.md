@@ -26,6 +26,7 @@
   * [Resolver](protocol-developers/tools/resolver.md)
   * [Superfluid Console](http://console.superfluid.finance)
   * [Cheat Sheet](protocol-developers/tools/cheat-sheet.md)
+  * [Batch Call Resources](protocol-developers/tools/super-tokens.md)
 * [🔗 Network Directory](protocol-developers/networks/README.md)
   * [xDAI Chain](protocol-developers/networks/xdai-chain.md)
   * [Polygon (Matic)](protocol-developers/networks/polygon-network-matic.md)
@@ -34,7 +35,6 @@
 
 * [💡 What is Superfluid?](protocol-overview/what-is-superfluid/README.md)
   * [🚚 Primitives](protocol-overview/what-is-superfluid/primitives.md)
-  * [🦸♀ Super Tokens](protocol-overview/what-is-superfluid/super-tokens.md)
 
 ## Sentinels
 
