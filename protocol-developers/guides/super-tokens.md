@@ -96,7 +96,7 @@ The term "independent" denotes that these tokens are fully separate from Superfl
 
 This guide will help you in deciding which approach is best.
 
-In order for a token to serve as a Super Token in the protocol, it must implement the [ISuperfluidToken](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/interfaces/superfluid/ISuperfluidToken.sol) _\*\*_interface. To make your life easier, the recommended approach for deploying any type of Super Token is to use an ERC1822 proxy. This allows the Superfluid Protocol Governance to perform necessary upgrades, which helps to keep the entire Super Token ecosystem secure and up-to-date with the latest features.
+In order for a token to serve as a Super Token in the protocol, it must implement the [ISuperfluidToken](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/interfaces/superfluid/ISuperfluidToken.sol) interface. To make your life easier, the recommended approach for deploying any type of Super Token is to use an [ERC1822](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1822.md) proxy. This allows the Superfluid Protocol Governance to perform necessary upgrades, which helps to keep the entire Super Token ecosystem secure and up-to-date with the latest features.
 
 However, since the interface is the only strict requirement, you are free to "break-out" and manage your own upgrades for the Super Token logic. This approach is not recommended, but listed here for completeness. Keep in mind that the Superfluid Protocol Governance is used only to upgrade the Super Token logic, not your custom logic.
 
