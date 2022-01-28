@@ -4,7 +4,7 @@ description: How to Wrap & Unwrap Existing ERC20 Assets
 
 # 🪙 Using Super Tokens
 
-### Working With Super Tokens
+## Working With Super Tokens
 
 We’ve already gone through the process of creating [money streams ](money-streaming-1.md)and working with the [instant distribution agreement](instant-distribution.md). Now it’s time to show you how to interact with super tokens.
 
@@ -15,7 +15,7 @@ In order to make use of agreements inside of the Superfluid protocol, you’ll n
 
 You can learn more about the details of super tokens in [our guide on the topic](../guides/super-tokens.md), but the main thing to understand is that they have special properties which allow them to be streamed per second using the [Constant Flow Agreement](money-streaming-1.md) or distributed to many accounts using the [Instant Distribution Agreement.](instant-distribution.md)
 
-#### Wrapped ERC20 Tokens
+### Wrapped ERC20 Tokens
 
 Because interoperability is a core tenant of DeFi & web3 more broadly, our team wrote a special kind of super token contract that can serve as a wrapper around existing ERC20 assets. This contract allows you to easily wrap & unwrap your existing ERC20 tokens.&#x20;
 
@@ -25,7 +25,7 @@ If/when you decide to unwrap those tokens in exchange for your underlying ERC20 
 
 > **NOTE**: we have a list of super tokens which were deployed by the Superfluid community as ERC20 wrapper contracts inside of the [Network Directory](../networks/). If you want to work with an ERC20 asset not listed in the directory, you can learn more about deploying your own ERC20 wrapper contract [here](../guides/super-tokens.md#erc20-wrapper-super-token).&#x20;
 
-#### Native Super Tokens
+### Native Super Tokens
 
 Each Super Token that is deployed as a wrapper around an ERC20 token will have an underlying asset, which is the original ERC20 asset being used. However, in the case of Native Super Tokens, there is no underlying asset. These tokens are deployed directly as Super Tokens, and don’t need to be upgraded or downgraded. They inherit all of the functionality of ERC20 and ERC777 tokens (i.e. approve, transfer, transferFrom, etc), but also have the capability of being used directly within the Superfluid protocol.&#x20;
 
