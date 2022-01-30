@@ -12,19 +12,25 @@ Creating a flow requires you to call `sf.cfaV1.createFlow()` and pass in the sen
 
 See below for an example of how this works. You can enter your own Ethereum address and `flowRate` (i.e. how much DAIx you want to send in in wei/second) to send yourself a stream of DAIx. Scroll down in the React App page (on the right side of the screen below) to see your flowRate converted into DAIx per month.
 
-{% embed url="https://codesandbox.io/embed/cfa-createflow-walkthrough-new-ougpu?expanddevtools=1&fontsize=12&hidenavigation=1&module=%2Fsrc%2FCreateFlow.js&theme=dark&view=split" %}
+{% embed url="https://codesandbox.io/embed/cfa-createflow-walkthrough-ougpu?expanddevtools=1&fontsize=14&hidenavigation=1&module=%2Fsrc%2FCreateFlow.js&theme=dark&view=split" %}
+Creating a flow
+{% endembed %}
 
 ### Updating a Flow
 
 Updating a flow is very similar to creating one. You'll need to pass the same parameters that you passed in the create flow function to `sf.cfaV1.updateFlow()`- except this time you'll need to pass in a new `flowRate`. If you attempt to use the same `flowRate`, or if you try to edit a stream which does not currently exist, this function will revert. Give it a try:
 
-{% embed url="https://codesandbox.io/embed/cfa-updateflow-walkthrough-new-9v6rj?expanddevtools=1&fontsize=12&hidenavigation=1&module=%2Fsrc%2FUpdateFlow.js&theme=dark&view=split" %}
+{% embed url="https://codesandbox.io/embed/cfa-updateflow-walkthrough-9v6rj?expanddevtools=1&fontsize=14&hidenavigation=1&module=%2Fsrc%2FUpdateFlow.js&theme=dark&view=split" %}
+Update a flow
+{% endembed %}
 
 ### Deleting a Flow
 
 Finally, we can delete flows. To delete a flow, you'll just need to pass the `sender`, `receiver`, and `superToken` to the `sf.cfaV1.deleteFlow()` function. If you attempt to delete a flow which does not exist, it will revert.
 
-{% embed url="https://codesandbox.io/embed/gracious-northcutt-346ek?expanddevtools=1&fontsize=14&hidenavigation=1&module=%2Fsrc%2FDeleteFlow.js&theme=dark&view=split" %}
+{% embed url="https://codesandbox.io/embed/cfa-deleteflow-walkthrough-346ek?expanddevtools=1&fontsize=14&hidenavigation=1&module=%2Fsrc%2FDeleteFlow.js&theme=dark&view=split" %}
+Delete a flow
+{% endembed %}
 
 ### Money Streaming
 

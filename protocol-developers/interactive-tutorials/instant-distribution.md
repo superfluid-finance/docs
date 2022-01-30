@@ -13,6 +13,8 @@ Let's take a look at another Superfluid Agreement - the **Instant Distribution A
 Creating an index will allow you to get started with the IDA. You can use the below example to generate an index ID which can be used in the next 2 steps. Click the button below to create your index, then open up the console to see your randomly generated index ID.
 
 {% embed url="https://codesandbox.io/embed/ida-walkthrough-createpool-l32ud?expanddevtools=1&fontsize=14&hidenavigation=1&module=%2Fsrc%2FCreateIndex.js&theme=dark&view=split" %}
+Create an index
+{% endembed %}
 
 ### Update Your Index By Issuing Units&#x20;
 
@@ -20,7 +22,9 @@ Once you've created an index, you can issue units to new `subscribers`. You can 
 
 Enter your index ID, a subscriber address, and a number of shares (units) to give your subscriber, then click the button to update your index.&#x20;
 
-{% embed url="https://codesandbox.io/embed/ida-walkthrough-updateindex-4yrbi?expanddevtools=1&fontsize=12&hidenavigation=1&module=%2Fsrc%2FUpdateSubscription.js&theme=dark&view=split" %}
+{% embed url="https://codesandbox.io/embed/ida-walkthrough-updateindex-4yrbi?expanddevtools=1&fontsize=14&hidenavigation=1&module=%2Fsrc%2FUpdateSubscription.js&theme=dark&view=split" %}
+Update subscriptions
+{% endembed %}
 
 ### Distribute Funds to Your Index
 
@@ -28,7 +32,9 @@ Finally, we can send funds to our index. Enter an amount below in wei, and click
 
 The Superfluid protocol is essentially dividing the total amount of funds sent via the distribution according to the amount of units each subscriber holds. You can think of it as similar to shareholders of a company receiving a dividend payment in proportion to the number of shares owned.
 
-{% embed url="https://codesandbox.io/embed/ida-walkthrough-distribute-6li4t?expanddevtools=1&fontsize=12&hidenavigation=1&module=%2Fsrc%2FDistributeFunds.js&theme=dark&view=split" %}
+{% embed url="https://codesandbox.io/embed/ida-walkthrough-distribute-6li4t?expanddevtools=1&fontsize=14&hidenavigation=1&module=%2Fsrc%2FDistributeFunds.js&theme=dark&view=split" %}
+Distribute funds
+{% endembed %}
 
 Thats it! One thing to keep in mind - for a recipient's balance to reflect the distribution event, they should first call `approveSubscription` one time. If they fail to do this, don't worry, they can still receive their tokens after calling the `claim` function at any time.&#x20;
 
