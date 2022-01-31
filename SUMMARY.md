@@ -31,7 +31,7 @@
   * [Cheat Sheet](protocol-developers/tools/cheat-sheet.md)
   * [Batch Call Resources](protocol-developers/tools/super-tokens.md)
 * [🔗 Network Directory](protocol-developers/networks/README.md)
-  * [xDAI Chain](protocol-developers/networks/xdai-chain.md)
+  * [Gnosis Chain](protocol-developers/networks/xdai-chain.md)
   * [Polygon (Matic)](protocol-developers/networks/polygon-network-matic.md)
 
 ## Protocol Overview

@@ -1,12 +1,12 @@
 ---
-description: Using Superfluid on xDAI Chain
+description: Using Superfluid on Gnosis Chain (formerly xDAI)
 ---
 
-# xDAI Chain
+# Gnosis Chain
 
-To use Superfluid with xDAI chain, you'll need a RPC URL to connect your metamask or application to a xDAI node.
+To use Superfluid with Gnosis chain, you'll need a RPC URL to connect your metamask or application to a Gnosis Chain node.
 
-> If you want to learn more about xDAI network, such as websocket connections, the full documentation is here: [https://www.xdaichain.com/](https://www.xdaichain.com)
+> If you want to learn more about Gnosis Chain, such as websocket connections, the full documentation is here: [https://www.xdaichain.com/](https://www.xdaichain.com)
 
 _Easy button coming soon_! Until then, you'll need to add this information manually to Metamask. Click the network button at the top and select **Custom RPC**.
 
