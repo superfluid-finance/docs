@@ -8,9 +8,9 @@ description: Superfluid contract addresses for all networks
 
 {% tabs %}
 {% tab title="Polygon" %}
-#### ​​ ❓See [Polygon (Matic)](polygon-network-matic.md) for more help
+**​​ ❓See** [**Polygon (Matic)**](polygon-network-matic.md) **for more help**
 
-#### Framework
+**Framework**
 
 | Resource                                                                                          | Address                                    |
 | ------------------------------------------------------------------------------------------------- | ------------------------------------------ |
@@ -22,7 +22,7 @@ description: Superfluid contract addresses for all networks
 | [SuperfluidLoader v1](https://polygonscan.com/address/0x15F0Ca26781C3852f8166eD2ebce5D18265cceb7) | 0x15F0Ca26781C3852f8166eD2ebce5D18265cceb7 |
 | [TOGA](https://polygonscan.com/address/0x6AEAeE5Fd4D05A741723D752D30EE4D72690A8f7)                | 0x6AEAeE5Fd4D05A741723D752D30EE4D72690A8f7 |
 
-#### Tokens
+**Tokens**
 
 | Resource                                                                                         | Address                                    |
 | ------------------------------------------------------------------------------------------------ | ------------------------------------------ |
@@ -38,10 +38,10 @@ description: Superfluid contract addresses for all networks
 | [WBTCx](https://polygonscan.com/address/0x4086eBf75233e8492F1BCDa41C7f2A8288c2fB92)              | 0x4086eBf75233e8492F1BCDa41C7f2A8288c2fB92 |
 {% endtab %}
 
-{% tab title="xDAI" %}
-#### ​​ ​​ ❓ See [xDAI Chain](xdai-chain.md) for more help
+{% tab title="Gnosis CHain" %}
+**​​ ​​ ❓ See** [**Gnosis Chain**](xdai-chain.md) **for more help**
 
-#### Framework
+**Framework**
 
 | Resource                                                                                                      | Address                                    |
 | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
@@ -51,9 +51,9 @@ description: Superfluid contract addresses for all networks
 | [IDAv1](https://blockscout.com/poa/xdai/address/0x7888ac96F987Eb10E291F34851ae0266eF912081)                   | 0x7888ac96F987Eb10E291F34851ae0266eF912081 |
 | [SuperTokenFactory](https://blockscout.com/xdai/mainnet/address/0x23410e2659380784498509698ed70E414D384880)   | 0x23410e2659380784498509698ed70E414D384880 |
 | [SuperfluidLoader v1](https://blockscout.com/xdai/mainnet/address/0x21d4E9fbB9DB742E6ef4f29d189a7C18B0b59136) | 0x21d4E9fbB9DB742E6ef4f29d189a7C18B0b59136 |
-| [TOGA](https://blockscout.com/xdai/mainnet/address/0xb7DE52F4281a7a276E18C40F94cd93159C4A2d22/contracts)    | 0xb7DE52F4281a7a276E18C40F94cd93159C4A2d22 |
+| [TOGA](https://blockscout.com/xdai/mainnet/address/0xb7DE52F4281a7a276E18C40F94cd93159C4A2d22/contracts)      | 0xb7DE52F4281a7a276E18C40F94cd93159C4A2d22 |
 
-#### Tokens
+**Tokens**
 
 | Resource                                                                                        | Address                                    |
 | ----------------------------------------------------------------------------------------------- | ------------------------------------------ |
@@ -68,7 +68,7 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 
 {% tabs %}
 {% tab title="Goerli" %}
-#### Framework
+**Framework**
 
 | Resource                                                                                                 |                   Address                  |
 | -------------------------------------------------------------------------------------------------------- | :----------------------------------------: |
@@ -80,7 +80,7 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 | [SuperfluidLoader v1](https://goerli.etherscan.io/address/0x74d860243Ff08A243d5485899f343117EbDa6eA8)    | 0x74d860243Ff08A243d5485899f343117EbDa6eA8 |
 | [TOGA](https://goerli.etherscan.io/address/0xa54FC15FC75693447d70a57262F37a70B614721b)                   | 0xa54FC15FC75693447d70a57262F37a70B614721b |
 
-#### Tokens
+**Tokens**
 
 | Resource                                                                                |                   Address                  |
 | --------------------------------------------------------------------------------------- | :----------------------------------------: |
@@ -94,7 +94,7 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 {% endtab %}
 
 {% tab title="Kovan" %}
-#### Framework
+**Framework**
 
 | Resource                                                                                             |                   Address                  |
 | ---------------------------------------------------------------------------------------------------- | :----------------------------------------: |
@@ -105,7 +105,7 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 | [SuperTokenFactory](https://kovan.etherscan.io/address/0xF5F666AC8F581bAef8dC36C7C8828303Bd4F8561)   | 0xF5F666AC8F581bAef8dC36C7C8828303Bd4F8561 |
 | [SuperfluidLoader v1](https://kovan.etherscan.io/address/0x9F73208FAFf97465CEC27fd93F10EB3D78289339) | 0x9F73208FAFf97465CEC27fd93F10EB3D78289339 |
 
-#### Tokens
+**Tokens**
 
 | Resource                                                                                |                   Address                  |
 | --------------------------------------------------------------------------------------- | :----------------------------------------: |
@@ -119,7 +119,7 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 {% endtab %}
 
 {% tab title="Rinkeby" %}
-#### Framework
+**Framework**
 
 | Resource                                                                                               |                   Address                  |
 | ------------------------------------------------------------------------------------------------------ | :----------------------------------------: |
@@ -130,7 +130,7 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 | [SuperTokenFactory](https://rinkeby.etherscan.io/address/0xd465e36e607d493cd4CC1e83bea275712BECd5E0)   | 0xd465e36e607d493cd4CC1e83bea275712BECd5E0 |
 | [SuperfluidLoader v1](https://rinkeby.etherscan.io/address/0x70A755e96d321dccd26111233a297095910784C7) | 0x70A755e96d321dccd26111233a297095910784C7 |
 
-#### Tokens
+**Tokens**
 
 | Resource                                                                                 |                   Address                  |
 | ---------------------------------------------------------------------------------------- | :----------------------------------------: |
@@ -144,7 +144,7 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 {% endtab %}
 
 {% tab title="Ropsten" %}
-#### Framework
+**Framework**
 
 | Resource                                                                                               |                   Address                  |
 | ------------------------------------------------------------------------------------------------------ | :----------------------------------------: |
@@ -155,7 +155,7 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 | [SuperTokenFactory](https://ropsten.etherscan.io/address/0x6FA165d10b907592779301C23C8Ac9d1F79ca930)   | 0x6FA165d10b907592779301C23C8Ac9d1F79ca930 |
 | [SuperfluidLoader v1](https://ropsten.etherscan.io/address/0x23e9A1D629AC39e60c60C7592EB12fB8247Bd52A) | 0x23e9A1D629AC39e60c60C7592EB12fB8247Bd52A |
 
-#### Tokens
+**Tokens**
 
 | Resource                                                                                 |                   Address                  |
 | ---------------------------------------------------------------------------------------- | :----------------------------------------: |
@@ -169,9 +169,9 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 {% endtab %}
 
 {% tab title="Mumbai" %}
-#### See [Polygon (Matic)](polygon-network-matic.md) for more help
+**See** [**Polygon (Matic)**](polygon-network-matic.md) **for more help**
 
-#### Framework
+**Framework**
 
 | Resource                                                                                                 |                   Address                  |
 | -------------------------------------------------------------------------------------------------------- | :----------------------------------------: |
@@ -182,7 +182,7 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 | [SuperTokenFactory](https://mumbai.polygonscan.com/address/0x200657E2f123761662567A1744f9ACAe50dF47E6)   | 0x200657E2f123761662567A1744f9ACAe50dF47E6 |
 | [SuperfluidLoader v1](https://mumbai.polygonscan.com/address/0x0d56ED56b63382B0FC964490feB9AE438B6B4b79) | 0x0d56ED56b63382B0FC964490feB9AE438B6B4b79 |
 
-#### Tokens
+**Tokens**
 
 | Resource                                                                                    |                   Address                  |
 | ------------------------------------------------------------------------------------------- | :----------------------------------------: |
@@ -195,7 +195,7 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 {% endtab %}
 
 {% tab title="Optimism Kovan" %}
-#### Framework
+**Framework**
 
 | Resource                                                                                                        |                   Address                  |
 | --------------------------------------------------------------------------------------------------------------- | :----------------------------------------: |
@@ -206,7 +206,7 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 | [SuperTokenFactory](https://kovan-optimistic.etherscan.io/address/0xB5f0501908ca8A99fD31bEFCAc1cA458F3588671)   | 0xB5f0501908ca8A99fD31bEFCAc1cA458F3588671 |
 | [SuperfluidLoader v1](https://kovan-optimistic.etherscan.io/address/0x777Be25F9fdcA87e8a0E06Ad4be93d65429FCb9f) | 0x777Be25F9fdcA87e8a0E06Ad4be93d65429FCb9f |
 
-#### Tokens
+**Tokens**
 
 | Resource                                                                                           |                   Address                  |
 | -------------------------------------------------------------------------------------------------- | :----------------------------------------: |
@@ -220,7 +220,7 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 {% endtab %}
 
 {% tab title="Arbitrum Rinkeby" %}
-#### Framework
+**Framework**
 
 Note: Arbiscan currenly lacks support for contract verification, thus not all contracts could be verified yet.
 
@@ -233,7 +233,7 @@ Note: Arbiscan currenly lacks support for contract verification, thus not all co
 | [SuperTokenFactory](https://testnet.arbiscan.io/address/0xc11eC618c1d559705E853741e366663Fe9302362)   | 0xc11eC618c1d559705E853741e366663Fe9302362 |
 | [SuperfluidLoader v1](https://testnet.arbiscan.io/address/0x777Be25F9fdcA87e8a0E06Ad4be93d65429FCb9f) | 0x777Be25F9fdcA87e8a0E06Ad4be93d65429FCb9f |
 
-#### Tokens
+**Tokens**
 
 | Resource                                                                                 |                   Address                  |
 | ---------------------------------------------------------------------------------------- | :----------------------------------------: |
@@ -247,7 +247,7 @@ Note: Arbiscan currenly lacks support for contract verification, thus not all co
 {% endtab %}
 
 {% tab title="Avalanche Fuji" %}
-#### Framework
+**Framework**
 
 | Resource                                                                                               |                   Address                  |
 | ------------------------------------------------------------------------------------------------------ | :----------------------------------------: |
@@ -258,7 +258,7 @@ Note: Arbiscan currenly lacks support for contract verification, thus not all co
 | [SuperTokenFactory](https://testnet.snowtrace.io/address/0xA25dbEa94C5824892006b30a629213E7Bf238624)   | 0xA25dbEa94C5824892006b30a629213E7Bf238624 |
 | [SuperfluidLoader v1](https://testnet.snowtrace.io/address/0x777Be25F9fdcA87e8a0E06Ad4be93d65429FCb9f) | 0x777Be25F9fdcA87e8a0E06Ad4be93d65429FCb9f |
 
-#### Tokens
+**Tokens**
 
 | Resource                                                                                  |                   Address                  |
 | ----------------------------------------------------------------------------------------- | :----------------------------------------: |
