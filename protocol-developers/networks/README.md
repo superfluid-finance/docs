@@ -38,7 +38,7 @@ description: Superfluid contract addresses for all networks
 | [WBTCx](https://polygonscan.com/address/0x4086eBf75233e8492F1BCDa41C7f2A8288c2fB92)              | 0x4086eBf75233e8492F1BCDa41C7f2A8288c2fB92 |
 {% endtab %}
 
-{% tab title="Gnosis CHain" %}
+{% tab title="Gnosis Chain" %}
 **​​ ​​ ❓ See** [**Gnosis Chain**](xdai-chain.md) **for more help**
 
 **Framework**
