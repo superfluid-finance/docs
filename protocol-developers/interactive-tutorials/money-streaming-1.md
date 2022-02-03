@@ -30,7 +30,7 @@ Delete a flow
 
 ### Metamask/Web3Provider Example
 
-In the previous 3 examples, we demonstrated usage of the sdk with an unlocked account. You can also use a browser wallet with the sdk. Here's an example of how you can use a connected wallet address with Superfluid.
+In the previous 3 examples, we demonstrated usage of the SDK with an unlocked account. You can also use a browser wallet with the SDK. Here's an example of how you can use a connected wallet address with Superfluid.
 
 {% embed url="https://codesandbox.io/embed/cfa-createflow-metamask-i3fo4?expanddevtools=1&fontsize=14&hidenavigation=1&module=%2Fsrc%2FCreateFlow.js&theme=dark&view=split" %}
 
