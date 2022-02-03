@@ -13,16 +13,12 @@ Creating a flow requires you to call `sf.cfaV1.createFlow()` and pass in the sen
 See below for an example of how this works. You can enter your own Ethereum address and `flowRate` (i.e. how much DAIx you want to send in in wei/second) to send yourself a stream of DAIx. Scroll down in the React App page (on the right side of the screen below) to see your flowRate converted into DAIx per month.
 
 {% embed url="https://codesandbox.io/embed/cfa-createflow-walkthrough-ougpu?expanddevtools=1&fontsize=14&hidenavigation=1&module=%2Fsrc%2FCreateFlow.js&theme=dark&view=split" %}
-Creating a flow
-{% endembed %}
 
 ### Updating a Flow
 
 Updating a flow is very similar to creating one. You'll need to pass the same parameters that you passed in the create flow function to `sf.cfaV1.updateFlow()`- except this time you'll need to pass in a new `flowRate`. If you attempt to use the same `flowRate`, or if you try to edit a stream which does not currently exist, this function will revert. Give it a try:
 
 {% embed url="https://codesandbox.io/embed/cfa-updateflow-walkthrough-9v6rj?expanddevtools=1&fontsize=14&hidenavigation=1&module=%2Fsrc%2FUpdateFlow.js&theme=dark&view=split" %}
-Update a flow
-{% endembed %}
 
 ### Deleting a Flow
 
@@ -36,11 +32,9 @@ Delete a flow
 
 A money stream (or 'flow' - you'll see these terms used interchangeably) is a continuous stream of funds sent from one account to another. You can open up a stream by passing a few arguments to the `sf.cfaV1.createFlow()` function within our SDK:
 
-`sender` - the sender of the money stream (this should be the `msg.sender` of the transaction)
+`flowRate` - the amount of tokens being streamed per second, denominated in wei (i.e. with 18 decimals)
 
 `receiver` - the recipient of the money stream
-
-`flowRate` - the amount of tokens being streamed per second, denominated in wei (i.e. with 18 decimals)
 
 `superToken` - the token being streamed
 
