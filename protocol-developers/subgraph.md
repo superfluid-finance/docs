@@ -23,8 +23,8 @@ Click a link to start testing queries in the playground:
 ## Resources
 
 * :star:**New to GraphQL required reading** - [https://graphql.org/learn/](https://graphql.org/learn/) &#x20;
-* **How to make subgraph queries** - [https://thegraph.com/docs/graphql-api#queries](https://thegraph.com/docs/graphql-api#queries)
-* **Deploy your own subgraph -** [https://thegraph.com/docs/deploy-a-subgraph#create-a-graph-explorer-account](https://thegraph.com/docs/deploy-a-subgraph#create-a-graph-explorer-account)
+* **How to make subgraph queries** - [https://thegraph.com/docs/en/developer/query-the-graph/](https://thegraph.com/docs/en/developer/query-the-graph/)
+* **Deploy your own subgraph -** [https://thegraph.com/docs/en/developer/create-subgraph-hosted/](https://thegraph.com/docs/en/developer/create-subgraph-hosted/)
 * **GraphQL Schema for Superfluid** - [https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/subgraph/schema.graphql](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/subgraph/schema.graphql)
 
 ## Contributing & Local Deployment
