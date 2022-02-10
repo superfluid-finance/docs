@@ -184,14 +184,15 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 
 **Tokens**
 
-| Resource                                                                                    |                   Address                  |
-| ------------------------------------------------------------------------------------------- | :----------------------------------------: |
-| [fDAI](https://mumbai.polygonscan.com/address/0x15F0Ca26781C3852f8166eD2ebce5D18265cceb7)   | 0x15F0Ca26781C3852f8166eD2ebce5D18265cceb7 |
-| [fUSDC](https://mumbai.polygonscan.com/address/0xbe49ac1EadAc65dccf204D4Df81d650B50122aB2)  | 0xbe49ac1EadAc65dccf204D4Df81d650B50122aB2 |
-| [fTUSD](https://mumbai.polygonscan.com/address/0xA794C9ee519FD31BbCE643e8D8138f735E97D1DB)  | 0xA794C9ee519FD31BbCE643e8D8138f735E97D1DB |
-| [fDAIx](https://mumbai.polygonscan.com/address/0x5D8B4C2554aeB7e86F387B4d6c00Ac33499Ed01f)  | 0x5D8B4C2554aeB7e86F387B4d6c00Ac33499Ed01f |
-| [fUSDCx](https://mumbai.polygonscan.com/address/0x42bb40bF79730451B11f6De1CbA222F17b87Afd7) | 0x42bb40bF79730451B11f6De1CbA222F17b87Afd7 |
-| [fTUSDx](https://mumbai.polygonscan.com/address/0x918E0d5C96cAC79674E2D38066651212be3C9C48) | 0x918E0d5C96cAC79674E2D38066651212be3C9C48 |
+| Resource                                                                                         |                   Address                  |
+| ------------------------------------------------------------------------------------------------ | :----------------------------------------: |
+| [fDAI](https://mumbai.polygonscan.com/address/0x15F0Ca26781C3852f8166eD2ebce5D18265cceb7)        | 0x15F0Ca26781C3852f8166eD2ebce5D18265cceb7 |
+| [fUSDC](https://mumbai.polygonscan.com/address/0xbe49ac1EadAc65dccf204D4Df81d650B50122aB2)       | 0xbe49ac1EadAc65dccf204D4Df81d650B50122aB2 |
+| [fTUSD](https://mumbai.polygonscan.com/address/0xA794C9ee519FD31BbCE643e8D8138f735E97D1DB)       | 0xA794C9ee519FD31BbCE643e8D8138f735E97D1DB |
+| [MATICx](https://mumbai.polygonscan.com/address/0x96B82B65ACF7072eFEb00502F45757F254c2a0D4#code) | 0x96B82B65ACF7072eFEb00502F45757F254c2a0D4 |
+| [fDAIx](https://mumbai.polygonscan.com/address/0x5D8B4C2554aeB7e86F387B4d6c00Ac33499Ed01f)       | 0x5D8B4C2554aeB7e86F387B4d6c00Ac33499Ed01f |
+| [fUSDCx](https://mumbai.polygonscan.com/address/0x42bb40bF79730451B11f6De1CbA222F17b87Afd7)      | 0x42bb40bF79730451B11f6De1CbA222F17b87Afd7 |
+| [fTUSDx](https://mumbai.polygonscan.com/address/0x918E0d5C96cAC79674E2D38066651212be3C9C48)      | 0x918E0d5C96cAC79674E2D38066651212be3C9C48 |
 {% endtab %}
 
 {% tab title="Optimism Kovan" %}
