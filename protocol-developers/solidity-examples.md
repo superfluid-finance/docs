@@ -20,13 +20,13 @@ Here's an example of how this looks in action when interacting with the constant
 
 ```
 //creating a flow in pure solidity
-_host.callAgreement(
+host.callAgreement(
     cfa,
     abi.encodeWithSelector(
         cfa.createFlow.selector,
         token,
         receiver,
-        flowRate
+        flowRate,
         new bytes(0) // placeholder - always pass in bytes(0)
     ),
     "0x" //userData
