@@ -6,21 +6,16 @@ description: Deploying Super Apps and the Superfluid Framework
 
 ## Testing
 
-### Hardhat
+### Truffle/Hardhat
 
-Website: [https://hardhat.org/](https://hardhat.org)
+The `@superfluid-finance/ethereum-contracts` package includes helpful scripts for deploying the framework using Truffle + Ganache. These deployment scripts can also be used within a Hardhat environment. You can find examples for writing tests using the Superfluid SDK core in our examples repository:
 
-Docs: [https://hardhat.org/getting-started/](https://hardhat.org/getting-started/)
-
-🚧 Docs Under Construction. More coming soon 🚧 
-
-### Truffle
-
-> :warning:  New developers are recommended to use Hardhat instead of Truffle.
-
-The `@superfluid-finance/ethereum-contracts` package includes helpful scripts for deploying the framework using Truffle + Ganache. 
+* [Hardhat Example](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/examples/tradeable-cashflow-hardhat/test/TradeableCashflow.test.js)
+* [Truffle Example](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/examples/tradeable-cashflow-truffle/test/TradeableCashflow.test.js)&#x20;
 
 ```javascript
+//example truffle test setup
+
 const deployFramework = require("@superfluid-finance/ethereum-contracts/scripts/deploy-framework");
 const deployTestToken = require("@superfluid-finance/ethereum-contracts/scripts/deploy-test-token");
 const deploySuperToken = require("@superfluid-finance/ethereum-contracts/scripts/deploy-super-token");
@@ -51,7 +46,7 @@ contract("My Test", accounts => {
 
 ## Production
 
-Anyone can deploy the Superfluid Framework contracts to any EVM compatible network using the Superfluid Protocol Deployment Guide (link to be released). Potential candidates for production deployment include:
+Anyone can deploy the Superfluid Framework contracts to any EVM compatible network using the [Superfluid Protocol Deployment Guide](https://github.com/superfluid-finance/protocol-monorepo/wiki/Framework-Deployment-Guide). Potential candidates for production deployment include:
 
 * xDAI Chain
 * Polygon Network (Matic)

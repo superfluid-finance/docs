@@ -1,180 +1,8 @@
 ---
-description: Including additional metadata in your Super Apps
+description: Create Your Own NFT Billboard with User Data
 ---
 
-# User Data
-
-Another powerful component of the Superfluid protocol is the ability to pass in additional user data along with your calls to super agreements. Think of it like metadata that can accompany your streams or IDAs 😎
-
-Before we look at user data, let's take a quick dive into a new element: **Context**.
-
-Context is used for several key items within the Superfluid protocol such as gas optimization, governance, security, and SuperApp callbacks. One parameter that's also available for use within the context field is userData.
-
-This is from the host interface ([ISuperfluid.sol)](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/interfaces/superfluid/ISuperfluid.sol) file inside of our interfaces folder in the Superfluid repo. On line 21, we see `userData`.
-
-```
-
-struct Context {
-        //
-        // Call context
-        //
-        // callback level
-        uint8 appLevel;
-        // type of call
-        uint8 callType;
-        // the system timestsamp
-        uint256 timestamp;
-        // The intended message sender for the call
-        address msgSender;
-
-        //
-        // Callback context
-        //
-        // For callbacks it is used to know which agreement function selector is called
-        bytes4 agreementSelector;
-        // User provided data for app callbacks
-        bytes userData;
-
-        //
-        // App context
-        //
-        // app allowance granted
-        uint256 appAllowanceGranted;
-        // app allowance wanted by the app callback
-        uint256 appAllowanceWanted;
-        // app allowance used, allowing negative values over a callback session
-        int256 appAllowanceUsed;
-        // app address
-        address appAddress;
-        // app allowance in super token
-        ISuperfluidToken appAllowanceToken;
-    }
-
-```
-
-Whenever you see `ctx` being moved around within the protocol, this struct is what's under the hood (it's just compiled down to bytes each time it's passed between functions).
-
-As you can see, `userData` is one of the elements that makes up `Context`. For the sake of this tutorial, we're going to focus exclusively on **`userData`** for the time being.
-
-#### Quick Review: How Are Super Agreements Called Again?
-
-To call a function in a Super Agreement, you first need to use `abi.encode` to compile a function call to the super agreement you're looking to trigger. Then, you need to pass the agreement type, the bytecode of the previously compiled function call, and `userData` to `callAgreement` (we'll get to userData next). The whole process looks like this:
-
-```
-//solidity
-//Matic Addresses for host and cfa
-
-ISuperfluid host = "0x3E14dC1b13c488a8d5D310918780c983bD5982E7";
-IConstantFlowAgreementV1 cfa = "0x6EeE6060f715257b970700bc2656De21dEdF074C";
-//DAIx
-ISuperToken acceptedToken = "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063";
-//empty user data
-bytes userData = "0x";
-
-//$1000 DAI per month
-int96 flowRate = "385802469135802";
-
-//receiver is arbitrary
-address receiver = "0x...";
-
-host.callAgreement(
-     cfa,
-     abi.encodeWithSelector(
-         cfa.createFlow.selector,
-         acceptedToken,
-				 receiver
-         flowRate,
-         new bytes(0) // placeholder
-     ),
-     userData,
-);
-```
-
-> **Note**: `userData` is always passed into `callAgreement` as type `bytes` .&#x20;
-
-```
-//solidity 
-//call agreement interface
-function callAgreement(
-         ISuperAgreement agreementClass,
-         bytes calldata callData,
-         bytes calldata userData
-     )
-        external
-        //cleanCtx
-        returns(bytes memory returnedData);
-```
-
-Behind the scenes, your `userData` variable is appended onto `Context`, which is then available to you as a developer in the SuperApp callbacks.
-
-When you execute an operation in the CFA contract for example (and create, update, or delete a flow), you'll have access to the Context that's available after the initial call to the protocol was made. For example, if I pass in `userData` when a create a flow into a Super App, I can decode the `context` & this user data inside any of the super app callbacks, and re-use or manipulate this data as I please. For example, if I send a transaction where `receiver` is a SuperApp, and pass along an encoded string 'hello sir' as `userData`:
-
-```
-//solidity
-string unformattedUserData = 'hello sir';
-bytes userData = abi.encode(unformattedUserData);
-
-
-host.callAgreement(
-     cfa,
-     abi.encodeWithSelector(
-         cfa.createFlow.selector,
-         acceptedToken,
-         //receiver is a super app...
-	 receiver
-         flowRate,
-         new bytes(0) // placeholder
-     ),
-     userData,
-);
-```
-
-I can decode the context that's passed into the callback, which will give me the Context struct displayed above. Then, since userData is one of the fields on the struct, we can abi.decode userData get back my value of 'hello sir' on the other side:
-
-```
-//inside of the afterAgreementCreated Super App Callback
-
-function afterAgreementCreated(
-        ISuperToken _superToken,
-        address _agreementClass,
-        bytes32, // _agreementId,
-        bytes calldata /*_agreementData*/,
-        bytes calldata ,// _cbdata,
-        bytes calldata _ctx
-    )
-        external override
-        onlyExpected(_superToken, _agreementClass)
-        onlyHost
-        returns (bytes memory newCtx)
-    {
-        
-        // decode Contex - this will return the entire Context struct
-        ISuperfluid.Context memory decompiledContext = _host.decodeCtx(_ctx);
-
-				//userData is a one of the fields on the Context struct
-	      //set decodedUserData variable to decoded value
-
-				//this will return 'hello sir'
-        decodedUserData = abi.decode(decompiledContext.userData, (string));
-        
-				//do some stuff with your decodedUserData
-        return _doSomeStuff(decodedUserData);
-    }
-```
-
-UserData can be _any_ arbitrary piece of data. Think of it as metadata that's associated with anything you do in a Super Agreement.
-
-This metadata could be used for a wide variety of use cases:
-
-* You could pass in data to accompany a salary or payment stream - perhaps employee info or product info
-* You can send a message along with your distribution in an instant distribution agreement
-* You could even pass in the bytecode for another entire smart contract.
-
-We invite you to be creative with this!
-
-Next up: a tutorial on how to leverage UserData within your applications.
-
-
+# NFT Billboard Example
 
 ### Build an NFT Billboard with Superfluid UserData
 
@@ -184,7 +12,7 @@ In this tutorial, we make a small tweak to the contracts used in the TradeableCa
 
 Our dapp will turn the TradeableCashflow into a tradeable NFT billboard that can be rented with streams. The message displayed on our billboard will be the parameter passed in as userData. If the billboard is traded, all rental cashflows will be redirected toward the new owner.
 
-![This tutorial is most certainly NOT investment advice, but we'll assume that someone out there will want others to HODL their favorite assets...a decent use case for a billboard](<../../.gitbook/assets/Screen Shot 2021-10-13 at 8.34.19 PM.png>)
+![This tutorial is most certainly NOT investment advice, but we'll assume that someone out there will want others to HODL their favorite assets...a decent use case for a billboard](<../../../.gitbook/assets/Screen Shot 2021-10-13 at 8.34.19 PM.png>)
 
 You can follow along with the video version of this tutorial on Youtube, and fork the repo here as well:
 
@@ -194,9 +22,9 @@ You can follow along with the video version of this tutorial on Youtube, and for
 
 Before we get started with project setup, you'll also want to head over to the [Superfluid Dashboard](http://app.superfluid.finance) to claim testnet Super DAI (fDAIx) in at least one account on the network you'd like to use for the tutorial (I would suggest claiming these tokens on Mumbai, the Matic Testnet). To claim test DAI, you can head to the currencies tab in the dashboard and click the plus button on the far right in the DAI row to get your hands on some test Super DAIx.
 
-![](<../../.gitbook/assets/Screen Shot 2021-10-16 at 8.45.29 AM.png>)
+![](<../../../.gitbook/assets/Screen Shot 2021-10-16 at 8.45.29 AM.png>)
 
-![](<../../.gitbook/assets/Screen Shot 2021-10-15 at 11.24.31 AM (2).png>)
+![](<../../../.gitbook/assets/Screen Shot 2021-10-15 at 11.24.31 AM (1) (1).png>)
 
 You'll want to have 2 Ethereum addresses ready: one of which you'll need your private key for (that has our test tokens), the other which we'll just be observing.
 
@@ -204,9 +32,9 @@ You'll want to have 2 Ethereum addresses ready: one of which you'll need your pr
 
 #### Scaffold-Eth and Hardhat Configuration
 
-![](<../../.gitbook/assets/Screen Shot 2021-10-14 at 10.48.18 AM (1).png>)
+![](<../../../.gitbook/assets/Screen Shot 2021-10-14 at 10.48.18 AM (1).png>)
 
-![To get your URL, click on your project, select 'View Key' and copy the HTTP URL.](<../../.gitbook/assets/Screen Shot 2021-10-14 at 10.49.45 AM.png>)
+![To get your URL, click on your project, select 'View Key' and copy the HTTP URL.](<../../../.gitbook/assets/Screen Shot 2021-10-14 at 10.49.45 AM.png>)
 
 You'll want to create a new .env file and put this URL there - in my case I've called it `MUMBAI_ALCHEMY_URL`.
 

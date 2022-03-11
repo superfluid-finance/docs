@@ -28,7 +28,7 @@ If you'd like to interact with a Superfluid agreement directly by using solidity
 
 **`bytes memory calldata`** - the transaction you're calling on the agreement you're interacting with, compiled to bytecode (using one of solidity's [encoding methods](https://docs.soliditylang.org/en/v0.8.10/abi-spec.html#argument-encoding))
 
-**`bytes memory userData`** - any additional data you'd like to include with your function call. If you don't plan to add userData, you can pass in an empty bytes value (i.e. `"0x"`). You can learn more about this parameter [here](guides/user-data.md).
+**`bytes memory userData`** - any additional data you'd like to include with your function call. If you don't plan to add userData, you can pass in an empty bytes value (i.e. `"0x"`). You can learn more about this parameter [here](guides/user-data/).
 
 Here's an example of how this looks in action when interacting with the constant flow agreement. This pattern will be the same whether you're creating, updating, or deleting flows.
 
@@ -141,7 +141,7 @@ However, it's worth noting that the parameters passed to each function in the li
 
 **`flowRate`** - an `int96` variable which represents the total amount of the `token` you'd like to send per second, denominated in `wei`
 
-**`userData`** - an optional `bytes` value which represents additional data you'd like to pass along with your function call. You can learn more about user data [here](guides/user-data.md).
+**`userData`** - an optional `bytes` value which represents additional data you'd like to pass along with your function call. You can learn more about user data [here](guides/user-data/).
 
 ### Using the CFA Library inside of a Super App
 

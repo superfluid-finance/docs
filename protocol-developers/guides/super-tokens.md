@@ -74,7 +74,7 @@ exec scripts/deploy-unlisted-super-token.js : \
 
 A Custom Super Token is a Super Token which typically does not have an underlying asset or downgraded version of the token. For example, DAI can be upgraded or downgraded since it is an ERC20 Wrapper Super Token, however the SODA token used in the [🥤Soda Machine](../../resources/examples/soda-machine.md) example cannot be downgraded, since it is a Custom Super Token.
 
-![](<../../.gitbook/assets/image (26) (2).png>)
+![](<../../.gitbook/assets/image (26) (1).png>)
 
 Custom Super Tokens are ERC777 and ERC20 compliant, so they can still interact with all your favorite Defi protocols. We haven't tested every use-case yet, so if you find something doesn't work we'd love to hear about it!
 
@@ -123,8 +123,6 @@ There are a couple scenarios when a Super Token might fall in-between an ERC20 W
 
 If we're being technical about it, SETH would ultimately be considered a Custom Super Token. Are there any other edge-cases you can think of? Let us know!
 
-
-
 ### Deploy a Custom Super Token
 
 If you'd like to deploy a Custom Super Token you can use the [NativeSuperToken.sol](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/tokens/NativeSuperToken.sol) contract and the [deployment script](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/scripts/deploy-native-super-token.js). Also check out the [🥤Soda Machine](../../resources/examples/soda-machine.md) for an example of a Native Super Token deployed with a Super App. We will add documenation as more community members deploy Custom Super Tokens.
@@ -133,16 +131,14 @@ If you'd like to deploy a Custom Super Token you can use the [NativeSuperToken.s
 
 In order for your token to appear in the Superfluid Dashboard, you can complete this [form](https://www.notion.so/Add-New-Tokens-to-Superfluid-8464f8c116c24cd6a0c5cb4f4174bb2d).
 
-
-
 ## Working with Super Tokens
 
 As Super Tokens are ERC20, they are, generally speaking, backward compatible with the Ethereum infrastructure and ecosystem. You can see your balance in Metamask, transfer funds using Gnosis Safe / swap Super Tokens on Uniswap. Forward compatibility is a bit trickier. Gnosis Safe and Metamask are able to display your balance correctly when you are receiving streams, but that doesn't mean you can "stream-swap" on Uniswap!
 
 #### Tracking events
 
-Some applications (notably Etherscan) rely on `transfer` __ events to first start tracking a user's balance. For scalability reasons however, agreements can't emit `transfer` events every time a user's balance changes. This leads to certain apps not showing all of a SuperToken's holders, and on occasion showing incorrect balances.&#x20;
+Some applications (notably Etherscan) rely on `transfer` \_\_ events to first start tracking a user's balance. For scalability reasons however, agreements can't emit `transfer` events every time a user's balance changes. This leads to certain apps not showing all of a SuperToken's holders, and on occasion showing incorrect balances.
 
 In order to work around this, applications looking to support Super Tokens should look not only to `transfer` events, but also to Superfluid's `AgreementStateUpdated` event. This is triggered every time an account's state changes, which is likely to indicate a future change in their balance.
 
-Once you know you need to track an account, the best way to get an up to date balance is by calling the `balanceOf` function. As you know by now, Superfluid enables a number of new ways to move funds. Only tracking transfers won't cut it!&#x20;
+Once you know you need to track an account, the best way to get an up to date balance is by calling the `balanceOf` function. As you know by now, Superfluid enables a number of new ways to move funds. Only tracking transfers won't cut it!
