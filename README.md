@@ -4,28 +4,28 @@ description: A new DeFi primitive to automate recurring transactions and monetiz
 
 # 🌊 Superfluid
 
-### PROTOCOL OVERVIEW ⬇️
-
-{% content-ref url="protocol-overview/what-is-superfluid/" %}
-[what-is-superfluid](protocol-overview/what-is-superfluid/)
-{% endcontent-ref %}
-
 ### DEVELOPERS ⬇️
 
 {% content-ref url="protocol-developers/interactive-tutorials/" %}
 [interactive-tutorials](protocol-developers/interactive-tutorials/)
 {% endcontent-ref %}
 
-### SENTINELS ⬇️
-
-{% content-ref url="sentinels/liquidations-and-toga.md" %}
-[liquidations-and-toga.md](sentinels/liquidations-and-toga.md)
-{% endcontent-ref %}
-
 ### CONTRACT ADDRESSES
 
 {% content-ref url="protocol-developers/networks/" %}
 [networks](protocol-developers/networks/)
+{% endcontent-ref %}
+
+### PROTOCOL OVERVIEW ⬇️
+
+{% content-ref url="protocol-overview/what-is-superfluid/" %}
+[what-is-superfluid](protocol-overview/what-is-superfluid/)
+{% endcontent-ref %}
+
+### SENTINELS ⬇️
+
+{% content-ref url="sentinels/liquidations-and-toga.md" %}
+[liquidations-and-toga.md](sentinels/liquidations-and-toga.md)
 {% endcontent-ref %}
 
 ### CONNECT TO XDAI, POLYGON, ETC.
