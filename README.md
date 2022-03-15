@@ -10,7 +10,7 @@ description: A new DeFi primitive to automate recurring transactions and monetiz
 [interactive-tutorials](protocol-developers/interactive-tutorials/)
 {% endcontent-ref %}
 
-### CONTRACT ADDRESSES
+### CONTRACT ADDRESSES ⬇️
 
 {% content-ref url="protocol-developers/networks/" %}
 [networks](protocol-developers/networks/)
