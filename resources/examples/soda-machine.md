@@ -34,7 +34,7 @@ Before starting you should:&#x20;
 
 Click this link to load the contracts in Remix:
 
-{% embed url="https://remix.ethereum.org/#version=soljson-v0.7.6+commit.7338295f.js&optimize=false&runs=200&gist=4669f393d5b9cc199c88ab6e9c68686f" %}
+{% embed url="https://remix.ethereum.org/#version=soljson-v0.8.0+commit.c7dfd78e.js&optimize=false&runs=200&gist=6cce7f9c25bf304ee4f5f40f3f1f857c&evmVersion=null" %}
 
 Select and deploy **Example.sol** on Goerli network using the following parameters:
 
