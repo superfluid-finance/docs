@@ -45,6 +45,7 @@
 ## Sentinels
 
 * [🥅 Liquidations & TOGA](sentinels/liquidations-and-toga.md)
+* [🛡 Running a Sentinel](sentinels/running-a-sentinel.md)
 
 ## Resources
 
