@@ -4,11 +4,7 @@ description: Using Superfluid on Gnosis Chain (formerly xDAI)
 
 # Gnosis Chain
 
-To use Superfluid with Gnosis chain, you'll need a RPC URL to connect your metamask or application to a Gnosis Chain node.
-
-> If you want to learn more about Gnosis Chain, such as websocket connections, the full documentation is here: [https://www.xdaichain.com/](https://www.xdaichain.com)
-
-_Easy button coming soon_! Until then, you'll need to add this information manually to Metamask. Click the network button at the top and select **Custom RPC**.
+[PreviousOptimism](https://app.gitbook.com/o/-MKEeXlqDp8Or6mOgLxr/s/-MKEcOOf\_qoYMObicyRu/\~/changes/0rOM7pdOEg7biRuIynlg/protocol-developers/networks/optimism)
 
 ![](<../../.gitbook/assets/image (21).png>)
 
@@ -20,7 +16,7 @@ _Easy button coming soon_! Until then, you'll need to add this information manua
 | RPC            | **Public RPC URL:** [**https://rpc.xdaichain.com/**](https://rpc.xdaichain.com)**** |
 | Block Explorer | [https://blockscout.com/poa/xdai/](https://blockscout.com/poa/xdai/)                |
 
-###
+
 
 ### Troubleshooting
 

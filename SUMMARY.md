@@ -34,6 +34,8 @@
   * [Superfluid Console](http://console.superfluid.finance)
   * [Batch Call Resources](protocol-developers/tools/super-tokens.md)
 * [🔗 Network Directory](protocol-developers/networks/README.md)
+  * [Optimism](protocol-developers/networks/optimism.md)
+  * [Arbitrum](protocol-developers/networks/arbitrum.md)
   * [Gnosis Chain](protocol-developers/networks/xdai-chain.md)
   * [Polygon (Matic)](protocol-developers/networks/polygon-network-matic.md)
 
