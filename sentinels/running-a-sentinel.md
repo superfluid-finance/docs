@@ -14,6 +14,12 @@ In our section on [Liquidations & TOGA](liquidations-and-toga.md), we described 
 
 ## Getting Started&#x20;
 
+### Running a Sentinel - Step By Step Guide
+
+{% embed url="https://www.youtube.com/watch?t=1147s&v=COo9IoVU9A0" %}
+A Step by Step Guide to Running a Sentinel
+{% endembed %}
+
 ### Sentinel Repository
 
 If you want to start running a Sentinel today, you can clone [this repo](https://github.com/superfluid-finance/superfluid-sentinel) and customize your own `.env` file before starting the software. At minimum, you're going to need a reliable RPC URL, and a private key with native tokens to pay for gas when performing liquidations. Detailed instructions for running your Sentinel can be found in the repository's README and in the above video.
