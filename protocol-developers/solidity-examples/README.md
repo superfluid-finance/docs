@@ -11,7 +11,7 @@ Inside of the[ Interactive Tutorials](../interactive-tutorials/) section, you ca
 To get started, you'll need to be sure to import, at minimum, the Superfluid host interface & agreement interface that you'd like to work with. In a situation where you'd like to use both the CFA and IDA in the same contract, you would import these contracts like this:
 
 ```
-pragma solidity ^0.7.0
+pragma solidity ^0.8.0
 
 import { ISuperfluid }from "@superfluid-finance/ethereum-contracts/contracts/interfaces/superfluid/ISuperfluid.sol"; //"@superfluid-finance/ethereum-monorepo/packages/ethereum-contracts/contracts/interfaces/superfluid/ISuperfluid.sol";
 
@@ -19,8 +19,6 @@ import { IConstantFlowAgreementV1 } from "@superfluid-finance/ethereum-contracts
 
 import { IInstantDistributionAgreementV1 } from "@superfluid-finance/ethereum-contracts/contracts/interfaces/agreements/IInstantDistributionAgreementV1.sol";
 ```
-
-> **NOTE**: due to breaking changes in the Open Zeppelin solidity 0.8 contracts, we recommend using a version of the solidity 0.7.0 compiler for now when working with Superfluid (as of Feb 2022). This will avoid various versioning issues, particularly when using the CFALibrary which we'll outline later in this page.&#x20;
 
 If you'd like to interact with a Superfluid agreement directly by using solidity, you need to make a function call first to the Superfluid _host_ contract. You'll call the `callAgreement` or `callAgreementWithContext` function on the host contract ([`Superfluid.sol`](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/superfluid/Superfluid.sol)), and pass in a few parameters:
 

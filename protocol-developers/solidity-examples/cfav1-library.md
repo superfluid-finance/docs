@@ -15,7 +15,7 @@ The [Constant Flow Agreement library](https://github.com/superfluid-finance/prot
 
 ```
 // initializing the CFA Library
-pragma solidity ^0.7.0
+pragma solidity ^0.8.0
 
 import { 
     ISuperfluid 
