@@ -68,7 +68,7 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 
 **Framework**
 
-|                                                                                                           | Address                                    |
+| Resource                                                                                                  | Address                                    |
 | --------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
 | [Resolver](https://optimistic.etherscan.io/address/0x743B5f46BC86caF41bE4956d9275721E0531B186)            | 0x743B5f46BC86caF41bE4956d9275721E0531B186 |
 | [Host](https://optimistic.etherscan.io/address/0x567c4B141ED61923967cA25Ef4906C8781069a10)                | 0x567c4B141ED61923967cA25Ef4906C8781069a10 |
@@ -80,7 +80,8 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 {% endtab %}
 
 {% tab title="Arbitrum" %}
-**​​ ​❓ See** [**Arbitrum**](arbitrum.md) **for more help**\
+**​​ ​❓ See** [**Arbitrum**](arbitrum.md) **for more help**
+
 **Framework**
 
 | Resource                                                                                      | Address                                    |
