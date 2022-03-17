@@ -68,31 +68,30 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 
 **Framework**
 
-|                                                                                                          | Address                                    |
-| -------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
-| [Resolver](https://app.gitbook.com/o/-MKEeXlqDp8Or6mOgLxr/s/-MKEcOOf\_qoYMObicyRu/)                      | 0x743B5f46BC86caF41bE4956d9275721E0531B186 |
-| [Host](https://optimistic.etherscan.io/address/0x3024a39099d4fae7c9ea8329fafe05576aed2c00)               | 0x567c4B141ED61923967cA25Ef4906C8781069a10 |
-| [CFAv1](https://optimistic.etherscan.io/address/0x204C6f131bb7F258b2Ea1593f5309911d8E458eD)              | 0x204C6f131bb7F258b2Ea1593f5309911d8E458eD |
-| [IDAv1](https://optimistic.etherscan.io/address/0xc4ce5118C3B20950ee288f086cb7FC166d222D4c)              | 0xc4ce5118C3B20950ee288f086cb7FC166d222D4c |
-| [SuperTokenFactory](https://optimistic.etherscan.io/address/0x8276469a443d5c6b7146bed45e2abcad3b6adad9)  | 0x8276469A443D5C6B7146BED45e2abCaD3B6adad9 |
-| SuperTokenLoader v1                                                                                      | _coming soon_                              |
-| TOGA                                                                                                     | _coming soon_                              |
+|                                                                                                           | Address                                    |
+| --------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
+| [Resolver](https://optimistic.etherscan.io/address/0x743B5f46BC86caF41bE4956d9275721E0531B186)            | 0x743B5f46BC86caF41bE4956d9275721E0531B186 |
+| [Host](https://optimistic.etherscan.io/address/0x567c4B141ED61923967cA25Ef4906C8781069a10)                | 0x567c4B141ED61923967cA25Ef4906C8781069a10 |
+| [CFAv1](https://optimistic.etherscan.io/address/0x204C6f131bb7F258b2Ea1593f5309911d8E458eD)               | 0x204C6f131bb7F258b2Ea1593f5309911d8E458eD |
+| [IDAv1](https://optimistic.etherscan.io/address/0xc4ce5118C3B20950ee288f086cb7FC166d222D4c)               | 0xc4ce5118C3B20950ee288f086cb7FC166d222D4c |
+| [SuperTokenFactory](https://optimistic.etherscan.io/address/0x8276469a443d5c6b7146bed45e2abcad3b6adad9)   | 0x8276469A443D5C6B7146BED45e2abCaD3B6adad9 |
+| [SuperfluidLoader v1](https://optimistic.etherscan.io/address/0x8E310ce29Ab7Fa2878944A65BB0eaF97B1853d40) | 0x8E310ce29Ab7Fa2878944A65BB0eaF97B1853d40 |
+| [TOGA](https://optimistic.etherscan.io/address/0xA3c8502187fD7a7118eAD59dc811281448946C8f)                | 0xA3c8502187fD7a7118eAD59dc811281448946C8f |
 {% endtab %}
 
 {% tab title="Arbitrum" %}
 **​​ ​❓ See** [**Arbitrum**](arbitrum.md) **for more help**\
 **Framework**
 
-| Resource                                                                                    | Address                                    |
-| ------------------------------------------------------------------------------------------- | ------------------------------------------ |
-| [Resolver](https://arbiscan.io/address/0x609b9d9d6Ee9C3200745A79B9d3398DBd63d509F)          | 0x609b9d9d6Ee9C3200745A79B9d3398DBd63d509F |
-| [Host](https://arbiscan.io/address/0xCf8Acb4eF033efF16E8080aed4c7D5B9285D2192)              | 0xCf8Acb4eF033efF16E8080aed4c7D5B9285D2192 |
-| [CFAv1](https://arbiscan.io/address/0x731FdBB12944973B500518aea61942381d7e240D)             | 0x731FdBB12944973B500518aea61942381d7e240D |
-| [IDAv1](https://arbiscan.io/address/0x2319C7e07EB063340D2a0E36709B0D65fda75986)             | 0x2319C7e07EB063340D2a0E36709B0D65fda75986 |
-| [SuperTokenFactory](https://arbiscan.io/address/0x1C21Ead77fd45C84a4c916Db7A6635D0C6FF09D6) | 0x1C21Ead77fd45C84a4c916Db7A6635D0C6FF09D6 |
-| SuperTokenLoader v1                                                                         | _coming soon_                              |
-| TOGA                                                                                        | _coming soon_                              |
-|                                                                                             |                                            |
+| Resource                                                                                      | Address                                    |
+| --------------------------------------------------------------------------------------------- | ------------------------------------------ |
+| [Resolver](https://arbiscan.io/address/0x609b9d9d6Ee9C3200745A79B9d3398DBd63d509F)            | 0x609b9d9d6Ee9C3200745A79B9d3398DBd63d509F |
+| [Host](https://arbiscan.io/address/0xCf8Acb4eF033efF16E8080aed4c7D5B9285D2192)                | 0xCf8Acb4eF033efF16E8080aed4c7D5B9285D2192 |
+| [CFAv1](https://arbiscan.io/address/0x731FdBB12944973B500518aea61942381d7e240D)               | 0x731FdBB12944973B500518aea61942381d7e240D |
+| [IDAv1](https://arbiscan.io/address/0x2319C7e07EB063340D2a0E36709B0D65fda75986)               | 0x2319C7e07EB063340D2a0E36709B0D65fda75986 |
+| [SuperTokenFactory](https://arbiscan.io/address/0x1C21Ead77fd45C84a4c916Db7A6635D0C6FF09D6)   | 0x1C21Ead77fd45C84a4c916Db7A6635D0C6FF09D6 |
+| [SuperfluidLoader v1](https://arbiscan.io/address/0xB99cA401e10D277345BcFb281AC148a2e16Db466) | 0xB99cA401e10D277345BcFb281AC148a2e16Db466 |
+| [TOGA](https://arbiscan.io/address/0xFC63B7C762B10670Eda15cF3ca3970bCDB28C9eF)                | 0xFC63B7C762B10670Eda15cF3ca3970bCDB28C9eF |
 {% endtab %}
 {% endtabs %}
 
