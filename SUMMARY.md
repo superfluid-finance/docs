@@ -61,6 +61,6 @@
     * [🚰 Money Streaming with JS-SDK](resources/archived-tutorials-docs/frontend-+-nodejs/money-streaming-with-js-sdk.md)
     * [💰 Instant Distribution with JS-SDK](resources/archived-tutorials-docs/instant-distribution-with-js-sdk.md)
   * [Cheat Sheet](resources/archived-tutorials-docs/cheat-sheet.md)
-* [Superfluid Deployment Guide](https://www.notion.so/superfluidhq/Superfluid-Protocol-Deployment-Guide-ccbaf8f0850a48cbb06c39dc7c9ebfe4#9e9d825d63af400ebe07f33c0113bdff)
+* [Superfluid Deployment Guide](https://github.com/superfluid-finance/protocol-monorepo/wiki/Framework-Deployment-Guide/)
 * [Learn about Ethereum](resources/learn-about-ethereum.md)
 * [Code of Conduct](resources/code-of-conduct.md)
