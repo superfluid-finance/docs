@@ -1,5 +1,9 @@
 # 💰 Instant Distribution with JS-SDK
 
+> ### IMPORTANT NOTE
+>
+> The _JS-SDK is a legacy SDK_. We recommend that new developers **use the** [**SDK-Core**](../../protocol-developers/interactive-tutorials/sdk-initialization.md) **or** [**SDK-Redux.**](https://www.npmjs.com/package/@superfluid-finance/sdk-redux)****
+
 ## Introduction
 
 Let's take a look at another Superfluid Agreement. The **Instant Distribution Agreement (IDA)** can be used to make one-time-payments to multiple recipients. The IDA could be used for revenue sharing or airdrops. It consists of a **Publishing Index** with `indexId`, an `indexValue`, and one or more **subscribers**.

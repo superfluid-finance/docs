@@ -4,13 +4,15 @@ description: Using the Superfluid JS-SDK - the Precursor to the SDK-Core
 
 # 📦 @superfluid-finance/js-sdk
 
-## **Overview**
+> ### IMPORTANT NOTE
+>
+> The _JS-SDK is a legacy SDK_. We recommend that new developers **use the** [**SDK-Core**](../../protocol-developers/interactive-tutorials/sdk-initialization.md) **or** [**SDK-Redux.**](https://www.npmjs.com/package/@superfluid-finance/sdk-redux)****
+
+### **Overview**
 
 * Use `@superfluid-finance/js-sdk` with goerli testnet
 * Obtain Super Tokens
 * Check Super Token balances
-
-> **NOTE**: The JS-SDK is a legacy SDK. We recommend that new developers use the SDK-Core or SDK-Redux.
 
 ## Set up
 

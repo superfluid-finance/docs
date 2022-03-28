@@ -4,6 +4,10 @@ description: Interacting with the Constant Flow Agreement Using the JS-SDK
 
 # 🚰 Money Streaming with JS-SDK
 
+> ### IMPORTANT NOTE
+>
+> The _JS-SDK is a legacy SDK_. We recommend that new developers **use the** [**SDK-Core**](../../../protocol-developers/interactive-tutorials/sdk-initialization.md) **or** [**SDK-Redux.**](https://www.npmjs.com/package/@superfluid-finance/sdk-redux)****
+
 ## Introduction
 
 A **Constant Flow Agreement (CFA)** is a transfer of value from a `sender` to a `receiver` at a constant `flowRate` measured in _amount per second_.
