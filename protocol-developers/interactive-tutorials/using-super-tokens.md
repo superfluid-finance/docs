@@ -31,6 +31,10 @@ Each Super Token that is deployed as a wrapper around an ERC20 token will have a
 
 Some examples of native super tokens include Ricochet Exchange's [**RIC** token](https://docs.ricochet.exchange/business/usdric) and Minerva Wallet's [**MIVA** token](https://minerva.digital). You can learn more about deploying your own native super token as well as creating your own _custom_ super tokens [here](../guides/super-tokens.md).
 
+### Native Asset Super Tokens
+
+In addition to Native Super Tokens and ERC20 Wrapped Super Tokens, you can also use native assets within the protocol. There are instances of ETHx and MATICx deployed on both testnets and mainnets, and you can use them within your applications. You'll see an example of this below.
+
 ### Calling Upgrade & Downgrade to Wrap & Unwrap ERC20 Tokens
 
 You can easily wrap & unwrap ERC20 assets as super tokens using the [Superfluid dashboard](https://app.superfluid.finance/currencies), but you might want to write code to allow your users to do the same in your application. In the below examples, we show you 2 code examples which makes it easy to do this using the [Superfluid SDK-Core](https://www.npmjs.com/package/@superfluid-finance/sdk-core). We’ve used an address that is unlocked & has lots of test DAI (fDAI) and DAIx (fDAIx) tokens. Feel free to play around & use this code for testing!
@@ -53,4 +57,14 @@ Next, we can choose to unwrap our ERC20 tokens by calling `downgrade` on the sup
 
 {% embed url="https://codesandbox.io/embed/downgrade-supertokens-5mk2j?expanddevtools=1&fontsize=14&hidenavigation=1&module=%2Fsrc%2FDowngradeDAI.js&theme=dark&view=split" %}
 Downgrading your super tokens
+{% endembed %}
+
+### Upgrading Native Assets
+
+The syntax of working with these assets is a bit different than working with ERC20 Wrapper tokens. There is no underlying ERC20 contract to approve before upgrading, and, like Native Super Tokens, there's no underlying asset address. When upgrading your native assets as Super Tokens, you'll need to call a special function called `upgradeByETH` on the native asset super token contract, and pass in a `msg.value` which represents the amount of the native asset you'd like to upgrade.&#x20;
+
+In this example, we're working with ETHx on the Kovan testnet, but the syntax is nearly identical when using native assets on other networks. For example, using MATICx on Polygon or Mumbai would also require calling `upgradeByETH` on the contract and passing in the amount you'd like to upgrade as your `msg.value`. The only difference is that you'll need to change the address of ETHx/MATICx in the below example to match the deployed address. You can use the [network directory](../networks/) for this.
+
+{% embed url="https://codesandbox.io/embed/upgrade-nativeasset-supertoken-y6m4ol?expanddevtools=1&fontsize=14&hidenavigation=1&module=%2Fsrc%2FUpgradeETH.js&theme=dark&view=split" %}
+Upgrading a Native Asset
 {% endembed %}
