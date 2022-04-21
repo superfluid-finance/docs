@@ -40,7 +40,7 @@ The TOGA Dashboard
 
 Various communities are beginning to emerge around running Sentinels. If you're interested in learning more about these communities and engaging them directly, we recommend checking out the Sentinel Guild:&#x20;
 
-{% embed url="https://discord.gg/ptHwrxmA" %}
+{% embed url="https://discord.gg/ZSp99raY" %}
 
 ## Glossary of Terms:&#x20;
 
