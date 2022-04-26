@@ -6,7 +6,7 @@ description: High Level Protocol Concepts
 
 ## INTRODUCTION&#x20;
 
-Superfluid is a smart contract framework on L1 Ethereum, enabling you to move assets on-chain following predefined rules called agreements. With a single on-chain transaction, the money will flow from your wallet to the receiver in real time! No further transactions required- it works like magic ✨
+Superfluid is a smart contract framework on EVM networks, enabling you to move assets on-chain following predefined rules called agreements. With a single on-chain transaction, the money will flow from your wallet to the receiver in real time! No further transactions required- it works like magic ✨
 
 **Superfluid enables:**
 
