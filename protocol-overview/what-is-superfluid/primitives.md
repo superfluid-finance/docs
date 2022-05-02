@@ -4,7 +4,7 @@ description: The 3 major components of the Superfluid framework
 
 # 🚚 Primitives
 
-Now that you've opened your first token flow, you're hooked to learn more right? I promise I'll keep this brief so we can get back to hacking. There are three primitives of Superfluid:
+There are three primitives of Superfluid:
 
 1. Agreements
 2. Super Tokens

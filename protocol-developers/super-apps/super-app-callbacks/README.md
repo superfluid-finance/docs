@@ -2,7 +2,7 @@
 description: Making use of hooks that run before or after an agreement is called
 ---
 
-# Super App Callbacks
+# ☎ Super App Callbacks
 
 ### Super App Callbacks
 

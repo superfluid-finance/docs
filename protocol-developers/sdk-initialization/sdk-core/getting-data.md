@@ -6,7 +6,7 @@ description: How to use the Core-SDK to write subgraph queries and get account d
 
 When working on a Superfluid related application, you’ll likely need to use the graph to query data about what’s happening with your users & Superfluid agreements.
 
-Luckily, the SDK-Core has functionality which will allow you to easily query the graph to get data about accounts & their interaction with the Superfluid protocol. You can also use the CFAV1 & IDAV1 methods to get data that is specific to those agreements. In this section, we’ll show allow you to get this data. If you'd like to go deeper on the topic, we'd recommend reading through our section on the Superfluid [Subgraph](../subgraph.md).&#x20;
+Luckily, the SDK-Core has functionality which will allow you to easily query the graph to get data about accounts & their interaction with the Superfluid protocol. You can also use the CFAV1 & IDAV1 methods to get data that is specific to those agreements. In this section, we’ll show allow you to get this data. If you'd like to go deeper on the topic, we'd recommend reading through our section on the Superfluid [Subgraph](../../subgraph.md).&#x20;
 
 ## Pre-Defined Subgraph Queries
 

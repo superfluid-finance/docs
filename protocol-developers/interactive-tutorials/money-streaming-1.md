@@ -8,7 +8,7 @@ Let's walk through creating Superfluid streams using the Superfluid Core-SDK. We
 
 ### Creating a Flow
 
-Creating a flow requires you to call `sf.cfaV1.createFlow()` and pass in the sender, receiver, flowRate, and superToken. There's also an optional field you can use called `userData` - which you can learn more about [in our guide on the topic](../guides/user-data/).&#x20;
+Creating a flow requires you to call `sf.cfaV1.createFlow()` and pass in the sender, receiver, flowRate, and superToken. There's also an optional field you can use called `userData` - which you can learn more about [in our guide on the topic](../super-apps/user-data/).&#x20;
 
 See below for an example of how this works. You can enter your own Ethereum address and `flowRate` (i.e. how much DAIx you want to send in in wei/second) to send yourself a stream of DAIx. Scroll down in the React App page (on the right side of the screen below) to see your flowRate converted into DAIx per month.
 
@@ -48,7 +48,7 @@ A money stream (or 'flow' - you'll see these terms used interchangeably) is a co
 
 Once you call this function, the protocol will take a small deposit up front in escrow. On testnets, this amount is 1 hour worth of the stream, and on mainnets, it is 4 hours worth of the stream.&#x20;
 
-> **Note**: if you send funds to a 'super app' contract, these deposit amounts will double. You can learn more about this in our [Super App guide](../guides/super-app.md#super-app-deposits).&#x20;
+> **Note**: if you send funds to a 'super app' contract, these deposit amounts will double. You can learn more about this in our [Super App guide](../super-apps/super-app.md#super-app-deposits).&#x20;
 
 Once the stream is opened, it will stay open as long as the `sender` account has a balance > 0 of the `superToken` being used for the stream. If you let your balance hit zero, your deposit will be liquidated by the network, and your stream will be closed.&#x20;
 

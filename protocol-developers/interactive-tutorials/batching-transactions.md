@@ -6,7 +6,7 @@ description: Batching transactions to improve your UX
 
 ## Creating a Batch Call
 
-Another game changing feature of the Superfluid protocol is the ability to batch transactions together to improve the quality of UX for your users. We elaborate much more on batch calls inside of our [guide on the topic](../../resources/archived-tutorials-docs/batch-call.md). However, what you need to know for this interactive section is that batch calls can be created with the following operations:
+Another game changing feature of the Superfluid protocol is the ability to batch transactions together to improve the quality of UX for your users. We elaborate much more on batch calls inside of our [guide on the topic](../../resources/archived-tutorials-docs/frontend-+-nodejs/batch-call.md). However, what you need to know for this interactive section is that batch calls can be created with the following operations:
 
 | Type        |                 | Internal Call                                                                      |
 | ----------- | --------------- | ---------------------------------------------------------------------------------- |

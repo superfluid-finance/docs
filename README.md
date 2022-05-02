@@ -6,8 +6,22 @@ description: A new DeFi primitive to automate recurring transactions and monetiz
 
 ### DEVELOPERS ⬇️
 
+Looking to Jump Straight Into the Code? ⬇️
+
 {% content-ref url="protocol-developers/interactive-tutorials/" %}
 [interactive-tutorials](protocol-developers/interactive-tutorials/)
+{% endcontent-ref %}
+
+Building Smart Contracts that Interact With Superfluid? ⬇️
+
+{% content-ref url="protocol-developers/solidity-examples/" %}
+[solidity-examples](protocol-developers/solidity-examples/)
+{% endcontent-ref %}
+
+Want to Use Our SDKs? ⬇️
+
+{% content-ref url="protocol-developers/sdk-initialization/" %}
+[sdk-initialization](protocol-developers/sdk-initialization/)
 {% endcontent-ref %}
 
 ### CONTRACT ADDRESSES ⬇️

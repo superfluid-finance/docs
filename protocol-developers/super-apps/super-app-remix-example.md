@@ -2,7 +2,7 @@
 description: Using Super Apps to create a tradeable cashflow NFT
 ---
 
-# Super App Remix Example
+# 💿 Super App Remix Example
 
 A Super App can "manage" agreements and respond to changes. This is where you can write your own custom logic/behavior. In this section we will deploy a new Super App using Remix.&#x20;
 

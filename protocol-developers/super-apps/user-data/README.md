@@ -2,7 +2,7 @@
 description: Including additional metadata in your Super Apps
 ---
 
-# User Data
+# 🔢 User Data
 
 Another powerful component of the Superfluid protocol is the ability to pass in additional user data along with your calls to super agreements. Think of it like metadata that can accompany your streams or IDAs 😎
 
@@ -96,13 +96,13 @@ host.callAgreement(
 //solidity 
 //call agreement interface
 function callAgreement(
-         ISuperAgreement agreementClass,
-         bytes calldata callData,
-         bytes calldata userData
+   ISuperAgreement agreementClass,
+   bytes calldata callData,
+   bytes calldata userData
      )
-        external
-        //cleanCtx
-        returns(bytes memory returnedData);
+     external
+     //cleanCtx
+     returns(bytes memory returnedData);
 ```
 
 Behind the scenes, your `userData` variable is appended onto `Context`, which is then available to you as a developer in the SuperApp callbacks.
@@ -151,13 +151,12 @@ function afterAgreementCreated(
         // decode Contex - this will return the entire Context struct
         ISuperfluid.Context memory decompiledContext = _host.decodeCtx(_ctx);
 
-				//userData is a one of the fields on the Context struct
-	      //set decodedUserData variable to decoded value
-
-				//this will return 'hello sir'
+	//userData is a one of the fields on the Context struct
+	//set decodedUserData variable to decoded value
+	//this will return 'hello sir'
         decodedUserData = abi.decode(decompiledContext.userData, (string));
         
-				//do some stuff with your decodedUserData
+	//do some stuff with your decodedUserData
         return _doSomeStuff(decodedUserData);
     }
 ```
@@ -168,7 +167,7 @@ This metadata could be used for a wide variety of use cases:
 
 * You could pass in data to accompany a salary or payment stream - perhaps employee info or product info
 * You can send a message along with your distribution in an instant distribution agreement
-* You could even pass in the bytecode for another entire smart contract.
+* You could even pass in the byte code for another entire smart contract.
 
 We invite you to be creative with this!
 

@@ -2,7 +2,7 @@
 description: Using Super Apps To Create Programmable Cashflows
 ---
 
-# Super Apps in Depth
+# 📖 Super Apps in Depth
 
 ### **What is a Super App?**
 

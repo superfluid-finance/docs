@@ -1,8 +1,10 @@
 ---
-description: Deploying Super Apps and the Superfluid Framework
+description: >-
+  Deploying Super Apps and the Superfluid Framework Either Locally or To a New
+  Network
 ---
 
-# Deploying Contracts
+# ⚓ Deploying The Framework
 
 ## Testing
 
@@ -46,11 +48,13 @@ contract("My Test", accounts => {
 
 ## Production
 
-Anyone can deploy the Superfluid Framework contracts to any EVM compatible network using the [Superfluid Protocol Deployment Guide](https://github.com/superfluid-finance/protocol-monorepo/wiki/Framework-Deployment-Guide). Potential candidates for production deployment include:
+Anyone can deploy the Superfluid Framework contracts to any EVM compatible network using the [Superfluid Protocol Deployment Guide](https://github.com/superfluid-finance/protocol-monorepo/wiki/Framework-Deployment-Guide). The protocol is live in production on
 
-* xDAI Chain
+* Gnosis Chain
 * Polygon Network (Matic)
+* Optimism
+* Arbitrum
 
 More networks are coming soon. Please reach out to us if you want your network added!
 
-Once the contracts are deployed, ownership of the governance contracts should be transfered to a Superfluid-controlled account. This will allow the Superfluid team to manage security upgrades (if necessary), add new Agreements, and improve the core protocol. The governance process will be improved over time, as the community grows and matures.
+Once the contracts are deployed, ownership of the governance contracts should be transferred to a Superfluid-controlled account. This will allow the Superfluid team to manage security upgrades (if necessary), add new Agreements, and improve the core protocol. The governance process will be improved over time, as the community grows and matures.

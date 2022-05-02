@@ -5,7 +5,7 @@ description: >-
   library, as well as documentation for each function.
 ---
 
-# IDAv1 Library
+# 📕 IDAv1 Library
 
 ### Agreement Abstraction
 

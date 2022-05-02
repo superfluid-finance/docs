@@ -10,7 +10,7 @@ We're thrilled you're here! Here's how to navigate this Tutorials section.&#x20;
 
 ### Where to Begin?
 
-First - head to the [SDK Initialization](sdk-initialization.md) page to find the package in the [npm library](https://www.npmjs.com/package/@superfluid-finance/sdk-core) & learn how to initialize the framework. Then, answer the following questions to figure out where you should go next:&#x20;
+First - head to the [SDK Initialization](../sdk-initialization/) page to find the package in the [npm library](https://www.npmjs.com/package/@superfluid-finance/sdk-core) & learn how to initialize the framework. Then, answer the following questions to figure out where you should go next:&#x20;
 
 **Are you here to learn about creating your own Superfluid streams?**&#x20;
 
@@ -28,7 +28,7 @@ If you know your way around solidity, you can skip to the next section on [**Sol
 
 ****[**Batching Transactions**](batching-transactions.md) will help you build better UX by taking advantage of a feature in Superfluid that allows you to combine many operations into a _single transaction._
 
-****[**Getting Data**](getting-data.md) will give you the information you need to get on chain information related to Superfluid and query our subgraph using Typescript/Javascript.
+****[**Getting Data**](../sdk-initialization/sdk-core/getting-data.md) will give you the information you need to get on chain information related to Superfluid and query our subgraph using Typescript/Javascript.
 
 ### How to Get Help
 
