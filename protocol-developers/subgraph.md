@@ -26,6 +26,7 @@ Click a link to start testing queries in the playground:
 * **How to make subgraph queries** - [https://thegraph.com/docs/en/developer/query-the-graph/](https://thegraph.com/docs/en/developer/query-the-graph/)
 * **Deploy your own subgraph -** [https://thegraph.com/docs/en/developer/create-subgraph-hosted/](https://thegraph.com/docs/en/developer/create-subgraph-hosted/)
 * **GraphQL Schema for Superfluid** - [https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/subgraph/schema.graphql](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/subgraph/schema.graphql)
+* Apollo Client - for writing queries in your front end - [https://www.apollographql.com/docs/](https://www.apollographql.com/docs/)
 
 ## Contributing & Local Deployment
 
