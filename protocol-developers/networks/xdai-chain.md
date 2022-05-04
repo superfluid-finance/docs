@@ -1,12 +1,14 @@
 ---
-description: Using Superfluid on Gnosis Chain (formerly xDAI)
+description: Using Superfluid on Gnosis Chain
 ---
 
 # Gnosis Chain
 
-[PreviousOptimism](https://app.gitbook.com/o/-MKEeXlqDp8Or6mOgLxr/s/-MKEcOOf\_qoYMObicyRu/\~/changes/0rOM7pdOEg7biRuIynlg/protocol-developers/networks/optimism)
+To use Superfluid with Gnosis Chain, you'll need a RPC URL to connect your Metamask or application to an Gnosis Chain node.
 
-![](<../../.gitbook/assets/image (21).png>)
+> If you want to learn more about Gnosis, the full documentation is here: [https://www.xdaichain.com/](https://www.xdaichain.com)
+
+To add Gnosis to Metamask, you can head to your Settings in Metamask, and select Networks. Click 'Add Network,' and enter an Gnosis Chain RPC URL such as [https://dai.poa.network/](https://dai.poa.network)
 
 | NetworkName    | **xDAI**                                                                            |
 | -------------- | ----------------------------------------------------------------------------------- |

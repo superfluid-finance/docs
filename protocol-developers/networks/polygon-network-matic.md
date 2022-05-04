@@ -8,7 +8,9 @@ description: Using Superfluid on Polygon network
 
 If you want to learn more about Polygon network, such as websocket connections, the full documentation is here: [https://docs.matic.network/docs/develop/network-details/network](https://docs.matic.network/docs/develop/network-details/network)
 
-The naming can be a little confusing. "**Matic**" is used to describe the _main network_ for Polygon. The _test network_ for Polygon is called "**Mumbai**".
+The naming can be a little confusing. "**Matic**" is used to describe the _main network_ for Polygon.
+
+> If you want to learn more about Polygon, the full developer documentation is here: [https://docs.polygon.technology/](https://docs.polygon.technology)
 
 ### Matic-Mainnet
 
@@ -38,7 +40,7 @@ The public RPC is not recommended because the rate limit is not high enough to a
 
 ## Troubleshooting
 
-#### - JSON-RPC error eth_getLogs "Blockheight too far in the past"
+#### - JSON-RPC error eth\_getLogs "Blockheight too far in the past"
 
 What's happening is that the `@superfluid-finance/js-sdk` is calling too many `eth_getLogs` and hitting the maximum rate limit for your RPC connection.
 

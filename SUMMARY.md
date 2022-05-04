@@ -31,7 +31,9 @@
     * [Calling Agreements In Super Apps](protocol-developers/super-apps/super-app-callbacks/calling-agreements-in-super-apps.md)
   * [🔢 User Data](protocol-developers/super-apps/user-data/README.md)
     * [NFT Billboard Example](protocol-developers/super-apps/user-data/nft-billboard-example.md)
-* [🪙 Super Tokens](protocol-developers/super-tokens.md)
+* [🪙 Super Tokens](protocol-developers/super-tokens/README.md)
+  * [🎁 ERC20 Wrapper Tokens](protocol-developers/super-tokens/erc20-wrapper-tokens.md)
+  * [💎 Custom Super Tokens](protocol-developers/super-tokens/custom-super-tokens.md)
 * [🖥 Subgraph](protocol-developers/subgraph.md)
 * [🔧 Tools](protocol-developers/tools/README.md)
   * [Resolver](protocol-developers/tools/resolver.md)
@@ -54,7 +56,7 @@
 
 ## Resources
 
-* [🛠 Example Projects](resources/examples.md)
+* [🛠 Example Projects](resources/examples/README.md)
 * [👷 Ecosystem](resources/ecosystem/README.md)
   * [🏗 Hack Ideas!](https://www.notion.so/Hack-On-Superfluid-92f7cb4ccf264518814d54d50f067ac1)
 * [🎥 Videos](resources/videos.md)

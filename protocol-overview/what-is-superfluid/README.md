@@ -25,4 +25,4 @@ The current version of Superfluid is composed of the following key elements:
 * _**Super Token Framework**_**:** an extended [ERC-777](https://eips.ethereum.org/EIPS/eip-777) implementation with real-time finance capability, and a registry.
 * _**Batch Call & Meta Tx**_**:** for users (contracts or EOA) to interact with the system in batch on-chain, or off-chain through meta transactions.
 * _**Governance**_**:** an external contract for managing protocol parameters and contract upgrades.
-* _**Solvency Agents**_**:** an off-chain network of agents ensuring the solvency of the system. [Read more](../../protocol-developers/super-tokens.md)
+* _**Solvency Agents**_**:** an off-chain network of agents ensuring the solvency of the system. [Read more](../../protocol-developers/super-tokens/)

@@ -47,10 +47,6 @@ Now for the really juicy stuff! A Superfluid App or "Super App" is a contract th
 * If a user starts a token flow to the contract, automatically flow another token back using the CFA.&#x20;
 * If a user calls `buyShares`, distribute the ETH to all current shareholders using the IDA.
 
-> See more examples and ideas in [🛠️ Examples](../../resources/examples.md)
+> See more examples and ideas in [🛠️ Examples](../../resources/examples/)
 
-A Super App can "manage" agreements and respond to changes. This is where you can write your own custom logic/behavior. Let's get creative!&#x20;
-
-
-
-:coffee: Still awake? Now that you know the primitives, let's code our way through each one.
+A Super App can "manage" agreements and respond to changes. This is where you can write your own custom logic/behavior.&#x20;
