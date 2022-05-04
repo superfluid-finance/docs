@@ -72,7 +72,7 @@ If you are wrapping an existing token, like DAI or USDC, please use suffix "x" i
 
 ## Custom Super Token
 
-A Custom Super Token is a Super Token which typically does not have an underlying asset or downgraded version of the token. For example, DAI can be upgraded or downgraded since it is an ERC20 Wrapper Super Token, however the SODA token used in the [🥤Soda Machine](../resources/examples/soda-machine.md) example cannot be downgraded, since it is a Custom Super Token.
+A Custom Super Token is a Super Token which typically does not have an underlying asset or downgraded version of the token. For example, DAI can be upgraded or downgraded since it is an ERC20 Wrapper Super Token, however the SODA token used in the [🥤Soda Machine](broken-reference) example cannot be downgraded, since it is a Custom Super Token.
 
 ![](<../.gitbook/assets/image (26) (1).png>)
 
@@ -125,7 +125,7 @@ If we're being technical about it, SETH would ultimately be considered a Custom 
 
 ### Deploy a Custom Super Token
 
-If you'd like to deploy a Custom Super Token you can use the [NativeSuperToken.sol](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/tokens/NativeSuperToken.sol) contract and the[ deployment script](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/scripts/deploy-super-token.js). Also check out the [🥤Soda Machine](../resources/examples/soda-machine.md) for an example of a Native Super Token deployed with a Super App. We will add documenation as more community members deploy Custom Super Tokens.
+If you'd like to deploy a Custom Super Token you can use the [NativeSuperToken.sol](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/tokens/NativeSuperToken.sol) contract and the[ deployment script](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/scripts/deploy-super-token.js). Also check out the [🥤Soda Machine](broken-reference) for an example of a Native Super Token deployed with a Super App. We will add documenation as more community members deploy Custom Super Tokens.
 
 ### List Your Token in the Dashboard
 

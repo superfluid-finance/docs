@@ -27,7 +27,6 @@
   * [👩🍳 Batching Transactions](protocol-developers/interactive-tutorials/batching-transactions.md)
 * [🦾 Super Apps](protocol-developers/super-apps/README.md)
   * [📖 Super Apps in Depth](protocol-developers/super-apps/super-app.md)
-  * [💿 Super App Remix Example](protocol-developers/super-apps/super-app-remix-example.md)
   * [☎ Super App Callbacks](protocol-developers/super-apps/super-app-callbacks/README.md)
     * [Calling Agreements In Super Apps](protocol-developers/super-apps/super-app-callbacks/calling-agreements-in-super-apps.md)
   * [🔢 User Data](protocol-developers/super-apps/user-data/README.md)
@@ -55,8 +54,7 @@
 
 ## Resources
 
-* [🛠 Example Projects](resources/examples/README.md)
-  * [🥤Soda Machine](resources/examples/soda-machine.md)
+* [🛠 Example Projects](resources/examples.md)
 * [👷 Ecosystem](resources/ecosystem/README.md)
   * [🏗 Hack Ideas!](https://www.notion.so/Hack-On-Superfluid-92f7cb4ccf264518814d54d50f067ac1)
 * [🎥 Videos](resources/videos.md)

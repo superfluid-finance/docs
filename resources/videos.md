@@ -1,28 +1,34 @@
 ---
-description: All the video tutorials for Superfluid in one place
+description: An Archive of Oriented Tutorials & Livestreams
 ---
 
 # 🎥 Videos
 
-## Principals
+## The Superfluid Youtube Channel
 
-### Using Constant Flow Agreements in Eth.Build
+{% embed url="https://www.youtube.com/c/SuperfluidHQ/featured" %}
 
-{% embed url="https://youtu.be/Tb-mlwlWz1w" %}
+## The Superfluid Developer Console
 
-### Creating your first Super App
+{% embed url="https://www.youtube.com/watch?v=GrfuT6ufkwU" %}
 
-{% embed url="https://youtu.be/6AcaI6DGpNY" %}
+## Leveraging UserData in Your Super Apps
 
-### Resolver
+{% embed url="https://www.youtube.com/watch?t=1008s&v=WJ7Ug0vxA04" %}
 
-{% embed url="https://youtu.be/oXZfXDqR37E" %}
+## SDK Core Walkthrough
 
-## Applications
+{% embed url="https://www.youtube.com/watch?v=fB-YQgwsl0I" %}
 
-### Donate Button
+## Running a Sentinel - A Step By Step Guide
 
-Add a simple "Donate" button to an app. See the[ code](https://github.com/pi0neerpat/nifty-chess-app/commit/6375590952daa70c9a362a329cb63b1ac2f57ac9) and try the [app](https://niftychess.com)
+{% embed url="https://www.youtube.com/watch?v=COo9IoVU9A0" %}
 
-{% embed url="https://youtu.be/RmOogQK5VHY" %}
+## Getting Data From the Superfluid Subgraph
+
+{% embed url="https://www.youtube.com/watch?t=345s&v=EBTJSma0NzY" %}
+
+## Deploying Custom Super Tokens
+
+{% embed url="https://www.youtube.com/watch?v=YWHyx2Gnulo" %}
 

@@ -1,126 +1,56 @@
 ---
-description: See how others implemented Superfluid in their application
+description: Example apps that show how Superfluid can be used
 ---
 
-# 🛠️ Examples
+# 🛠 Example Projects
 
-## Apps
+## 🟢 Official Examples
 
-### Official 
+Fork-able apps from the main repo:
 
-These examples are maintained by the Superfluid team. We will try to continue to update them as we make improvments. Some of them can be easily forked to get started quickly
+#### 🌟 Rewards Distribution Token
 
-* **Dividend Rights Token -** Distribute IDA shares using an ERC20 token
-* **Holy Grail -** Whoever holds this NFT receives a CFA stream
-* **Continuous Auction** - The winner is whoever has the largest CFA stream
-* **Developer Playground** - A full-stack playground built with RedwoodJS
-* and more...
+* A ERC20 token that tokenizes units in Superfluid [Instant Distribution Agreements](https://docs.superfluid.finance/superfluid/protocol-developers/interactive-tutorials/instant-distribution).
 
-Click here to see the official examples:
+**👩‍⚖️ Continuous Auction**
 
-{% embed url="https://github.com/superfluid-finance/protocol-monorepo/tree/dev/examples" caption="Superlfuid App Examples" %}
+* A continuous auction where users can enter by sending a stream to the contract. In principle, the highest bid is the winner of the auction.
 
-### Community
+**🏦 Employment Based Loan**
 
-Our community makes some awesome things we want to showcase: 
+* A contract which allows employees to borrow money against their salary via an undercollateralized or overcollateralized loan
 
-> ⚠ We do not maintain these examples. If you run into problems, check the versions for `@superfluid-finance/js-sdk` and `@superfluid-finance/ethereum-contracts`
+**🌊 Tradeable Cashflow**
 
-* **Stream Rent** -  _Create NFTs using offchain resources, and gain income by renting them out_
-  * Hackathon submission: [https://devfolio.co/submissions/stream-rent-d208](https://devfolio.co/submissions/stream-rent-d208)
-  * Source: [https://github.com/Jayashrri/StreamRent](https://github.com/Jayashrri/StreamRent)
-* more soon!
+* Mint an NFT that doubles as a super app which takes in cashflows and redirects them to the NFT's owner
 
-## Ideas
+**📺 NFT Billboard**
 
-Want ideas? Check out _hack.superfluid.finance_ to connect with other community members and brainstorm ideas:
+* An iteration on the Tradeable Cashflow example that makes use of UserData to display content on a digital billboard. Made with Scaffold-Eth
 
-{% embed url="http://hack.superfluid.finance/" caption="Superfluid App Ideas" %}
+**💶 Streaming Options**
 
-## Code Snippets
+* Proof of concept which allows you to create a tradeable option NFT where premium is paid for over time via a stream
 
-### Constant Flow Agreement
+**💵 Budget NFT**
 
-```javascript
-import SuperfluidSDK from '@superfluid-finance/js-sdk';
-import { Web3Provider } from '@ethersproject/providers';
+* A DAO budgeting framework that makes use of NFTs which represent a portion of DAO cash flows. These NFTs are meant to be distributed to working groups or individuals within DAOs
 
-const testFlow = async () => {
-    const walletAddress = await window.ethereum.request({
-      method: 'eth_requestAccounts',
-      params: [
-        {
-          eth_accounts: {}
-        }
-      ]
-    });
-    const sf = new SuperfluidSDK.Framework({
-      ethers: new Web3Provider(window.ethereum),
-      tokens: ['fDAI']
-    });
-    await sf.initialize();
-    const carol = sf.user({
-      address: walletAddress[0],
-      token: '0x8ae68021f6170e5a766be613cea0d75236ecca9a'
-    });
-  
-    await carol.flow({
-      recipient: '0xA8f3447922d786045CB582B0C825723B744a54df',
-      flowRate: 385802469135802
-    });
-    
-    const details = await carol.details();
-    console.log(details);
-};
+**🎲 FlowLottery**
 
-testFlow();
-```
+* A game of chance built on Superfluid. Users join the game by sending a stream to our contract. All incoming streams are summed and the resulting reward stream is sent to the winner, until a new one is chosen.
 
-### Instant Distribution Agreement
+**🖥 SDK Redux UI Examples**
 
-```javascript
-import SuperfluidSDK from '@superfluid-finance/js-sdk';
-import { Web3Provider } from '@ethersproject/providers';
-import { BigNumber } from '@ethersproject/bignumber';
+* Make use of our SDK Redux to build highly performant front end Dapps with Superfluid. There are many helpful UI components in these examples that make use of advanced front end technologies and our new sdks.
 
-const testPool = async () => {
-    const walletAddress = await window.ethereum.request({
-      method: 'eth_requestAccounts',
-      params: [
-        {
-          eth_accounts: {}
-        }
-      ]
-    });
-    const sf = new SuperfluidSDK.Framework({
-      ethers: new Web3Provider(window.ethereum),
-      tokens: ['fDAI']
-    });
-    await sf.initialize();
-    const carol = sf.user({
-      address: walletAddress[0],
-      token: '0x8ae68021f6170e5a766be613cea0d75236ecca9a'
-    });
-    await carol.createPool({ poolId: 1 });
-    await carol.giveShares({
-      poolId: 1,
-      shares: 100,
-      recipient: '0xA8f3447922d786045CB582B0C825723B744a54df'
-    });
-    await carol.distributeToPool({
-      poolId: 1,
-      amount: BigNumber.from(100).toString()
-    });
-  };
-  
-testPool();
-```
+Click here to see all the official examples:
 
-## Videos
+{% embed url="https://github.com/superfluid-finance/protocol-monorepo/tree/dev/examples" %}
+Fork me!
+{% endembed %}
 
-Adding a simple "Donate" button to an app:
+## 💡 Ideas
 
-{% embed url="https://www.youtube.com/watch?v=RmOogQK5VHY" %}
-
-
+Want ideas? Check out **** [**hack.superfluid.finance**](http://hack.superfluid.finance) to connect with other community members and brainstorm ideas.
 
