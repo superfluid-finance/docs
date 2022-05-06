@@ -20,7 +20,7 @@ You can also make use of the ACL features using the SDK Core. This page will pro
 
 If you'd like to grant full control over streams on a specific token to an operator, you can use the `authorizeFlowOperatorWithFullControl` function and pass in the `flowOperator` and `superToken` you're granting the authorization on. However, in this example we will show you how to grant specific permission levels using the `updateFlowOperatorPermissions` function.
 
-To grant a flowRateAllowance to an operator, you'll need to pass in the following to the `updateFlowOperatorPermissions` function:
+To grant a flow rate allowance to an operator, you'll need to pass in the following to the `updateFlowOperatorPermissions` function:
 
 `operator` - the address of the operator you're giving the allowance to
 
@@ -56,7 +56,7 @@ Revoking flow permissions
 
 From here, creating, updating, and deleting streams will work in a quite straightforward way. You can find examples of each below.&#x20;
 
-> NOTE: updating a flow with an increased flow rate or creating flows will decrement the operator's flowRateAllowance, but updating a flow with a decreased flow rate or deleting a flow will not. You can find more information on how flowRateAllowances work [here](../solidity-examples/cfa-access-control-list-acl.md#flow-rate-allowance).
+> NOTE: updating a flow with an increased flow rate or creating flows will decrement the operator's flow rate allowance, but updating a flow with a decreased flow rate or deleting a flow will not. You can find more information on how flow rate allowances work [here](../solidity-examples/cfa-access-control-list-acl.md#flow-rate-allowance).
 
 {% embed url="https://codesandbox.io/embed/create-flow-as-operator-nv607c?fontsize=14&hidenavigation=1&module=%2Fsrc%2FCreateFlowAsOperator.js&theme=dark&view=split" %}
 Creating a flow as an operator
