@@ -24,6 +24,7 @@
   * [🌊 Money Streaming](protocol-developers/interactive-tutorials/money-streaming-1.md)
   * [⚡ Instant Distribution](protocol-developers/interactive-tutorials/instant-distribution.md)
   * [🪙 Using Super Tokens](protocol-developers/interactive-tutorials/using-super-tokens.md)
+  * [🤖 ACL Features](protocol-developers/interactive-tutorials/acl-features.md)
   * [👩🍳 Batching Transactions](protocol-developers/interactive-tutorials/batching-transactions.md)
 * [🦾 Super Apps](protocol-developers/super-apps/README.md)
   * [📖 Super Apps in Depth](protocol-developers/super-apps/super-app.md)
