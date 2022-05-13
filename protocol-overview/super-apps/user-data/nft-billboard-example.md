@@ -20,7 +20,7 @@ You can follow along with the video version of this tutorial on Youtube, and for
 
 {% embed url="https://www.youtube.com/watch?v=WJ7Ug0vxA04" %}
 
-Before we get started with project setup, you'll also want to head over to the [Superfluid Dashboard](http://app.superfluid.finance) to claim testnet Super DAI (fDAIx) in at least one account on the network you'd like to use for the tutorial (I would suggest claiming these tokens on Mumbai, the Matic Testnet). To claim test DAI, you can head to the currencies tab in the dashboard and click the plus button on the far right in the DAI row to get your hands on some test Super DAIx.
+Before we get started with project setup, you'll also want to head over to the [Superfluid Dashboard](http://app.superfluid.finance/) to claim testnet Super DAI (fDAIx) in at least one account on the network you'd like to use for the tutorial (I would suggest claiming these tokens on Mumbai, the Matic Testnet). To claim test DAI, you can head to the currencies tab in the dashboard and click the plus button on the far right in the DAI row to get your hands on some test Super DAIx.
 
 ![](<../../../.gitbook/assets/Screen Shot 2021-10-16 at 8.45.29 AM.png>)
 

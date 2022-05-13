@@ -68,7 +68,7 @@ SuperAppDefinitions.BEFORE_AGREEMENT_TERMINATED_NOOP;
 
 Finally, you can register your app using `_host.registerApp(configWord)`.
 
-You can do this freely on testnets, but on mainnets you'll need to add one additional variable to the registration: a registration key. You can contact the Superfluid development team in the #developers channel of the [Superfluid Discord server ](http://discord.superfluid.finance)for the opportunity obtain such a key. Our ecosystem is quite young, and we want to ensure that we help teams building on our protocol are following security best practices.
+You can do this freely on testnets, but on mainnets you'll need to add one additional variable to the registration: a registration key. You can contact the Superfluid development team in the #developers channel of the [Superfluid Discord server ](http://discord.superfluid.finance/)for the opportunity obtain such a key. Our ecosystem is quite young, and we want to ensure that we help teams building on our protocol are following security best practices.
 
 ### Super App Deposits
 

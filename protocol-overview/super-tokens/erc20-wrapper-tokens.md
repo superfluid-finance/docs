@@ -2,11 +2,15 @@
 description: Super Tokens that Exist as Wrappers Around ERC20 Assets
 ---
 
-# 🎁 ERC20 Wrapper Tokens
+# ERC20 Wrapper Tokens
 
-## ERC20 Wrapper Super Token
+## ERC20 Wrapper Super Tokens
 
-This is the simplest version of a Super Token, and should be used whenever an ERC20 token already exists. Anyone can create a wrapper for any existing ERC20 token. The developer community has already deployed some of the more popular defi tokens like DAI, USDC, and TUSD for you. See [🔗 Network Directory](../networks/) for the full list.
+This is the simplest version of a Super Token, and should be used whenever an ERC20 token already exists. Anyone can create a wrapper for any existing ERC20 token. The developer community has already deployed some of the more popular tokens in the ecosystem like DAI, USDC, and TUSD for you. See [🔗 Network Directory](../../protocol-developers/networks/) for the full list.
+
+### What is a Wrapper Super Token?
+
+These tokens allow you to use existing ERC20 assets within the Superfluid protocol. These contracts inherit from the [ISuperfluidToken](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/interfaces/superfluid/ISuperfluidToken.sol) interface and serve as an extension on the ERC20 standard. You can't stream existing ERC20 tokens directly, but wrapping these assets using an ERC20 Wrapper contract will give your existing ERC20 assets super powers. Super Tokens can be streamed and used within other Superfluid agreements because they contain Superfluid specific methods like the `realTimeBalanceOf()` function and are directly plugged into the rest of the protocol.
 
 The main step for creating a new ERC20 Wrapper for your token is calling `createERC20Wrapper()` on the [SuperTokenFactory](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/superfluid/SuperTokenFactory.sol) contract.
 

@@ -30,7 +30,7 @@ The Superfluid community is exploring the possibilites of what these two agreeme
 
 In addition to agreements, the Superfluid framework also provides features at the token level. Here's a short list of super-powers:
 
-* **ERC777 -** tokens which can "react" to certain events using callbacks ([erc777.org](https://www.erc777.org))
+* **ERC777 -** tokens which can "react" to certain events using callbacks ([erc777.org](https://www.erc777.org/))
 * **Batch capabilities -** you can do multiple things in a single transaction
 * **Meta-transactions** - submit transactions on behalf of another account
 

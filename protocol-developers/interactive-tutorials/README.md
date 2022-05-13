@@ -20,7 +20,7 @@ Start with our [**Money Streaming**](money-streaming-1.md) tutorial.
 
 **Are you here to build decentralized applications around programmable,** [**networked cash flows**](https://multicoin.capital/2021/07/13/networked-cash-flows/)**?**
 
-If you know your way around solidity, you can skip to the next section on [**Solidity Examples**](../solidity-examples/), or get started building [**Super Apps**](../super-apps/)**.**
+If you know your way around solidity, you can skip to the next section on [**Solidity Examples**](../solidity-examples/), or get started building [**Super Apps**](../../protocol-overview/super-apps/)**.**
 
 ### **Other Sections to Visit**
 

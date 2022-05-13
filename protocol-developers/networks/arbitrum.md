@@ -16,7 +16,7 @@ To add Optimism to Metamask, you can head to your Settings in Metamask, and sele
 | ChainId        | 42161                                                                            |
 | Gas Token      | ETH (bridged to Arbitrum)                                                        |
 | RPC            | **Public RPC URL**: [https://arb1.arbitrum.io/rpc](https://arb1.arbitrum.io/rpc) |
-| Block Explorer | [https://arbiscan.io/](https://arbiscan.io)                                      |
+| Block Explorer | [https://arbiscan.io/](https://arbiscan.io/)                                     |
 
 ### Troubleshooting
 

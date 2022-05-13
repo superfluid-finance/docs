@@ -52,5 +52,5 @@ Fork me!
 
 ## 💡 Ideas
 
-Want ideas? Check out **** [**hack.superfluid.finance**](http://hack.superfluid.finance) to connect with other community members and brainstorm ideas.
+Want ideas? Check out **** [**hack.superfluid.finance**](http://hack.superfluid.finance/) to connect with other community members and brainstorm ideas.
 

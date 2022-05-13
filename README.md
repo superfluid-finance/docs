@@ -55,7 +55,7 @@ Want to Use Our SDKs? ⬇️
 
 ### COMMUNITY + HELP
 
-If you need any help or have any questions, please join our [**Discord**](http://discord.superfluid.finance), **** check out our [**help page**](http://help.superfluid.finance), or reach out to our team at **support@superfluid.finance**
+If you need any help or have any questions, please join our [**Discord**](http://discord.superfluid.finance/), **** check out our [**help page**](http://help.superfluid.finance/), or reach out to our team at **support@superfluid.finance**
 
 > The Superfluid documentation is growing. Tell us what you dislike about it so we can make it better.
 

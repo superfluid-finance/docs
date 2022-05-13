@@ -26,15 +26,6 @@
   * [🪙 Using Super Tokens](protocol-developers/interactive-tutorials/using-super-tokens.md)
   * [🤖 ACL Features](protocol-developers/interactive-tutorials/acl-features.md)
   * [👩🍳 Batching Transactions](protocol-developers/interactive-tutorials/batching-transactions.md)
-* [🦾 Super Apps](protocol-developers/super-apps/README.md)
-  * [📖 Super Apps in Depth](protocol-developers/super-apps/super-app.md)
-  * [☎ Super App Callbacks](protocol-developers/super-apps/super-app-callbacks/README.md)
-    * [Calling Agreements In Super Apps](protocol-developers/super-apps/super-app-callbacks/calling-agreements-in-super-apps.md)
-  * [🔢 User Data](protocol-developers/super-apps/user-data/README.md)
-    * [NFT Billboard Example](protocol-developers/super-apps/user-data/nft-billboard-example.md)
-* [🪙 Super Tokens](protocol-developers/super-tokens/README.md)
-  * [🎁 ERC20 Wrapper Tokens](protocol-developers/super-tokens/erc20-wrapper-tokens.md)
-  * [💎 Custom Super Tokens](protocol-developers/super-tokens/custom-super-tokens.md)
 * [🖥 Subgraph](protocol-developers/subgraph.md)
 * [🔧 Tools](protocol-developers/tools/README.md)
   * [Resolver](protocol-developers/tools/resolver.md)
@@ -49,6 +40,16 @@
 
 * [💡 What is Superfluid?](protocol-overview/what-is-superfluid/README.md)
   * [🚚 Primitives](protocol-overview/what-is-superfluid/primitives.md)
+* [🪙 Super Tokens](protocol-overview/super-tokens/README.md)
+  * [ERC20 Wrapper Tokens](protocol-overview/super-tokens/erc20-wrapper-tokens.md)
+  * [Pure Super Tokens](protocol-overview/super-tokens/pure-super-tokens.md)
+  * [Native Asset Super Tokens](protocol-overview/super-tokens/native-asset-super-tokens.md)
+* [🦾 Super Apps](protocol-overview/super-apps/README.md)
+  * [📖 Super Apps in Depth](protocol-overview/super-apps/super-app.md)
+  * [☎ Super App Callbacks](protocol-overview/super-apps/super-app-callbacks/README.md)
+    * [Calling Agreements In Super Apps](protocol-overview/super-apps/super-app-callbacks/calling-agreements-in-super-apps.md)
+  * [🔢 User Data](protocol-overview/super-apps/user-data/README.md)
+    * [NFT Billboard Example](protocol-overview/super-apps/user-data/nft-billboard-example.md)
 
 ## Sentinels
 
