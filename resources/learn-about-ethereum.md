@@ -11,15 +11,15 @@ description: Ethereum education resources
 **Where to go to for knowledge**&#x20;
 
 * Head over to [Medium and search for "Ethereum"](https://medium.com/search?q=ethereum)&#x20;
-* [Simple as Water ](https://simpleaswater.com/)is great blog for not only Ethereum articles but also AI, Substrate, IPFS... even job listing&#x20;
+* [Simple as Water ](https://simpleaswater.com)is great blog for not only Ethereum articles but also AI, Substrate, IPFS... even job listing&#x20;
 
 ## General about Ethereum
 
 * [The State of the Ethereum Network: 5 Years Running](https://consensys.net/blog/news/the-state-of-the-ethereum-network-2020/)
 * Before you jump into Ethereum Community, read this piece -[ The Crypto Family farm](https://logicmag.io/bodies/the-crypto-family-farm/)
 * [Decentralised web](https://hackernoon.com/dweb-the-decentralized-web-a0e9c6a5c0ec) - simple explanation
-* [Keep your funds safe](https://support.mycrypto.com/) + general knowledge portal, mainly about how to keep your crypto safe
-* [Cypherpunks mailing list ](http://mailing-list-archive.cryptoanarchy.wiki/)- OG literature cypherpunks movement
+* [Keep your funds safe](https://support.mycrypto.com) + general knowledge portal, mainly about how to keep your crypto safe
+* [Cypherpunks mailing list ](http://mailing-list-archive.cryptoanarchy.wiki)- OG literature cypherpunks movement
 * [12 questions about crypto](https://outlast.me/twelve-questions/)
 * [Blockchain required readings](https://github.com/prysmaticlabs/prysm/blob/master/docs/READINGS.md) - Required Blockchain & Ethereum Knowledge -Required Sharding Knowledge - Necessary Go Knowledge & Readings
 * [How does Ethereum work, anyway? ](https://medium.com/@preethikasireddy/how-does-ethereum-work-anyway-22d1df506369)
@@ -32,13 +32,13 @@ description: Ethereum education resources
 
 ## Learning Portals
 
-* [Ethhub.io](https://docs.ethhub.io/) - great source of all kinds of basics info, amazing podcasts, subscribe to their newsletter - weekly updates of projects and overall info that’s amazing and you have no time to catch up on Crypto Twitter
+* [Ethhub.io](https://docs.ethhub.io) - great source of all kinds of basics info, amazing podcasts, subscribe to their newsletter - weekly updates of projects and overall info that’s amazing and you have no time to catch up on Crypto Twitter
 * [Crypto glossary](https://a16z.com/2019/11/08/crypto-glossary/) - explaining terms in crypto
 * [Bitpanda academy](https://www.bitpanda.com/academy/en/lessons/what-is-ethereum/) - answers to basics Questions about Ethereum, for beginners and everyone who wants to learn more. BTC, Open Source, Ripple, ICO, Altcoins...
-* [DeFi school](https://defi.school/)&#x20;
-* [Crypto zombies](https://cryptozombies.io/) - Learn to Code Blockchain DApps By Building Simple Games&#x20;
-* [Crypto hack](https://cryptohack.org/) - A fun platform for learning modern cryptography
-* [Interactive Ethereum Tutorials](https://tutorials.ethvigil.com/)
+* [DeFi school](https://defi.school)&#x20;
+* [Crypto zombies](https://cryptozombies.io) - Learn to Code Blockchain DApps By Building Simple Games&#x20;
+* [Crypto hack](https://cryptohack.org) - A fun platform for learning modern cryptography
+* [Interactive Ethereum Tutorials](https://tutorials.ethvigil.com)
 
 ## More&#x20;
 

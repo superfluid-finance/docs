@@ -6,12 +6,15 @@
 
 * [🧨 SDK Overview](protocol-developers/sdk-initialization/README.md)
   * [📀 SDK Core](protocol-developers/sdk-initialization/sdk-core/README.md)
+    * [📖 Reference Docs](https://refs.superfluid.finance/sdk-core/)
     * [🔥 SDK Core Initialization](protocol-developers/sdk-initialization/sdk-core/sdk-core-initialization.md)
     * [🪙 Super Token Operations](protocol-developers/sdk-initialization/sdk-core/super-token-operations.md)
     * [🤌 Batch Calls](protocol-developers/sdk-initialization/sdk-core/batch-calls.md)
     * [🌊 CFA Operations](protocol-developers/sdk-initialization/sdk-core/cfa-operations.md)
     * [🏟 IDA Operations](protocol-developers/sdk-initialization/sdk-core/ida-operations.md)
     * [🔍 Getting Data](protocol-developers/sdk-initialization/sdk-core/getting-data.md)
+  * [♻ SDK Redux](protocol-developers/sdk-initialization/sdk-redux/README.md)
+    * [📖 Reference Docs](https://refs.superfluid.finance/sdk-redux/)
 * [💻 Superfluid Solidity Docs](protocol-developers/solidity-examples/README.md)
   * [📜 Interacting With Superfluid Smart Contracts](protocol-developers/solidity-examples/interacting-with-superfluid-smart-contracts.md)
   * [📚 Solidity Libraries](protocol-developers/solidity-examples/solidity-libraries/README.md)
@@ -58,6 +61,9 @@
 
 ## Resources
 
+* [📖 Reference Documentations](resources/reference-documentations/README.md)
+  * [SDK-Redux](https://refs.superfluid.finance/sdk-redux/)
+  * [SDK-Core](https://refs.superfluid.finance/sdk-core/)
 * [🛠 Example Projects](resources/examples/README.md)
 * [👷 Ecosystem](resources/ecosystem/README.md)
   * [🏗 Hack Ideas!](https://www.notion.so/Hack-On-Superfluid-92f7cb4ccf264518814d54d50f067ac1)

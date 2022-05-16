@@ -36,6 +36,6 @@ This section will help you to interact with Superfluid at the smart contract lev
 
 ### User Data
 
-{% content-ref url="../../protocol-overview/super-apps/user-data/" %}
-[user-data](../../protocol-overview/super-apps/user-data/)
+{% content-ref url="../super-apps/user-data/" %}
+[user-data](../super-apps/user-data/)
 {% endcontent-ref %}

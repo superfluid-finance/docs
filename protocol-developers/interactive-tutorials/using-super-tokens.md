@@ -13,7 +13,7 @@ In order to make use of agreements inside of the Superfluid protocol, you’ll n
 1. Super tokens that are a wrapper around existing ERC20 tokens.&#x20;
 2. Native Super Tokens
 
-You can learn more about the details of super tokens in [our guide on the topic](../../protocol-overview/super-tokens/), but the main thing to understand is that they have special properties which allow them to be streamed per second using the [Constant Flow Agreement](money-streaming-1.md) or distributed to many accounts using the [Instant Distribution Agreement.](instant-distribution.md)
+You can learn more about the details of super tokens in [our guide on the topic](../super-tokens/), but the main thing to understand is that they have special properties which allow them to be streamed per second using the [Constant Flow Agreement](money-streaming-1.md) or distributed to many accounts using the [Instant Distribution Agreement.](instant-distribution.md)
 
 ### Wrapped ERC20 Tokens
 
@@ -23,13 +23,13 @@ To wrap your existing ERC20 tokens, you need to first approve the Super Token wr
 
 If/when you decide to unwrap those tokens in exchange for your underlying ERC20 asset, you can call `downgrade` on the Super Token wrapper contract. This will send you the defined amount of your ERC20 asset back, and burn your corresponding Super Tokens. These wrapped assets are denominated by the Superfluid community by appending an 'x' to the end of the wrapped ERC20 asset's symbol. For example, if you wrap DAI, the newly minted super token DAI will be labeled _DAIx_.
 
-> **NOTE**: we have a list of super tokens which were deployed by the Superfluid community as ERC20 wrapper contracts inside of the [Network Directory](../networks/). If you want to work with an ERC20 asset not listed in the directory, you can learn more about deploying your own ERC20 wrapper contract [here](../../protocol-overview/super-tokens/#erc20-wrapper-super-token).&#x20;
+> **NOTE**: we have a list of super tokens which were deployed by the Superfluid community as ERC20 wrapper contracts inside of the [Network Directory](../networks/). If you want to work with an ERC20 asset not listed in the directory, you can learn more about deploying your own ERC20 wrapper contract [here](../super-tokens/#erc20-wrapper-super-token).&#x20;
 
 ### Native Super Tokens
 
 Each Super Token that is deployed as a wrapper around an ERC20 token will have an underlying asset, which is the original ERC20 asset being used. However, in the case of Native Super Tokens, there is no underlying asset. These tokens are deployed directly as Super Tokens, and don’t need to be upgraded or downgraded. They inherit all of the functionality of ERC20 and ERC777 tokens (i.e. approve, transfer, transferFrom, etc), but also have the capability of being used directly within the Superfluid protocol.&#x20;
 
-Some examples of native super tokens include Ricochet Exchange's [**RIC** token](https://docs.ricochet.exchange/business/usdric) and Minerva Wallet's [**MIVA** token](https://minerva.digital/). You can learn more about deploying your own native super token as well as creating your own _custom_ super tokens [here](../../protocol-overview/super-tokens/).
+Some examples of native super tokens include Ricochet Exchange's [**RIC** token](https://docs.ricochet.exchange/business/usdric) and Minerva Wallet's [**MIVA** token](https://minerva.digital). You can learn more about deploying your own native super token as well as creating your own _custom_ super tokens [here](../super-tokens/).
 
 ### Native Asset Super Tokens
 
