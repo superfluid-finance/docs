@@ -100,13 +100,15 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 
 **Framework**
 
-| Resource           | Address                                    |
-| ------------------ | ------------------------------------------ |
-| Resolver           | 0x24a3F04F70B7f07B9673EadD3e146391BcfEa5c1 |
-| Host               | 0x60377C7016E4cdB03C87EF474896C11cB560752C |
-| CFAv1              | 0x6946c5B38Ffea373b0a2340b4AEf0De8F6782e58 |
-| IDAv1              | 0x1fA9fFe8Db73F701454B195151Db4Abb18423cf2 |
-| SuperToken Factory | 0x464AADdBB2B80f3Cb666522EB7381bE610F638b4 |
+| Resource             | Address                                    |
+| -------------------- | ------------------------------------------ |
+| Resolver             | 0x24a3F04F70B7f07B9673EadD3e146391BcfEa5c1 |
+| Host                 | 0x60377C7016E4cdB03C87EF474896C11cB560752C |
+| CFAv1                | 0x6946c5B38Ffea373b0a2340b4AEf0De8F6782e58 |
+| IDAv1                | 0x1fA9fFe8Db73F701454B195151Db4Abb18423cf2 |
+| SuperToken Factory   | 0x464AADdBB2B80f3Cb666522EB7381bE610F638b4 |
+| SuperToken Loader v1 | 0x2601E69a2D16C8Ccc8aEe8cE9F59d24a59986B9E |
+| TOGA                 | 0x3D9A67D5ec1E72CEcA8157e028855056786b6159 |
 {% endtab %}
 {% endtabs %}
 
