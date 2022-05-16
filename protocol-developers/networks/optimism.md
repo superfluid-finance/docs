@@ -13,7 +13,7 @@ To add Optimism to Metamask, you can head to your Settings in Metamask, and sele
 | Network Name   | Optimism                                                                       |
 | -------------- | ------------------------------------------------------------------------------ |
 | ParentChain    | Ethereum Mainnet                                                               |
-| ChainId        | 10                                                                             |
+| Chain Id       | 10                                                                             |
 | Gas Token      | ETH (bridged to Optimism)                                                      |
 | RPC            | **Public RPC URL**: [https://mainnet.optimism.io](https://mainnet.optimism.io) |
 | Block Explorer | [https://optimistic.etherscan.io/](https://optimistic.etherscan.io/)           |

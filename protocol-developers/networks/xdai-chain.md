@@ -12,8 +12,7 @@ To add Gnosis to Metamask, you can head to your Settings in Metamask, and select
 
 | NetworkName    | **xDAI**                                                                             |
 | -------------- | ------------------------------------------------------------------------------------ |
-| ParentChain    | Ethereum Mainnet                                                                     |
-| chainId        | 100                                                                                  |
+| Chain Id       | 100                                                                                  |
 | Gas token      | xDAI (stablecoin pegged to the price of USD)                                         |
 | RPC            | **Public RPC URL:** [**https://rpc.xdaichain.com/**](https://rpc.xdaichain.com/)**** |
 | Block Explorer | [https://blockscout.com/poa/xdai/](https://blockscout.com/poa/xdai/)                 |

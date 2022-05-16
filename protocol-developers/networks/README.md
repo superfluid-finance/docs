@@ -94,9 +94,21 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 | [SuperfluidLoader v1](https://arbiscan.io/address/0xB99cA401e10D277345BcFb281AC148a2e16Db466) | 0xB99cA401e10D277345BcFb281AC148a2e16Db466 |
 | [TOGA](https://arbiscan.io/address/0xFC63B7C762B10670Eda15cF3ca3970bCDB28C9eF)                | 0xFC63B7C762B10670Eda15cF3ca3970bCDB28C9eF |
 {% endtab %}
+
+{% tab title="Avalanche" %}
+**​​ ​❓ See** [Avalanche](optimism-1.md) **for more help**
+
+**Framework**
+
+| Resource           | Address                                    |
+| ------------------ | ------------------------------------------ |
+| Resolver           | 0x24a3F04F70B7f07B9673EadD3e146391BcfEa5c1 |
+| Host               | 0x60377C7016E4cdB03C87EF474896C11cB560752C |
+| CFAv1              | 0x6946c5B38Ffea373b0a2340b4AEf0De8F6782e58 |
+| IDAv1              | 0x1fA9fFe8Db73F701454B195151Db4Abb18423cf2 |
+| SuperToken Factory | 0x464AADdBB2B80f3Cb666522EB7381bE610F638b4 |
+{% endtab %}
 {% endtabs %}
-
-
 
 ## Test Networks
 

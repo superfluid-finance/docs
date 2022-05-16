@@ -36,6 +36,7 @@
 * [🔗 Network Directory](protocol-developers/networks/README.md)
   * [Optimism](protocol-developers/networks/optimism.md)
   * [Arbitrum](protocol-developers/networks/arbitrum.md)
+  * [Avalanche](protocol-developers/networks/optimism-1.md)
   * [Gnosis Chain](protocol-developers/networks/xdai-chain.md)
   * [Polygon (Matic)](protocol-developers/networks/polygon-network-matic.md)
 

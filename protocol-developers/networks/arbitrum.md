@@ -13,7 +13,7 @@ To add Optimism to Metamask, you can head to your Settings in Metamask, and sele
 | Network Name   | Arbitrum                                                                         |
 | -------------- | -------------------------------------------------------------------------------- |
 | ParentChain    | Ethereum Mainnet                                                                 |
-| ChainId        | 42161                                                                            |
+| Chain Id       | 42161                                                                            |
 | Gas Token      | ETH (bridged to Arbitrum)                                                        |
 | RPC            | **Public RPC URL**: [https://arb1.arbitrum.io/rpc](https://arb1.arbitrum.io/rpc) |
 | Block Explorer | [https://arbiscan.io/](https://arbiscan.io/)                                     |
