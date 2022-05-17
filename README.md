@@ -8,26 +8,26 @@ description: A new DeFi primitive to automate recurring transactions and monetiz
 
 Looking to Jump Straight Into the Code? ⬇️
 
-{% content-ref url="protocol-developers/interactive-tutorials/" %}
-[interactive-tutorials](protocol-developers/interactive-tutorials/)
+{% content-ref url="developers/interactive-tutorials/" %}
+[interactive-tutorials](developers/interactive-tutorials/)
 {% endcontent-ref %}
 
 Building Smart Contracts that Interact With Superfluid? ⬇️
 
-{% content-ref url="protocol-developers/solidity-examples/" %}
-[solidity-examples](protocol-developers/solidity-examples/)
+{% content-ref url="developers/solidity-examples/" %}
+[solidity-examples](developers/solidity-examples/)
 {% endcontent-ref %}
 
 Want to Use Our SDKs? ⬇️
 
-{% content-ref url="protocol-developers/sdk-initialization/" %}
-[sdk-initialization](protocol-developers/sdk-initialization/)
+{% content-ref url="developers/sdk-initialization/" %}
+[sdk-initialization](developers/sdk-initialization/)
 {% endcontent-ref %}
 
 ### CONTRACT ADDRESSES ⬇️
 
-{% content-ref url="protocol-developers/networks/" %}
-[networks](protocol-developers/networks/)
+{% content-ref url="developers/networks/" %}
+[networks](developers/networks/)
 {% endcontent-ref %}
 
 ### PROTOCOL OVERVIEW ⬇️
@@ -44,8 +44,8 @@ Want to Use Our SDKs? ⬇️
 
 ### CONNECT TO XDAI, POLYGON, ETC.
 
-* [xDAI Chain](protocol-developers/networks/networks/xdai-chain.md)
-* [Polygon (Matic)](protocol-developers/networks/networks/polygon-network-matic.md)
+* [xDAI Chain](developers/networks/networks/xdai-chain.md)
+* [Polygon (Matic)](developers/networks/networks/polygon-network-matic.md)
 
 ### EXAMPLE APPS
 

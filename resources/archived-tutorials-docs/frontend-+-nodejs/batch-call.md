@@ -6,7 +6,7 @@ description: Perform multiple steps in a single transaction
 
 > ### IMPORTANT NOTE
 >
-> The _JS-SDK is a legacy SDK_ that is no longer being maintained We strongly recommend that new developers **use the** [**SDK-Core**](../../../protocol-developers/sdk-initialization/) **or** [**SDK-Redux.**](https://www.npmjs.com/package/@superfluid-finance/sdk-redux)****
+> The _JS-SDK is a legacy SDK_ that is no longer being maintained We strongly recommend that new developers **use the** [**SDK-Core**](../../../developers/sdk-initialization/) **or** [**SDK-Redux.**](https://www.npmjs.com/package/@superfluid-finance/sdk-redux)****
 
 The Batch Call feature allows you to perform multiple steps in a single transaction, including calls for Super Tokens, Super Apps, and both at the same time.
 
