@@ -80,11 +80,11 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 
 **Tokens**
 
-| Resource | Address                                    |
-| -------- | ------------------------------------------ |
-| ETHx     | 0x4ac8bd1bdae47beef2d1c6aa62229509b962aa0d |
-| DAIx     | 0x7d342726b69c28d942ad8bfe6ac81b972349d524 |
-| USDCx    | 0x8430f084b939208e2eded1584889c9a66b90562f |
+| Resource                                                                                    | Address                                    |
+| ------------------------------------------------------------------------------------------- | ------------------------------------------ |
+| [ETHx](https://optimistic.etherscan.io/address/0x4ac8bd1bdae47beef2d1c6aa62229509b962aa0d)  | 0x4ac8bd1bdae47beef2d1c6aa62229509b962aa0d |
+| [DAIx](https://optimistic.etherscan.io/address/0x7d342726b69c28d942ad8bfe6ac81b972349d524)  | 0x7d342726b69c28d942ad8bfe6ac81b972349d524 |
+| [USDCx](https://optimistic.etherscan.io/address/0x8430f084b939208e2eded1584889c9a66b90562f) | 0x8430f084b939208e2eded1584889c9a66b90562f |
 {% endtab %}
 
 {% tab title="Arbitrum" %}
@@ -104,11 +104,11 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 
 **Tokens**
 
-| Resource | Address                                    |
-| -------- | ------------------------------------------ |
-| ETHx     | 0xe6c8d111337d0052b9d88bf5d7d55b7f8385acd3 |
-| DAIx     | 0x521677a61d101a80ce0fb903b13cb485232774ee |
-| USDCx    | 0x1dbc1809486460dcd189b8a15990bca3272ee04e |
+| Resource                                                                        | Address                                    |
+| ------------------------------------------------------------------------------- | ------------------------------------------ |
+| [ETHx](https://arbiscan.io/address/0xe6c8d111337d0052b9d88bf5d7d55b7f8385acd3)  | 0xe6c8d111337d0052b9d88bf5d7d55b7f8385acd3 |
+| [DAIx](https://arbiscan.io/address/0x521677a61d101a80ce0fb903b13cb485232774ee)  | 0x521677a61d101a80ce0fb903b13cb485232774ee |
+| [USDCx](https://arbiscan.io/address/0x1dbc1809486460dcd189b8a15990bca3272ee04e) | 0x1dbc1809486460dcd189b8a15990bca3272ee04e |
 {% endtab %}
 
 {% tab title="Avalanche" %}
@@ -126,9 +126,9 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 
 **Tokens**
 
-| Resource | Address                                    |
-| -------- | ------------------------------------------ |
-| AVAXx    | 0xBE916845D8678b5d2F7aD79525A62D7c08ABba7e |
+| Resource                                                                         | Address                                    |
+| -------------------------------------------------------------------------------- | ------------------------------------------ |
+| [AVAXx](https://snowtrace.io/address/0xBE916845D8678b5d2F7aD79525A62D7c08ABba7e) | 0xBE916845D8678b5d2F7aD79525A62D7c08ABba7e |
 {% endtab %}
 {% endtabs %}
 
