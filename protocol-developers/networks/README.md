@@ -8,7 +8,7 @@ description: Superfluid contract addresses for all networks
 
 {% tabs %}
 {% tab title="Polygon" %}
-**​​ ❓See** [**Polygon (Matic)**](polygon-network-matic.md) **for more help**
+**​​ ❓See** [**Polygon (Matic)**](networks/polygon-network-matic.md) **for more help**
 
 **Framework**
 
@@ -39,7 +39,7 @@ description: Superfluid contract addresses for all networks
 {% endtab %}
 
 {% tab title="Gnosis Chain" %}
-**​​ ​​ ❓ See** [**Gnosis Chain**](xdai-chain.md) **for more help**
+**​​ ​​ ❓ See** [**Gnosis Chain**](networks/xdai-chain.md) **for more help**
 
 **Framework**
 
@@ -64,7 +64,7 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 {% endtab %}
 
 {% tab title="Optimism" %}
-**​​ ​​❓ See** [**Optimism**](optimism.md) **for more help**
+**​​ ​​❓ See** [**Optimism**](networks/optimism.md) **for more help**
 
 **Framework**
 
@@ -80,7 +80,7 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 {% endtab %}
 
 {% tab title="Arbitrum" %}
-**​​ ​❓ See** [**Arbitrum**](arbitrum.md) **for more help**
+**​​ ​❓ See** [**Arbitrum**](networks/arbitrum.md) **for more help**
 
 **Framework**
 
@@ -96,11 +96,10 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 {% endtab %}
 
 {% tab title="Avalanche" %}
-
 **Framework**
 
-| Resource             | Address                                    |
-| -------------------- | ------------------------------------------ |
+| Resource                                                                                        | Address                                    |
+| ----------------------------------------------------------------------------------------------- | ------------------------------------------ |
 | [Resolver](https://snowtrace.io/address/0x24a3F04F70B7f07B9673EadD3e146391BcfEa5c1)             | 0x24a3F04F70B7f07B9673EadD3e146391BcfEa5c1 |
 | [Host](https://snowtrace.io/address/0x60377C7016E4cdB03C87EF474896C11cB560752C)                 | 0x60377C7016E4cdB03C87EF474896C11cB560752C |
 | [CFAv1](https://snowtrace.io/address/0x6946c5B38Ffea373b0a2340b4AEf0De8F6782e58)                | 0x6946c5B38Ffea373b0a2340b4AEf0De8F6782e58 |
@@ -216,7 +215,7 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 {% endtab %}
 
 {% tab title="Mumbai" %}
-**See** [**Polygon (Matic)**](polygon-network-matic.md) **for more help**
+**See** [**Polygon (Matic)**](networks/polygon-network-matic.md) **for more help**
 
 **Framework**
 

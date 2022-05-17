@@ -84,11 +84,11 @@ However, it's worth noting that the parameters passed to each function in the li
 
 **`flowRate`** - an `int96` variable which represents the total amount of the `token` you'd like to send per second, denominated in `wei`
 
-**`userData`** - an optional `bytes` value which represents additional data you'd like to pass along with your function call. You can learn more about user data [here](../../super-apps/user-data/).
+**`userData`** - an optional `bytes` value which represents additional data you'd like to pass along with your function call. You can learn more about user data [here](../../../protocol-overview/super-apps/user-data/).
 
 ### Using the CFA Library inside of a Super App
 
-If you need to perform operations with the Constant Flow Agreement inside of Super App callbacks, the syntax for using the library will look somewhat different. You'll need to use the **withCtx** versions of each function. For more on why this is, you can see this section on [callAgreement vs callAgreementWithContext](../../super-apps/super-app-callbacks/calling-agreements-in-super-apps.md).
+If you need to perform operations with the Constant Flow Agreement inside of Super App callbacks, the syntax for using the library will look somewhat different. You'll need to use the **withCtx** versions of each function. For more on why this is, you can see this section on [callAgreement vs callAgreementWithContext](../../../protocol-overview/super-apps/super-app-callbacks/calling-agreements-in-super-apps.md).
 
 ```
 // with Ctx - to be used inside of super app callbacks
@@ -124,6 +124,6 @@ function afterAgreementCreated(
 
 The final parameter passed into the callback - `ctx`, will be passed as the `ctx` value to the withCtx functions within the library.
 
-Each withCtx function in the library also returns a new ctx value as well, which you will need to return inside of the super app callback. Again, more information on this can be found in this section on [callAgreement vs callAgreementWithContext](../../super-apps/super-app-callbacks/calling-agreements-in-super-apps.md#callagreement-vs-callagreementwithcontext).
+Each withCtx function in the library also returns a new ctx value as well, which you will need to return inside of the super app callback. Again, more information on this can be found in this section on [callAgreement vs callAgreementWithContext](../../../protocol-overview/super-apps/super-app-callbacks/calling-agreements-in-super-apps.md#callagreement-vs-callagreementwithcontext).
 
 ###

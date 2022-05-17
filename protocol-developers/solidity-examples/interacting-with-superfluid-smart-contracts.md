@@ -26,7 +26,7 @@ If you'd like to interact with a Superfluid agreement directly by using solidity
 
 **`bytes memory calldata`** - the transaction you're calling on the agreement you're interacting with, compiled to bytecode (using one of solidity's [encoding methods](https://docs.soliditylang.org/en/v0.8.10/abi-spec.html#argument-encoding))
 
-**`bytes memory userData`** - any additional data you'd like to include with your function call. If you don't plan to add userData, you can pass in an empty bytes value (i.e. `"0x"`). You can learn more about this parameter [here](../super-apps/user-data/).
+**`bytes memory userData`** - any additional data you'd like to include with your function call. If you don't plan to add userData, you can pass in an empty bytes value (i.e. `"0x"`). You can learn more about this parameter [here](../../protocol-overview/super-apps/user-data/).
 
 Here's an example of how this looks in action when interacting with the constant flow agreement. This pattern will be the same whether you're creating, updating, or deleting flows.
 
@@ -62,7 +62,7 @@ host.callAgreement(
 );
 ```
 
-> NOTE: If you're interacting with agreements inside of a Super App callback, this process will work differently. See [this section](../super-apps/super-app-callbacks/calling-agreements-in-super-apps.md) for details.&#x20;
+> NOTE: If you're interacting with agreements inside of a Super App callback, this process will work differently. See [this section](../../protocol-overview/super-apps/super-app-callbacks/calling-agreements-in-super-apps.md) for details.&#x20;
 
 ### Common Mistakes
 
