@@ -15,7 +15,7 @@ To add Avalanche to Metamask, you can head to your Settings in Metamask, and sel
 | Chain Id       | 431140                                                                                             |
 | Gas Token      | AVAX                                                                                               |
 | RPC            | **Public RPC URL**: [https://api.avax.network/ext/bc/C/rpc](https://api.avax.network/ext/bc/C/rpc) |
-| Block Explorer | [https://snowtrace.io/](https://snowtrace.io/)                                                     |
+| Block Explorer | [https://avascan.info](https://avascan.info)                                                     |
 
 ### Troubleshooting
 
