@@ -77,6 +77,14 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 | [SuperTokenFactory](https://optimistic.etherscan.io/address/0x8276469a443d5c6b7146bed45e2abcad3b6adad9)   | 0x8276469A443D5C6B7146BED45e2abCaD3B6adad9 |
 | [SuperfluidLoader v1](https://optimistic.etherscan.io/address/0x8E310ce29Ab7Fa2878944A65BB0eaF97B1853d40) | 0x8E310ce29Ab7Fa2878944A65BB0eaF97B1853d40 |
 | [TOGA](https://optimistic.etherscan.io/address/0xA3c8502187fD7a7118eAD59dc811281448946C8f)                | 0xA3c8502187fD7a7118eAD59dc811281448946C8f |
+
+**Tokens**
+
+| Resource | Address                                    |
+| -------- | ------------------------------------------ |
+| ETHx     | 0x4ac8bd1bdae47beef2d1c6aa62229509b962aa0d |
+| DAIx     | 0x7d342726b69c28d942ad8bfe6ac81b972349d524 |
+| USDCx    | 0x8430f084b939208e2eded1584889c9a66b90562f |
 {% endtab %}
 
 {% tab title="Arbitrum" %}
@@ -93,6 +101,14 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 | [SuperTokenFactory](https://arbiscan.io/address/0x1C21Ead77fd45C84a4c916Db7A6635D0C6FF09D6)   | 0x1C21Ead77fd45C84a4c916Db7A6635D0C6FF09D6 |
 | [SuperfluidLoader v1](https://arbiscan.io/address/0xB99cA401e10D277345BcFb281AC148a2e16Db466) | 0xB99cA401e10D277345BcFb281AC148a2e16Db466 |
 | [TOGA](https://arbiscan.io/address/0xFC63B7C762B10670Eda15cF3ca3970bCDB28C9eF)                | 0xFC63B7C762B10670Eda15cF3ca3970bCDB28C9eF |
+
+**Tokens**
+
+| Resource | Address                                    |
+| -------- | ------------------------------------------ |
+| ETHx     | 0xe6c8d111337d0052b9d88bf5d7d55b7f8385acd3 |
+| DAIx     | 0x521677a61d101a80ce0fb903b13cb485232774ee |
+| USDCx    | 0x1dbc1809486460dcd189b8a15990bca3272ee04e |
 {% endtab %}
 
 {% tab title="Avalanche" %}
@@ -107,6 +123,12 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 | [SuperToken Factory](https://snowtrace.io/address/0x464AADdBB2B80f3Cb666522EB7381bE610F638b4)   | 0x464AADdBB2B80f3Cb666522EB7381bE610F638b4 |
 | [SuperToken Loader v1](https://snowtrace.io/address/0x2601E69a2D16C8Ccc8aEe8cE9F59d24a59986B9E) | 0x2601E69a2D16C8Ccc8aEe8cE9F59d24a59986B9E |
 | [TOGA](https://snowtrace.io/address/0x3D9A67D5ec1E72CEcA8157e028855056786b6159)                 | 0x3D9A67D5ec1E72CEcA8157e028855056786b6159 |
+
+**Tokens**
+
+| Resource | Address                                    |
+| -------- | ------------------------------------------ |
+| AVAXx    | 0xBE916845D8678b5d2F7aD79525A62D7c08ABba7e |
 {% endtab %}
 {% endtabs %}
 
