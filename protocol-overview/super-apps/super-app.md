@@ -47,10 +47,13 @@ uint256 configWord =
             SuperAppDefinitions.BEFORE_AGREEMENT_UPDATED_NOOP |
             SuperAppDefinitions.BEFORE_AGREEMENT_TERMINATED_NOOP;
 
-        _host.registerApp(configWord);
+// can be an empty string in dev or testnet deployments
+string memory registrationKey = "";
+
+        _host.registerAppWithKey(configWord, registrationKey);
 ```
 
-Running `_host.registerApp` and passing in the `configWord` will enable your Super App to be registered within the Superfluid host contract's Super App manifest. This will allow it to be managed under basic Superfluid governance parameters and ensure that callbacks are run as intended.
+Running `_host.registerAppWithKey` and passing in the `configWord` will enable your Super App to be registered within the Superfluid host contract's Super App manifest. This will allow it to be managed under basic Superfluid governance parameters and ensure that callbacks are run as intended.
 
 The `APP_LEVEL_FINAL` must be set as seen above for now. This parameter refers to which (and how many) callbacks will be run within a hypothetical chain of Super Apps. During the creation of the protocol, we had to decide how Super Apps would behave if a chain of callbacks could have the potential to execute in succession.
 
@@ -66,9 +69,10 @@ SuperAppDefinitions.BEFORE_AGREEMENT_UPDATED_NOOP |
 SuperAppDefinitions.BEFORE_AGREEMENT_TERMINATED_NOOP;
 ```
 
-Finally, you can register your app using `_host.registerApp(configWord)`.
+Finally, you can register your app using `_host.registerAppWithKey(configWord)` or with `_host.registerAppByFactory(app, configWord)`.
 
-You can do this freely on testnets, but on mainnets you'll need to add one additional variable to the registration: a registration key. You can contact the Superfluid development team in the #developers channel of the [Superfluid Discord server ](http://discord.superfluid.finance/)for the opportunity obtain such a key. Our ecosystem is quite young, and we want to ensure that we help teams building on our protocol are following security best practices.
+You can do this freely on testnets, but on mainnets pre-approval of Super Apps is needed for now.  
+Navigate to [this guide](https://github.com/superfluid-finance/protocol-monorepo/wiki/Super-App-White-listing-Guide) in order to find out how to get that done.
 
 ### Super App Deposits
 
