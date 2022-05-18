@@ -10,13 +10,13 @@ A Super App is a contract that reacts on-chain to changes within super agreement
 
 Super Apps allow us to build smart contracts that are fully integrated with Superfluid at the protocol level. If you've looked at our [Tradeable Cashflow](https://docs.superfluid.finance/superfluid/protocol-tutorials/super-apps) tutorial or our [User Data](https://docs.superfluid.finance/superfluid/docs/user-data) tutorial, we are using a Super App in each of those sample applications.
 
-![The Tradeable Cashflow NFT ](<../../.gitbook/assets/image (29).png>)
+![The Tradeable Cashflow NFT](<../../.gitbook/assets/image (29) (1).png>)
 
 For example, the tradeable cashflow NFT contract receives a stream, and then uses special callbacks within the SuperApp to automatically open up a new stream from the NFT to the owner of the NFT. The contract 'listens' for a call to a Superfluid super agreement contract (the Constant Flow Agreement contract), and runs a single callback function in response to the following 3 actions:
 
 1. A flow is opened with the Super App as the `receiver`
 2. A flow is updated which has the Super App as the `receiver`
-3. A flow is closed by the Super App's counter party (i.e. if either the _sender_ of a flow into the Super app or the _recipient_ of a flow from the Super App deleted the flow, a callback will be run). As of today, this is only relevant for the case of canceled flows.&#x20;
+3. A flow is closed by the Super App's counter party (i.e. if either the _sender_ of a flow into the Super app or the _recipient_ of a flow from the Super App deleted the flow, a callback will be run). As of today, this is only relevant for the case of canceled flows.
 
 When a stream is created into a Super App (this will make the Super App the `receiver` ), the `beforeAgreementCreated` and the `afterAgreementCreated` callback may be run. These callbacks can execute any arbitrary logic, as long as this logic fits within the rules of standard smart contract development and the rules of Super Apps (which are explained further later on in this section).
 
@@ -71,7 +71,7 @@ SuperAppDefinitions.BEFORE_AGREEMENT_TERMINATED_NOOP;
 
 Finally, you can register your app using `_host.registerAppWithKey(configWord)` or with `_host.registerAppByFactory(app, configWord)`.
 
-You can do this freely on testnets, but on mainnets pre-approval of Super Apps is needed for now.  
+You can do this freely on testnets, but on mainnets pre-approval of Super Apps is needed for now.\
 Navigate to [this guide](https://github.com/superfluid-finance/protocol-monorepo/wiki/Super-App-White-listing-Guide) in order to find out how to get that done.
 
 ### Super App Deposits
@@ -85,7 +85,7 @@ When a user first creates a Superfluid stream, the protocol will take a security
 
 **Why is the deposit 2x when sending a stream to a Super App?**
 
-Because Super Apps are designed to create programmable cashflows, the protocol needs to ensure that Super Apps don't execute logic that could render the protocol insolvent. The caller of the stream being sent to the super app is essentially covering the deposit of the Super App.&#x20;
+Because Super Apps are designed to create programmable cashflows, the protocol needs to ensure that Super Apps don't execute logic that could render the protocol insolvent. The caller of the stream being sent to the super app is essentially covering the deposit of the Super App.
 
 This higher deposit provides an extra incentive for the protocol to ensure that users sending streams into super apps maintain a balance > 0. It protects the protocol from cascading effects resulting from an insolvent Super App. There are additional requirements around Super App solvency that you'll find in the list of Super App rules we define below.
 
@@ -119,7 +119,6 @@ function beforeAgreementCreated(
     {
         revert("Unsupported callback - Before Agreement Created");
     }
-
 ```
 
 ```
@@ -140,7 +139,7 @@ function beforeAgreementCreated(
     }
 ```
 
-A `beforeAgreement` callback will be run before the call to the agreement contract will be run. For example, if there is logic inside of the `beforeAgreementCreated` callback within of a Super App, and a user opens a stream into that Super App contract, the logic inside of `beforeAgreementCreated` will run before the stream is created.&#x20;
+A `beforeAgreement` callback will be run before the call to the agreement contract will be run. For example, if there is logic inside of the `beforeAgreementCreated` callback within of a Super App, and a user opens a stream into that Super App contract, the logic inside of `beforeAgreementCreated` will run before the stream is created.
 
 Similarly, an `afterAgreement` callback will be run after the call to the agreement contract is run. For example, if there is logic inside of the `afterAgreementCreated` callback within a Super App, and a user opens a stream into that Super App contract, the logic inside of `afterAgreementCreated` will run after the stream is created.
 
@@ -170,7 +169,7 @@ Super Apps are a powerful concept within the Superfluid ecosystem. They allow fo
 
 However, there are specific rules that have been encoded into the protocol which SuperApps must abide by.
 
-Super App rules should be obeyed at all cost by developers, or they risk their contract being jailed by the protocol. What does it mean for an app to be 'jailed' exactly? We apply the term `jailed` to refer to a Super App that failed to comply with the set of rules encoded into the Superfluid framework. This does **not** mean that someone on the Superfluid team is exerting arbitrary control over your Super Apps.&#x20;
+Super App rules should be obeyed at all cost by developers, or they risk their contract being jailed by the protocol. What does it mean for an app to be 'jailed' exactly? We apply the term `jailed` to refer to a Super App that failed to comply with the set of rules encoded into the Superfluid framework. This does **not** mean that someone on the Superfluid team is exerting arbitrary control over your Super Apps.
 
 These rules have been written into the protocol at the software level, and are simply designed to place basic security guardrails on Super Apps. Complex systems in our industry have constraints, and you can think of Super App rules as an extension of those constraints that apply to this subset of the protocol.
 
