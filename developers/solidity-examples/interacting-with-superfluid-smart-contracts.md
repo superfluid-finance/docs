@@ -4,6 +4,12 @@ description: Using Superfluid at the Smart Contract Level
 
 # 📜 Interacting With Superfluid Smart Contracts
 
+### Installation
+
+```
+npm install @superfluid-finance/ethereum-contracts
+```
+
 ### Working With Superfluid Using Solidity
 
 Inside of the[ Interactive Tutorials](../interactive-tutorials/) section, you can learn how to use the Superfluid Core SDK to work with money streams or instant distributions. Under the hood, what you're really doing is interacting with Superfluid _agreements_. Money streams are created by interacting primarily with the [constant flow agreement (CFA)](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/agreements/ConstantFlowAgreementV1.sol), while calls related to instant distributions are done by working with the [instant distribution agreement (IDA)](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/agreements/InstantDistributionAgreementV1.sol).&#x20;
