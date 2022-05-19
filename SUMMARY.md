@@ -6,6 +6,7 @@
 
 * [💡 What is Superfluid?](protocol-overview/what-is-superfluid/README.md)
   * [🚚 Primitives](protocol-overview/what-is-superfluid/primitives.md)
+  * [📔 Glossary of Terms](protocol-overview/what-is-superfluid/glossary-of-terms.md)
 * [🪙 Super Tokens](protocol-overview/super-tokens/README.md)
   * [ERC20 Wrapper Tokens](protocol-overview/super-tokens/erc20-wrapper-tokens.md)
   * [Pure Super Tokens](protocol-overview/super-tokens/pure-super-tokens.md)
