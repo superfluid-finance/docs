@@ -6,13 +6,6 @@ description: Ethereum education resources
 
 ![](<../.gitbook/assets/image (3).png>)
 
-## Overview&#x20;
-
-**Where to go to for knowledge**&#x20;
-
-* Head over to [Medium and search for "Ethereum"](https://medium.com/search?q=ethereum)&#x20;
-* [Simple as Water ](https://simpleaswater.com/)is great blog for not only Ethereum articles but also AI, Substrate, IPFS... even job listing&#x20;
-
 ## General about Ethereum
 
 * [The State of the Ethereum Network: 5 Years Running](https://consensys.net/blog/news/the-state-of-the-ethereum-network-2020/)
@@ -20,8 +13,6 @@ description: Ethereum education resources
 * [Decentralised web](https://hackernoon.com/dweb-the-decentralized-web-a0e9c6a5c0ec) - simple explanation
 * [Keep your funds safe](https://support.mycrypto.com/) + general knowledge portal, mainly about how to keep your crypto safe
 * [Cypherpunks mailing list ](http://mailing-list-archive.cryptoanarchy.wiki/)- OG literature cypherpunks movement
-* [12 questions about crypto](https://outlast.me/twelve-questions/)
-* [Blockchain required readings](https://github.com/prysmaticlabs/prysm/blob/master/docs/READINGS.md) - Required Blockchain & Ethereum Knowledge -Required Sharding Knowledge - Necessary Go Knowledge & Readings
 * [How does Ethereum work, anyway? ](https://medium.com/@preethikasireddy/how-does-ethereum-work-anyway-22d1df506369)
 * [Ethereum Roadmap kinda sum up from Devcon5 & nice reading about Ethereum](https://decrypt.co/10298/devcon-5-building-a-decentralized-revolution-at-scale)
 * [Price of ETH and history ](https://hackernoon.com/in-defense-of-ethereum-and-its-fatness-why-im-still-bullish-on-eth-4c00fea65442?gi=54535f63bbe2)

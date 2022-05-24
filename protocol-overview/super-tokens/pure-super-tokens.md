@@ -41,7 +41,7 @@ These are all features which are not provided by the Super Token logic, which yo
 
 ### Deploy a Pure Super Token
 
-If you'd like to deploy a Pure Super Token you can use the [NativeSuperToken.sol](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/tokens/NativeSuperToken.sol) contract and the[ deployment script](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/scripts/deploy-super-token.js). We'd also highly recommend using the following repo as a resource for your deployment, as it contains many flavors of custom tokens and deploy scripts for each:
+If you'd like to deploy a Pure Super Token you can use the [NativeSuperToken.sol ](https://github.com/superfluid-finance/CustomSuperTokens/blob/main/contracts/NativeSuperToken.sol)contract and [deployment scripts](https://github.com/superfluid-finance/CustomSuperTokens/tree/main/scripts) which live inside of the Custom Super Tokens repository. We'd also highly recommend using the following repo as a resource for your deployment, as it contains many flavors of custom tokens and deploy scripts for each:
 
 {% embed url="https://github.com/superfluid-finance/CustomSuperTokens" %}
 A helpful repo for Custom Super Token deployment

@@ -46,7 +46,7 @@ If you'd like to help improve the subgraph, there is a complete development guid
 
 ## Schema
 
-The Superfluid Subgraph consists of many entities that can be queried. You can think of entities as similar to tables within a traditional database. We have added significantly more entities in October 2021 - particularly new event entities and aggregate entities. We'll give you an overview of the subgraph's structure in this post, but you can always dive deeper by looking at the [schema](https://github.com/superfluid-finance/protocol-monorepo/blob/subgraph\_v1\_tests/packages/subgraph/schema.graphql) inside of our repository.
+The Superfluid Subgraph consists of many entities that can be queried. You can think of entities as similar to tables within a traditional database. We have added significantly more entities in October 2021 - particularly new event entities and aggregate entities. We'll give you an overview of the subgraph's structure in this post, but you can always dive deeper by looking at the [schema](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/subgraph/schema.graphql) inside of our repository.
 
 ### **Event Entities**
 
