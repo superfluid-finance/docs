@@ -112,6 +112,7 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 {% endtab %}
 
 {% tab title="Avalanche" %}
+**See** [**Avalanche**](networks/avalanche.md) **for more help**
 **Framework**
 
 | Resource                                                                                        | Address                                    |

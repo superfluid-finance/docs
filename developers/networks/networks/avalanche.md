@@ -10,9 +10,9 @@ To use Superfluid with Avalanche, you'll need a RPC URL to connect your Metamask
 
 To add Avalanche to Metamask, you can head to your Settings in Metamask, and select Networks. Click 'Add Network,' and enter an Avalanche RPC URL such as [https://api.avax.network/ext/bc/C/rpc](https://api.avax.network/ext/bc/C/rpc)
 
-| Network Name   | Optimism                                                                                           |
+| Network Name   | Avalanche                                                                                          |
 | -------------- | -------------------------------------------------------------------------------------------------- |
-| Chain Id       | 431140                                                                                             |
+| Chain Id       | 43114                                                                                              |
 | Gas Token      | AVAX                                                                                               |
 | RPC            | **Public RPC URL**: [https://api.avax.network/ext/bc/C/rpc](https://api.avax.network/ext/bc/C/rpc) |
 | Block Explorer | [https://snowtrace.io/](https://snowtrace.io/)                                                     |
