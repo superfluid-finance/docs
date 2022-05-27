@@ -112,7 +112,7 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 {% endtab %}
 
 {% tab title="Avalanche" %}
-**❓ See** [**Avalanche**](networks/optimism-1.md) **for more help**
+**❓ See** [**Avalanche**](networks/avalanche.md) **for more help**
 
 **Framework**
 

@@ -14,8 +14,8 @@ description: All networks that Superfluid is currently deployed on
 [arbitrum.md](arbitrum.md)
 {% endcontent-ref %}
 
-{% content-ref url="optimism-1.md" %}
-[optimism-1.md](optimism-1.md)
+{% content-ref url="avalanche.md" %}
+[avalanche.md](avalanche.md)
 {% endcontent-ref %}
 
 {% content-ref url="xdai-chain.md" %}
