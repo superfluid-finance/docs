@@ -42,10 +42,11 @@ Want to Use Our SDKs? ⬇️
 [liquidations-and-toga.md](sentinels/liquidations-and-toga.md)
 {% endcontent-ref %}
 
-### CONNECT TO XDAI, POLYGON, ETC.
+### CONNECT TO A SUPPORTED NETWORK
 
-* [xDAI Chain](developers/networks/networks/xdai-chain.md)
-* [Polygon (Matic)](developers/networks/networks/polygon-network-matic.md)
+{% content-ref url="developers/networks/networks/" %}
+[networks](developers/networks/networks/)
+{% endcontent-ref %}
 
 ### EXAMPLE APPS
 
