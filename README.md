@@ -49,8 +49,8 @@ Want to Use Our SDKs? ⬇️
 
 ### EXAMPLE APPS
 
-{% content-ref url="resources/examples/" %}
-[examples](resources/examples/)
+{% content-ref url="resources/examples.md" %}
+[examples.md](resources/examples.md)
 {% endcontent-ref %}
 
 ### COMMUNITY + HELP
