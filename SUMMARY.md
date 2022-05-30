@@ -72,6 +72,7 @@
   * [EVM contracts](resources/reference-documentations/evm-contracts/README.md)
     * [superfluid](resources/reference-documentations/evm-contracts/superfluid/README.md)
       * [ISuperfluid](resources/reference-documentations/evm-contracts/superfluid/isuperfluid.md)
+      * [ISuperToken](resources/reference-documentations/evm-contracts/superfluid/ISuperToken.md)
 * [🛠 Example Projects](resources/examples.md)
 * [👷 Ecosystem](resources/ecosystem/README.md)
   * [🏗 Hack Ideas!](https://www.notion.so/Hack-On-Superfluid-92f7cb4ccf264518814d54d50f067ac1)
