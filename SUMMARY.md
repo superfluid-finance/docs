@@ -82,6 +82,7 @@
       * [ICustomSuperTokenBase](resources/reference-documentations/evm-contracts/superfluid/ICustomSuperTokenBase.md)
     * [Agreements](resources/reference-documentations/evm-contracts/agreements/README.md)
       * [IConstantFlowAgreementV1](resources/reference-documentations/evm-contracts/agreements/IConstantFlowAgreementV1.md)
+      * [IInstantDistributionAgreementV1](resources/reference-documentations/evm-contracts/agreements/IInstantDistributionAgreementV1.md)
 * [🛠 Example Projects](resources/examples.md)
 * [👷 Ecosystem](resources/ecosystem/README.md)
   * [🏗 Hack Ideas!](https://www.notion.so/Hack-On-Superfluid-92f7cb4ccf264518814d54d50f067ac1)
