@@ -8,7 +8,7 @@ The Superfluid Bounty Program allows developers to tackle a variety of technical
 
 ### Bounties 💰
 
-Pick a bounty issue you would like to complete in our repo [**HERE**](https://github.com/superfluid-finance/protocol-monorepo/issues?q=is%3Aopen+is%3Aissue+label%3A%22Tag%3A+Bounty%22). They range in skill utilization (Solidity, Node.js, DevOps, etc.) and size.
+Pick a bounty issue you would like to complete in our repo [**HERE**](https://github.com/orgs/superfluid-finance/projects/17/). They range in skill utilization (Solidity, Node.js, DevOps, etc.) and size.
 
 Featured bounties 💡:
 
