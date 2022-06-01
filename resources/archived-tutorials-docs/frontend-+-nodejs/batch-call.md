@@ -4,15 +4,15 @@ description: Perform multiple steps in a single transaction
 
 # Batch Calls with JS SDK
 
-> ### IMPORTANT NOTE
+> #### IMPORTANT NOTE
 >
-> The _JS-SDK is a legacy SDK_ that is no longer being maintained We strongly recommend that new developers **use the** [**SDK-Core**](../../../developers/sdk-initialization/) **or** [**SDK-Redux.**](https://www.npmjs.com/package/@superfluid-finance/sdk-redux)****
+> The _JS-SDK is a legacy SDK_ that is no longer being maintained We strongly recommend that new developers **use the** [**SDK-Core**](../../../developers/sdk-initialization/) **or** [**SDK-Redux.**](https://www.npmjs.com/package/@superfluid-finance/sdk-redux)\*\*\*\*
 
 The Batch Call feature allows you to perform multiple steps in a single transaction, including calls for Super Tokens, Super Apps, and both at the same time.
 
-The primary goal of the Batch Call is to provide you (and your users) with an easy on/off-ramp to your Super App. It allows smooth user-experiences, without spending precious resources on solidity research and engineering for ad-hoc multi-step transactions.&#x20;
+The primary goal of the Batch Call is to provide you (and your users) with an easy on/off-ramp to your Super App. It allows smooth user-experiences, without spending precious resources on solidity research and engineering for ad-hoc multi-step transactions.
 
-Instead, you can focus on writing your Super App quickly and intuitively. Once you're satisfied with the basic functionality, it's only a matter of "wrapping up" functions into a Batch Call.&#x20;
+Instead, you can focus on writing your Super App quickly and intuitively. Once you're satisfied with the basic functionality, it's only a matter of "wrapping up" functions into a Batch Call.
 
 ### Example
 
@@ -121,7 +121,7 @@ await sf.host.batchCall([
 )
 ```
 
-Alternatively, you can manually enter the numerical value for the operation you want. Use the quick-reference table here to see all available options:&#x20;
+Alternatively, you can manually enter the numerical value for the operation you want. Use the quick-reference table here to see all available options:
 
 | Operation                                      | Value |
 | ---------------------------------------------- | ----- |
@@ -176,7 +176,7 @@ Now that you understand what is possible, you should ask yourself the following 
 
 * **Onboarding**: What tokens does the user show up with? How can I quickly get them "into the system" with as few transactions as possible?
 * **Ongoing Actions**: What types of transactions are users making often? Can I combine them together to reduce the user's burden?
-* **Exiting**: Users should typically leave with a feeling of accomplishment. How can I leave a lasting impression on users while they are exiting.&#x20;
+* **Exiting**: Users should typically leave with a feeling of accomplishment. How can I leave a lasting impression on users while they are exiting.
 
 ### Other Resources
 

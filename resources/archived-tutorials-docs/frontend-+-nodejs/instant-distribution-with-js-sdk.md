@@ -1,8 +1,8 @@
 # 💰 Instant Distribution with JS-SDK
 
-> ### IMPORTANT NOTE
+> #### IMPORTANT NOTE
 >
-> The _JS-SDK is a legacy SDK_ that is no longer being maintained We strongly recommend that new developers **use the** [**SDK-Core**](../../../developers/sdk-initialization/) **or** [**SDK-Redux.**](https://www.npmjs.com/package/@superfluid-finance/sdk-redux)****
+> The _JS-SDK is a legacy SDK_ that is no longer being maintained We strongly recommend that new developers **use the** [**SDK-Core**](../../../developers/sdk-initialization/) **or** [**SDK-Redux.**](https://www.npmjs.com/package/@superfluid-finance/sdk-redux)\*\*\*\*
 
 ## Introduction
 

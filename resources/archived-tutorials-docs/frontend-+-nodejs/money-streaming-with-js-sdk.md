@@ -4,9 +4,9 @@ description: Interacting with the Constant Flow Agreement Using the JS-SDK
 
 # 🚰 Money Streaming with JS-SDK
 
-> ### IMPORTANT NOTE
+> #### IMPORTANT NOTE
 >
-> The _JS-SDK is a legacy SDK_ that is no longer being maintained. We strongly recommend that new developers **use the** [**SDK-Core**](../../../developers/sdk-initialization/) **or** [**SDK-Redux.**](https://www.npmjs.com/package/@superfluid-finance/sdk-redux)****
+> The _JS-SDK is a legacy SDK_ that is no longer being maintained. We strongly recommend that new developers **use the** [**SDK-Core**](../../../developers/sdk-initialization/) **or** [**SDK-Redux.**](https://www.npmjs.com/package/@superfluid-finance/sdk-redux)\*\*\*\*
 
 ## Introduction
 
@@ -26,7 +26,7 @@ Seem straightforward enough? Let's go!
 
 ## Prerequisites
 
-Before starting this tutorial you should:&#x20;
+Before starting this tutorial you should:
 
 * Complete the [@superfluid-finance/js-sdk](./) tutorial
 * Have some goerli ETH and tokens in your wallet from the dashboard [https://app.superfluid.finance](https://app.superfluid.finance)
@@ -37,7 +37,7 @@ Bob has some DAIx, and he wants to send 100 per month to alice.
 
 ### Create a User object
 
-First let's create a new `User` object for Bob.&#x20;
+First let's create a new `User` object for Bob.
 
 ```javascript
 const bobAddress = "0xbbb...." // address of the sender's wallet
@@ -60,7 +60,7 @@ await userBob.flow({
 });
 ```
 
-****
+***
 
 So what is this weird number `385802469135802`? This is the amount of DAIx to transfer per second, which is equivalent to 1000 DAIx per month.
 
@@ -89,7 +89,7 @@ userBob.flow({
 });
 ```
 
-Awesome work. You're now ready for the next tutorial [💰 Perform an Instant Distribution](broken-reference)
+Awesome work. You're now ready for the next tutorial [💰 Perform an Instant Distribution](broken-reference/)
 
 Or you can keep reading to take a deeper dive.
 
@@ -125,7 +125,7 @@ So what is this weird number "385802469135802"? This is the amount of DAIx to tr
 
 > HUH?! How is bob able to send 1000 DAIx per month if he only has 50 Superfluid enabled DAI? The answer is that the sender isn't required to have the full amount to start a flow. The flow will continue to run as long as he has DAIx.
 
-****
+***
 
 #### Inspect the Flow
 
