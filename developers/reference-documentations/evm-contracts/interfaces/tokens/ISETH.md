@@ -1,41 +1,24 @@
-# ISETHCustom
+# Solidity API
 
-## Functions
+## ISETHCustom
 
 ### upgradeByETH
 
 ```solidity
-function upgradeByETH(
-) external
+function upgradeByETH() external payable
 ```
 
 ### upgradeByETHTo
 
 ```solidity
-function upgradeByETHTo(
-    address to
-) external
+function upgradeByETHTo(address to) external payable
 ```
-
-#### Parameters
-
-| Name | Type | Description |
-| :--- | :--- | :---------- |
-| `to` | address |  |
 
 ### downgradeToETH
 
 ```solidity
-function downgradeToETH(
-    uint256 wad
-) external
+function downgradeToETH(uint256 wad) external
 ```
 
-#### Parameters
-
-| Name | Type | Description |
-| :--- | :--- | :---------- |
-| `wad` | uint256 |  |
-
-# ISETH
+## ISETH
 

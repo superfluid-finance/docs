@@ -1,6 +1,8 @@
-# ERC20WithTokenInfo
+# Solidity API
 
-Using abstract contract instead of interfaces because old solidity
+## ERC20WithTokenInfo
+
+_Using abstract contract instead of interfaces because old solidity
      does not support interface inheriting other interfaces
-solhint-disable-next-line no-empty-blocks
+solhint-disable-next-line no-empty-blocks_
 
