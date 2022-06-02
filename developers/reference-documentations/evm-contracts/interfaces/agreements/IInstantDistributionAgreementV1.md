@@ -8,7 +8,7 @@
 function agreementType() external pure returns (bytes32)
 ```
 
-_ISuperAgreement.agreementType implementation_
+_ISuperAgreement.agreementType implementation..._
 
 ### createIndex
 
