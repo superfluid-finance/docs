@@ -15,7 +15,7 @@ function initialize(
 ```
 _Initialize the contract_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -61,7 +61,7 @@ Tokens usually opt for a value of 18, imitating the relationship between
 Ether and Wei. This is the value {ERC20} uses, unless {_setupDecimals} is
 called._
 
-### Note 
+#### Note 
 
 SuperToken always uses 18 decimals.
 
@@ -90,7 +90,7 @@ function balanceOf(
 ```
 _Returns the amount of tokens owned by an account (`owner`)._
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -108,20 +108,20 @@ function transfer(
 ```
 _Moves `amount` tokens from the caller's account to `recipient`._
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
 | `recipient` | address |  |
 | `amount` | uint256 |  |
 
-### Return Values
+#### Return Values
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
 | `[0]` | bool | Returns Success a boolean value indicating whether the operation succeeded. |
 
-### Emits 
+#### Emits 
 
 a {Transfer} event.
 
@@ -139,7 +139,7 @@ _Returns the remaining number of tokens that `spender` will be
         allowed to spend on behalf of `owner` through {transferFrom}. This is
         zero by default._
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -160,20 +160,20 @@ function approve(
 ```
 _Sets `amount` as the allowance of `spender` over the caller's tokens._
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
 | `spender` | address |  |
 | `amount` | uint256 |  |
 
-### Return Values
+#### Return Values
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
 | `[0]` | bool | Returns Success a boolean value indicating whether the operation succeeded. |
 
-### Note 
+#### Note 
 
 Beware that changing an allowance with this method brings the risk
 that someone may use both the old and the new allowance by unfortunate
@@ -182,7 +182,7 @@ condition is to first reduce the spender&#x27;s allowance to 0 and set the
 desired value afterwards:
 https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
 
-### Emits 
+#### Emits 
 
 an {Approval} event.
 
@@ -201,7 +201,7 @@ _Moves `amount` tokens from `sender` to `recipient` using the
         allowance mechanism. `amount` is then deducted from the caller's
         allowance._
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -209,13 +209,13 @@ _Moves `amount` tokens from `sender` to `recipient` using the
 | `recipient` | address |  |
 | `amount` | uint256 |  |
 
-### Return Values
+#### Return Values
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
 | `[0]` | bool | Returns Success a boolean value indicating whether the operation succeeded. |
 
-### Emits 
+#### Emits 
 
 a {Transfer} event.
 
@@ -234,18 +234,18 @@ _Atomically increases the allowance granted to `spender` by the caller.
 This is an alternative to {approve} that can be used as a mitigation for
 problems described in {IERC20-approve}._
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
 | `spender` | address |  |
 | `addedValue` | uint256 |  |
 
-### Emits 
+#### Emits 
 
 an {Approval} event indicating the updated allowance.
 
-### Requirements 
+#### Requirements 
 
 - &#x60;spender&#x60; cannot be the zero address.
 
@@ -264,18 +264,18 @@ _Atomically decreases the allowance granted to `spender` by the caller.
 This is an alternative to {approve} that can be used as a mitigation for
 problems described in {IERC20-approve}._
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
 | `spender` | address |  |
 | `subtractedValue` | uint256 |  |
 
-### Emits 
+#### Emits 
 
 an {Approval} event indicating the updated allowance.
 
-### Requirements 
+#### Requirements 
 
 - &#x60;spender&#x60; cannot be the zero address.
 - &#x60;spender&#x60; must have allowance for the caller of at least
@@ -293,7 +293,7 @@ _Returns the smallest part of the token that is not divisible. This
         means all token operations (creation, movement and destruction) must have
         amounts that are a multiple of this number._
 
-### Note 
+#### Note 
 
 For super token contracts, this value is always 1
 
@@ -313,7 +313,7 @@ If send or receive hooks are registered for the caller and `recipient`,
      the corresponding functions will be called with `data` and empty
      `operatorData`. See {IERC777Sender} and {IERC777Recipient}._
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -321,11 +321,11 @@ If send or receive hooks are registered for the caller and `recipient`,
 | `amount` | uint256 |  |
 | `data` | bytes |  |
 
-### Emits 
+#### Emits 
 
 a {Sent} event.
 
-### Requirements 
+#### Requirements 
 
 - the caller must have at least &#x60;amount&#x60; tokens.
 - &#x60;recipient&#x60; cannot be the zero address.
@@ -347,18 +347,18 @@ total supply.
 If a send hook is registered for the caller, the corresponding function
 will be called with `data` and empty `operatorData`. See {IERC777Sender}._
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
 | `amount` | uint256 |  |
 | `data` | bytes |  |
 
-### Emits 
+#### Emits 
 
 a {Burned} event.
 
-### Requirements 
+#### Requirements 
 
 - the caller must have at least &#x60;amount&#x60; tokens.
 
@@ -378,7 +378,7 @@ accounts are their own operator.
 
 See {operatorSend} and {operatorBurn}._
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -397,17 +397,17 @@ _Make an account an operator of the caller.
 
 See {isOperatorFor}._
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
 | `operator` | address |  |
 
-### Emits 
+#### Emits 
 
 an {AuthorizedOperator} event.
 
-### Requirements 
+#### Requirements 
 
 - &#x60;operator&#x60; cannot be calling address.
 
@@ -423,17 +423,17 @@ _Revoke an account's operator status for the caller.
 
 See {isOperatorFor} and {defaultOperators}._
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
 | `operator` | address |  |
 
-### Emits 
+#### Emits 
 
 a {RevokedOperator} event.
 
-### Requirements 
+#### Requirements 
 
 - &#x60;operator&#x60; cannot be calling address.
 
@@ -471,7 +471,7 @@ If send or receive hooks are registered for `sender` and `recipient`,
 the corresponding functions will be called with `data` and
 `operatorData`. See {IERC777Sender} and {IERC777Recipient}._
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -481,11 +481,11 @@ the corresponding functions will be called with `data` and
 | `data` | bytes |  |
 | `operatorData` | bytes |  |
 
-### Emits 
+#### Emits 
 
 a {Sent} event.
 
-### Requirements 
+#### Requirements 
 
 - &#x60;sender&#x60; cannot be the zero address.
 - &#x60;sender&#x60; must have at least &#x60;amount&#x60; tokens.
@@ -511,7 +511,7 @@ The caller must be an operator of `account`.
 If a send hook is registered for `account`, the corresponding function
 will be called with `data` and `operatorData`. See {IERC777Sender}._
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -520,11 +520,11 @@ will be called with `data` and `operatorData`. See {IERC777Sender}._
 | `data` | bytes |  |
 | `operatorData` | bytes |  |
 
-### Emits 
+#### Emits 
 
 a {Burned} event.
 
-### Requirements 
+#### Requirements 
 
 - &#x60;account&#x60; cannot be the zero address.
 - &#x60;account&#x60; must have at least &#x60;amount&#x60; tokens.
@@ -542,7 +542,7 @@ function selfMint(
 ```
 _Mint new tokens for the account_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -550,7 +550,7 @@ _Mint new tokens for the account_
 | `amount` | uint256 |  |
 | `userData` | bytes |  |
 
-### Modifiers 
+#### Modifiers 
 
  - onlySelf
 
@@ -566,7 +566,7 @@ function selfBurn(
 ```
 _Burn existing tokens for the account_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -574,7 +574,7 @@ _Burn existing tokens for the account_
 | `amount` | uint256 |  |
 | `userData` | bytes |  |
 
-### Modifiers 
+#### Modifiers 
 
  - onlySelf
 
@@ -593,7 +593,7 @@ _Transfer `amount` tokens from the `sender` to `recipient`.
 If `spender` isn't the same as `sender`, checks if `spender` has allowance to
 spend tokens of `sender`._
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -602,7 +602,7 @@ spend tokens of `sender`._
 | `recipient` | address |  |
 | `amount` | uint256 |  |
 
-### Modifiers 
+#### Modifiers 
 
  - onlySelf
 
@@ -619,7 +619,7 @@ function selfApproveFor(
 _Give `spender`, `amount` allowance to spend the tokens of
 `account`._
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -627,7 +627,7 @@ _Give `spender`, `amount` allowance to spend the tokens of
 | `spender` | address |  |
 | `amount` | uint256 |  |
 
-### Modifiers 
+#### Modifiers 
 
  - onlySelf
 
@@ -641,7 +641,7 @@ function transferAll(
 ```
 _Transfer all available balance from `msg.sender` to `recipient`_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -657,7 +657,7 @@ function getUnderlyingToken(
 ```
 _Return the underlying token contract_
 
-### Return Values
+#### Return Values
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -673,13 +673,13 @@ function upgrade(
 ```
 _Upgrade ERC20 to SuperToken._
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
 | `amount` | uint256 | Number of tokens to be upgraded (in 18 decimals) |
 
-### Note 
+#### Note 
 
 It will use &#x60;transferFrom&#x60; to get tokens. Before calling this
 function you should &#x60;approve&#x60; this contract
@@ -696,7 +696,7 @@ function upgradeTo(
 ```
 _Upgrade ERC20 to SuperToken and transfer immediately_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -704,7 +704,7 @@ _Upgrade ERC20 to SuperToken and transfer immediately_
 | `amount` | uint256 | Number of tokens to be upgraded (in 18 decimals) |
 | `data` | bytes | User data for the TokensRecipient callback |
 
-### Note 
+#### Note 
 
 It will use &#x60;transferFrom&#x60; to get tokens. Before calling this
 function you should &#x60;approve&#x60; this contract
@@ -719,7 +719,7 @@ event TokenUpgraded(
 
 Token upgrade event
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -737,7 +737,7 @@ function downgrade(
 _Downgrade SuperToken to ERC20.
 It will call transfer to send tokens_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -754,7 +754,7 @@ event TokenDowngraded(
 
 Token downgrade event
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -773,7 +773,7 @@ function operationApprove(
 ```
 _Perform ERC20 approve by host contract._
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -781,7 +781,7 @@ _Perform ERC20 approve by host contract._
 | `spender` | address | The spender of account owner's funds. |
 | `amount` | uint256 | Number of tokens to be approved. |
 
-### Modifiers 
+#### Modifiers 
 
  - onlyHost
 
@@ -798,7 +798,7 @@ function operationTransferFrom(
 ```
 _Perform ERC20 transfer from by host contract._
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -807,7 +807,7 @@ _Perform ERC20 transfer from by host contract._
 | `recipient` | address | The recipient of thefunds. |
 | `amount` | uint256 | Number of tokens to be transferred. |
 
-### Modifiers 
+#### Modifiers 
 
  - onlyHost
 
@@ -822,14 +822,14 @@ function operationUpgrade(
 ```
 _Upgrade ERC20 to SuperToken by host contract._
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
 | `account` | address | The account to be changed. |
 | `amount` | uint256 | Number of tokens to be upgraded (in 18 decimals) |
 
-### Modifiers 
+#### Modifiers 
 
  - onlyHost
 
@@ -844,14 +844,14 @@ function operationDowngrade(
 ```
 _Downgrade ERC20 to SuperToken by host contract._
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
 | `account` | address | The account to be changed. |
 | `amount` | uint256 | Number of tokens to be downgraded (in 18 decimals) |
 
-### Modifiers 
+#### Modifiers 
 
  - onlyHost
 

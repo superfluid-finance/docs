@@ -24,14 +24,14 @@ function getMaximumFlowRateFromDeposit(
 ```
 _The deposit is clipped and rounded down_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
 | `token` | contract ISuperfluidToken |  |
 | `deposit` | uint256 | Deposit amount used for creating the flow |
 
-### Return Values
+#### Return Values
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -51,14 +51,14 @@ function getDepositRequiredForFlowRate(
 ```
 _Calculates the deposit based on the liquidationPeriod and flowRate_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
 | `token` | contract ISuperfluidToken |  |
 | `flowRate` | int96 | Flow rate to be tested |
 
-### Return Values
+#### Return Values
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -66,7 +66,7 @@ _Calculates the deposit based on the liquidationPeriod and flowRate_
 
 Get the deposit required for creating the flow
 
-### Note 
+#### Note 
 
 - if calculated deposit (flowRate * liquidationPeriod) is less
   than the minimum deposit, we use the minimum deposit otherwise
@@ -84,14 +84,14 @@ function isPatricianPeriodNow(
 ```
 _Returns whether it is the patrician period based on host.getNow()_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
 | `token` | contract ISuperfluidToken |  |
 | `account` | address | The account we are interested in |
 
-### Return Values
+#### Return Values
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -111,7 +111,7 @@ function isPatricianPeriod(
 ```
 _Returns whether it is the patrician period based on timestamp_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -119,7 +119,7 @@ _Returns whether it is the patrician period based on timestamp_
 | `account` | address | The account we are interested in |
 | `timestamp` | uint256 | The timestamp we are interested in observing the result of isPatricianPeriod |
 
-### Return Values
+#### Return Values
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -140,7 +140,7 @@ function updateFlowOperatorPermissions(
 ```
 _msgSender from `ctx` updates permissions for the `flowOperator` with `flowRateAllowance`_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -163,7 +163,7 @@ function authorizeFlowOperatorWithFullControl(
 ```
 _msgSender from `ctx` grants `flowOperator` all permissions with flowRateAllowance as type(int96).max_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -184,7 +184,7 @@ function revokeFlowOperatorWithFullControl(
 ```
 _`permissions` and `flowRateAllowance` will both be set to 0_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -206,7 +206,7 @@ function getFlowOperatorData(
     returns (bytes32 flowOperatorId, uint8 permissions, int96 flowRateAllowance)
 ```
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -214,7 +214,7 @@ function getFlowOperatorData(
 | `sender` | address | The permission granter address |
 | `flowOperator` | address | The permission grantee address |
 
-### Return Values
+#### Return Values
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -235,14 +235,14 @@ function getFlowOperatorDataByID(
     returns (uint8 permissions, int96 flowRateAllowance)
 ```
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
 | `token` | contract ISuperfluidToken | Super token address |
 | `flowOperatorId` | bytes32 | The keccak256 hash of encoded string "flowOperator", sender and flowOperator |
 
-### Return Values
+#### Return Values
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -265,7 +265,7 @@ function createFlow(
 ```
 _flowId (agreementId) is the keccak256 hash of encoded sender and receiver_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -276,13 +276,13 @@ _flowId (agreementId) is the keccak256 hash of encoded sender and receiver_
 
 Create a flow betwen ctx.msgSender and receiver
 
-### Callbacks 
+#### Callbacks 
 
 - AgreementCreated
   - agreementId - can be used in getFlowByID
   - agreementData - abi.encode(address flowSender, address flowReceiver)
 
-### Note 
+#### Note 
 
 - A deposit is taken as safety margin for the solvency agents
 - A extra gas fee may be taken to pay for solvency agent liquidations
@@ -302,7 +302,7 @@ function createFlowByOperator(
 ```
 _A flow created by an approved flow operator (see above for details on callbacks)_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -328,7 +328,7 @@ function updateFlow(
 ```
 _flowId (agreementId) is the keccak256 hash of encoded sender and receiver_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -339,13 +339,13 @@ _flowId (agreementId) is the keccak256 hash of encoded sender and receiver_
 
 Update the flow rate between ctx.msgSender and receiver
 
-### Callbacks 
+#### Callbacks 
 
 - AgreementUpdated
   - agreementId - can be used in getFlowByID
   - agreementData - abi.encode(address flowSender, address flowReceiver)
 
-### Note 
+#### Note 
 
 - Only the flow sender may update the flow rate
 - Even if the flow rate is zero, the flow is not deleted
@@ -368,7 +368,7 @@ function updateFlowByOperator(
 ```
 _A flow updated by an approved flow operator (see above for details on callbacks)_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -393,7 +393,7 @@ function getFlow(
 ```
 _Get the flow data between `sender` and `receiver` of `token`_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -401,7 +401,7 @@ _Get the flow data between `sender` and `receiver` of `token`_
 | `sender` | address | Flow receiver |
 | `receiver` | address | Flow sender |
 
-### Return Values
+#### Return Values
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -422,14 +422,14 @@ function getFlowByID(
 ```
 _flowId (agreementId) is the keccak256 hash of encoded sender and receiver_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
 | `token` | contract ISuperfluidToken | Super token address |
 | `agreementId` | bytes32 | The agreement ID |
 
-### Return Values
+#### Return Values
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -452,14 +452,14 @@ function getAccountFlowInfo(
 ```
 _Get the aggregated flow info of the account_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
 | `token` | contract ISuperfluidToken | Super token address |
 | `account` | address | Account for the query |
 
-### Return Values
+#### Return Values
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -480,14 +480,14 @@ function getNetFlow(
 ```
 _Get the net flow rate of the account_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
 | `token` | contract ISuperfluidToken | Super token address |
 | `account` | address | Account for the query |
 
-### Return Values
+#### Return Values
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -507,7 +507,7 @@ function deleteFlow(
 ```
 _flowId (agreementId) is the keccak256 hash of encoded sender and receiver_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -518,13 +518,13 @@ _flowId (agreementId) is the keccak256 hash of encoded sender and receiver_
 
 Delete the flow between sender and receiver
 
-### Callbacks 
+#### Callbacks 
 
 - AgreementTerminated
   - agreementId - can be used in getFlowByID
   - agreementData - abi.encode(address flowSender, address flowReceiver)
 
-### Note 
+#### Note 
 
 - Both flow sender and receiver may delete the flow
 - If Sender account is insolvent or in critical state, a solvency agent may
@@ -545,7 +545,7 @@ function deleteFlowByOperator(
 ```
 _A flow deleted by an approved flow operator (see above for details on callbacks)_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -570,7 +570,7 @@ event FlowOperatorUpdated(
 
 Flow operator updated event
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -595,7 +595,7 @@ event FlowUpdated(
 
 Flow updated event
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -617,7 +617,7 @@ event FlowUpdatedExtension(
 
 Flow updated extension event
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |

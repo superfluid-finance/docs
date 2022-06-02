@@ -11,7 +11,7 @@ event Set(
 )
 ```
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -29,7 +29,7 @@ function set(
 ```
 _Set resolver address name_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -47,7 +47,7 @@ function get(
 ```
 _Get address by name_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |

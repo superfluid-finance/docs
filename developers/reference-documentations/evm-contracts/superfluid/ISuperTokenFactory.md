@@ -56,7 +56,7 @@ function createERC20Wrapper(
 ```
 _Create new super token wrapper for the underlying ERC20 token_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -80,7 +80,7 @@ function createERC20Wrapper(
 ```
 _Create new super token wrapper for the underlying ERC20 token with extra token info_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -101,7 +101,7 @@ function initializeCustomSuperToken(
     external
 ```
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -117,7 +117,7 @@ event SuperTokenLogicCreated(
 
 Super token logic created event
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -132,7 +132,7 @@ event SuperTokenCreated(
 
 Super token created event
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -147,7 +147,7 @@ event CustomSuperTokenCreated(
 
 Custom super token created event
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |

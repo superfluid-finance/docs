@@ -19,7 +19,7 @@ function beforeAgreementCreated(
 ```
 _Callback before a new agreement is created._
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -29,14 +29,14 @@ _Callback before a new agreement is created._
 | `agreementData` | bytes | The agreement data (non-compressed) |
 | `ctx` | bytes | The context data. |
 
-### Return Values
+#### Return Values
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
 | `cbdata` | bytes | A free format in memory data the app can use to pass
          arbitary information to the after-hook callback. |
 
-### Note 
+#### Note 
 
 - It will be invoked with &#x60;staticcall&#x60;, no state changes are permitted.
 - Only revert with a &quot;reason&quot; is permitted.
@@ -57,7 +57,7 @@ function afterAgreementCreated(
 ```
 _Callback after a new agreement is created._
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -68,13 +68,13 @@ _Callback after a new agreement is created._
 | `cbdata` | bytes | The data returned from the before-hook callback. |
 | `ctx` | bytes | The context data. |
 
-### Return Values
+#### Return Values
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
 | `newCtx` | bytes | The current context of the transaction. |
 
-### Note 
+#### Note 
 
 - State changes is permitted.
 - Only revert with a &quot;reason&quot; is permitted.
@@ -94,7 +94,7 @@ function beforeAgreementUpdated(
 ```
 _Callback before a new agreement is updated._
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -104,14 +104,14 @@ _Callback before a new agreement is updated._
 | `agreementData` | bytes | The agreement data (non-compressed) |
 | `ctx` | bytes | The context data. |
 
-### Return Values
+#### Return Values
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
 | `cbdata` | bytes | A free format in memory data the app can use to pass
          arbitary information to the after-hook callback. |
 
-### Note 
+#### Note 
 
 - It will be invoked with &#x60;staticcall&#x60;, no state changes are permitted.
 - Only revert with a &quot;reason&quot; is permitted.
@@ -132,7 +132,7 @@ function afterAgreementUpdated(
 ```
 _Callback after a new agreement is updated._
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -143,13 +143,13 @@ _Callback after a new agreement is updated._
 | `cbdata` | bytes | The data returned from the before-hook callback. |
 | `ctx` | bytes | The context data. |
 
-### Return Values
+#### Return Values
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
 | `newCtx` | bytes | The current context of the transaction. |
 
-### Note 
+#### Note 
 
 - State changes is permitted.
 - Only revert with a &quot;reason&quot; is permitted.
@@ -169,7 +169,7 @@ function beforeAgreementTerminated(
 ```
 _Callback before a new agreement is terminated._
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -179,13 +179,13 @@ _Callback before a new agreement is terminated._
 | `agreementData` | bytes | The agreement data (non-compressed) |
 | `ctx` | bytes | The context data. |
 
-### Return Values
+#### Return Values
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
 | `cbdata` | bytes | A free format in memory data the app can use to pass arbitary information to the after-hook callback. |
 
-### Note 
+#### Note 
 
 - It will be invoked with &#x60;staticcall&#x60;, no state changes are permitted.
 - Revert is not permitted.
@@ -206,7 +206,7 @@ function afterAgreementTerminated(
 ```
 _Callback after a new agreement is terminated._
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -217,13 +217,13 @@ _Callback after a new agreement is terminated._
 | `cbdata` | bytes | The data returned from the before-hook callback. |
 | `ctx` | bytes | The context data. |
 
-### Return Values
+#### Return Values
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
 | `newCtx` | bytes | The current context of the transaction. |
 
-### Note 
+#### Note 
 
 - State changes is permitted.
 - Revert is not permitted.

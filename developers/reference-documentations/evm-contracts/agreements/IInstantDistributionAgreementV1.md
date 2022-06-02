@@ -48,7 +48,7 @@ function createIndex(
 ```
 _Create a new index for the publisher_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -56,7 +56,7 @@ _Create a new index for the publisher_
 | `indexId` | uint32 | Id of the index |
 | `ctx` | bytes | Context bytes (see ISuperfluid.sol for Context struct) |
 
-### Callbacks 
+#### Callbacks 
 
 None
 ## Event IndexCreated
@@ -72,7 +72,7 @@ event IndexCreated(
 
 Index created event
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -94,7 +94,7 @@ function getIndex(
 ```
 _Query the data of a index_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -102,7 +102,7 @@ _Query the data of a index_
 | `publisher` | address | The publisher of the index |
 | `indexId` | uint32 | Id of the index |
 
-### Return Values
+#### Return Values
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -125,7 +125,7 @@ function calculateDistribution(
 ```
 _Calculate actual distribution amount_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -134,7 +134,7 @@ _Calculate actual distribution amount_
 | `indexId` | uint32 | Id of the index |
 | `amount` | uint256 | The amount of tokens desired to be distributed |
 
-### Return Values
+#### Return Values
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -155,7 +155,7 @@ function updateIndex(
 ```
 _Update index value of an index_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -164,7 +164,7 @@ _Update index value of an index_
 | `indexValue` | uint128 | Value of the index |
 | `ctx` | bytes | Context bytes (see ISuperfluid.sol for Context struct) |
 
-### Callbacks 
+#### Callbacks 
 
 None
 ## Event IndexUpdated
@@ -184,7 +184,7 @@ event IndexUpdated(
 
 Index updated event
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -211,7 +211,7 @@ function distribute(
 ```
 _Distribute tokens through the index_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -220,7 +220,7 @@ _Distribute tokens through the index_
 | `amount` | uint256 | The amount of tokens desired to be distributed |
 | `ctx` | bytes | Context bytes (see ISuperfluid.sol for Context struct) |
 
-### Note 
+#### Note 
 
 - This is a convenient version of updateIndex. It adds to the index
   a delta that equals to &#x60;amount / totalUnits&#x60;
@@ -228,7 +228,7 @@ _Distribute tokens through the index_
   &#x60;calculateDistribution&#x60;. This is due to precision error with index
   value and units data range
 
-### Callbacks 
+#### Callbacks 
 
 None
 
@@ -246,7 +246,7 @@ function approveSubscription(
 ```
 _Approve the subscription of an index_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -255,7 +255,7 @@ _Approve the subscription of an index_
 | `indexId` | uint32 | Id of the index |
 | `ctx` | bytes | Context bytes (see ISuperfluid.sol for Context struct) |
 
-### Callbacks 
+#### Callbacks 
 
 - if subscription exist
   - AgreementCreated callback to the publisher:
@@ -277,7 +277,7 @@ event IndexSubscribed(
 
 Index subscribed event
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -300,7 +300,7 @@ event SubscriptionApproved(
 
 Subscription approved event
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -324,7 +324,7 @@ function revokeSubscription(
 ```
 _"Unapproves" the subscription and moves approved units to pending_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -335,7 +335,7 @@ _"Unapproves" the subscription and moves approved units to pending_
 
 Revoke the subscription of an index
 
-### Callbacks 
+#### Callbacks 
 
 - AgreementUpdated callback to the publisher:
    - agreementId is for the subscription
@@ -353,7 +353,7 @@ event IndexUnsubscribed(
 
 Index unsubscribed event
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -376,7 +376,7 @@ event SubscriptionRevoked(
 
 Subscription approved event
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -401,7 +401,7 @@ function updateSubscription(
 ```
 _Update the nuber of units of a subscription_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -411,7 +411,7 @@ _Update the nuber of units of a subscription_
 | `units` | uint128 | Number of units of the subscription |
 | `ctx` | bytes | Context bytes (see ISuperfluid.sol for Context struct) |
 
-### Callbacks 
+#### Callbacks 
 
 - if subscription exist
   - AgreementCreated callback to the subscriber:
@@ -434,7 +434,7 @@ event IndexUnitsUpdated(
 
 Index units updated event
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -459,7 +459,7 @@ event SubscriptionUnitsUpdated(
 
 Subscription units updated event
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -484,7 +484,7 @@ function getSubscription(
 ```
 _Get data of a subscription_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -493,7 +493,7 @@ _Get data of a subscription_
 | `indexId` | uint32 | Id of the index |
 | `subscriber` | address | The subscriber of the index |
 
-### Return Values
+#### Return Values
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -514,14 +514,14 @@ function getSubscriptionByID(
 ```
 _indexId (agreementId) is the keccak256 hash of encodePacked("publisher", publisher, indexId)_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
 | `token` | contract ISuperfluidToken | Super token address |
 | `agreementId` | bytes32 | The agreement ID |
 
-### Return Values
+#### Return Values
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -545,14 +545,14 @@ function listSubscriptions(
 ```
 _List subscriptions of an user_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
 | `token` | contract ISuperfluidToken | Super token address |
 | `subscriber` | address | The subscriber's address |
 
-### Return Values
+#### Return Values
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -575,7 +575,7 @@ function deleteSubscription(
 ```
 _Delete the subscription of an user_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -585,7 +585,7 @@ _Delete the subscription of an user_
 | `subscriber` | address | The subscriber's address |
 | `ctx` | bytes | Context bytes (see ISuperfluid.sol for Context struct) |
 
-### Callbacks 
+#### Callbacks 
 
 - if the subscriber called it
   - AgreementTerminated callback to the publsiher:
@@ -609,7 +609,7 @@ function claim(
 ```
 _Claim pending distributions_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -619,11 +619,11 @@ _Claim pending distributions_
 | `subscriber` | address | The subscriber's address |
 | `ctx` | bytes | Context bytes (see ISuperfluid.sol for Context struct) |
 
-### Note 
+#### Note 
 
 The subscription should not be approved yet
 
-### Callbacks 
+#### Callbacks 
 
 - AgreementUpdated callback to the publisher:
    - agreementId is for the subscription
@@ -641,7 +641,7 @@ event IndexDistributionClaimed(
 
 Index distribution claimed event
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -664,7 +664,7 @@ event SubscriptionDistributionClaimed(
 
 Subscription distribution claimed event
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |

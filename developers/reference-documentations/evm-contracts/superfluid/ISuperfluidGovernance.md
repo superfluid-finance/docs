@@ -13,7 +13,7 @@ function replaceGovernance(
 ```
 _Replace the current governance with a new governance_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -31,7 +31,7 @@ function registerAgreementClass(
 ```
 _Register a new agreement class_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -51,7 +51,7 @@ function updateContracts(
 ```
 _Update logics of the contracts_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -60,7 +60,7 @@ _Update logics of the contracts_
 | `agreementClassNewLogics` | address[] |  |
 | `superTokenFactoryNewLogic` | address |  |
 
-### Note 
+#### Note 
 
 - Because they might have inter-dependencies, it is good to have one single function to update them all
 
@@ -75,7 +75,7 @@ function batchUpdateSuperTokenLogic(
 ```
 _Update supertoken logic contract to the latest that is managed by the super token factory_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -95,7 +95,7 @@ function setConfig(
 ```
 _Set configuration as address value_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -117,7 +117,7 @@ function setConfig(
 ```
 _Set configuration as uint256 value_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -138,7 +138,7 @@ function clearConfig(
 ```
 _Clear configuration_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -159,7 +159,7 @@ function getConfigAsAddress(
 ```
 _Get configuration as address value_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -180,7 +180,7 @@ function getConfigAsUint256(
 ```
 _Get configuration as uint256 value_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |

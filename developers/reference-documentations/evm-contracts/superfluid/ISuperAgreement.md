@@ -25,7 +25,7 @@ function realtimeBalanceOf(
 ```
 _Calculate the real-time balance for the account of this agreement class_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -33,7 +33,7 @@ _Calculate the real-time balance for the account of this agreement class_
 | `account` | address | Account the state belongs to |
 | `time` | uint256 | Time used for the calculation |
 
-### Return Values
+#### Return Values
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |

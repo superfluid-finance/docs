@@ -37,7 +37,7 @@ function replaceGovernance(
 ```
 _Replace the current governance with a new one_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -54,7 +54,7 @@ event GovernanceReplaced(
 
 Governance replaced event
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -71,13 +71,13 @@ function registerAgreementClass(
 ```
 _Register a new agreement class to the system_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
 | `agreementClassLogic` | contract ISuperAgreement | Initial agreement class code |
 
-### Modifiers 
+#### Modifiers 
 
 - onlyGovernance
 ## Event AgreementClassRegistered
@@ -93,7 +93,7 @@ Agreement class registered event
 
 agreementType is the keccak256 hash of: "org.superfluid-finance.agreements.<AGREEMENT_NAME>.<VERSION>"
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -110,13 +110,13 @@ function updateAgreementClass(
 ```
 _Update code of an agreement class_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
 | `agreementClassLogic` | contract ISuperAgreement | New code for the agreement class |
 
-### Modifiers 
+#### Modifiers 
 
  - onlyGovernance
 ## Event AgreementClassUpdated
@@ -132,7 +132,7 @@ Agreement class updated event
 
 agreementType is the keccak256 hash of: "org.superfluid-finance.agreements.<AGREEMENT_NAME>.<VERSION>"
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -150,7 +150,7 @@ function isAgreementTypeListed(
 ```
 _agreementType is the keccak256 hash of: "org.superfluid-finance.agreements.<AGREEMENT_NAME>.<VERSION>"_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -169,7 +169,7 @@ function isAgreementClassListed(
 ```
 _Check if the agreement class is whitelisted_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -186,7 +186,7 @@ function getAgreementClass(
 ```
 _agreementType is the keccak256 hash of: "org.superfluid-finance.agreements.<AGREEMENT_NAME>.<VERSION>"_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -205,7 +205,7 @@ function mapAgreementClasses(
 ```
 _Map list of the agreement classes using a bitmap_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -223,7 +223,7 @@ function addToAgreementClassesBitmap(
 ```
 _agreementType is the keccak256 hash of: "org.superfluid-finance.agreements.<AGREEMENT_NAME>.<VERSION>"_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -244,7 +244,7 @@ function removeFromAgreementClassesBitmap(
 ```
 _agreementType is the keccak256 hash of: "org.superfluid-finance.agreements.<AGREEMENT_NAME>.<VERSION>"_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -263,7 +263,7 @@ function getSuperTokenFactory(
 ```
 _Get the super token factory_
 
-### Return Values
+#### Return Values
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -279,7 +279,7 @@ function getSuperTokenFactoryLogic(
 ```
 _Get the super token factory logic (applicable to upgradable deployment)_
 
-### Return Values
+#### Return Values
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -295,7 +295,7 @@ function updateSuperTokenFactory(
 ```
 _Update super token factory_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -311,7 +311,7 @@ event SuperTokenFactoryUpdated(
 
 SuperToken factory updated event
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -327,7 +327,7 @@ function updateSuperTokenLogic(
 ```
 _Refer to ISuperTokenFactory.Upgradability for expected behaviours_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -346,7 +346,7 @@ event SuperTokenLogicUpdated(
 
 SuperToken logic updated event
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -363,14 +363,14 @@ function registerApp(
 ```
 _Message sender (must be a contract) declares itself as a super app._
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
 | `configWord` | uint256 | The super app manifest configuration, flags are defined in
 `SuperAppDefinitions` |
 
-### Deprecated 
+#### Deprecated 
 
 you should use &#x60;registerAppWithKey&#x60; or &#x60;registerAppByFactory&#x60; instead,
 because app registration is currently governance permissioned on mainnets.
@@ -385,7 +385,7 @@ event AppRegistered(
 
 App registered event
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -402,7 +402,7 @@ function registerAppWithKey(
 ```
 _Message sender declares itself as a super app._
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -425,7 +425,7 @@ function registerAppByFactory(
 ```
 _Message sender (must be a contract) declares app as a super app_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -446,7 +446,7 @@ function isApp(
 ```
 _Query if the app is registered_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -463,7 +463,7 @@ function getAppLevel(
 ```
 _Query app level_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -480,7 +480,7 @@ function getAppManifest(
 ```
 _Get the manifest of the super app_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -497,7 +497,7 @@ function isAppJailed(
 ```
 _Query if the app has been jailed_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -513,7 +513,7 @@ function allowCompositeApp(
 ```
 _Whitelist the target app for app composition for the source app (msg.sender)_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -531,7 +531,7 @@ function isCompositeAppAllowed(
 ```
 _Query if source app is allowed to call the target app as downstream app_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -552,7 +552,7 @@ function callAppBeforeCallback(
 ```
 _(For agreements) StaticCall the app before callback_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -561,7 +561,7 @@ _(For agreements) StaticCall the app before callback_
 | `isTermination` | bool | Is it a termination callback? |
 | `ctx` | bytes | Current ctx, it will be validated. |
 
-### Return Values
+#### Return Values
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -581,7 +581,7 @@ function callAppAfterCallback(
 ```
 _(For agreements) Call the app after callback_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -590,7 +590,7 @@ _(For agreements) Call the app after callback_
 | `isTermination` | bool | Is it a termination callback? |
 | `ctx` | bytes | Current ctx, it will be validated. |
 
-### Return Values
+#### Return Values
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -611,7 +611,7 @@ function appCallbackPush(
 ```
 _(For agreements) Create a new callback stack_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -621,7 +621,7 @@ _(For agreements) Create a new callback stack_
 | `appAllowanceUsed` | int256 | App allowance used so far. |
 | `appAllowanceToken` | contract ISuperfluidToken |  |
 
-### Return Values
+#### Return Values
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -639,20 +639,20 @@ function appCallbackPop(
 ```
 _(For agreements) Pop from the current app callback stack_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
 | `ctx` | bytes | The ctx that was pushed before the callback stack. |
 | `appAllowanceUsedDelta` | int256 | App allowance used by the app. |
 
-### Return Values
+#### Return Values
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
 | `newCtx` | bytes | The current context of the transaction. |
 
-### Security 
+#### Security 
 
 - Here we cannot do assertValidCtx(ctx), since we do not really save the stack in memory.
 - Hence there is still implicit trust that the agreement handles the callback push/pop pair correctly.
@@ -670,7 +670,7 @@ function ctxUseAllowance(
 ```
 _(For agreements) Use app allowance._
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -678,7 +678,7 @@ _(For agreements) Use app allowance._
 | `appAllowanceWantedMore` | uint256 | See app allowance for more details. |
 | `appAllowanceUsedDelta` | int256 | See app allowance for more details. |
 
-### Return Values
+#### Return Values
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -697,7 +697,7 @@ function jailApp(
 ```
 _(For agreements) Jail the app._
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -705,7 +705,7 @@ _(For agreements) Jail the app._
 | `app` | contract ISuperApp | The super app. |
 | `reason` | uint256 | Jail reason code. |
 
-### Return Values
+#### Return Values
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -722,7 +722,7 @@ event Jail(
 
 Jail event for the app
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -742,7 +742,7 @@ function callAgreement(
 ```
 _Call agreement function_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -762,7 +762,7 @@ function callAppAction(
 ```
 _Main use case is calling app action in a batch call via the host_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -771,7 +771,7 @@ _Main use case is calling app action in a batch call via the host_
 
 Call app action
 
-### Note 
+#### Note 
 
 See &quot;Contextless Call Proxies&quot; above for more about contextual call data.
 ## struct Context
@@ -805,7 +805,7 @@ function callAgreementWithContext(
     returns (bytes newCtx, bytes returnedData)
 ```
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -826,7 +826,7 @@ function callAppActionWithContext(
     returns (bytes newCtx)
 ```
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -844,7 +844,7 @@ function decodeCtx(
     returns (struct ISuperfluid.Context context)
 ```
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -860,7 +860,7 @@ function isCtxValid(
     returns (bool)
 ```
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -886,7 +886,7 @@ function batchCall(
 ```
 _Batch call function_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -902,7 +902,7 @@ function forwardBatchCall(
 ```
 _Batch call function for trusted forwarders (EIP-2771)_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |

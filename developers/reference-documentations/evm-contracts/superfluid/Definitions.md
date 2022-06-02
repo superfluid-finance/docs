@@ -30,7 +30,7 @@ function getAppLevel(
     returns (uint8)
 ```
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -52,7 +52,7 @@ function isAppJailed(
     returns (bool)
 ```
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -176,7 +176,7 @@ function isConfigWordClean(
     returns (bool)
 ```
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -232,7 +232,7 @@ function decodeCallInfo(
     returns (uint8 appLevel, uint8 callType)
 ```
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -249,7 +249,7 @@ function encodeCallInfo(
     returns (uint256 callInfo)
 ```
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -312,7 +312,7 @@ function isPermissionsClean(
     returns (bool)
 ```
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -434,7 +434,7 @@ function getTrustedForwarderConfigKey(
     returns (bytes32)
 ```
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -451,7 +451,7 @@ function getAppRegistrationConfigKey(
     returns (bytes32)
 ```
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -468,7 +468,7 @@ function getAppFactoryConfigKey(
     returns (bytes32)
 ```
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -484,7 +484,7 @@ function decodePPPConfig(
     returns (uint256 liquidationPeriod, uint256 patricianPeriod)
 ```
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |

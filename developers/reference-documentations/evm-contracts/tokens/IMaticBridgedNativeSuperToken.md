@@ -15,7 +15,7 @@ function deposit(
 ```
 _triggers minting of tokens to the given user, called by the child chain manager_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -32,7 +32,7 @@ function withdraw(
 ```
 _triggers burning of tokens on the child chain and unlocking on L1_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -48,7 +48,7 @@ function updateChildChainManager(
 ```
 _governance can change the child chain manager_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -64,7 +64,7 @@ event ChildChainManagerChanged(
 
 emitted when the child chain manager changes
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |

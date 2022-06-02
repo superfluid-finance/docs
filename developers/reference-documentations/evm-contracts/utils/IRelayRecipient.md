@@ -17,7 +17,7 @@ function isTrustedForwarder(
 _the forwarder is required to verify the sender's signature, and verify
      the call is not a replay._
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |

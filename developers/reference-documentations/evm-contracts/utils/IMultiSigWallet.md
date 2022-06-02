@@ -14,7 +14,7 @@ function submitTransaction(
     returns (uint256 transactionId)
 ```
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |

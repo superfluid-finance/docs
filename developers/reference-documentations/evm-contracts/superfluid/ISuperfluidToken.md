@@ -33,14 +33,14 @@ function realtimeBalanceOf(
 ```
 _Calculate the real balance of a user, taking in consideration all agreements of the account_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
 | `account` | address | for the query |
 | `timestamp` | uint256 | Time of balance |
 
-### Return Values
+#### Return Values
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -59,13 +59,13 @@ function realtimeBalanceOfNow(
 ```
 _realtimeBalanceOf with timestamp equals to block timestamp_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
 | `account` | address | for the query |
 
-### Return Values
+#### Return Values
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -88,14 +88,14 @@ function isAccountCritical(
 ```
 _A critical account is when availableBalance < 0_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
 | `account` | address | The account to check |
 | `timestamp` | uint256 | The time we'd like to check if the account is critical (should use future) |
 
-### Return Values
+#### Return Values
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -114,13 +114,13 @@ function isAccountCriticalNow(
 ```
 _A critical account is when availableBalance < 0_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
 | `account` | address | The account to check |
 
-### Return Values
+#### Return Values
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -140,14 +140,14 @@ function isAccountSolvent(
 ```
 _An account is insolvent when the sum of deposits for a token can't cover the negative availableBalance_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
 | `account` | address | The account to check |
 | `timestamp` | uint256 | The time we'd like to check if the account is solvent (should use future) |
 
-### Return Values
+#### Return Values
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -166,13 +166,13 @@ function isAccountSolventNow(
 ```
 _An account is insolvent when the sum of deposits for a token can't cover the negative availableBalance_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
 | `account` | address | The account to check |
 
-### Return Values
+#### Return Values
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -191,13 +191,13 @@ function getAccountActiveAgreements(
 ```
 _An active agreement is one that has state for the account_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
 | `account` | address | Account to query |
 
-### Return Values
+#### Return Values
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -216,7 +216,7 @@ function createAgreement(
 ```
 _Create a new agreement_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -235,7 +235,7 @@ event AgreementCreated(
 
 Agreement created event
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -256,7 +256,7 @@ function getAgreementData(
 ```
 _Get data of the agreement_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -264,7 +264,7 @@ _Get data of the agreement_
 | `id` | bytes32 | Agreement ID |
 | `dataLength` | uint256 |  |
 
-### Return Values
+#### Return Values
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -281,7 +281,7 @@ function updateAgreementData(
 ```
 _Create a new agreement_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -300,7 +300,7 @@ event AgreementUpdated(
 
 Agreement updated event
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -319,7 +319,7 @@ function terminateAgreement(
 ```
 _Close the agreement_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -337,7 +337,7 @@ event AgreementTerminated(
 
 Agreement terminated event
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -356,7 +356,7 @@ function updateAgreementStateSlot(
 ```
 _Update agreement state slot_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -364,7 +364,7 @@ _Update agreement state slot_
 | `slotId` | uint256 |  |
 | `slotData` | bytes32[] |  |
 
-### Note 
+#### Note 
 
 - To clear the storage out, provide zero-ed array of intended length
 ## Event AgreementStateUpdated
@@ -379,7 +379,7 @@ event AgreementStateUpdated(
 
 Agreement account state updated event
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -401,7 +401,7 @@ function getAgreementStateSlot(
 ```
 _Get data of the slot of the state of an agreement_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -421,7 +421,7 @@ function settleBalance(
 ```
 _The agreement needs to make sure that the balance delta is balanced afterwards_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -430,7 +430,7 @@ _The agreement needs to make sure that the balance delta is balanced afterwards_
 
 Settle balance from an account by the agreement
 
-### Modifiers 
+#### Modifiers 
 
  - onlyAgreement
 
@@ -450,7 +450,7 @@ function makeLiquidationPayoutsV2(
 ```
 _Make liquidation payouts (v2)_
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -462,7 +462,7 @@ _Make liquidation payouts (v2)_
 | `rewardAmount` | uint256 | The amount the reward recepient account will receive |
 | `targetAccountBalanceDelta` | int256 | The amount the sender account balance should change by |
 
-### Note 
+#### Note 
 
 - If a bailout is required (bailoutAmount &gt; 0)
   - the actual reward (single deposit) goes to the executor,
@@ -473,7 +473,7 @@ _Make liquidation payouts (v2)_
   - the targetAccount will pay the rewardAmount
   - the liquidator (reward account in PIC period) will receive the rewardAmount
 
-### Modifiers 
+#### Modifiers 
 
  - onlyAgreement
 ## Event AgreementLiquidatedV2
@@ -493,7 +493,7 @@ event AgreementLiquidatedV2(
 
 Agreement liquidation event v2 (including agent account)
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -519,7 +519,7 @@ event AgreementLiquidated(
 
 Agreement liquidation event (DEPRECATED BY AgreementLiquidatedBy)
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -539,7 +539,7 @@ event Bailout(
 
 System bailout occurred (DEPRECATED BY AgreementLiquidatedBy)
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -561,7 +561,7 @@ event AgreementLiquidatedBy(
 
 Agreement liquidation event (DEPRECATED BY AgreementLiquidatedV2)
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |

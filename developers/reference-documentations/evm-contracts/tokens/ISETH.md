@@ -19,7 +19,7 @@ function upgradeByETHTo(
     external
 ```
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
@@ -34,7 +34,7 @@ function downgradeToETH(
     external
 ```
 
-### Parameters
+#### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
