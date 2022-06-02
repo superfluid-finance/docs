@@ -6,7 +6,7 @@ description: Create Your Own NFT Billboard with User Data
 
 ### Build an NFT Billboard with Superfluid UserData
 
-In this tutorial, we make a small tweak to the contracts used in the TradeableCashflow Super App to test out Superfluid's userData parameters. We set up a Scaffold-eth based repo, remove (comment out) some of the extra front end stuff, and then create a few scripts to allow us to easily create, read, update, and delete flows (we love CRUD).&#x20;
+In this tutorial, we make a small tweak to the contracts used in the TradeableCashflow Super App to test out Superfluid's userData parameters. We set up a Scaffold-eth based repo, remove (comment out) some of the extra front end stuff, and then create a few scripts to allow us to easily create, read, update, and delete flows (we love CRUD).
 
 > NOTE: We recommend reading through our [Super Apps tutoria](https://docs.superfluid.finance/superfluid/protocol-tutorials/super-apps)l before completing this tutorial.
 
@@ -24,11 +24,9 @@ Before we get started with project setup, you'll also want to head over to the [
 
 ![](<../../../.gitbook/assets/Screen Shot 2021-10-16 at 8.45.29 AM.png>)
 
-![](<../../../.gitbook/assets/Screen Shot 2021-10-15 at 11.24.31 AM (1) (1) (1) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/Screen Shot 2021-10-15 at 11.24.31 AM (1) (1) (1) (1) (1) (1) (1).png>)
 
 You'll want to have 2 Ethereum addresses ready: one of which you'll need your private key for (that has our test tokens), the other which we'll just be observing.
-
-
 
 #### Scaffold-Eth and Hardhat Configuration
 
@@ -69,7 +67,7 @@ polytest: {
  },
 ```
 
-Finally, we need to adjust our solidity compiler so that it's compatible with our project.&#x20;
+Finally, we need to adjust our solidity compiler so that it's compatible with our project.
 
 ```
 //in hardhat.config on line 280
@@ -144,7 +142,7 @@ Inside of the `afterAgreementTerminated` callback:
 userData = "";
 ```
 
-This logic will take in the message passed in as userData to calls made to the constant flow agreement which target the flow into this app, decode it, and set it to a storage variable so that we can very easily see what's going on throughout this process. Feel free to make this code your own and do your own gas optimization as you see fit 😁&#x20;
+This logic will take in the message passed in as userData to calls made to the constant flow agreement which target the flow into this app, decode it, and set it to a storage variable so that we can very easily see what's going on throughout this process. Feel free to make this code your own and do your own gas optimization as you see fit 😁
 
 #### Contract Deployment
 
@@ -507,8 +505,6 @@ appAllowanceToken: '0x5D8B4C2554aeB7e86F387B4d6c00Ac33499Ed01f'
 ```
 
 If you want, you can also check out the Superfluid dashboard to see these flows being created in real time (you just can't see the userData there)!
-
-
 
 #### The Front End - Displaying our Billboard
 
