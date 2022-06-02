@@ -1,5 +1,5 @@
 ---
-description: Reference Docs for Superfluid Core Contracts.
+description: Reference Docs for Superfluid Core Contracts
 ---
 
 # Superfluid
