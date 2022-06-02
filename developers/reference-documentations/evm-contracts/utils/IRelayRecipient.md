@@ -1,27 +1,38 @@
-# Solidity API
+# IRelayRecipient
 
-## IRelayRecipient
+**Relay recipient interface**
 
-_A contract must implement this interface in order to support relayed transactions
-It is better to inherit the BaseRelayRecipient as its implementation_
+A contract must implement this interface in order to support relayed transactions
+It is better to inherit the BaseRelayRecipient as its implementation
 
-### isTrustedForwarder
+## Fn isTrustedForwarder
 
 ```solidity
-function isTrustedForwarder(address forwarder) external view returns (bool)
+function isTrustedForwarder(
+    address forwarder
+) 
+    external 
+    returns (bool)
 ```
+_the forwarder is required to verify the sender's signature, and verify
+     the call is not a replay._
+
+### Parameters
+
+| Name | Type | Description |
+| :--- | :--- | :---------- |
+| `forwarder` | address |  |
 
 Returns if the forwarder is trusted to forward relayed transactions to us.
 
-_the forwarder is required to verify the sender&#x27;s signature, and verify
-     the call is not a replay._
-
-### versionRecipient
+## Fn versionRecipient
 
 ```solidity
-function versionRecipient() external view returns (string)
+function versionRecipient(
+) 
+    external 
+    returns (string)
 ```
-
 _EIP 2771 version
 
 NOTE:

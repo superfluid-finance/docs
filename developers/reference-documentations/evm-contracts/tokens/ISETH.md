@@ -1,24 +1,46 @@
-# Solidity API
+# ISETHCustom
 
-## ISETHCustom
+**Super ETH (SETH) custom token interface**
 
-### upgradeByETH
-
-```solidity
-function upgradeByETH() external payable
-```
-
-### upgradeByETHTo
+## Fn upgradeByETH
 
 ```solidity
-function upgradeByETHTo(address to) external payable
+function upgradeByETH(
+) 
+    external
 ```
 
-### downgradeToETH
+## Fn upgradeByETHTo
 
 ```solidity
-function downgradeToETH(uint256 wad) external
+function upgradeByETHTo(
+    address to
+) 
+    external
 ```
 
-## ISETH
+### Parameters
+
+| Name | Type | Description |
+| :--- | :--- | :---------- |
+| `to` | address |  |
+
+## Fn downgradeToETH
+
+```solidity
+function downgradeToETH(
+    uint256 wad
+) 
+    external
+```
+
+### Parameters
+
+| Name | Type | Description |
+| :--- | :--- | :---------- |
+| `wad` | uint256 |  |
+
+# ISETH
+
+**Super ETH (SETH) full interface**
 

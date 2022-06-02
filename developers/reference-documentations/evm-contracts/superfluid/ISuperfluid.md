@@ -1,520 +1,780 @@
-# Solidity API
+# ISuperfluid
 
-## ISuperfluid
+**Host interface**
 
-### getNow
+This is the central contract of the system where super agreement, super app
+and super token features are connected.
+
+The Superfluid host contract is also the entry point for the protocol users,
+where batch call and meta transaction are provided for UX improvements.
+
+## Fn getNow
 
 ```solidity
-function getNow() external view returns (uint256)
+function getNow(
+) 
+    external 
+    returns (uint256)
 ```
 
-### getGovernance
+## Fn getGovernance
 
 ```solidity
-function getGovernance() external view returns (contract ISuperfluidGovernance governance)
+function getGovernance(
+) 
+    external 
+    returns (contract ISuperfluidGovernance governance)
 ```
-
 _Get the current governance address of the Superfluid host_
 
-### replaceGovernance
+## Fn replaceGovernance
 
 ```solidity
-function replaceGovernance(contract ISuperfluidGovernance newGov) external
+function replaceGovernance(
+    contract ISuperfluidGovernance newGov
+) 
+    external
 ```
-
 _Replace the current governance with a new one_
 
-### GovernanceReplaced
-
-```solidity
-event GovernanceReplaced(contract ISuperfluidGovernance oldGov, contract ISuperfluidGovernance newGov)
-```
-
-_Governance replaced event_
+### Parameters
 
 | Name | Type | Description |
-| ---- | ---- | ----------- |
-| oldGov | contract ISuperfluidGovernance | Address of the old governance contract |
-| newGov | contract ISuperfluidGovernance | Address of the new governance contract |
+| :--- | :--- | :---------- |
+| `newGov` | contract ISuperfluidGovernance |  |
 
-### registerAgreementClass
+## Event GovernanceReplaced
 
 ```solidity
-function registerAgreementClass(contract ISuperAgreement agreementClassLogic) external
+event GovernanceReplaced(
+    contract ISuperfluidGovernance oldGov,
+    contract ISuperfluidGovernance newGov
+)
 ```
 
+Governance replaced event
+
+### Parameters
+
+| Name | Type | Description |
+| :--- | :--- | :---------- |
+| `oldGov` | contract ISuperfluidGovernance | Address of the old governance contract |
+| `newGov` | contract ISuperfluidGovernance | Address of the new governance contract |
+
+## Fn registerAgreementClass
+
+```solidity
+function registerAgreementClass(
+    contract ISuperAgreement agreementClassLogic
+) 
+    external
+```
 _Register a new agreement class to the system_
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| agreementClassLogic | contract ISuperAgreement | Initial agreement class code Modifiers:  - onlyGovernance |
+### Parameters
 
-### AgreementClassRegistered
+| Name | Type | Description |
+| :--- | :--- | :---------- |
+| `agreementClassLogic` | contract ISuperAgreement | Initial agreement class code |
+
+### Modifiers 
+
+- onlyGovernance
+## Event AgreementClassRegistered
 
 ```solidity
-event AgreementClassRegistered(bytes32 agreementType, address code)
+event AgreementClassRegistered(
+    bytes32 agreementType,
+    address code
+)
 ```
 
 Agreement class registered event
 
-_agreementType is the keccak256 hash of: &quot;org.superfluid-finance.agreements.&lt;AGREEMENT_NAME&gt;.&lt;VERSION&gt;&quot;_
+agreementType is the keccak256 hash of: "org.superfluid-finance.agreements.<AGREEMENT_NAME>.<VERSION>"
+
+### Parameters
 
 | Name | Type | Description |
-| ---- | ---- | ----------- |
-| agreementType | bytes32 | The agreement type registered |
-| code | address | Address of the new agreement |
+| :--- | :--- | :---------- |
+| `agreementType` | bytes32 | The agreement type registered |
+| `code` | address | Address of the new agreement |
 
-### updateAgreementClass
+## Fn updateAgreementClass
 
 ```solidity
-function updateAgreementClass(contract ISuperAgreement agreementClassLogic) external
+function updateAgreementClass(
+    contract ISuperAgreement agreementClassLogic
+) 
+    external
 ```
-
 _Update code of an agreement class_
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| agreementClassLogic | contract ISuperAgreement | New code for the agreement class Modifiers:  - onlyGovernance |
+### Parameters
 
-### AgreementClassUpdated
+| Name | Type | Description |
+| :--- | :--- | :---------- |
+| `agreementClassLogic` | contract ISuperAgreement | New code for the agreement class |
+
+### Modifiers 
+
+ - onlyGovernance
+## Event AgreementClassUpdated
 
 ```solidity
-event AgreementClassUpdated(bytes32 agreementType, address code)
+event AgreementClassUpdated(
+    bytes32 agreementType,
+    address code
+)
 ```
 
 Agreement class updated event
 
-_agreementType is the keccak256 hash of: &quot;org.superfluid-finance.agreements.&lt;AGREEMENT_NAME&gt;.&lt;VERSION&gt;&quot;_
+agreementType is the keccak256 hash of: "org.superfluid-finance.agreements.<AGREEMENT_NAME>.<VERSION>"
+
+### Parameters
 
 | Name | Type | Description |
-| ---- | ---- | ----------- |
-| agreementType | bytes32 | The agreement type updated |
-| code | address | Address of the new agreement |
+| :--- | :--- | :---------- |
+| `agreementType` | bytes32 | The agreement type updated |
+| `code` | address | Address of the new agreement |
 
-### isAgreementTypeListed
+## Fn isAgreementTypeListed
 
 ```solidity
-function isAgreementTypeListed(bytes32 agreementType) external view returns (bool yes)
+function isAgreementTypeListed(
+    bytes32 agreementType
+) 
+    external 
+    returns (bool yes)
 ```
+_agreementType is the keccak256 hash of: "org.superfluid-finance.agreements.<AGREEMENT_NAME>.<VERSION>"_
+
+### Parameters
+
+| Name | Type | Description |
+| :--- | :--- | :---------- |
+| `agreementType` | bytes32 |  |
 
 Check if the agreement type is whitelisted
 
-_agreementType is the keccak256 hash of: &quot;org.superfluid-finance.agreements.&lt;AGREEMENT_NAME&gt;.&lt;VERSION&gt;&quot;_
-
-### isAgreementClassListed
+## Fn isAgreementClassListed
 
 ```solidity
-function isAgreementClassListed(contract ISuperAgreement agreementClass) external view returns (bool yes)
+function isAgreementClassListed(
+    contract ISuperAgreement agreementClass
+) 
+    external 
+    returns (bool yes)
 ```
-
 _Check if the agreement class is whitelisted_
 
-### getAgreementClass
+### Parameters
+
+| Name | Type | Description |
+| :--- | :--- | :---------- |
+| `agreementClass` | contract ISuperAgreement |  |
+
+## Fn getAgreementClass
 
 ```solidity
-function getAgreementClass(bytes32 agreementType) external view returns (contract ISuperAgreement agreementClass)
+function getAgreementClass(
+    bytes32 agreementType
+) 
+    external 
+    returns (contract ISuperAgreement agreementClass)
 ```
+_agreementType is the keccak256 hash of: "org.superfluid-finance.agreements.<AGREEMENT_NAME>.<VERSION>"_
+
+### Parameters
+
+| Name | Type | Description |
+| :--- | :--- | :---------- |
+| `agreementType` | bytes32 |  |
 
 Get agreement class
 
-_agreementType is the keccak256 hash of: &quot;org.superfluid-finance.agreements.&lt;AGREEMENT_NAME&gt;.&lt;VERSION&gt;&quot;_
-
-### mapAgreementClasses
+## Fn mapAgreementClasses
 
 ```solidity
-function mapAgreementClasses(uint256 bitmap) external view returns (contract ISuperAgreement[] agreementClasses)
+function mapAgreementClasses(
+    uint256 bitmap
+) 
+    external 
+    returns (contract ISuperAgreement[] agreementClasses)
 ```
-
 _Map list of the agreement classes using a bitmap_
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| bitmap | uint256 | Agreement class bitmap |
+### Parameters
 
-### addToAgreementClassesBitmap
+| Name | Type | Description |
+| :--- | :--- | :---------- |
+| `bitmap` | uint256 | Agreement class bitmap |
+
+## Fn addToAgreementClassesBitmap
 
 ```solidity
-function addToAgreementClassesBitmap(uint256 bitmap, bytes32 agreementType) external view returns (uint256 newBitmap)
+function addToAgreementClassesBitmap(
+    uint256 bitmap,
+    bytes32 agreementType
+) 
+    external 
+    returns (uint256 newBitmap)
 ```
+_agreementType is the keccak256 hash of: "org.superfluid-finance.agreements.<AGREEMENT_NAME>.<VERSION>"_
+
+### Parameters
+
+| Name | Type | Description |
+| :--- | :--- | :---------- |
+| `bitmap` | uint256 | Agreement class bitmap |
+| `agreementType` | bytes32 |  |
 
 Create a new bitmask by adding a agreement class to it
 
-_agreementType is the keccak256 hash of: &quot;org.superfluid-finance.agreements.&lt;AGREEMENT_NAME&gt;.&lt;VERSION&gt;&quot;_
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| bitmap | uint256 | Agreement class bitmap |
-| agreementType | bytes32 |  |
-
-### removeFromAgreementClassesBitmap
+## Fn removeFromAgreementClassesBitmap
 
 ```solidity
-function removeFromAgreementClassesBitmap(uint256 bitmap, bytes32 agreementType) external view returns (uint256 newBitmap)
+function removeFromAgreementClassesBitmap(
+    uint256 bitmap,
+    bytes32 agreementType
+) 
+    external 
+    returns (uint256 newBitmap)
 ```
+_agreementType is the keccak256 hash of: "org.superfluid-finance.agreements.<AGREEMENT_NAME>.<VERSION>"_
+
+### Parameters
+
+| Name | Type | Description |
+| :--- | :--- | :---------- |
+| `bitmap` | uint256 | Agreement class bitmap |
+| `agreementType` | bytes32 |  |
 
 Create a new bitmask by removing a agreement class from it
 
-_agreementType is the keccak256 hash of: &quot;org.superfluid-finance.agreements.&lt;AGREEMENT_NAME&gt;.&lt;VERSION&gt;&quot;_
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| bitmap | uint256 | Agreement class bitmap |
-| agreementType | bytes32 |  |
-
-### getSuperTokenFactory
+## Fn getSuperTokenFactory
 
 ```solidity
-function getSuperTokenFactory() external view returns (contract ISuperTokenFactory factory)
+function getSuperTokenFactory(
+) 
+    external 
+    returns (contract ISuperTokenFactory factory)
 ```
-
 _Get the super token factory_
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| factory | contract ISuperTokenFactory | The factory |
+### Return Values
 
-### getSuperTokenFactoryLogic
+| Name | Type | Description |
+| :--- | :--- | :---------- |
+| `factory` | contract ISuperTokenFactory | The factory |
+
+## Fn getSuperTokenFactoryLogic
 
 ```solidity
-function getSuperTokenFactoryLogic() external view returns (address logic)
+function getSuperTokenFactoryLogic(
+) 
+    external 
+    returns (address logic)
 ```
-
 _Get the super token factory logic (applicable to upgradable deployment)_
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| logic | address | The factory logic |
+### Return Values
 
-### updateSuperTokenFactory
+| Name | Type | Description |
+| :--- | :--- | :---------- |
+| `logic` | address | The factory logic |
+
+## Fn updateSuperTokenFactory
 
 ```solidity
-function updateSuperTokenFactory(contract ISuperTokenFactory newFactory) external
+function updateSuperTokenFactory(
+    contract ISuperTokenFactory newFactory
+) 
+    external
 ```
-
 _Update super token factory_
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| newFactory | contract ISuperTokenFactory | New factory logic |
-
-### SuperTokenFactoryUpdated
-
-```solidity
-event SuperTokenFactoryUpdated(contract ISuperTokenFactory newFactory)
-```
-
-_SuperToken factory updated event_
+### Parameters
 
 | Name | Type | Description |
-| ---- | ---- | ----------- |
-| newFactory | contract ISuperTokenFactory | Address of the new factory |
+| :--- | :--- | :---------- |
+| `newFactory` | contract ISuperTokenFactory | New factory logic |
 
-### updateSuperTokenLogic
+## Event SuperTokenFactoryUpdated
 
 ```solidity
-function updateSuperTokenLogic(contract ISuperToken token) external
+event SuperTokenFactoryUpdated(
+    contract ISuperTokenFactory newFactory
+)
 ```
+
+SuperToken factory updated event
+
+### Parameters
+
+| Name | Type | Description |
+| :--- | :--- | :---------- |
+| `newFactory` | contract ISuperTokenFactory | Address of the new factory |
+
+## Fn updateSuperTokenLogic
+
+```solidity
+function updateSuperTokenLogic(
+    contract ISuperToken token
+) 
+    external
+```
+_Refer to ISuperTokenFactory.Upgradability for expected behaviours_
+
+### Parameters
+
+| Name | Type | Description |
+| :--- | :--- | :---------- |
+| `token` | contract ISuperToken |  |
 
 Update the super token logic to the latest
 
-_Refer to ISuperTokenFactory.Upgradability for expected behaviours_
-
-### SuperTokenLogicUpdated
+## Event SuperTokenLogicUpdated
 
 ```solidity
-event SuperTokenLogicUpdated(contract ISuperToken token, address code)
+event SuperTokenLogicUpdated(
+    contract ISuperToken token,
+    address code
+)
 ```
 
-_SuperToken logic updated event_
+SuperToken logic updated event
+
+### Parameters
 
 | Name | Type | Description |
-| ---- | ---- | ----------- |
-| token | contract ISuperToken |  |
-| code | address | Address of the new SuperToken logic |
+| :--- | :--- | :---------- |
+| `token` | contract ISuperToken |  |
+| `code` | address | Address of the new SuperToken logic |
 
-### registerApp
+## Fn registerApp
 
 ```solidity
-function registerApp(uint256 configWord) external
+function registerApp(
+    uint256 configWord
+) 
+    external
 ```
-
 _Message sender (must be a contract) declares itself as a super app._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| configWord | uint256 | The super app manifest configuration, flags are defined in &#x60;SuperAppDefinitions&#x60; |
-
-### AppRegistered
-
-```solidity
-event AppRegistered(contract ISuperApp app)
-```
-
-_App registered event_
+### Parameters
 
 | Name | Type | Description |
-| ---- | ---- | ----------- |
-| app | contract ISuperApp | Address of jailed app |
+| :--- | :--- | :---------- |
+| `configWord` | uint256 | The super app manifest configuration, flags are defined in
+`SuperAppDefinitions` |
 
-### registerAppWithKey
+### Deprecated 
+
+you should use &#x60;registerAppWithKey&#x60; or &#x60;registerAppByFactory&#x60; instead,
+because app registration is currently governance permissioned on mainnets.
+
+## Event AppRegistered
 
 ```solidity
-function registerAppWithKey(uint256 configWord, string registrationKey) external
+event AppRegistered(
+    contract ISuperApp app
+)
 ```
 
+App registered event
+
+### Parameters
+
+| Name | Type | Description |
+| :--- | :--- | :---------- |
+| `app` | contract ISuperApp | Address of jailed app |
+
+## Fn registerAppWithKey
+
+```solidity
+function registerAppWithKey(
+    uint256 configWord,
+    string registrationKey
+) 
+    external
+```
+_Message sender declares itself as a super app._
+
+### Parameters
+
+| Name | Type | Description |
+| :--- | :--- | :---------- |
+| `configWord` | uint256 | The super app manifest configuration, flags are defined in `SuperAppDefinitions` |
+| `registrationKey` | string | The registration key issued by the governance, needed to register on a mainnet. |
+
+See https://github.com/superfluid-finance/protocol-monorepo/wiki/Super-App-White-listing-Guide
+On testnets or in dev environment, a placeholder (e.g. empty string) can be used.
 While the message sender must be the super app itself, the transaction sender (tx.origin)
 must be the deployer account the registration key was issued for.
 
-_Message sender declares itself as a super app._
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| configWord | uint256 | The super app manifest configuration, flags are defined in &#x60;SuperAppDefinitions&#x60; |
-| registrationKey | string | The registration key issued by the governance, needed to register on a mainnet. See https://github.com/superfluid-finance/protocol-monorepo/wiki/Super-App-White-listing-Guide On testnets or in dev environment, a placeholder (e.g. empty string) can be used. |
-
-### registerAppByFactory
+## Fn registerAppByFactory
 
 ```solidity
-function registerAppByFactory(contract ISuperApp app, uint256 configWord) external
+function registerAppByFactory(
+    contract ISuperApp app,
+    uint256 configWord
+) 
+    external
 ```
+_Message sender (must be a contract) declares app as a super app_
+
+### Parameters
+
+| Name | Type | Description |
+| :--- | :--- | :---------- |
+| `app` | contract ISuperApp |  |
+| `configWord` | uint256 | The super app manifest configuration, flags are defined in `SuperAppDefinitions` |
 
 On mainnet deployments, only factory contracts pre-authorized by governance can use this.
 See https://github.com/superfluid-finance/protocol-monorepo/wiki/Super-App-White-listing-Guide
 
-_Message sender (must be a contract) declares app as a super app_
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| app | contract ISuperApp |  |
-| configWord | uint256 | The super app manifest configuration, flags are defined in &#x60;SuperAppDefinitions&#x60; |
-
-### isApp
+## Fn isApp
 
 ```solidity
-function isApp(contract ISuperApp app) external view returns (bool)
+function isApp(
+    contract ISuperApp app
+) 
+    external 
+    returns (bool)
 ```
-
 _Query if the app is registered_
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| app | contract ISuperApp | Super app address |
+### Parameters
 
-### getAppLevel
+| Name | Type | Description |
+| :--- | :--- | :---------- |
+| `app` | contract ISuperApp | Super app address |
+
+## Fn getAppLevel
 
 ```solidity
-function getAppLevel(contract ISuperApp app) external view returns (uint8 appLevel)
+function getAppLevel(
+    contract ISuperApp app
+) 
+    external 
+    returns (uint8 appLevel)
 ```
-
 _Query app level_
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| app | contract ISuperApp | Super app address |
+### Parameters
 
-### getAppManifest
+| Name | Type | Description |
+| :--- | :--- | :---------- |
+| `app` | contract ISuperApp | Super app address |
+
+## Fn getAppManifest
 
 ```solidity
-function getAppManifest(contract ISuperApp app) external view returns (bool isSuperApp, bool isJailed, uint256 noopMask)
+function getAppManifest(
+    contract ISuperApp app
+) 
+    external 
+    returns (bool isSuperApp, bool isJailed, uint256 noopMask)
 ```
-
 _Get the manifest of the super app_
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| app | contract ISuperApp | Super app address |
+### Parameters
 
-### isAppJailed
+| Name | Type | Description |
+| :--- | :--- | :---------- |
+| `app` | contract ISuperApp | Super app address |
+
+## Fn isAppJailed
 
 ```solidity
-function isAppJailed(contract ISuperApp app) external view returns (bool isJail)
+function isAppJailed(
+    contract ISuperApp app
+) 
+    external 
+    returns (bool isJail)
 ```
-
 _Query if the app has been jailed_
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| app | contract ISuperApp | Super app address |
+### Parameters
 
-### allowCompositeApp
+| Name | Type | Description |
+| :--- | :--- | :---------- |
+| `app` | contract ISuperApp | Super app address |
+
+## Fn allowCompositeApp
 
 ```solidity
-function allowCompositeApp(contract ISuperApp targetApp) external
+function allowCompositeApp(
+    contract ISuperApp targetApp
+) 
+    external
 ```
-
 _Whitelist the target app for app composition for the source app (msg.sender)_
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| targetApp | contract ISuperApp | The target super app address |
+### Parameters
 
-### isCompositeAppAllowed
+| Name | Type | Description |
+| :--- | :--- | :---------- |
+| `targetApp` | contract ISuperApp | The target super app address |
+
+## Fn isCompositeAppAllowed
 
 ```solidity
-function isCompositeAppAllowed(contract ISuperApp app, contract ISuperApp targetApp) external view returns (bool isAppAllowed)
+function isCompositeAppAllowed(
+    contract ISuperApp app,
+    contract ISuperApp targetApp
+) 
+    external 
+    returns (bool isAppAllowed)
 ```
-
 _Query if source app is allowed to call the target app as downstream app_
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| app | contract ISuperApp | Super app address |
-| targetApp | contract ISuperApp | The target super app address |
+### Parameters
 
-### callAppBeforeCallback
+| Name | Type | Description |
+| :--- | :--- | :---------- |
+| `app` | contract ISuperApp | Super app address |
+| `targetApp` | contract ISuperApp | The target super app address |
+
+## Fn callAppBeforeCallback
 
 ```solidity
-function callAppBeforeCallback(contract ISuperApp app, bytes callData, bool isTermination, bytes ctx) external returns (bytes cbdata)
+function callAppBeforeCallback(
+    contract ISuperApp app,
+    bytes callData,
+    bool isTermination,
+    bytes ctx
+) 
+    external 
+    returns (bytes cbdata)
 ```
-
 _(For agreements) StaticCall the app before callback_
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| app | contract ISuperApp | The super app. |
-| callData | bytes | The call data sending to the super app. |
-| isTermination | bool | Is it a termination callback? |
-| ctx | bytes | Current ctx, it will be validated. |
+### Parameters
 
 | Name | Type | Description |
-| ---- | ---- | ----------- |
-| cbdata | bytes | Data returned from the callback. |
+| :--- | :--- | :---------- |
+| `app` | contract ISuperApp | The super app. |
+| `callData` | bytes | The call data sending to the super app. |
+| `isTermination` | bool | Is it a termination callback? |
+| `ctx` | bytes | Current ctx, it will be validated. |
 
-### callAppAfterCallback
+### Return Values
+
+| Name | Type | Description |
+| :--- | :--- | :---------- |
+| `cbdata` | bytes | Data returned from the callback. |
+
+## Fn callAppAfterCallback
 
 ```solidity
-function callAppAfterCallback(contract ISuperApp app, bytes callData, bool isTermination, bytes ctx) external returns (bytes newCtx)
+function callAppAfterCallback(
+    contract ISuperApp app,
+    bytes callData,
+    bool isTermination,
+    bytes ctx
+) 
+    external 
+    returns (bytes newCtx)
 ```
-
 _(For agreements) Call the app after callback_
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| app | contract ISuperApp | The super app. |
-| callData | bytes | The call data sending to the super app. |
-| isTermination | bool | Is it a termination callback? |
-| ctx | bytes | Current ctx, it will be validated. |
+### Parameters
 
 | Name | Type | Description |
-| ---- | ---- | ----------- |
-| newCtx | bytes | The current context of the transaction. |
+| :--- | :--- | :---------- |
+| `app` | contract ISuperApp | The super app. |
+| `callData` | bytes | The call data sending to the super app. |
+| `isTermination` | bool | Is it a termination callback? |
+| `ctx` | bytes | Current ctx, it will be validated. |
 
-### appCallbackPush
+### Return Values
+
+| Name | Type | Description |
+| :--- | :--- | :---------- |
+| `newCtx` | bytes | The current context of the transaction. |
+
+## Fn appCallbackPush
 
 ```solidity
-function appCallbackPush(bytes ctx, contract ISuperApp app, uint256 appAllowanceGranted, int256 appAllowanceUsed, contract ISuperfluidToken appAllowanceToken) external returns (bytes newCtx)
+function appCallbackPush(
+    bytes ctx,
+    contract ISuperApp app,
+    uint256 appAllowanceGranted,
+    int256 appAllowanceUsed,
+    contract ISuperfluidToken appAllowanceToken
+) 
+    external 
+    returns (bytes newCtx)
 ```
-
 _(For agreements) Create a new callback stack_
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| ctx | bytes | The current ctx, it will be validated. |
-| app | contract ISuperApp | The super app. |
-| appAllowanceGranted | uint256 | App allowance granted so far. |
-| appAllowanceUsed | int256 | App allowance used so far. |
-| appAllowanceToken | contract ISuperfluidToken |  |
+### Parameters
 
 | Name | Type | Description |
-| ---- | ---- | ----------- |
-| newCtx | bytes | The current context of the transaction. |
+| :--- | :--- | :---------- |
+| `ctx` | bytes | The current ctx, it will be validated. |
+| `app` | contract ISuperApp | The super app. |
+| `appAllowanceGranted` | uint256 | App allowance granted so far. |
+| `appAllowanceUsed` | int256 | App allowance used so far. |
+| `appAllowanceToken` | contract ISuperfluidToken |  |
 
-### appCallbackPop
+### Return Values
+
+| Name | Type | Description |
+| :--- | :--- | :---------- |
+| `newCtx` | bytes | The current context of the transaction. |
+
+## Fn appCallbackPop
 
 ```solidity
-function appCallbackPop(bytes ctx, int256 appAllowanceUsedDelta) external returns (bytes newCtx)
+function appCallbackPop(
+    bytes ctx,
+    int256 appAllowanceUsedDelta
+) 
+    external 
+    returns (bytes newCtx)
 ```
-
 _(For agreements) Pop from the current app callback stack_
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| ctx | bytes | The ctx that was pushed before the callback stack. |
-| appAllowanceUsedDelta | int256 | App allowance used by the app. |
+### Parameters
 
 | Name | Type | Description |
-| ---- | ---- | ----------- |
-| newCtx | bytes | The current context of the transaction. [SECURITY] NOTE: - Here we cannot do assertValidCtx(ctx), since we do not really save the stack in memory. - Hence there is still implicit trust that the agreement handles the callback push/pop pair correctly. |
+| :--- | :--- | :---------- |
+| `ctx` | bytes | The ctx that was pushed before the callback stack. |
+| `appAllowanceUsedDelta` | int256 | App allowance used by the app. |
 
-### ctxUseAllowance
+### Return Values
+
+| Name | Type | Description |
+| :--- | :--- | :---------- |
+| `newCtx` | bytes | The current context of the transaction. |
+
+### Security 
+
+- Here we cannot do assertValidCtx(ctx), since we do not really save the stack in memory.
+- Hence there is still implicit trust that the agreement handles the callback push/pop pair correctly.
+
+## Fn ctxUseAllowance
 
 ```solidity
-function ctxUseAllowance(bytes ctx, uint256 appAllowanceWantedMore, int256 appAllowanceUsedDelta) external returns (bytes newCtx)
+function ctxUseAllowance(
+    bytes ctx,
+    uint256 appAllowanceWantedMore,
+    int256 appAllowanceUsedDelta
+) 
+    external 
+    returns (bytes newCtx)
 ```
-
 _(For agreements) Use app allowance._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| ctx | bytes | The current ctx, it will be validated. |
-| appAllowanceWantedMore | uint256 | See app allowance for more details. |
-| appAllowanceUsedDelta | int256 | See app allowance for more details. |
+### Parameters
 
 | Name | Type | Description |
-| ---- | ---- | ----------- |
-| newCtx | bytes | The current context of the transaction. |
+| :--- | :--- | :---------- |
+| `ctx` | bytes | The current ctx, it will be validated. |
+| `appAllowanceWantedMore` | uint256 | See app allowance for more details. |
+| `appAllowanceUsedDelta` | int256 | See app allowance for more details. |
 
-### jailApp
+### Return Values
+
+| Name | Type | Description |
+| :--- | :--- | :---------- |
+| `newCtx` | bytes | The current context of the transaction. |
+
+## Fn jailApp
 
 ```solidity
-function jailApp(bytes ctx, contract ISuperApp app, uint256 reason) external returns (bytes newCtx)
+function jailApp(
+    bytes ctx,
+    contract ISuperApp app,
+    uint256 reason
+) 
+    external 
+    returns (bytes newCtx)
 ```
-
 _(For agreements) Jail the app._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| ctx | bytes |  |
-| app | contract ISuperApp | The super app. |
-| reason | uint256 | Jail reason code. |
+### Parameters
 
 | Name | Type | Description |
-| ---- | ---- | ----------- |
-| newCtx | bytes | The current context of the transaction. |
+| :--- | :--- | :---------- |
+| `ctx` | bytes |  |
+| `app` | contract ISuperApp | The super app. |
+| `reason` | uint256 | Jail reason code. |
 
-### Jail
+### Return Values
+
+| Name | Type | Description |
+| :--- | :--- | :---------- |
+| `newCtx` | bytes | The current context of the transaction. |
+
+## Event Jail
 
 ```solidity
-event Jail(contract ISuperApp app, uint256 reason)
+event Jail(
+    contract ISuperApp app,
+    uint256 reason
+)
 ```
 
-_Jail event for the app_
+Jail event for the app
+
+### Parameters
 
 | Name | Type | Description |
-| ---- | ---- | ----------- |
-| app | contract ISuperApp | Address of jailed app |
-| reason | uint256 | Reason the app is jailed (see Definitions.sol for the full list) |
+| :--- | :--- | :---------- |
+| `app` | contract ISuperApp | Address of jailed app |
+| `reason` | uint256 | Reason the app is jailed (see Definitions.sol for the full list) |
 
-### callAgreement
+## Fn callAgreement
 
 ```solidity
-function callAgreement(contract ISuperAgreement agreementClass, bytes callData, bytes userData) external returns (bytes returnedData)
+function callAgreement(
+    contract ISuperAgreement agreementClass,
+    bytes callData,
+    bytes userData
+) 
+    external 
+    returns (bytes returnedData)
 ```
-
 _Call agreement function_
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| agreementClass | contract ISuperAgreement | The agreement address you are calling |
-| callData | bytes | The contextual call data with placeholder ctx |
-| userData | bytes | Extra user data being sent to the super app callbacks |
+### Parameters
 
-### callAppAction
+| Name | Type | Description |
+| :--- | :--- | :---------- |
+| `agreementClass` | contract ISuperAgreement | The agreement address you are calling |
+| `callData` | bytes | The contextual call data with placeholder ctx |
+| `userData` | bytes | Extra user data being sent to the super app callbacks |
+
+## Fn callAppAction
 
 ```solidity
-function callAppAction(contract ISuperApp app, bytes callData) external returns (bytes returnedData)
+function callAppAction(
+    contract ISuperApp app,
+    bytes callData
+) 
+    external 
+    returns (bytes returnedData)
 ```
+_Main use case is calling app action in a batch call via the host_
+
+### Parameters
+
+| Name | Type | Description |
+| :--- | :--- | :---------- |
+| `app` | contract ISuperApp |  |
+| `callData` | bytes | The contextual call data |
 
 Call app action
 
-_Main use case is calling app action in a batch call via the host_
+### Note 
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| app | contract ISuperApp |  |
-| callData | bytes | The contextual call data NOTE: See &quot;Contextless Call Proxies&quot; above for more about contextual call data. |
-
-### Context
+See &quot;Contextless Call Proxies&quot; above for more about contextual call data.
+## struct Context
 
 ```solidity
 struct Context {
@@ -532,31 +792,81 @@ struct Context {
 }
 ```
 
-### callAgreementWithContext
+## Fn callAgreementWithContext
 
 ```solidity
-function callAgreementWithContext(contract ISuperAgreement agreementClass, bytes callData, bytes userData, bytes ctx) external returns (bytes newCtx, bytes returnedData)
+function callAgreementWithContext(
+    contract ISuperAgreement agreementClass,
+    bytes callData,
+    bytes userData,
+    bytes ctx
+) 
+    external 
+    returns (bytes newCtx, bytes returnedData)
 ```
 
-### callAppActionWithContext
+### Parameters
+
+| Name | Type | Description |
+| :--- | :--- | :---------- |
+| `agreementClass` | contract ISuperAgreement |  |
+| `callData` | bytes |  |
+| `userData` | bytes |  |
+| `ctx` | bytes |  |
+
+## Fn callAppActionWithContext
 
 ```solidity
-function callAppActionWithContext(contract ISuperApp app, bytes callData, bytes ctx) external returns (bytes newCtx)
+function callAppActionWithContext(
+    contract ISuperApp app,
+    bytes callData,
+    bytes ctx
+) 
+    external 
+    returns (bytes newCtx)
 ```
 
-### decodeCtx
+### Parameters
+
+| Name | Type | Description |
+| :--- | :--- | :---------- |
+| `app` | contract ISuperApp |  |
+| `callData` | bytes |  |
+| `ctx` | bytes |  |
+
+## Fn decodeCtx
 
 ```solidity
-function decodeCtx(bytes ctx) external pure returns (struct ISuperfluid.Context context)
+function decodeCtx(
+    bytes ctx
+) 
+    external 
+    returns (struct ISuperfluid.Context context)
 ```
 
-### isCtxValid
+### Parameters
+
+| Name | Type | Description |
+| :--- | :--- | :---------- |
+| `ctx` | bytes |  |
+
+## Fn isCtxValid
 
 ```solidity
-function isCtxValid(bytes ctx) external view returns (bool)
+function isCtxValid(
+    bytes ctx
+) 
+    external 
+    returns (bool)
 ```
 
-### Operation
+### Parameters
+
+| Name | Type | Description |
+| :--- | :--- | :---------- |
+| `ctx` | bytes |  |
+
+## struct Operation
 
 ```solidity
 struct Operation {
@@ -566,27 +876,35 @@ struct Operation {
 }
 ```
 
-### batchCall
+## Fn batchCall
 
 ```solidity
-function batchCall(struct ISuperfluid.Operation[] operations) external
+function batchCall(
+    struct ISuperfluid.Operation[] operations
+) 
+    external
 ```
-
 _Batch call function_
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| operations | struct ISuperfluid.Operation[] | Array of batch operations |
+### Parameters
 
-### forwardBatchCall
+| Name | Type | Description |
+| :--- | :--- | :---------- |
+| `operations` | struct ISuperfluid.Operation[] | Array of batch operations |
+
+## Fn forwardBatchCall
 
 ```solidity
-function forwardBatchCall(struct ISuperfluid.Operation[] operations) external
+function forwardBatchCall(
+    struct ISuperfluid.Operation[] operations
+) 
+    external
 ```
-
 _Batch call function for trusted forwarders (EIP-2771)_
 
+### Parameters
+
 | Name | Type | Description |
-| ---- | ---- | ----------- |
-| operations | struct ISuperfluid.Operation[] | Array of batch operations |
+| :--- | :--- | :---------- |
+| `operations` | struct ISuperfluid.Operation[] | Array of batch operations |
 
