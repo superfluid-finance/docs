@@ -4,7 +4,7 @@ description: Using Superfluid on Avalanche
 
 # Avalanche
 
-To use Superfluid with Avalanche, you'll need a RPC URL to connect your Metamask or application to an Avalanche node.
+To use Superfluid with the Avalanche C-chain, you'll need a RPC URL to connect your Metamask or application to an Avalanche node.
 
 > If you want to learn more about Avalanche, the full documentation is here: [https://docs.avax.network/](https://docs.avax.network/)
 
