@@ -458,9 +458,9 @@ _Make liquidation payouts (v2)_
 | `liquidationTypeData` | bytes | Data regarding the version of the liquidation schema and the type |
 | `liquidatorAccount` | address | Address of the executor of the liquidation |
 | `useDefaultRewardAccount` | bool | Whether or not the default reward account receives the rewardAmount |
-| `targetAccount` | address | Account of the stream sender |
-| `rewardAmount` | uint256 | The amount the reward recepient account will receive |
-| `targetAccountBalanceDelta` | int256 | The amount the sender account balance should change by |
+| `targetAccount` | address | Account to be liquidated |
+| `rewardAmount` | uint256 | The amount the rewarded account will receive |
+| `targetAccountBalanceDelta` | int256 | The delta amount the target account balance should change by |
 
 #### Note 
 
@@ -484,7 +484,7 @@ event AgreementLiquidatedV2(
     bytes32 id,
     address liquidatorAccount,
     address targetAccount,
-    address rewardAccount,
+    address rewardAmountReceiver,
     uint256 rewardAmount,
     int256 targetAccountBalanceDelta,
     bytes liquidationTypeData
@@ -501,7 +501,7 @@ Agreement liquidation event v2 (including agent account)
 | `id` | bytes32 | Agreement ID |
 | `liquidatorAccount` | address | Address of the executor of the liquidation |
 | `targetAccount` | address | Account of the stream sender |
-| `rewardAccount` | address | Account that collects the reward or bails out insolvent accounts |
+| `rewardAmountReceiver` | address | Account that collects the reward or bails out insolvent accounts |
 | `rewardAmount` | uint256 | The amount the reward recipient account balance should change by |
 | `targetAccountBalanceDelta` | int256 | The amount the sender account balance should change by |
 | `liquidationTypeData` | bytes | The encoded liquidation type data including the version (how to decode) |
