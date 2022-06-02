@@ -59,7 +59,7 @@
       * [ISuperfluidToken](developers/reference-documentations/evm-contracts/superfluid/ISuperfluidToken.md)
       * [ISuperTokenFactory](developers/reference-documentations/evm-contracts/superfluid/ISuperTokenFactory.md)
       * [ICustomSuperTokenBase](developers/reference-documentations/evm-contracts/superfluid/icustomsupertokenbase.md)
-    * [Agreements](developers/reference-documentations/evm-contracts/interfaces/agreements/README.md)
+    * [Agreements](developers/reference-documentations/evm-contracts/agreements/README.md)
       * [IConstantFlowAgreementV1](developers/reference-documentations/evm-contracts/agreements/IConstantFlowAgreementV1.md)
       * [IInstantDistributionAgreementV1](developers/reference-documentations/evm-contracts/agreements/IInstantDistributionAgreementV1.md)
 * [🖥 Subgraph](developers/subgraph.md)
