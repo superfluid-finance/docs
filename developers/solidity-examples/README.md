@@ -4,7 +4,7 @@ description: Working with the CFA & IDA in Solidity - and using the CFA Library
 
 # 💻 Superfluid Solidity Docs
 
-This section will help you to interact with Superfluid at the smart contract level.&#x20;
+This section will help you to interact with Superfluid at the smart contract level.
 
 ### Solidity x Superfluid Overview
 
@@ -36,6 +36,6 @@ This section will help you to interact with Superfluid at the smart contract lev
 
 ### User Data
 
-{% content-ref url="../../protocol-overview/super-apps/user-data/" %}
-[user-data](../../protocol-overview/super-apps/user-data/)
+{% content-ref url="../developer-guides/super-apps/user-data/" %}
+[user-data](../developer-guides/super-apps/user-data/)
 {% endcontent-ref %}

@@ -6,13 +6,13 @@ description: Getting Starting with Superfluid as a Developer
 
 ### :wave: Howdy! Welcome to Superfluid
 
-We're thrilled you're here! Here's how to navigate this Tutorials section.&#x20;
+We're thrilled you're here! Here's how to navigate this Tutorials section.
 
 ### Where to Begin?
 
-First - head to the [SDK Initialization](../sdk-initialization/) page to find the package in the [npm library](https://www.npmjs.com/package/@superfluid-finance/sdk-core) & learn how to initialize the framework. Then, answer the following questions to figure out where you should go next:&#x20;
+First - head to the [SDK Initialization](../sdk-initialization/) page to find the package in the [npm library](https://www.npmjs.com/package/@superfluid-finance/sdk-core) & learn how to initialize the framework. Then, answer the following questions to figure out where you should go next:
 
-**Are you here to learn about creating your own Superfluid streams?**&#x20;
+**Are you here to learn about creating your own Superfluid streams?**
 
 Start with our [**Money Streaming**](money-streaming-1.md) tutorial.
 
@@ -20,16 +20,16 @@ Start with our [**Money Streaming**](money-streaming-1.md) tutorial.
 
 **Are you here to build decentralized applications around programmable,** [**networked cash flows**](https://multicoin.capital/2021/07/13/networked-cash-flows/)**?**
 
-If you know your way around solidity, you can skip to the next section on [**Solidity Examples**](../solidity-examples/), or get started building [**Super Apps**](../../protocol-overview/super-apps/)**.**
+If you know your way around solidity, you can skip to the next section on [**Solidity Examples**](../solidity-examples/), or get started building [**Super Apps**](../developer-guides/super-apps/)**.**
 
 ### **Other Sections to Visit**
 
-****[**Using Super Tokens**](using-super-tokens.md) will help you understand how to work with super tokens in your project
+\*\*\*\*[**Using Super Tokens**](using-super-tokens.md) will help you understand how to work with super tokens in your project
 
-****[**Batching Transactions**](batching-transactions.md) will help you build better UX by taking advantage of a feature in Superfluid that allows you to combine many operations into a _single transaction._
+\*\*\*\*[**Batching Transactions**](batching-transactions.md) will help you build better UX by taking advantage of a feature in Superfluid that allows you to combine many operations into a _single transaction._
 
-****[**Getting Data**](../sdk-initialization/sdk-core/getting-data.md) will give you the information you need to get on chain information related to Superfluid and query our subgraph using Typescript/Javascript.
+\*\*\*\*[**Getting Data**](../sdk-initialization/sdk-core/getting-data.md) will give you the information you need to get on chain information related to Superfluid and query our subgraph using Typescript/Javascript.
 
 ### How to Get Help
 
-Our community is very responsive in discord. If you join the Superfluid Discord server - you can post any questions directly in the #developers channel and someone from the core team or community will help you out.&#x20;
+Our community is very responsive in discord. If you join the Superfluid Discord server - you can post any questions directly in the #developers channel and someone from the core team or community will help you out.

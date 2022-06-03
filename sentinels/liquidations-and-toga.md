@@ -62,7 +62,7 @@ Note that thanks to this flexible roles model, PICs have an incentive to close s
 1. they can still get rewards, essentially acting as a Pleb or Pirate in the context of that transaction
 2. due to the slashing of the `deficit` from their stake, their incentive to close insolvent streams grows linearly over time
 
-![Toga payoff table](<../.gitbook/assets/image (31).png>)
+![Toga payoff table](<../.gitbook/assets/image (72).png>)
 
 ### TOGA - Transparent OnGoing Auction
 
