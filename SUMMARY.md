@@ -68,6 +68,8 @@
       * [ISuperTokenFactory](developers/reference-documentations/evm-contracts/superfluid/ISuperTokenFactory.md)
       * [ICustomSuperTokenBase](developers/reference-documentations/evm-contracts/superfluid/icustomsupertokenbase.md)
     * [Agreements](developers/reference-documentations/evm-contracts/agreements.md)
+      * [IConstantFlowAgreementV1](developers/reference-documentations/evm-contracts/agreements/IConstantFlowAgreementV1.md)
+      * [IInstantDistributionAgreementV1](developers/reference-documentations/evm-contracts/agreements/IInstantDistributionAgreementV1.md)
   * [Superfluid Console](http://console.superfluid.finance)
 * [🔗 Network Directory](developers/networks/README.md)
   * [Superfluid Protocol Addresses](https://console.superfluid.finance/protocol)
