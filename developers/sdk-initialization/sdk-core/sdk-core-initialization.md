@@ -4,11 +4,40 @@ description: How to initialize the SDK Core
 
 # 🔥 SDK Core Initialization
 
-**Here is a quick look at initializing the SDK in different environments.**
+## I**nitializing the SDK Core**
 
-TypeScript / JavaScript (Module) vs. JavaScript (CommonJS) - usually a Node.js environment
+When creating the framework, you'll use `Framework.create()` like so:
 
-The primary difference between the two environments is the import/require of the sdk-core package, everything else is the same.
+```
+const sf = await Framework.create({
+  networkName: "matic", // you can also use chainId here instead
+  provider: ethersProvider
+});
+```
+
+### Framework Options
+
+When creating the framework, you must pass in the following options.  The only required params are the `provider` and either a `chainId` or `networkName`
+
+{% hint style="info" %}
+NOTE: the `chainId` is often easier to access because it tends to be available on the provider object in most web3 environments
+{% endhint %}
+
+`chainId?: number` - the chain Id for the network
+
+`customSubgraphQueriesEndpoint?: string` - an option to add your own custom subgraph endpoint for writing custom queries
+
+`dataMode?: DataMode - can be one of the following:` "SUBGRAPH\_ONLY, " "SUBGRAPH\_WEB3, " or "WEB3\_ONLY." This allows users to either use only a subgraph queries endpoint or web3 only mode (or both).
+
+`networkName?: string` - the name of the network. A list of supported networks can be found [here](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/sdk-core/src/constants.ts#L18).
+
+`resolverAddress?: string` - an optional parameter that can be included for getting the framework in a test environment. If you pass in `process.env.RESOLVER_ADDRESS`, this will work successfully as seen [here](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/examples/tradeable-cashflow/tradeable-cashflow-hardhat/test/TradeableCashflow.test.js#L51).
+
+`protocolReleaseVersion?: string` - options here are "v1," "test," or your own release version (which is almost always not necessary unless you're doing experimental work)
+
+`provider: SupportedProvider` - the provider being used
+
+## Examples For Various Environments
 
 #### TS/ESModule
 
@@ -17,7 +46,7 @@ import { Framework } from "@superfluid-finance/sdk-core";
 import { ethers } from "ethers";
 ```
 
-#### Infura Provider Initialization&#x20;
+#### Infura Provider Initialization
 
 ```javascript
 // infura provider initialization
@@ -114,7 +143,7 @@ await onboard.walletSelect();
 
 > Note: You specify your project type in `package.json` - `"type": "module"` or `"type": "commonjs"`.
 
-The absolute minimum you need to provide the constructor is `chainId` or `networkName` and a `provider` object if all you want to do are read operations. It is also important to note that the provider does not need to be an InfuraProvider - it just needs to satisfy the `SupportedProvider` interface: `ethers.providers.Provider | (typeof ethers & HardhatEthersHelpers) | Web3`.
+It is also important to note that the provider does not need to be an InfuraProvider - it just needs to satisfy the `SupportedProvider` interface: `ethers.providers.Provider | (typeof ethers & HardhatEthersHelpers) | Web3`.
 
 ## Creating a Signer
 
@@ -187,8 +216,6 @@ const sf = await Framework.create({
 
 const signer = sf.createSigner({ signer: wallet });
 ```
-
-
 
 ## Operations
 

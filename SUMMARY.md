@@ -41,7 +41,7 @@
   * [⚡ Instant Distribution](developers/interactive-tutorials/instant-distribution.md)
   * [🪙 Using Super Tokens](developers/interactive-tutorials/using-super-tokens.md)
   * [🤖 ACL Features](developers/interactive-tutorials/acl-features.md)
-  * [👩🍳 👩🍳 👩🍳 👩🍳 👩🍳 Batching Transactions](developers/interactive-tutorials/batching-transactions.md)
+  * [👩🍳 Batching Transactions](developers/interactive-tutorials/batching-transactions.md)
   * [SDK-Redux](https://refs.superfluid.finance/sdk-redux/)
   * [SDK-Core](https://refs.superfluid.finance/sdk-core/)
 * [📚 Developer Guides](developers/developer-guides/README.md)
