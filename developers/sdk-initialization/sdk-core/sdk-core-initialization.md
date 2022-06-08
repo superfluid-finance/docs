@@ -29,7 +29,7 @@ NOTE: the `chainId` is often easier to access because it tends to be available o
 
 `dataMode?: DataMode - can be one of the following:` "SUBGRAPH\_ONLY, " "SUBGRAPH\_WEB3, " or "WEB3\_ONLY." This allows users to either use only a subgraph queries endpoint or web3 only mode (or both).
 
-`networkName?: string` - the name of the network. A list of supported networks can be found [here](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/sdk-core/src/constants.ts#L18).
+`networkName?: string` - the name of the network. A list of supported network names can be found [here](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/sdk-core/src/constants.ts#L18).
 
 `resolverAddress?: string` - an optional parameter that can be included for getting the framework in a test environment. If you pass in `process.env.RESOLVER_ADDRESS`, this will work successfully as seen [here](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/examples/tradeable-cashflow/tradeable-cashflow-hardhat/test/TradeableCashflow.test.js#L51).
 
