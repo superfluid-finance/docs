@@ -8,6 +8,10 @@ description: Getting Starting with Superfluid as a Developer
 
 We're thrilled you're here! Here's how to navigate this Tutorials section.
 
+{% hint style="info" %}
+NOTE: we recommend using the [Superfluid Console](https://console.superfluid.finance) and [Superfluid Dashboard](https://app.superfluid.finance) as you go through these interactive tutorials. They'll help you view your streams in action.
+{% endhint %}
+
 ### Where to Begin?
 
 First - head to the [SDK Initialization](../sdk-initialization/) page to find the package in the [npm library](https://www.npmjs.com/package/@superfluid-finance/sdk-core) & learn how to initialize the framework. Then, answer the following questions to figure out where you should go next:

@@ -4,6 +4,16 @@ description: A new DeFi primitive to automate recurring transactions and monetiz
 
 # 🌊 Superfluid
 
+### PROTOCOL OVERVIEW ⬇️
+
+{% content-ref url="protocol-overview/what-is-superfluid.md" %}
+[what-is-superfluid.md](protocol-overview/what-is-superfluid.md)
+{% endcontent-ref %}
+
+{% content-ref url="protocol-overview/in-depth-overview/" %}
+[in-depth-overview](protocol-overview/in-depth-overview/)
+{% endcontent-ref %}
+
 ### DEVELOPERS ⬇️
 
 Looking to Jump Straight Into the Code? ⬇️
@@ -28,12 +38,6 @@ Want to Use Our SDKs? ⬇️
 
 {% content-ref url="developers/networks/" %}
 [networks](developers/networks/)
-{% endcontent-ref %}
-
-### PROTOCOL OVERVIEW ⬇️
-
-{% content-ref url="protocol-overview/what-is-superfluid.md" %}
-[what-is-superfluid.md](protocol-overview/what-is-superfluid.md)
 {% endcontent-ref %}
 
 ### SENTINELS ⬇️
@@ -62,8 +66,8 @@ If you need any help or have any questions, please join our [**Discord**](http:/
 
 ### **BLOG**
 
-![](<.gitbook/assets/medium (1).png>) [**Blog**](https://medium.com/superfluid-blog) \*\*\*\*
+{% embed url="https://medium.com/superfluid-blog" %}
 
-### **GITHUB**
+**GITHUB**
 
 {% embed url="https://github.com/superfluid-finance/protocol-monorepo" %}

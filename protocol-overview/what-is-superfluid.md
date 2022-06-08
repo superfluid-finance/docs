@@ -26,3 +26,7 @@ The current version of Superfluid is composed of the following key elements:
 * _**Batch Call & Meta Tx**_**:** for users (contracts or EOA) to interact with the system in batch on-chain, or off-chain through meta transactions.
 * _**Governance**_**:** an external contract for managing protocol parameters and contract upgrades.
 * _**Solvency Agents**_**:** an off-chain network of agents ensuring the solvency of the system. [Read more](../developers/developer-guides/super-tokens/)
+
+{% hint style="info" %}
+NOTE: we recommend using the [Superfluid Console](https://console.superfluid.finance) and the [Superfluid Dashboard](https://app.superfluid.finance) as you interact with the protocol.
+{% endhint %}

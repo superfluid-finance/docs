@@ -15,6 +15,10 @@ In order to make use of agreements inside of the Superfluid protocol, you’ll n
 
 You can learn more about the details of super tokens in [our guide on the topic](../developer-guides/super-tokens/), but the main thing to understand is that they have special properties which allow them to be streamed per second using the [Constant Flow Agreement](money-streaming-1.md) or distributed to many accounts using the [Instant Distribution Agreement.](instant-distribution.md)
 
+{% hint style="info" %}
+NOTE: we recommend using the [Superfluid Console](https://console.superfluid.finance) and the [Superfluid Dashboard](https://app.superfluid.finance) as you go through these interactive tutorials. They'll help you in working with Super Tokens.
+{% endhint %}
+
 ### Wrapped ERC20 Tokens
 
 Because interoperability is a core tenant of DeFi & web3 more broadly, our team wrote a special kind of super token contract that can serve as a wrapper around existing ERC20 assets. This contract allows you to easily wrap & unwrap your existing ERC20 tokens.

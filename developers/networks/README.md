@@ -4,6 +4,10 @@ description: Superfluid contract addresses for all networks
 
 # 🔗 Network Directory
 
+{% hint style="info" %}
+Note: these addresses can also be found in the [Superfluid Console](https://console.superfluid.finance).
+{% endhint %}
+
 ## Mainnet Networks
 
 {% tabs %}

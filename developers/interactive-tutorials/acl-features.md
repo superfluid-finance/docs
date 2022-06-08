@@ -16,6 +16,10 @@ Using the new ACL features, you may grant other accounts the ability to create, 
 
 You can also make use of the ACL features using the SDK Core. This page will provide sandbox examples for managing flow permissions & performing CRUD operations for streams on the front end.
 
+{% hint style="info" %}
+NOTE: we recommend using the [Superfluid Console](https://console.superfluid.finance) and the [Superfluid Dashboard](https://app.superfluid.finance) as you go through these interactive tutorials. They'll help you view your streams in action.
+{% endhint %}
+
 ### Updating & Revoking Flow Permissions
 
 If you'd like to grant full control over streams on a specific token to an operator, you can use the `authorizeFlowOperatorWithFullControl` function and pass in the `flowOperator` and `superToken` you're granting the authorization on. However, in this example we will show you how to grant specific permission levels using the `updateFlowOperatorPermissions` function.
@@ -36,7 +40,7 @@ To grant a flow rate allowance to an operator, you'll need to pass in the follow
 | Delete or Update          | 6               |
 | Create, Update, or Delete | 7               |
 
-`flowRateAllowance` - the total allowance you're providing the operator.&#x20;
+`flowRateAllowance` - the total allowance you're providing the operator.
 
 `superToken` - the token on which the allowance is being provided
 
@@ -54,7 +58,7 @@ To revoke permissions, you can use the `revokeFlowOperatorWithFullControl` funct
 Revoking flow permissions
 {% endembed %}
 
-From here, creating, updating, and deleting streams will work in a quite straightforward way. You can find examples of each below.&#x20;
+From here, creating, updating, and deleting streams will work in a quite straightforward way. You can find examples of each below.
 
 > NOTE: updating a flow with an increased flow rate or creating flows will decrement the operator's flow rate allowance, but updating a flow with a decreased flow rate or deleting a flow will not. You can find more information on how flow rate allowances work [here](../solidity-examples/cfa-access-control-list-acl.md#flow-rate-allowance).
 

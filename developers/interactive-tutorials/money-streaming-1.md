@@ -4,7 +4,11 @@ description: Getting Started with the Constant Flow Agreement
 
 # 🌊 Money Streaming
 
-Let's walk through creating Superfluid streams using the Superfluid Core-SDK. We'll get straight into the code with some examples, but you can scroll down to learn about how the SDK works in more detail.
+Let's walk through creating Superfluid streams using the Superfluid Core-SDK. We'll get straight into the code with some examples, but you can scroll down to learn about how the SDK works in more detail.&#x20;
+
+{% hint style="info" %}
+NOTE: we recommend using the [Superfluid Console](https://console.superfluid.finance) and the [Superfluid Dashboard](https://app.superfluid.finance) as you go through these interactive tutorials. They'll help you view your streams in action.
+{% endhint %}
 
 ### Creating a Flow
 

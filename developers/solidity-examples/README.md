@@ -6,6 +6,10 @@ description: Working with the CFA & IDA in Solidity - and using the CFA Library
 
 This section will help you to interact with Superfluid at the smart contract level.
 
+{% hint style="info" %}
+NOTE: we recommend using the [Superfluid Console](https://console.superfluid.finance) and the [Superfluid Dashboard](https://app.superfluid.finance) as you build on Superfluid.
+{% endhint %}
+
 ### Solidity x Superfluid Overview
 
 {% content-ref url="interacting-with-superfluid-smart-contracts.md" %}
