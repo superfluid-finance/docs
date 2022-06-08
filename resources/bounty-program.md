@@ -4,7 +4,7 @@ description: Get paid to improve our real-time finance protocol!
 
 # 🤑 Bounty Program
 
-The Superfluid Bounty Program allows developers to tackle a variety of technical issues laid out by the Superfluid Team and earn payouts for completion. Ready to get bounty hunting? Let's get started!&#x20;
+The Superfluid Bounty Program allows developers to tackle a variety of technical issues laid out by the Superfluid Team and earn payouts for completion. Ready to get bounty hunting? Let's get started!
 
 ### Bounties 💰
 
@@ -20,13 +20,13 @@ Featured bounties 💡:
 Comment on the GitHub issue with the below template:
 
 > Hi @sunnyjaycer, I'm interested in taking on this bounty:\
-> Expected Completion Date: \[ _date you intend on completing the bounty by \*\*_ ]&#x20;
+> Expected Completion Date: \[ _date you intend on completing the bounty by \*\*_ ]
 
-In the #💰bounties channel, notify us of your intent to create the bounty with the below message template:
+In the #💰bounties channel in our [Discord server](https://discord.com/channels/752490247643725875/945328484488736839), notify us of your intent to create the bounty with the below message template:
 
 > Hi @Sunny | Superfluid#7782, I'm interested in taking on this bounty:\
 > Issue: \[ _link to Github issue_ ]\
-> Expected Completion Date: \[ _date you intend on completing the bounty by \*\*_ ]&#x20;
+> Expected Completion Date: \[ _date you intend on completing the bounty by \*\*_ ]
 
 _\*\* This is a soft deadline. It is simply so we can check up on progress and offer support_.
 
@@ -38,10 +38,8 @@ _\*\* This is a soft deadline. It is simply so we can check up on progress and o
 ### Upon Completion ✅
 
 1. Submit a pull request and tag the bounty issue you've completed in it ([for example](https://github.com/superfluid-finance/protocol-monorepo/pull/717))
-2. Once it's merged, fill out this [**Bounty KYC Form**](https://docs.google.com/forms/d/e/1FAIpQLSePPMtMcDndvgJvpkDMtY1BChkrXaqABO0SKA-4c-i2rbhZKA/viewform) **** and submit this [**Request Invoice**](https://app.request.finance/create/3834fe3c2faaa829) to us.
+2. Once it's merged, fill out this [**Bounty KYC Form**](https://docs.google.com/forms/d/e/1FAIpQLSePPMtMcDndvgJvpkDMtY1BChkrXaqABO0SKA-4c-i2rbhZKA/viewform) \*\*\*\* and submit this [**Request Invoice**](https://app.request.finance/create/3834fe3c2faaa829) to us.
 3. Wait for your bounty to pay out on the next Wednesday! Congrats on your valued contribution to Superfluid 🏁
-
-
 
 **NOTE: Bounty hunters must adhere to the following statement 👇**
 
