@@ -22,7 +22,7 @@ Comment on the GitHub issue with the below template:
 > Hi @sunnyjaycer, I'm interested in taking on this bounty:\
 > Expected Completion Date: \[ _date you intend on completing the bounty by \*\*_ ]
 
-In the #💰bounties channel in our [Discord server](https://discord.com/channels/752490247643725875/945328484488736839), notify us of your intent to create the bounty with the below message template:
+In the #💰bounties channel in our [Discord server](https://discord.gg/m6jhgrc5Bj), notify us of your intent to create the bounty with the below message template:
 
 > Hi @Sunny | Superfluid#7782, I'm interested in taking on this bounty:\
 > Issue: \[ _link to Github issue_ ]\
