@@ -16,10 +16,10 @@ Super Tokens can do everything that a traditional ERC20 token can PLUS new modes
 
 ## **Real-Time Balance**
 
-The real-time balance technique is what lets Super Tokens keep track of an accounts balance across changes caused by both discrete lump transfers and Super Agreements. An account's actual current Super Token balance is the sum of its **static balance** and its **real-time balances**.&#x20;
+The real-time balance technique is what lets Super Tokens keep track of an account's balance across changes caused by both discrete lump transfers and Super Agreements. An account's actual current Super Token balance is the sum of its **static balance** and its **real-time balances**.&#x20;
 
 * Static Balance: balance figure that is affected by basic lump transfers (the usual ERC20 stuff)
-* Real-Time Balances: you can think of real-time balances as the individual impact that each Super Agreement has on an accounts balance. That impact can either be positive or negative.
+* Real-Time Balances: the individual impact that each Super Agreement has on an account's balance. That impact can either be positive or negative.
 
 By combining these two parts, we can get an account's actual current balance.
 
@@ -28,7 +28,7 @@ By combining these two parts, we can get an account's actual current balance.
 <mark style="color:green;">**\***</mark> Bear in mind that there are multiple Super Agreements ([CFA](https://docs.superfluid.finance/superfluid/protocol-overview/in-depth-overview/super-agreements/constant-flow-agreement-cfa) and [IDA](https://docs.superfluid.finance/superfluid/protocol-overview/in-depth-overview/super-agreements/instant-distribution-agreement-ida)) each with their own real-time balances. So to arrive at the current balance, the real-time balance for each one is added to the static balance.&#x20;
 
 {% hint style="info" %}
-Because ERC20 tokens lack the real-time balance ability, they can't be moved through other Super Agreements (like money streams)
+Because ERC20 tokens lack the real-time balance ability, they can't be moved through Super Agreements (like money streams)
 {% endhint %}
 
 **Example**&#x20;
@@ -43,7 +43,7 @@ Because ERC20 tokens lack the real-time balance ability, they can't be moved thr
 
 ### **Wrapper**
 
-A wrapper Super Token token is an _existing underlying token_ that's been wrapped to gain Super Agreement functionality.&#x20;
+A wrapper Super Token token is an _existing underlying token_ that's been "wrapped" into a Super Token to gain Super Agreement functionality.&#x20;
 
 **Wrapping and Unwrapping**
 
