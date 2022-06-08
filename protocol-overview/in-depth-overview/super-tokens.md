@@ -6,9 +6,9 @@ description: Tokens that possess Superfluid functionality
 
 ## Definition
 
-We usually experience on-chain value transfer is through the ERC20 token. ERC20 contracts work like bank balances, moving value through discrete lump transfers (i.e. my balance goes down "X" amount and your balance goes up "X" amount).
+We usually experience on-chain value transfer through the ERC20 token. ERC20 token contracts work like bank balances, moving value through discrete lump transfers (i.e. my balance goes down "X" and your balance goes up "X").
 
-The Super Token is a new extension of the ERC20 token standard that plugs into the Superfluid Protocol to include Super Agreement abilities. These Super Agreements allow Super Tokens to be transferred in novel ways such as in streams or instant distributions. Super Tokens come in two forms: **wrapper** and **custom.**
+The Super Token is our extension of the ERC20 token standard that plugs into the Superfluid Protocol to include Super Agreement abilities. These Super Agreements allow Super Tokens to be transferred in powerful ways such as in streams or instant distributions. Super Tokens come in two forms: **wrapper** and **custom.**
 
 {% hint style="info" %}
 Super Tokens can do everything that a traditional ERC20 token can PLUS new modes of value transfer enabled by Superfluid (i.e., money streaming)
