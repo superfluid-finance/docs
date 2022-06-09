@@ -15,6 +15,15 @@ Featured bounties 💡:
 * **Superfluid Gitcoin Aquaduct**: Adding Superfluid streams as a method of payment within Gitcoin Aqueducts
 * **SuperPool**: A generic smart contract pool that allows deposits and withdrawals via stream
 
+**Referrals**
+
+If you find someone to complete a bounty, you can earn **20%** of the bounty value as a referral payout!&#x20;
+
+1. When the person you referred completes the bounty, let us know in the #💰bounties channel that you referred that person.&#x20;
+2. We will verify with the bounty completer that you did in fact refer that person&#x20;
+3. If that looks good, we'll give you the green light to follow steps 2 and 3 in "Upon Completion" below to earn your payout. \
+   \- In the "Your Hack Name" field, you'd write " \[Bounty Completor Discord or Github handle] referral ".
+
 ### Getting Started 🙋‍♀️
 
 Comment on the GitHub issue with the below template:
@@ -38,7 +47,10 @@ _\*\* This is a soft deadline. It is simply so we can check up on progress and o
 ### Upon Completion ✅
 
 1. Submit a pull request and tag the bounty issue you've completed in it ([for example](https://github.com/superfluid-finance/protocol-monorepo/pull/717))
-2. Once it's merged, fill out this [**Bounty KYC Form**](https://docs.google.com/forms/d/e/1FAIpQLSePPMtMcDndvgJvpkDMtY1BChkrXaqABO0SKA-4c-i2rbhZKA/viewform) \*\*\*\* and submit this [**Request Invoice**](https://app.request.finance/create/3834fe3c2faaa829) to us.
+2.  Once it's merged, fill out this [**Bounty KYC Form**](https://docs.google.com/forms/d/e/1FAIpQLSePPMtMcDndvgJvpkDMtY1BChkrXaqABO0SKA-4c-i2rbhZKA/viewform) and submit this [**Request Invoice**](https://app.request.finance/create/3834fe3c2faaa829) to us.
+
+    \- In the Bounty KYC Form, for "Hackathon Name" put down the "Bounty"\
+    \- In the Bounty KYC Form, for "Your Hack Name" put down the title of your bounty
 3. Wait for your bounty to pay out on the next Wednesday! Congrats on your valued contribution to Superfluid 🏁
 
 **NOTE: Bounty hunters must adhere to the following statement 👇**
