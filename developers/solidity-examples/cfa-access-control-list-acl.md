@@ -6,8 +6,6 @@ description: >-
 
 # 🗝 CFA Access Control List (ACL)
 
-> **Note**: the ACL features are _only available_ on testnets only as of May 2, 2022. &#x20;
-
 The CFA **Access Control List (ACL)** feature allows any account (EOA or contract) to grant/revoke flow operation permissions to another address. You do this by first granting a set of permissions (create, update, delete) as well as a flow rate allowance. The flow rate allowance allotted to a flow operator is deducted every time they either create a flow (deducted by the flow rate amount) or update a flow which is greater than the current flow rate (deducted by the delta between the new flow rate and old flow rate).\*
 
 > Note: If you set a flow rate allowance equal to the maximum flow rate then this value is never deducted. In solidity, the maximum flow rate could be represented by `type(int96).max`

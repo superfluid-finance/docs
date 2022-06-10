@@ -4,8 +4,6 @@ description: Giving other accounts control over stream operations
 
 # 🤖 ACL Features
 
-> NOTE: the new ACL features are live on testnets only as of May 6, 2022
-
 ### Granting Permissions to Flow Operators
 
 Using the new ACL features, you may grant other accounts the ability to create, update, and/or delete streams on your behalf. You can read more about these features, and how to implement them in solidity in this page:
