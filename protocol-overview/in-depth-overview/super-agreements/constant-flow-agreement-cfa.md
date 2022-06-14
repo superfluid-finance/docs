@@ -74,9 +74,7 @@ Current Balance = 1000 USDCx + -10 USDCx = <mark style="color:green;">**990 USDC
 
 #### **2. On the 1000th second, Account A increases the flow rate to Account B to 0.02 USDCx/second. The CFA contract records new status.**
 
-![](<../../../.gitbook/assets/image (66).png>)
-
-Latest CRUD timestamp = 165340**1**000 ( recorded to CFA contract )
+![](<../../../.gitbook/assets/image (60).png>)
 
 Current timestamp = 165340**1**000
 
@@ -88,7 +86,7 @@ Current Balance = 990 USDCx + 0 USDCx = **990 USDCx**
 
 #### **3. **_****_** Another 2000 seconds elapse**
 
-![](<../../../.gitbook/assets/image (32).png>)
+![](<../../../.gitbook/assets/image (59).png>)
 
 Latest CRUD timestamp = 165340**1**000
 
