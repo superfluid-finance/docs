@@ -4,25 +4,31 @@ description: Hungry for data? Hot n' fresh Superfluid subgraphs ready to consume
 
 # 🖥 Subgraph
 
-The Graph is the indexing layer of our industry. There is an ocean of open data created by blockchain networks, and the Graph will help you query it.  You can use the Graph to get data on activity in the Superfluid ecosystem as well as many other types of on-chain data. You can also use the [GraphQL Playground](https://thegraph.com/hosted-service/) to start getting Superfluid specific data on any network.
+The Graph is the indexing layer of our industry. There is an ocean of open data created by blockchain networks, and the Graph will help you query it. You can use the Graph to get data on activity in the Superfluid ecosystem as well as many other types of on-chain data. You can also use the [GraphQL Playground](https://thegraph.com/hosted-service/) to start getting Superfluid specific data on any network.
 
-## URLs&#x20;
+## URLs
 
 Click a link to start testing queries in the playground:
 
-| Network | URL                                                                                                                                                                        |
-| ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| xDAI    | [https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-xdai](https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-xdai)       |
-| Matic   | [https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-matic](https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-matic)     |
-| Mumbai  | [https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-mumbai](https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-mumbai)   |
-| Goerli  | [https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-goerli](https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-goerli)   |
-| Ropsten | [https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-ropsten](https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-ropsten) |
-| Kovan   | [https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-kovan](https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-kovan)     |
-| Rinkeby | [https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-rinkeby](https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-rinkeby) |
+| Network          | URL                                                                                                                                                                                          |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| xDAI             | [https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-xdai](https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-xdai)                         |
+| Matic            | [https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-matic](https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-matic)                       |
+| Avalanche        | [https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-avalanche-c](https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-avalanche-c)           |
+| Optimism         | [https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-optimism-mainnet](https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-optimism-mainnet) |
+| Arbitrum         | [https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-arbitrum-one](https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-arbitrum-one)         |
+| Avalanche Fuji   | [https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-avalanche-fuji](https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-avalanche-fuji)     |
+| Optimism Kovan   | [https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-optimism-kovan](https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-optimism-kovan)     |
+| Arbitrum Rinkeby | [https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-arbitrum-rinkeby](https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-arbitrum-rinkeby) |
+| Mumbai           | [https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-mumbai](https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-mumbai)                     |
+| Goerli           | [https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-goerli](https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-goerli)                     |
+| Ropsten          | [https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-ropsten](https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-ropsten)                   |
+| Kovan            | [https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-kovan](https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-kovan)                       |
+| Rinkeby          | [https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-rinkeby](https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-rinkeby)                   |
 
 ## Resources
 
-* :star:**New to GraphQL required reading** - [https://graphql.org/learn/](https://graphql.org/learn/) &#x20;
+* :star:**New to GraphQL required reading** - [https://graphql.org/learn/](https://graphql.org/learn/)
 * **How to make subgraph queries** - [https://thegraph.com/docs/en/developer/query-the-graph/](https://thegraph.com/docs/en/developer/query-the-graph/)
 * **Deploy your own subgraph -** [https://thegraph.com/docs/en/developer/create-subgraph-hosted/](https://thegraph.com/docs/en/developer/create-subgraph-hosted/)
 * **GraphQL Schema for Superfluid** - [https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/subgraph/schema.graphql](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/subgraph/schema.graphql)
@@ -50,7 +56,7 @@ The Superfluid Subgraph consists of many entities that can be queried. You can t
 
 ### **Event Entities**
 
-These entities are for the most part 1-to-1 mappings with the raw events from the contract. However for some of them, we have added additional data. This is noted in the `schema.graphql` file and will be viewable in the playground as well. These entities are created once and never updated. For example, the `FlowUpdatedEvent` type will mirror the properties on the `FlowUpdated` event inside of the Superfluid contracts.&#x20;
+These entities are for the most part 1-to-1 mappings with the raw events from the contract. However for some of them, we have added additional data. This is noted in the `schema.graphql` file and will be viewable in the playground as well. These entities are created once and never updated. For example, the `FlowUpdatedEvent` type will mirror the properties on the `FlowUpdated` event inside of the Superfluid contracts.
 
 > Note: Each event entity `id` is formulated as follows: `eventName-transactionHash-logIndex`.
 
@@ -135,7 +141,7 @@ The following query will allow us to answer the following questions for an activ
 
 `currentFlowRate` will return the current flow rate of the stream.
 
-`streamedUntilUpdatedAt` will return the amount streamed until `updatedAtTimestamp`/`updatedAtBlock`&#x20;
+`streamedUntilUpdatedAt` will return the amount streamed until `updatedAtTimestamp`/`updatedAtBlock`
 
 > Note: to get the current (dynamic) total amount streamed, you can use the following formula: _**streamedUntilUpdatedAt + ((current time in seconds) - updatedAtTimestamp) \* currentFlowRate**_
 
@@ -157,8 +163,6 @@ The following query will allow us to answer the following questions for an activ
         }
   }
 ```
-
-
 
 ### Get The Most Recently Updated Flows
 
@@ -207,7 +211,7 @@ Here, we can query all of the subscriptions a particular account is subscribed t
 
 `subscriptions` will return an `IndexSubscription` type for each `Index` that this account is subscribed to
 
-`token` - the `Token` used in each subscription. Here we display the `symbol`.&#x20;
+`token` - the `Token` used in each subscription. Here we display the `symbol`.
 
 `id` - the ID of the `IndexSubscription`. This ID is composed of: `subscriberAddress`-`publisherAddress`-`tokenAddress`-`IndexId`
 
@@ -244,7 +248,7 @@ In this example, we can filter by & return data using a combination of an event 
 
 We'll return the following from the Index type
 
-`indexValue` - used to calculate the distribution amount that a user receives when the publisher updates the index value. The distribution amount can be calculated using the following formula:&#x20;
+`indexValue` - used to calculate the distribution amount that a user receives when the publisher updates the index value. The distribution amount can be calculated using the following formula:
 
 > (index.indexValue - subscriber.indexValue) \* subscriber.units
 
@@ -373,7 +377,7 @@ If you design a useful query, let us know and we will share it here!
 
 ## Legacy Subgraph Documentation
 
-## Legacy Subgraph URLs&#x20;
+## Legacy Subgraph URLs
 
 Click a link to start testing queries in the playground:
 
@@ -397,9 +401,9 @@ The Legacy schema contains fewer entities and some subtle differences in schema.
 
 ### How much USDCx has Alice streamed to Bob? \[_Legacy Query_]
 
-The Subgraph can only return a flow's `sum` since the last on-chain event (`flowUpdated`, `flowCreated`, or `flowDeleted`). Therefore, if `flowRate` is greater than zero, you will need to calculate the tokens flowed since the last event. Use this equation to get the the total sum of tokens flowed: &#x20;
+The Subgraph can only return a flow's `sum` since the last on-chain event (`flowUpdated`, `flowCreated`, or `flowDeleted`). Therefore, if `flowRate` is greater than zero, you will need to calculate the tokens flowed since the last event. Use this equation to get the the total sum of tokens flowed:
 
-$$totalSum = sum + flowRate(currentTimestamp-lastUpdate)$$&#x20;
+$$totalSum = sum + flowRate(currentTimestamp-lastUpdate)$$
 
 ```
 {
