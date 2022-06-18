@@ -12,7 +12,7 @@ In our section on [Liquidations & TOGA](liquidations-and-toga.md), we described 
 2. Teams that have a service running on Superfluid. Perhaps you’ve launched your own dapp or your own Super Token, and you want to be 100% certain that your users are in good standing.
 3. Professional operators who want to run profitable enterprises. If you have DevOps skills and/or you’re able to acquire capital to become the PIC for several tokens, participating in this process could be a good opportunity!
 
-## Getting Started&#x20;
+## Getting Started
 
 ### Running a Sentinel - Step By Step Guide
 
@@ -38,21 +38,20 @@ The TOGA Dashboard
 
 ### Additional Resources
 
-Various communities are beginning to emerge around running Sentinels. If you're interested in learning more about these communities and engaging them directly, we recommend checking out the Sentinel Guild:&#x20;
+Various communities are beginning to emerge around running Sentinels. If you're interested in learning more about these communities and engaging them directly, we recommend checking out the Sentinel Guild:
 
-{% embed url="https://discord.gg/ZSp99raY" %}
+{% embed url="https://discord.gg/XWHGJxEgQJ" %}
 
-## Glossary of Terms:&#x20;
+## Glossary of Terms:
 
-**Buffer**: The amount of tokens that an account must temporarily lock up when a stream is started.&#x20;
+**Buffer**: The amount of tokens that an account must temporarily lock up when a stream is started.
 
-**Liquidation**: Occurs when a stream is closed by a sentinel once an account's token balance hits zero while still streaming funds&#x20;
+**Liquidation**: Occurs when a stream is closed by a sentinel once an account's token balance hits zero while still streaming funds
 
-**Sentinel**: A node that watches the Superfluid network & closes streams when they become critical or insolvent. Anyone can become a Sentinel by running a node&#x20;
+**Sentinel**: A node that watches the Superfluid network & closes streams when they become critical or insolvent. Anyone can become a Sentinel by running a node
 
-**PIC**: The Patrician in Charge who receives rewards each time a stream is closed in the priority period when an account goes critical&#x20;
+**PIC**: The Patrician in Charge who receives rewards each time a stream is closed in the priority period when an account goes critical
 
 **TOGA**: the Transparent Ongoing Auction which allows anyone to become the Patrician in Charge (PIC) if they put up a higher staked amount than the previous PIC
 
 **Stake**: The amount of funds locked in the TOGA contract by the Patrician in Charge (PIC)
-
