@@ -6,16 +6,13 @@ description: One transaction to distribute to any number of receivers with a fix
 
 ## **Definition**
 
-Recurring one-to-many distributions are hard to scale; the more receivers there are, the more transfers must be done, which runs up gas costs.&#x20;
+Recurring one-to-many distributions are hard to scale; the more receivers there are, the more transfers must be done, which runs up gas costs.
 
-An IDA makes one-to-many distributions scalable through a proportion model:
+An IDA makes recurring one-to-many distributions scalable. It does so by letting a sending account assign proportions to many receiving accounts and distribute tokens to them on the basis of the set proportions in a single transaction at a fixed gas cost. Here's how it works 👇
 
-1\. First, a sender (called a "publisher") publishes an IDA index which will work like a channel managing how Super Tokens will move to receivers (called "subscribers").
+1\. First, a sender (called a "publisher") publishes an IDA index which will work like a channel organizing how Super Tokens will proportionally distribute to receivers (called "subscribers").
 
-2\. Then, the publisher can set proportions for various subscriber accounts under the IDA Index. This is done by issuing units which work like distribution shares.&#x20;
-
-* The more units an account has relative to other receivers, the more of the distribution it will receive.&#x20;
-* The information on these proportions are organized under the publisher's IDA Index within the IDA Super Agreement contract.&#x20;
+2\. Then, the publisher can set proportions for various subscriber accounts under the IDA Index. This is done by issuing units to the IDA Index which work like distribution shares. The more units an account has relative to other receivers, the more it will receive of each distribution.
 
 3\. When Super Tokens are distributed through the IDA Index, every subscriber will instantly receive tokens _in proportion_ to the amount of units they have over the total outstanding units. This is done all at once with a fixed gas cost.
 
@@ -25,7 +22,7 @@ An IDA makes one-to-many distributions scalable through a proportion model:
 
 ## **Terminology**
 
-* **IDA Index**: A channel created by an account (the publisher) to distribute Super Tokens to any amount of receivers on a proportional basis.&#x20;
+* **IDA Index**: A channel made by a publisher account to distribute Super Tokens to any amount of receivers on a proportional basis.
 * **Distribution**: Pulls the specified amount of Super Tokens from the sender's account and distributes them to all receivers.
 * **Units**: Dictate the proportion of Super Tokens distributed through an index that a subscriber is to receive. They are effectively distribution _shares_. Receivers receive Super Tokens sent through the IDA index in proportion to the units issued to them divided by total units issued for the index.&#x20;
 * **Publisher**: The sender. Creates the IDA index and issues units to receivers
