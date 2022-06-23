@@ -6,9 +6,22 @@ description: One transaction to distribute to any number of receivers with a fix
 
 ## **Definition**
 
-Traditionally, in order to transfer amounts from one sending account to many receiving accounts on the basis of established proportions, one would have to iterate across each desired recipient account and engage individual transfers of varying amounts. This is not scalable as gas costs rise incrementally with each transfer. The IDA accomplishes this one-to-many dispersion with a fixed gas cost making multi-recipient token distributions scalable.&#x20;
+Recurring one-to-many distributions are hard to scale; the more receivers there are, the more transfers must be done, which runs up gas costs.&#x20;
 
-With an IDA, the sender (or "publisher") publishes an IDA index, which is a channel through which the distribution occurs. After creating the index, the publisher can issue distribution shares (or "units") for the index to individual receivers (or "subscribers"). The publisher can then distribute Super Tokens through the index and each subscriber will instantly receive tokens in proportion to the amount of units they possess relative to the total outstanding units.&#x20;
+An IDA makes one-to-many distributions scalable through a proportion model:
+
+1\. First, a sender (called a "publisher") publishes an IDA index which will work like a channel managing how Super Tokens will move to receivers (called "subscribers").
+
+2\. Then, the publisher can set proportions for various subscriber accounts under the IDA Index. This is done by issuing units which work like distribution shares.&#x20;
+
+* The more units an account has relative to other receivers, the more of the distribution it will receive.&#x20;
+* The information on these proportions are organized under the publisher's IDA Index within the IDA Super Agreement contract.&#x20;
+
+3\. When Super Tokens are distributed through the IDA Index, every subscriber will instantly receive tokens _in proportion_ to the amount of units they have over the total outstanding units. This is done all at once with a fixed gas cost.
+
+{% hint style="info" %}
+**NOTE**: Instant Distribution Agreements are NOT one-and-done; they do not reset after a distribution is triggered. Each receiver's units for the index will persist across distributions, so the sender can continue to distribute through the index as many times and in various amounts as desired. A receiver's units can be increased or decreased as the sender sees fit.
+{% endhint %}
 
 ## **Terminology**
 
@@ -17,10 +30,6 @@ With an IDA, the sender (or "publisher") publishes an IDA index, which is a chan
 * **Units**: Dictate the proportion of Super Tokens distributed through an index that a subscriber is to receive. They are effectively distribution _shares_. Receivers receive Super Tokens sent through the IDA index in proportion to the units issued to them divided by total units issued for the index.&#x20;
 * **Publisher**: The sender. Creates the IDA index and issues units to receivers
 * **Subscribers**: The receivers. Accounts that are given units to an IDA index and are able to receive Super Tokens distributed through it.
-
-{% hint style="info" %}
-**NOTE**: Instant Distribution Agreements are NOT one-and-done; they do not reset after a distribution is triggered. Each receiver's units for the index will persist across distributions, so the sender can continue to distribute through the index as many times and in various amounts as desired. A receiver's units can be increased or decreased as the sender sees fit.
-{% endhint %}
 
 ## **Computation**
 
