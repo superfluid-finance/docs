@@ -8,7 +8,7 @@ description: Building Programmable Cashflows
 
 A Super App is a contract that reacts on-chain to changes within super agreements that the contract is associated with. They may be used in conjunction with the Superfluid Constant Flow Agreement (CFA) to create truly programmable cashflows.
 
-Super Apps allow us to build smart contracts that are fully integrated with Superfluid at the protocol level. If you've looked at our [Tradeable Cashflow](https://docs.superfluid.finance/superfluid/protocol-tutorials/super-apps) tutorial or our [User Data](https://docs.superfluid.finance/superfluid/docs/user-data) tutorial, we are using a Super App in each of those sample applications.
+Super Apps allow us to build smart contracts that are fully integrated with Superfluid at the protocol level. If you've looked at our[ Tradeable Cashflow ](https://github.com/superfluid-finance/protocol-monorepo/tree/dev/examples/tradeable-cashflow)tutorial or our [User Data](https://docs.superfluid.finance/superfluid/docs/user-data) tutorial, we are using a Super App in each of those sample applications.
 
 ![The Tradeable Cashflow NFT](<../../../.gitbook/assets/image (30) (1).png>)
 
