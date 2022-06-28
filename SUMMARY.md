@@ -37,6 +37,7 @@
   * [⚓ Deploying The Framework](developers/solidity-examples/production-deployment.md)
 * [🖥 Subgraph](developers/subgraph.md)
 * [⭐ Interactive Tutorials](developers/interactive-tutorials/README.md)
+  * [Super Token Faucet](developers/interactive-tutorials/super-token-faucet.md)
   * [🌊 Money Streaming](developers/interactive-tutorials/money-streaming-1.md)
   * [⚡ Instant Distribution](developers/interactive-tutorials/instant-distribution.md)
   * [🪙 Using Super Tokens](developers/interactive-tutorials/using-super-tokens.md)
