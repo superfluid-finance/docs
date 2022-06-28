@@ -16,6 +16,10 @@ Creating a flow requires you to call `sf.cfaV1.createFlow()` and pass in the sen
 
 See below for an example of how this works. You can enter your own Ethereum address and `flowRate` (i.e. how much DAIx you want to send in in wei/second) to send yourself a stream of DAIx. Scroll down in the React App page (on the right side of the screen below) to see your flowRate converted into DAIx per month.
 
+{% hint style="info" %}
+NOTE: these examples expose a private key which contains some fake tokens, but you DO NOT need to create a signer with a private key to make use of Superfluid. To see an example which uses metamask/a web3 provider, scroll down to the last example.
+{% endhint %}
+
 {% embed url="https://codesandbox.io/embed/cfa-createflow-walkthrough-ougpu?expanddevtools=1&fontsize=14&hidenavigation=1&module=%2Fsrc%2FCreateFlow.js&theme=dark&view=split" %}
 
 ### Updating a Flow

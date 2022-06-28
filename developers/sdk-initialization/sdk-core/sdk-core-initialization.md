@@ -4,6 +4,18 @@ description: How to initialize the SDK Core
 
 # 🔥 SDK Core Initialization
 
+## Required Imports
+
+To install the Superfluid SDK Core, you can run&#x20;
+
+You'll need to have a project which already includes `graphql` and `ethers` as dependencies.
+
+From here, you can install the Superfluid SDK Core like so:
+
+```
+npm install @superfluid-finance/sdk-core
+```
+
 ## I**nitializing the SDK Core**
 
 When creating the framework, you'll use `Framework.create()` like so:

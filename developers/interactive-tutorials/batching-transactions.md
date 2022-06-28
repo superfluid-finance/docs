@@ -21,6 +21,10 @@ First, we'll need to approve the super token contract (in this case, fDAIx on Ko
 After the approval, you can enter the number of tokens you'd like to upgrade, and information about the flow you'd like to create and click the 2nd button to run your batch call. You'll be able to see the upgrade and createFlow operation happen in a single transaction (just check the console for details!)
 
 {% hint style="info" %}
+NOTE: these examples expose a private key which contains some fake tokens, but you DO NOT need to create a signer with a private key to make use of Superfluid. To see an example which uses metamask/a web3 provider, scroll down to the last example
+{% endhint %}
+
+{% hint style="info" %}
 NOTE: we recommend using the [Superfluid Console](https://console.superfluid.finance) and the [Superfluid Dashboard](https://app.superfluid.finance) as you go through these interactive tutorials.&#x20;
 {% endhint %}
 

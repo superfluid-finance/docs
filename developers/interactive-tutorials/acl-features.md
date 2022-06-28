@@ -42,6 +42,10 @@ To grant a flow rate allowance to an operator, you'll need to pass in the follow
 
 `superToken` - the token on which the allowance is being provided
 
+{% hint style="info" %}
+NOTE: these examples expose a private key which contains some fake tokens, but you DO NOT need to create a signer with a private key to make use of Superfluid. To see an example which uses metamask/a web3 provider, scroll down to the last example
+{% endhint %}
+
 {% embed url="https://codesandbox.io/embed/updateflowpermissions-example-3k8hor?fontsize=14&hidenavigation=1&module=%2Fsrc%2FUpdateFlowPermissions.js&theme=dark&view=split" %}
 Updating flow permissions
 {% endembed %}

@@ -43,6 +43,10 @@ In addition to Native Super Tokens and ERC20 Wrapped Super Tokens, you can also 
 
 You can easily wrap & unwrap ERC20 assets as super tokens using the [Superfluid dashboard](https://app.superfluid.finance/currencies), but you might want to write code to allow your users to do the same in your application. In the below examples, we show you 2 code examples which makes it easy to do this using the [Superfluid SDK-Core](https://www.npmjs.com/package/@superfluid-finance/sdk-core). We’ve used an address that is unlocked & has lots of test DAI (fDAI) and DAIx (fDAIx) tokens. Feel free to play around & use this code for testing!
 
+{% hint style="info" %}
+NOTE: these examples expose a private key which contains some fake tokens, but you DO NOT need to create a signer with a private key to make use of Superfluid. To see an example which uses metamask/a web3 provider, scroll down to the last example
+{% endhint %}
+
 ### Upgrading an Existing ERC20 Asset
 
 Enter an amount to approve & upgrade in the form field below in whole dollar amounts. Make sure you 'Click to Approve Token Upgrade' first, and wait a few seconds after the console shows that the transaction has been completed before you 'Click to Upgrade Your Tokens.'

@@ -16,6 +16,10 @@ NOTE: we recommend using the [Superfluid Console](https://console.superfluid.fin
 
 Creating an index will allow you to get started with the IDA. You can use the below example to generate an index ID which can be used in the next 2 steps. Click the button below to create your index, then open up the console to see your randomly generated index ID.
 
+{% hint style="info" %}
+NOTE: these examples expose a private key which contains some fake tokens, but you DO NOT need to create a signer with a private key to make use of Superfluid. To see an example which uses metamask/a web3 provider, scroll down to the last example
+{% endhint %}
+
 {% embed url="https://codesandbox.io/embed/ida-walkthrough-createpool-l32ud?expanddevtools=1&fontsize=14&hidenavigation=1&module=%2Fsrc%2FCreateIndex.js&theme=dark&view=split" %}
 Create an index
 {% endembed %}
