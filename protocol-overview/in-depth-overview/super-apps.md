@@ -6,7 +6,7 @@ description: Making Super Agreements truly programmable
 
 ## Definition
 
-Super Apps are smart contracts that inherit Superfluid functionality giving them the ability to **react to Super Agreements**. Through callbacks, a Super App can "listen" to the creating, updating, and deleting of Super Agreements that it is engaged in and react with customized logic set in its smart contract code.
+Super Apps are smart contracts that inherit Superfluid functionality giving them the ability to **react to Super Agreements**. Through callbacks, a Super App can "react" to the creating, updating, and deleting react with customized logic set in its smart contract code.
 
 ## **Reacting to Super Agreements**
 

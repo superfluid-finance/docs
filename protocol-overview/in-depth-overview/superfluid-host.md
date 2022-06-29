@@ -6,7 +6,7 @@ description: The "brain" of the Superfluid Protocol
 
 ## Definition
 
-The Superfluid Host Contract is the centerpiece of the Superfluid Protocol which connects Super Tokens, Super Agreements, and Super Apps. It serves as a conduit for information throughout the Superfluid Protocol, provides modularity for Protocol upgrades, and enables aggregation of information across the various components.
+The Superfluid Host Contract is the centerpiece of the Superfluid Protocol which connects Super Tokens, Super Agreements, and Super Apps. It works like a conduit for information throughout the Superfluid Protocol.
 
 ![](<../../.gitbook/assets/image (68).png>)
 
@@ -14,7 +14,7 @@ That looks complicated. Let's break down the basic linkages from core pieces of 
 
 ## Super Agreements 🔗 Host Contract
 
-Super Agreements are modular and house their core logic in their own individual contracts that are connected to the Host Contract. Calling a Super Agreement is a matter of calling [`callAgreement()`](https://docs.superfluid.finance/superfluid/developers/solidity-examples/interacting-with-superfluid-smart-contracts) on the Host Contract and specifying the desired Super Agreement and parameters.
+Super Agreements are modular and house their logic in their own individual contracts that are connected to the Host Contract. Calling a Super Agreement means calling [`callAgreement()`](https://docs.superfluid.finance/superfluid/developers/solidity-examples/interacting-with-superfluid-smart-contracts) on the Host Contract with a chosen Super Agreement and parameters.
 
 As a result, Super Agreements can be upgraded and new Super Agreements can be developed and registered to the Host Contract.
 

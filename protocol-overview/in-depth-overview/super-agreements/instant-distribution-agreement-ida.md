@@ -24,7 +24,7 @@ An IDA makes recurring one-to-many distributions scalable. It does so by letting
 
 * **IDA Index**: A channel made by a publisher account to distribute Super Tokens to any amount of receivers on a proportional basis.
 * **Distribution**: Pulls the specified amount of Super Tokens from the sender's account and distributes them to all receivers.
-* **Units**: Dictate the proportion of Super Tokens distributed through an index that a subscriber is to receive. They are effectively distribution _shares_. Receivers receive Super Tokens sent through the IDA index in proportion to the units issued to them divided by total units issued for the index.&#x20;
+* **Units**: Dictate the proportion of Super Tokens distributed through an index that a subscriber is to receive. They work like distribution _shares_. Receivers get Super Tokens sent through the IDA index in proportion to the units issued to them divided by total units issued for the index.&#x20;
 * **Publisher**: The sender. Creates the IDA index and issues units to receivers
 * **Subscribers**: The receivers. Accounts that are given units to an IDA index and are able to receive Super Tokens distributed through it.
 
