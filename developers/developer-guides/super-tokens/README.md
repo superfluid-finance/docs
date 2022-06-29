@@ -2,7 +2,7 @@
 description: Tokens with super-powers ✨
 ---
 
-# 🪙 Super Tokens
+# 🪙 Super Tokens In-Depth
 
 Super Tokens are one of the 3 main primitives of the Superfluid Protocol. Here's a list of the super-powers that all Super Tokens enjoy:
 
@@ -16,13 +16,13 @@ Super Tokens are one of the 3 main primitives of the Superfluid Protocol. Here's
 
 All Super Tokens share the same basic features, however not all Super Tokens are alike. Super Tokens come in three primary types:
 
-* ****[**ERC20 Wrapper**](erc20-wrapper-tokens.md) **Super Tokens**
-* ****[**Pure**](pure-super-tokens.md) **Super Tokens**
-* ****[**Native Asset**](native-asset-super-tokens.md) **Super Tokens**
+* [**ERC20 Wrapper**](erc20-wrapper-tokens.md) **Super Tokens**
+* [**Pure**](pure-super-tokens.md) **Super Tokens**
+* [**Native Asset**](native-asset-super-tokens.md) **Super Tokens**
 
 ## List Your Token in the Superfluid Dashboard
 
-In order for your token to appear in the [Superfluid Dashboard](https://app.superfluid.finance), you can complete this [form](https://www.notion.so/Add-New-Tokens-to-Superfluid-8464f8c116c24cd6a0c5cb4f4174bb2d).
+In order for your token to appear in the [Superfluid Dashboard](https://app.superfluid.finance), head over [here](https://docs.superfluid.finance/superfluid/resources/token-dashboard-submission).
 
 ## Working with Super Tokens
 
@@ -34,7 +34,7 @@ Some applications (notably Etherscan) rely on `transfer` \_\_ events to first st
 
 In order to work around this, applications looking to support Super Tokens should look not only to `transfer` events, but also to Superfluid's `AgreementStateUpdated` event. This is triggered every time an account's state changes, which is likely to indicate a future change in their balance.
 
-Once you know you need to track an account, the best way to get an up to date balance is by calling the `balanceOf` function. As you know by now, Superfluid enables a number of new ways to move funds. Only tracking transfers won't cut it!&#x20;
+Once you know you need to track an account, the best way to get an up to date balance is by calling the `balanceOf` function. As you know by now, Superfluid enables a number of new ways to move funds. Only tracking transfers won't cut it!
 
 An excellent open source tool for checking user balances in real time is the [Superfluid Console](https://console.superfluid.finance). We suggest leveraging it for your own usage in the protocol:
 
