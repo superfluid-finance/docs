@@ -18,7 +18,7 @@ The main step for creating a new ERC20 Wrapper for your token is calling `create
 
 1. Go to the Superfluid [**Network Directory**](https://docs.superfluid.finance/superfluid/networks/networks) and search for the token explorer in the right network.
 2. Click on the "SuperTokenFactory" for your preferred network
-3. Navigate the tabs to Contract > WriteAsProxy. Here are **direct links for** [**Polygon**](https://polygonscan.com/address/0x2C90719f25B10Fc5646c82DA3240C76Fa5BcCF34#writeProxyContract)**,** [**Gnosis Chain**](https://blockscout.com/xdai/mainnet/address/0x23410e2659380784498509698ed70E414D384880/write-contract)**,** [**Optimism**](https://optimistic.etherscan.io/address/0x8276469a443d5c6b7146bed45e2abcad3b6adad9#writeProxyContract)**, and** [**Arbitrum**](https://arbiscan.io/address/0x1C21Ead77fd45C84a4c916Db7A6635D0C6FF09D6)**.**
+3. Navigate the tabs to Contract > WriteAsProxy. Here are **direct links for** [**Polygon**](https://polygonscan.com/address/0x2C90719f25B10Fc5646c82DA3240C76Fa5BcCF34#writeProxyContract)**,** [**Gnosis Chain**](https://blockscout.com/xdai/mainnet/address/0x23410e2659380784498509698ed70E414D384880/write-contract)**,** [**Optimism**](https://optimistic.etherscan.io/address/0x8276469a443d5c6b7146bed45e2abcad3b6adad9#writeProxyContract)**,** [**Arbitrum**](https://arbiscan.io/address/0x1C21Ead77fd45C84a4c916Db7A6635D0C6FF09D6)**, and** [**BNB Smart Chain**](https://www.bscscan.com/address/0x8bde47397301f0cd31b9000032fd517a39c946eb#writeProxyContract)**.**
 4. Connect your wallet to be able to write
 5. Search for the `createERC20Wrapper` function, and input the required parameters, with **no additional characters**
    1. underlyingToken (address) ⇒ The `address` of the token you want to wrap
