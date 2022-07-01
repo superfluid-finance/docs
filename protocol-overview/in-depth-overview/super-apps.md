@@ -23,18 +23,18 @@ A Super App, programmed to take all inbound flows to it and aggregate them into 
 **3.** The Super App will continue to react appropriately as new accounts create, update, and delete CFAs to the Super App.&#x20;
 
 {% hint style="info" %}
-**NOTE**: While any smart contract can engage Super Agreements, a smart contract must have callbacks defined in order to be classified as a Super App.
+**NOTE**: While any smart contract can engage Super Agreements, a smart contract **must have callbacks defined** in order to be classified as a Super App.
 {% endhint %}
 
 ## Why Are Super Apps Needed?
 
-The Super Agreement reactivity and management properties of Super Apps create an intermediate layer of programmability to Super Agreement's that would not be possible with just wallet-to-wallet engagement.
+Since Super Apps can react to Super Agreements, they create an intermediate layer of programmability to Super Agreement's that wouldn't be possible with just wallet-to-wallet action.
 
-As a result, applications can be made that mesh together custom logic with Super Agreements to create scalable dApps with innovative user experiences.&#x20;
+As a result, applications can be made that mesh together custom logic with Super Agreements actions to create scalable dApps with innovative user experiences.
 
-For instance, a developer may create a lending Super App where loan repayment can be done via CFA stream rather than manual and repetitive repayment transactions. Or consider a Super App supporting on-chain subscriptions paid via CFA stream with a built-in affiliate program that automatically redirects portions of subscription streams to referrers. The possibilities with Super Apps are endless.
+For instance, you could create a lending Super App where loan repayment is be done via CFA stream rather than manual and repetitive repayment transactions. Also, imagine a Super App supporting on-chain subscriptions paid through CFA streams with a built-in affiliate program that automatically redirects portions of subscription streams to referrers. The possibilities with Super Apps are endless!
 
-Check out these Super App examples below :point\_down:
+For more inspiration, check out these Super App examples below :point\_down:
 
 {% content-ref url="../../resources/examples.md" %}
 [examples.md](../../resources/examples.md)

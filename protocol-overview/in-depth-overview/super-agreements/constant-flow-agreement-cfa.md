@@ -10,10 +10,10 @@ The Constant Flow Agreement lets you stream money! What do we mean by streaming?
 
 ## **Terminology**
 
-* **Flow Rate**: The per-second rate at which a sender decreases its netflow and increase a receivers netflow when creating or updating a CFA.&#x20;
-* **Netflow Rate**: The rate at which an account's Super Token's balance is changing. It is the sum of the account's inbound and outbound CFA flows.
+* **Flow Rate**: The per-second rate that a sender decreases its netflow and increases a receivers netflow when creating or updating a CFA.&#x20;
+* **Netflow Rate**: The per-second rate that an account's Super Token's balance is changing. It is the sum of the account's inbound and outbound CFA flow rates.
 * **Sender**: The account that starts the CFA by specifying a receiver and a flow rate after which its netflow rate decreases.
-* **Receiver**: The account on the receiving end of a CFA which increases its netflow rate.
+* **Receiver**: The account on the receiving end of a CFA which has its netflow rate increased.
 * ****[**CRUD**](https://en.wikipedia.org/wiki/Create,\_read,\_update\_and\_delete) **timestamp**: The timestamp of when an account creates, updates, or deletes a CFA.
 * **CFA Real-Time Balance**: The amount the account's Super Token balance has changed since the latest CRUD timestamp due to the CFA. Can be positive or negative.
 * **Static Balance**: The Super Token balance of the account at the latest CRUD timestamp.&#x20;
@@ -43,12 +43,12 @@ From here the CFA Real-Time Balance begins automatically changing by-the-second 
 Recall that the Current Balance is equal to the Real-Time Balance (changing by the second) plus the Static Balance (constant until a flow change). As a result, when an account with a non-zero netflow rate goes to view its balance, it will see that it changes every second!
 
 {% hint style="info" %}
-**NOTE**: Because the only changing variable involved is time, creating a CFA is a one-time action. Viewing your balance is simply a matter of viewing the value from the formula below and **NOT a matter of the sender or Superfluid running transactions every second to update balances**.
+**NOTE**: Because the only changing variable involved is time, creating a CFA is a one-time action. Viewing your balance is simply a matter of reading the value from the formula below and **NOT a matter of the sender or Superfluid running transactions every second to update balances**.
 {% endhint %}
 
 ## **Formula**
 
-> Static Balance = Initital Balance at latest CRUD timestamp
+> Static Balance = Initial Balance at latest CRUD timestamp
 >
 > Real-Time Balance = Netflow Rate \* Seconds elapsed since latest CRUD timestamp
 >
@@ -140,7 +140,15 @@ Real-Time Balance = **+0.04** USDCx/second \* **0** seconds = 0 USDCx
 
 Current Balance = 970 USDCx + 0 USDCx = **970 USDCx**
 
+## Other Considerations
 
+#### What if I transfer, wrap, or unwrap Super Tokens while I have an active stream?
+
+These actions are "discrete lump-sum" actions and just use the Super Token's basic ERC20 `transfer` function. They don't interface with Super Agreements at all which means they don't affect the Real-Time Balance of your account. Basically, they just affect the Static Balance.
+
+**What if I interact with the Instant Distribution Agreement (IDA) while I have an active stream?**
+
+The IDA is a separate Super Agreement. All the actions done there are captured within it's own IDA Real-Time Balance which is added to an account's overall balance separately.&#x20;
 
 ## Solvency and Sentinels
 
