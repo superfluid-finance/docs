@@ -75,11 +75,12 @@
 * [🔗 Network Directory](developers/networks/README.md)
   * [Superfluid Protocol Addresses](https://console.superfluid.finance/protocol)
   * [Networks](developers/networks/networks/README.md)
-    * [Avalanche](developers/networks/networks/avalanche.md)
     * [Polygon (Matic)](developers/networks/networks/polygon-network-matic.md)
     * [Gnosis Chain](developers/networks/networks/xdai-chain.md)
-    * [Arbitrum](developers/networks/networks/arbitrum.md)
     * [Optimism](developers/networks/networks/optimism.md)
+    * [Arbitrum](developers/networks/networks/arbitrum.md)
+    * [Avalanche](developers/networks/networks/avalanche.md)
+    * [BNB Chain](developers/networks/networks/bnbchain.md)
 
 ## Sentinels
 
