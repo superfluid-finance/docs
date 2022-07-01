@@ -17,7 +17,7 @@ To add BNB Chain to Metamask, you can head to your Settings in Metamask, and sel
 | RPC            | **Public RPC URL**: [https://bscrpc.com](https://bscrpc.com)                                       |
 | Block Explorer | [https://bscscan.com/](https://bscscan.com/)                                                     |
 
-You can find more public RPCs on https://chainlist.org/chain/56 .
+You can find more public RPCs on [chainlist](https://chainlist.org/chain/56).
 
 ### Troubleshooting
 
