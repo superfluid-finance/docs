@@ -138,6 +138,29 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 {% endtab %}
 {% endtabs %}
 
+{% tab title="BNB Chain" %}
+**❓ See** [**BNB Chain**](networks/bnbchain.md) **for more help**
+
+**Framework**
+
+| Resource                                                                                        | Address                                    |
+| ----------------------------------------------------------------------------------------------- | ------------------------------------------ |
+| [Resolver](https://bscscan.com/address/0x69604aA4e9e8BF44A73C680997205Edb03A92E41)             | 0x69604aA4e9e8BF44A73C680997205Edb03A92E41 |
+| [Host](https://bscscan.com/address/0xd1e2cFb6441680002Eb7A44223160aB9B67d7E6E)                 | 0xd1e2cFb6441680002Eb7A44223160aB9B67d7E6E |
+| [CFAv1](https://bscscan.com/address/0x49c38108870e74Cb9420C0991a85D3edd6363F75)                | 0x49c38108870e74Cb9420C0991a85D3edd6363F75 |
+| [IDAv1](https://bscscan.com/address/0x594ed9Cd773584B645aC1F5B11020d3b32cDF07d)                | 0x594ed9Cd773584B645aC1F5B11020d3b32cDF07d |
+| [SuperToken Factory](https://bscscan.com/address/0x8bde47397301F0Cd31b9000032fD517a39c946Eb)   | 0x8bde47397301F0Cd31b9000032fD517a39c946Eb |
+| [SuperToken Loader v1](https://bscscan.com/address/0x3C26e5bEbc68EaAf4efcd88F8E5A6Aeb77b65579) | 0x3C26e5bEbc68EaAf4efcd88F8E5A6Aeb77b65579 |
+| [TOGA](https://bscscan.com/address/0xFCD84210f5d51Cd40a30443d44d6A5500d5D10dF)                 | 0xFCD84210f5d51Cd40a30443d44d6A5500d5D10dF |
+
+**Tokens**
+
+| Resource                                                                         | Address                                    |
+| -------------------------------------------------------------------------------- | ------------------------------------------ |
+| [BNBx](https://bscscan.com/address/0x529a4116f160c833c61311569d6b33dff41fd657) | 0x529a4116f160c833c61311569d6b33dff41fd657 |
+{% endtab %}
+{% endtabs %}
+
 ## Test Networks
 
 {% tabs %}
