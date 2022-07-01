@@ -136,7 +136,6 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 | -------------------------------------------------------------------------------- | ------------------------------------------ |
 | [AVAXx](https://snowtrace.io/address/0xBE916845D8678b5d2F7aD79525A62D7c08ABba7e) | 0xBE916845D8678b5d2F7aD79525A62D7c08ABba7e |
 {% endtab %}
-{% endtabs %}
 
 {% tab title="BNB Chain" %}
 **❓ See** [**BNB Chain**](networks/bnbchain.md) **for more help**
