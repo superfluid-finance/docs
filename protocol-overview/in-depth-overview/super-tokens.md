@@ -37,7 +37,7 @@ By combining these two parts, we can get an account's actual current balance.
 
 > Current Balance = 1000 + <mark style="color:red;">-100</mark> + <mark style="color:green;">200 =</mark> **1100 USDCx**
 
-The bottom line is that while a regular ERC20 just tracks a static balance which it shows when you call `balanceOf()`, a Super Token takes that layers on real-time balances to account for Super Agreements.
+The bottom line is that while a regular ERC20 just tracks a static balance which it shows when you call `balanceOf()`, a Super Token's `balanceOf()` takes that and layers on real-time balances to account for Super Agreements.
 
 ## Types of Super Tokens
 
