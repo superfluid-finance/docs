@@ -16,6 +16,7 @@
 
 ## Developers
 
+* [🏃♀ Quickstart](developers/quickstart.md)
 * [🧨 SDK Overview](developers/sdk-initialization/README.md)
   * [📀 SDK Core](developers/sdk-initialization/sdk-core/README.md)
     * [📖 Reference Docs](https://refs.superfluid.finance/sdk-core/)
