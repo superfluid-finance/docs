@@ -14,7 +14,7 @@ These tokens allow you to use existing ERC20 assets within the Superfluid Protoc
 
 The main step for creating a new ERC20 Wrapper for your token is calling `createERC20Wrapper()` on the [SuperTokenFactory](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/superfluid/SuperTokenFactory.sol) contract.
 
-### Using Block Explorer to Deploy ERC20 Your Wrapper
+### Using Block Explorer to Deploy Your Wrapper
 
 1. Go to the Superfluid [**Network Directory**](https://docs.superfluid.finance/superfluid/networks/networks) and search for the token explorer in the right network.
 2. Click on the "SuperTokenFactory" for your preferred network
