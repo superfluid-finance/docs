@@ -31,19 +31,15 @@ const sf = await Framework.create({
 
 When creating the framework, you must pass in the following options.  The only required params are the `provider` and a `chainId`
 
-{% hint style="info" %}
-NOTE: the `chainId` is often easier to access because it tends to be available on the provider object in most web3 environments
-{% endhint %}
+`chainId: number` - the chain Id for the network
 
-`chainId?: number` - the chain Id for the network
+`provider: SupportedProvider` - the provider being used
 
 `customSubgraphQueriesEndpoint?: string` - an option to add your own custom subgraph endpoint for writing custom queries
 
 `resolverAddress?: string` - an optional parameter that can be included for getting the framework in a test environment. If you pass in `process.env.RESOLVER_ADDRESS`, this will work successfully as seen [here](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/examples/tradeable-cashflow/tradeable-cashflow-hardhat/test/TradeableCashflow.test.js#L51).
 
 `protocolReleaseVersion?: string` - options here are "v1," "test," or your own release version (which is almost always not necessary unless you're doing experimental work)
-
-`provider: SupportedProvider` - the provider being used
 
 ## Examples For Various Environments
 
