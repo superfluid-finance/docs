@@ -22,14 +22,14 @@ When creating the framework, you'll use `Framework.create()` like so:
 
 ```
 const sf = await Framework.create({
-  networkName: "matic", // you can also use chainId here instead
+  chainId: 137, // you can also use chainId here instead
   provider: ethersProvider
 });
 ```
 
 ### Framework Options
 
-When creating the framework, you must pass in the following options.  The only required params are the `provider` and either a `chainId` or `networkName`
+When creating the framework, you must pass in the following options.  The only required params are the `provider` and a `chainId`
 
 {% hint style="info" %}
 NOTE: the `chainId` is often easier to access because it tends to be available on the provider object in most web3 environments
@@ -38,10 +38,6 @@ NOTE: the `chainId` is often easier to access because it tends to be available o
 `chainId?: number` - the chain Id for the network
 
 `customSubgraphQueriesEndpoint?: string` - an option to add your own custom subgraph endpoint for writing custom queries
-
-`dataMode?: DataMode - can be one of the following:` "SUBGRAPH\_ONLY, " "SUBGRAPH\_WEB3, " or "WEB3\_ONLY." This allows users to either use only a subgraph queries endpoint or web3 only mode (or both).
-
-`networkName?: string` - the name of the network. A list of supported network names can be found [here](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/sdk-core/src/constants.ts#L18).
 
 `resolverAddress?: string` - an optional parameter that can be included for getting the framework in a test environment. If you pass in `process.env.RESOLVER_ADDRESS`, this will work successfully as seen [here](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/examples/tradeable-cashflow/tradeable-cashflow-hardhat/test/TradeableCashflow.test.js#L51).
 
@@ -67,7 +63,7 @@ const provider = new ethers.providers.InfuraProvider(
   "<INFURA_API_KEY>"
 );
 const sf = await Framework.create({
-  networkName: "matic",
+  chainId: 137, //note, you can also use provider.getChainId() to get the active chainId
   provider
 });
 
@@ -76,7 +72,7 @@ const web3jsProvider = new ethers.providers.Web3Provider(
   (global as any).web3.currentProvider
 );
 const web3jsSf = await Framework.create({
-  networkName: "matic",
+  chainId: 137, //note, you can also use provider.getChainId() to get the active chainId
   provider: web3jsProvider
 });
 
@@ -86,9 +82,8 @@ const web3jsSf = await Framework.create({
 // omit the (global as any) as this should be
 // exposed already (in JS at least)
 const injectedWeb3jsSf = await Framework.create({
-  networkName: "custom",
+  chainId: 31337,
   provider: (global as any).web3,
-  dataMode: "WEB3_ONLY",
   resolverAddress: <RESOLVER_ADDRESS>,
   protocolReleaseVersion: "test",
 });
@@ -97,9 +92,8 @@ const injectedWeb3jsSf = await Framework.create({
 // most likely to be used on backend for testing
 import hardhat from "hardhat";
 const injectedHardhatEthersSf = await Framework.create({
-  networkName: "custom",
+  chainId: 31337,
   provider: hardhat.ethers,
-  dataMode: "WEB3_ONLY",
   resolverAddress: <RESOLVER_ADDRESS>,
   protocolReleaseVersion: "test",
 })
@@ -109,8 +103,7 @@ import { ethers } from "hardhat";
 const [deployer] = await ethers.getSigners();
 const ethersProvider = deployer.provider;
 const ethersjsSf = await Framework.create({
-  networkName: "custom",
-  dataMode: "WEB3_ONLY",
+  chainId: 31337,
   resolverAddress: <RESOLVER_ADDRESS>,
   protocolReleaseVersion: "test",
   provider: ethersProvider
@@ -119,7 +112,7 @@ const ethersjsSf = await Framework.create({
 // metamask
 const mmProvider = new ethers.providers.Web3Provider(window.ethereum);
 const mmSf = await Framework.create({
-  networkName: "matic",
+  chainId: mmProvider.getChainId(),
   provider: mmProvider
 });
 
@@ -132,7 +125,7 @@ const web3Modal = new Web3Modal({
 const web3ModalRawProvider = await web3Modal.connect();
 const web3ModalProvider = new ethers.providers.Web3Provider(web3ModalRawProvider);
 const web3ModalSf = await Framework.create({
-  networkName: "matic",
+  chainId: 137, //your chainId here
   provider: web3ModalProvider
 });
 
@@ -144,7 +137,7 @@ const onboard = Onboard({
         wallet: wallet => {
             const web3Provider = new ethers.providers.Web3Provider(wallet.provider);
             (async () => {
-                const framework = await Framework.create({ networkName: "matic", provider: web3Provider });
+                const framework = await Framework.create({ chainId: 137, provider: web3Provider });
             })();
         }
     }
@@ -173,7 +166,7 @@ const web3ModalRawProvider = await web3Modal.connect();
 const web3ModalProvider = new Web3Provider(web3ModalRawProvider, "any");
 
 const sf = await Framework.create({
-  networkName: "matic",
+  chainId: 137, //your chainId here
   provider: web3ModalProvider,
 });
 
@@ -193,7 +186,7 @@ import { Framework } from "@superfluid-finance/sdk-core";
 import { ethers } from "hardhat";
 
 const sf = await Framework.create({
-  networkName: "matic",
+  chainId: 137, //your chainId here
   provider: ethers.provider,
 });
 
@@ -222,7 +215,7 @@ const wallet = new ethers.Wallet(
 );
 
 const sf = await Framework.create({
-  networkName: "matic",
+  chainId: 137, //your chainId here
   provider,
 });
 
@@ -243,7 +236,7 @@ const provider = new ethers.providers.InfuraProvider(
 );
 
 const sf = await Framework.create({
-  networkName: "matic",
+  chainId: 137, //this is for matic - enter your own chainId here
   provider
 });
 
