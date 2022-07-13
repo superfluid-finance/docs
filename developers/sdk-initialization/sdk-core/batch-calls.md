@@ -33,7 +33,7 @@ const provider = new ethers.providers.InfuraProvider(
 );
 
 const sf = await Framework.create({
-  networkName: "matic",
+  chainId: 137, //chain Id for matic - change depending on current network
   provider
 });
 
@@ -64,7 +64,7 @@ const provider = new ethers.providers.InfuraProvider(
 );
 
 const sf = await Framework.create({
-  networkName: "matic",
+  chainId: 137, //matic chainId
   provider
 });
  
