@@ -16,7 +16,7 @@ When you submit the Airtable form, it auto-generates a Github issue in our Token
 
 * [https://github.com/superfluid-finance/assets/issues](https://github.com/superfluid-finance/assets/issues)
 
-The Superfluid team will use the info from the issue to add the token to the Dashboard.&#x20;
+The Superfluid team will use the info from the issue to add the token to the Dashboard and to our protocol resolver. Hang tight!
 
 ### 3. Confirmation
 
