@@ -16,7 +16,7 @@ Super Tokens are one of the 3 main primitives of the Superfluid Protocol. Here's
 
 All Super Tokens share the same basic features, however not all Super Tokens are alike. Super Tokens come in three primary types:
 
-* [**ERC20 Wrapper**](erc20-wrapper-tokens.md) **Super Tokens**
+* [**ERC20 Wrapper**](erc20-wrapper-tokens/) **Super Tokens**
 * [**Pure**](pure-super-tokens.md) **Super Tokens**
 * [**Native Asset**](native-asset-super-tokens.md) **Super Tokens**
 

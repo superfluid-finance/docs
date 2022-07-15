@@ -86,7 +86,7 @@ Current Balance = 990 USDCx + 0 USDCx = **990 USDCx**
 
 #### **3. **_****_** Another 2000 seconds elapse**
 
-![](<../../../.gitbook/assets/image (59).png>)
+![](<../../../.gitbook/assets/image (59) (1).png>)
 
 Latest CRUD timestamp = 165340**1**000
 

@@ -8,7 +8,7 @@ description: The "brain" of the Superfluid Protocol
 
 The Superfluid Host Contract is the centerpiece of the Superfluid Protocol which connects Super Tokens, Super Agreements, and Super Apps. It works like a conduit for information throughout the Superfluid Protocol.
 
-![](<../../.gitbook/assets/image (68).png>)
+![](<../../.gitbook/assets/image (68) (1).png>)
 
 That looks complicated. Let's break down the basic linkages from core pieces of the Superfluid Protocol to the Host contract :point\_down:****
 

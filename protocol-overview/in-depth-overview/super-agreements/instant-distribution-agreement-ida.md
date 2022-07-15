@@ -66,6 +66,6 @@ Calculating the current balance of an account subscribed to one or many IDA Indi
 
 **5. Account A distributes 500 USDCx through the IDA Index**
 
-![](<../../../.gitbook/assets/image (73).png>)
+![](<../../../.gitbook/assets/image (73) (1).png>)
 
 ##
