@@ -10,7 +10,7 @@ description: Understand some of the major applications of the Superfluid Protoco
 
 Superfluid is first and foremost a _protocol_ built with developers in mind. It is easy to use, modular, extensible, and allows for the creation of completely new and unique financial experiences and applications. ****&#x20;
 
-Read this Use Case section to understand core areas of these applications and get inspiration **** on what you can get start building with us!
+Read this Use Case section to understand core areas of these applications and get inspiration **** on what you can start building with us!
 
 ## Contents
 
