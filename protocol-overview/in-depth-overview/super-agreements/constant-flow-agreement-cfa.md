@@ -38,7 +38,7 @@ When an account creates, updates, or deletes a stream, several things are settle
 
 From here the CFA Real-Time Balance begins automatically changing by-the-second at the account's netflow rate (if the rate is non-zero). How? Because it is calculated as seconds elapsed since the last CRUD timestamp multiplied by the netflow rate. Since the only changing variable here is time (in seconds), this allows the Real-Time Balance value to increase/decrease with no need for gas.&#x20;
 
-![As discussed in the Super Token section, the CFA Real-Time balance can be positive or negative.](<../../../.gitbook/assets/image (50).png>)
+![As discussed in the Super Token section, the CFA Real-Time balance can be positive or negative.](<../../../.gitbook/assets/image (50) (1).png>)
 
 Recall that the Current Balance is equal to the Real-Time Balance (changing by the second) plus the Static Balance (constant until a flow change). As a result, when an account with a non-zero netflow rate goes to view its balance, it will see that it changes every second!
 
@@ -60,7 +60,7 @@ Let's observe an account that interacts with the CFA and how it affects the diff
 
 #### **1. With no initial CFA activity and an initial balance of 1000 USDCx, Account A starts an outbound stream to Account B with flow rate of 0.01 USDCx/second and 1000 seconds elapse**
 
-![](<../../../.gitbook/assets/image (50) (1).png>)
+![](<../../../.gitbook/assets/image (50) (1) (1).png>)
 
 Latest CRUD [timestamp](https://www.unixtimestamp.com/) = 1653400000 (Tue May 24 2022 19:20:24 GMT+0000)
 

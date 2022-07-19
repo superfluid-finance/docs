@@ -10,7 +10,7 @@ Superfluid is a smart contract framework on EVM networks, enabling you to move a
 
 **Superfluid enables:**
 
-💸 **Real money streaming** - constant flows on-chain with no capital lockups.
+💸 **Real money streaming** - Constant token flows on-chain with no capital lockups. Money steams will continue perpetually until cancellation or the senders balance runs out. Money streams can also have their stream rate updated at any time.
 
 🎁 **Rewards distributions** - Fixed cost distribution in a single transaction for any number of receivers.
 

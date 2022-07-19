@@ -35,7 +35,7 @@ Anyone can deploy a Super Token Wrapper for any ERC20 token. The deployer accoun
 
 Alternatively, search your token in the top right search bar and find it in the drop down
 
-![](<../../../../.gitbook/assets/image (31).png>)
+![](<../../../../.gitbook/assets/image (31) (1).png>)
 
 ### Using Deployment Scripts to Deploy Your Wrapper
 

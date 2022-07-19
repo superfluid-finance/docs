@@ -12,6 +12,11 @@
     * [✳ Instant Distribution Agreement (IDA)](protocol-overview/in-depth-overview/super-agreements/instant-distribution-agreement-ida.md)
   * [Super Apps](protocol-overview/in-depth-overview/super-apps.md)
   * [Superfluid Host](protocol-overview/in-depth-overview/superfluid-host.md)
+* [🧠 Use Cases](protocol-overview/use-cases/README.md)
+  * [Recurring Payment](protocol-overview/use-cases/recurring-payment.md)
+  * [DeFi](protocol-overview/use-cases/defi.md)
+  * [Social & Community](protocol-overview/use-cases/social-and-community.md)
+  * [Gaming](protocol-overview/use-cases/gaming.md)
 * [📔 Glossary of Terms](protocol-overview/glossary-of-terms.md)
 
 ## Developers
