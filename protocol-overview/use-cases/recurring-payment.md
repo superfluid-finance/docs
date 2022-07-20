@@ -4,11 +4,11 @@ description: Superfluid is great for automating and scaling recurring payments
 
 # Recurring Payment
 
-Because transactions typically move value in a one-and-done fashion, on-chain recurring payments can be manual and less scalable. Superfluid money streams solves this, allowing us to perpetually and automatically move value between accounts. This lets us to realize many of automatic recurring payment use cases!
+Because transactions typically move value in a one-and-done fashion, on-chain recurring payments become manual and less scalable. Superfluid money streams solve this by allowing us to perpetually and automatically move value between accounts. This lets us realize many automatic recurring payment use cases!
 
 ### Salary Streams
 
-Real-time salaries are the most popular Superfluid money streaming use case. Imagine getting <mark style="background-color:green;">**paid every single second**</mark> instead of monthly or bi-weekly! Here are some advantages:
+Real-time salaries are the most popular Superfluid money streaming use case. Imagine getting paid every single second instead of monthly or bi-weekly! Here are some advantages:
 
 **Improved employee cashflow**: By getting paid by the second, friction between current financial needs and having to wait until your paycheck at end of month is greatly reduced
 
@@ -22,9 +22,22 @@ Check out this article discussing the power of salary streams coupled with inves
 
 {% embed url="https://medium.com/superfluid-blog/the-real-world-benefits-of-salary-streaming-584d94688f84" %}
 
+### Automate DAO Payroll
+
+Superfluid can greatly reduce the effort, overhead, and complexity when it comes to DAO payroll management and execution. Now, you can stream any token over time — **without any friction or fees** — to your team and contributors, settling their recurring compensation once and for all. The benefits source from 4 key areas:
+
+1. **Less effort:** streaming salaries allows DAOs to set a yearly (or monthly) amount to transfer and then moves the funds over time without the need for any further transactions on-chain.
+2. **No more overhead:** you only have to set the amount of funds you want to transfer once, rather than every month. No more monthly admin and payroll transactions from complicated cold wallets.
+3. **Reduced complexity:** you can stream to as many wallets as you want directly from a Gnosis Safe. This means you only have to add funds to one wallet to keep paying everyone.
+4. **Pay in real-time:** contributors get paid in real-time and can use the funds as soon as they receive them.
+
+Check out this article that further talks about how Superfluid empowers DAO Admin 👇
+
+{% embed url="https://medium.com/superfluid-blog/4-ways-superfluid-removes-friction-for-dao-admin-7d095bd937b6" %}
+
 ### Subscriptions
 
-The potential of crypto native subscriptions is limited by the bad UX of subscribers having to manually permission recurring subscription payments themselves.
+The potential of crypto native subscriptions is limited by the poor UX of subscribers having to manually permission recurring subscription payments themselves.
 
 As a result, many Web3 services resort to charging for access through token-gating or large up-front payment which makes for poor financial sustainability.
 
@@ -38,13 +51,13 @@ Insurance premiums are another recurring payment that could be done on-chain and
 
 For instance, with DeFi insurance protocols such as InsurAce, users must specify an insurance duration and pay for it all up front. This is unideal for a user as they are paying for the insurance up front but only receiving the benefits of the insurance over the period they purchased it for. Also, if they want to extend their insurance upon period completion, they have to remember to submit another manual purchase.
 
-Enter premium payment streams - A insurance policy holder can pay for their insurance as they go with a money stream. If they stop their stream, then their insurance coverage is instantly cancelled, simple as that. They could also update their stream to another flow rate for increased or reduced coverage!
+Enter premium payment streams - an insurance policy holder can pay for their insurance as they go with a money stream. If they stop their stream, then their insurance coverage is instantly cancelled, simple as that. They could also update their stream to another flow rate for increased or reduced coverage!
 
 ### Rentals
 
 Instead of having to manually pay for rent in large discrete lump-sums at the end of each month, you could pay for it automatically and gradually with a money stream.
 
-This could be applied in a Web3-native way with NFTs or digital property rentals. Or,  with the proper compliancy work, this could be used to lease real-world property.
+This could be applied in a Web3-native way with NFTs or digital property rentals. Or, with the proper compliancy work, this could be used to lease real-world property!
 
 ### Royalty or Dividend Distributions
 
@@ -62,7 +75,7 @@ Check out this example of a "dividend rights token" ERC20 contract where each to
 
 Normally, when a person or organization contributes to public goods, grants, or other causes with digital currency they do it with one-time payments.&#x20;
 
-Using a Superfluid perpetual payment stream, you can automatically provide continuous financial support to various causes. As well as providing the cause with ongoing funding, you also have on-chain proof that you are streaming them money. That proof can be made composable with other things such as decentralized social profiles, NFTs, etc.
+Using a Superfluid perpetual payment stream, you can automatically provide continuous financial support to various causes. In addition to providing the cause with ongoing funding, you also have on-chain proof that you are streaming them money. That proof can be made composable with other things such as decentralized social profiles, NFTs, etc.
 
 For example, what if you could fund a [Gitcoin Aquaduct](https://twitter.com/gitcoin/status/1494467687161942016?s=20\&t=ZgHQaiG5y5YW2T98l9UJdQ) with a money stream? That's an available integration and we have a bounty available for it right now 👇
 
