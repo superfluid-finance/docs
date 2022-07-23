@@ -85,6 +85,7 @@ sf.cfaV1.revokeFlowOperatorPermissions({
 sf.cfav1.createFlowByOperator({
   sender: string,
   receiver: string,
+  flowRate: string,
   superToken: string,
   userData?: string
 });
@@ -92,6 +93,7 @@ sf.cfav1.createFlowByOperator({
 sf.cfaV1.updateFlowByOperator({
   sender: string,
   receiver: string,
+  flowRate: string,
   superToken: string,
   userData?: string
 });
