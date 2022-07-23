@@ -67,6 +67,41 @@ sf.cfaV1.deleteFlow({
   superToken: string,
   userData?: string
 });
+
+//ACL Usage
+
+sf.cfaV1.updateFlowOperatorPermissions({
+  flowOperator: string,
+  permissions: number, // should enter 1-7
+  flowRateAllowance: string,
+  superToken: string
+});
+
+sf.cfaV1.revokeFlowOperatorPermissions({
+  flowOperator: string,
+  superToken: string
+})
+
+sf.cfav1.createFlowByOperator({
+  sender: string,
+  receiver: string,
+  superToken: string,
+  userData?: string
+});
+
+sf.cfaV1.updateFlowByOperator({
+  sender: string,
+  receiver: string,
+  superToken: string,
+  userData?: string
+});
+
+sf.cfaV1.deleteFlowByOperator({
+  sender: string,
+  receiver: string,
+  superToken: string,
+  userData?: string
+})
 ```
 
 **Example Usage**

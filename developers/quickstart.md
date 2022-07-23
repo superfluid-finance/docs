@@ -13,7 +13,7 @@ The Constant Flow Agreement (CFA) allows for money streaming. Read this [short e
 You want to let users manage their streams from your frontend.
 
 * [**Initializing**](https://docs.superfluid.finance/superfluid/developers/sdk-initialization/sdk-core/sdk-core-initialization#infura-provider-initialization): How to initialize our Javascript SDK (the SDK Core) for your frontend to start conveniently accessing Superfluid functionality
-* [**Money Streaming Functions**](https://docs.superfluid.finance/superfluid/developers/sdk-initialization/sdk-core/cfa-operations): See the functions that allow you to manage streams using the SDK Core.
+* [**Money Streaming Functions**](https://docs.superfluid.finance/superfluid/developers/sdk-initialization/sdk-core/cfa-operations): See the functions that allow you to manage streams using the SDK Core.&#x20;
 * ****[**Simple Example**](https://docs.superfluid.finance/superfluid/developers/interactive-tutorials/money-streaming-1): Very simple ReactJS examples showing how to allow a user to create, update, and delete their streams.
 
 ### Using Money Streaming in Smart Contracts
@@ -22,6 +22,7 @@ You want to create a smart contract that engages streams on its own.
 
 * [**Contract Set Up**](https://docs.superfluid.finance/superfluid/developers/solidity-examples/solidity-libraries/cfav1-library#the-cfa-library): Set up your smart contract with the Constant Flow Agreement (CFA) library to easily start money streams in Solidity.
 * [**Money Streaming Functions**](https://docs.superfluid.finance/superfluid/developers/solidity-examples/solidity-libraries/cfav1-library#using-the-cfa-library): See the basic flow management functions of the CFA Library
+* [ACL Usage:](solidity-examples/cfa-access-control-list-acl.md) See how you can provide other addresses with the ability to create, update, and delete streams on your behalf
 * [**Simple Example**](https://github.com/superfluid-finance/protocol-monorepo/tree/dev/examples/beginner-examples/money-router): "Money Router" smart contract example showing the very basics of coding stream management into a smart contract
 * [**Video Tutorial**](https://www.youtube.com/watch?v=1mwbYQ429IU): Tutorial demonstrating coding the Money Router contract
 
