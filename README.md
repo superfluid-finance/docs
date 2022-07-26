@@ -14,6 +14,14 @@ description: A new DeFi primitive to automate recurring transactions and monetiz
 [in-depth-overview](protocol-overview/in-depth-overview/)
 {% endcontent-ref %}
 
+{% content-ref url="protocol-overview/use-cases/" %}
+[use-cases](protocol-overview/use-cases/)
+{% endcontent-ref %}
+
+{% content-ref url="protocol-overview/glossary-of-terms.md" %}
+[glossary-of-terms.md](protocol-overview/glossary-of-terms.md)
+{% endcontent-ref %}
+
 ### DEVELOPERS ⬇️
 
 Looking to Jump Straight Into the Code? ⬇️
