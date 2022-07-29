@@ -21,11 +21,11 @@ Anyone can deploy a Super Token Wrapper for any ERC20 token. The deployer accoun
 
 2\. Connect wallet.
 
-![](<../../../../.gitbook/assets/image (68).png>)
+![](<../../../../.gitbook/assets/image (68) (1).png>)
 
 3\. Find the `createERC20Wrapper` function. Refer to the below image and provide the required parameters with **no additional characters**.
 
-![](<../../../../.gitbook/assets/image (71).png>)
+![](<../../../../.gitbook/assets/image (71) (1).png>)
 
 4\. Click `Write` and confirm through your wallet. Congrats, you've created a new Wrapper Super Token!
 
@@ -35,7 +35,7 @@ Anyone can deploy a Super Token Wrapper for any ERC20 token. The deployer accoun
 
 Alternatively, search your token in the top right search bar and find it in the drop down
 
-![](<../../../../.gitbook/assets/image (31) (1).png>)
+![](<../../../../.gitbook/assets/image (31) (1) (1).png>)
 
 ### Using Deployment Scripts to Deploy Your Wrapper
 

@@ -6,11 +6,24 @@ description: Making use of hooks that run before or after an agreement is called
 
 ### Super App Callbacks
 
-Super App callbacks are run when a Super App is on the receiving end of a transaction that creates, updates, or deletes a stream in relation to that app.
+Super App callbacks are run when a Super App is on the receiving end of a transaction that creates, updates, or deletes an agreement in relation to that app.
 
 **When Will Super App Callbacks Run?**
 
-A Super App callback will run when a stream is created or updated where the app is the `receiver` of the stream. It will also run when a stream is deleted by a user or contract that is external to the Super App. While streams can only be created or updated by the sender of the stream, a stream may be deleted by _either the sender or the receiver_ of that stream. This means that the `beforeAgreementTerminated` or `afterAgreementTerminated` callback will run if a stream that was being sent into the Super App was deleted by the sender, or if a stream being sent from the Super App to another address was deleted by the receiver of that stream.
+The Constant Flow Agreement and Instant Distribution Agreement activate different callbacks in different scenarios. In the following table, the Constant Flow Agreement is referred to as CFAv1 and the Instant Distribution Agreement is referred to as IDAv1.
+
+| Agreement | Callback                                            | Condition                                                                          |
+| --------- | --------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| CFAv1     | beforeAgreementCreated, afterAgreementCreated       | A stream to a Super App is created.                                                |
+| CFAv1     | beforeAgreementUpdated, afterAgreementUpdated       | A stream to a Super App is updated.                                                |
+| CFAv1     | beforeAgreementTerminated, afterAgreementTerminated | A stream to a Super App is deleted.                                                |
+| IDAv1     | beforeAgreementCreated, afterAgreementCreated       | A subscription (with zero units) to an index published by a Super App is approved. |
+| IDAv1     | beforeAgreementUpdated, afterAgreementUpdated       | A subscription (with units) to an index published by a Super App is approved.      |
+| IDAv1     | beforeAgreementTerminated, afterAgreementTerminated | A subscription to an index published by a Super App is revoked.                    |
+| IDAv1     | beforeAgreementUpdated, afterAgreementUpdated       | A subscription to an index published by a Super App is claimed                     |
+| IDAv1     | beforeAgreementCreated, afterAgreementCreated       | Units of an index are issued to a Super App if the units were previously zero.     |
+| IDAv1     | beforeAgreementUpdated, afterAgreementUpdated       | Units of an index are issued to a Super App if the units were previously non-zero. |
+| IDAv1     | beforeAgreementTerminated, afterAgreementTerminated | Units of an index issued to a Super App are deleted.                               |
 
 **Who is Calling the Super App Callback?**
 
@@ -34,7 +47,6 @@ function beforeAgreementCreated(
     {
         revert("Unsupported callback - Before Agreement Created");
     }
-
 ```
 
 ```
@@ -55,7 +67,7 @@ function beforeAgreementCreated(
     }
 ```
 
-A `beforeAgreement` callback will be run before the call to the agreement contract will be run. For example, if there is logic inside of the `beforeAgreementCreated` callback within of a Super App, and a user opens a stream into that Super App contract, the logic inside of `beforeAgreementCreated` will run before the stream is created.&#x20;
+A `beforeAgreement` callback will be run before the call to the agreement contract will be run. For example, if there is logic inside of the `beforeAgreementCreated` callback within of a Super App, and a user opens a stream into that Super App contract, the logic inside of `beforeAgreementCreated` will run before the stream is created.
 
 Similarly, an `afterAgreement` callback will be run after the call to the agreement contract is run. For example, if there is logic inside of the `afterAgreementCreated` callback within a Super App, and a user opens a stream into that Super App contract, the logic inside of `afterAgreementCreated` will run after the stream is created.
 

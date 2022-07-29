@@ -18,7 +18,7 @@ Check out Reverb, a hackathon project that uses this concept. Reverb's music pla
 
 Superfluid Protocol has plenty of potential to improve the way we incentivize our communities. One good example of this is the PCR model.&#x20;
 
-![](<../../.gitbook/assets/image (31).png>)
+![](<../../.gitbook/assets/image (31) (1).png>)
 
 With the PCR, rewards can be distributed to participants ($PCR holders in the graphic) based on their progress towards a particular KPI metric. Funding of rewards can be done with money streams and the distribution to participants is accomplished with the Superfluid Instant Distribution Agreement. The KPI completion status is verified with UMA's KPI Options.&#x20;
 
