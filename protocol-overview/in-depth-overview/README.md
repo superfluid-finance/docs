@@ -4,7 +4,7 @@ description: A conceptual deep dive into the Superfluid Protocol
 
 # 📄 In-Depth Overview
 
-![Oh, you're approaching me?](<../../.gitbook/assets/image (67) (2).png>)
+![Oh, you're approaching me?](<../../.gitbook/assets/image (67) (1) (1).png>)
 
 ## What is Superfluid?
 

@@ -82,13 +82,23 @@ const transferFromOp = daix.transferFrom({
 const batchCall = sf.batchCall([approveOp, transferFromOp]);
 const txn = await batchCall.exec(signer);
 
-// creating an operation from a super app function
-// initialize your super app contract
-const superApp = new ethers.Contract("0x...", <SUPER_APP_ABI>);
+// creating an operation from a super app function with callAppAction
+// initialize your super app contract's interface
+const superAppInterface = new ethers.utils.Interface(<SUPER_APP_ABI>);
 
-// populate the transaction
-const superAppTransactionPromise = superApp.populateTransaction.helloWorld("hello world");
+// get the calldata for your transaction
+in this case we're calling a hypothetical function titled 'transferERC20'
+const callData = appInterface.encodeFunctionData("transferERC20", [
+   token,
+   receiver,
+   amount,
+   "0x",
+]);
 
-// create the super app operation you can execute this operation directly or pass it in to a batch call
-const superAppOperation = new Operation(superAppTransactionPromise, "CALL_APP_ACTION");
+//create the operation by using sf.host.callAppAction
+const transferOp = sf.host.callAppAction(appAddress, callData);
+
+//add the operation to a batch call
+const batchCall = sf.batchCall([transferOp]);
+await batchCall.exec(signer);
 ```

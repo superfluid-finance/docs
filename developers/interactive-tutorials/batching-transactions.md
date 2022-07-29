@@ -2,7 +2,7 @@
 description: Batching transactions to improve your UX
 ---
 
-# 👩🍳 Batching Transactions
+# 👩🍳 👩🍳 Batching Transactions
 
 ## Creating a Batch Call
 
@@ -13,6 +13,10 @@ Another game changing feature of the Superfluid protocol is the ability to batch
 | Super Token | ISuperToken.sol | `operationApprove, operationTransferFrom, operationUpgrade`, `operationDowngrade` |
 | Agreement   | ISuperfluid.sol | `_callAgreement`                                                                  |
 | Super App   | ISuperfluid.sol | `_callAppAction`                                                                  |
+
+{% hint style="info" %}
+You can learn more about `callAppAction` in our [sdk overview section](../sdk-initialization/sdk-core/batch-calls.md) - it will allow you to add any function on your Super App contract to a batch call - even if that function performs functionality that's outside of the normal scope of a superfluid operation (such as a standard ERC20 transfer or calling another contract of a separate DeFi protocol)
+{% endhint %}
 
 In our example, we'll be focusing on a simple usage of batch calls: upgrading tokens to super tokens, and creating a flow in the same transaction. We'll achieve this by using the `operationUpgrade` super token call, and the `_callAgreement` call (to create the flow).
 

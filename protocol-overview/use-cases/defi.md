@@ -58,6 +58,6 @@ This design allows for the sale of future cashflow on-chain. You could sell an N
 
 Check out this basic tradeable cashflow example to see how you can tokenize money streams! 👇
 
-![(Tradeable Cashflows are really neat)](<../../.gitbook/assets/image (50) (2).png>)
+![(Tradeable Cashflows are really neat)](<../../.gitbook/assets/image (50).png>)
 
 {% embed url="https://github.com/superfluid-finance/protocol-monorepo/tree/dev/examples/tradeable-cashflow" %}
