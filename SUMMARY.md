@@ -96,7 +96,9 @@
 
 ## Resources
 
-* [🤑 Bounty Program](resources/bounty-program.md)
+* [✊ Contribute](resources/contribute/README.md)
+  * [🌊 Superfluid Wave Pool](resources/contribute/superfluid-wave-pool.md)
+  * [🤑 Bounty Program](resources/contribute/bounty-program.md)
 * [🔧 Tools](resources/tools/README.md)
   * [Resolver](resources/tools/resolver.md)
 * [🛠 Example Projects](resources/examples.md)
