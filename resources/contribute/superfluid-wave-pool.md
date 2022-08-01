@@ -24,11 +24,13 @@ However, unlike a hackathon, the Wave Pool is **not just for technical work**! _
 
 Currently, the top three submissions to the current Wave will earn one of the below prizes 🥇
 
-1st Prize - $1,000
+**1st Place** - $1,000
 
-2nd Prize - $750
+**2nd Place** - $750
 
-3rd Prize - $500
+**3rd Place** - $500
+
+If you did good work, but didn’t quite make the Top 3 cut, we may likely reward you an ad hoc **Honorable Mention** prize!
 
 ### Get Started 🙋‍♀️
 
