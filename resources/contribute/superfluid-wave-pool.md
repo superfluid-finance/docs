@@ -18,7 +18,7 @@ However, unlike a hackathon, the Wave Pool is **not just for technical work**! _
 
 **Waves last over each month** - For example, Wave #1 will span from September 1st to September 30th. Right after one finishes, the next one starts!
 
-**Start or Submit **_**ANYTIME**_** ** - Wave Projects can be started or submitted at _any time_. After the last day of the month, we chose and announce the winners. Payouts are the following Wednesday.
+**Start or Submit **_**ANYTIME**_** ** - Wave Projects can be started or submitted at _any time_. The only limitation is that your submission must be completed during the Wave you submit it for. So for example, work you finished 3 months ago wouldn't be eligible for this month's Wave.
 
 ### Current Prizes
 
@@ -100,10 +100,12 @@ We suggest you drop your idea in the #🌊wave-pool channel in our Discord so we
 
 #### **3. Start working on it**
 
-Remember, in order for your Wave Project to be eligible for a certain Wave, you must complete it after that Wave starts and before that Wave ends.
+Remember, in order for your Wave Project to be eligible for submission to a certain Wave, you must complete the work during that Wave.
 
 {% hint style="info" %}
-When you _start_ the work doesn't matter. You could have been working on something for several months and it will still be eligible for submission to the current Wave.
+When you _start_ the work doesn't matter. You could have been working on something for several months and it will still be eligible for submission to the current Wave.\
+\
+It's just if you _finished_ the work several months ago, then you can't submit it to the current Wave. It's old work! We want to see newly completed work ✨
 {% endhint %}
 
 #### **4. Submit your work before month end**
