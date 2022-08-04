@@ -29,9 +29,9 @@ Anyone can deploy a Super Token Wrapper for any ERC20 token. The deployer accoun
 
 4\. Click `Write` and confirm through your wallet. Congrats, you've created a new Wrapper Super Token!
 
-5\. To find the address of your new Wrapper Super Token, go to the transaction hash and click on the "Internal Txns" tab. The address is in the "To" column ([SUNNYx example](https://polygonscan.com/tx/0xd23df49ac21f5c92049ede689e835d5dcbbd3c9670428ce7dd22f391fd5f9564#internal)).
+5\. To find the address of your new Wrapper Super Token, go to the transaction hash and click on the "Logs" tab. The address is in the "InterfaceImplementerSet" event log ([SUNNYx example](https://polygonscan.com/tx/0xd23df49ac21f5c92049ede689e835d5dcbbd3c9670428ce7dd22f391fd5f9564#eventlog)).
 
-![](<../../../../.gitbook/assets/image (59).png>)
+![](../../../../.gitbook/assets/image.png)
 
 Alternatively, search your token in the top right search bar and find it in the drop down
 
