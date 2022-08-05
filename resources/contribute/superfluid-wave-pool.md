@@ -87,7 +87,7 @@ An article or video is already presentable, but if you're submitting code, make 
 </details>
 
 {% hint style="info" %}
-If you already have a Superfluid-related project, you don't have to start a brand new thing. For example, if you have a ex-hackathon project that you progressed to complete a new Superfluid-related feature, then that's eligible!
+If after reading this, you're unsure if your work is acceptable - ask us in our Discord with questions or **just go for it**! There's nothing to lose and we can always be flexible.
 {% endhint %}
 
 #### **2. Come up with an idea**&#x20;
@@ -100,12 +100,10 @@ We suggest you drop your idea in the #🌊wave-pool channel in our Discord so we
 
 #### **3. Start working on it**
 
-Remember, in order for your Wave Project to be eligible for submission to a certain Wave, you must complete the work during that Wave.
-
 {% hint style="info" %}
-When you _start_ the work doesn't matter. You could have been working on something for several months and it will still be eligible for submission to the current Wave.\
+If you _finished_ the work several months ago, then you can't submit it to the current Wave. It's old work! We want to see newly completed work ✨\
 \
-It's just if you _finished_ the work several months ago, then you can't submit it to the current Wave. It's old work! We want to see newly completed work ✨
+When you _start_ the work doesn't matter. You could have been working on something for several months and it will still be eligible for submission to the current Wave.
 {% endhint %}
 
 #### **4. Submit your work before month end**
