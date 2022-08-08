@@ -87,7 +87,7 @@ An article or video is already presentable, but if you're submitting code, make 
 </details>
 
 {% hint style="info" %}
-If after reading this, you're unsure if your work is acceptable - ask us in our Discord with questions or **just go for it**! There's nothing to lose and we can always be flexible.
+If after reading this, you're unsure if your work is acceptable - ask us in our Discord or **just go for it**! There's nothing to lose and we can always be flexible.
 {% endhint %}
 
 #### **2. Come up with an idea**&#x20;
@@ -101,9 +101,9 @@ We suggest you drop your idea in the #🌊wave-pool channel in our Discord so we
 #### **3. Start working on it**
 
 {% hint style="info" %}
-If you _finished_ the work several months ago, then you can't submit it to the current Wave. It's old work! We want to see newly completed work ✨\
+If you _finished_ the work several months ago, then you can't wait and submit it to the current Wave. It's old work! We want to see newly completed work ✨\
 \
-When you _start_ the work doesn't matter. You could have been working on something for several months and it will still be eligible for submission to the current Wave.
+When you _start_ the work doesn't matter. You could have been working on something for several months and it will still be eligible for submission to the current Wave as long as you've newly completed it.
 {% endhint %}
 
 #### **4. Submit your work before month end**
