@@ -60,6 +60,10 @@ Your submission should be a consolidated deliverable/feature that can work as in
 
 An article or video is already presentable, but if you're submitting code, make sure it's documented (with a README or something) or submit it with a video explainer!
 
+**7. New Work**
+
+Previous hackathon Superfluid submissions won't count unless you're submitting additional post-hackathon itemized progress.
+
 </details>
 
 <details>
@@ -118,10 +122,10 @@ If you worked together on a team on your Wave Project, just submit once for the 
 
 If you have a winning submission, the day after the Wave completes, we will DM you with details on on how to claim your prize along with a POAP to commemorate your accomplishment!&#x20;
 
+![](../../.gitbook/assets/Twitter\_Animated\_BG\_1.gif)
+
 We will also announce winners publicly in our Discord and highlight interesting submissions on our socials or during Community Calls.
 
 
 
-<mark style="color:green;">**NOTE: Wave Pool participants must adhere to the following statement 👇**</mark>
-
-_I am not a resident, citizen, national or agent of, or an entity organized, incorporated or doing business in, Belarus, Burundi, Crimea and Sevastopol, Cuba, Democratic Republic of Congo, Iran, Iraq, Libya, North Korea, Somalia, Sudan, Syria, Venezuela, Zimbabwe or any other country to which the United States, the United Kingdom, the Cayman Islands, the European Union or any of its member states or the United Nations or any of its member states (collectively, the “Major Jurisdictions”) embargoes goods or imposes similar sanctions (such embargoed or sanctioned territories, collectively, the “Restricted Territories”). I am not, and do not directly or indirectly own or control, and have not received any assets from, any blockchain address that is, listed on any sanctions list or equivalent maintained by any of the Major (such sanctions-listed persons, collectively, “Sanctions Lists Persons”). I do not intend to transact in or with any Restricted Territories or Sanctions List Persons. I did not take part and do not intend to take part to any illegal activity, including but not limited to money laundering, internet hacking and terrorism financing._
+<mark style="color:green;">**NOTICE: Wave Pool payouts are subject to KYC screening as per international sanctions laws.**</mark>
