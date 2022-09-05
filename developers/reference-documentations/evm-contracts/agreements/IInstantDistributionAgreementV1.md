@@ -25,6 +25,18 @@
     - the subscriber deletes the subscription even if it is never approved (side effect),
     - or the subscriber can explicitly claim them.
 
+## IDA_INDEX_SHOULD_GROW
+
+```solidity
+error IDA_INDEX_SHOULD_GROW()
+```
+
+## IDA_OPERATION_NOT_ALLOWED
+
+```solidity
+error IDA_OPERATION_NOT_ALLOWED()
+```
+
 ## Fn agreementType
 
 ```solidity

@@ -2,6 +2,18 @@
 
 **Superfluid governance interface**
 
+## SF_GOV_ARRAYS_NOT_SAME_LENGTH
+
+```solidity
+error SF_GOV_ARRAYS_NOT_SAME_LENGTH()
+```
+
+## SF_GOV_INVALID_LIQUIDATION_OR_PATRICIAN_PERIOD
+
+```solidity
+error SF_GOV_INVALID_LIQUIDATION_OR_PATRICIAN_PERIOD()
+```
+
 ## Fn replaceGovernance
 
 ```solidity

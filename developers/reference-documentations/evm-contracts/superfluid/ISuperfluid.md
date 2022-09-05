@@ -8,6 +8,120 @@ and super token features are connected.
 The Superfluid host contract is also the entry point for the protocol users,
 where batch call and meta transaction are provided for UX improvements.
 
+## HOST_AGREEMENT_CALLBACK_IS_NOT_ACTION
+
+```solidity
+error HOST_AGREEMENT_CALLBACK_IS_NOT_ACTION()
+```
+
+## HOST_CANNOT_DOWNGRADE_TO_NON_UPGRADEABLE
+
+```solidity
+error HOST_CANNOT_DOWNGRADE_TO_NON_UPGRADEABLE()
+```
+
+## HOST_CALL_AGREEMENT_WITH_CTX_FROM_WRONG_ADDRESS
+
+```solidity
+error HOST_CALL_AGREEMENT_WITH_CTX_FROM_WRONG_ADDRESS()
+```
+
+## HOST_CALL_APP_ACTION_WITH_CTX_FROM_WRONG_ADDRESS
+
+```solidity
+error HOST_CALL_APP_ACTION_WITH_CTX_FROM_WRONG_ADDRESS()
+```
+
+## HOST_INVALID_CONFIG_WORD
+
+```solidity
+error HOST_INVALID_CONFIG_WORD()
+```
+
+## HOST_MAX_256_AGREEMENTS
+
+```solidity
+error HOST_MAX_256_AGREEMENTS()
+```
+
+## HOST_NON_UPGRADEABLE
+
+```solidity
+error HOST_NON_UPGRADEABLE()
+```
+
+## HOST_NON_ZERO_LENGTH_PLACEHOLDER_CTX
+
+```solidity
+error HOST_NON_ZERO_LENGTH_PLACEHOLDER_CTX()
+```
+
+## HOST_ONLY_GOVERNANCE
+
+```solidity
+error HOST_ONLY_GOVERNANCE()
+```
+
+## HOST_UNKNOWN_BATCH_CALL_OPERATION_TYPE
+
+```solidity
+error HOST_UNKNOWN_BATCH_CALL_OPERATION_TYPE()
+```
+
+## HOST_INVALID_OR_EXPIRED_SUPER_APP_REGISTRATION_KEY
+
+```solidity
+error HOST_INVALID_OR_EXPIRED_SUPER_APP_REGISTRATION_KEY()
+```
+
+## HOST_NOT_A_SUPER_APP
+
+```solidity
+error HOST_NOT_A_SUPER_APP()
+```
+
+## HOST_NO_APP_REGISTRATION_PERMISSIONS
+
+```solidity
+error HOST_NO_APP_REGISTRATION_PERMISSIONS()
+```
+
+## HOST_RECEIVER_IS_NOT_SUPER_APP
+
+```solidity
+error HOST_RECEIVER_IS_NOT_SUPER_APP()
+```
+
+## HOST_SENDER_IS_NOT_SUPER_APP
+
+```solidity
+error HOST_SENDER_IS_NOT_SUPER_APP()
+```
+
+## HOST_SOURCE_APP_NEEDS_HIGHER_APP_LEVEL
+
+```solidity
+error HOST_SOURCE_APP_NEEDS_HIGHER_APP_LEVEL()
+```
+
+## HOST_SUPER_APP_IS_JAILED
+
+```solidity
+error HOST_SUPER_APP_IS_JAILED()
+```
+
+## HOST_SUPER_APP_ALREADY_REGISTERED
+
+```solidity
+error HOST_SUPER_APP_ALREADY_REGISTERED()
+```
+
+## HOST_UNAUTHORIZED_SUPER_APP_FACTORY
+
+```solidity
+error HOST_UNAUTHORIZED_SUPER_APP_FACTORY()
+```
+
 ## Fn getNow
 
 ```solidity
@@ -452,16 +566,16 @@ _Query if the app is registered_
 | :--- | :--- | :---------- |
 | `app` | contract ISuperApp | Super app address |
 
-## Fn getAppLevel
+## Fn getAppCallbackLevel
 
 ```solidity
-function getAppLevel(
+function getAppCallbackLevel(
     contract ISuperApp app
 ) 
     external 
-    returns (uint8 appLevel)
+    returns (uint8 appCallbackLevel)
 ```
-_Query app level_
+_Query app callbacklevel_
 
 #### Parameters
 
@@ -602,9 +716,9 @@ _(For agreements) Call the app after callback_
 function appCallbackPush(
     bytes ctx,
     contract ISuperApp app,
-    uint256 appAllowanceGranted,
-    int256 appAllowanceUsed,
-    contract ISuperfluidToken appAllowanceToken
+    uint256 appCreditGranted,
+    int256 appCreditUsed,
+    contract ISuperfluidToken appCreditToken
 ) 
     external 
     returns (bytes newCtx)
@@ -617,9 +731,9 @@ _(For agreements) Create a new callback stack_
 | :--- | :--- | :---------- |
 | `ctx` | bytes | The current ctx, it will be validated. |
 | `app` | contract ISuperApp | The super app. |
-| `appAllowanceGranted` | uint256 | App allowance granted so far. |
-| `appAllowanceUsed` | int256 | App allowance used so far. |
-| `appAllowanceToken` | contract ISuperfluidToken |  |
+| `appCreditGranted` | uint256 | App credit granted so far. |
+| `appCreditUsed` | int256 | App credit used so far. |
+| `appCreditToken` | contract ISuperfluidToken |  |
 
 #### Return Values
 
@@ -632,7 +746,7 @@ _(For agreements) Create a new callback stack_
 ```solidity
 function appCallbackPop(
     bytes ctx,
-    int256 appAllowanceUsedDelta
+    int256 appCreditUsedDelta
 ) 
     external 
     returns (bytes newCtx)
@@ -644,39 +758,36 @@ _(For agreements) Pop from the current app callback stack_
 | Name | Type | Description |
 | :--- | :--- | :---------- |
 | `ctx` | bytes | The ctx that was pushed before the callback stack. |
-| `appAllowanceUsedDelta` | int256 | App allowance used by the app. |
+| `appCreditUsedDelta` | int256 | App credit used by the app. |
 
 #### Return Values
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
-| `newCtx` | bytes | The current context of the transaction. |
+| `newCtx` | bytes | The current context of the transaction.
 
-#### Security 
-
+@custom:security
 - Here we cannot do assertValidCtx(ctx), since we do not really save the stack in memory.
-- Hence there is still implicit trust that the agreement handles the callback push/pop pair correctly.
+- Hence there is still implicit trust that the agreement handles the callback push/pop pair correctly. |
 
-## Fn ctxUseAllowance
+## Fn ctxUseCredit
 
 ```solidity
-function ctxUseAllowance(
+function ctxUseCredit(
     bytes ctx,
-    uint256 appAllowanceWantedMore,
-    int256 appAllowanceUsedDelta
+    int256 appCreditUsedMore
 ) 
     external 
     returns (bytes newCtx)
 ```
-_(For agreements) Use app allowance._
+_(For agreements) Use app credit._
 
 #### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |
 | `ctx` | bytes | The current ctx, it will be validated. |
-| `appAllowanceWantedMore` | uint256 | See app allowance for more details. |
-| `appAllowanceUsedDelta` | int256 | See app allowance for more details. |
+| `appCreditUsedMore` | int256 | See app credit for more details. |
 
 #### Return Values
 
@@ -778,17 +889,17 @@ See &quot;Contextless Call Proxies&quot; above for more about contextual call da
 
 ```solidity
 struct Context {
-  uint8 appLevel;
+  uint8 appCallbackLevel;
   uint8 callType;
   uint256 timestamp;
   address msgSender;
   bytes4 agreementSelector;
   bytes userData;
-  uint256 appAllowanceGranted;
-  uint256 appAllowanceWanted;
-  int256 appAllowanceUsed;
+  uint256 appCreditGranted;
+  uint256 appCreditWantedDeprecated;
+  int256 appCreditUsed;
   address appAddress;
-  contract ISuperfluidToken appAllowanceToken;
+  contract ISuperfluidToken appCreditToken;
 }
 ```
 

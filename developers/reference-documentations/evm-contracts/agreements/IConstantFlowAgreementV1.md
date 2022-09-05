@@ -2,6 +2,90 @@
 
 **Constant Flow Agreement interface**
 
+## CFA_ACL_NO_SENDER_CREATE
+
+```solidity
+error CFA_ACL_NO_SENDER_CREATE()
+```
+
+## CFA_ACL_NO_SENDER_UPDATE
+
+```solidity
+error CFA_ACL_NO_SENDER_UPDATE()
+```
+
+## CFA_ACL_OPERATOR_NO_CREATE_PERMISSIONS
+
+```solidity
+error CFA_ACL_OPERATOR_NO_CREATE_PERMISSIONS()
+```
+
+## CFA_ACL_OPERATOR_NO_UPDATE_PERMISSIONS
+
+```solidity
+error CFA_ACL_OPERATOR_NO_UPDATE_PERMISSIONS()
+```
+
+## CFA_ACL_OPERATOR_NO_DELETE_PERMISSIONS
+
+```solidity
+error CFA_ACL_OPERATOR_NO_DELETE_PERMISSIONS()
+```
+
+## CFA_ACL_FLOW_RATE_ALLOWANCE_EXCEEDED
+
+```solidity
+error CFA_ACL_FLOW_RATE_ALLOWANCE_EXCEEDED()
+```
+
+## CFA_ACL_UNCLEAN_PERMISSIONS
+
+```solidity
+error CFA_ACL_UNCLEAN_PERMISSIONS()
+```
+
+## CFA_ACL_NO_SENDER_FLOW_OPERATOR
+
+```solidity
+error CFA_ACL_NO_SENDER_FLOW_OPERATOR()
+```
+
+## CFA_ACL_NO_NEGATIVE_ALLOWANCE
+
+```solidity
+error CFA_ACL_NO_NEGATIVE_ALLOWANCE()
+```
+
+## CFA_DEPOSIT_TOO_BIG
+
+```solidity
+error CFA_DEPOSIT_TOO_BIG()
+```
+
+## CFA_FLOW_RATE_TOO_BIG
+
+```solidity
+error CFA_FLOW_RATE_TOO_BIG()
+```
+
+## CFA_NON_CRITICAL_SENDER
+
+```solidity
+error CFA_NON_CRITICAL_SENDER()
+```
+
+## CFA_INVALID_FLOW_RATE
+
+```solidity
+error CFA_INVALID_FLOW_RATE()
+```
+
+## CFA_NO_SELF_FLOW
+
+```solidity
+error CFA_NO_SELF_FLOW()
+```
+
 ## Fn agreementType
 
 ```solidity
@@ -79,7 +163,7 @@ function isPatricianPeriodNow(
     contract ISuperfluidToken token,
     address account
 ) 
-    public 
+    external 
     returns (bool isCurrentlyPatricianPeriod, uint256 timestamp)
 ```
 _Returns whether it is the patrician period based on host.getNow()_
