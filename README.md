@@ -50,8 +50,8 @@ Want to Use Our SDKs? ⬇️
 
 ### SENTINELS ⬇️
 
-{% content-ref url="sentinels/liquidations-and-toga.md" %}
-[liquidations-and-toga.md](sentinels/liquidations-and-toga.md)
+{% content-ref url="sentinels/liquidations-and-toga/" %}
+[liquidations-and-toga](sentinels/liquidations-and-toga/)
 {% endcontent-ref %}
 
 ### CONNECT TO A SUPPORTED NETWORK

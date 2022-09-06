@@ -48,7 +48,7 @@
   * [⚡ Instant Distribution](developers/interactive-tutorials/instant-distribution.md)
   * [🪙 Using Super Tokens](developers/interactive-tutorials/using-super-tokens.md)
   * [🤖 ACL Features](developers/interactive-tutorials/acl-features.md)
-  * [👩🍳 👩🍳 Batching Transactions](developers/interactive-tutorials/batching-transactions.md)
+  * [👩🍳 👩🍳 👩🍳 Batching Transactions](developers/interactive-tutorials/batching-transactions.md)
   * [SDK-Redux](https://refs.superfluid.finance/sdk-redux/)
   * [SDK-Core](https://refs.superfluid.finance/sdk-core/)
 * [📚 Developer Guides](developers/developer-guides/README.md)
@@ -63,6 +63,7 @@
       * [Deployment](developers/developer-guides/super-tokens/erc20-wrapper-tokens/deployment.md)
     * [Pure Super Tokens](developers/developer-guides/super-tokens/pure-super-tokens.md)
     * [Native Asset Super Tokens](developers/developer-guides/super-tokens/native-asset-super-tokens.md)
+    * [ERC777 in Super Tokens](developers/developer-guides/super-tokens/erc777-in-super-tokens.md)
 * [📖 Reference Documentations](developers/reference-documentations/README.md)
   * [EVM contracts](developers/reference-documentations/evm-contracts/README.md)
     * [Superfluid](developers/reference-documentations/evm-contracts/superfluid/README.md)
@@ -91,7 +92,8 @@
 
 ## Sentinels
 
-* [🥅 Liquidations & TOGA](sentinels/liquidations-and-toga.md)
+* [🥅 Liquidations & TOGA](sentinels/liquidations-and-toga/README.md)
+  * [Interacting with TOGA using Gnosis Safe](sentinels/liquidations-and-toga/interacting-with-toga-using-gnosis-safe.md)
 * [🛡 Running a Sentinel](sentinels/running-a-sentinel.md)
 
 ## Resources
