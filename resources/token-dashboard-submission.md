@@ -20,6 +20,6 @@ The Superfluid team will use the info from the issue to add the token to the Das
 
 ### 3. Confirmation
 
-The issue will be closed upon completion or rejection. Wait for an confirmation by the Superfluid team to the Discord handle you provided in the form before sharing publicly that your token is now live on Superfluid.
+The issue will be closed upon completion or rejection. Wait for a confirmation by the Superfluid team to the Discord handle you provided in the form before sharing publicly that your token is now live on Superfluid.
 
 If you don't hear back from us within a week or need more information on the listing process please feel free to reach out via email at <mark style="color:blue;">support@superfluid.finance</mark> or reach out to us in the Support Channel of our [<mark style="color:blue;">Discord Server</mark>](http://discord.superfluid.finance/)<mark style="color:blue;">.</mark>
