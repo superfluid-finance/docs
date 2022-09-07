@@ -4,7 +4,7 @@ description: A new DeFi primitive to automate recurring transactions and monetiz
 
 # 🌊 Superfluid
 
-### PROTOCOL OVERVIEW ⬇️
+### PROTOCOL OVERVIEW
 
 {% content-ref url="protocol-overview/what-is-superfluid.md" %}
 [what-is-superfluid.md](protocol-overview/what-is-superfluid.md)
@@ -22,33 +22,33 @@ description: A new DeFi primitive to automate recurring transactions and monetiz
 [glossary-of-terms.md](protocol-overview/glossary-of-terms.md)
 {% endcontent-ref %}
 
-### DEVELOPERS ⬇️
+### DEVELOPERS
 
-Looking to Jump Straight Into the Code? ⬇️
+Looking to Jump Straight Into the Code?
 
 {% content-ref url="developers/interactive-tutorials/" %}
 [interactive-tutorials](developers/interactive-tutorials/)
 {% endcontent-ref %}
 
-Building Smart Contracts that Interact With Superfluid? ⬇️
+Building Smart Contracts that Interact With Superfluid?
 
 {% content-ref url="developers/solidity-examples/" %}
 [solidity-examples](developers/solidity-examples/)
 {% endcontent-ref %}
 
-Want to Use Our SDKs? ⬇️
+Want to Use Our SDKs?
 
 {% content-ref url="developers/sdk-initialization/" %}
 [sdk-initialization](developers/sdk-initialization/)
 {% endcontent-ref %}
 
-### CONTRACT ADDRESSES ⬇️
+### CONTRACT ADDRESSES
 
 {% content-ref url="developers/networks/" %}
 [networks](developers/networks/)
 {% endcontent-ref %}
 
-### SENTINELS ⬇️
+### SENTINELS
 
 {% content-ref url="sentinels/liquidations-and-toga/" %}
 [liquidations-and-toga](sentinels/liquidations-and-toga/)
