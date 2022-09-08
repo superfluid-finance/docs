@@ -142,8 +142,8 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 
 **Framework**
 
-| Resource                                                                                        | Address                                    |
-| ----------------------------------------------------------------------------------------------- | ------------------------------------------ |
+| Resource                                                                                       | Address                                    |
+| ---------------------------------------------------------------------------------------------- | ------------------------------------------ |
 | [Resolver](https://bscscan.com/address/0x69604aA4e9e8BF44A73C680997205Edb03A92E41)             | 0x69604aA4e9e8BF44A73C680997205Edb03A92E41 |
 | [Host](https://bscscan.com/address/0xd1e2cFb6441680002Eb7A44223160aB9B67d7E6E)                 | 0xd1e2cFb6441680002Eb7A44223160aB9B67d7E6E |
 | [CFAv1](https://bscscan.com/address/0x49c38108870e74Cb9420C0991a85D3edd6363F75)                | 0x49c38108870e74Cb9420C0991a85D3edd6363F75 |
@@ -154,8 +154,8 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 
 **Tokens**
 
-| Resource                                                                         | Address                                    |
-| -------------------------------------------------------------------------------- | ------------------------------------------ |
+| Resource                                                                       | Address                                    |
+| ------------------------------------------------------------------------------ | ------------------------------------------ |
 | [BNBx](https://bscscan.com/address/0x529a4116f160c833c61311569d6b33dff41fd657) | 0x529a4116f160c833c61311569d6b33dff41fd657 |
 {% endtab %}
 {% endtabs %}
@@ -291,29 +291,17 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 | [fTUSDx](https://mumbai.polygonscan.com/address/0x918E0d5C96cAC79674E2D38066651212be3C9C48)      | 0x918E0d5C96cAC79674E2D38066651212be3C9C48 |
 {% endtab %}
 
-{% tab title="Optimism Kovan" %}
+{% tab title="Optimism Goerli" %}
 **Framework**
 
 | Resource                                                                                                        |                   Address                  |
 | --------------------------------------------------------------------------------------------------------------- | :----------------------------------------: |
-| [Resolver](https://kovan-optimistic.etherscan.io/address/0x218B65780615Ff134f9Ad810CB98839534D3C0D6)            | 0x218B65780615Ff134f9Ad810CB98839534D3C0D6 |
-| [Host](https://kovan-optimistic.etherscan.io/address/0x74b57883f8ce9F2BD330286E884CfD8BB24AC4ED)                | 0x74b57883f8ce9F2BD330286E884CfD8BB24AC4ED |
-| [CFAv1](https://kovan-optimistic.etherscan.io/address/0x523481a8a5455efB1F301C6e00B5525Eb12a51da)               | 0x523481a8a5455efB1F301C6e00B5525Eb12a51da |
-| [IDAv1](https://kovan-optimistic.etherscan.io/address/0x98E5E5d915Bf79ceeF02c72D1bf8f5b26f0bcBaA)               | 0x98E5E5d915Bf79ceeF02c72D1bf8f5b26f0bcBaA |
-| [SuperTokenFactory](https://kovan-optimistic.etherscan.io/address/0xB5f0501908ca8A99fD31bEFCAc1cA458F3588671)   | 0xB5f0501908ca8A99fD31bEFCAc1cA458F3588671 |
-| [SuperfluidLoader v1](https://kovan-optimistic.etherscan.io/address/0x777Be25F9fdcA87e8a0E06Ad4be93d65429FCb9f) | 0x777Be25F9fdcA87e8a0E06Ad4be93d65429FCb9f |
-
-**Tokens**
-
-| Resource                                                                                           |                   Address                  |
-| -------------------------------------------------------------------------------------------------- | :----------------------------------------: |
-| [fDAI](https://kovan-optimistic.etherscan.io/address/0xbe49ac1EadAc65dccf204D4Df81d650B50122aB2)   | 0xbe49ac1EadAc65dccf204D4Df81d650B50122aB2 |
-| [fUSDC](https://kovan-optimistic.etherscan.io/address/0xA794C9ee519FD31BbCE643e8D8138f735E97D1DB)  | 0xA794C9ee519FD31BbCE643e8D8138f735E97D1DB |
-| [fTUSD](https://kovan-optimistic.etherscan.io/address/0x642332562BC60a4Bd9681E7bb1588f7456A497aC)  | 0x642332562BC60a4Bd9681E7bb1588f7456A497aC |
-| [fDAIx](https://kovan-optimistic.etherscan.io/address/0x04d4f73e9DE52a8fEC544087a66BBbA660A35957)  | 0x04d4f73e9DE52a8fEC544087a66BBbA660A35957 |
-| [fUSDCx](https://kovan-optimistic.etherscan.io/address/0xaA1EA30cEe569fA70B8561c0F52F10Da249Aecb5) | 0xaA1EA30cEe569fA70B8561c0F52F10Da249Aecb5 |
-| [fTUSDx](https://kovan-optimistic.etherscan.io/address/0xeacC35377202982EFCB01B4a56fcA9F5eFF8A5f1) | 0xeacC35377202982EFCB01B4a56fcA9F5eFF8A5f1 |
-| [ETHx](https://kovan-optimistic.etherscan.io/address/0xe72f289584eDA2bE69Cfe487f4638F09bAc920Db)   | 0xe72f289584eDA2bE69Cfe487f4638F09bAc920Db |
+| [Resolver](https://kovan-optimistic.etherscan.io/address/0x218B65780615Ff134f9Ad810CB98839534D3C0D6)            | 0x21d4E9fbB9DB742E6ef4f29d189a7C18B0b59136 |
+| [Host](https://kovan-optimistic.etherscan.io/address/0x74b57883f8ce9F2BD330286E884CfD8BB24AC4ED)                | 0xE40983C2476032A0915600b9472B3141aA5B5Ba9 |
+| [CFAv1](https://kovan-optimistic.etherscan.io/address/0x523481a8a5455efB1F301C6e00B5525Eb12a51da)               | 0xff48668fa670A85e55A7a822b352d5ccF3E7b18C |
+| [IDAv1](https://kovan-optimistic.etherscan.io/address/0x98E5E5d915Bf79ceeF02c72D1bf8f5b26f0bcBaA)               | 0x96215257F2FcbB00135578f766c0449d239bd92F |
+| [SuperTokenFactory](https://kovan-optimistic.etherscan.io/address/0xB5f0501908ca8A99fD31bEFCAc1cA458F3588671)   | 0x9aCc39d15e3f168c111a1D4F80271a9E526c9a9F |
+| [SuperfluidLoader v1](https://kovan-optimistic.etherscan.io/address/0x777Be25F9fdcA87e8a0E06Ad4be93d65429FCb9f) | 0x5Bb5908dcCC9Bb0fC39a78CfDf9e47B4C08E9521 |
 {% endtab %}
 
 {% tab title="Arbitrum Rinkeby" %}
