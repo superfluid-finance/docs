@@ -40,6 +40,7 @@
     * [📕 IDAv1 Library](developers/solidity-examples/solidity-libraries/idav1-library/README.md)
       * [IDAv1 Library Example](developers/solidity-examples/solidity-libraries/idav1-library/idav1-library-example.md)
   * [🗝 CFA Access Control List (ACL)](developers/solidity-examples/cfa-access-control-list-acl.md)
+  * [🪙 Super Tokens](developers/solidity-examples/super-tokens.md)
   * [⚓ Deploying The Framework](developers/solidity-examples/production-deployment.md)
 * [🖥 Subgraph](developers/subgraph.md)
 * [⭐ Interactive Tutorials](developers/interactive-tutorials/README.md)

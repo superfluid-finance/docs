@@ -29,7 +29,7 @@ Note that the ability to use approve to set transfer allowances is still availab
 
 ### How is The Super Token ERC777 Implementation Different?
 
-The Super Token overrides `transferFrom` on the ERC777 such that it does not trigger any hooks but leaves the `send` function as it.
+The Super Token overrides `transferFrom` on the ERC777 such that it does not trigger any hooks but leaves the `send` function as is.
 
 You can see the `send` function exposed on the USDCx Super Token interface [**HERE**](https://polygonscan.com/address/0xCAa7349CEA390F89641fe306D93591f87595dc1F#writeProxyContract) on Polygonscan.
 
@@ -61,6 +61,6 @@ See the transfer function code on OpenZeppelin's ERC777 contract
 
 {% embed url="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC777/ERC777.sol#L275" %}
 
-See the SuperToken code and how it utilizes ERC777\
-\
-[https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/superfluid/SuperToken.sol](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/superfluid/SuperToken.sol)
+See the SuperToken code and how it utilizes ERC777
+
+{% embed url="https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/superfluid/SuperToken.sol" %}
