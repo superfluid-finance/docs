@@ -4,6 +4,8 @@ description: One transaction to distribute to any number of receivers with a fix
 
 # ✳ Instant Distribution Agreement (IDA)
 
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>Alice can distribute funds to any number of recipients, at a fixed gas cost, based on pre-determined proportions (units) </p></figcaption></figure>
+
 ## **Definition**
 
 Recurring one-to-many distributions are hard to scale; the more receivers there are, the more transfers must be done, which runs up gas costs.
