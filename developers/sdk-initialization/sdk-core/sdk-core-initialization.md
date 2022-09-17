@@ -60,7 +60,7 @@ const provider = new ethers.providers.InfuraProvider(
 );
 const sf = await Framework.create({
   chainId: 137, //note, you can also use provider.getChainId() to get the active chainId
-  provider
+  provider: provider
 });
 
 // web3.js + Hardhat provider initialization
