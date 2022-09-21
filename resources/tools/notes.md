@@ -14,7 +14,7 @@ trategy called auto top up
 
 You set up the configuration on chain for how the top up will work&#x20;
 
-![](<../../.gitbook/assets/image (11).png>)
+![](<../../.gitbook/assets/image (13).png>)
 
 Expiry: how long config will work until
 
@@ -48,7 +48,7 @@ topUpAmount is really the status to see if the top up is worth doing (it's NOT A
 
 checkTopUpByIndex: checks if the top up status to see if it's time to do a top Up
 
-![](<../../.gitbook/assets/image (1).png>)
+![](<../../.gitbook/assets/image (6).png>)
 
 if all the checks pass, then you get the target upper limit balance by upper limit \* flow rate and the top up will get it to that new balance
 

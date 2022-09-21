@@ -15,7 +15,7 @@ There are two hooks -  `tokensToSend` and `tokensReceived`.&#x20;
 
 When `transferFrom` or `send` on the ERC777 token is called to move tokens between accounts, the code in these hooks kick in.&#x20;
 
-![](<../../../.gitbook/assets/image (10) (1).png>)
+![](<../../../.gitbook/assets/image (10).png>)
 
 You could imagine `tokensToSend` containing logic that handles what to do when tokens are sent and `tokensReceived` containing logic handling what to do when tokens are received.
 

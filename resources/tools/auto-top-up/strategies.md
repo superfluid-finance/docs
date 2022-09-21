@@ -8,7 +8,7 @@ description: Select the methodology used to top up your Super Token balance
 
 When you create a Top Up, you specify a Super Token, Strategy, and Liquidity Token:
 
-![](<../../../.gitbook/assets/image (9).png>)
+![](<../../../.gitbook/assets/image (4).png>)
 
 A Strategy is a separately deployed contract that's called upon by the Auto Top Up Manager contract for top ups using its own `topUp` function.
 
@@ -16,7 +16,7 @@ When a top up is called, the Strategy you chose (passed in with `_strategy`) pul
 
 `topUp()` is only callable by Auto Top Up Manager.
 
-<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
 ## **Existing Strategies**
 
@@ -30,4 +30,4 @@ When you call `createTopUp()` on ERC20StrollOutStrategy, `_liquidityToken` would
 
 When a top up is called, `_liquidityToken` is pulled from your wallet, wrapped into `_superToken` and returned to your wallet.
 
-![](<../../../.gitbook/assets/image (2).png>)
+![](<../../../.gitbook/assets/image (12).png>)

@@ -14,7 +14,7 @@ The Auto Top Up Protocol is an automated top-up service. When your Super Token b
 
 ## Basic Structuring
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **The Auto Top Up Protocol consists of 2 main parts:**
 

@@ -8,7 +8,7 @@ description: Alright, so you now understand how Auto Top Up works. Let's set one
 
 Currently there's only **ERC20StrollOut** which converts an ERC20 into its Wrapper Super Token (e.g. DAI to DAIx).
 
-{% embed url="https://app.gitbook.com/o/-MKEeXlqDp8Or6mOgLxr/s/-MKEcOOf_qoYMObicyRu/~/changes/83chtnBpBqJB1DZWkpOT/resources/tools/auto-top-up/strategies#erc20strollout-strategy" %}
+{% embed url="https://docs.superfluid.finance/superfluid/resources/tools/auto-top-up/strategies#erc20strollout-strategy" %}
 
 ### 2. Approve Strategy Contract
 
@@ -22,7 +22,7 @@ We'd suggest giving maximum approval so you don't have to worry about running ou
 
 Call the `createTopUp()` function on the Auto Top Manager contract with the parameters described below 👇
 
-{% embed url="https://app.gitbook.com/o/-MKEeXlqDp8Or6mOgLxr/s/-MKEcOOf_qoYMObicyRu/~/changes/83chtnBpBqJB1DZWkpOT/resources/tools/auto-top-up/auto-top-up-manager#creating-your-top-up-with-createtopup" %}
+{% embed url="https://docs.superfluid.finance/superfluid/resources/tools/auto-top-up/auto-top-up-manager#creating-your-top-up-with-createtopup" %}
 
 ### 4. Set Up Off-Chain Keeper
 
