@@ -4,7 +4,7 @@ description: One transaction to distribute to any number of receivers with a fix
 
 # ✳ Instant Distribution Agreement (IDA)
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>Alice can distribute funds to any number of recipients, at a fixed gas cost, based on pre-determined proportions (units) </p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (16).png" alt=""><figcaption><p>Alice can distribute funds to any number of recipients, at a fixed gas cost, based on pre-determined proportions (units) </p></figcaption></figure>
 
 ## **Definition**
 

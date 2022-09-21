@@ -4,7 +4,7 @@ description: Ethereum education resources
 
 # Learn about Ethereum
 
-![](<../.gitbook/assets/image (3) (1).png>)
+![](<../.gitbook/assets/image (3) (1) (1).png>)
 
 ## General about Ethereum
 

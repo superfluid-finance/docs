@@ -15,7 +15,7 @@ There are two hooks -  `tokensToSend` and `tokensReceived`.&#x20;
 
 When `transferFrom` or `send` on the ERC777 token is called to move tokens between accounts, the code in these hooks kick in.&#x20;
 
-![](<../../../.gitbook/assets/image (10).png>)
+![](<../../../.gitbook/assets/image (10) (1).png>)
 
 You could imagine `tokensToSend` containing logic that handles what to do when tokens are sent and `tokensReceived` containing logic handling what to do when tokens are received.
 
@@ -33,7 +33,7 @@ The Super Token overrides `transferFrom` on the ERC777 such that it does not tri
 
 You can see the `send` function exposed on the USDCx Super Token interface [**HERE**](https://polygonscan.com/address/0xCAa7349CEA390F89641fe306D93591f87595dc1F#writeProxyContract) on Polygonscan.
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Example: Using Send to Interact With TOGA Contract
 
