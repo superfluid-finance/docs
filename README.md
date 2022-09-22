@@ -24,12 +24,6 @@ description: A new DeFi primitive to automate recurring transactions and monetiz
 
 ### DEVELOPERS
 
-Looking to Jump Straight Into the Code?
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
 Building Smart Contracts that Interact With Superfluid?
 
 {% content-ref url="developers/solidity-examples/" %}
@@ -38,8 +32,8 @@ Building Smart Contracts that Interact With Superfluid?
 
 Want to Use Our SDKs?
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="developers/sdk-core/" %}
+[sdk-core](developers/sdk-core/)
 {% endcontent-ref %}
 
 ### CONTRACT ADDRESSES
