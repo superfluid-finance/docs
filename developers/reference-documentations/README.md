@@ -2,10 +2,10 @@
 description: Clear API specification on Superfluid Smart contracts and SDKs
 ---
 
-# 📖 Reference Documentations
+# Other Resources
 
-{% content-ref url="evm-contracts/" %}
-[evm-contracts](evm-contracts/)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 {% embed url="https://refs.superfluid.finance/sdk-core/" %}

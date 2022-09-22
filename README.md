@@ -26,8 +26,8 @@ description: A new DeFi primitive to automate recurring transactions and monetiz
 
 Looking to Jump Straight Into the Code?
 
-{% content-ref url="developers/interactive-tutorials/" %}
-[interactive-tutorials](developers/interactive-tutorials/)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 Building Smart Contracts that Interact With Superfluid?
@@ -38,8 +38,8 @@ Building Smart Contracts that Interact With Superfluid?
 
 Want to Use Our SDKs?
 
-{% content-ref url="developers/sdk-initialization/" %}
-[sdk-initialization](developers/sdk-initialization/)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 ### CONTRACT ADDRESSES
@@ -50,8 +50,8 @@ Want to Use Our SDKs?
 
 ### SENTINELS
 
-{% content-ref url="sentinels/liquidations-and-toga/" %}
-[liquidations-and-toga](sentinels/liquidations-and-toga/)
+{% content-ref url="sentinels/liquidations-and-toga.md" %}
+[liquidations-and-toga.md](sentinels/liquidations-and-toga.md)
 {% endcontent-ref %}
 
 ### CONNECT TO A SUPPORTED NETWORK

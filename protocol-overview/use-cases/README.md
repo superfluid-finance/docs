@@ -16,8 +16,8 @@ Read this Use Case section to understand core areas of these applications and ge
 
 Superfluid revolutionizes on-chain automating recurring payments - think salaries, subscriptions, etc. 🔁
 
-{% content-ref url="recurring-payment.md" %}
-[recurring-payment.md](recurring-payment.md)
+{% content-ref url="recurring-payments.md" %}
+[recurring-payments.md](recurring-payments.md)
 {% endcontent-ref %}
 
 Superfluid's extreme composability allows you to build powerful real-time DeFi applications - think dollar-cost averaging and novel lending protocols 💸

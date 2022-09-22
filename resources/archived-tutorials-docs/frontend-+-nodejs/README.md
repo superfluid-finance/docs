@@ -6,7 +6,7 @@ description: Using the Superfluid JS-SDK - the Precursor to the SDK-Core
 
 > #### IMPORTANT NOTE
 >
-> The JS-SDK is a _legacy SDK_ which is no longer being actively maintained. We _strongly_ _recommend_ that new developers **use the** [**SDK-Core**](../../../developers/sdk-initialization/) **or** [**SDK-Redux.**](https://www.npmjs.com/package/@superfluid-finance/sdk-redux)\*\*\*\*
+> The JS-SDK is a _legacy SDK_ which is no longer being actively maintained. We _strongly_ _recommend_ that new developers **use the** [**SDK-Core**](broken-reference) **or** [**SDK-Redux.**](https://www.npmjs.com/package/@superfluid-finance/sdk-redux)\*\*\*\*
 
 ### **Overview**
 

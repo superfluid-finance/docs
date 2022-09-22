@@ -2,7 +2,7 @@
 description: Hungry for data? Hot n' fresh Superfluid subgraphs ready to consume!
 ---
 
-# 🖥 Subgraph
+# Subgraph
 
 The Graph is the indexing layer of our industry. There is an ocean of open data created by blockchain networks, and the Graph will help you query it. You can use the Graph to get data on activity in the Superfluid ecosystem as well as many other types of on-chain data. You can also use the [GraphQL Playground](https://thegraph.com/hosted-service/) to start getting Superfluid specific data on any network.
 

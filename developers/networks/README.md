@@ -2,7 +2,7 @@
 description: Superfluid contract addresses for all networks
 ---
 
-# 🔗 Network Directory
+# Network Directory
 
 {% hint style="info" %}
 Note: these addresses can also be found in the [Superfluid Console](https://console.superfluid.finance/protocol).
@@ -138,7 +138,7 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 {% endtab %}
 
 {% tab title="BNB Chain" %}
-**❓ See** [**BNB Chain**](networks/bnbchain.md) **for more help**
+**❓ See** [**BNB Chain**](interacting-with-toga-using-gnosis-safe/bnbchain.md) **for more help**
 
 **Framework**
 

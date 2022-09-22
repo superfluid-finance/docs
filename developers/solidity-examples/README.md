@@ -2,7 +2,7 @@
 description: Working with the CFA & IDA in Solidity - and using the CFA Library
 ---
 
-# 💻 Superfluid Solidity Docs
+# Solidity General
 
 This section will help you to interact with Superfluid at the smart contract level.
 
@@ -18,28 +18,28 @@ NOTE: we recommend using the [Superfluid Console](https://console.superfluid.fin
 
 ### Superfluid Solidity Helper Libraries
 
-{% content-ref url="solidity-libraries/cfav1-library.md" %}
-[cfav1-library.md](solidity-libraries/cfav1-library.md)
+{% content-ref url="../constant-flow-agreement-cfa/cfav1-library.md" %}
+[cfav1-library.md](../constant-flow-agreement-cfa/cfav1-library.md)
 {% endcontent-ref %}
 
-{% content-ref url="solidity-libraries/idav1-library/" %}
-[idav1-library](solidity-libraries/idav1-library/)
+{% content-ref url="../instant-distribution-agreement-ida/idav1-library/" %}
+[idav1-library](../instant-distribution-agreement-ida/idav1-library/)
 {% endcontent-ref %}
 
 ### Access Control List
 
-{% content-ref url="cfa-access-control-list-acl.md" %}
-[cfa-access-control-list-acl.md](cfa-access-control-list-acl.md)
+{% content-ref url="../constant-flow-agreement-cfa/cfa-access-control-list-acl/" %}
+[cfa-access-control-list-acl](../constant-flow-agreement-cfa/cfa-access-control-list-acl/)
 {% endcontent-ref %}
 
 ### Deploying the Framework
 
-{% content-ref url="production-deployment.md" %}
-[production-deployment.md](production-deployment.md)
+{% content-ref url="../reference-documentations/production-deployment.md" %}
+[production-deployment.md](../reference-documentations/production-deployment.md)
 {% endcontent-ref %}
 
 ### User Data
 
-{% content-ref url="../developer-guides/super-apps/user-data/" %}
-[user-data](../developer-guides/super-apps/user-data/)
+{% content-ref url="../super-apps/user-data/" %}
+[user-data](../super-apps/user-data/)
 {% endcontent-ref %}

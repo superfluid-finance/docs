@@ -160,7 +160,7 @@ When a stream is opened, an account must deposit a certain amount of Super Token
 
 When an account goes critical, Super Tokens can no longer be streamed from the account's balance (because there are none), so Super Tokens from the buffer are used to continue the account's outbound stream(s) until external accounts (Sentinels) step in and cancel them.
 
-The remainder of the buffer is rewarded to the Sentinel that closes the stream (**note:** this is what happens in most cases, you can read about other liquidation rules [here](../../../sentinels/liquidations-and-toga/)). This "liquidation" mechanism incentivizes accounts to close their streams before running out of tokens. It is an account owner's own responsibility to close their streams before reaching critical in order to avoid loss of the buffer.
+The remainder of the buffer is rewarded to the Sentinel that closes the stream (**note:** this is what happens in most cases, you can read about other liquidation rules [here](../../../sentinels/liquidations-and-toga.md)). This "liquidation" mechanism incentivizes accounts to close their streams before running out of tokens. It is an account owner's own responsibility to close their streams before reaching critical in order to avoid loss of the buffer.
 
 The size of the buffer deposit is based on time and flow rate. So for instance, on Polygon, a **4-hour buffer deposit** is taken on streams. So if you are streaming at a rate of 10 USDCx/hour, then a 40 USDCx deposit will be taken.
 
@@ -168,4 +168,4 @@ The size of the buffer deposit is based on time and flow rate. So for instance, 
 
 Superfluid enables the liquidation of critical account streams by any external account. Anyone can run Sentinel software which monitors all Constant Flow Agreements across the network, identifies critical accounts, and closes their streams, thereby earning buffer deposits.&#x20;
 
-_This was a high level overview of Superfluid Solvency. Check out the_ [_Liquidations page_](../../../sentinels/liquidations-and-toga/) _for a more in-depth explanation and the_ [_Sentinel page_](https://docs.superfluid.finance/superfluid/sentinels/running-a-sentinel) _for details on how to run Sentinels._
+_This was a high level overview of Superfluid Solvency. Check out the_ [_Liquidations page_](../../../sentinels/liquidations-and-toga.md) _for a more in-depth explanation and the_ [_Sentinel page_](https://docs.superfluid.finance/superfluid/sentinels/running-a-sentinel) _for details on how to run Sentinels._

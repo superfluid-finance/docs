@@ -22,7 +22,7 @@ You want to create a smart contract that engages streams on its own.
 
 * [**Contract Set Up**](https://docs.superfluid.finance/superfluid/developers/solidity-examples/solidity-libraries/cfav1-library#the-cfa-library): Set up your smart contract with the Constant Flow Agreement (CFA) library to easily start money streams in Solidity.
 * [**Money Streaming Functions**](https://docs.superfluid.finance/superfluid/developers/solidity-examples/solidity-libraries/cfav1-library#using-the-cfa-library): See the basic flow management functions of the CFA Library
-* [**ACL Usage**:](solidity-examples/cfa-access-control-list-acl.md) See how you can provide other addresses with the ability to create, update, and delete streams on your behalf
+* [**ACL Usage**:](constant-flow-agreement-cfa/cfa-access-control-list-acl/) See how you can provide other addresses with the ability to create, update, and delete streams on your behalf
 * [**Simple Example**](https://github.com/superfluid-finance/protocol-monorepo/tree/dev/examples/beginner-examples/money-router): "Money Router" smart contract example showing the very basics of coding stream management into a smart contract
 * [**Video Tutorial**](https://www.youtube.com/watch?v=1mwbYQ429IU): Tutorial demonstrating coding the Money Router contract
 

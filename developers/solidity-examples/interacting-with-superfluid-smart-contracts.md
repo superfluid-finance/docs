@@ -2,11 +2,11 @@
 description: Using Superfluid at the Smart Contract Level
 ---
 
-# 📜 Interacting With Superfluid Smart Contracts
+# Calling Super Agreements
 
 ### Working With Superfluid Using Solidity
 
-Inside of the[ Interactive Tutorials](../interactive-tutorials/) section, you can learn how to use the Superfluid Core SDK to work with money streams or instant distributions. Under the hood, what you're really doing is interacting with Superfluid _agreements_. Money streams are created by interacting primarily with the [constant flow agreement (CFA)](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/agreements/ConstantFlowAgreementV1.sol), while calls related to instant distributions are done by working with the [instant distribution agreement (IDA)](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/agreements/InstantDistributionAgreementV1.sol).
+Inside of the[ Interactive Tutorials](broken-reference) section, you can learn how to use the Superfluid Core SDK to work with money streams or instant distributions. Under the hood, what you're really doing is interacting with Superfluid _agreements_. Money streams are created by interacting primarily with the [constant flow agreement (CFA)](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/agreements/ConstantFlowAgreementV1.sol), while calls related to instant distributions are done by working with the [instant distribution agreement (IDA)](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/agreements/InstantDistributionAgreementV1.sol).
 
 To get started, you'll need to be sure to import, at minimum, the Superfluid host interface & agreement interface that you'd like to work with. In a situation where you'd like to use both the CFA and IDA in the same contract, you would import these contracts like this:
 
@@ -26,7 +26,7 @@ If you'd like to interact with a Superfluid agreement directly by using solidity
 
 **`bytes memory calldata`** - the transaction you're calling on the agreement you're interacting with, compiled to bytecode (using one of solidity's [encoding methods](https://docs.soliditylang.org/en/v0.8.10/abi-spec.html#argument-encoding))
 
-**`bytes memory userData`** - any additional data you'd like to include with your function call. If you don't plan to add userData, you can pass in an empty bytes value (i.e. `"0x"`). You can learn more about this parameter [here](../developer-guides/super-apps/user-data/).
+**`bytes memory userData`** - any additional data you'd like to include with your function call. If you don't plan to add userData, you can pass in an empty bytes value (i.e. `"0x"`). You can learn more about this parameter [here](../super-apps/user-data/).
 
 Here's an example of how this looks in action when interacting with the constant flow agreement. This pattern will be the same whether you're creating, updating, or deleting flows.
 
@@ -62,7 +62,7 @@ host.callAgreement(
 );
 ```
 
-> NOTE: If you're interacting with agreements inside of a Super App callback, this process will work differently. See [this section](../developer-guides/super-apps/super-app-callbacks/calling-agreements-in-super-apps.md) for details.
+> NOTE: If you're interacting with agreements inside of a Super App callback, this process will work differently. See [this section](../super-apps/super-app-callbacks/calling-agreements-in-super-apps.md) for details.
 
 ### Common Mistakes
 
@@ -78,7 +78,7 @@ function createFlowFail(ISuperToken DAIx, int96 flowRate) external {
 
 In the above function, you have set the receiver on the `cfaV1.createFlow` function to be the contract's address. Under the hood, even though `msg.sender` on the broader `createFlowFail` function is an external address, the msg.sender on the `cfa.createFlow` call to the Superfluid protocol is the address of the _contract_. The Superfluid `callAgreement` function will see that the contract is trying to create a flow into itself, and revert.
 
-If you want to create a flow into a contract, we recommend that you use either the[ Core-SDK](../interactive-tutorials/money-streaming-1.md) from outside of a contract or a 2nd contract which already has some balance of Super Tokens.
+If you want to create a flow into a contract, we recommend that you use either the[ Core-SDK](../constant-flow-agreement-cfa/money-streaming-1.md) from outside of a contract or a 2nd contract which already has some balance of Super Tokens.
 
 A similar mistake which stems from this `msg.sender` misunderstanding occurs when developers want to allow external accounts to create flows directly to other accounts via a function on the contract. For example:
 

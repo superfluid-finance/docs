@@ -12,7 +12,7 @@ description: Terminology that will be referred to throughout these docs
 
 ### Super Tokens
 
-**Super Token**: tokens which may be used for any Superfluid related operation. There are 3 types of Super Tokens: ERC20 Wrapper Tokens, Pure Super Tokens, and Native Asset Super Tokens. More can be found on this in our[ section on Super Tokens](../developers/developer-guides/super-tokens/)
+**Super Token**: tokens which may be used for any Superfluid related operation. There are 3 types of Super Tokens: ERC20 Wrapper Tokens, Pure Super Tokens, and Native Asset Super Tokens. More can be found on this in our[ section on Super Tokens](../developers/super-tokens/super-tokens/)
 
 **Wrap**: Converting ERC20 tokens to wrapped super tokens. Wrapping will transfer underlying ERC20 assets into the wrapper contract, and mint an equivalent amount of super tokens which are sent back in exchange. You may also see this denoted as `upgrade` in our codebase or on block explorers
 
