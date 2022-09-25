@@ -10,7 +10,7 @@ Fork-able apps from the main repo:
 
 #### 🌟 Rewards Distribution Token
 
-* A ERC20 token that tokenizes units in Superfluid [Instant Distribution Agreements](https://docs.superfluid.finance/superfluid/protocol-developers/interactive-tutorials/instant-distribution).
+* A ERC20 token that tokenizes units in Superfluid [Instant Distribution Agreements](https://docs.superfluid.finance/superfluid/protocol-overview/in-depth-overview/super-agreements/instant-distribution-agreement-ida).
 
 **👩‍⚖️ Continuous Auction**
 
@@ -46,11 +46,8 @@ Fork-able apps from the main repo:
 
 Click here to see all the official examples:
 
-{% embed url="https://github.com/superfluid-finance/protocol-monorepo/tree/dev/examples" %}
-Fork me!
-{% endembed %}
+{% embed url="https://github.com/superfluid-finance/super-examples/tree/main/examples" %}
 
 ## 💡 Ideas
 
-Want ideas? Check out **** [**hack.superfluid.finance**](http://hack.superfluid.finance/) to connect with other community members and brainstorm ideas.
-
+Want ideas? Check out [**hack.superfluid.finance**](http://hack.superfluid.finance/) to connect with other community members and brainstorm ideas.

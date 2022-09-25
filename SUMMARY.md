@@ -66,7 +66,7 @@
   * [Libraries](developers/solidity-examples/libraries.md)
   * [Resolver](developers/solidity-examples/resolver.md)
 * [Subgraph](developers/subgraph.md)
-* [References](developers/reference-documentations/README.md)
+* [Reference](developers/reference-documentations/README.md)
   * [Deploying The Framework](developers/reference-documentations/production-deployment.md)
   * [EVM Contracts](https://github.com/superfluid-finance/protocol-monorepo/tree/dev/packages/ethereum-contracts/contracts)
   * [SDK Redux](https://refs.superfluid.finance/sdk-redux/)
