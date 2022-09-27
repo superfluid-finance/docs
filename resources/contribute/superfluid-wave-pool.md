@@ -8,7 +8,7 @@ description: A ultra-easy way for you to earn prizes for the Superfluid-related 
 
 ### What's the Wave Pool?
 
-The Wave Pool is a "continuous hackathon" that repeats every month. During the month, community members may submit work to each Wave and be put in the running for the Wave's prizes (like a hackathon!).
+The Wave Pool is a "continuous hackathon" that repeats every month. During the month, community members may submit Superfluid-related work to each Wave and be put in the running for the Wave's prizes (like a hackathon!).
 
 However, unlike a hackathon, the Wave Pool is **not just for technical work**! __ Non-technical work such as articles, videos, documentation, and tutorials are all considered and encouraged for submission.
 
