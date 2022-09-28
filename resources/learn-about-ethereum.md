@@ -29,7 +29,6 @@ description: Ethereum education resources
 * [DeFi school](https://defi.school/)
 * [Crypto zombies](https://cryptozombies.io/) - Learn to Code Blockchain DApps By Building Simple Games
 * [Crypto hack](https://cryptohack.org/) - A fun platform for learning modern cryptography
-* [Interactive Ethereum Tutorials](https://tutorials.ethvigil.com/)
 
 ## More
 

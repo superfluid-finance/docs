@@ -12,8 +12,8 @@ description: >-
 
 The `@superfluid-finance/ethereum-contracts` package includes helpful scripts for deploying the framework using Truffle + Ganache. These deployment scripts can also be used within a Hardhat environment. You can find examples for writing tests using the Superfluid SDK core in our examples repository:
 
-* [Hardhat Example](https://github.com/superfluid-finance/protocol-monorepo/tree/dev/examples/tradeable-cashflow/tradeable-cashflow-hardhat)
-* [Truffle Example](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/examples/tradeable-cashflow/tradeable-cashflow-truffle/test/TradeableCashflow.test.js)
+* [Hardhat Example](https://github.com/superfluid-finance/super-examples/tree/main/examples/tradeable-cashflow)
+* [Truffle Example](https://github.com/superfluid-finance/protocol-monorepo/tree/fc916ffca38749fb79a2a6f22edd3cbadaae7bac/examples/archive/tradeable-cashflow-truffle)
 
 ```javascript
 //example truffle test setup

@@ -26,7 +26,7 @@ When an employee is receiving a salary stream or a business is earning on-chain 
 
 Here's a good example of how this might look: first, a lending contract would be given authorization to acquire control over the salary/revenue stream. Then, the lending contract would lend to this employee/business and expect the loan to be repaid by a certain date. If they fail to do so, then the lending contract could take control of their salary/revenue stream and make up the loan that way, essentially garnishing the borrower's income.
 
-That whole process can be encapsulated in an undercollateralized lending contract. Check out the [Employement Based Loan](https://github.com/superfluid-finance/protocol-monorepo/tree/dev/examples/employment-based-loan) Example and this video of us breaking down how it works at a technical level 👇
+That whole process can be encapsulated in an undercollateralized lending contract. Check out the [Employement Based Loan](https://github.com/superfluid-finance/protocol-monorepo/tree/fc916ffca38749fb79a2a6f22edd3cbadaae7bac/examples/employment-based-loan) Example and this video of us breaking down how it works at a technical level 👇
 
 {% embed url="https://youtu.be/yxzOimYwxHY?t=741" %}
 
