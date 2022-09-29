@@ -61,4 +61,4 @@ You want to work with instant distributions in your test scripts.
 
 * ****[**Initializing**](https://docs.superfluid.finance/superfluid/developers/sdk-initialization/sdk-core/sdk-core-initialization#hardhat-signer-example) **** (Hardhat): How to initialize our Javascript SDK (the SDK Core) for your Hardhat testing script to start conveniently accessing Superfluid functionality.
 * ****[**Instant Distribution Functions**](https://docs.superfluid.finance/superfluid/developers/sdk-initialization/sdk-core/ida-operations): See the functions that allow you to manage streams using the SDK Core.
-* ****[**Simple Example**](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/examples/beginner-examples/token-spreader/test/TokenSpreader.test.js): Our "Token Spreader" example project Hardhat test script shows a lot of the basics.
+* ****[**Simple Example**](https://github.com/superfluid-finance/super-examples/blob/main/examples/instant-distribution-intro/test/TokenSpreader.test.js): Our "Token Spreader" example project Hardhat test script shows a lot of the basics.
