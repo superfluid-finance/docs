@@ -78,7 +78,7 @@ In order to become the PIC, you can either use the Dapp at https://toga.superflu
 
 **!! CAUTION !!** Do NOT use `ERC20.transfer()` for TOGA bids, because those may not trigger the needed callback in the future.
 
-Check out the [network directory](../developers/networks/#mainnet-networks) for the TOGA contract address on different networks.
+Check out the [network directory](../developers/networks.md#mainnet-networks) for the TOGA contract address on different networks.
 
 ### Current Parameters
 

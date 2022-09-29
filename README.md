@@ -38,8 +38,8 @@ Want to Use Our SDKs?
 
 ### CONTRACT ADDRESSES
 
-{% content-ref url="developers/networks/" %}
-[networks](developers/networks/)
+{% content-ref url="developers/networks.md" %}
+[networks.md](developers/networks.md)
 {% endcontent-ref %}
 
 ### SENTINELS
@@ -50,8 +50,8 @@ Want to Use Our SDKs?
 
 ### CONNECT TO A SUPPORTED NETWORK
 
-{% content-ref url="developers/networks/networks/" %}
-[networks](developers/networks/networks/)
+{% content-ref url="resources/archived-tutorials-docs/networks/" %}
+[networks](resources/archived-tutorials-docs/networks/)
 {% endcontent-ref %}
 
 ### EXAMPLE APPS

@@ -34,7 +34,7 @@ sf.settings.config.cfaV1Address
 sf.settings.config.idaV1Address
 ```
 
-> These addresses are also accessible in the [Network Directory](../networks/) and with the [Superfluid Console](https://console.superfluid.finance/protocol).
+> These addresses are also accessible in the [Network Directory](../networks.md) and with the [Superfluid Console](https://console.superfluid.finance/protocol).
 
 ### Accessing Contracts In Solidity with the Host and Resolver
 

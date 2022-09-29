@@ -30,7 +30,7 @@ The Superfluid Sentinel Repo
 
 ### Becoming the PIC
 
-You can become the PIC by connecting your wallet at the [TOGA dashboard.](https://toga.superfluid.finance/) There, you'll also see information on the current PIC stake amount, stream data by token, and a real time list of all liquidations. TOGA contract addresses are also available in our [directory](../developers/networks/) for each network.
+You can become the PIC by connecting your wallet at the [TOGA dashboard.](https://toga.superfluid.finance/) There, you'll also see information on the current PIC stake amount, stream data by token, and a real time list of all liquidations. TOGA contract addresses are also available in our [directory](../developers/networks.md) for each network.
 
 {% embed url="https://toga.superfluid.finance" %}
 The TOGA Dashboard

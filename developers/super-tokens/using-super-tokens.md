@@ -36,7 +36,7 @@ Downgrading your super tokens
 
 The syntax of working with these assets is a bit different than working with ERC20 Wrapper tokens. There is no underlying ERC20 contract to approve before upgrading, and, like Native Super Tokens, there's no underlying asset address. When upgrading your native assets as Super Tokens, you'll need to call a special function called `upgradeByETH` on the native asset super token contract, and pass in a `msg.value` which represents the amount of the native asset you'd like to upgrade.
 
-In this example, we're working with ETHx on the Kovan testnet, but the syntax is nearly identical when using native assets on other networks. For example, using MATICx on Polygon or Mumbai would also require calling `upgradeByETH` on the contract and passing in the amount you'd like to upgrade as your `msg.value`. The only difference is that you'll need to change the address of ETHx/MATICx in the below example to match the deployed address. You can use the [network directory](../networks/) for this.
+In this example, we're working with ETHx on the Kovan testnet, but the syntax is nearly identical when using native assets on other networks. For example, using MATICx on Polygon or Mumbai would also require calling `upgradeByETH` on the contract and passing in the amount you'd like to upgrade as your `msg.value`. The only difference is that you'll need to change the address of ETHx/MATICx in the below example to match the deployed address. You can use the [network directory](../networks.md) for this.
 
 {% embed url="https://codesandbox.io/embed/upgrade-nativeasset-supertoken-y6m4ol?expanddevtools=1&fontsize=14&hidenavigation=1&module=%2Fsrc%2FUpgradeETH.js&theme=dark&view=split" %}
 Upgrading a Native Asset
