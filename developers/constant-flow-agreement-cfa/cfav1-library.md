@@ -5,7 +5,7 @@ description: >-
   library, as well as documentation for each function.
 ---
 
-# Solidity
+# CFA - Solidity
 
 ### The CFA Library
 
@@ -13,7 +13,7 @@ The [Constant Flow Agreement library](https://github.com/superfluid-finance/prot
 
 ### Initializing the Library
 
-```
+```solidity
 // initializing the CFA Library
 pragma solidity ^0.8.0
 
@@ -60,7 +60,7 @@ contract CFALibraryMock {
 
 After initializing the library, it gets very simple to create, update, and delete flows:
 
-```
+```solidity
 // CFA CRUD functionality
 cfaV1.createFlow(receiver, token, flowRate);
 cfaV1.updateFlow(receiver, token, flowRate);
@@ -69,7 +69,7 @@ cfaV1.deleteFlow(sender, receiver, token);
 
 If you'd like, you can also add user data as an optional parameter to each call to the CFA:
 
-```
+```solidity
 // with user data
 cfaV1.createFlow(receiver, token, flowRate, userData);
 cfaV1.updateFlow(receiver, token, flowRate, userData);
@@ -90,7 +90,7 @@ However, it's worth noting that the parameters passed to each function in the li
 
 If you need to perform operations with the Constant Flow Agreement inside of Super App callbacks, the syntax for using the library will look somewhat different. You'll need to use the **withCtx** versions of each function. For more on why this is, you can see this section on [callAgreement vs callAgreementWithContext](../super-apps/super-app-callbacks/calling-agreements-in-super-apps.md).
 
-```
+```solidity
 // with Ctx - to be used inside of super app callbacks
 // NOTE: ctx is a bytes value
 cfaV1.createFlowWithCtx(ctx, receiver,token, flowRate);
@@ -105,7 +105,7 @@ cfaV1.deleteFlowWithCtx(ctx, sender, receiver,token, userData);
 
 All other variable fields will are the same as detailed in the previous section, but `ctx` will be the `ctx` which is passed in to the Super App callback by the framework where these functions are being called. This `ctx` value is of type **`bytes`**. For example, in the afterAgreementCreated callback:
 
-```
+```solidity
 //in super app callback
 function afterAgreementCreated(
     ISuperToken superToken,

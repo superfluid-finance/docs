@@ -2,13 +2,30 @@
 description: Stream money with the Constant Flow Agreement using the SDK Core
 ---
 
-# SDK Core
+# CFA - SDK Core
 
 The `ConstantFlowAgreementV1` helper class provides access to create/update/delete flows. You can access this via the `Framework` class (`sf.cfaV1`) or initialize this as a standalone class.
 
+#### Using the `Framework` Class
+
+```typescript
+// refresher on initializing the Framework
+import { Framework } from "@superfluid-finance/sdk-core";
+import { ethers } from "ethers";
+
+const sf = await Framework.create({
+  chainId: 137,
+  provider
+});
+
+//access the cfaV1 object via the Framework class
+//see below for a complete example
+const flowInfo = await sf.cfaV1.getFlowInfo(...)
+```
+
 **Direct Initialization**
 
-```
+```typescript
 import { ConstantFlowAgreementV1 } from "@superfluid-finance/sdk-core";
 
 const config = {
@@ -22,7 +39,7 @@ const cfaV1 = new ConstantFlowAgreementV1({ options: config });
 
 **CFAV1 Functions**
 
-```
+```typescript
 // Read functions
 await sf.cfaV1.getFlow({
   superToken: string,
@@ -108,7 +125,7 @@ sf.cfaV1.deleteFlowByOperator({
 
 **Example Usage**
 
-```
+```typescript
 import { Framework } from "@superfluid-finance/sdk-core";
 import { ethers } from "ethers";
 
@@ -118,7 +135,7 @@ const provider = new ethers.providers.InfuraProvider(
 );
 
 const sf = await Framework.create({
-  networkName: "matic",
+  chainId: 137,
   provider
 });
 

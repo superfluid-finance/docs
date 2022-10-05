@@ -6,11 +6,15 @@ description: Using Superfluid at the Smart Contract Level
 
 ### Working With Superfluid Using Solidity
 
-Inside of the[ Interactive Tutorials](broken-reference) section, you can learn how to use the Superfluid Core SDK to work with money streams or instant distributions. Under the hood, what you're really doing is interacting with Superfluid _agreements_. Money streams are created by interacting primarily with the [constant flow agreement (CFA)](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/agreements/ConstantFlowAgreementV1.sol), while calls related to instant distributions are done by working with the [instant distribution agreement (IDA)](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/agreements/InstantDistributionAgreementV1.sol).
+When you open a stream or make use of instant distributions, what you're really doing is interacting with Superfluid _agreements_. Money streams are created by interacting with the [constant flow agreement (CFA)](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/agreements/ConstantFlowAgreementV1.sol), while calls related to instant distributions are done by working with the [instant distribution agreement (IDA)](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/agreements/InstantDistributionAgreementV1.sol).
+
+{% hint style="info" %}
+NOTE: the easiest way to create money streams or work with the IDA in solidity is via the CFAv1 Library and IDAv1 Library.
+{% endhint %}
 
 To get started, you'll need to be sure to import, at minimum, the Superfluid host interface & agreement interface that you'd like to work with. In a situation where you'd like to use both the CFA and IDA in the same contract, you would import these contracts like this:
 
-```
+```solidity
 pragma solidity ^0.8.0
 
 import { ISuperfluid }from "@superfluid-finance/ethereum-contracts/contracts/interfaces/superfluid/ISuperfluid.sol"; //"@superfluid-finance/ethereum-monorepo/packages/ethereum-contracts/contracts/interfaces/superfluid/ISuperfluid.sol";
@@ -30,7 +34,7 @@ If you'd like to interact with a Superfluid agreement directly by using solidity
 
 Here's an example of how this looks in action when interacting with the constant flow agreement. This pattern will be the same whether you're creating, updating, or deleting flows.
 
-```
+```solidity
 //creating a flow in pure solidity
 host.callAgreement(
     cfa,
@@ -47,7 +51,7 @@ host.callAgreement(
 
 The following is an example for interacting with the instant distribution agreement using solidity. This pattern is the same for each interaction you'd like to make with the IDA:
 
-```
+```solidity
 // distributing tokens with the instant distribution agreement
 host.callAgreement(
     ida,
@@ -68,7 +72,7 @@ host.callAgreement(
 
 One other thing to keep in mind is the value of `msg.sender` when working with Superfluid from a contract. For example, developers will occasionally want to create a function which will let an account create a flow into the contract itself. So, they'll write a function that looks like this, expecting it to create a flow into the contract from the `msg.sender` of the function:
 
-```
+```solidity
 //this will fail because a contract cannot create a flow to itself
 
 function createFlowFail(ISuperToken DAIx, int96 flowRate) external {
@@ -82,7 +86,7 @@ If you want to create a flow into a contract, we recommend that you use either t
 
 A similar mistake which stems from this `msg.sender` misunderstanding occurs when developers want to allow external accounts to create flows directly to other accounts via a function on the contract. For example:
 
-```
+```solidity
 //remember that this will revert if the contract has a zero balance of DAIx
 //msg.sender on the call to the Superfluid framework is the contract
 

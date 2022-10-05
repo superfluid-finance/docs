@@ -4,13 +4,13 @@ description: >-
   Core
 ---
 
-# SDK Core
+# Super Tokens - SDK Core
 
 The `SuperToken` class can also be accessed via the `Framework` class and allows you read from/write to the blockchain. It also provides write functions for both the CFAV1 and IDAV1 contracts in the context of the token. That is, the token field for these different methods will be the token address specified during the creation of this class.
 
 **Framework based initialization**
 
-```
+```typescript
 import { Framework } from "@superfluid-finance/sdk-core";
 import { ethers } from "ethers";
 
@@ -29,7 +29,7 @@ const usdcx = await sf.loadSuperToken("0xCAa7349CEA390F89641fe306D93591f87595dc1
 
 **Direct Initialization**
 
-```
+```typescript
 import { SuperToken } from "@superfluid-finance/sdk-core";
 import { ethers } from "ethers";
 
@@ -54,7 +54,7 @@ const usdcx = await SuperToken.create({
 
 **SuperToken Functions**
 
-```
+```typescript
 const usdcx = await sf.loadSuperToken("0xCAa7349CEA390F89641fe306D93591f87595dc1F");
 
 // ERC20 `Token`
@@ -126,7 +126,7 @@ usdcx.upgrade({ amount: string });
 
 **Example Usage**
 
-```
+```typescript
 import { Framework } from "@superfluid-finance/sdk-core";
 import { ethers } from "ethers";
 
@@ -156,7 +156,7 @@ const txnReceipt = await txnResponse.wait();
 
 > Note: you can also get the underlying Token object which only has ERC20 token read/write methods-this is useful for things like approving token spend to a SuperToken contract prior to upgrading for example.
 
-```
+```typescript
 const usdc = usdcx.underlyingToken;
 const totalSupply = await usdc.totalSupply();
 ```

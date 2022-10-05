@@ -4,7 +4,7 @@ description: >-
   transaction. Here's how you do it with the SDK Core
 ---
 
-# SDK Core
+# Batch Calls - SDK Core
 
 The `BatchCall` class allows the user to batch multiple supported operations/transactions in one operation. Similar to the other helper classes, we can create this either through the `Framework` or directly initialize this.
 
@@ -23,7 +23,7 @@ Most of the token methods are self explanatory, but some additional context for 
 
 **Framework based initialization**
 
-```
+```typescript
 import { Framework } from "@superfluid-finance/sdk-core";
 import { ethers } from "ethers";
 
@@ -43,7 +43,7 @@ const batchCall = sf.batchCall([<OPERATION_A>, <OPERATION_B>, ...]);
 
 **Direct Initialization**
 
-```
+```typescript
 import { SuperToken } from "@superfluid-finance/sdk-core";
 
 const batchCall = new BatchCall({
@@ -54,7 +54,7 @@ const batchCall = new BatchCall({
 
 **Usage**
 
-```
+```typescript
 import { Framework } from "@superfluid-finance/sdk-core";
 import { ethers } from "ethers";
 

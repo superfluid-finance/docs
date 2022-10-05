@@ -22,8 +22,8 @@ When creating the framework, you'll use `Framework.create()` like so:
 
 ```
 const sf = await Framework.create({
-  chainId: 137, // you can also use chainId here instead
-  provider: ethersProvider
+  chainId: Number, //i.e. 137 for matic
+  provider: ethersProvider // i.e. the provider being used
 });
 ```
 
@@ -35,118 +35,9 @@ When creating the framework, you must pass in the following options.  The only r
 
 `provider: SupportedProvider` - the provider being used
 
-`customSubgraphQueriesEndpoint?: string` - an option to add your own custom subgraph endpoint for writing custom queries
 
-`resolverAddress?: string` - an optional parameter that can be included for getting the framework in a test environment. If you pass in `process.env.RESOLVER_ADDRESS`, this will work successfully as seen [here](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/examples/tradeable-cashflow/tradeable-cashflow-hardhat/test/TradeableCashflow.test.js#L51).
 
-`protocolReleaseVersion?: string` - options here are "v1," "test," or your own release version (which is almost always not necessary unless you're doing experimental work)
-
-## Examples For Various Environments
-
-#### TS/ESModule
-
-```javascript
-import { Framework } from "@superfluid-finance/sdk-core";
-import { ethers } from "ethers";
-```
-
-#### Infura Provider Initialization
-
-```javascript
-// infura provider initialization
-const provider = new ethers.providers.InfuraProvider(
-  "matic",
-  "<INFURA_API_KEY>"
-);
-const sf = await Framework.create({
-  chainId: 137, //note, you can also use provider.getChainId() to get the active chainId
-  provider
-});
-
-// web3.js + Hardhat provider initialization
-const web3jsProvider = new ethers.providers.Web3Provider(
-  (global as any).web3.currentProvider
-);
-const web3jsSf = await Framework.create({
-  chainId: 137, //note, you can also use provider.getChainId() to get the active chainId
-  provider: web3jsProvider
-});
-
-// injected web3.js initialization (Hardhat) 
-// most likely to be used on backend for testing
-// NOTE: if you're using truffle, you should be able to
-// omit the (global as any) as this should be
-// exposed already (in JS at least)
-const injectedWeb3jsSf = await Framework.create({
-  chainId: 31337,
-  provider: (global as any).web3,
-  resolverAddress: <RESOLVER_ADDRESS>,
-  protocolReleaseVersion: "test",
-});
-
-// injected hardhat ethers initialization
-// most likely to be used on backend for testing
-import hardhat from "hardhat";
-const injectedHardhatEthersSf = await Framework.create({
-  chainId: 31337,
-  provider: hardhat.ethers,
-  resolverAddress: <RESOLVER_ADDRESS>,
-  protocolReleaseVersion: "test",
-})
-
-// ethers.js + hardhat provider initialization (in testing environment w/ hardhat-ethers)
-import { ethers } from "hardhat";
-const [deployer] = await ethers.getSigners();
-const ethersProvider = deployer.provider;
-const ethersjsSf = await Framework.create({
-  chainId: 31337,
-  resolverAddress: <RESOLVER_ADDRESS>,
-  protocolReleaseVersion: "test",
-  provider: ethersProvider
-});
-
-// metamask
-const mmProvider = new ethers.providers.Web3Provider(window.ethereum);
-const mmSf = await Framework.create({
-  chainId: mmProvider.getChainId(),
-  provider: mmProvider
-});
-
-// web3modal
-import Web3Modal from "web3modal";
-const web3Modal = new Web3Modal({
-  cacheProvider: false,
-  providerOptions: {}
-});
-const web3ModalRawProvider = await web3Modal.connect();
-const web3ModalProvider = new ethers.providers.Web3Provider(web3ModalRawProvider);
-const web3ModalSf = await Framework.create({
-  chainId: 137, //your chainId here
-  provider: web3ModalProvider
-});
-
-//bnc-onboard
-const onboard = Onboard({
-    dappId: "<API_KEY>",
-    networkId: 4,
-    subscriptions: {
-        wallet: wallet => {
-            const web3Provider = new ethers.providers.Web3Provider(wallet.provider);
-            (async () => {
-                const framework = await Framework.create({ chainId: 137, provider: web3Provider });
-            })();
-        }
-    }
-});
-// this is triggered by:
-await onboard.walletSelect();
-```
-
-> Note: You specify your project type in `package.json` - `"type": "module"` or `"type": "commonjs"`.
-
-It is also important to note that the provider does not need to be an InfuraProvider - it just needs to satisfy the `SupportedProvider` interface: `ethers.providers.Provider | (typeof ethers & HardhatEthersHelpers) | Web3`.
-
-## Creating a Signer
+### The Signer Class \[Optional]
 
 ### **Web3Provider Signer Example**
 

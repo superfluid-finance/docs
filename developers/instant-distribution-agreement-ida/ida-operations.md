@@ -4,13 +4,31 @@ description: >-
   the SDK Core
 ---
 
-# SDK Core
+# IDA - SDK Core
 
 The `InstantDistributionAgreementV1` helper class provides access to a variety of IDA functions. You can access this via the `Framework` class (`sf.idaV1`) or initialize this as a standalone class.
 
-**Direct Initialization**
+#### Using the `Framework` Class
+
+```typescript
+// Some code
+import { Framework } from "@superfluid.finance/sdk-core"
+import { ethers } from "ethers";
+
+const sf = await Framework.create({
+  chainId: 137,
+  provider
+});
+
+//access the idaV1 object via the Framework class
+//see below for a complete example
+const flowInfo = await sf.idaV1.getSubscription(...)
 
 ```
+
+#### Direct Initialization
+
+```typescript
 import { InstantDistributionAgreementV1 } from "@superfluid-finance/sdk-core";
 
 const config = {
@@ -24,7 +42,7 @@ const idaV1 = new InstantDistributionAgreementV1({ options: config });
 
 **IDAV1 Functions**
 
-```
+```typescript
 // Read functions
 await sf.idaV1.getSubscription({
   superToken: string,
@@ -104,7 +122,7 @@ sf.idaV1.claim({
 
 **Example Usage**
 
-```
+```typescript
 import { Framework } from "@superfluid-finance/sdk-core";
 import { ethers } from "ethers";
 
@@ -114,7 +132,7 @@ const provider = new ethers.providers.InfuraProvider(
 );
 
 const sf = await Framework.create({
-  networkName: "matic",
+  chainId: 137,
   provider
 });
 
