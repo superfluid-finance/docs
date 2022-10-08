@@ -196,81 +196,6 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 | [ETHx](https://goerli.etherscan.io/address/0x5943F705aBb6834Cad767e6E4bB258Bc48D9C947)  | 0x5943F705aBb6834Cad767e6E4bB258Bc48D9C947 |
 {% endtab %}
 
-{% tab title="Kovan" %}
-**Framework**
-
-| Resource                                                                                             |                   Address                  |
-| ---------------------------------------------------------------------------------------------------- | :----------------------------------------: |
-| [Resolver](https://kovan.etherscan.io/address/0x851d3dd9dc97c1df1DA73467449B3893fc76D85B)            | 0x851d3dd9dc97c1df1DA73467449B3893fc76D85B |
-| [Host](https://kovan.etherscan.io/address/0xF0d7d1D47109bA426B9D8A3Cde1941327af1eea3)                | 0xF0d7d1D47109bA426B9D8A3Cde1941327af1eea3 |
-| [CFAv1](https://kovan.etherscan.io/address/0xECa8056809e7e8db04A8fF6e4E82cD889a46FE2F)               | 0xECa8056809e7e8db04A8fF6e4E82cD889a46FE2F |
-| [IDAv1](https://kovan.etherscan.io/address/0x556ba0b3296027Dd7BCEb603aE53dEc3Ac283d2b)               | 0x556ba0b3296027Dd7BCEb603aE53dEc3Ac283d2b |
-| [SuperTokenFactory](https://kovan.etherscan.io/address/0xF5F666AC8F581bAef8dC36C7C8828303Bd4F8561)   | 0xF5F666AC8F581bAef8dC36C7C8828303Bd4F8561 |
-| [SuperfluidLoader v1](https://kovan.etherscan.io/address/0x9F73208FAFf97465CEC27fd93F10EB3D78289339) | 0x9F73208FAFf97465CEC27fd93F10EB3D78289339 |
-
-**Tokens**
-
-| Resource                                                                                |                   Address                  |
-| --------------------------------------------------------------------------------------- | :----------------------------------------: |
-| [fDAI](https://kovan.etherscan.io/address/0xb64845d53a373d35160b72492818f0d2f51292c0)   | 0xb64845d53a373d35160b72492818f0d2f51292c0 |
-| [fUSDC](https://kovan.etherscan.io/address/0x2eb320e2100a043401e3b3b132d4134f235a6a04)  | 0x2eb320e2100a043401e3b3b132d4134f235a6a04 |
-| [fTUSD](https://kovan.etherscan.io/address/0x8607d0ab76985e845b03a6011aa13edd1cb21126)  | 0x8607d0ab76985e845b03a6011aa13edd1cb21126 |
-| [fDAIx](https://kovan.etherscan.io/address/0xe3cb950cb164a31c66e32c320a800d477019dcff)  | 0xe3cb950cb164a31c66e32c320a800d477019dcff |
-| [fUSDCx](https://kovan.etherscan.io/address/0x25b5cd2e6ebaedaa5e21d0ecf25a567ee9704aa7) | 0x25b5cd2e6ebaedaa5e21d0ecf25a567ee9704aa7 |
-| [fTUSDx](https://kovan.etherscan.io/address/0xb20200908d60f1d7bc68594f677bc15070a87504) | 0xb20200908d60f1d7bc68594f677bc15070a87504 |
-| [ETHx](https://kovan.etherscan.io/address/0xdd5462a7db7856c9128bc77bd65c2919ee23c6e1)   | 0xdd5462a7db7856c9128bc77bd65c2919ee23c6e1 |
-{% endtab %}
-
-{% tab title="Rinkeby" %}
-**Framework**
-
-| Resource                                                                                               |                   Address                  |
-| ------------------------------------------------------------------------------------------------------ | :----------------------------------------: |
-| [Resolver](http://rinkeby.etherscan.io/address/0x659635Fab0A0cef1293f7eb3c7934542B6A6B31A)             | 0x659635Fab0A0cef1293f7eb3c7934542B6A6B31A |
-| [Host](http://rinkeby.etherscan.io/address/0xeD5B5b32110c3Ded02a07c8b8e97513FAfb883B6)                 | 0xeD5B5b32110c3Ded02a07c8b8e97513FAfb883B6 |
-| [CFAv1](http://rinkeby.etherscan.io/address/0xF4C5310E51F6079F601a5fb7120bC72a70b96e2A)                | 0xF4C5310E51F6079F601a5fb7120bC72a70b96e2A |
-| [IDAv1](http://rinkeby.etherscan.io/address/0x32E0ecb72C1dDD92B007405F8102c1556624264D)                | 0x32E0ecb72C1dDD92B007405F8102c1556624264D |
-| [SuperTokenFactory](https://rinkeby.etherscan.io/address/0xd465e36e607d493cd4CC1e83bea275712BECd5E0)   | 0xd465e36e607d493cd4CC1e83bea275712BECd5E0 |
-| [SuperfluidLoader v1](https://rinkeby.etherscan.io/address/0x70A755e96d321dccd26111233a297095910784C7) | 0x70A755e96d321dccd26111233a297095910784C7 |
-
-**Tokens**
-
-| Resource                                                                                 |                   Address                  |
-| ---------------------------------------------------------------------------------------- | :----------------------------------------: |
-| [fDAI](http://rinkeby.etherscan.io/address/0x15F0Ca26781C3852f8166eD2ebce5D18265cceb7)   | 0x15F0Ca26781C3852f8166eD2ebce5D18265cceb7 |
-| [fUSDC](http://rinkeby.etherscan.io/address/0xbe49ac1EadAc65dccf204D4Df81d650B50122aB2)  | 0xbe49ac1EadAc65dccf204D4Df81d650B50122aB2 |
-| [fTUSD](http://rinkeby.etherscan.io/address/0xA794C9ee519FD31BbCE643e8D8138f735E97D1DB)  | 0xA794C9ee519FD31BbCE643e8D8138f735E97D1DB |
-| [fDAIx](http://rinkeby.etherscan.io/address/0x745861AeD1EEe363b4AaA5F1994Be40b1e05Ff90)  | 0x745861AeD1EEe363b4AaA5F1994Be40b1e05Ff90 |
-| [fUSDCx](http://rinkeby.etherscan.io/address/0x0F1D7C55A2B133E000eA10EeC03c774e0d6796e8) | 0x0F1D7C55A2B133E000eA10EeC03c774e0d6796e8 |
-| [fTUSDx](http://rinkeby.etherscan.io/address/0xdF7B8461a1d9f57f12F88d97FC6131E36d302d81) | 0xdF7B8461a1d9f57f12F88d97FC6131E36d302d81 |
-| [ETHx](https://rinkeby.etherscan.io/address/0xa623b2DD931C5162b7a0B25852f4024Db48bb1A0)  | 0xa623b2DD931C5162b7a0B25852f4024Db48bb1A0 |
-{% endtab %}
-
-{% tab title="Ropsten" %}
-**Framework**
-
-| Resource                                                                                               |                   Address                  |
-| ------------------------------------------------------------------------------------------------------ | :----------------------------------------: |
-| [Resolver](http://ropsten.etherscan.io/address/0x3b44e06D96BcA9412CBc23F80F41B9e30933571a)             | 0x3b44e06D96BcA9412CBc23F80F41B9e30933571a |
-| [Host](http://ropsten.etherscan.io/address/0xF2B4E81ba39F5215Db2e05B2F66f482BB8e87FD2)                 | 0xF2B4E81ba39F5215Db2e05B2F66f482BB8e87FD2 |
-| [CFAv1](http://ropsten.etherscan.io/address/0xaD2F1f7cd663f6a15742675f975CcBD42bb23a88)                | 0xaD2F1f7cd663f6a15742675f975CcBD42bb23a88 |
-| [IDAv1](http://ropsten.etherscan.io/address/0xAD1e87F0C74341ecAFc1d27349dD6e650f5bAdD7)                | 0xAD1e87F0C74341ecAFc1d27349dD6e650f5bAdD7 |
-| [SuperTokenFactory](https://ropsten.etherscan.io/address/0x6FA165d10b907592779301C23C8Ac9d1F79ca930)   | 0x6FA165d10b907592779301C23C8Ac9d1F79ca930 |
-| [SuperfluidLoader v1](https://ropsten.etherscan.io/address/0x23e9A1D629AC39e60c60C7592EB12fB8247Bd52A) | 0x23e9A1D629AC39e60c60C7592EB12fB8247Bd52A |
-
-**Tokens**
-
-| Resource                                                                                 |                   Address                  |
-| ---------------------------------------------------------------------------------------- | :----------------------------------------: |
-| [fDAI](http://ropsten.etherscan.io/address/0x15F0Ca26781C3852f8166eD2ebce5D18265cceb7)   | 0x15F0Ca26781C3852f8166eD2ebce5D18265cceb7 |
-| [fUSDC](http://ropsten.etherscan.io/address/0xbe49ac1EadAc65dccf204D4Df81d650B50122aB2)  | 0xbe49ac1EadAc65dccf204D4Df81d650B50122aB2 |
-| [fTUSD](http://ropsten.etherscan.io/address/0xA794C9ee519FD31BbCE643e8D8138f735E97D1DB)  | 0xA794C9ee519FD31BbCE643e8D8138f735E97D1DB |
-| [fDAIx](http://ropsten.etherscan.io/address/0xBF6201a6c48B56d8577eDD079b84716BB4918E8A)  | 0xBF6201a6c48B56d8577eDD079b84716BB4918E8A |
-| [fUSDCx](http://ropsten.etherscan.io/address/0x2dC36872a445adF0bFf63cc0eeee52A2b801625f) | 0x2dC36872a445adF0bFf63cc0eeee52A2b801625f |
-| [fTUSDx](http://ropsten.etherscan.io/address/0xC5191A51982983B8105eC4Fbbbf35b9466EE0179) | 0xC5191A51982983B8105eC4Fbbbf35b9466EE0179 |
-| [ETHx](https://ropsten.etherscan.io/address/0x6fC99F5591b51583ba15A8C2572408257A1D2797)  | 0x6fC99F5591b51583ba15A8C2572408257A1D2797 |
-{% endtab %}
-
 {% tab title="Mumbai" %}
 **See** [**Polygon (Matic)**](../resources/archived-tutorials-docs/networks/polygon-network-matic.md) **for more help**
 
@@ -304,42 +229,27 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 
 | Resource                                                                                                        |                   Address                  |
 | --------------------------------------------------------------------------------------------------------------- | :----------------------------------------: |
-| [Resolver](https://kovan-optimistic.etherscan.io/address/0x218B65780615Ff134f9Ad810CB98839534D3C0D6)            | 0x21d4E9fbB9DB742E6ef4f29d189a7C18B0b59136 |
-| [Host](https://kovan-optimistic.etherscan.io/address/0x74b57883f8ce9F2BD330286E884CfD8BB24AC4ED)                | 0xE40983C2476032A0915600b9472B3141aA5B5Ba9 |
-| [CFAv1](https://kovan-optimistic.etherscan.io/address/0x523481a8a5455efB1F301C6e00B5525Eb12a51da)               | 0xff48668fa670A85e55A7a822b352d5ccF3E7b18C |
-| [IDAv1](https://kovan-optimistic.etherscan.io/address/0x98E5E5d915Bf79ceeF02c72D1bf8f5b26f0bcBaA)               | 0x96215257F2FcbB00135578f766c0449d239bd92F |
-| [SuperTokenFactory](https://kovan-optimistic.etherscan.io/address/0xB5f0501908ca8A99fD31bEFCAc1cA458F3588671)   | 0x9aCc39d15e3f168c111a1D4F80271a9E526c9a9F |
-| [SuperfluidLoader v1](https://kovan-optimistic.etherscan.io/address/0x777Be25F9fdcA87e8a0E06Ad4be93d65429FCb9f) | 0x5Bb5908dcCC9Bb0fC39a78CfDf9e47B4C08E9521 |
-| [CFAv1Forwarder](https://kovan-optimistic.etherscan.io/address/0xcfA132E353cB4E398080B9700609bb008eceB125)      | 0xcfA132E353cB4E398080B9700609bb008eceB125 |
+| [Resolver](https://goerli-optimism.etherscan.io/address/0x218B65780615Ff134f9Ad810CB98839534D3C0D6)            | 0x21d4E9fbB9DB742E6ef4f29d189a7C18B0b59136 |
+| [Host](https://goerli-optimism.etherscan.io/address/0x74b57883f8ce9F2BD330286E884CfD8BB24AC4ED)                | 0xE40983C2476032A0915600b9472B3141aA5B5Ba9 |
+| [CFAv1](https://goerli-optimism.etherscan.io/address/0x523481a8a5455efB1F301C6e00B5525Eb12a51da)               | 0xff48668fa670A85e55A7a822b352d5ccF3E7b18C |
+| [IDAv1](https://goerli-optimism.etherscan.io/address/0x98E5E5d915Bf79ceeF02c72D1bf8f5b26f0bcBaA)               | 0x96215257F2FcbB00135578f766c0449d239bd92F |
+| [SuperTokenFactory](https://goerli-optimism.etherscan.io/address/0xB5f0501908ca8A99fD31bEFCAc1cA458F3588671)   | 0x9aCc39d15e3f168c111a1D4F80271a9E526c9a9F |
+| [SuperfluidLoader v1](https://goerli-optimism.etherscan.io/address/0x777Be25F9fdcA87e8a0E06Ad4be93d65429FCb9f) | 0x5Bb5908dcCC9Bb0fC39a78CfDf9e47B4C08E9521 |
+| [CFAv1Forwarder](https://goerli-optimism.etherscan.io/address/0xcfA132E353cB4E398080B9700609bb008eceB125)      | 0xcfA132E353cB4E398080B9700609bb008eceB125 |
 {% endtab %}
 
-{% tab title="Arbitrum Rinkeby" %}
+{% tab title="Arbitrum Goerli" %}
 **Framework**
-
-Note: Arbiscan currenly lacks support for contract verification, thus not all contracts could be verified yet.
 
 | Resource                                                                                              |                   Address                  |
 | ----------------------------------------------------------------------------------------------------- | :----------------------------------------: |
-| [Resolver](https://testnet.arbiscan.io/address/0xa2C0C70A1E922f5f060ec20EE3aF002C163b4567)            | 0xa2C0C70A1E922f5f060ec20EE3aF002C163b4567 |
-| [Host](https://testnet.arbiscan.io/address/0xE01F8743677Da897F4e7De9073b57Bf034FC2433)                | 0xE01F8743677Da897F4e7De9073b57Bf034FC2433 |
-| [CFAv1](https://testnet.arbiscan.io/address/0xcA0569223e56B479FaC6d554FA0D3867A4384657)               | 0xcA0569223e56B479FaC6d554FA0D3867A4384657 |
-| [IDAv1](https://testnet.arbiscan.io/address/0x038405394F2B791F71c2C68d36dc91C568DfAB05)               | 0x038405394F2B791F71c2C68d36dc91C568DfAB05 |
-| [SuperTokenFactory](https://testnet.arbiscan.io/address/0xc11eC618c1d559705E853741e366663Fe9302362)   | 0xc11eC618c1d559705E853741e366663Fe9302362 |
-| [SuperfluidLoader v1](https://testnet.arbiscan.io/address/0x777Be25F9fdcA87e8a0E06Ad4be93d65429FCb9f) | 0x777Be25F9fdcA87e8a0E06Ad4be93d65429FCb9f |
-| [CFAv1Forwarder](https://testnet.arbiscan.io/address/0xcfA132E353cB4E398080B9700609bb008eceB125)      | 0xcfA132E353cB4E398080B9700609bb008eceB125 |
-
-**Tokens**
-
-| Resource                                                                                 |                   Address                  |
-| ---------------------------------------------------------------------------------------- | :----------------------------------------: |
-| [fDAI](https://testnet.arbiscan.io/address/0xf8d8f02b788DE5191Ecd20f7BDb07D80963410B5)   | 0xf8d8f02b788DE5191Ecd20f7BDb07D80963410B5 |
-| [fUSDC](https://testnet.arbiscan.io/address/0xb8F12031d79615F3fAf6eC5F9795057E55e3069A)  | 0xb8F12031d79615F3fAf6eC5F9795057E55e3069A |
-| [fTUSD](https://testnet.arbiscan.io/address/0x67270eB3a30c1a787f216Cf711cF1dBD8326266d)  | 0x67270eB3a30c1a787f216Cf711cF1dBD8326266d |
-| [fDAIx](https://testnet.arbiscan.io/address/0x4B746F88fb25516731D54cEfB1c2d00eadEFf366)  | 0x4B746F88fb25516731D54cEfB1c2d00eadEFf366 |
-| [fUSDCx](https://testnet.arbiscan.io/address/0xb9Fef3d4054f1B40f8Dcf4ae975F3486aDF6327C) | 0xb9Fef3d4054f1B40f8Dcf4ae975F3486aDF6327C |
-| [fTUSDx](https://testnet.arbiscan.io/address/0x8E64a3b0A7997D1E5Fb77Ad914A753B7dFe28729) | 0x8E64a3b0A7997D1E5Fb77Ad914A753B7dFe28729 |
-| [ETHx](https://testnet.arbiscan.io/address/0xbF7BCcE8D60A9C3F6bFaEc9346Aa85B9f781a4e9)   | 0xbF7BCcE8D60A9C3F6bFaEc9346Aa85B9f781a4e9 |
-{% endtab %}
+| [Resolver](https://goerli.arbiscan.io/address/0x21d4E9fbB9DB742E6ef4f29d189a7C18B0b59136)            | 0x21d4E9fbB9DB742E6ef4f29d189a7C18B0b59136 |
+| [Host](https://goerli.arbiscan.io/address/0xE40983C2476032A0915600b9472B3141aA5B5Ba9)                | 0xE40983C2476032A0915600b9472B3141aA5B5Ba9 |
+| [CFAv1](https://goerli.arbiscan.io/address/0xff48668fa670A85e55A7a822b352d5ccF3E7b18C)               | 0xff48668fa670A85e55A7a822b352d5ccF3E7b18C |
+| [IDAv1](https://goerli.arbiscan.io/address/0x96215257F2FcbB00135578f766c0449d239bd92F)               | 0x96215257F2FcbB00135578f766c0449d239bd92F |
+| [SuperTokenFactory](https://goerli.arbiscan.io/address/0x9aCc39d15e3f168c111a1D4F80271a9E526c9a9F)   | 0x9aCc39d15e3f168c111a1D4F80271a9E526c9a9F |
+| [SuperfluidLoader v1](https://goerli.arbiscan.io/address/0x5Bb5908dcCC9Bb0fC39a78CfDf9e47B4C08E9521) | 0x5Bb5908dcCC9Bb0fC39a78CfDf9e47B4C08E9521 |
+| [CFAv1Forwarder](https://goerli.arbiscan.io/address/0xcfA132E353cB4E398080B9700609bb008eceB125)      | 0xcfA132E353cB4E398080B9700609bb008eceB125 |
 
 {% tab title="Avalanche Fuji" %}
 **Framework**
