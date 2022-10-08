@@ -25,6 +25,7 @@ Note: these addresses can also be found in the [Superfluid Console](https://cons
 | [SuperTokenFactory](https://polygonscan.com/address/0x2C90719f25B10Fc5646c82DA3240C76Fa5BcCF34)   | 0x2C90719f25B10Fc5646c82DA3240C76Fa5BcCF34 |
 | [SuperfluidLoader v1](https://polygonscan.com/address/0x15F0Ca26781C3852f8166eD2ebce5D18265cceb7) | 0x15F0Ca26781C3852f8166eD2ebce5D18265cceb7 |
 | [TOGA](https://polygonscan.com/address/0x6AEAeE5Fd4D05A741723D752D30EE4D72690A8f7)                | 0x6AEAeE5Fd4D05A741723D752D30EE4D72690A8f7 |
+| [CFAv1Forwarder](https://polygonscan.com/address/0xcfA132E353cB4E398080B9700609bb008eceB125)      | 0xcfA132E353cB4E398080B9700609bb008eceB125 |
 
 **Tokens**
 
@@ -56,6 +57,7 @@ Note: these addresses can also be found in the [Superfluid Console](https://cons
 | [SuperTokenFactory](https://blockscout.com/xdai/mainnet/address/0x23410e2659380784498509698ed70E414D384880)   | 0x23410e2659380784498509698ed70E414D384880 |
 | [SuperfluidLoader v1](https://blockscout.com/xdai/mainnet/address/0x21d4E9fbB9DB742E6ef4f29d189a7C18B0b59136) | 0x21d4E9fbB9DB742E6ef4f29d189a7C18B0b59136 |
 | [TOGA](https://blockscout.com/xdai/mainnet/address/0xb7DE52F4281a7a276E18C40F94cd93159C4A2d22/contracts)      | 0xb7DE52F4281a7a276E18C40F94cd93159C4A2d22 |
+| [CFAv1Forwarder](https://blockscout.com/xdai/mainnet/address/0xcfA132E353cB4E398080B9700609bb008eceB125)      | 0xcfA132E353cB4E398080B9700609bb008eceB125 |
 
 **Tokens**
 
@@ -81,6 +83,7 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 | [SuperTokenFactory](https://optimistic.etherscan.io/address/0x8276469a443d5c6b7146bed45e2abcad3b6adad9)   | 0x8276469A443D5C6B7146BED45e2abCaD3B6adad9 |
 | [SuperfluidLoader v1](https://optimistic.etherscan.io/address/0x8E310ce29Ab7Fa2878944A65BB0eaF97B1853d40) | 0x8E310ce29Ab7Fa2878944A65BB0eaF97B1853d40 |
 | [TOGA](https://optimistic.etherscan.io/address/0xA3c8502187fD7a7118eAD59dc811281448946C8f)                | 0xA3c8502187fD7a7118eAD59dc811281448946C8f |
+| [CFAv1Forwarder](https://optimistic.etherscan.io/address/0xcfA132E353cB4E398080B9700609bb008eceB125)      | 0xcfA132E353cB4E398080B9700609bb008eceB125 |
 
 **Tokens**
 
@@ -105,6 +108,7 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 | [SuperTokenFactory](https://arbiscan.io/address/0x1C21Ead77fd45C84a4c916Db7A6635D0C6FF09D6)   | 0x1C21Ead77fd45C84a4c916Db7A6635D0C6FF09D6 |
 | [SuperfluidLoader v1](https://arbiscan.io/address/0xB99cA401e10D277345BcFb281AC148a2e16Db466) | 0xB99cA401e10D277345BcFb281AC148a2e16Db466 |
 | [TOGA](https://arbiscan.io/address/0xFC63B7C762B10670Eda15cF3ca3970bCDB28C9eF)                | 0xFC63B7C762B10670Eda15cF3ca3970bCDB28C9eF |
+| [CFAv1Forwarder](https://arbiscan.io/address/0xcfA132E353cB4E398080B9700609bb008eceB125)      | 0xcfA132E353cB4E398080B9700609bb008eceB125 |
 
 **Tokens**
 
@@ -129,6 +133,7 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 | [SuperToken Factory](https://snowtrace.io/address/0x464AADdBB2B80f3Cb666522EB7381bE610F638b4)   | 0x464AADdBB2B80f3Cb666522EB7381bE610F638b4 |
 | [SuperToken Loader v1](https://snowtrace.io/address/0x2601E69a2D16C8Ccc8aEe8cE9F59d24a59986B9E) | 0x2601E69a2D16C8Ccc8aEe8cE9F59d24a59986B9E |
 | [TOGA](https://snowtrace.io/address/0x3D9A67D5ec1E72CEcA8157e028855056786b6159)                 | 0x3D9A67D5ec1E72CEcA8157e028855056786b6159 |
+| [CFAv1Forwarder](https://snowtrace.io/address/0xcfA132E353cB4E398080B9700609bb008eceB125)       | 0xcfA132E353cB4E398080B9700609bb008eceB125 |
 
 **Tokens**
 
@@ -151,6 +156,7 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 | [SuperToken Factory](https://bscscan.com/address/0x8bde47397301F0Cd31b9000032fD517a39c946Eb)   | 0x8bde47397301F0Cd31b9000032fD517a39c946Eb |
 | [SuperToken Loader v1](https://bscscan.com/address/0x3C26e5bEbc68EaAf4efcd88F8E5A6Aeb77b65579) | 0x3C26e5bEbc68EaAf4efcd88F8E5A6Aeb77b65579 |
 | [TOGA](https://bscscan.com/address/0xFCD84210f5d51Cd40a30443d44d6A5500d5D10dF)                 | 0xFCD84210f5d51Cd40a30443d44d6A5500d5D10dF |
+| [CFAv1Forwarder](https://bscscan.com/address/0xcfA132E353cB4E398080B9700609bb008eceB125)       | 0xcfA132E353cB4E398080B9700609bb008eceB125 |
 
 **Tokens**
 
@@ -175,6 +181,7 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 | [SuperTokenFactory](https://goerli.etherscan.io/address/0x94f26B4c8AD12B18c12f38E878618f7664bdcCE2#code) | 0x94f26B4c8AD12B18c12f38E878618f7664bdcCE2 |
 | [SuperfluidLoader v1](https://goerli.etherscan.io/address/0x74d860243Ff08A243d5485899f343117EbDa6eA8)    | 0x74d860243Ff08A243d5485899f343117EbDa6eA8 |
 | [TOGA](https://goerli.etherscan.io/address/0xa54FC15FC75693447d70a57262F37a70B614721b)                   | 0xa54FC15FC75693447d70a57262F37a70B614721b |
+| [CFAv1Forwarder](https://goerli.etherscan.io/address/0xcfA132E353cB4E398080B9700609bb008eceB125)         | 0xcfA132E353cB4E398080B9700609bb008eceB125 |
 
 **Tokens**
 
@@ -277,6 +284,7 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 | [IDAv1](https://mumbai.polygonscan.com/address/0x804348D4960a61f2d5F9ce9103027A3E849E09b8)               | 0x804348D4960a61f2d5F9ce9103027A3E849E09b8 |
 | [SuperTokenFactory](https://mumbai.polygonscan.com/address/0x200657E2f123761662567A1744f9ACAe50dF47E6)   | 0x200657E2f123761662567A1744f9ACAe50dF47E6 |
 | [SuperfluidLoader v1](https://mumbai.polygonscan.com/address/0x0d56ED56b63382B0FC964490feB9AE438B6B4b79) | 0x0d56ED56b63382B0FC964490feB9AE438B6B4b79 |
+| [CFAv1Forwarder](https://mumbai.polygonscan.com/address/0xcfA132E353cB4E398080B9700609bb008eceB125)      | 0xcfA132E353cB4E398080B9700609bb008eceB125 |
 
 **Tokens**
 
@@ -302,6 +310,7 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 | [IDAv1](https://kovan-optimistic.etherscan.io/address/0x98E5E5d915Bf79ceeF02c72D1bf8f5b26f0bcBaA)               | 0x96215257F2FcbB00135578f766c0449d239bd92F |
 | [SuperTokenFactory](https://kovan-optimistic.etherscan.io/address/0xB5f0501908ca8A99fD31bEFCAc1cA458F3588671)   | 0x9aCc39d15e3f168c111a1D4F80271a9E526c9a9F |
 | [SuperfluidLoader v1](https://kovan-optimistic.etherscan.io/address/0x777Be25F9fdcA87e8a0E06Ad4be93d65429FCb9f) | 0x5Bb5908dcCC9Bb0fC39a78CfDf9e47B4C08E9521 |
+| [CFAv1Forwarder](https://kovan-optimistic.etherscan.io/address/0xcfA132E353cB4E398080B9700609bb008eceB125)      | 0xcfA132E353cB4E398080B9700609bb008eceB125 |
 {% endtab %}
 
 {% tab title="Arbitrum Rinkeby" %}
@@ -317,6 +326,7 @@ Note: Arbiscan currenly lacks support for contract verification, thus not all co
 | [IDAv1](https://testnet.arbiscan.io/address/0x038405394F2B791F71c2C68d36dc91C568DfAB05)               | 0x038405394F2B791F71c2C68d36dc91C568DfAB05 |
 | [SuperTokenFactory](https://testnet.arbiscan.io/address/0xc11eC618c1d559705E853741e366663Fe9302362)   | 0xc11eC618c1d559705E853741e366663Fe9302362 |
 | [SuperfluidLoader v1](https://testnet.arbiscan.io/address/0x777Be25F9fdcA87e8a0E06Ad4be93d65429FCb9f) | 0x777Be25F9fdcA87e8a0E06Ad4be93d65429FCb9f |
+| [CFAv1Forwarder](https://testnet.arbiscan.io/address/0xcfA132E353cB4E398080B9700609bb008eceB125)      | 0xcfA132E353cB4E398080B9700609bb008eceB125 |
 
 **Tokens**
 
@@ -342,6 +352,7 @@ Note: Arbiscan currenly lacks support for contract verification, thus not all co
 | [IDAv1](https://testnet.snowtrace.io/address/0x997d745884F54a93E6662b055c5e6c09F688718b)               | 0x997d745884F54a93E6662b055c5e6c09F688718b |
 | [SuperTokenFactory](https://testnet.snowtrace.io/address/0xA25dbEa94C5824892006b30a629213E7Bf238624)   | 0xA25dbEa94C5824892006b30a629213E7Bf238624 |
 | [SuperfluidLoader v1](https://testnet.snowtrace.io/address/0x777Be25F9fdcA87e8a0E06Ad4be93d65429FCb9f) | 0x777Be25F9fdcA87e8a0E06Ad4be93d65429FCb9f |
+| [CFAv1Forwarder](https://testnet.snowtrace.io/address/0xcfA132E353cB4E398080B9700609bb008eceB125)      | 0xcfA132E353cB4E398080B9700609bb008eceB125 |
 
 **Tokens**
 
