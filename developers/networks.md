@@ -250,6 +250,7 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 | [SuperTokenFactory](https://goerli.arbiscan.io/address/0x9aCc39d15e3f168c111a1D4F80271a9E526c9a9F)   | 0x9aCc39d15e3f168c111a1D4F80271a9E526c9a9F |
 | [SuperfluidLoader v1](https://goerli.arbiscan.io/address/0x5Bb5908dcCC9Bb0fC39a78CfDf9e47B4C08E9521) | 0x5Bb5908dcCC9Bb0fC39a78CfDf9e47B4C08E9521 |
 | [CFAv1Forwarder](https://goerli.arbiscan.io/address/0xcfA132E353cB4E398080B9700609bb008eceB125)      | 0xcfA132E353cB4E398080B9700609bb008eceB125 |
+{% endtab %}
 
 {% tab title="Avalanche Fuji" %}
 **Framework**
