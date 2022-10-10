@@ -187,13 +187,13 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 
 | Resource                                                                                |                   Address                  |
 | --------------------------------------------------------------------------------------- | :----------------------------------------: |
+| [ETHx](https://goerli.etherscan.io/address/0x5943F705aBb6834Cad767e6E4bB258Bc48D9C947)  | 0x5943F705aBb6834Cad767e6E4bB258Bc48D9C947 |
 | [fDAI](http://goerli.etherscan.io/address/0x88271d333C72e51516B67f5567c728E702b3eeE8)   | 0x88271d333C72e51516B67f5567c728E702b3eeE8 |
 | [fUSDC](http://goerli.etherscan.io/address/0xc94dd466416A7dFE166aB2cF916D3875C049EBB7)  | 0xc94dd466416A7dFE166aB2cF916D3875C049EBB7 |
 | [fTUSD](http://goerli.etherscan.io/address/0x53d00397f03147A9bD9c40443A105A82780deAF1)  | 0x53d00397f03147A9bD9c40443A105A82780deAF1 |
 | [fDAIx](http://goerli.etherscan.io/address/0xF2d68898557cCb2Cf4C10c3Ef2B034b2a69DAD00)  | 0xF2d68898557cCb2Cf4C10c3Ef2B034b2a69DAD00 |
 | [fUSDCx](http://goerli.etherscan.io/address/0x8aE68021f6170E5a766bE613cEA0d75236ECCa9a) | 0x8aE68021f6170E5a766bE613cEA0d75236ECCa9a |
 | [fTUSDx](http://goerli.etherscan.io/address/0x95697ec24439E3Eb7ba588c7B279b9B369236941) | 0x95697ec24439E3Eb7ba588c7B279b9B369236941 |
-| [ETHx](https://goerli.etherscan.io/address/0x5943F705aBb6834Cad767e6E4bB258Bc48D9C947)  | 0x5943F705aBb6834Cad767e6E4bB258Bc48D9C947 |
 {% endtab %}
 
 {% tab title="Mumbai" %}
@@ -215,10 +215,10 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 
 | Resource                                                                                         |                   Address                  |
 | ------------------------------------------------------------------------------------------------ | :----------------------------------------: |
+| [MATICx](https://mumbai.polygonscan.com/address/0x96B82B65ACF7072eFEb00502F45757F254c2a0D4#code) | 0x96B82B65ACF7072eFEb00502F45757F254c2a0D4 |
 | [fDAI](https://mumbai.polygonscan.com/address/0x15F0Ca26781C3852f8166eD2ebce5D18265cceb7)        | 0x15F0Ca26781C3852f8166eD2ebce5D18265cceb7 |
 | [fUSDC](https://mumbai.polygonscan.com/address/0xbe49ac1EadAc65dccf204D4Df81d650B50122aB2)       | 0xbe49ac1EadAc65dccf204D4Df81d650B50122aB2 |
 | [fTUSD](https://mumbai.polygonscan.com/address/0xA794C9ee519FD31BbCE643e8D8138f735E97D1DB)       | 0xA794C9ee519FD31BbCE643e8D8138f735E97D1DB |
-| [MATICx](https://mumbai.polygonscan.com/address/0x96B82B65ACF7072eFEb00502F45757F254c2a0D4#code) | 0x96B82B65ACF7072eFEb00502F45757F254c2a0D4 |
 | [fDAIx](https://mumbai.polygonscan.com/address/0x5D8B4C2554aeB7e86F387B4d6c00Ac33499Ed01f)       | 0x5D8B4C2554aeB7e86F387B4d6c00Ac33499Ed01f |
 | [fUSDCx](https://mumbai.polygonscan.com/address/0x42bb40bF79730451B11f6De1CbA222F17b87Afd7)      | 0x42bb40bF79730451B11f6De1CbA222F17b87Afd7 |
 | [fTUSDx](https://mumbai.polygonscan.com/address/0x918E0d5C96cAC79674E2D38066651212be3C9C48)      | 0x918E0d5C96cAC79674E2D38066651212be3C9C48 |
@@ -236,6 +236,12 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 | [SuperTokenFactory](https://goerli-optimism.etherscan.io/address/0x9aCc39d15e3f168c111a1D4F80271a9E526c9a9F)   | 0x9aCc39d15e3f168c111a1D4F80271a9E526c9a9F |
 | [SuperfluidLoader v1](https://goerli-optimism.etherscan.io/address/0x5Bb5908dcCC9Bb0fC39a78CfDf9e47B4C08E9521) | 0x5Bb5908dcCC9Bb0fC39a78CfDf9e47B4C08E9521 |
 | [CFAv1Forwarder](https://goerli-optimism.etherscan.io/address/0xcfA132E353cB4E398080B9700609bb008eceB125)      | 0xcfA132E353cB4E398080B9700609bb008eceB125 |
+
+**Tokens**
+
+| Resource                                                                                         |                   Address                  |
+| ------------------------------------------------------------------------------------------------ | :----------------------------------------: |
+| [ETHx](https://goerli-optimism.etherscan.io/address/0xE01F8743677Da897F4e7De9073b57Bf034FC2433)        | 0xE01F8743677Da897F4e7De9073b57Bf034FC2433 |
 {% endtab %}
 
 {% tab title="Arbitrum Goerli" %}
@@ -250,6 +256,12 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 | [SuperTokenFactory](https://goerli.arbiscan.io/address/0x9aCc39d15e3f168c111a1D4F80271a9E526c9a9F)   | 0x9aCc39d15e3f168c111a1D4F80271a9E526c9a9F |
 | [SuperfluidLoader v1](https://goerli.arbiscan.io/address/0x5Bb5908dcCC9Bb0fC39a78CfDf9e47B4C08E9521) | 0x5Bb5908dcCC9Bb0fC39a78CfDf9e47B4C08E9521 |
 | [CFAv1Forwarder](https://goerli.arbiscan.io/address/0xcfA132E353cB4E398080B9700609bb008eceB125)      | 0xcfA132E353cB4E398080B9700609bb008eceB125 |
+
+**Tokens**
+
+| Resource                                                                                         |                   Address                  |
+| ------------------------------------------------------------------------------------------------ | :----------------------------------------: |
+| [ETHx](https://goerli.arbiscan.io/address/0xE01F8743677Da897F4e7De9073b57Bf034FC2433)        | 0xE01F8743677Da897F4e7De9073b57Bf034FC2433 |
 {% endtab %}
 
 {% tab title="Avalanche Fuji" %}
@@ -269,12 +281,12 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 
 | Resource                                                                                  |                   Address                  |
 | ----------------------------------------------------------------------------------------- | :----------------------------------------: |
+| [AVAXx](https://testnet.snowtrace.io/address/0x5735C32C38f5Af0FB04a7c77C832Ba4D7aBfFeC8)  | 0x5735C32C38f5Af0FB04a7c77C832Ba4D7aBfFeC8 |
 | [fDAI](https://testnet.snowtrace.io/address/0x87E00Dced5670e01BEe33a9a724B1dac790937eF)   | 0x87E00Dced5670e01BEe33a9a724B1dac790937eF |
 | [fUSDC](https://testnet.snowtrace.io/address/0xE01F8743677Da897F4e7De9073b57Bf034FC2433)  | 0xE01F8743677Da897F4e7De9073b57Bf034FC2433 |
 | [fTUSD](https://testnet.snowtrace.io/address/0x1031b9bD6544d266A7B462744dF28Dc4A7A08CAe)  | 0x1031b9bD6544d266A7B462744dF28Dc4A7A08CAe |
 | [fDAIx](https://testnet.snowtrace.io/address/0x296E9c01f80D408741f6e15d62013DDbe1041f1D)  | 0x296E9c01f80D408741f6e15d62013DDbe1041f1D |
 | [fUSDCx](https://testnet.snowtrace.io/address/0x896C3e90446237be3e27eB4D67e0D3c97FB3b03F) | 0x896C3e90446237be3e27eB4D67e0D3c97FB3b03F |
 | [fTUSDx](https://testnet.snowtrace.io/address/0x36BBF94e66f0c953CB451b302e345D6E50c2A215) | 0x36BBF94e66f0c953CB451b302e345D6E50c2A215 |
-| [AVAXx](https://testnet.snowtrace.io/address/0x5735C32C38f5Af0FB04a7c77C832Ba4D7aBfFeC8)  | 0x5735C32C38f5Af0FB04a7c77C832Ba4D7aBfFeC8 |
 {% endtab %}
 {% endtabs %}
