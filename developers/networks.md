@@ -229,12 +229,12 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 
 | Resource                                                                                                        |                   Address                  |
 | --------------------------------------------------------------------------------------------------------------- | :----------------------------------------: |
-| [Resolver](https://goerli-optimism.etherscan.io/address/0x218B65780615Ff134f9Ad810CB98839534D3C0D6)            | 0x21d4E9fbB9DB742E6ef4f29d189a7C18B0b59136 |
-| [Host](https://goerli-optimism.etherscan.io/address/0x74b57883f8ce9F2BD330286E884CfD8BB24AC4ED)                | 0xE40983C2476032A0915600b9472B3141aA5B5Ba9 |
-| [CFAv1](https://goerli-optimism.etherscan.io/address/0x523481a8a5455efB1F301C6e00B5525Eb12a51da)               | 0xff48668fa670A85e55A7a822b352d5ccF3E7b18C |
-| [IDAv1](https://goerli-optimism.etherscan.io/address/0x98E5E5d915Bf79ceeF02c72D1bf8f5b26f0bcBaA)               | 0x96215257F2FcbB00135578f766c0449d239bd92F |
-| [SuperTokenFactory](https://goerli-optimism.etherscan.io/address/0xB5f0501908ca8A99fD31bEFCAc1cA458F3588671)   | 0x9aCc39d15e3f168c111a1D4F80271a9E526c9a9F |
-| [SuperfluidLoader v1](https://goerli-optimism.etherscan.io/address/0x777Be25F9fdcA87e8a0E06Ad4be93d65429FCb9f) | 0x5Bb5908dcCC9Bb0fC39a78CfDf9e47B4C08E9521 |
+| [Resolver](https://goerli-optimism.etherscan.io/address/0x21d4E9fbB9DB742E6ef4f29d189a7C18B0b59136)            | 0x21d4E9fbB9DB742E6ef4f29d189a7C18B0b59136 |
+| [Host](https://goerli-optimism.etherscan.io/address/0xE40983C2476032A0915600b9472B3141aA5B5Ba9)                | 0xE40983C2476032A0915600b9472B3141aA5B5Ba9 |
+| [CFAv1](https://goerli-optimism.etherscan.io/address/0xff48668fa670A85e55A7a822b352d5ccF3E7b18C)               | 0xff48668fa670A85e55A7a822b352d5ccF3E7b18C |
+| [IDAv1](https://goerli-optimism.etherscan.io/address/0x96215257F2FcbB00135578f766c0449d239bd92F)               | 0x96215257F2FcbB00135578f766c0449d239bd92F |
+| [SuperTokenFactory](https://goerli-optimism.etherscan.io/address/0x9aCc39d15e3f168c111a1D4F80271a9E526c9a9F)   | 0x9aCc39d15e3f168c111a1D4F80271a9E526c9a9F |
+| [SuperfluidLoader v1](https://goerli-optimism.etherscan.io/address/0x5Bb5908dcCC9Bb0fC39a78CfDf9e47B4C08E9521) | 0x5Bb5908dcCC9Bb0fC39a78CfDf9e47B4C08E9521 |
 | [CFAv1Forwarder](https://goerli-optimism.etherscan.io/address/0xcfA132E353cB4E398080B9700609bb008eceB125)      | 0xcfA132E353cB4E398080B9700609bb008eceB125 |
 {% endtab %}
 
