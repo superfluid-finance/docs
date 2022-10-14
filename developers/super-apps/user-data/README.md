@@ -12,7 +12,8 @@ Context is used for several key items within the Superfluid protocol such as gas
 
 This is from the host interface ([ISuperfluid.sol)](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/interfaces/superfluid/ISuperfluid.sol) file inside of our interfaces folder in the Superfluid repo. On line 21, we see `userData`.
 
-```
+{% code lineNumbers="true" %}
+```solidity
 struct Context {
         //
         // Call context
@@ -49,6 +50,7 @@ struct Context {
         ISuperfluidToken appAllowanceToken;
     }
 ```
+{% endcode %}
 
 Whenever you see `ctx` being moved around within the protocol, this struct is what's under the hood (it's just compiled down to bytes each time it's passed between functions).
 
@@ -58,21 +60,19 @@ As you can see, `userData` is one of the elements that makes up `Context`. For t
 
 To call a function in a Super Agreement, you first need to use `abi.encode` to compile a function call to the super agreement you're looking to trigger. Then, you need to pass the agreement type, the bytecode of the previously compiled function call, and `userData` to `callAgreement` (we'll get to userData next). The whole process looks like this:
 
-```
-//solidity
-//Matic Addresses for host and cfa
-
+```solidity
+// Addresses for host and cfa on Polygon
 ISuperfluid host = "0x3E14dC1b13c488a8d5D310918780c983bD5982E7";
 IConstantFlowAgreementV1 cfa = "0x6EeE6060f715257b970700bc2656De21dEdF074C";
-//DAIx
-ISuperToken acceptedToken = "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063";
-//empty user data
+// DAIx
+ISuperToken acceptedToken = "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063";solidss
+// empty user data
 bytes userData = "0x";
 
-//$1000 DAI per month
+// $1000 DAI per month
 int96 flowRate = "385802469135802";
 
-//receiver is arbitrary
+// receiver is arbitrary
 address receiver = "0x...";
 
 host.callAgreement(
@@ -80,7 +80,7 @@ host.callAgreement(
      abi.encodeWithSelector(
          cfa.createFlow.selector,
          acceptedToken,
-				 receiver
+         receiver
          flowRate,
          new bytes(0) // placeholder
      ),
@@ -90,16 +90,16 @@ host.callAgreement(
 
 > **Note**: `userData` is always passed into `callAgreement` as type `bytes` .
 
-```
-//solidity 
-//call agreement interface
+```solidity
+// call agreement interface
 function callAgreement(
    ISuperAgreement agreementClass,
    bytes calldata callData,
    bytes calldata userData
-     )
+)
      external
      //cleanCtx
+     //isAgreement(agreementClass)
      returns(bytes memory returnedData);
 ```
 
@@ -107,11 +107,9 @@ Behind the scenes, your `userData` variable is appended onto `Context`, which is
 
 When you execute an operation in the CFA contract for example (and create, update, or delete a flow), you'll have access to the Context that's available after the initial call to the protocol was made. For example, if I pass in `userData` when a create a flow into a Super App, I can decode the `context` & this user data inside any of the super app callbacks, and re-use or manipulate this data as I please. For example, if I send a transaction where `receiver` is a SuperApp, and pass along an encoded string 'hello sir' as `userData`:
 
-```
-//solidity
+```solidity
 string unformattedUserData = 'hello sir';
 bytes userData = abi.encode(unformattedUserData);
-
 
 host.callAgreement(
      cfa,
@@ -119,7 +117,7 @@ host.callAgreement(
          cfa.createFlow.selector,
          acceptedToken,
          //receiver is a super app...
-	 receiver
+         receiver
          flowRate,
          new bytes(0) // placeholder
      ),
@@ -129,34 +127,34 @@ host.callAgreement(
 
 I can decode the context that's passed into the callback, which will give me the Context struct displayed above. Then, since userData is one of the fields on the struct, we can abi.decode userData get back my value of 'hello sir' on the other side:
 
-```
-//inside of the afterAgreementCreated Super App Callback
+```solidity
+// inside of the afterAgreementCreated Super App Callback
 
 function afterAgreementCreated(
-        ISuperToken _superToken,
-        address _agreementClass,
-        bytes32, // _agreementId,
-        bytes calldata /*_agreementData*/,
-        bytes calldata ,// _cbdata,
-        bytes calldata _ctx
-    )
-        external override
-        onlyExpected(_superToken, _agreementClass)
-        onlyHost
-        returns (bytes memory newCtx)
-    {
-        
-        // decode Contex - this will return the entire Context struct
-        ISuperfluid.Context memory decompiledContext = _host.decodeCtx(_ctx);
+    ISuperToken _superToken,
+    address _agreementClass,
+    bytes32, // _agreementId,
+    bytes calldata /*_agreementData*/,
+    bytes calldata ,// _cbdata,
+    bytes calldata _ctx
+)
+    external override
+    onlyExpected(_superToken, _agreementClass)
+    onlyHost
+    returns (bytes memory newCtx)
+{
+    
+    // decode Contex - this will return the entire Context struct
+    ISuperfluid.Context memory decompiledContext = _host.decodeCtx(_ctx);
 
-	//userData is a one of the fields on the Context struct
-	//set decodedUserData variable to decoded value
-	//this will return 'hello sir'
-        decodedUserData = abi.decode(decompiledContext.userData, (string));
-        
-	//do some stuff with your decodedUserData
-        return _doSomeStuff(decodedUserData);
-    }
+    // userData is a one of the fields on the Context struct
+    //set decodedUserData variable to decoded value
+    // this will return 'hello sir'
+    decodedUserData = abi.decode(decompiledContext.userData, (string));
+    
+    // do some stuff with your decodedUserData
+    return _doSomeStuff(decodedUserData);
+}
 ```
 
 UserData can be _any_ arbitrary piece of data. Think of it as metadata that's associated with anything you do in a Super Agreement.
