@@ -10,47 +10,43 @@ Before we look at user data, let's take a quick dive into a new element: **Conte
 
 Context is used for several key items within the Superfluid protocol such as gas optimization, governance, security, and SuperApp callbacks. One parameter that's also available for use within the context field is userData.
 
-This is from the host interface ([ISuperfluid.sol)](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/interfaces/superfluid/ISuperfluid.sol) file inside of our interfaces folder in the Superfluid repo. On line 21, we see `userData`.
+This is from the host interface ([ISuperfluid.sol)](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/interfaces/superfluid/ISuperfluid.sol) file inside of our interfaces folder in the Superfluid repo. On line 20, we see `userData`.
 
-{% code lineNumbers="true" %}
-```solidity
-struct Context {
-        //
-        // Call context
-        //
-        // callback level
-        uint8 appLevel;
-        // type of call
-        uint8 callType;
-        // the system timestsamp
-        uint256 timestamp;
-        // The intended message sender for the call
-        address msgSender;
-
-        //
-        // Callback context
-        //
-        // For callbacks it is used to know which agreement function selector is called
-        bytes4 agreementSelector;
-        // User provided data for app callbacks
-        bytes userData;
-
-        //
-        // App context
-        //
-        // app allowance granted
-        uint256 appAllowanceGranted;
-        // app allowance wanted by the app callback
-        uint256 appAllowanceWanted;
-        // app allowance used, allowing negative values over a callback session
-        int256 appAllowanceUsed;
-        // app address
-        address appAddress;
-        // app allowance in super token
-        ISuperfluidToken appAllowanceToken;
-    }
-```
-{% endcode %}
+<pre class="language-solidity" data-line-numbers><code class="lang-solidity">struct Context {
+<strong>    //
+</strong>    // Call context
+    //
+    // callback level
+    uint8 appLevel;
+    // type of call
+    uint8 callType;
+    // the system timestsamp
+    uint256 timestamp;
+    // The intended message sender for the call
+    address msgSender;
+    
+    //
+    // Callback context
+    //
+    // For callbacks it is used to know which agreement function selector is called
+    bytes4 agreementSelector;
+    // User provided data for app callbacks
+    bytes userData;
+    
+    //
+    // App context
+    //
+    // app allowance granted
+    uint256 appAllowanceGranted;
+    // app allowance wanted by the app callback
+    uint256 appAllowanceWanted;
+    // app allowance used, allowing negative values over a callback session
+    int256 appAllowanceUsed;
+    // app address
+    address appAddress;
+    // app allowance in super token
+    ISuperfluidToken appAllowanceToken;
+}</code></pre>
 
 Whenever you see `ctx` being moved around within the protocol, this struct is what's under the hood (it's just compiled down to bytes each time it's passed between functions).
 
