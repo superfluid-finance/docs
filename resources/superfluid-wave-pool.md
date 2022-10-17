@@ -4,7 +4,7 @@ description: A ultra-easy way for you to earn prizes for the Superfluid-related 
 
 # 🌊 Superfluid Wave Pool
 
-![Surf's up](../../.gitbook/assets/waves-illustration.png)
+![Surf's up](../.gitbook/assets/waves-illustration.png)
 
 ### What's the Wave Pool?
 
@@ -100,7 +100,7 @@ Here is an assortment of different ideas for things to tackle as your Wave Proje
 
 {% embed url="https://superfluidhq.notion.site/Superfluid-Wave-Pool-Ideas-7e8c792758004bd2ae452d1f9810cc58" %}
 
-We suggest you drop your idea in the #🌊wave-pool channel in our Discord so we can give some thoughts and feedback. We could also open a thread for support as you begin navigating your work!
+We suggest you drop your idea in the [#🌊wave-pool](https://discord.com/channels/752490247643725875/1017102296372478052) channel in our Discord so we can give some thoughts and feedback. We could also open a thread for support as you begin navigating your work!
 
 #### **3. Start working on it**
 
@@ -122,7 +122,7 @@ If you worked together on a team on your Wave Project, just submit once for the 
 
 If you have a winning submission, the day after the Wave completes, we will DM you with details on on how to claim your prize along with a POAP to commemorate your accomplishment!&#x20;
 
-![](../../.gitbook/assets/Twitter\_Animated\_BG\_1.gif)
+![](../.gitbook/assets/Twitter\_Animated\_BG\_1.gif)
 
 We will also announce winners publicly in our Discord and highlight interesting submissions on our socials or during Community Calls.
 
