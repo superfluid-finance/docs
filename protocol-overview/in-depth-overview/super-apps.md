@@ -6,7 +6,7 @@ description: Making Super Agreements truly programmable
 
 ## Definition
 
-Super Apps are smart contracts that inherit Superfluid functionality giving them the ability to **react to Super Agreements**. Through callbacks, a Super App can "react" to the creating, updating, and deleting react with customized logic set in its smart contract code.
+Super Apps are smart contracts that are registered with the Superfluid Protocol allowing them to **react to Super Agreements**. **** Through callbacks, a Super App can "react" to the creating, updating, and deleting of Super Agreements that it's been engaged with by means of customized logic set in its smart contract code.
 
 ## **Reacting to Super Agreements**
 
@@ -25,6 +25,14 @@ A Super App, programmed to take all inbound flows to it and aggregate them into 
 {% hint style="info" %}
 **NOTE**: While any smart contract can engage Super Agreements, a smart contract **must have callbacks defined** in order to be classified as a Super App.
 {% endhint %}
+
+## Registering With The Protocol
+
+What does it mean that a Super App must be "registered"? Upon deployment, code should be implemented in a Super App that identifies that the smart contract being deployed is in fact a Super App within the protocol.&#x20;
+
+Why's this needed? Basically, if a stream is started to an address, the Superfluid Protocol will check if the address is in its mapping of Super Apps. If the address is identified as a Super App, the Protocol will look to activate the Super App's callbacks. This is what makes Super Apps reactive!
+
+<figure><img src="../../.gitbook/assets/image (82).png" alt=""><figcaption></figcaption></figure>
 
 ## Why Are Super Apps Needed?
 

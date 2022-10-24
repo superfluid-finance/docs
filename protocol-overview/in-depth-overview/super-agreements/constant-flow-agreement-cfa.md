@@ -156,13 +156,13 @@ What happens when an account's balance hits zero? When an account with a negativ
 
 ### Buffer
 
-When a stream is opened, an account must deposit a certain amount of Super Token for their stream as a cushion in case they hit critical. If an account cancels outbound streams before going critical, it will be refunded its buffer.&#x20;
+When a stream is opened, a certain amount of Super Tokens are witheld as a buffer in case the account hits critical. If an account cancels outbound streams before going critical, it will be refunded its buffer.
 
-When an account goes critical, Super Tokens can no longer be streamed from the account's balance (because there are none), so Super Tokens from the buffer are used to continue the account's outbound stream(s) until external accounts (Sentinels) step in and cancel them.
+However, when an account does go critical, Super Tokens can no longer be streamed from the account's balance (because there are none). As a result, Super Tokens from the buffer are used to continue the account's outbound stream(s) until external accounts (Sentinels) step in and cancel them.
 
 The remainder of the buffer is rewarded to the Sentinel that closes the stream (**note:** this is what happens in most cases, you can read about other liquidation rules [here](../../../sentinels/liquidations-and-toga.md)). This "liquidation" mechanism incentivizes accounts to close their streams before running out of tokens. It is an account owner's own responsibility to close their streams before reaching critical in order to avoid loss of the buffer.
 
-The size of the buffer deposit is based on time and flow rate. So for instance, on Polygon, a **4-hour buffer deposit** is taken on streams. So if you are streaming at a rate of 10 USDCx/hour, then a 40 USDCx deposit will be taken.
+The size of the buffer is based on time and flow rate. So for instance, on Polygon, a **4-hour buffer deposit** is taken on streams. So if you are streaming at a rate of 10 USDCx/hour, then a 40 USDCx deposit will be taken.
 
 ### Sentinels
 
