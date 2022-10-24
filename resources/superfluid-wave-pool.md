@@ -122,7 +122,7 @@ If you worked together on a team on your Wave Project, just submit once for the 
 
 If you have a winning submission, the day after the Wave completes, we will DM you with details on on how to claim your prize along with a POAP to commemorate your accomplishment!&#x20;
 
-![](../.gitbook/assets/Twitter\_Animated\_BG\_1.gif)
+<figure><img src="../.gitbook/assets/1_1jFnJCsrVfSxeyikzJPFDg (1).gif" alt=""><figcaption></figcaption></figure>
 
 We will also announce winners publicly in our Discord and highlight interesting submissions on our socials or during Community Calls.
 
