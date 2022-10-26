@@ -78,14 +78,6 @@ In order to become the PIC, you can either use the Dapp at https://toga.superflu
 
 **!! CAUTION !!** Do NOT use `ERC20.transfer()` for TOGA bids, because those may not trigger the needed callback in the future.
 
-Check out the [network directory](../developers/networks.md#mainnet-networks) for the TOGA contract address on different networks.
-
-### Solvency Dashboard
-
-Check out our solvency [dashboard](https://superfluid.metabaseapp.com/public/dashboard/3cf5c680-7b9d-49b2-90d0-1d7b7b589685?date\_filter=past30days) for more information on current liquidations & solvency. If you're accessing it via the iFrame below, scroll down to see charts & data visualizations.
-
-{% embed url="https://superfluid.metabaseapp.com/public/dashboard/3cf5c680-7b9d-49b2-90d0-1d7b7b589685?date_filter=past30days" %}
-
 ### Current Parameters
 
 {% tabs %}
