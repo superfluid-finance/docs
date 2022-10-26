@@ -2,7 +2,7 @@
 description: Interacting with Super Tokens in Solidity
 ---
 
-# Super Tokens - Solidity
+# Solidity
 
 Super Tokens have basic ERC20 functionality, some ERC777 functionality, and several functions to accommodate Superfluid Protocol functionality.&#x20;
 
@@ -13,12 +13,6 @@ Super Tokens have basic ERC20 functionality, some ERC777 functionality, and seve
 **Super Token Interface**
 
 {% embed url="https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/interfaces/superfluid/ISuperToken.sol" %}
-
-**Remix Example Contract**
-
-{% embed url="https://remix.ethereum.org/?#gist=3cabe40d7440589167df80116372e549&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.14+commit.80d49f37.js" %}
-An example contract that you can deploy to Goerli and use to experiment with Super Tokens in Solidity
-{% endembed %}
 
 Notice that the Super Token interface doesn't appear to show any [Super Agreement](../../protocol-overview/in-depth-overview/super-agreements/) functionality (i.e. there's no function in them that starts a stream or does a distribution). Why? Basically, Super Agreements are separate contracts! Computing your Super Token balance is a matter of netting the effects of each Super Agreement into your actual balance. This all happens when you view your balance with `balanceOf`. See this explained in our [Super Token In-Depth Explainer](../../protocol-overview/in-depth-overview/super-tokens.md),
 

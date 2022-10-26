@@ -78,6 +78,7 @@
 
 * [🥅 Liquidations & TOGA](sentinels/liquidations-and-toga.md)
 * [🛡 Running a Sentinel](sentinels/running-a-sentinel.md)
+* [🗺 Solvency Dashboard](sentinels/solvency-dashboard.md)
 
 ## Resources
 
