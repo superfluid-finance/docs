@@ -118,11 +118,11 @@ If you worked together on a team on your Wave Project, just submit once for the 
 
 {% embed url="https://airtable.com/shrg58mocu5zrxRSk" %}
 
-**5. Winners are announced**&#x20;
+#### **5. Winners are announced**&#x20;
 
 If you have a winning submission, the day after the Wave completes, we will DM you with details on on how to claim your prize along with a POAP to commemorate your accomplishment!&#x20;
 
-<figure><img src="../.gitbook/assets/1_1jFnJCsrVfSxeyikzJPFDg (1).gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/wave-pool-poaps.gif" alt=""><figcaption></figcaption></figure>
 
 We will also announce winners publicly in our Discord and highlight interesting submissions on our socials or during Community Calls.
 
