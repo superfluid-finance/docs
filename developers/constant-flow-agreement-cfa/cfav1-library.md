@@ -96,7 +96,7 @@ cfaV1.deleteFlow(address sender, address receiver, ISuperToken token, bytes memo
 
 As you can learn about [here](../super-apps/super-app-callbacks/calling-agreements-in-super-apps.md), Super Agreement calls in Super App callbacks require the updating of a context bytes variable. That context is returned at the end of the callback.
 
-Below, the `newCtx` is what's will be updated with each Super Agreement call.
+Below, the `newCtx` is the context bytes variable that will be updated with each Super Agreement call.
 
 ```solidity
 // Example Super App Callback
