@@ -79,7 +79,7 @@ cfaV1.deleteFlow(address sender, address receiver, ISuperToken token);
 
 **`receiver`** - the `address` of the receiver
 
-**`token`** - the `ISuperToken` used in the flow
+**`token`** - the `ISuperToken` used in the stream
 
 **`flowRate`** - an `int96` variable which represents the wei/_second_ rate you'd like to stream `token` to the receiver, denominated in `wei`. Money streams always move tokens per second so `flowRate` is always per second!
 
