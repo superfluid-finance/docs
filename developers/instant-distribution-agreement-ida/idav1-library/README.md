@@ -1,11 +1,8 @@
 ---
-description: >-
-  The IDAv1 Library is a thin layer of abstraction on the Instant Distribution
-  Agreement V1. This guide covers how to import, initialize, and use the
-  library, as well as documentation for each function.
+description: The CFAv1Library makes it easy to work with instant distributions in Solidity!
 ---
 
-# Solidity
+# IDA - Solidity
 
 ### Agreement Abstraction
 

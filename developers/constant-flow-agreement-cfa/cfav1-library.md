@@ -1,25 +1,34 @@
 ---
-description: >-
-  The CFAv1 Library is a thin layer of abstraction on the Constant Flow
-  Agreement V1. This guide covers how to import, initialize, and use the
-  library, as well as documentation for each function.
+description: The CFAv1Library makes it easy to work with money streams in Solidity!
 ---
 
 # CFA - Solidity
 
-### The CFA Library
+The [Constant Flow Agreement library](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/apps/CFAv1Library.sol) (`CFAv1Library.sol)` makes money streams in Solidity a piece of cake.&#x20;
 
-The [Constant Flow Agreement library](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/apps/CFAv1Library.sol) (`CFAv1Library.sol)` makes working with the CFA much simpler. Instead of following the `host.callAgreement(...)` pattern, you can make calls to the protocol in fewer lines of code. If you've already looked at the Superfluid [core-sdk](https://github.com/superfluid-finance/protocol-monorepo/tree/dev/packages/sdk-core), then the syntax for creating, updating, and deleting flows will look similar to what you may have already seen. For a more advanced set of examples using the CFA Library, you can refer to [this mock contract](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/mocks/CFALibraryMock.sol).
+**CFAv1Library Contract**
+
+{% embed url="https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/apps/CFAv1Library.sol" %}
+
+**Quickstart Guide**
+
+{% embed url="https://ethglobal.com/guides/introduction-to-superfluid-protocol-be10i#1-introduction" %}
+Make a contract that streams money in under 10 minutes!
+{% endembed %}
+
+## Getting Set To Start Streams
+
+Initialize the CFAv1Library in your constructor.
 
 ### Initializing the Library
 
 ```solidity
 // initializing the CFA Library
-pragma solidity ^0.8.0
+pragma solidity 0.8.14;
 
 import { 
     ISuperfluid 
-} from "@superfluid-finance/ethereum-contracts/contracts/interfaces/superfluid/ISuperfluid.sol"; //"@superfluid-finance/ethereum-monorepo/packages/ethereum-contracts/contracts/interfaces/superfluid/ISuperfluid.sol";
+} from "@superfluid-finance/ethereum-contracts/contracts/interfaces/superfluid/ISuperfluid.sol";
 
 import { 
     IConstantFlowAgreementV1 
@@ -29,7 +38,7 @@ import {
     CFAv1Library
 } from "@superfluid-finance/ethereum-contracts/contracts/apps/CFAv1Library.sol";
 
-contract CFALibraryMock {
+contract SomeContractWithCFAv1Library {
 
     using CFAv1Library for CFAv1Library.InitData;
     
@@ -40,73 +49,57 @@ contract CFALibraryMock {
         ISuperfluid host
     ) {
     
-    //initialize InitData struct, and set equal to cfaV1
-    cfaV1 = CFAv1Library.InitData(
+        //initialize InitData struct, and set equal to cfaV1
+        cfaV1 = CFAv1Library.InitData(
         host,
-        //here, we are deriving the address of the CFA using the host contract
-        IConstantFlowAgreementV1(
-            address(host.getAgreementClass(
+            //here, we are deriving the address of the CFA using the host contract
+            IConstantFlowAgreementV1(
+                address(host.getAgreementClass(
                     keccak256("org.superfluid-finance.agreements.ConstantFlowAgreement.v1")
                 ))
             )
         );
+        
     }
     
     //your contract code here...
 }
 ```
 
-### Using the CFA Library
+## Interacting With The CFA
 
-After initializing the library, it gets very simple to create, update, and delete flows:
-
-```solidity
-// CFA CRUD functionality
-cfaV1.createFlow(receiver, token, flowRate);
-cfaV1.updateFlow(receiver, token, flowRate);
-cfaV1.deleteFlow(sender, receiver, token);
-```
-
-If you'd like, you can also add user data as an optional parameter to each call to the CFA:
+### Create, Update, Delete Streams
 
 ```solidity
-// with user data
-cfaV1.createFlow(receiver, token, flowRate, userData);
-cfaV1.updateFlow(receiver, token, flowRate, userData);
-cfaV1.deleteFlow(sender, receiver, token, userData);
+// You simply make the calls directly through the `cfaV1` CFAv1Library object
+cfaV1.createFlow(address receiver, ISuperToken token, int96 flowRate)
+cfaV1.updateFlow(address receiver, ISuperToken token, int96 flowRate);
+cfaV1.deleteFlow(address sender, address receiver, ISuperToken token);
 ```
-
-However, it's worth noting that the parameters passed to each function in the library need to be of the same type as the parameters used in the vanilla solidity syntax seen in the beginning of this page:
 
 **`receiver`** - the `address` of the receiver
 
 **`token`** - the `ISuperToken` used in the flow
 
-**`flowRate`** - an `int96` variable which represents the total amount of the `token` you'd like to send per second, denominated in `wei`
+**`flowRate`** - an `int96` variable which represents the wei/_second_ rate you'd like to stream `token` to the receiver, denominated in `wei`. Money streams always move tokens per second so `flowRate` is always per second!
 
-**`userData`** - an optional `bytes` value which represents additional data you'd like to pass along with your function call. You can learn more about user data [here](../super-apps/user-data/).
+### Create, Update, Delete Streams _With_ [_User Data_](../super-apps/user-data/)__
 
-### Using the CFA Library inside of a Super App
+<pre class="language-solidity"><code class="lang-solidity">// Same function call just with additional parameter for user data
+<strong>cfaV1.createFlow(address receiver, ISuperToken token, int96 flowRate, bytes memory userData);
+</strong>cfaV1.updateFlow(address receiver, ISuperToken token, int96 flowRate, bytes memory userData);
+cfaV1.deleteFlow(address sender, address receiver, ISuperToken token, bytes memory userData);</code></pre>
 
-If you need to perform operations with the Constant Flow Agreement inside of Super App callbacks, the syntax for using the library will look somewhat different. You'll need to use the **withCtx** versions of each function. For more on why this is, you can see this section on [callAgreement vs callAgreementWithContext](../super-apps/super-app-callbacks/calling-agreements-in-super-apps.md).
+**`userData`** - an optional `bytes` value which represents additional data you'd like to pass along with your function call. You can learn more about the usefulness of user data [here](../super-apps/user-data/).
 
-```solidity
-// with Ctx - to be used inside of super app callbacks
-// NOTE: ctx is a bytes value
-cfaV1.createFlowWithCtx(ctx, receiver,token, flowRate);
-cfaV1.updateFlowWithCtx(ctx, receiver,token, flowRate);
-cfaV1.deleteFlowWithCtx(ctx, sender, receiver,token);
+### Create, Update, Delete Streams _In a_ [_Super App Callbacks_](../super-apps/super-app-callbacks/calling-agreements-in-super-apps.md)__
 
-//withCtx & userData - to be used inside of super app callbacks
-cfaV1.createFlowWithCtx(ctx, receiver, token, flowRate, userData);
-cfaV1.updateFlowWithCtx(ctx, receiver, token, flowRate, userData);
-cfaV1.deleteFlowWithCtx(ctx, sender, receiver,token, userData);
-```
+As you can learn about [here](../super-apps/super-app-callbacks/calling-agreements-in-super-apps.md), Super Agreement calls in Super App callbacks require the updating of a context bytes variable. That context is returned at the end of the callback.
 
-All other variable fields will are the same as detailed in the previous section, but `ctx` will be the `ctx` which is passed in to the Super App callback by the framework where these functions are being called. This `ctx` value is of type **`bytes`**. For example, in the afterAgreementCreated callback:
+Below, the `newCtx` is what's will be updated with each Super Agreement call.
 
 ```solidity
-//in super app callback
+// Example Super App Callback
 function afterAgreementCreated(
     ISuperToken superToken,
     address agreementClass,
@@ -116,14 +109,55 @@ function afterAgreementCreated(
     bytes calldata ctx
 ) external returns (bytes memory newCtx) {
     
-    //this function takes the callback's ctx value as the first param
-    //and returns an updated ctx value upon completion
-    return cfaV1.createFlowWithCtx(ctx, receiver,token, flowRate);
+     newCtx = ctx; // `newCtx` is context bytes variable for updating
+     
+     // ... callback logic
+    
 }
 ```
 
-The final parameter passed into the callback - `ctx`, will be passed as the `ctx` value to the withCtx functions within the library.
+So, to do CFA operations inside of Super App callbacks, you'll need to use the **withCtx** versions of each function.  These calls all return the updated context (a bytes memory)
 
-Each withCtx function in the library also returns a new ctx value as well, which you will need to return inside of the super app callback. Again, more information on this can be found in this section on [callAgreement vs callAgreementWithContext](../super-apps/super-app-callbacks/calling-agreements-in-super-apps.md#callagreement-vs-callagreementwithcontext).
+<pre class="language-solidity"><code class="lang-solidity">// We're assuming here that newCtx is what you've named the context bytes 
+// object that will be updated throughout the callback and returned
 
-###
+// Without user data
+cfaV1.createFlowWithCtx(
+    bytes memory ctx, // Pass in the context bytes variable for updating here
+    address receiver, 
+    ISuperToken token, 
+    int96 flowRate
+) returns (bytes memory);
+cfaV1.updateFlowWithCtx(bytes memory ctx, address receiver, ISuperToken token, flowRate) returns (bytes memory);
+cfaV1.deleteFlowWithCtx(bytes memory ctx, address sender, address receiver,token) returns (bytes memory);
+
+// With user data
+cfaV1.createFlowWithCtx(bytes memory ctx, address receiver, ISuperToken token, int96 flowRate, bytes memory userData) returns (bytes memory);
+<strong>cfaV1.updateFlowWithCtx(bytes memory ctx, address receiver, ISuperToken token, int96 flowRate, bytes memory userData) returns (bytes memory);
+</strong>cfaV1.deleteFlowWithCtx(bytes memory ctx, address sender, address receiver,token, userData) returns (bytes memory);</code></pre>
+
+**Example** - Here's the callback snippet continued showing the proper syntax
+
+```solidity
+// Example Super App Callback
+function afterAgreementCreated(
+    ISuperToken superToken,
+    address agreementClass,
+    bytes32, // _agreementId,
+    bytes calldata /_agreementData/,
+    bytes calldata ,// _cbdata,
+    bytes calldata ctx
+) external returns (bytes memory newCtx) {
+    
+     newCtx = ctx; // `newCtx` is context bytes variable for updating
+     
+     // start a stream to another address
+     newCtx = cfaV1.createFlowWithCtx(
+         newCtx,    // notice `newCtx` being passed in and updated here
+         [someReceiverAddress], 
+         [Super Token you want to stream],
+         [flow rate]
+     );
+    
+}
+```
