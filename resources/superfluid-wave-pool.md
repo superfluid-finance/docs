@@ -1,12 +1,18 @@
 ---
-description: A ultra-easy way for you to earn prizes for the Superfluid-related work you do
+description: >-
+  A continuous Superfluid Hackathon - helping Web3 devs and creators level up by
+  tackling our tech
 ---
 
 # 🌊 Superfluid Wave Pool
 
 ![Surf's up](../.gitbook/assets/waves-illustration.png)
 
-### What's the Wave Pool?
+## General Info
+
+<details>
+
+<summary><mark style="color:green;">What's the Wave Pool?</mark></summary>
 
 The Wave Pool is a "continuous hackathon" that repeats every month. During the month, community members may submit Superfluid-related work to each Wave and be put in the running for the Wave's prizes (like a hackathon!).
 
@@ -18,9 +24,21 @@ However, unlike a hackathon, the Wave Pool is **not just for technical work**! _
 
 **Waves last over each month** - For example, Wave #1 will span from September 1st to September 30th. Right after one finishes, the next one starts!
 
-**Start or Submit **_**ANYTIME**_** ** - Wave Projects can be started or submitted at _any time_. The only limitation is that your submission must be completed during the Wave you submit it for. So for example, work you finished 3 months ago wouldn't be eligible for this month's Wave.
+**Start or Submit **_**ANYTIME**_** ** - Wave Projects can be started or submitted at _any time_. The only limitation is that you can't submit old work from a previous month. So for example, a project you finished 3 months ago wouldn't be eligible for this month's Wave.
 
-### Current Prizes
+</details>
+
+<details>
+
+<summary><mark style="color:green;">Why the Wave Pool?</mark></summary>
+
+As a dev or creator, the Wave Pool is your chance to take our tech, build something really cool with it, and then have a submission to show and demonstrate as a testament to your skills. Competing in the Wave Pool is <mark style="color:green;">an opportunity to further your career as a developer and earn distinguishment!</mark>
+
+Prize winner or not, you'll be given exposure to the Superfluid team and community. Our ecosystem and network is an asset for anyone aspiring to develop a career in the Web3 space. From the growing number of start ups leveraging real-time finance to the increasing value of knowing how to build with Superfluid, a strong Wave Pool submission will give your resume a boost.
+
+</details>
+
+## Current Prizes
 
 Currently, the top three submissions to the current Wave will earn one of the below prizes 🥇
 
@@ -32,7 +50,7 @@ Currently, the top three submissions to the current Wave will earn one of the be
 
 If you did good work, but didn’t quite make the Top 3 cut, we may likely reward you an ad hoc **Honorable Mention** prize!
 
-### Get Started 🙋‍♀️
+## Get Started 🙋‍♀️
 
 #### **1. First, understand what kind of work is acceptable 👇**
 
@@ -63,6 +81,8 @@ An article or video is already presentable, but if you're submitting code, make 
 **7. New Work**
 
 Previous hackathon Superfluid submissions won't count unless you're submitting additional post-hackathon itemized progress.
+
+**Note:** If you complete multiple projects in the same month, it's okay to submit them in the same month. By doing this, you'll have the chance to place for multiple prizes.&#x20;
 
 </details>
 
@@ -120,7 +140,7 @@ If you worked together on a team on your Wave Project, just submit once for the 
 
 #### **5. Winners are announced**&#x20;
 
-If you have a winning submission, the day after the Wave completes, we will DM you with details on on how to claim your prize along with a POAP to commemorate your accomplishment!&#x20;
+If you have a winning submission, in the days after the Wave completes, we will DM you with details on on how to claim your prize along with a POAP to commemorate your accomplishment!&#x20;
 
 <figure><img src="../.gitbook/assets/wave-pool-poaps.gif" alt=""><figcaption></figcaption></figure>
 
