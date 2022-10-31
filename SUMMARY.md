@@ -65,6 +65,7 @@
   * [Calling Super Agreements](developers/solidity-examples/interacting-with-superfluid-smart-contracts.md)
   * [Libraries](developers/solidity-examples/libraries.md)
   * [Resolver](developers/solidity-examples/resolver.md)
+* [Testing a Superfluid Project](developers/testing-a-superfluid-project.md)
 * [Subgraph](developers/subgraph.md)
 * [Reference](developers/reference-documentations/README.md)
   * [Deploying The Framework](developers/reference-documentations/production-deployment.md)
