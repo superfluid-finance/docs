@@ -1,8 +1,8 @@
 ---
-description: How to deploy the framework locally for testing
+description: How to deploy the framework locally for testing in Foundry & Hardhat
 ---
 
-# Testing a Superfluid Project
+# Superfluid Testing Guide
 
 Testing is a critical component of building any piece of software. When testing locally with Superfluid, you’ll need to deploy the framework first before running your tests. Below, you’ll find examples on how to do this in common web3 development environments. No matter what environment you choose to use, setting up a test suite for a Superfluid project has two components:
 
