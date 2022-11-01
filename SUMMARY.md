@@ -73,7 +73,7 @@
   * [SDK Redux](https://refs.superfluid.finance/sdk-redux/)
   * [Superfluid Console](http://console.superfluid.finance)
   * [Superfluid Protocol Addresses](https://console.superfluid.finance/protocol)
-* [Network Directory](developers/networks.md)
+* [Contract Addresses](developers/networks.md)
 
 ## Sentinels
 
