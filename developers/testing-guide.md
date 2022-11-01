@@ -2,7 +2,7 @@
 description: How to deploy the framework locally for testing in Foundry & Hardhat
 ---
 
-# Superfluid Testing Guide
+# Testing Guide
 
 Testing is a critical component of building any piece of software. When testing locally with Superfluid, you’ll need to deploy the framework first before running your tests. Below, you’ll find examples on how to do this in common web3 development environments. No matter what environment you choose to use, setting up a test suite for a Superfluid project has two components:
 
@@ -12,6 +12,12 @@ Testing is a critical component of building any piece of software. When testing 
 {% hint style="info" %}
 💡 These examples reference the MoneyRouter contract which is covered in detail in [this video](https://www.youtube.com/watch?v=1mwbYQ429IU\&t=244s) on money streaming in solidity.
 {% endhint %}
+
+### Video Tutorial
+
+For the visually inclined, we also have a video on this topic.
+
+{% embed url="https://youtu.be/C_PGd8CPdfg" %}
 
 ### Hardhat Example
 
