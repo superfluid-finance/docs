@@ -50,7 +50,8 @@ _\*\* This is a soft deadline. It is simply so we can check up on progress and o
 2.  Once it's merged, fill out this [**Bounty KYC Form**](https://docs.google.com/forms/d/e/1FAIpQLSePPMtMcDndvgJvpkDMtY1BChkrXaqABO0SKA-4c-i2rbhZKA/viewform) and submit this [**Request Invoice**](https://app.request.finance/create/3834fe3c2faaa829) to us.
 
     \- In the Bounty KYC Form, for "Hackathon Name" put down the "Bounty"\
-    \- In the Bounty KYC Form, for "Your Hack Name" put down the title of your bounty
+    \- In the Bounty KYC Form, for "Your Hack Name" put down the title of your bounty\
+    \- In the Request Invoice, please invoice for USDC (not DAI or any other token)
 3. Wait for your bounty to pay out on the next Wednesday! Congrats on your valued contribution to Superfluid 🏁
 
 **NOTE: Bounty hunters must adhere to the following statement 👇**

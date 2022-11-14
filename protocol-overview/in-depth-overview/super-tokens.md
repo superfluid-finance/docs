@@ -53,7 +53,7 @@ To unwrap, the opposite happens; a desired amount of Super Tokens are burned and
 
 **Example**
 
-![](<../../.gitbook/assets/image (40).png>)
+![](<../../.gitbook/assets/image (37) (1).png>)
 
 ### Custom
 
@@ -63,4 +63,4 @@ Custom Super Tokens don't have an underlying token. They exist only as Super Tok
 
 $RIC is a governance token deployed by [Ricochet DAO](https://ricochet.exchange/), a community building Superfluid-powered investment tools. Knowing that they would be heavily using Super Agreements (money streaming and instant distributions) on $RIC, they chose to deploy it directly as a Custom Super Token, rather than a plain ERC20 with an accompanying Wrapper Super Token.
 
-![](<../../.gitbook/assets/image (31) (2).png>)
+![](<../../.gitbook/assets/image (52).png>)

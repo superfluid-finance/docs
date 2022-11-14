@@ -24,7 +24,7 @@ Before we get started with project setup, you'll also want to head over to the [
 
 ![](<../../../.gitbook/assets/Screen Shot 2021-10-16 at 8.45.29 AM.png>)
 
-![](<../../../.gitbook/assets/Screen Shot 2021-10-15 at 11.24.31 AM (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/Screen Shot 2021-10-15 at 11.24.31 AM (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
 You'll want to have 2 Ethereum addresses ready: one of which you'll need your private key for (that has our test tokens), the other which we'll just be observing.
 
