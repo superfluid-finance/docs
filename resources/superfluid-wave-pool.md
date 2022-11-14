@@ -42,11 +42,13 @@ Prize winner or not, you'll be given exposure to the Superfluid team and communi
 
 Currently, the top three submissions to the current Wave will earn one of the below prizes 🥇
 
-**1st Place** - $1,000
+**1st Place** - $2,000
 
-**2nd Place** - $750
+**2nd Place** - $1,500
 
-**3rd Place** - $500
+**3rd Place** - $1000
+
+\+ a bonus $500 prize for best project integrating Superfluid and another protocol
 
 If you did good work, but didn’t quite make the Top 3 cut, we may likely reward you an ad hoc **Honorable Mention** prize!
 
