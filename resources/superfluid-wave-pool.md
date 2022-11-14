@@ -82,7 +82,7 @@ An article or video is already presentable, but if you're submitting code, make 
 
 Previous hackathon Superfluid submissions won't count unless you're submitting additional post-hackathon itemized progress.
 
-**Note:** If you complete multiple projects in the same month, it's okay to submit them in the same month. By doing this, you'll have the chance to place for multiple prizes.&#x20;
+**Note:** If you complete multiple projects in the same month, it's okay to submit them in the same month. We'll consider the sum of your work when judging for prizes.
 
 </details>
 
