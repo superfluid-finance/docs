@@ -14,6 +14,12 @@ error SF_GOV_ARRAYS_NOT_SAME_LENGTH()
 error SF_GOV_INVALID_LIQUIDATION_OR_PATRICIAN_PERIOD()
 ```
 
+## SF_GOV_MUST_BE_CONTRACT
+
+```solidity
+error SF_GOV_MUST_BE_CONTRACT()
+```
+
 ## Fn replaceGovernance
 
 ```solidity

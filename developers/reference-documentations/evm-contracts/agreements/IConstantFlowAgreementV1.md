@@ -56,6 +56,42 @@ error CFA_ACL_NO_SENDER_FLOW_OPERATOR()
 error CFA_ACL_NO_NEGATIVE_ALLOWANCE()
 ```
 
+## CFA_FLOW_ALREADY_EXISTS
+
+```solidity
+error CFA_FLOW_ALREADY_EXISTS()
+```
+
+## CFA_FLOW_DOES_NOT_EXIST
+
+```solidity
+error CFA_FLOW_DOES_NOT_EXIST()
+```
+
+## CFA_INSUFFICIENT_BALANCE
+
+```solidity
+error CFA_INSUFFICIENT_BALANCE()
+```
+
+## CFA_ZERO_ADDRESS_SENDER
+
+```solidity
+error CFA_ZERO_ADDRESS_SENDER()
+```
+
+## CFA_ZERO_ADDRESS_RECEIVER
+
+```solidity
+error CFA_ZERO_ADDRESS_RECEIVER()
+```
+
+## CFA_HOOK_OUT_OF_GAS
+
+```solidity
+error CFA_HOOK_OUT_OF_GAS()
+```
+
 ## CFA_DEPOSIT_TOO_BIG
 
 ```solidity

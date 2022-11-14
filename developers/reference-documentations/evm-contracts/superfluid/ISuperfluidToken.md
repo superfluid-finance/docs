@@ -2,6 +2,42 @@
 
 **Superfluid token interface**
 
+## SF_TOKEN_AGREEMENT_ALREADY_EXISTS
+
+```solidity
+error SF_TOKEN_AGREEMENT_ALREADY_EXISTS()
+```
+
+## SF_TOKEN_AGREEMENT_DOES_NOT_EXIST
+
+```solidity
+error SF_TOKEN_AGREEMENT_DOES_NOT_EXIST()
+```
+
+## SF_TOKEN_BURN_INSUFFICIENT_BALANCE
+
+```solidity
+error SF_TOKEN_BURN_INSUFFICIENT_BALANCE()
+```
+
+## SF_TOKEN_MOVE_INSUFFICIENT_BALANCE
+
+```solidity
+error SF_TOKEN_MOVE_INSUFFICIENT_BALANCE()
+```
+
+## SF_TOKEN_ONLY_LISTED_AGREEMENT
+
+```solidity
+error SF_TOKEN_ONLY_LISTED_AGREEMENT()
+```
+
+## SF_TOKEN_ONLY_HOST
+
+```solidity
+error SF_TOKEN_ONLY_HOST()
+```
+
 ## Fn getHost
 
 ```solidity
