@@ -35,4 +35,4 @@ before(async function () {
 
 #### Now You're All Set!
 
-Notice that there was no need to deploy the Framework or Super Tokens as these already exist on the chain you are testing.
+Notice that there was no need to deploy the Framework is already exists on the chain you are testing.
