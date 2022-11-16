@@ -6,17 +6,17 @@ description: The CFAv1Library makes it easy to work with money streams in Solidi
 
 The [Constant Flow Agreement library](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/apps/CFAv1Library.sol) (`CFAv1Library.sol)` makes money streams in Solidity a piece of cake.&#x20;
 
-**CFAv1Library Contract**
+#### **CFAv1Library Contract**
 
 {% embed url="https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/apps/CFAv1Library.sol" %}
 
-**Quickstart Guide**
+#### **Quickstart Guide**
 
 {% embed url="https://ethglobal.com/guides/introduction-to-superfluid-protocol-be10i#1-introduction" %}
 Make a contract that streams money in under 10 minutes!
 {% endembed %}
 
-**Example Code**
+#### **Example Code**
 
 {% embed url="https://github.com/superfluid-finance/super-examples/blob/main/projects/money-streaming-intro/contracts/MoneyRouter.sol" %}
 Simple contract showing usage of many CFAv1Library functions

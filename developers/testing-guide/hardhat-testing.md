@@ -1,25 +1,16 @@
----
-description: How to deploy the framework locally for testing in Foundry & Hardhat
----
+# Hardhat Testing
 
-# Testing Guide
+**Video Tutorial**
 
-Testing is a critical component of building any piece of software. When testing locally with Superfluid, you’ll need to deploy the framework first before running your tests. Below, you’ll find examples on how to do this in common web3 development environments. No matter what environment you choose to use, setting up a test suite for a Superfluid project has two components:
+For the visually inclined, view our video explainer [**HERE**](https://www.youtube.com/watch?v=C\_PGd8CPdfg).
 
-1. Deploying the framework
-2. Minting fake super tokens to use within your tests
+**Example Code**
 
-{% hint style="info" %}
-💡 These examples reference the MoneyRouter contract which is covered in detail in [this video](https://www.youtube.com/watch?v=1mwbYQ429IU\&t=244s) on money streaming in solidity.
-{% endhint %}
+{% embed url="https://github.com/superfluid-finance/super-examples/blob/main/projects/money-streaming-intro/money-streaming-intro-hardhat/test/MoneyRouter.test.js" %}
+Hardhat test suite from our Money Router example
+{% endembed %}
 
-### Video Tutorial
-
-For the visually inclined, we also have a video on this topic.
-
-{% embed url="https://youtu.be/C_PGd8CPdfg" %}
-
-### Hardhat Example
+## Hardhat Example
 
 We recommend including the following imports and deployment scripts when setting up your hardhat tests. The `deployTestFramework()` script will allow you to deploy the framework using the [SuperfluidFrameworkDeployer](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/utils/SuperfluidFrameworkDeployer.sol) contract, and to call `deploySuperTokenWrapper()` to mint fake Super Tokens for your tests.
 
@@ -111,74 +102,3 @@ before(async function () {
 
 //Write your tests...
 ```
-
-### Foundry Example
-
-Within a foundry test file, you can call the SuperfluidFrameworkDeployer contract directly in your `setUp()` function.
-
-```solidity
-import "forge-std/Test.sol";
-import "../../contracts/MoneyRouter.sol";
-import {ISuperfluid} from "@superfluid-finance/ethereum-contracts/contracts/interfaces/superfluid/ISuperfluid.sol";
-
-import {
-    SuperfluidFrameworkDeployer,
-    TestGovernance,
-    Superfluid,
-    ConstantFlowAgreementV1,
-    CFAv1Library,
-    SuperTokenFactory
-} from "@superfluid-finance/ethereum-contracts/contracts/utils/SuperfluidFrameworkDeployer.sol";
-
-contract StreamRebounderRandomTest is Test {
-
-    StreamRebounder public streamRebounder;
-    
-    struct Framework {
-        TestGovernance governance;
-        Superfluid host;
-        ConstantFlowAgreementV1 cfa;
-        CFAv1Library.InitData cfaLib;
-        InstantDistributionAgreementV1 ida;
-        IDAv1Library.InitData idaLib;
-        SuperTokenFactory superTokenFactory;
-    }
-
-    SuperfluidFrameworkDeployer.Framework sf;
-    
-    function setUp() public {
-				
-	address public owner;
-	//DEPLOYING THE FRAMEWORK
-        SuperfluidFrameworkDeployer sfDeployer = new SuperfluidFrameworkDeployer();
-        sf = sfDeployer.getFramework();
-				
-	// DEPLOYING DAI and DAI wrapper super token
-
-	vm.prank(owner);
-	ISuperToken daix = sfDeployer.deployWrapperToken(
-	    "Fake DAI", "DAI", 18, 10000000000000
-	);
-	
-        MoneyRouter = new StreamRebounder(
-            sf.host,
-            owner
-        );
-    }
-
-    //add other functions and test contracts...
-
-}
-```
-
-When using foundry, you'll need to install `superfluid-finance/ethereum-contracts`. If you have issues when running `forge install`, try using the `--no-commit` flag.
-
-### But what about truffle/brownie/other environment?
-
-We have a legacy truffle example that you can find [here](https://github.com/superfluid-finance/protocol-monorepo/blob/chainshot/examples/archive/tradeable-cashflow-truffle/test/TradeableCashflow.test.js). It is very similar to the Hardhat example above, but with some minor differences in terms of imports & scripts used for framework deployment.
-
-A brownie/python example is in the works. Stay tuned (:
-
-If you have any questions on how to set up your tests for a Superfluid project, please contact us in discord.&#x20;
-
-{% embed url="https://discord.superfluid.finance" %}
