@@ -26,7 +26,7 @@ Returns a JSON object literal with the below info:
 
 | Key           | Value Type | Value Description                                                                                                                                                        |
 | ------------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `timestamp`   | `Date`     | Timestamp when the stream was last updated for the superToken                                                                                                            |
+| `timestamp`   | `Date`     | Timestamp when the stream of `superToken` was last updated by the account                                                                                                |
 | `flowRate`    | `string`   | Flow rate (wei/second) of the stream. Always zero or positive.                                                                                                           |
 | `deposit`     | `string`   | [Buffer deposit](https://docs.superfluid.finance/superfluid/protocol-overview/in-depth-overview/super-agreements/constant-flow-agreement-cfa#buffer) held for the stream |
 | `owedDeposit` | `string`   | [Additional deposit](https://docs.superfluid.finance/superfluid/sentinels/liquidations-and-toga#liquidation-and-solvency) if the stream is to a Super App                |
