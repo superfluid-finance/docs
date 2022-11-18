@@ -1,0 +1,106 @@
+---
+description: Stream money with the Constant Flow Agreement using the SDK Core
+---
+
+# CFA - SDK Core
+
+The `ConstantFlowAgreementV1` helper class provides access to create/update/delete flows. You can access this via the `Framework` class (`sf.cfaV1`) or initialize this as a standalone class.
+
+## Accessing the CFAv1 Contract
+
+**Using SDK Core Framework Object**
+
+```typescript
+// refresher on initializing the Framework
+import { Framework } from "@superfluid-finance/sdk-core";
+import { ethers } from "ethers";
+
+const sf = await Framework.create({
+  chainId: 137,
+  provider
+});
+
+// access the cfaV1 object via the Framework class
+// see below for a complete example
+const flowInfo = await sf.cfaV1.getFlowInfo(...)
+```
+
+**Direct Initialization**
+
+```typescript
+import { ConstantFlowAgreementV1 } from "@superfluid-finance/sdk-core";
+
+const config = {
+  hostAddress: "0x3E14dC1b13c488a8d5D310918780c983bD5982E7",
+  cfaV1Address: "0x6EeE6060f715257b970700bc2656De21dEdF074C",
+  idaV1Address: "0xB0aABBA4B2783A72C52956CDEF62d438ecA2d7a1"
+};
+
+const cfaV1 = new ConstantFlowAgreementV1({ options: config });
+```
+
+## **Methods**
+
+#### **Read Methods**
+
+[getFlow](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-operations/read-methods/getflow): Get the flow data between `sender` and `receiver` of `token`
+
+[getNetFlow](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-operations/read-methods/getnetflow): Get the net flow rate of the account
+
+[getAccountFlowInfo](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-operations/read-methods/getaccountflowinfo): **** Get the aggregated flow info of the account
+
+#### **Write Methods**
+
+[createFlow](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-operations/write-methods/createflow): Starts a stream from a sender to a chosen receiver&#x20;
+
+[updateFlow](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-operations/write-methods/updateflow): Updates an existing stream between a sender to a chosen receiver
+
+[deleteFlow](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-operations/write-methods/deleteflow): Cancels a existing stream between a sender to a chosen receiver
+
+[createFlowByOperator](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-access-control-list-acl/acl-features): Starts a stream between two accounts using ACL permissions
+
+[updateFlowByOperator](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-access-control-list-acl/acl-features): Updates a stream between two accounts using ACL permissions&#x20;
+
+[deleteFlowByOperator](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-access-control-list-acl/acl-features): Deletes a stream between two accounts using ACL permissions
+
+[updateFlowOperatorPermissions](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-access-control-list-acl/acl-features): sets ACL permissions of an account has over the sender's account
+
+[revokeFlowOperatorPermissions](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-access-control-list-acl/acl-features): revokes all ACL permissions that an account has over the sender's account
+
+**Example Usage**
+
+```typescript
+import { Framework } from "@superfluid-finance/sdk-core";
+import { ethers } from "ethers";
+
+const provider = new ethers.providers.InfuraProvider(
+  "matic",
+  "<INFURA_API_KEY>"
+);
+
+const sf = await Framework.create({
+  chainId: 137,
+  provider
+});
+
+// Read example
+const flowInfo = await sf.cfaV1.getFlow({
+  superToken: "0x...",
+  sender: "0x...",
+  receiver: "0x...",
+  providerOrSigner: provider
+});
+console.log("flowInfo", flowInfo);
+
+// Write operation example
+const signer = sf.createSigner({ privateKey: "<TEST_ACCOUNT_PRIVATE_KEY>", provider });
+const createFlowOperation = sf.cfaV1.createFlow({
+  sender: "0x...",
+  receiver: "0x...",
+  superToken: "0x...",
+  flowRate: "1000000000"
+});
+const txnResponse = await createFlowOperation.exec(signer);
+const txnReceipt = await txnResponse.wait();
+// Transaction Complete when code reaches here
+```

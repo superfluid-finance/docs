@@ -10,8 +10,8 @@ Each Superfluid Developer Subject (Super Tokens, CFA, etc.) has a page dedicated
 
 ## Constant Flow Agreement (CFA)
 
-{% content-ref url="../constant-flow-agreement-cfa/cfa-operations/" %}
-[cfa-operations](../constant-flow-agreement-cfa/cfa-operations/)
+{% content-ref url="../constant-flow-agreement-cfa/cfa-operations.md" %}
+[cfa-operations.md](../constant-flow-agreement-cfa/cfa-operations.md)
 {% endcontent-ref %}
 
 ## Access Control List for CFA

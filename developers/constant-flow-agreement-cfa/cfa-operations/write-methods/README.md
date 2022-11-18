@@ -19,7 +19,7 @@ let createFlowOp = sf.cfaV1.createFlow({
 await createFlowOp.exec(aliceSigner);
 ```
 
-Conveniently, this lets you recycle the operation. Say I want to call the same operation on `bobSigner`'s account. I can just execute it again on `bobSigner`!
+Conveniently, this lets you recycle the operation. Say you want to call the same operation on `bobSigner`'s account. You can just execute it again on `bobSigner`!
 
 ```
 // Execute the same operation on bobSigner to create 100,000 wei/second stream

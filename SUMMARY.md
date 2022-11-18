@@ -37,7 +37,7 @@
   * [Test Super Token Faucet](developers/super-tokens/super-token-faucet.md)
 * [🌊 Constant Flow Agreement (CFA)](developers/constant-flow-agreement-cfa/README.md)
   * [CFA - Solidity](developers/constant-flow-agreement-cfa/cfav1-library.md)
-  * [CFA - SDK Core](developers/constant-flow-agreement-cfa/cfa-operations/README.md)
+  * [CFA - SDK Core](developers/constant-flow-agreement-cfa/cfa-operations.md)
     * [Read Methods](developers/constant-flow-agreement-cfa/cfa-operations/read-methods/README.md)
       * [getFlow](developers/constant-flow-agreement-cfa/cfa-operations/read-methods/getflow.md)
       * [getNetFlow](developers/constant-flow-agreement-cfa/cfa-operations/read-methods/getnetflow.md)
