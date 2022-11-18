@@ -43,7 +43,7 @@ const cfaV1 = new ConstantFlowAgreementV1({ options: config });
 
 ### **Read Methods**
 
-[`getFlow`](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-operations/read-methods/getflow): Get flow data on a stream between two accounts
+[`getFlow`](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-operations/read-methods/getflow): Get data on a stream between two accounts
 
 [`getNetFlow`](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-operations/read-methods/getnetflow): Get the net flow rate of an account for a certain Super Token
 
