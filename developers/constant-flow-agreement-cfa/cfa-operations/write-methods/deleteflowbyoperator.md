@@ -1,16 +1,16 @@
-# deleteFlow
+# deleteFlowByOperator
 
-Lets a sender delete an existing stream to a receiver
+Deletes an existing stream from a `sender` to a `receiver` using [ACL permissions](../../cfa-access-control-list-acl/).
 
 ```
-let flowOp = sf.cfaV1.deleteFlow({
+let flowOp = sf.cfaV1.deleteFlowByOperator({
   superToken: string,
   sender: string,
   receiver: string,
   userData?: string
 });
 
-await flowOp.exec( <<ethers signer>> ); // should have same address as sender
+await flowOp.exec( <<ethers signer>> );
 ```
 
 ### Parameters
@@ -28,4 +28,4 @@ await flowOp.exec( <<ethers signer>> ); // should have same address as sender
 
 ### Additional Considerations
 
-* If there is already no stream from sender to receiver, then `deleteFlow` will revert.
+* If there is already no stream from sender to receiver, then `deleteFlowByOperator` will revert.

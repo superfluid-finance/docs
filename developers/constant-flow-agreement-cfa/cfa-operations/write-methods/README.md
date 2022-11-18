@@ -6,7 +6,6 @@ Write operations are instantiated and then executed with the `exec` function. Se
 
 ```javascript
 // 1) Instantiate operation to create a 100,000 wei/second stream
-
 let createFlowOp = sf.cfaV1.createFlow({
   sender: "0xAbC...",
   receiver: "0xXyZ...",
@@ -15,15 +14,14 @@ let createFlowOp = sf.cfaV1.createFlow({
 });
 
 // 2) Execute operation on aliceSigner
-
 await createFlowOp.exec(aliceSigner);
 ```
 
-Conveniently, this lets you recycle the operation. Say you want to call the same operation on `bobSigner`'s account. You can just execute it again on `bobSigner`!
+Conveniently, this lets you recycle the operation. Say you want to call the same `createFlow` operation again - you can reuse the operation object on `aliceSigner`!
 
-```
-// Execute the same operation on bobSigner to create 100,000 wei/second stream
-await createFlowOp.exec(bobSigner);
+```javascript
+// 3) USe the same operation object to create 100,000 wei/second stream again
+await createFlowOp.exec(aliceSigner);
 ```
 
 ## Method Catalog

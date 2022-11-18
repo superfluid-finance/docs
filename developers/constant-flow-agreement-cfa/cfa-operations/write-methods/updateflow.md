@@ -11,7 +11,7 @@ let flowOp = sf.cfaV1.updateFlow({
   userData?: string
 });
 
-await flowOp.exec( <<ethers signer of sender>> );
+await flowOp.exec( <<ethers signer>> ); // should have same address as sender
 ```
 
 ### Parameters
