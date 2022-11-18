@@ -6,7 +6,9 @@ description: Stream money with the Constant Flow Agreement using the SDK Core
 
 The `ConstantFlowAgreementV1` helper class provides access to create/update/delete flows. You can access this via the `Framework` class (`sf.cfaV1`) or initialize this as a standalone class.
 
-#### Using the `Framework` Class
+## Accessing the CFAv1 Contract
+
+**Using SDK Core Framework Object**
 
 ```typescript
 // refresher on initializing the Framework
@@ -18,8 +20,8 @@ const sf = await Framework.create({
   provider
 });
 
-//access the cfaV1 object via the Framework class
-//see below for a complete example
+// access the cfaV1 object via the Framework class
+// see below for a complete example
 const flowInfo = await sf.cfaV1.getFlowInfo(...)
 ```
 
@@ -37,91 +39,33 @@ const config = {
 const cfaV1 = new ConstantFlowAgreementV1({ options: config });
 ```
 
-**CFAV1 Functions**
+## **Methods**
 
-```typescript
-// Read functions
-await sf.cfaV1.getFlow({
-  superToken: string,
-  sender: string,
-  receiver: string,
-  providerOrSigner: ethers.providers.Provider | ethers.Signer
-});
+#### **Read Methods**
 
-await sf.cfaV1.getAccountFlowInfo({
-  superToken: string,
-  account: string,
-  providerOrSigner: ethers.providers.Provider | ethers.Signer
-});
+getFlow: Get the flow data between `sender` and `receiver` of `token`
 
-await sf.cfaV1.getNetFlow({
-  superToken: string,
-  account: string,
-  providerOrSigner: ethers.providers.Provider | ethers.Signer
-});
+getAccountFlowInfo: **** Get the aggregated flow info of the account
 
+getNetFlow: Get the net flow rate of the account
 
-// Write operations
-sf.cfaV1.createFlow({
-  sender: string,
-  receiver: string,
-  superToken: string,
-  flowRate: string,
-  userData?: string
-});
+#### **Write Methods**
 
-sf.cfaV1.updateFlow({
-  sender: string,
-  receiver: string,
-  superToken: string,
-  flowRate: string,
-  userData?: string
-});
+createFlow: Starts a stream from a sender to a chosen receiver&#x20;
 
-sf.cfaV1.deleteFlow({
-  sender: string,
-  receiver: string,
-  superToken: string,
-  userData?: string
-});
+updateFlow: Updates an existing stream between a sender to a chosen receiver
 
-//ACL Usage
+deleteFlow: Cancels a existing stream between a sender to a chosen receiver
 
-sf.cfaV1.updateFlowOperatorPermissions({
-  flowOperator: string,
-  permissions: number, // should enter 1-7
-  flowRateAllowance: string,
-  superToken: string
-});
+createFlowByOperator: Starts a stream between two accounts using ACL permissions
 
-sf.cfaV1.revokeFlowOperatorPermissions({
-  flowOperator: string,
-  superToken: string
-})
+updateFlowByOperator: Updates a stream between two accounts using ACL permissions&#x20;
 
-sf.cfav1.createFlowByOperator({
-  sender: string,
-  receiver: string,
-  flowRate: string,
-  superToken: string,
-  userData?: string
-});
+deleteFlowByOperator: Deletes a stream between two accounts using ACL permissions
 
-sf.cfaV1.updateFlowByOperator({
-  sender: string,
-  receiver: string,
-  flowRate: string,
-  superToken: string,
-  userData?: string
-});
+updateFlowOperatorPermissions: sets ACL permissions of an account has over the sender's account
 
-sf.cfaV1.deleteFlowByOperator({
-  sender: string,
-  receiver: string,
-  superToken: string,
-  userData?: string
-})
-```
+revokeFlowOperatorPermissions: revokes all ACL permissions that an account has over the sender's account
 
 **Example Usage**
 
