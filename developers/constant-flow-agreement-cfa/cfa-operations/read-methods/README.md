@@ -2,7 +2,7 @@
 
 ## Method Catalog
 
-```
+```javascript
 await sf.cfaV1.getFlow({
   superToken: string,
   sender: string,

@@ -4,7 +4,7 @@
 
 Write operations are instantiated and then executed with the `exec` function. See below 👇
 
-```
+```javascript
 // 1) Instantiate operation to create a 100,000 wei/second stream
 
 let createFlowOp = sf.cfaV1.createFlow({
@@ -28,7 +28,7 @@ await createFlowOp.exec(bobSigner);
 
 ## Method Catalog
 
-```
+```javascript
 // Regular Usage
 
 sf.cfaV1.createFlow({

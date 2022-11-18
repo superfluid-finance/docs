@@ -1,6 +1,6 @@
 # getFlow
 
-Lets you get information regarding a stream going from a sender to a receiver for a specified Super Token
+Get information regarding a stream going from a sender to a receiver for a specified Super Token
 
 ```
 let res = await sf.cfaV1.getFlow({

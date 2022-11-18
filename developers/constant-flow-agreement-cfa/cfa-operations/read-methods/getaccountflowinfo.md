@@ -1,6 +1,6 @@
 # getAccountFlowInfo
 
-Lets you get _net_ stream information for an account pertaining to a specified Super Token
+Get _net_ stream information for an account pertaining to a specified Super Token
 
 ```
 let res = await sf.cfaV1.getAccountFlowInfo({

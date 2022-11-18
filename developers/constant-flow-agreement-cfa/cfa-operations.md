@@ -43,31 +43,31 @@ const cfaV1 = new ConstantFlowAgreementV1({ options: config });
 
 #### **Read Methods**
 
-[getFlow](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-operations/read-methods/getflow): Get the flow data between `sender` and `receiver` of `token`
+[`getFlow`](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-operations/read-methods/getflow): Get the latest stream update timestamp, flow rate, and buffer deposit info regarding a stream going from a sender to a receiver for a specified Super Token
 
-[getNetFlow](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-operations/read-methods/getnetflow): Get the net flow rate of the account
+[`getNetFlow`](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-operations/read-methods/getnetflow): Get the net flow rate value for an account for a specified Super Token
 
-[getAccountFlowInfo](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-operations/read-methods/getaccountflowinfo): **** Get the aggregated flow info of the account
+[`getAccountFlowInfo`](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-operations/read-methods/getaccountflowinfo): **** Get the latest stream update timestamp, net flow rate, and buffer deposit info for an account for a specified Super Token
 
 #### **Write Methods**
 
-[createFlow](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-operations/write-methods/createflow): Starts a stream from a sender to a chosen receiver&#x20;
+[`createFlow`](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-operations/write-methods/createflow): Starts a stream from a sender to a chosen receiver&#x20;
 
-[updateFlow](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-operations/write-methods/updateflow): Updates an existing stream between a sender to a chosen receiver
+[`updateFlow`](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-operations/write-methods/updateflow): Updates an existing stream from a sender to a chosen receiver
 
-[deleteFlow](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-operations/write-methods/deleteflow): Cancels a existing stream between a sender to a chosen receiver
+[`deleteFlow`](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-operations/write-methods/deleteflow): Cancels an existing stream from a sender to a chosen receiver
 
-[createFlowByOperator](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-access-control-list-acl/acl-features): Starts a stream between two accounts using ACL permissions
+[`createFlowByOperator`](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-access-control-list-acl/acl-features): Starts a stream between two accounts using ACL permissions
 
-[updateFlowByOperator](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-access-control-list-acl/acl-features): Updates a stream between two accounts using ACL permissions&#x20;
+[`updateFlowByOperator`](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-access-control-list-acl/acl-features): Updates a stream between two accounts using ACL permissions&#x20;
 
-[deleteFlowByOperator](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-access-control-list-acl/acl-features): Deletes a stream between two accounts using ACL permissions
+[`deleteFlowByOperator`](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-access-control-list-acl/acl-features): Deletes a stream between two accounts using ACL permissions
 
-[updateFlowOperatorPermissions](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-access-control-list-acl/acl-features): sets ACL permissions of an account has over the sender's account
+[`updateFlowOperatorPermissions`](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-access-control-list-acl/acl-features): Lets a sender set the ACL permissions of another account
 
-[revokeFlowOperatorPermissions](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-access-control-list-acl/acl-features): revokes all ACL permissions that an account has over the sender's account
+[`revokeFlowOperatorPermissions`](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-access-control-list-acl/acl-features): revokes all ACL permissions that an account has over the sender's account
 
-**Example Usage**
+## **Example Usage**
 
 ```typescript
 import { Framework } from "@superfluid-finance/sdk-core";
