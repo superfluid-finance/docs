@@ -2,7 +2,7 @@
 description: Getting Started with the Constant Flow Agreement
 ---
 
-# CFA - Frontend Examples
+# Frontend Examples
 
 Let's walk through creating Superfluid streams using the Superfluid Core-SDK. We'll get straight into the code with some examples, but you can scroll down to learn about how the SDK works in more detail.&#x20;
 
@@ -24,7 +24,7 @@ NOTE: these examples expose a private key which contains some fake tokens, but y
 
 ### Updating a Flow
 
-Updating a flow is very similar to creating one. You'll need to pass the same parameters that you passed in the create flow function to `sf.cfaV1.updateFlow()`- except this time you'll need to pass in a new `flowRate`. If you attempt to edit a stream which does not currently exist, this function will revert. Give it a try:
+Updating a flow is very similar to creating one. You'll need to pass the same parameters that you passed in the create flow function to `sf.cfaV1.updateFlow()`- except this time you'll need to pass in a new `flowRate`. If you attempt to use the same `flowRate`, or if you try to edit a stream which does not currently exist, this function will revert. Give it a try:
 
 {% embed url="https://codesandbox.io/embed/cfa-updateflow-walkthrough-9v6rj?expanddevtools=1&fontsize=14&hidenavigation=1&module=%2Fsrc%2FUpdateFlow.js&theme=dark&view=split" %}
 
