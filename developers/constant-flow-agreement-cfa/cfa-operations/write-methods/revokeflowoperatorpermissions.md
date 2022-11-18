@@ -17,3 +17,7 @@ await flowOp.exec( <<ethers signer>> );
 | -------------- | -------- | ------------------------------------------------------------------- |
 | `superToken`   | `string` | Address of Super Token                                              |
 | `flowOperator` | `string` | Address of the account whose ACL permissions the caller is revoking |
+
+### Example Usage
+
+[https://codesandbox.io/s/revoke-flow-permissions-example-ednt8t?from-embed=\&file=/src/RevokeFlowPermissions.js:767-851](https://codesandbox.io/s/revoke-flow-permissions-example-ednt8t?from-embed=\&file=/src/RevokeFlowPermissions.js:767-851)

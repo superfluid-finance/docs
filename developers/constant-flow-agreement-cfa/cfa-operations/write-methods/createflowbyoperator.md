@@ -16,13 +16,13 @@ await flowOp.exec( <<ethers signer>> );
 
 ### Parameters
 
-| Parameter    | Type     | Description                                                                                                                                         |
-| ------------ | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `superToken` | `string` | Address of Super Token being streamed                                                                                                               |
-| `sender`     | `string` | Address of sender                                                                                                                                   |
-| `receiver`   | `string` | Address of receiver                                                                                                                                 |
-| `flowRate`   | `string` | Desired wei/second flow rate to be created from `sender` to `receiver`                                                                              |
-| `userData`   | `string` | _Optional_ [user data](https://docs.superfluid.finance/superfluid/developers/super-apps/user-data) that can be provided with the `createFlow` call. |
+| Parameter    | Type     | Description                                                                                        |
+| ------------ | -------- | -------------------------------------------------------------------------------------------------- |
+| `superToken` | `string` | Address of Super Token being streamed                                                              |
+| `sender`     | `string` | Address of sender                                                                                  |
+| `receiver`   | `string` | Address of receiver                                                                                |
+| `flowRate`   | `string` | Desired wei/second flow rate to be created from `sender` to `receiver`                             |
+| `userData`   | `string` | _Optional_ [user data](https://docs.superfluid.finance/superfluid/developers/super-apps/user-data) |
 
 ### Example Usage
 

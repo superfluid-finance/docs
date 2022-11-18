@@ -11,18 +11,18 @@ let flowOp = sf.cfaV1.createFlow({
   userData?: string
 });
 
-await flowOp.exec( <<ethers signer>> ); // should have same address as sender
+await flowOp.exec( <<ethers signer>> ); // should have same address as `sender`
 ```
 
 ### Parameters
 
-| Parameter    | Type     | Description                                                                                                                                         |
-| ------------ | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `superToken` | `string` | Address of Super Token being streamed                                                                                                               |
-| `sender`     | `string` | Address of sender                                                                                                                                   |
-| `receiver`   | `string` | Address of receiver                                                                                                                                 |
-| `flowRate`   | `string` | Desired wei/second flow rate that `sender` wants to start streaming at to the `receiver`                                                            |
-| `userData`   | `string` | _Optional_ [user data](https://docs.superfluid.finance/superfluid/developers/super-apps/user-data) that can be provided with the `createFlow` call. |
+| Parameter    | Type     | Description                                                                                        |
+| ------------ | -------- | -------------------------------------------------------------------------------------------------- |
+| `superToken` | `string` | Address of Super Token being streamed                                                              |
+| `sender`     | `string` | Address of sender                                                                                  |
+| `receiver`   | `string` | Address of receiver                                                                                |
+| `flowRate`   | `string` | Desired wei/second flow rate at which the `sender` wants to start streaming to the `receiver`      |
+| `userData`   | `string` | _Optional_ [user data](https://docs.superfluid.finance/superfluid/developers/super-apps/user-data) |
 
 ### Example Usage
 
