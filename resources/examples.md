@@ -42,7 +42,7 @@ Fork-able apps from the main repo:
 
 **🖥 SDK Redux UI Examples**
 
-* Make use of our SDK Redux to build highly performant front end Dapps with Superfluid. There are many helpful UI components in these examples that make use of advanced front end technologies and our new sdks.
+* Make use of our SDK Redux to build highly performant front end Dapps with Superfluid. There are many helpful UI components in these examples that make use of advanced front end technologies and our new sdks. You can find these examples [here](https://github.com/superfluid-finance/protocol-monorepo/tree/dev/packages/sdk-redux-examples).
 
 Click here to see all the official examples:
 
