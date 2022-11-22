@@ -1,5 +1,5 @@
 ---
-description: Get deeper into developing and understanding Super Tokens
+description: Get deeper into developing with and understanding Super Tokens
 ---
 
 # In-Depth
