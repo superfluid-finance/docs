@@ -136,15 +136,22 @@ If you _finished_ the work several months ago, then you can't wait and submit it
 When you _start_ the work doesn't matter. You could have been working on something for several months and it will still be eligible for submission to the current Wave as long as you've newly completed it.
 {% endhint %}
 
-#### **4. Submit your work before month end**
+#### **4. Make a Devfolio page (if your project is technical)**
 
-Submit your Wave Project to the Wave Pool Submission Form 👇
+Sign up for Devfolio [here](https://devfolio.co/) and then fill out your project details [here](https://devfolio.co/projects).
+
+* Here's a well-done [example ](https://devfolio.co/projects/test-a7d3)of a good Devfolio project page
+* _Please include a video demo_ - it's better for showcasing your project and helping us judge.
+
+#### **5. Submit your work before month end**
 
 If you worked together on a team on your Wave Project, just submit once for the whole team
 
+Submit your Wave Project to the Wave Pool Submission Form 👇
+
 {% embed url="https://airtable.com/shrg58mocu5zrxRSk" %}
 
-#### **5. Winners are announced**&#x20;
+#### **6. Winners are announced**&#x20;
 
 If you have a winning submission, in the days after the Wave completes, we will DM you with details on on how to claim your prize along with a POAP to commemorate your accomplishment!&#x20;
 
