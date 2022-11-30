@@ -142,9 +142,10 @@ Sign up for Devfolio [here](https://devfolio.co/) and then fill out your project
 
 * Here's a well-done [example ](https://devfolio.co/projects/test-a7d3)of a good Devfolio project page
 
-_Please include a video demo_ - it's better for showcasing your project and helping us judge.
+_**Please include a video demo** _ - it's better for showcasing your project and helping us judge.
 
 * Make sure to cover high level usage of your project and the technical elements that used Superfluid (so yes, feel free to dig into the code!).
+* We're _not_ expecting this to be super tidy - just a rough unscripted walk-through is fine regardless the length
 
 #### **5. Submit your work before month end**
 
