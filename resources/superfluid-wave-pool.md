@@ -141,7 +141,10 @@ When you _start_ the work doesn't matter. You could have been working on somethi
 Sign up for Devfolio [here](https://devfolio.co/) and then fill out your project details [here](https://devfolio.co/projects).
 
 * Here's a well-done [example ](https://devfolio.co/projects/test-a7d3)of a good Devfolio project page
-* _Please include a video demo_ - it's better for showcasing your project and helping us judge.
+
+_Please include a video demo_ - it's better for showcasing your project and helping us judge.
+
+* Make sure to cover high level usage of your project and the technical elements that used Superfluid (so yes, feel free to dig into the code!).
 
 #### **5. Submit your work before month end**
 
