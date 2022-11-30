@@ -82,7 +82,7 @@ An article or video is already presentable, but if you're submitting code, make 
 
 **7. New Work**
 
-Previous hackathon Superfluid or bounty submissions won't count unless you're submitting additional itemized progress after the hackathon or on the bounty.
+Previous Superfluid-sponsored hackathon projects or bounty submissions won't count unless you're submitting additional itemized progress after the hackathon or on the bounty.
 
 **8. Independent Hackers Only**
 
