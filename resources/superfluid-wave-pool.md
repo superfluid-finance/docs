@@ -40,17 +40,17 @@ Prize winner or not, you'll be given exposure to the Superfluid team and communi
 
 ## Current Prizes
 
-Currently, the top three submissions to the current Wave will earn one of the below prizes 🥇
+The top three submissions to the December Wave will earn one of the below prizes 🥇
 
 **1st Place** - $2,000
 
 **2nd Place** - $1,500
 
-**3rd Place** - $1000
+**3rd Place** - $1,000
 
-\+ a bonus $500 prize for best project integrating Superfluid and another protocol
+**Co-Sponsor Prize** - to be announced! 👀
 
-If you did good work, but didn’t quite make the Top 3 cut, we may likely reward you an ad hoc **Honorable Mention** prize!
+**Pool Prize** - $1,000 (split among hackers who did great work, but didn’t quite make the Top 3 cut)
 
 ## Get Started 🙋‍♀️
 
