@@ -76,16 +76,16 @@ Navigate to [this guide](https://github.com/superfluid-finance/protocol-monorepo
 
 ### Super App Deposits
 
-When a user first creates a Superfluid stream, the protocol will take a security deposit and hold it in escrow until the completion of the stream. These deposits are sized as follows:
+When a user first creates a Superfluid stream, the protocol will take an up front [buffer](../../sentinels/liquidations-and-toga.md) to ensure the protocol's security. These deposits are sized as follows:
 
 * On testnets, when the flow is being sent to a recipient that is _not_ a Super App, this amount is 1hr x the `flowRate`
 * On testnets, when the flow is being sent to a recipient that _is_ a Super App, the deposit amount can be up to 2hrs x the `flowRate`
 * On mainnet, when the flow is being sent to a recipient that is _not_ a Super App, the deposit amount is 4hrs x the `flowRate`
-* On mainnet, when the flow is being sent to a recipient that _is_ a Super App, the deposit can be up to 8hrs x the `flowRate`.
+* On mainnet, when the flow is being sent to a recipient that _is_ a Super App, the deposit can be up to 8hrs x the `flowRate` (note that this is approximate)
 
-**Why is the deposit 2x when sending a stream to a Super App?**
+**Why can the deposit by up to \~2x when sending a stream to a Super App?**
 
-Because Super Apps are designed to create programmable cashflows, the protocol needs to ensure that Super Apps don't execute logic that could render the protocol insolvent. The caller of the stream being sent to the super app is essentially covering the deposit of the Super App.
+Because Super Apps are designed to create programmable cashflows, the protocol needs to ensure that Super Apps don't execute logic that could impact the protocol's security. The caller of the stream being sent to the super app is essentially covering the deposit of the Super App.
 
 This higher deposit provides an extra incentive for the protocol to ensure that users sending streams into super apps maintain a balance > 0. It protects the protocol from cascading effects resulting from an insolvent Super App. There are additional requirements around Super App solvency that you'll find in the list of Super App rules we define below.
 

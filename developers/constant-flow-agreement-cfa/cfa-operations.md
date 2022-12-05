@@ -6,7 +6,9 @@ description: Stream money with the Constant Flow Agreement using the SDK Core
 
 The `ConstantFlowAgreementV1` helper class provides access to create/update/delete flows. You can access this via the `Framework` class (`sf.cfaV1`) or initialize this as a standalone class.
 
-#### Using the `Framework` Class
+## Accessing the CFAv1 Contract
+
+**Using SDK Core Framework Object**
 
 ```typescript
 // refresher on initializing the Framework
@@ -18,8 +20,8 @@ const sf = await Framework.create({
   provider
 });
 
-//access the cfaV1 object via the Framework class
-//see below for a complete example
+// access the cfaV1 object via the Framework class
+// see below for a complete example
 const flowInfo = await sf.cfaV1.getFlowInfo(...)
 ```
 
@@ -37,93 +39,41 @@ const config = {
 const cfaV1 = new ConstantFlowAgreementV1({ options: config });
 ```
 
-**CFAV1 Functions**
+## **Methods**
 
-```typescript
-// Read functions
-await sf.cfaV1.getFlow({
-  superToken: string,
-  sender: string,
-  receiver: string,
-  providerOrSigner: ethers.providers.Provider | ethers.Signer
-});
+### **Read Methods**
 
-await sf.cfaV1.getAccountFlowInfo({
-  superToken: string,
-  account: string,
-  providerOrSigner: ethers.providers.Provider | ethers.Signer
-});
+[`getFlow`](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-operations/read-methods/getflow): Get data on a stream between two accounts
 
-await sf.cfaV1.getNetFlow({
-  superToken: string,
-  account: string,
-  providerOrSigner: ethers.providers.Provider | ethers.Signer
-});
+[`getNetFlow`](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-operations/read-methods/getnetflow): Get the net flow rate of an account for a certain Super Token
 
+[`getAccountFlowInfo`](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-operations/read-methods/getaccountflowinfo): **** Get summed flow data of an account for a certain Super Token
 
-// Write operations
-sf.cfaV1.createFlow({
-  sender: string,
-  receiver: string,
-  superToken: string,
-  flowRate: string,
-  userData?: string
-});
+### **Write Methods**
 
-sf.cfaV1.updateFlow({
-  sender: string,
-  receiver: string,
-  superToken: string,
-  flowRate: string,
-  userData?: string
-});
+#### **Create, Update, Delete**
 
-sf.cfaV1.deleteFlow({
-  sender: string,
-  receiver: string,
-  superToken: string,
-  userData?: string
-});
+[`createFlow`](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-operations/write-methods/createflow): Starts a stream from a sender to a chosen receiver&#x20;
 
-//ACL Usage
+[`updateFlow`](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-operations/write-methods/updateflow): Updates an existing stream from a sender to a chosen receiver
 
-sf.cfaV1.updateFlowOperatorPermissions({
-  flowOperator: string,
-  permissions: number, // should enter 1-7
-  flowRateAllowance: string,
-  superToken: string
-});
+[`deleteFlow`](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-operations/write-methods/deleteflow): Cancels an existing stream from a sender to a chosen receiver
 
-sf.cfaV1.revokeFlowOperatorPermissions({
-  flowOperator: string,
-  superToken: string
-})
+#### **Create, Update, Delete with ACL Permissions**
 
-sf.cfav1.createFlowByOperator({
-  sender: string,
-  receiver: string,
-  flowRate: string,
-  superToken: string,
-  userData?: string
-});
+[`createFlowByOperator`](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-access-control-list-acl/acl-features): Starts a stream between two accounts using ACL permissions
 
-sf.cfaV1.updateFlowByOperator({
-  sender: string,
-  receiver: string,
-  flowRate: string,
-  superToken: string,
-  userData?: string
-});
+[`updateFlowByOperator`](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-access-control-list-acl/acl-features): Updates a stream between two accounts using ACL permissions&#x20;
 
-sf.cfaV1.deleteFlowByOperator({
-  sender: string,
-  receiver: string,
-  superToken: string,
-  userData?: string
-})
-```
+[`deleteFlowByOperator`](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-access-control-list-acl/acl-features): Deletes a stream between two accounts using ACL permissions
 
-**Example Usage**
+#### **Manage ACL Permissions**
+
+[`updateFlowOperatorPermissions`](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-access-control-list-acl/acl-features): Lets a sender set the ACL permissions of another account
+
+[`revokeFlowOperatorPermissions`](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-access-control-list-acl/acl-features): Revokes all ACL permissions that an account has over the sender's account
+
+## **Example Usage**
 
 ```typescript
 import { Framework } from "@superfluid-finance/sdk-core";

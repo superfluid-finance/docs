@@ -102,6 +102,18 @@
 
 ## Resources
 
+* [🏗 Superfluid Integration Guide](resources/superfluid-integration-guide/README.md)
+  * [For Your Integration: The Basics](resources/superfluid-integration-guide/for-your-integration-the-basics/README.md)
+    * [Supporting Super Tokens](resources/superfluid-integration-guide/for-your-integration-the-basics/supporting-super-tokens.md)
+    * [Supporting Money Streams](resources/superfluid-integration-guide/for-your-integration-the-basics/supporting-money-streams.md)
+    * [Supporting Instant Distributions](resources/superfluid-integration-guide/for-your-integration-the-basics/supporting-instant-distributions.md)
+  * [Displaying Token Balances](resources/superfluid-integration-guide/displaying-token-balances.md)
+  * [Useful Queries for Your Integration](resources/superfluid-integration-guide/useful-queries-for-your-integration/README.md)
+    * [Instant Distribution Events](resources/superfluid-integration-guide/useful-queries-for-your-integration/instant-distribution-events.md)
+    * [Money Streaming Events](resources/superfluid-integration-guide/useful-queries-for-your-integration/money-streaming-events.md)
+    * [Super Token Events](resources/superfluid-integration-guide/useful-queries-for-your-integration/super-token-events.md)
+    * [Other Helpful Queries](resources/superfluid-integration-guide/useful-queries-for-your-integration/other-helpful-queries.md)
+  * [Constructing Links to The Superfluid Dashboard](resources/superfluid-integration-guide/constructing-links-to-the-superfluid-dashboard.md)
 * [🌊 Superfluid Wave Pool](resources/superfluid-wave-pool.md)
 * [🤑 Bounty Program](resources/bounty-program.md)
 * [🛠 Example Projects](resources/examples.md)

@@ -68,5 +68,4 @@ contract RecurringAirdropper {
         return lastAirdrop + airdropInterval <= block.timestamp;
     }
 }
-
 ```

@@ -6,7 +6,7 @@ description: How does Superfluid keep streams solvent? Who's job is it?
 
 ## Liquidation and Solvency
 
-When opening a stream, a user must lock a certain amount of tokens as a `buffer` or `deposit` which is taken out of their balance. By leaving their streams open for too long, they stand to lose the `buffer`. This mechanism creates the main incentive for users to close their Superfluid streams before running out of tokens. It is a user's own responsibility to close their stream.
+When opening a stream, the protocol will take a small `buffer` or `deposit`. By leaving their streams open for too long, stream creators stand to lose this `buffer`. This mechanism creates the main incentive for users to close their Superfluid streams before running out of tokens. It is a user's own responsibility to close their stream.
 
 `superApps` can also draw an `owedDeposit`, allowing them to open a stream of the same size, without needing an initial balance.
 
@@ -162,9 +162,13 @@ In order to become the PIC, you can either use the Dapp at https://toga.superflu
 {% endtab %}
 {% endtabs %}
 
-Note that this parameter definitions in terms of time units refer to simplified idealized scenarios and are basically lower bounds.\
-The deposit related timeframes directly apply for streams where the sender account has no incoming streams and where the net flowrate is thus equal to the outgoing flowrate. If however the sender account has incoming streams, this timeframes are stretched proportionally. If for example the aggregate incoming flowrate is half of the aggregate outgoing flowrate, the time for the buffer to be consumed (critial period) doubles, as do the patrician period and the plebs period. If the aggregate incoming flowrate equals the aggregate outgoing flowrate (net flowrate = zero), those periods become potentially infinite (as long as the net flowrate doesn't change), because in that case the buffer wouldn't be consumed further, but not restored either, leaving outgoing streams critical in perpetuity.\
-For the TOGA exitPeriod, something similar applies - it's the lower bound for how long it would take a PIC to stream out the stake with a given exitRate, assuming nothing is added to the stake during that time. In practice, accrued liquidation rewards may be added to the stake during that time, leading to a proportional extension of the exitPeriod. In theory such added rewards could even completely offset the exitRate, leading to a net growing stake. In that case the PIC could periodically increase the exitRate (a larger stake allows for a larger exitRate) and would eventually be able to set an exitRate which leads to a shrinking stake.
+Note that this parameter definitions in terms of time units refer to simplified idealized scenarios and are basically lower bounds.
+
+\
+The deposit related timeframes directly apply for streams where the sender account has no incoming streams and where the net flowrate is thus equal to the outgoing flowrate. If however the sender account has incoming streams, this timeframes are stretched proportionally. If for example the aggregate incoming flowrate is half of the aggregate outgoing flowrate, the time for the buffer to be consumed (critial period) doubles, as do the patrician period and the plebs period. If the aggregate incoming flowrate equals the aggregate outgoing flowrate (net flowrate = zero), those periods become potentially infinite (as long as the net flowrate doesn't change), because in that case the buffer wouldn't be consumed further, but not restored either, leaving outgoing streams critical in perpetuity.
+
+\
+For the TOGA `exitPeriod`, something similar applies - it's the lower bound for how long it would take a PIC to stream out the stake with a given `exitRate`, assuming nothing is added to the stake during that time. In practice, accrued liquidation rewards may be added to the stake during that time, leading to a proportional extension of the exitPeriod. In theory such added rewards could even completely offset the exitRate, leading to a net growing stake. In that case the PIC could periodically increase the exitRate (a larger stake allows for a larger exitRate) and would eventually be able to set an exitRate which leads to a shrinking stake.
 
 These parameters can be changed by Governance decision. Previously established `deposit` for Constant Flow Agreements is _grandFathered,_ so future changes can't impact existing agreements.
 
