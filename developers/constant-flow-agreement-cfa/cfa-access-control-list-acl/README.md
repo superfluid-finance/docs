@@ -10,7 +10,7 @@ The Access Control List (ACL) allows any account (plain EOA or contract) to conf
 
 It's basically the money streaming equivalent of the ERC20 approval mechanism!
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption><p><code></code><a href="https://docs.openzeppelin.com/contracts/2.x/api/token/erc20#IERC20-allowance-address-address-"><code>allowance</code></a>, <a href="https://docs.openzeppelin.com/contracts/2.x/api/token/erc20#IERC20-approve-address-uint256-"><code>approval</code></a>, and <a href="https://docs.openzeppelin.com/contracts/2.x/api/token/erc20#IERC20-transferFrom-address-address-uint256-"><code>transferFrom</code></a> are to ERC20 transfers as <code>getFlowOperatorData</code>, <code>updateFlowOperatorPermissions</code>, and <code>(create/update/delete)FlowByOperator</code> are to Superfluid streams.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p><code></code><a href="https://docs.openzeppelin.com/contracts/2.x/api/token/erc20#IERC20-allowance-address-address-"><code>allowance</code></a>, <a href="https://docs.openzeppelin.com/contracts/2.x/api/token/erc20#IERC20-approve-address-uint256-"><code>approval</code></a>, and <a href="https://docs.openzeppelin.com/contracts/2.x/api/token/erc20#IERC20-transferFrom-address-address-uint256-"><code>transferFrom</code></a> are to ERC20 transfers as <code>getFlowOperatorData</code>, <code>updateFlowOperatorPermissions</code>, and <code>(create/update/delete)FlowByOperator</code> are to Superfluid streams.</p></figcaption></figure>
 
 Before checking out the functions ACL provides you, you'll want to understand the `flowRateAllowance` and `permissions` parameters.
 
@@ -30,7 +30,7 @@ For example, let’s assume that we allow an operator access to creating and upd
 
 ## `permissions` Parameter
 
-The `permissions` value is a `uint256` from 1 to 7 representing a specific level of access that an operator gets over your streams. You pass in `permissions` when calling `updateFlowOperatorPermissions`.
+The `permissions` value is a `uint256` from 1 to 7 representing a specific level of access that an operator gets over your streams. You pass in `permissions` when calling [`updateFlowOperatorPermissions`](./#updateflowoperatorpermissions).
 
 | Permission Type           | Parameter Value |
 | ------------------------- | --------------- |
