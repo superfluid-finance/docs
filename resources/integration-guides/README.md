@@ -2,7 +2,7 @@
 description: Helpful Tips for Integrating Superfluid Into an Existing Project
 ---
 
-# 🏗 Superfluid Integration Guide
+# 🏗 Integration Guides
 
 {% content-ref url="for-your-integration-the-basics/" %}
 [for-your-integration-the-basics](for-your-integration-the-basics/)

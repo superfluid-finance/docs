@@ -2,7 +2,7 @@
 description: Superfluid contract addresses for all networks
 ---
 
-# Network Directory
+# Contract Addresses
 
 {% hint style="info" %}
 Note: these addresses can also be found in the [Superfluid Console](https://console.superfluid.finance/protocol).
@@ -11,6 +11,28 @@ Note: these addresses can also be found in the [Superfluid Console](https://cons
 ## Mainnet Networks
 
 {% tabs %}
+{% tab title="Mainnet" %}
+#### Framework
+
+| Resource                                                                                                        |                   Address                  |
+| --------------------------------------------------------------------------------------------------------------- | :----------------------------------------: |
+| [Resolver](https://etherscan.io/address/0xeE4cD028f5fdaAdeA99f8fc38e8bA8A57c90Be53#code)                        | 0xeE4cD028f5fdaAdeA99f8fc38e8bA8A57c90Be53 |
+| [Host](https://etherscan.io/address/0x4E583d9390082B65Bef884b629DFA426114CED6d)                                 | 0x4E583d9390082B65Bef884b629DFA426114CED6d |
+| [CFAv1](https://etherscan.io/address/0x2844c1BBdA121E9E43105630b9C8310e5c72744b)                                | 0x2844c1BBdA121E9E43105630b9C8310e5c72744b |
+| [IDAv1](https://etherscan.io/address/0xbCF9cfA8Da20B591790dF27DE65C1254Bf91563d)                                | 0xbCF9cfA8Da20B591790dF27DE65C1254Bf91563d |
+| [SuperTokenFactory](https://etherscan.io/address/0x0422689cc4087b6B7280e0a7e7F655200ec86Ae1)                    | 0x0422689cc4087b6B7280e0a7e7F655200ec86Ae1 |
+| [SuperfluidLoaderV1](https://etherscan.io/address/0x9775EEBdfF8AE845e7Ad3d1D04B85e6c6d284aCB)                   | 0x9775EEBdfF8AE845e7Ad3d1D04B85e6c6d284aCB |
+| [TOGA](https://etherscan.io/address/0x8B5a2CF69a56d7F8Fa027edcA23594cdDF544dDc)                                 | 0x8B5a2CF69a56d7F8Fa027edcA23594cdDF544dDc |
+| <p><a href="https://etherscan.io/address/0xcfA132E353cB4E398080B9700609bb008eceB125">CFAV1Forwarder</a><br></p> | 0xcfA132E353cB4E398080B9700609bb008eceB125 |
+
+#### Tokens
+
+| Resource                                                                         |                   Address                  |
+| -------------------------------------------------------------------------------- | :----------------------------------------: |
+| [USDCx](https://etherscan.io/address/0x1BA8603DA702602A8657980e825A6DAa03Dee93a) | 0x1BA8603DA702602A8657980e825A6DAa03Dee93a |
+| [DAIx](https://etherscan.io/address/0x4f228bf911ed67730e4b51b1f82ac291b49053ee)  | 0x4F228bf911ed67730e4B51B1F82AC291B49053ee |
+{% endtab %}
+
 {% tab title="Polygon" %}
 **​​ ❓See** [**Polygon (Matic)**](../resources/archived-tutorials-docs/networks/polygon-network-matic.md) **for more help**
 
@@ -227,8 +249,8 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 {% tab title="Optimism Goerli" %}
 **Framework**
 
-| Resource                                                                                                        |                   Address                  |
-| --------------------------------------------------------------------------------------------------------------- | :----------------------------------------: |
+| Resource                                                                                                       |                   Address                  |
+| -------------------------------------------------------------------------------------------------------------- | :----------------------------------------: |
 | [Resolver](https://goerli-optimism.etherscan.io/address/0x21d4E9fbB9DB742E6ef4f29d189a7C18B0b59136)            | 0x21d4E9fbB9DB742E6ef4f29d189a7C18B0b59136 |
 | [Host](https://goerli-optimism.etherscan.io/address/0xE40983C2476032A0915600b9472B3141aA5B5Ba9)                | 0xE40983C2476032A0915600b9472B3141aA5B5Ba9 |
 | [CFAv1](https://goerli-optimism.etherscan.io/address/0xff48668fa670A85e55A7a822b352d5ccF3E7b18C)               | 0xff48668fa670A85e55A7a822b352d5ccF3E7b18C |
@@ -239,16 +261,16 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 
 **Tokens**
 
-| Resource                                                                                         |                   Address                  |
-| ------------------------------------------------------------------------------------------------ | :----------------------------------------: |
-| [ETHx](https://goerli-optimism.etherscan.io/address/0xE01F8743677Da897F4e7De9073b57Bf034FC2433)        | 0xE01F8743677Da897F4e7De9073b57Bf034FC2433 |
+| Resource                                                                                        |                   Address                  |
+| ----------------------------------------------------------------------------------------------- | :----------------------------------------: |
+| [ETHx](https://goerli-optimism.etherscan.io/address/0xE01F8743677Da897F4e7De9073b57Bf034FC2433) | 0xE01F8743677Da897F4e7De9073b57Bf034FC2433 |
 {% endtab %}
 
 {% tab title="Arbitrum Goerli" %}
 **Framework**
 
-| Resource                                                                                              |                   Address                  |
-| ----------------------------------------------------------------------------------------------------- | :----------------------------------------: |
+| Resource                                                                                             |                   Address                  |
+| ---------------------------------------------------------------------------------------------------- | :----------------------------------------: |
 | [Resolver](https://goerli.arbiscan.io/address/0x21d4E9fbB9DB742E6ef4f29d189a7C18B0b59136)            | 0x21d4E9fbB9DB742E6ef4f29d189a7C18B0b59136 |
 | [Host](https://goerli.arbiscan.io/address/0xE40983C2476032A0915600b9472B3141aA5B5Ba9)                | 0xE40983C2476032A0915600b9472B3141aA5B5Ba9 |
 | [CFAv1](https://goerli.arbiscan.io/address/0xff48668fa670A85e55A7a822b352d5ccF3E7b18C)               | 0xff48668fa670A85e55A7a822b352d5ccF3E7b18C |
@@ -259,9 +281,9 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 
 **Tokens**
 
-| Resource                                                                                         |                   Address                  |
-| ------------------------------------------------------------------------------------------------ | :----------------------------------------: |
-| [ETHx](https://goerli.arbiscan.io/address/0xE01F8743677Da897F4e7De9073b57Bf034FC2433)        | 0xE01F8743677Da897F4e7De9073b57Bf034FC2433 |
+| Resource                                                                              |                   Address                  |
+| ------------------------------------------------------------------------------------- | :----------------------------------------: |
+| [ETHx](https://goerli.arbiscan.io/address/0xE01F8743677Da897F4e7De9073b57Bf034FC2433) | 0xE01F8743677Da897F4e7De9073b57Bf034FC2433 |
 {% endtab %}
 
 {% tab title="Avalanche Fuji" %}

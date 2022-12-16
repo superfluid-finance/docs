@@ -10,7 +10,7 @@ The Access Control List (ACL) allows any account (plain EOA or contract) to conf
 
 It's basically the money streaming equivalent of the ERC20 approval mechanism!
 
-<figure><img src="../../../.gitbook/assets/image (56).png" alt=""><figcaption><p><code></code><a href="https://docs.openzeppelin.com/contracts/2.x/api/token/erc20#IERC20-allowance-address-address-"><code>allowance</code></a>, <a href="https://docs.openzeppelin.com/contracts/2.x/api/token/erc20#IERC20-approve-address-uint256-"><code>approval</code></a>, and <a href="https://docs.openzeppelin.com/contracts/2.x/api/token/erc20#IERC20-transferFrom-address-address-uint256-"><code>transferFrom</code></a> are to ERC20 transfers as <code>getFlowOperatorData</code>, <code>updateFlowOperatorPermissions</code>, and <code>(create/update/delete)FlowByOperator</code> are to Superfluid streams.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption><p><code></code><a href="https://docs.openzeppelin.com/contracts/2.x/api/token/erc20#IERC20-allowance-address-address-"><code>allowance</code></a>, <a href="https://docs.openzeppelin.com/contracts/2.x/api/token/erc20#IERC20-approve-address-uint256-"><code>approval</code></a>, and <a href="https://docs.openzeppelin.com/contracts/2.x/api/token/erc20#IERC20-transferFrom-address-address-uint256-"><code>transferFrom</code></a> are to ERC20 transfers as <code>getFlowOperatorData</code>, <code>updateFlowOperatorPermissions</code>, and <code>(create/update/delete)FlowByOperator</code> are to Superfluid streams.</p></figcaption></figure>
 
 Before checking out the functions ACL provides you, you'll want to understand the `flowRateAllowance` and `permissions` parameters.
 

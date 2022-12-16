@@ -27,7 +27,7 @@ _To_: Alice’s account\
 _Start_: March 1st, 2023 at 12:00am\
 _End_: March 20th, 2023 at 12:00am
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 2\.  March 1st comes and the stream is initiated from you to Alice.
 
@@ -35,7 +35,7 @@ _End_: March 20th, 2023 at 12:00am
 
 3\.  March 20th comes and the stream from you to Alice is cancelled.
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 ## Setting Up Stream Scheduling
 
