@@ -37,23 +37,27 @@ const config = {
   idaV1Address: "0xB0aABBA4B2783A72C52956CDEF62d438ecA2d7a1"
 };
 
+//load a super token - this can be done by symbol or address
+const daix = await sf.loadSuperToken("DAIx");
 const idaV1 = new InstantDistributionAgreementV1({ options: config });
 ```
 
 **IDAV1 Functions**
 
 ```typescript
+//load the token you'd like to use like this 
+//note that tokens may be loaded by symbol or by address
+const daix = await sf.loadSuperToken("DAIx");
+
 // Read functions
-await sf.idaV1.getSubscription({
-  superToken: string,
+await daix.getSubscription({
   publisher: string,
   indexId: string,
   subscriber: string,
   providerOrSigner: string
 });
 
-await sf.idaV1.getIndex({
-  superToken: string,
+await daix.getIndex({
   publisher: string,
   indexId: string,
   providerOrSigner: string
@@ -61,59 +65,51 @@ await sf.idaV1.getIndex({
 
 
 // Write operations
-sf.idaV1.createIndex({
+daix.createIndex({
   indexId: string,
-  superToken: string,
   userData?: string
 });
 
-sf.idaV1.distribute({
+daix.distribute({
   indexId: string,
-  superToken: string,
   amount: string,
   userData?: string
 });
 
-sf.idaV1.updateIndexValue({
+daix.updateIndexValue({
   indexId: string,
-  superToken: string,
   indexValue: string,
   userData?: string
 });
 
-sf.idaV1.updateSubscriptionUnits({
+daix.updateSubscriptionUnits({
   indexId: string,
-  superToken: string,
   subscriber: string,
   units: string,
   userData?: string
 });
 
-sf.idaV1.approveSubscription({
+daix.approveSubscription({
   indexId: string,
-  superToken: string,
   publisher: string,
   userData?: string
 });
 
-sf.idaV1.revokeSubscription({
+daix.revokeSubscription({
   indexId: string,
-  superToken: string,
   publisher: string,
   userData?: string
 });
 
-sf.idaV1.deleteSubscription({
+daix.deleteSubscription({
   indexId: string,
-  superToken: string,
   subscriber: string,
   publisher: string,
   userData?: string
 });
 
-sf.idaV1.claim({
+daix.claim({
   indexId: string,
-  superToken: string,
   subscriber: string,
   publisher: string,
   userData?: string
@@ -136,14 +132,18 @@ const sf = await Framework.create({
   provider
 });
 
+//load the token you'd like to use like this 
+//note that tokens may be loaded by symbol or by address
+const daix = await sf.loadSuperToken("DAIx");
+
 // Read example
-const subscription = await sf.idaV1.getSubscription({ superToken: "0x...", publisher: "0x...", indexId: "1", subscriber: "0x...", providerOrSigner: provider });
+const subscription = await daix.getSubscription({ publisher: "0x...", indexId: "1", subscriber: "0x...", providerOrSigner: provider });
 console.log(subscription);
 
 
 // Write operation example
 const signer = sf.createSigner({ privateKey: "<TEST_ACCOUNT_PRIVATE_KEY>", provider });
-const createIndexOperation = sf.idaV1.createIndex({ indexId: "0", userData: "0x" });
+const createIndexOperation = daix.createIndex({ indexId: "0", userData: "0x" });
 const txnResponse = await createIndexOperation.exec(signer);
 const txnReceipt = await txnResponse.wait();
 // Transaction Complete when code reaches here

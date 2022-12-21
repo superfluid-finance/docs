@@ -2,19 +2,20 @@
 
 Get _net_ stream information for an account pertaining to a specified Super Token
 
-```
-let res = await sf.cfaV1.getAccountFlowInfo({
-  superToken: string,
-  account: string,
+<pre class="language-javascript"><code class="lang-javascript">//load the token you'd like to use like this 
+//note that tokens may be loaded by symbol or by address
+const daix = await sf.loadSuperToken("DAIx");
+<strong>
+</strong><strong>let res = await daix.getAccountFlowInfo({
+</strong>  account: string,
   providerOrSigner: ethers.providers.Provider | ethers.Signer
 });
-```
+</code></pre>
 
 ### Parameters
 
 | Parameter          | Type                                             | Description                                              |
 | ------------------ | ------------------------------------------------ | -------------------------------------------------------- |
-| `superToken`       | `string`                                         | Address of Super Token being streamed                    |
 | `account`          | `string`                                         | Address of account you're getting stream information for |
 | `providerOrSigner` | `ethers.providers.Provider` _or_ `ethers.Signer` | ethers provider or ethers signer object                  |
 

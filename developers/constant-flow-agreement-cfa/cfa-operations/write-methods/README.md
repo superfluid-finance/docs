@@ -5,11 +5,14 @@
 Write operations are instantiated and then executed with the `exec` function. See below 👇
 
 ```javascript
+//load the token you'd like to use like this 
+//note that tokens may be loaded by symbol or by address
+const daix = await sf.loadSuperToken("DAIx");
+
 // 1) Instantiate operation to create a 100,000 wei/second stream
-let createFlowOp = sf.cfaV1.createFlow({
+let createFlowOp = daix.createFlow({
   sender: "0xAbC...",
   receiver: "0xXyZ...",
-  superToken: daix.address,
   flowRate: "100000",
 });
 
@@ -29,63 +32,59 @@ await createFlowOp.exec(aliceSigner);
 ```javascript
 // Regular Usage
 
-sf.cfaV1.createFlow({
+//load the token you'd like to use like this 
+//note that tokens may be loaded by symbol or by address
+const daix = await sf.loadSuperToken("DAIx");
+
+daix.createFlow({
   sender: string,
   receiver: string,
-  superToken: string,
   flowRate: string,
   userData?: string
 });
 
-sf.cfaV1.updateFlow({
+daix.updateFlow({
   sender: string,
   receiver: string,
-  superToken: string,
   flowRate: string,
   userData?: string
 });
 
-sf.cfaV1.deleteFlow({
+daix.deleteFlow({
   sender: string,
   receiver: string,
-  superToken: string,
   userData?: string
 });
 
 //ACL Usage
 
-sf.cfaV1.updateFlowOperatorPermissions({
+daix.updateFlowOperatorPermissions({
   flowOperator: string,
   permissions: number, // should enter 1-7
-  flowRateAllowance: string,
-  superToken: string
+  flowRateAllowance: string
 });
 
-sf.cfaV1.revokeFlowOperatorPermissions({
-  flowOperator: string,
-  superToken: string
+daix.revokeFlowOperatorPermissions({
+  flowOperator: string
 })
 
-sf.cfav1.createFlowByOperator({
+daix.createFlowByOperator({
   sender: string,
   receiver: string,
   flowRate: string,
-  superToken: string,
   userData?: string
 });
 
-sf.cfaV1.updateFlowByOperator({
+daix.updateFlowByOperator({
   sender: string,
   receiver: string,
   flowRate: string,
-  superToken: string,
   userData?: string
 });
 
-sf.cfaV1.deleteFlowByOperator({
+daix.deleteFlowByOperator({
   sender: string,
   receiver: string,
-  superToken: string,
   userData?: string
 })
 ```

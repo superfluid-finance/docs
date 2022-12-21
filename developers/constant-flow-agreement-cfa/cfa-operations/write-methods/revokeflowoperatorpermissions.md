@@ -2,9 +2,12 @@
 
 Revokes all [ACL permissions](../../cfa-access-control-list-acl/) that an account has over the caller's account for streams of a certain Super Token.
 
-```
-let flowOp = sf.cfaV1.revokeFlowOperatorPermissions({
-  superToken: string,
+```javascript
+//load the token you'd like to use like this 
+//note that tokens may be loaded by symbol or by address
+const daix = await sf.loadSuperToken("DAIx");
+
+let flowOp = daix.revokeFlowOperatorPermissions({
   flowOperator: string
 });
 
@@ -15,7 +18,6 @@ await flowOp.exec( <<ethers signer>> );
 
 | Parameter      | Type     | Description                                                         |
 | -------------- | -------- | ------------------------------------------------------------------- |
-| `superToken`   | `string` | Address of Super Token                                              |
 | `flowOperator` | `string` | Address of the account whose ACL permissions the caller is revoking |
 
 ### Example Usage

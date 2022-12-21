@@ -2,23 +2,23 @@
 
 ## Method Catalog
 
-```javascript
-await sf.cfaV1.getFlow({
-  superToken: string,
-  sender: string,
+<pre class="language-javascript"><code class="lang-javascript">//load the token you'd like to use like this 
+//note that tokens may be loaded by symbol or by address
+const daix = await sf.loadSuperToken("DAIx");
+<strong>
+</strong><strong>await daix.getFlow({
+</strong>  sender: string,
   receiver: string,
   providerOrSigner: ethers.providers.Provider | ethers.Signer
 });
 
-await sf.cfaV1.getNetFlow({
-  superToken: string,
+await daix.getNetFlow({
   account: string,
   providerOrSigner: ethers.providers.Provider | ethers.Signer
 });
 
-await sf.cfaV1.getAccountFlowInfo({
-  superToken: string,
+await daix.getAccountFlowInfo({
   account: string,
   providerOrSigner: ethers.providers.Provider | ethers.Signer
 });
-```
+</code></pre>

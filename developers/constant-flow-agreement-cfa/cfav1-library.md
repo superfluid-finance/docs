@@ -37,37 +37,21 @@ import {
 } from "@superfluid-finance/ethereum-contracts/contracts/interfaces/superfluid/ISuperfluid.sol";
 
 import { 
-    IConstantFlowAgreementV1 
-} from "@superfluid-finance/ethereum-contracts/contracts/interfaces/agreements/IConstantFlowAgreementV1.sol";
+    ISuperToken 
+} from "@superfluid-finance/ethereum-contracts/contracts/interfaces/superfluid/ISuperToken.sol";
 
 import {
-    CFAv1Library
-} from "@superfluid-finance/ethereum-contracts/contracts/apps/CFAv1Library.sol";
+    SuperTokenV1Library
+} from "@superfluid-finance/ethereum-contracts/contracts/apps/SuperTokenV1Library.sol";
 
-contract SomeContractWithCFAv1Library {
+contract SomeContractWithSuperTokenV1Library {
 
-    using CFAv1Library for CFAv1Library.InitData;
+    using SuperTokenV1Library for ISuperToken;
+    ISuperToken public token;
     
-    //initialize cfaV1 variable
-    CFAv1Library.InitData public cfaLib;
-    
-    constructor(
-        ISuperfluid host
-    ) {
-    
-        //initialize InitData struct, and set equal to cfaV1
-        cfaLib= CFAv1Library.InitData(
-        host,
-            //here, we are deriving the address of the CFA using the host contract
-            IConstantFlowAgreementV1(
-                address(host.getAgreementClass(
-                    keccak256("org.superfluid-finance.agreements.ConstantFlowAgreement.v1")
-                ))
-            )
-        );
-        
+    constructor(ISuperToken _token) {
+        token = _token;
     }
-    
     //your contract code here...
 }
 ```
@@ -77,26 +61,25 @@ contract SomeContractWithCFAv1Library {
 ### Create, Update, Delete Streams
 
 ```solidity
-// You simply make the calls directly through the `cfaV1` CFAv1Library object
-cfaLib.createFlow(address receiver, ISuperToken token, int96 flowRate)
-cfaLib.updateFlow(address receiver, ISuperToken token, int96 flowRate);
-cfaLib.deleteFlow(address sender, address receiver, ISuperToken token);
+// You simply make the calls directly through the `token`
+token.createFlow(address receiver, int96 flowRate)
+token.updateFlow(address receiver, int96 flowRate);
+token.deleteFlow(address sender, address receiver);
 ```
 
-**`receiver`** - the `address` of the receiver
+**`token`** - the `ISuperToken` used in the stream. Using the SuperTokenV1Library for the ISuperToken type means that you can call all of these functions directly on the token contract itself. Cool huh?
 
-**`token`** - the `ISuperToken` used in the stream
+**`receiver`** - the `address` of the receiver
 
 **`flowRate`** - an `int96` variable which represents the wei/_second_ rate you'd like to stream `token` to the receiver, denominated in `wei`. Money streams always move tokens per second so `flowRate` is always per second!
 
 ### Getting Stream Data
 
-To view stream data, you have to tap into the [CFA contract](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/interfaces/agreements/IConstantFlowAgreementV1.sol) - note the calls on `cfaLib.cfa` instead of just `cfaLib`
+To view stream data, you can use the following functions
 
 ```solidity
 // Get the flow data between `sender` and `receiver` of `token`
-function getFlow(
-    ISuperfluidToken token,
+token.getFlowInfo(
     address sender,
     address receiver
 ) external view returns (
@@ -106,36 +89,29 @@ function getFlow(
     uint256 owedDeposit    // Extra deposit amount borrowed to a SuperApp receiver by the flow sender
 );
 
+token.getFlowRate(
+    address sender,
+    address receiver
+) external view returns (
+    int96 flowRate        // wei/second flow rate between sender and receiver
+);
+
 
 // Get the net flow rate of the account, accounting for all inbound/outbound streams
-function getNetFlow(
-    ISuperfluidToken token,
+token.getNetFlowRate(
     address account
 ) external view returns (
     int96 flowRate         // net flow rate
 );
 ```
 
-#### Example - calling `getFlow`
-
-```solidity
-// You just want to see the flow rate between Bob's address and Alice's address
-(,int96 currentFlowRate ,,) = cfaLib.cfa.getFlow([Super Token], [Bob], [Alice]);
-```
-
-#### Example - calling `getNetFlow`
-
-```solidity
-// Alice has numerous inbound and outbound streams. What's her net flow rate?
-int96 netFlowRate = cfaLib.cfa.getNetFlow([Super Token], [Alice]);
-```
-
 ### Create, Update, Delete Streams _With_ [_User Data_](../super-apps/user-data/)__
 
 <pre class="language-solidity"><code class="lang-solidity">// Same function call just with additional parameter for user data
-<strong>cfaLib.createFlow(address receiver, ISuperToken token, int96 flowRate, bytes memory userData);
-</strong>cfaLib.updateFlow(address receiver, ISuperToken token, int96 flowRate, bytes memory userData);
-cfaLib.deleteFlow(address sender, address receiver, ISuperToken token, bytes memory userData);</code></pre>
+<strong>token.createFlow(address receiver, int96 flowRate, bytes memory userData);
+</strong>token.updateFlow(address receiver, int96 flowRate, bytes memory userData);
+token.deleteFlow(address sender, address receiver, bytes memory userData);
+</code></pre>
 
 **`userData`** - an optional `bytes` value which represents additional data you'd like to pass along with your function call. You can learn more about the usefulness of user data [here](../super-apps/user-data/).
 
@@ -165,23 +141,21 @@ function afterAgreementCreated(
 
 So, to do CFA operations inside of Super App callbacks, you'll need to use the **withCtx** versions of each function.  These calls all return the updated context (a bytes memory)
 
-<pre class="language-solidity"><code class="lang-solidity">// We're assuming here that newCtx is what you've named the context bytes 
+```solidity
+// We're assuming here that newCtx is what you've named the context bytes 
 // object that will be updated throughout the callback and returned
 
 // Without user data
-cfaLib.createFlowWithCtx(
-    bytes memory ctx, // Pass in the context bytes variable for updating here
+token.createFlowWithCtx(
     address receiver, 
-    ISuperToken token, 
-    int96 flowRate
+    int96 flowRate,
+    bytes memory ctx // Pass in the context bytes variable for updating here
 ) returns (bytes memory);
-cfaLib.updateFlowWithCtx(bytes memory ctx, address receiver, ISuperToken token, flowRate) returns (bytes memory);
-cfaLib.deleteFlowWithCtx(bytes memory ctx, address sender, address receiver,token) returns (bytes memory);
 
-// With user data
-cfaLib.createFlowWithCtx(bytes memory ctx, address receiver, ISuperToken token, int96 flowRate, bytes memory userData) returns (bytes memory);
-<strong>cfaLib.updateFlowWithCtx(bytes memory ctx, address receiver, ISuperToken token, int96 flowRate, bytes memory userData) returns (bytes memory);
-</strong>cfaLib.deleteFlowWithCtx(bytes memory ctx, address sender, address receiver,token, userData) returns (bytes memory);</code></pre>
+//these functions look very similar for updates and deletions
+token.updateFlowWithCtx(address receiver, flowRate, bytes memory ctx) returns (bytes memory);
+token.deleteFlowWithCtx(address sender, address receiver, bytes memory ctx) returns (bytes memory);
+```
 
 **Example** - Here's the callback snippet continued showing the proper syntax
 
@@ -199,11 +173,11 @@ function afterAgreementCreated(
      newCtx = ctx; // `newCtx` is context bytes variable for updating
      
      // start a stream to another address
-     newCtx = cfaV1.createFlowWithCtx(
-         newCtx,    // notice `newCtx` being passed in and updated here
+     //note that `token` is the asset you want to stream
+     newCtx = token.createFlowWithCtx(
          [someReceiverAddress], 
-         [Super Token you want to stream],
-         [flow rate]
+         [flow rate],
+         newCtx    // notice `newCtx` being passed in and updated here
      );
     
 }

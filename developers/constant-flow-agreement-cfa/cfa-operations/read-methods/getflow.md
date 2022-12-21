@@ -2,20 +2,21 @@
 
 Get information regarding a stream going from a sender to a receiver for a specified Super Token
 
-```
-let res = await sf.cfaV1.getFlow({
-  superToken: string,
-  sender: string,
+<pre class="language-javascript"><code class="lang-javascript"><strong>//load the token you'd like to use like this 
+</strong><strong>//note that tokens may be loaded by symbol or by address
+</strong><strong>const daix = await sf.loadSuperToken("DAIx");
+</strong><strong>
+</strong><strong>let res = await daix.getFlow({
+</strong>  sender: string,
   receiver: string,
   providerOrSigner: ethers.providers.Provider | ethers.Signer
 });
-```
+</code></pre>
 
 ### Parameters
 
 | Parameter          | Type                                             | Description                             |
 | ------------------ | ------------------------------------------------ | --------------------------------------- |
-| `superToken`       | `string`                                         | Address of Super Token being streamed   |
 | `sender`           | `string`                                         | Address of sender                       |
 | `receiver`         | `string`                                         | Address of receiver                     |
 | `providerOrSigner` | `ethers.providers.Provider` _or_ `ethers.Signer` | ethers provider or ethers signer object |

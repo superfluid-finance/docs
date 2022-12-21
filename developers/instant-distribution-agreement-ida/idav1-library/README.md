@@ -1,12 +1,14 @@
 ---
-description: The CFAv1Library makes it easy to work with instant distributions in Solidity!
+description: >-
+  The SuperTokenV1Library makes it easy to work with instant distributions in
+  Solidity!
 ---
 
 # IDA - Solidity
 
 ### Agreement Abstraction
 
-The objective of the `IDAv1Library` is to abstract the code required to call an agreement. Below is a comparative example of how an index might be created with and without the library.
+The objective of the `SuperTokenV1Library` is to abstract the code required to call an agreement. Below is a comparative example of how an index might be created with and without the library.
 
 ```solidity
 function createWithoutLibrary() external {
@@ -22,8 +24,8 @@ function createWithoutLibrary() external {
     );
 }
 
-function createWithLibrary() external {
-    _idav1Lib.createIndex(publisher, indexId);
+function createWithLibrary(ISuperToken token) external {
+    token.createIndex(indexId);
 }
 ```
 
@@ -31,7 +33,8 @@ function createWithLibrary() external {
 
 ```solidity
 import {
-    ISuperfluid
+    ISuperfluid,
+    ISuperToken
 } from "@superfluid-finance/ethereum-contracts/contracts/interfaces/superfluid/ISuperfluid.sol";
 
 import {
@@ -39,49 +42,33 @@ import {
 } from "@superfluid-finance/ethereum-contracts/contracts/interfaces/agreements/IInstantDistributionAgreementV1.sol";
 
 import {
-    IDAv1Library
-} from "@superfluid-finance/ethereum-contracts/contracts/apps/IDAv1Library.sol";
+    SuperTokenV1Library
+} from "@superfluid-finance/ethereum-contracts/contracts/apps/SuperTokenV1Library.sol";
 
 contract MyContract {
-    // use the IDAv1Library for the InitData struct
-    using IDAv1Library for IDAv1Library.InitData;
+    // use the SuperTokenV1Library for the ISuperToken type
+    using SuperTokenV1Libary for ISuperToken;
     
-    // declare `_idaLib` of type InitData
-    IDAv1Library.InitData internal _idaLib;
+    ISuperToken public token;
     
     constructor(
-        ISuperfluid host,
-        IInstantDistributionAgreementV1 ida
+        ISuperToken _token,
     ) {
-        // assign it the host and ida addresses
-        _idav1Lib = IDAv1Library.InitData(host, ida);
+       
+       token = _token
     }
-    // ...
+    
+    // your code here...
 }
 ```
-
-First, we bring `ISuperfluid.sol`, `IInstantDistributionAgreementV1`, and `IDAv1Library` into scope from the `@superfluid-finance` package for Ethereum contracts.
-
-We will need to use a struct in the library called `InitData`. This struct is defined in the library as follows.
-
-```solidity
-struct InitData {
-    ISuperfluid host,
-    IInstantDistributionAgreementV1
-}
-```
-
-We use the `IDAv1Library` for the `InitData` struct, then we create a local state variable called `_idav1Lib` of type `InitData`.
-
-Finally, we define the `_idav1Lib` with the `host` and `ida` addresses passed into the constructor.
 
 ### Basic Usage
 
 Once this is initialized, we can use the library to create, read, update, and delete IDAv1 agreements as demonstrated in this `createIndex` example.
 
 ```solidity
-function myFunction(ISuperfluidToken token, uint32 indexId) {
-    _idav1Lib.createIndex(token, indexId);
+function myFunction(ISuperToken token, uint32 indexId) {
+    token.createIndex(indexId);
 }
 ```
 
@@ -99,9 +86,9 @@ function afterAgreementCreated(
     bytes calldata ctx
 } external override returns (bytes memory newCtx) {
 
-    require(msg.sender == address(_idav1Lib.host), "only host");
+    require(msg.sender == address(host), "only host");
     uint32 indexId = 0;
-    return _idav1Lib.createIndexWithCtx(ctx, superToken, indexId);
+    return superToken.createIndexWithCtx(indexId, ctx);
 
 }
 ```
@@ -128,12 +115,12 @@ Creates an index with a super token and an index id. The function caller is the 
 ```solidity
 // library function declaration
 function createIndex(
-    ISuperfluidToken token,
+    ISuperToken token,
     uint32 indexId
 ) internal;
 
 // usage
-_idav1Lib.createIndex(token, indexId);
+token.createIndex(indexId);
 ```
 
 #### Create Index with User Data
@@ -141,13 +128,13 @@ _idav1Lib.createIndex(token, indexId);
 ```solidity
 // library function declaration
 function createIndex(
-    ISuperfluidToken token,
+    ISuperToken token,
     uint32 indexId,
     bytes memory userData
 ) internal;
 
 // usage
-_idav1Lib.createIndex(token, indexId, userData);
+token.createIndex(indexId, userData);
 ```
 
 #### Create Index in a Super App Callback
@@ -155,28 +142,13 @@ _idav1Lib.createIndex(token, indexId, userData);
 ```solidity
 // library function declaration
 function createIndexWithCtx(
-    bytes memory ctx, // ctx passed to the callback function
-    ISuperfluidToken token,
-    uint32 indexId
-) internal returns (bytes memory newCtx);
-
-// usage
-return _idav1Lib.createIndexWithCtx(ctx, token, indexId);
-```
-
-#### Create Index with User Data in a Super App Callback
-
-```solidity
-// library function declaration
-function createIndexWithCtx(
-    bytes memory ctx, // ctx passed to the callback function
-    ISuperfluidToken token,
+    ISuperToken token,
     uint32 indexId,
-    bytes memory userData
+    bytes memory ctx // ctx passed to the callback function
 ) internal returns (bytes memory newCtx);
 
 // usage
-return _idav1Lib.createIndexWithCtx(ctx, token, indexId, userData);
+return token.createIndexWithCtx(indexId, ctx);
 ```
 
 #### Update Index Value
@@ -186,13 +158,13 @@ Updates the value of the index. This updates the real time balances of all appro
 ```solidity
 // library function decalaration
 function updateIndexValue(
-    ISuperfluidToken token,
+    ISuperToken token,
     uint32 indexId,
     uint128 indexValue
 ) internal;
 
 // usage
-_idav1Lib.updateIndexValue(token, indexId, indexValue);
+token.updateIndexValue(indexId, indexValue);
 ```
 
 ####
@@ -202,14 +174,14 @@ _idav1Lib.updateIndexValue(token, indexId, indexValue);
 ```solidity
 // library function declaration
 function updateIndexValue(
-    ISuperfluidToken token,
+    ISuperToken token,
     uint32 indexId,
     uint128 indexValue,
     bytes memory userData
 ) internal;
 
 // usage
-_idav1Lib.updateIndexvalue(token, indexId, indexValue, userData);
+token.updateIndexvalue(indexId, indexValue, userData);
 ```
 
 #### Update Index Value in a Super App Callback
@@ -217,30 +189,29 @@ _idav1Lib.updateIndexvalue(token, indexId, indexValue, userData);
 ```solidity
 // library function declaration
 function updateIndexValueWithCtx(
-    bytes memory ctx,
-    ISuperfluidToken token,
+    ISuperToken token,
     uint32 indexId,
-    uint128 indexValue
+    uint128 indexValue,
+    bytes memory ctx,
 ) internal returns(bytes memory newCtx);
 
 // usage
-return _idav1Lib.updateIndexValueWithCtx(ctx, token, indexId, indexValue);
+return token.updateIndexValueWithCtx(indexId, indexValue, ctx);
 ```
 
-#### Update Index Value with User Data in a Super App Callback
+#### Update Index Value in a Super App Callback
 
 ```solidity
 // library function declaration
 function updateIndexValueWithCtx(
-    bytes memory ctx,
-    ISuperfluidToken token,
+    ISuperToken token,
     uint32 indexId,
     uint128 indexValue,
-    bytes memory userData
+    bytes memory ctx,
 ) internal returns(bytes memory newCtx);
 
 // usage
-return _idav1Lib.updateIndexValueWithCtx(ctx, token, indexId, indexValue, userData);
+return token.updateIndexValueWithCtx(indexId, indexValue, ctx);
 ```
 
 #### Distribute
@@ -250,13 +221,13 @@ This function is functionally similar to `updateIndexValue`, but instead of havi
 ```solidity
 // library function declaration
 function distribute(
-    ISuperfluidToken token,
+    ISuperToken token,
     uint32 indexId,
     uint256 amount
 ) internal;
 
 // usage
-_idav1Lib.distribute(token, indexId, amount);
+token.distribute(indexId, amount);
 ```
 
 #### Distribute with User Data
@@ -264,14 +235,14 @@ _idav1Lib.distribute(token, indexId, amount);
 ```solidity
 // library function declaration
 function distribute(
-    ISuperfluidToken token,
+    ISuperToken token,
     uint32 indexId,
     uint256 amount,
     bytes memory userData
 ) internal;
 
 // usage
-_idav1Lib.distribute(token, indexId, amount, userData);
+token.distribute(indexId, amount, userData);
 ```
 
 #### Distribute in a Super App Callback
@@ -279,30 +250,14 @@ _idav1Lib.distribute(token, indexId, amount, userData);
 ```solidity
 // library function declaration
 function distributeWithCtx(
-    bytes memory ctx,
-    ISuperfluidToken token,
-    uint32 indexId,
-    uint256 amount
-) internal returns (bytes memory newCtx);
-
-// usage
-return _idav1Lib.distributeWithCtx(ctx, token, indexId, amount);
-```
-
-#### Distribute with User Data in a Super App Callback
-
-```solidity
-// library function declaration
-function distributeWithCtx(
-    bytes memory ctx,
-    ISuperfluidToken token,
+    ISuperToken token,
     uint32 indexId,
     uint256 amount,
-    bytes memory userData
+    bytes memory ctx,
 ) internal returns (bytes memory newCtx);
 
 // usage
-return _idav1Lib.distributeWithCtx(ctx, token, indexId, amount, userData);
+return token.distributeWithCtx(indexId, amount, ctx);
 ```
 
 #### Approve Subscription
@@ -312,13 +267,13 @@ Approves a subscription to an index. This is called by the subscriber to the ind
 ```solidity
 // library function declaration
 function approveSubscription(
-    ISuperfluidToken token,
+    ISuperToken token,
     address publisher,
     uint32 indexId
 ) internal;
 
 // usage
-_idav1Lib.approveSubscription(token, publisher, indexId);
+token.approveSubscription(publisher, indexId);
 ```
 
 #### Approve Subscription with User Data
@@ -326,14 +281,14 @@ _idav1Lib.approveSubscription(token, publisher, indexId);
 ```solidity
 // library function declaration
 function approveSubscription(
-    ISuperfluidToken token,
+    ISuperToken token,
     address publisher,
     uint32 indexId,
     bytes memory userData
 ) internal;
 
 // usage
-_idav1Lib.approveSubscription(token, publisher, indexId, userData);
+token.approveSubscription(publisher, indexId, userData);
 ```
 
 #### Approve Subscription in a Super App Callback
@@ -341,30 +296,14 @@ _idav1Lib.approveSubscription(token, publisher, indexId, userData);
 ```solidity
 // library function declaration
 function approveSubscriptionWithCtx(
-    bytes memory ctx,
-    ISuperfluidToken token,
-    address publisher,
-    uint32 indexId
-) internal returns (bytes memory newCtx);
-
-// usage
-return _idav1Lib.approveSubscriptionWithCtx(ctx, token, publisher, indexId);
-```
-
-#### Approve Subscription with User Data in a Super App Callback
-
-```solidity
-// library function declaration
-function approveSubscriptionWithCtx(
-    bytes memory ctx,
-    ISuperfluidToken token,
+    ISuperToken token,
     address publisher,
     uint32 indexId,
-    bytes memory userData
+    bytes memory ctx,
 ) internal returns (bytes memory newCtx);
 
 // usage
-return _idav1Lib.approveSubscriptionWithCtx(ctx, token, publisher, indexId, userData);
+return token.approveSubscriptionWithCtx(publisher, indexId, ctx);
 ```
 
 #### Revoke Subscription
@@ -374,13 +313,13 @@ Revokes a previously approved subscription. This is called by the subscriber.
 ```solidity
 // library function declaration
 function revokeSubscription(
-    ISuperfluidToken token,
+    ISuperToken token,
     address publisher,
     uint32 indexId
 ) internal;
 
 // usage
-_idav1Lib.revokeSubscription(token, publisher, indexId);
+token.revokeSubscription(publisher, indexId);
 ```
 
 #### Revoke Subscription with User Data
@@ -388,14 +327,14 @@ _idav1Lib.revokeSubscription(token, publisher, indexId);
 ```solidity
 // library function declaration
 function revokeSubscription(
-    ISuperfluidToken token,
+    ISuperToken token,
     address publisher,
     uint32 indexId,
     bytes memory userData
 ) internal;
 
 // usage
-_idav1Lib.revokeSubscription(token, publisher, indexId, userData);
+token.revokeSubscription(publisher, indexId, userData);
 ```
 
 #### Revoke Subscription in a Super App Callback
@@ -403,30 +342,14 @@ _idav1Lib.revokeSubscription(token, publisher, indexId, userData);
 ```solidity
 // library function declaration
 function revokeSubscriptionWithCtx(
-    bytes memory ctx,
-    ISuperfluidToken token,
-    address publisher,
-    uint32 indexId
-) internal returns (bytes memory newCtx);
-
-// usage
-return _idav1Lib.revokeSubscriptionWithCtx(ctx, token, publisher, indexId);
-```
-
-#### Revoke Subscription with User Data in a Super App Callback
-
-```solidity
-// library function declaration
-function revokeSubscriptionWithCtx(
-    bytes memory ctx,
-    ISuperfluidToken token,
+    ISuperToken token,
     address publisher,
     uint32 indexId,
-    bytes memory userData
+    bytes memory ctx,
 ) internal returns (bytes memory newCtx);
 
 // usage
-return _idav1Lib.revokeSubscriptionWithCtx(ctx, token, publisher, indexId, userData);
+return token.revokeSubscriptionWithCtx(publisher, indexId, ctx);
 ```
 
 #### Update Subscription Units
@@ -436,14 +359,14 @@ Updates the number of units, or "shares", of the index assigned to a subscriber.
 ```solidity
 // library function declaration
 function updateSubscriptionUnits(
-    ISuperfluidToken token,
+    ISuperToken token,
     uint32 indexId,
     address subscriber,
     uint128 units
 ) internal;
 
 // usage
-_idav1Lib.updateSubscriptionUnits(token, indexId, subscriber, units);
+token.updateSubscriptionUnits(indexId, subscriber, units);
 ```
 
 #### Update Subscription Units with User Data
@@ -451,7 +374,7 @@ _idav1Lib.updateSubscriptionUnits(token, indexId, subscriber, units);
 ```solidity
 // library function declaration
 function updateSubscriptionUnits(
-    ISuperfluidToken token,
+    ISuperToken token,
     uint32 indexId,
     address subscriber,
     uint128 units,
@@ -459,7 +382,7 @@ function updateSubscriptionUnits(
 ) internal;
 
 // usage
-_idav1Lib.updateSubscriptionUnits(token, indexId, subscriber, units, userData);
+token.updateSubscriptionUnits(indexId, subscriber, units, userData);
 ```
 
 #### Update Subscription Units in a Super App Callback
@@ -467,30 +390,14 @@ _idav1Lib.updateSubscriptionUnits(token, indexId, subscriber, units, userData);
 ```solidity
 // library function declaration
 function updateSubscriptionUnitsWithCtx(
-    bytes memory ctx,
-    ISuperfluidToken token,
-    uint32 indexId,
-    address subscriber,
-    uint128 units
-) internal returns (bytes memory newCtx);
-
-return _idav1Lib.updateSubscriptionUnitsWithCtx(ctx, token, indexId, subscriber, units)
-```
-
-#### Update Subscription Units with User Data in a Super App Callback
-
-```solidity
-// library function declaration
-function updateSubscriptionUnitsWithCtx(
-    bytes memory ctx,
-    ISuperfluidToken token,
+    ISuperToken token,
     uint32 indexId,
     address subscriber,
     uint128 units,
-    bytes memory userData
+    bytes memory ctx,
 ) internal returns (bytes memory newCtx);
 
-return _idav1Lib.updateSubscriptionUnitsWithCtx(ctx, token, indexId, subscriber, units, userData)
+return token.updateSubscriptionUnitsWithCtx(indexId, subscriber, units, ctx)
 ```
 
 #### Delete Subscription
@@ -500,14 +407,14 @@ Deletes an existing subscription, setting the subscriber's units to zero. This i
 ```solidity
 // library function declaration
 function deleteSubscription(
-    ISuperfluidToken token,
+    ISuperToken token,
     address publisher,
     uint32 indexId,
     address subscriber
 ) internal;
 
 // usage
-_idav1Lib.deleteSubscription(tokne, publisher, indexId, subscriber);
+token.deleteSubscription(publisher, indexId, subscriber);
 ```
 
 #### Delete Subscription with User Data
@@ -515,7 +422,7 @@ _idav1Lib.deleteSubscription(tokne, publisher, indexId, subscriber);
 ```solidity
 // library function declaration
 function deleteSubscription(
-    ISuperfluidToken token,
+    ISuperToken token,
     address publisher,
     uint32 indexId,
     address subscriber,
@@ -523,7 +430,7 @@ function deleteSubscription(
 ) internal;
 
 // usage
-_idav1Lib.deleteSubscription(tokne, publisher, indexId, subscriber, userData);
+token.deleteSubscription(publisher, indexId, subscriber, userData);
 ```
 
 #### Delete Subscription in a Super App Callback
@@ -531,49 +438,32 @@ _idav1Lib.deleteSubscription(tokne, publisher, indexId, subscriber, userData);
 ```solidity
 // library function declaration
 function deleteSubscriptionWithCtx(
-    bytes memory ctx,
-    ISuperfluidToken token,
-    address publisher,
-    uint32 indexId,
-    address subscriber
-) internal returns (bytes memory newCtx);
-
-// usage
-return _idav1Lib.deleteSubscriptionWithCtx(ctx, token, publisher, indexId, subscriber);
-```
-
-#### Delete Subscription with User Data in a Super App Callback
-
-```solidity
-// library function declaration
-function deleteSubscriptionWithCtx(
-    bytes memory ctx,
-    ISuperfluidToken token,
+    ISuperToken token,
     address publisher,
     uint32 indexId,
     address subscriber,
-    bytes memory userData
+    bytes memory ctx,
 ) internal returns (bytes memory newCtx);
 
 // usage
-return _idav1Lib.deleteSubscriptionWithCtx(ctx, token, publisher, indexId, subscriber, userData);
+return token.deleteSubscriptionWithCtx(publisher, indexId, subscriber, ctx);
 ```
 
 #### Claim
 
-Claims a pendind distribution of an index. This is called by the subscriber and updates their real time balance instantly.
+Claims a pending distribution of an index. This is called by the subscriber and updates their real time balance instantly.
 
 ```solidity
 // library function declaration
 function claim(
-    ISuperfluidToken token,
+    ISuperToken token,
     address publisher,
     uint32 indexId,
     address subscriber
 ) internal;
 
 // usage
-_idav1Lib.claim(token, publisher, indexId, subscriber);
+token.claim(publisher, indexId, subscriber);
 ```
 
 #### Claim with User Data
@@ -581,7 +471,7 @@ _idav1Lib.claim(token, publisher, indexId, subscriber);
 ```solidity
 // library function declaration
 function claim(
-    ISuperfluidToken token,
+    ISuperToken token,
     address publisher,
     uint32 indexId,
     address subscriber,
@@ -589,7 +479,7 @@ function claim(
 ) internal;
 
 // usage
-_idav1Lib.claim(token, publisher, indexId, subscriber, userData);
+token.claim(publisher, indexId, subscriber, userData);
 ```
 
 #### Claim in a Super App Callback
@@ -597,30 +487,13 @@ _idav1Lib.claim(token, publisher, indexId, subscriber, userData);
 ```solidity
 // library function declaration
 function claimWithCtx(
-    byte memory ctx,
-    ISuperfluidToken token,
-    address publisher,
-    uint32 indexId,
-    address subscriber
-) internal returns (bytes memory newCtx);
-
-// usage
-return _idav1Lib.claimWithCtx(ctx, token, publisher, indexId subscriber);
-```
-
-#### Claim with User Data in a Super App Callback
-
-```solidity
-// library function declaration
-function claimWithCtx(
-    byte memory ctx,
-    ISuperfluidToken token,
+    ISuperToken token,
     address publisher,
     uint32 indexId,
     address subscriber,
-    bytes memory userData
+    bytes memory ctx,
 ) internal returns (bytes memory newCtx);
 
 // usage
-return _idav1Lib.claimWithCtx(ctx, token, publisher, indexId subscriber, userData)
+return token.claimWithCtx(publisher, indexId subscriber, ctx);
 ```

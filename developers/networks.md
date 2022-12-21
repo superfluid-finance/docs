@@ -31,6 +31,9 @@ Note: these addresses can also be found in the [Superfluid Console](https://cons
 | -------------------------------------------------------------------------------- | :----------------------------------------: |
 | [USDCx](https://etherscan.io/address/0x1BA8603DA702602A8657980e825A6DAa03Dee93a) | 0x1BA8603DA702602A8657980e825A6DAa03Dee93a |
 | [DAIx](https://etherscan.io/address/0x4f228bf911ed67730e4b51b1f82ac291b49053ee)  | 0x4F228bf911ed67730e4B51B1F82AC291B49053ee |
+| [ETHx](https://etherscan.io/address/0xc22bea0be9872d8b7b3933cec70ece4d53a900da)  | 0xC22BeA0Be9872d8B7B3933CEc70Ece4D53A900da |
+
+
 {% endtab %}
 
 {% tab title="Polygon" %}

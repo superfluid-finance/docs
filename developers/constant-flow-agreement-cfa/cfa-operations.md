@@ -37,6 +37,8 @@ const config = {
 };
 
 const cfaV1 = new ConstantFlowAgreementV1({ options: config });
+//super tokens can be loaded directly as well 
+const daix = await sf.loadSuperToken("DAIx");
 ```
 
 ## **Methods**
@@ -89,9 +91,10 @@ const sf = await Framework.create({
   provider
 });
 
+const daix = await sf.loadSuperToken("DAIx");
+
 // Read example
-const flowInfo = await sf.cfaV1.getFlow({
-  superToken: "0x...",
+const flowInfo = await daix.getFlow({
   sender: "0x...",
   receiver: "0x...",
   providerOrSigner: provider
@@ -100,10 +103,9 @@ console.log("flowInfo", flowInfo);
 
 // Write operation example
 const signer = sf.createSigner({ privateKey: "<TEST_ACCOUNT_PRIVATE_KEY>", provider });
-const createFlowOperation = sf.cfaV1.createFlow({
+const createFlowOperation = daix.createFlow({
   sender: "0x...",
   receiver: "0x...",
-  superToken: "0x...",
   flowRate: "1000000000"
 });
 const txnResponse = await createFlowOperation.exec(signer);

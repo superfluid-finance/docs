@@ -67,10 +67,14 @@ const sf = await Framework.create({
   chainId: 137, //matic chainId
   provider
 });
+
+//load the token you'd like to use like this 
+//note that tokens may be loaded by symbol or by address
+//this is daix on rinkeby
+const daix = await sf.loadSuperToken("0x745861AeD1EEe363b4AaA5F1994Be40b1e05Ff90");
  
  // 0xabc is the signer on Rinkeby testnet
 const signer = sf.createSigner({ privateKey: "<TEST_ACCOUNT_PRIVATE_KEY>", provider });
-const daix = await sf.loadSuperToken("0x745861AeD1EEe363b4AaA5F1994Be40b1e05Ff90");
 const fromAddress = "0xabc";
 const paymentAddress = "0xdef";
 const approveOp = daix.approve({ receiver: paymentAddress, amount: "10000" });

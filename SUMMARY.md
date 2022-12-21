@@ -56,7 +56,7 @@
     * [ACL Features](developers/constant-flow-agreement-cfa/cfa-access-control-list-acl/acl-features.md)
 * [✳ Instant Distribution Agreement (IDA)](developers/instant-distribution-agreement-ida/README.md)
   * [IDA - Solidity](developers/instant-distribution-agreement-ida/idav1-library/README.md)
-    * [IDAv1 Library Example](developers/instant-distribution-agreement-ida/idav1-library/idav1-library-example.md)
+    * [IDA Solidity Example](developers/instant-distribution-agreement-ida/idav1-library/idav1-library-example.md)
   * [IDA - SDK Core](developers/instant-distribution-agreement-ida/ida-operations.md)
   * [IDA - Frontend Examples](developers/instant-distribution-agreement-ida/instant-distribution.md)
 * [🤖 Super Apps](developers/super-apps/README.md)

@@ -4,12 +4,12 @@ description: >-
   Agreement library.
 ---
 
-# IDAv1 Library Example
+# IDA Solidity Example
 
 ```solidity
 import {
     ISuperfluid,
-    ISuperfluidToken
+    ISuperToken
 } from "@superfluid-finance/ethereum-contracts/contracts/interfaces/superfluid/ISuperfluid.sol";
 
 import {
@@ -17,47 +17,42 @@ import {
 } from "@superfluid-finance/ethereum-contracts/contracts/interfaces/agreements/IInstantDistributionAgreementV1.sol";
 
 import {
-    IDAv1Library
-} from "@superfluid-finance/ethereum-contracts/contracts/apps/IDAv1Library.sol";
+    SuperTokenV1Library
+} from "@superfluid-finance/ethereum-contracts/contracts/apps/SuperTokenV1Library.sol";
 
 /// @title Simple Recurring Airdrop contract example.
 /// @notice This is NOT suitable for production, this is for demonstration ONLY.
 contract RecurringAirdropper {
 
-    using IDAv1Library for IDAv1Library.InitData;
-    IDAv1Library.InitData internal _idav1Lib;
+    using SuperTokenV1Library for ISuperToken;
     
     uint32 internal constant _INDEX_ID = 0;
     address internal immutable _ADMIN;
     
-    ISuperfluidToken public token;
+    ISuperToken public token;
     uint256 public lastAirdrop;
     uint256 public constant AIRDROP_INTERVAL = 30 days;
     uint256 public constant AIRDROP_AMOUNT = 1e23; // 100_000 * 1e18
 
     constructor(
         address admin,
-        ISuperfluid _host,
-        IInstantDistributionAgreement _ida,
-        ISuperfluidToken _token
+        ISuperToken _token
     ) {
         _ADMIN = admin;
         token = _token;
-        _idav1Lib = IDAv1Library.InitData(_host, _ida);
-        _idav1Lib.createIndex(_token, _INDEX_ID);
+        token.createIndex(_INDEX_ID);
     }
 
     /// @notice Airdrops a constant amount if the last
     /// airdrop was at least 30 days ago
     function airdrop() external {
         require(_canAirdrop(), "can not air drop yet");
-        _idav1Lib.distribute(token, _INDEX_ID, AIRDROP_AMOUNT);
+        token.distribute(_INDEX_ID, AIRDROP_AMOUNT);
     }
     
     function updateUnits(address subscriber, uint128 units) external {
         require(msg.sender == _ADMIN, "unathorized");
-        _idav1Lib.updateSubscriptionUnits(
-            token,
+        token.updateSubscriptionUnits(
             _INDEX_ID,
             subscriber,
             units
