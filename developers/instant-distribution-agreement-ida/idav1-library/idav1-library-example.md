@@ -1,7 +1,5 @@
 ---
-description: >-
-  This is an example implementation of a contract using the Instant Distribution
-  Agreement library.
+description: This is an example implementation of a contract using the Super Token library.
 ---
 
 # IDA Solidity Example

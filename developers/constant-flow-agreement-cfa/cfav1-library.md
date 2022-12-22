@@ -1,14 +1,12 @@
 ---
-description: The CFAv1Library makes it easy to work with money streams in Solidity!
+description: The Super Token Library allows you to work with money streams in Solidity
 ---
 
 # CFA - Solidity
 
-The [Constant Flow Agreement library](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/apps/CFAv1Library.sol) (`CFAv1Library.sol)` makes money streams in Solidity a piece of cake.&#x20;
+#### **SuperTokenV1Library Contract**
 
-#### **CFAv1Library Contract**
-
-{% embed url="https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/apps/CFAv1Library.sol" %}
+{% embed url="https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/apps/SuperTokenV1Library.sol" %}
 
 #### **Quickstart Guide**
 
@@ -61,7 +59,7 @@ contract SomeContractWithSuperTokenV1Library {
 ### Create, Update, Delete Streams
 
 ```solidity
-// You simply make the calls directly through the `token`
+// You make the calls directly on the `token`
 token.createFlow(address receiver, int96 flowRate)
 token.updateFlow(address receiver, int96 flowRate);
 token.deleteFlow(address sender, address receiver);
@@ -72,6 +70,42 @@ token.deleteFlow(address sender, address receiver);
 **`receiver`** - the `address` of the receiver
 
 **`flowRate`** - an `int96` variable which represents the wei/_second_ rate you'd like to stream `token` to the receiver, denominated in `wei`. Money streams always move tokens per second so `flowRate` is always per second!
+
+### Giving an Operator Permissions to Create, Update, & Delete Streams
+
+```solidity
+// You make the calls directly on the `token`
+
+//allows for granular permissions
+token.setFlowPermissions(flowOperator, allowCreate, allowUpdate, allowDelete, flowRateAllowance);
+
+//gives max flow rate allowance 
+//also gives ability to create, update, and delete
+token.setMaxFlowPermissions(flowOperator);
+
+//revokes 100% of all flow permissions
+token.revokeFlowPermissions(flowOperator);
+```
+
+`flowOperator` - the account you are giving permissions to
+
+`allowCreate` - a boolean, if `true`, the `flowOperator` can _create_ streams on behalf of `msg.sender`
+
+`allowUpdate` - a boolean, if `true`, the `flowOperator` can _update_ streams on behalf of `msg.sender`
+
+`allowDelete` - a boolean, if `true`, the `flowOperator` can _delete_ streams on behalf of `msg.sender`
+
+`flowRateAllowance` - the total allowance provided to the `flowOperator`. More on this [here](cfa-access-control-list-acl/#flowrateallowance-parameter) (note that there is some nuance with flow rate allowances)
+
+### Create, Update, and Delete Streams as an Operator
+
+```solidity
+// create, update, and delete flow as operator
+//mirrors the ERC20 approve x transferFrom pattern
+token.createFlowFrom(sender, receiver, flowRate);
+token.updateFlowFrom(sender, receiver, flowRate);
+token.deleteFlowFrom(sender, receiver);
+```
 
 ### Getting Stream Data
 

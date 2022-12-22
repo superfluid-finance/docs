@@ -53,7 +53,7 @@
       * [revokeFlowOperatorPermissions](developers/constant-flow-agreement-cfa/cfa-operations/write-methods/revokeflowoperatorpermissions.md)
   * [CFA - Frontend Examples](developers/constant-flow-agreement-cfa/money-streaming-1.md)
   * [Access Control List (ACL)](developers/constant-flow-agreement-cfa/cfa-access-control-list-acl/README.md)
-    * [ACL Features](developers/constant-flow-agreement-cfa/cfa-access-control-list-acl/acl-features.md)
+    * [ACL Features - SDK](developers/constant-flow-agreement-cfa/cfa-access-control-list-acl/acl-features.md)
 * [✳ Instant Distribution Agreement (IDA)](developers/instant-distribution-agreement-ida/README.md)
   * [IDA - Solidity](developers/instant-distribution-agreement-ida/idav1-library/README.md)
     * [IDA Solidity Example](developers/instant-distribution-agreement-ida/idav1-library/idav1-library-example.md)

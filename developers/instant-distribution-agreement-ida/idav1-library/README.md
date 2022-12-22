@@ -1,10 +1,12 @@
 ---
 description: >-
-  The SuperTokenV1Library makes it easy to work with instant distributions in
-  Solidity!
+  The Super Token Library allows you to work with instant distributions in
+  Solidity
 ---
 
 # IDA - Solidity
+
+{% embed url="https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/apps/SuperTokenV1Library.sol" %}
 
 ### Agreement Abstraction
 

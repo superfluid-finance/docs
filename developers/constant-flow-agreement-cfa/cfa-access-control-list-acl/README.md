@@ -14,6 +14,10 @@ It's basically the money streaming equivalent of the ERC20 approval mechanism!
 
 Before checking out the functions ACL provides you, you'll want to understand the `flowRateAllowance` and `permissions` parameters.
 
+{% hint style="info" %}
+NOTE: this page is a deep dive into how the access control list system works at the protocol level. We recommend using the SuperTokenV1Library and the functions found [here](https://app.gitbook.com/o/-MKEeXlqDp8Or6mOgLxr/s/-MKEcOOf\_qoYMObicyRu/) to give allowances to flowOperators & to create, update, and delete flows as an operator.
+{% endhint %}
+
 ## `flowRateAllowance` Parameter
 
 You can think of `flowRateAllowance` as a tank. When you set `flowRateAllowance` in your [`updateFlowOperatorPermissions`](./#updateflowoperatorpermissions) call imagine you've filled up that tank to a level of your choosing for the `flowOperator` account.
@@ -26,7 +30,7 @@ If a `flowOperator`'s `flowRateAllowance` is too small for it to create/increase
 
 **Example:**
 
-For example, let’s assume that we allow an operator access to creating and updating streams with a flowRate allowance of 1000 tokens per month (which would be represented as a flow rate of `385802469135802` tokens per second). If our operator creates a stream on our behalf with a `flowRate` of 500 tokens per month, then the operator’s remaining `flowRateAllowance` becomes 500 tokens per month (`1000/month - 500/month`). Then, if our operator updates another one of our streams that is already outstanding by increasing our `flowRate` by 250 tokens per month, then our operator’s `flowRateAllowance` will decrease by another 250 tokens per month, leaving the remaining flowRateAllowance at 250 tokens per month (`500/month - 250/month`).
+Let’s assume that we enable an operator to create and update streams with a flowRate allowance of 1000 tokens per month (which would be represented as a flow rate of `385802469135802` tokens per second). If our operator creates a stream on our behalf with a `flowRate` of 500 tokens per month, then the operator’s remaining `flowRateAllowance` becomes 500 tokens per month (`1000/month - 500/month`). Then, if our operator updates another one of our streams that is already outstanding by increasing our `flowRate` by 250 tokens per month, then our operator’s `flowRateAllowance` will decrease by another 250 tokens per month, leaving the remaining flowRateAllowance at 250 tokens per month (`500/month - 250/month`).
 
 ## `permissions` Parameter
 
