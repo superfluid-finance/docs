@@ -122,7 +122,7 @@
     * [Other Helpful Queries](resources/integration-guides/useful-queries-for-your-integration/other-helpful-queries.md)
   * [Constructing Links to The Superfluid Dashboard](resources/integration-guides/constructing-links-to-the-superfluid-dashboard.md)
 * [🌊 Superfluid Wave Pool](resources/superfluid-wave-pool.md)
-* [🤑 Bounty Program](resources/bounty-program.md)
+* [💰 Bounty Program](resources/bounty-program.md)
 * [🛠 Example Projects](resources/examples.md)
 * [🗳 Token Dashboard Submission](resources/token-dashboard-submission/README.md)
   * [🏗 Hack Ideas!](https://www.notion.so/Hack-On-Superfluid-92f7cb4ccf264518814d54d50f067ac1)

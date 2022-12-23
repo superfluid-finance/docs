@@ -2,7 +2,7 @@
 description: Get paid to improve our real-time finance protocol!
 ---
 
-# 🤑 Bounty Program
+# 💰 Bounty Program
 
 The Superfluid Bounty Program allows developers to tackle a variety of technical issues laid out by the Superfluid Team and earn payouts for completion. Ready to get bounty hunting? Let's get started!
 
@@ -51,7 +51,7 @@ _\*\* This is a soft deadline. It is simply so we can check up on progress and o
 
     \- In the Bounty KYC Form, for "Hackathon Name" put down the "Bounty"\
     \- In the Bounty KYC Form, for "Your Hack Name" put down the title of your bounty\
-    \- In the Request Invoice, please invoice for USDC (not DAI or any other token)
+    \- In the Request Invoice, please invoice for USDC on Polygon (not DAI or any other token)
 3. Wait for your bounty to pay out on the next Wednesday! Congrats on your valued contribution to Superfluid 🏁
 
 **NOTE: Bounty hunters must adhere to the following statement 👇**
