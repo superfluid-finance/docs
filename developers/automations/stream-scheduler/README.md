@@ -35,7 +35,7 @@ _End_: March 20th, 2023 at 12:00am
 
 3\.  March 20th comes and the stream from you to Alice is cancelled.
 
-<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Setting Up Stream Scheduling
 

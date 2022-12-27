@@ -112,7 +112,7 @@ Head to [app.superfluid.finance](https://app.superfluid.finance). During log-in 
 
 If you're using the fDAIx token as shown in this guide, the you need to upgrade your DAI (token symbols don't always match exactly on testnet).
 
-![](<../../../.gitbook/assets/image (7) (1).png>)
+![](<../../../.gitbook/assets/image (7) (1) (1).png>)
 
 You'll be prompted to "Allow Superfluid to spend your DAI". Then you'll call the upgrade function, which will take the DAI token from your wallet, and send back the same amount of DAIx. Use the handy "Add to Metamask" button to see DAIx in your wallet.
 

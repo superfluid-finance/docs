@@ -52,6 +52,8 @@ The top three submissions to the December Wave will earn one of the below prizes
 
 **Pool Prize** - $1,000 (split among hackers who did great work, but didn’t quite make the Top 3 cut)
 
+_Notice: Wave Pool payouts are subject to KYC screening as per_ [_international sanctions laws_](bounty-program.md#note-bounty-hunters-must-adhere-to-the-following-statement)_._
+
 ## Get Started 🙋‍♀️
 
 #### **1. First, understand what kind of work is acceptable 👇**
@@ -162,7 +164,3 @@ If you have a winning submission, in the days after the Wave completes, we will 
 <figure><img src="../.gitbook/assets/wave-pool-poaps.gif" alt=""><figcaption></figcaption></figure>
 
 We will also announce winners publicly in our Discord and highlight interesting submissions on our socials or during Community Calls.
-
-
-
-<mark style="color:green;">**NOTICE: Wave Pool payouts are subject to KYC screening as per international sanctions laws.**</mark>
