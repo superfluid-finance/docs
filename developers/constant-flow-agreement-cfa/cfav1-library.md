@@ -187,7 +187,7 @@ token.createFlowWithCtx(
 ) returns (bytes memory);
 
 //these functions look very similar for updates and deletions
-token.updateFlowWithCtx(address receiver, flowRate, bytes memory ctx) returns (bytes memory);
+token.updateFlowWithCtx(address receiver, int96 flowRate, bytes memory ctx) returns (bytes memory);
 token.deleteFlowWithCtx(address sender, address receiver, bytes memory ctx) returns (bytes memory);
 ```
 
