@@ -12,16 +12,16 @@ Click a link to start testing queries in the playground:
 
 | Network          | URL                                                                                                                                                                                          |
 | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| xDAI             | [https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-xdai](https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-xdai)                         |
-| Matic            | [https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-matic](https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-matic)                       |
-| Avalanche        | [https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-avalanche-c](https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-avalanche-c)           |
-| Optimism         | [https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-optimism-mainnet](https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-optimism-mainnet) |
-| Arbitrum         | [https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-arbitrum-one](https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-arbitrum-one)         |
-| Avalanche Fuji   | [https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-avalanche-fuji](https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-avalanche-fuji)     |
+| xDAI             | [https://console.superfluid.finance/subgraph?\_network=xdai](https://console.superfluid.finance/subgraph?\_network=xdai)                                                                     |
+| Matic            | [https://console.superfluid.finance/subgraph?\_network=matic](https://console.superfluid.finance/subgraph?\_network=matic)                                                                   |
+| Avalanche        | [https://console.superfluid.finance/subgraph?\_network=avalanche-c](https://console.superfluid.finance/subgraph?\_network=avalanche-c)                                                       |
+| Optimism         | [https://console.superfluid.finance/subgraph?\_network=optimism-mainnet](https://console.superfluid.finance/subgraph?\_network=optimism-mainnet)                                             |
+| Arbitrum         | [https://console.superfluid.finance/subgraph?\_network=arbitrum-one](https://console.superfluid.finance/subgraph?\_network=arbitrum-one)                                                     |
+| Avalanche Fuji   | [https://console.superfluid.finance/subgraph?\_network=avalanche-fuji](https://console.superfluid.finance/subgraph?\_network=avalanche-fuji)                                                 |
 | Optimism Kovan   | [https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-optimism-kovan](https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-optimism-kovan)     |
 | Arbitrum Rinkeby | [https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-arbitrum-rinkeby](https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-arbitrum-rinkeby) |
-| Mumbai           | [https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-mumbai](https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-mumbai)                     |
-| Goerli           | [https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-goerli](https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-goerli)                     |
+| Mumbai           | [https://console.superfluid.finance/subgraph?\_network=mumbai](https://console.superfluid.finance/subgraph?\_network=mumbai)                                                                 |
+| Goerli           | [https://console.superfluid.finance/subgraph?\_network=goerli](https://console.superfluid.finance/subgraph?\_network=goerli)                                                                 |
 | Ropsten          | [https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-ropsten](https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-ropsten)                   |
 | Kovan            | [https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-kovan](https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-kovan)                       |
 | Rinkeby          | [https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-rinkeby](https://thegraph.com/hosted-service/subgraph/superfluid-finance/protocol-v1-rinkeby)                   |

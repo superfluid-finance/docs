@@ -33,17 +33,17 @@ _End Date_: June 1st\
 _Cliff Amount_: 100 AMZNx\
 _Flow Rate_: 100 AMZNx/mo.
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 2\.   It’s March 1st - the cliff amount is transferred to Alice and the vesting stream begins
 
 **Note: there were no actions to be taken on the Feb. 1st start date as a cliff date was provided**
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 3\.   It’s June 1st and the vesting is complete - the stream is cancelled.
 
-<figure><img src="../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (12) (2).png" alt=""><figcaption></figcaption></figure>
 
 ## Setting Up Vesting Scheduling
 

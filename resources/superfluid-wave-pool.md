@@ -142,7 +142,7 @@ When you _start_ the work doesn't matter. You could have been working on somethi
 
 Sign up for Devfolio [here](https://devfolio.co/) and then fill out your project details [here](https://devfolio.co/projects).
 
-* Here's a well-done [example ](https://devfolio.co/projects/test-a7d3)of a good Devfolio project page
+* Here's an [example ](https://devfolio.co/projects/test-a7d3)of a solid Devfolio project page
 
 _**Please include a video demo** _ - it's better for showcasing your project and helping us judge.
 
