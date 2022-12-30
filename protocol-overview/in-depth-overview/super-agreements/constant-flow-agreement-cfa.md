@@ -166,6 +166,6 @@ The size of the buffer is based on time and flow rate. So for instance, on Polyg
 
 ### Sentinels
 
-Superfluid enables the liquidation of critical account streams by any external account. Anyone can run Sentinel software which monitors all Constant Flow Agreements across the network, identifies critical accounts, and closes their streams, thereby earning buffer deposits.&#x20;
+Anyone can run Sentinel software which monitors all Constant Flow Agreements across the network, identifies critical accounts, and closes their streams, thereby earning buffer deposits.&#x20;
 
 _This was a high level overview of Superfluid Solvency. Check out the_ [_Liquidations page_](../../../sentinels/liquidations-and-toga.md) _for a more in-depth explanation and the_ [_Sentinel page_](https://docs.superfluid.finance/superfluid/sentinels/running-a-sentinel) _for details on how to run Sentinels._
