@@ -30,11 +30,11 @@ The Stream Accounting API supports all Superfluid-supported networks and tokens 
 
 Alice is paying Bob in a stream of 0.1 ETHx per month.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
 You want to get accounting info on the stream Alice is sending on a monthly basis between **June 1st and September 15th**.
 
-<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (2).png" alt=""><figcaption></figcaption></figure>
 
 The Stream Accounting API gives you information for the months between June 1st and September 15th.
 
@@ -46,11 +46,11 @@ Let’s say Alice had updated her stream to 0.2 ETHx/month on September 15th.
 
 Now, you want to get accounting info on the stream Alice is sending on a month basis between June 1st and **December 1st**.
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (3).png" alt=""><figcaption></figcaption></figure>
 
 The Stream Accounting API gives you information for the month between June 1st and December 1st.
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (5).png" alt=""><figcaption></figcaption></figure>
 
 ## Using the Stream Accounting API
 

@@ -4,9 +4,17 @@ description: Understanding CallAgreement vs CallAgreementWithContext
 
 # Calling Agreements In Super Apps
 
-### CallAgreement vs CallAgreementWithContext
+{% hint style="info" %}
+Note that this is a highly technical section for those looking to understand lower level features of the protocol. If you're looking to create, update, and delete streams or work with the instant distribution agreement in your super app callbacks, you can refer to the [SuperTokenV1Library](https://github.com/superfluid-finance/super-examples/blob/main/projects/tradeable-cashflow/contracts/RedirectAll.sol#L223) to perform these operations in a single line of code.
+{% endhint %}
 
-**TLDR**: If you're making a call to a Superfluid agreement inside of a Super App callback, you should remember that you need to "receive a context, and return a context" by using the `callAgreementWithContext` function. If you're not making this call inside of a Super App callback, you should use `callAgreement`.
+## CallAgreement vs CallAgreementWithContext
+
+### **TLDR**
+
+If you're making a call to a Superfluid agreement inside of a Super App callback, you should remember that you need to "receive a context, and return a context" by using the `callAgreementWithContext` function. If you're not making this call inside of a Super App callback, you should use `callAgreement`.
+
+### In Depth
 
 When calling the host contract to trigger actions related to the constant flow agreement (CFA) or instant distribution agreement (IDA), you may use either `callAgreement` or `callAgreementWithContext`. Both of these functions allow you to pass in an encoded call to the agreement you'd like to interact with, as well as an optional `userData` value. The `callAgreementWithContext` function will perform the same actions as the `callAgreement` function, but it also enables you to pass in a new context value (abbreviated `ctx` ) to your function call.
 

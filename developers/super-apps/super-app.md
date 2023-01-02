@@ -6,9 +6,9 @@ description: Using Super Apps To Create Programmable Cashflows
 
 ### **What is a Super App?**
 
-A Super App is a contract that reacts on-chain to changes within super agreements that the contract is associated with. They may be used in conjunction with the Superfluid Constant Flow Agreement (CFA) to create truly programmable cashflows.
+Super Apps allow us to build smart contracts that are fully integrated with Superfluid at the protocol level.
 
-Super Apps allow us to build smart contracts that are fully integrated with Superfluid at the protocol level. If you've looked at our [Tradeable Cashflow](https://docs.superfluid.finance/superfluid/protocol-tutorials/super-apps) tutorial or our [User Data](https://docs.superfluid.finance/superfluid/docs/user-data) tutorial, we are using a Super App in each of those sample applications.
+&#x20;If you've looked at our [Tradeable Cashflow](https://docs.superfluid.finance/superfluid/protocol-tutorials/super-apps) tutorial or our [User Data](https://docs.superfluid.finance/superfluid/docs/user-data) tutorial, we are using a Super App in each of those sample applications.
 
 ![The Tradeable Cashflow NFT](<../../.gitbook/assets/image (29) (1).png>)
 
@@ -28,7 +28,9 @@ Some of the most interesting projects in our ecosystem, such as Ricochet Exchang
 
 ### Super App Configuration
 
-For a Super App to be able to use callbacks, it must first be 'registered' with the protocol. This is done using a pattern similar to the [ERC1820 registry system](https://eips.ethereum.org/EIPS/eip-1820) (which is also used to enable ERC777 callbacks - something you can also access within Super Tokens). To register a Super App, you need to add the following code to your Super App's constructor:
+For a Super App to be able to use callbacks, it must first be 'registered' with the protocol. This is done using a pattern similar to the [ERC1820 registry system](https://eips.ethereum.org/EIPS/eip-1820).
+
+To register a Super App, you need to add the following code to your Super App's constructor:
 
 ```
 // by default, all 6 callbacks defined in the ISuperApp interface
@@ -55,13 +57,13 @@ string memory registrationKey = "";
 
 Running `_host.registerAppWithKey` and passing in the `configWord` will enable your Super App to be registered within the Superfluid host contract's Super App manifest. This will allow it to be managed under basic Superfluid governance parameters and ensure that callbacks are run as intended.
 
-The `APP_LEVEL_FINAL` must be set as seen above for now. This parameter refers to which (and how many) callbacks will be run within a hypothetical chain of Super Apps. During the creation of the protocol, we had to decide how Super Apps would behave if a chain of callbacks could have the potential to execute in succession.
+The `APP_LEVEL_FINAL` must be set as seen above for now. This parameter refers to which (and how many) callbacks will be run within a hypothetical chain of Super Apps.&#x20;
 
-For example, if a user calls a Super app, then that app calls another Super App, do the Super App callbacks run in both contracts, the second contract in the chain of events, or the first contract in the chain of events? The answer to this question, as of Q4 2021, is that the callbacks are run within the **first app only.** However, this is a parameter which will be subjected to Superfluid governance moving forward, and may change. Developers should build with this in mind. How could your app be impacted by multiple callbacks being able to run in succession in multiple apps?
+For example, if a user calls a Super app, then that app calls another Super App, do the Super App callbacks run in both contracts, the second contract in the chain of events, or the first contract in the chain of events? The answer to this question, as of Q4 2021, is that the callbacks are run within the **first app only.**&#x20;
 
-The `_NOOP` designations are also important as they allow you to specify which callbacks you'd like to use in your Super App. Callbacks can run **before** and/or **after** an agreement function runs. You can have logic that runs in either or both cases, and also choose not to implement certain callbacks.
+The `_NOOP` (pronounced 'no-op') designations are also important as they allow you to specify which callbacks you'd like to use in your Super App. Callbacks can run **before** and/or **after** an agreement function runs.&#x20;
 
-As we explain in the comments within the code sample above, If you inherit from the [SuperAppBase](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/apps/SuperAppBase.sol) contract, there's a default implementation for each callback which will revert. It's critical to ensure you have a well-tested implementation for each callback, and that you use the `_NOOP` pattern to prevent the callbacks you _don't_ wish to use from running. In the case of an app that only uses the `afterAgreement` callbacks, you'll want to add the `_NOOP` flag to each callback you won't be using - in this case the `beforeAgreement` callbacks. This can be done like so within your `configWord` variable.
+If you inherit from the [SuperAppBase](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/apps/SuperAppBase.sol) contract, there's a default implementation for each callback which will revert. It's critical to ensure you have a well-tested implementation for each callback, and that you use the `_NOOP` pattern to prevent the callbacks you _don't_ wish to use from running. In the case of an app that only uses the `afterAgreement` callbacks, you'll want to add the `_NOOP` flag to each callback you won't be using - in this case the `beforeAgreement` callbacks. This can be done like so within your `configWord` variable.
 
 ```jsx
 SuperAppDefinitions.BEFORE_AGREEMENT_CREATED_NOOP |
@@ -74,7 +76,7 @@ Finally, you can register your app using `_host.registerAppWithKey(configWord)` 
 You can do this freely on testnets, but on mainnets pre-approval of Super Apps is needed for now.\
 Navigate to [this guide](https://github.com/superfluid-finance/protocol-monorepo/wiki/Super-App-White-listing-Guide) in order to find out how to get that done.
 
-### Super App Deposits
+### Super App CFA Buffers&#x20;
 
 When a user first creates a Superfluid stream, the protocol will take an up front [buffer](../../sentinels/liquidations-and-toga.md) to ensure the protocol's security. These deposits are sized as follows:
 
@@ -85,21 +87,29 @@ When a user first creates a Superfluid stream, the protocol will take an up fron
 
 **Why can the deposit by up to \~2x when sending a stream to a Super App?**
 
-Because Super Apps are designed to create programmable cashflows, the protocol needs to ensure that Super Apps don't execute logic that could impact the protocol's security. The caller of the stream being sent to the super app is essentially covering the deposit of the Super App.
+Because Super Apps are designed to enable programmable cashflows, the protocol needs to ensure that Super Apps don't execute logic that could impact the protocol's security. The caller of the stream being sent to the super app is essentially _covering the deposit_ of the Super App.
 
-This higher deposit provides an extra incentive for the protocol to ensure that users sending streams into super apps maintain a balance > 0. It protects the protocol from cascading effects resulting from an insolvent Super App. There are additional requirements around Super App solvency that you'll find in the list of Super App rules we define below.
+This higher deposit provides an extra incentive for the protocol to ensure that users sending streams into super apps maintain a balance > 0.&#x20;
 
 ### Super App Callbacks
 
-Super App callbacks are run when a Super App is on the receiving end of a transaction that creates, updates, or deletes a stream in relation to that app.
+Super App callbacks are run when a Super App is on the receiving end of a callAgreement call (i.e. an operation which executes logic in one of the existing agreement contracts, such as the IDA or CFA)
 
 **When Will Super App Callbacks Run?**
 
-A Super App callback will run when a stream is created or updated where the app is the `receiver` of the stream. It will also run when a stream is deleted by a user or contract that is external to the Super App. While streams can only be created or updated by the sender of the stream, a stream may be deleted by _either the sender or the receiver_ of that stream. This means that the `beforeAgreementTerminated` or `afterAgreementTerminated` callback will run if a stream that was being sent into the Super App was deleted by the sender, or if a stream being sent from the Super App to another address was deleted by the receiver of that stream.
+In the case of the constant flow agreement, Super App callbacks will run when&#x20;
+
+* a stream is created where the app is the `receiver` of the stream.
+* a stream is updated where the app is the `receiver` of the stream. &#x20;
+* a stream is deleted by a user or contract that is external to the Super App.&#x20;
+
+Note that in the third case, a stream may be deleted by _either the sender or the receiver_ of that stream. This means that the `beforeAgreementTerminated` or `afterAgreementTerminated` callback will run if a stream that was being sent into the Super App was deleted by the sender, or if a stream being sent from the Super App to another address was deleted by the receiver of that stream.
 
 **Who is Calling the Super App Callback?**
 
-Callbacks are called entirely on chain by the Superfluid protocol in response to events. Each time an action is taken inside of the Constant Flow Agreement contract, the protocol will check the Super App registry to determine whether or not the stream will be sent to a Super App (or if the stream being deleted involves a Super App in the event of deletion). If it doesn't involve a Super App, there are no callbacks to run, so the stream is created, updated, or deleted without any other operation. However, if the protocol finds that the stream indeed does involve a Super App after a check to the Superfluid Super App manifest, it will call the necessary callback(s).
+Callbacks are called entirely on chain by the Superfluid protocol in response to events. Each time an action is taken inside of the Constant Flow Agreement contract, the protocol will check the Super App registry to determine whether or not the stream will be sent to a Super App (or if the stream being deleted involves a Super App in the event of deletion). If it doesn't involve a Super App, there are no callbacks to run, so the stream is created, updated, or deleted without any other operation.&#x20;
+
+However, if the protocol finds that the stream indeed does involve a Super App after a check to the Superfluid Super App manifest, it will call the necessary callback(s).
 
 #### The Anatomy of Super App Callbacks:
 
@@ -167,9 +177,9 @@ One additional thing to note about the `beforeAgreement` callbacks is that they 
 
 Super Apps are a powerful concept within the Superfluid ecosystem. They allow for new levels of creativity - specifically related to _programmable cash flows._
 
-However, there are specific rules that have been encoded into the protocol which SuperApps must abide by.
+However, there are specific rules that have been encoded into the protocol which SuperApps must abide by. Super App rules should be obeyed at all cost by developers, or they risk their contract being jailed by the protocol.&#x20;
 
-Super App rules should be obeyed at all cost by developers, or they risk their contract being jailed by the protocol. What does it mean for an app to be 'jailed' exactly? We apply the term `jailed` to refer to a Super App that failed to comply with the set of rules encoded into the Superfluid framework. This does **not** mean that someone on the Superfluid team is exerting arbitrary control over your Super Apps.
+What does it mean for an app to be 'jailed' exactly? We apply the term `jailed` to refer to a Super App that failed to comply with the set of rules encoded into the Superfluid framework. This does **not** mean that someone on the Superfluid core team is exerting arbitrary control over your Super Apps.
 
 These rules have been written into the protocol at the software level, and are simply designed to place basic security guardrails on Super Apps. Complex systems in our industry have constraints, and you can think of Super App rules as an extension of those constraints that apply to this subset of the protocol.
 
@@ -180,7 +190,7 @@ These rules have been written into the protocol at the software level, and are s
 1\) Super Apps cannot revert in the termination callback (`afterAgreementTerminated()`)
 
 * Use the **trycatch** pattern if performing an action which interacts with other contracts inside of the callback. Doing things like transferring tokens without using the **trycatch** pattern is dangerous and should be avoided.
-* Double check internal logic to find **any revert possibility.**
+* Double check internal logic to find **any revert possibility in this callback.**
 
 2\) Super Apps can't became insolvent.
 
