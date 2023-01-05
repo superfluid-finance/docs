@@ -16,6 +16,14 @@ From here, you can install the Superfluid SDK Core like so:
 npm install @superfluid-finance/sdk-core
 ```
 
+## Peer Dependencies
+
+You'll also need to install `graphql` and `ethers.js` to work with the SDK.
+
+```
+npm install graphql ethers
+```
+
 ## I**nitializing the SDK Core**
 
 When creating the framework, you'll use `Framework.create()` like so:
