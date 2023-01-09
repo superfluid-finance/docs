@@ -48,7 +48,7 @@ The top three submissions to the December Wave will earn one of the below prizes
 
 **3rd Place** - $1,000
 
-**Co-Sponsor Prize** - to be announced! 👀
+**Co-Sponsor Prize** - $2,000 for Best [Push Protocol](https://docs.push.org/developers) Integration 👀
 
 **Pool Prize** - $1,000 (split among hackers who did great work, but didn’t quite make the Top 3 cut)
 
