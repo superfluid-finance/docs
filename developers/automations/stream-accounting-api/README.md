@@ -20,7 +20,7 @@ The Stream Accounting API accommodates changes in stream flow rates. Basically, 
 
 **Outgoing & Incoming**
 
-The API accounts for both outgoing and incoming streams in the same data export, denoting incoming streams with negative values and outbound streams with positive values.
+The API accounts for both outgoing and incoming streams in the same data export, denoting incoming streams with positive values and outbound streams with negative values.
 
 **All Networks and All Tokens**
 
