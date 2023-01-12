@@ -14,7 +14,7 @@ This can be soon performed on the Superfluid Dashboard or by making use of the u
 
 If you have an intended end date and/or start date for a stream, instead of having to _manually_ trigger the action, you could use the Stream Scheduler to _automatically_ trigger the action at the desired time. This is especially useful in the case of streaming payroll, subscriptions and token vesting.
 
-Superfluid streams are perpetual by default - they run until you cancel them or you run out of balance. If you want to be streaming someone tokens for a fixed duration and not have to deal with automatically triggering the creation or deletion of the stream, the Stream Scheduler is the solution.
+Superfluid streams are perpetual by default - they run until you cancel them or you run out of balance. If you want to be streaming someone tokens for a fixed duration and not have to deal with manually triggering the creation or deletion of the stream, the Stream Scheduler is the solution.
 
 ## Example:
 
