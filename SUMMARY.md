@@ -106,7 +106,7 @@
 ## Sentinels
 
 * [🥅 Liquidations & TOGA](sentinels/liquidations-and-toga.md)
-* [🛡 Running a Sentinel](sentinels/running-a-sentinel.md)
+* [🤖 Running a Sentinel](sentinels/running-a-sentinel.md)
 * [🗺 Solvency Dashboard](sentinels/solvency-dashboard.md)
 
 ## Resources
@@ -125,6 +125,8 @@
   * [Constructing Links to The Superfluid Dashboard](resources/superfluid-integration-guide/constructing-links-to-the-superfluid-dashboard.md)
 * [🌊 Superfluid Wave Pool](resources/superfluid-wave-pool.md)
 * [💰 Bounty Program](resources/bounty-program.md)
+* [🛡 Security & Bug Bounties](resources/security-and-bug-bounties/README.md)
+  * [Security Best Practices](resources/security-and-bug-bounties/security-best-practices.md)
 * [🛠 Example Projects](resources/examples.md)
 * [🗳 Token Dashboard Submission](resources/token-dashboard-submission/README.md)
   * [🏗 Hack Ideas!](https://www.notion.so/Hack-On-Superfluid-92f7cb4ccf264518814d54d50f067ac1)
