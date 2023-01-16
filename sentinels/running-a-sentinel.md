@@ -2,7 +2,7 @@
 description: How to run a Sentinel
 ---
 
-# 🛡 Running a Sentinel
+# 🤖 Running a Sentinel
 
 In our section on [Liquidations & TOGA](liquidations-and-toga.md), we described how the Superfluid protocol handles solvency & liquidations. Sentinels play a vital role in this process. This page provides links to various resources that will aid you on your journey to help secure the protocol 🛡⚔️
 
