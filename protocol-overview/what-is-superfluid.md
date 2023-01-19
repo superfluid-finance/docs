@@ -1,32 +1,25 @@
 ---
-description: High Level Protocol Concepts
+description: A token-centric protocol improving how we move tokens
 ---
 
 # 💡 What is Superfluid?
 
-## INTRODUCTION
+## Token-Centric Framework
 
-Superfluid is a smart contract framework on EVM networks, enabling you to move assets on-chain following predefined rules called agreements. With a single on-chain transaction, the money will flow from your wallet to the receiver in real time! No further transactions required ✨
+Superfluid is an token-centric smart EVM contract framework that introduces the **Super Token**. The Super Token is an extension of the ERC20 standard that has additional powerful value-movement abilities beyond the basic "transfer". We call these abilities Super Agreements.
 
-**Superfluid enables:**
+Currently there are two additional Super Agreements:
 
-💸 **Real money streaming** - Constant token flows on-chain with no capital lockups. Money steams will continue perpetually until cancellation or the senders balance runs out. Money streams can also have their stream rate updated at any time.
+****:potable\_water:  **"Money Streams" - Constant Flow Agreement (CFA)**: move tokens in constant-rate by-the-second streams between accounts with no capital lock up.
 
-🎁 **Rewards distributions** - Fixed cost distribution in a single transaction for any number of receivers.
+****:eight\_spoked\_asterisk: **"Instant Distributions" - Instant Distribution Agreement (IDA)**: assign proportions to many receiving accounts and lump-distribute tokens to them on the basis of the set proportions
 
-🔮 **Anything you can imagine** - Superfluid is very flexible!
+These agreements modify the balance of Super Tokens just like basic transfers would! There's no claiming/settling/etc. involved - Superfluid instantly settles everything within the Super Token balance.
 
-**Superfluid Components:**
+## Composable
 
-The current version of Superfluid is composed of the following key elements:
+ERC20 tokens are the most composable Web3 primitive - you can borrow against them, exchange them, stake them, the list is endless. Since all Superfluid boils down to is an extended ERC20 token, its composability is limitless as well.&#x20;
 
-* _**Super Agreement Framework**_**:** a set of approved _super agreements_ contracts as building blocks.
-* _**Super App Framework**_**:** a development framework for building real-time finance apps.
-* _**Super Token Framework**_**:** an extended [ERC-777](https://eips.ethereum.org/EIPS/eip-777) implementation with real-time finance capability, and a registry.
-* _**Batch Call & Meta Tx**_**:** for users (contracts or EOA) to interact with the system in batch on-chain, or off-chain through meta transactions.
-* _**Governance**_**:** an external contract for managing protocol parameters and contract upgrades.
-* _**Solvency Agents**_**:** an off-chain network of agents ensuring the solvency of the system. [Read more](../developers/super-tokens/super-tokens/)
+You can do all those basic ERC20 things in addition to the many possibilities introduced by money streams and instant distributions. Imagine a contract where you stake an NFT and receive a stream of Super Tokens straight to your wallet in return (no need to claim). Or, imagine a dollar-cost averaging protocol that scalably distributes Super Tokens straight to investor wallets with a fixed gas cost.&#x20;
 
-{% hint style="info" %}
-NOTE: we recommend using the [Superfluid Console](https://console.superfluid.finance) and the [Superfluid Dashboard](https://app.superfluid.finance) as you interact with the protocol.
-{% endhint %}
+Unprecendented mechanisms like this are made possible by the composability of Super Tokens.&#x20;
