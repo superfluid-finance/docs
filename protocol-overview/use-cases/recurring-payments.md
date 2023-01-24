@@ -2,7 +2,7 @@
 description: Superfluid is great for automating and scaling recurring payments
 ---
 
-# Recurring Payment
+# Recurring Payments
 
 Because transactions typically move value in a one-and-done fashion, on-chain recurring payments become manual and less scalable. Superfluid money streams solve this by allowing us to perpetually and automatically move value between accounts. This lets us realize many automatic recurring payment use cases!
 
@@ -76,7 +76,3 @@ Check out this example of a "dividend rights token" ERC20 contract where each to
 Normally, when a person or organization contributes to public goods, grants, or other causes with digital currency they do it with one-time payments.&#x20;
 
 Using a Superfluid perpetual payment stream, you can automatically provide continuous financial support to various causes. In addition to providing the cause with ongoing funding, you also have on-chain proof that you are streaming them money. That proof can be made composable with other things such as decentralized social profiles, NFTs, etc.
-
-For example, what if you could fund a [Gitcoin Aquaduct](https://twitter.com/gitcoin/status/1494467687161942016?s=20\&t=ZgHQaiG5y5YW2T98l9UJdQ) with a money stream? That's an available integration and we have a bounty available for it right now 👇
-
-{% embed url="https://github.com/superfluid-finance/protocol-monorepo/issues/729" %}
