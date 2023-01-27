@@ -2,7 +2,7 @@
 description: Giving other accounts control over stream operations
 ---
 
-# ACL Features
+# ACL Features - SDK
 
 ### Granting Permissions to Flow Operators
 
@@ -42,10 +42,6 @@ To grant a flow rate allowance to an operator, you'll need to pass in the follow
 
 `superToken` - the token on which the allowance is being provided
 
-{% hint style="info" %}
-NOTE: these examples expose a private key which contains some fake tokens, but you DO NOT need to create a signer with a private key to make use of Superfluid. To see an example which uses metamask/a web3 provider, scroll down to the last example
-{% endhint %}
-
 {% embed url="https://codesandbox.io/embed/updateflowpermissions-example-3k8hor?fontsize=14&hidenavigation=1&module=%2Fsrc%2FUpdateFlowPermissions.js&theme=dark&view=split" %}
 Updating flow permissions
 {% endembed %}
@@ -56,9 +52,7 @@ To revoke permissions, you can use the `revokeFlowOperatorWithFullControl` funct
 
 `superToken` - the token on which the permissions were granted
 
-{% embed url="https://codesandbox.io/embed/revoke-flow-permissions-example-ednt8t?fontsize=14&hidenavigation=1&module=%2Fsrc%2FRevokeFlowPermissions.js&theme=dark&view=split" %}
-Revoking flow permissions
-{% endembed %}
+{% embed url="https://codesandbox.io/s/batch-calls-tdp4g?file=/src/BatchCall.js&from-embed=&view=split" %}
 
 From here, creating, updating, and deleting streams will work in a quite straightforward way. You can find examples of each below.
 
