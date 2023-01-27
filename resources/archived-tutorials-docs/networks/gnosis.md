@@ -2,7 +2,7 @@
 description: Using Superfluid on Gnosis Chain
 ---
 
-# Gnosis Chain
+# Gnosis
 
 To use Superfluid with Gnosis Chain, you'll need a RPC URL to connect your Metamask or application to an Gnosis Chain node.
 

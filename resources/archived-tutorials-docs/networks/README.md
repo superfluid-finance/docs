@@ -18,8 +18,8 @@ description: All networks that Superfluid is currently deployed on
 [avalanche.md](avalanche.md)
 {% endcontent-ref %}
 
-{% content-ref url="xdai-chain.md" %}
-[xdai-chain.md](xdai-chain.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 {% content-ref url="polygon-network-matic.md" %}
