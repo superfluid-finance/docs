@@ -24,6 +24,10 @@ description: A new DeFi primitive to automate recurring transactions and monetiz
 
 ### DEVELOPERS
 
+{% content-ref url="developers/quickstart.md" %}
+[quickstart.md](developers/quickstart.md)
+{% endcontent-ref %}
+
 Building Smart Contracts that Interact With Superfluid?
 
 {% content-ref url="developers/solidity-examples/" %}
