@@ -14,7 +14,7 @@ NOTE: we recommend using the [Superfluid Console](https://console.superfluid.fin
 
 Creating a flow requires you to call `superToken.createFlow()` and pass in the receiver and flowRate required for the flow. There's also an optional field you can use called `userData` - which you can learn more about [in our guide on the topic](../super-apps/user-data/).
 
-See below for an example of how this works. You can enter your own Ethereum address and `flowRate` (i.e. how much DAIx you want to send in in wei/second) to send yourself a stream of DAIx. Scroll down in the React App page (on the right side of the screen below) to see your flowRate converted into DAIx per month.
+See below for an example of how this works. You can enter your own Ethereum address and `flowRate` (i.e. how much DAIx you want to send in wei/second) to send yourself a stream of DAIx. Scroll down in the React App page (on the right side of the screen below) to see your flowRate converted into DAIx per month.
 
 {% hint style="info" %}
 NOTE: these examples require test ether/MATIC and test super tokens. You can get some from our faucet [here](../super-tokens/super-token-faucet.md).&#x20;
