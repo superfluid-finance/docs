@@ -40,7 +40,7 @@ Prize winner or not, you'll be given exposure to the Superfluid team and communi
 
 ## Current Prizes
 
-The top three submissions to the December Wave will earn one of the below prizes 🥇
+The top three submissions to the February Wave will earn one of the below prizes 🥇
 
 **1st Place** - $2,000
 
@@ -48,11 +48,11 @@ The top three submissions to the December Wave will earn one of the below prizes
 
 **3rd Place** - $1,000
 
-**4th Place** - $750
+**Co-Sponsor Prize** - Best Payment/Payroll Projects on Gnosis Chain
 
-**5th Place** - $500
+&#x20;    **1st Place** - $2,000&#x20;
 
-**Co-Sponsor Prize** - $2,000 for Best [Push Protocol](https://docs.push.org/developers) Integration 👀
+&#x20;    **2nd Place** - $1,000
 
 **Pool Prize** - $1,000 (split among hackers who did great work, but didn’t quite make the Top 3 cut)
 
