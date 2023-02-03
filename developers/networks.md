@@ -69,7 +69,7 @@ Note: these addresses can also be found in the [Superfluid Console](https://cons
 {% endtab %}
 
 {% tab title="Gnosis Chain" %}
-**​​ ​​ ❓ See** [**Gnosis Chain**](broken-reference) **for more help**
+**​​ ​​ ❓ See** [**Gnosis Chain**](https://docs.gnosischain.com/) **for more help**
 
 **Framework**
 
