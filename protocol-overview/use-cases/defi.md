@@ -10,10 +10,6 @@ Like how Superfluid can automate recurring payments, you can also use the protoc
 
 [Ricochet Exchange](https://ricochet.exchange/) is an example of a live application that accomplishes this.
 
-On the developer side, our Stream-In-Distribute-Out example project provides a great framework to build scalable DCA applications. Check it out here 👇
-
-{% embed url="https://github.com/superfluid-finance/protocol-monorepo/tree/dev/examples/stream-in-distribute-out" %}
-
 ### Automated Savings
 
 Most of us set aside a fixed amount each month for savings and investment. Using Superfluid, you are able to automatically accomplish that investment allocation with money streams combined with [real-time investing applications](https://medium.com/superfluid-blog/real-time-investing-empowering-the-next-generation-of-investors-b216d6ac8d3f). As a result, the transactional effort of investing is cut out and made set-and-forget.
