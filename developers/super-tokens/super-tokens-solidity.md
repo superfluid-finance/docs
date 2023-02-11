@@ -86,7 +86,7 @@ Usage of `upgradeTo` is rare but useful. **** It allows you to designate another
 
 ```solidity
 // approving
-IERC20(underlyingTokenAddress).approve(superTokenAddress, superTokenAddress)
+IERC20(underlyingTokenAddress).approve(superTokenAddress, amountToWrap)
 
 // using upgradeTo (use "0x" for calldata if you don't want to pass in anything)
 ISuperToken(superTokenAddress).upgradeTo(receiverAddress, amountToWrap, "0x");
