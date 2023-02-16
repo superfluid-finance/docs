@@ -58,7 +58,7 @@ Now you can use the `deploy-unlisted-super-token.js` script to deploy the wrappe
 
 ```bash
 RELEASE_VERSION=v1 npx truffle --network <xdai or matic> \
-exec scripts/deploy-unlisted-super-token.js : \
+exec ops-scripts/deploy-unlisted-super-token.js : \
 <Underlying Token Address> \
 <SuperToken Name> \
 <SuperToken Symbol>
