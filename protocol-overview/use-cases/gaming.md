@@ -20,7 +20,7 @@ An evolving NFT would change over time as you stream a resource to it. Imagine y
 
 Check out PlantyBois, a hackathon project which attempted an NFT collection of this nature 👇
 
-{% embed url="https://showcase.ethglobal.com/nfthack2022/%F0%9F%8C%BCplantybois" %}
+{% embed url="https://ethglobal.com/showcase/plantybois-1mc64" %}
 
 ### Guild Membership Models
 

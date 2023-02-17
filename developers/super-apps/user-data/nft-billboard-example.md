@@ -16,7 +16,7 @@ Our dapp will turn the TradeableCashflow into a tradeable NFT billboard that can
 
 You can follow along with the video version of this tutorial on Youtube, and fork the repo here as well:
 
-{% embed url="https://github.com/superfluid-finance/protocol-monorepo/tree/dev/examples/nftbillboard-userdata" %}
+{% embed url="https://github.com/superfluid-finance/protocol-monorepo/tree/chainshot/examples/nftbillboard-userdata" %}
 
 {% embed url="https://www.youtube.com/watch?v=WJ7Ug0vxA04" %}
 

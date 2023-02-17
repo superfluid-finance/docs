@@ -44,7 +44,7 @@ Here's an example: let's say you're selling an NFT [call option](https://www.inv
 
 This is a very unique way to structure options and can be applied for perpetual options (as long as you're streaming your premium payment you have the option rights forever). Check out this example project of a streaming call option 👇
 
-{% embed url="https://github.com/superfluid-finance/protocol-monorepo/tree/dev/examples/archive/streaming-call-option" %}
+{% embed url="https://github.com/superfluid-finance/protocol-monorepo/tree/chainshot/examples/archive/streaming-call-option" %}
 
 ### On-Chain Tradeable Cashflow Assets
 
@@ -56,4 +56,4 @@ Check out this basic tradeable cashflow example to see how you can tokenize mone
 
 ![(Tradeable Cashflows are really neat)](<../../.gitbook/assets/image (50).png>)
 
-{% embed url="https://github.com/superfluid-finance/protocol-monorepo/tree/dev/examples/tradeable-cashflow" %}
+{% embed url="https://github.com/superfluid-finance/super-examples/tree/main/projects/tradeable-cashflow" %}

@@ -177,9 +177,3 @@ Now that you understand what is possible, you should ask yourself the following 
 * **Onboarding**: What tokens does the user show up with? How can I quickly get them "into the system" with as few transactions as possible?
 * **Ongoing Actions**: What types of transactions are users making often? Can I combine them together to reduce the user's burden?
 * **Exiting**: Users should typically leave with a feeling of accomplishment. How can I leave a lasting impression on users while they are exiting.
-
-### Other Resources
-
-If you want a visual example on how batch calls can be used and stacked together, we'd highly suggest checking out [https://build-a-batchcall.com/](https://build-a-batchcall.com/). You can drag and drop batch call operations together with no code, and get a sense of how they can be used in practice 🤯
-
-**Note**: the Build a Batch Call application is for educational purposes only and was created by [https://github.com/JoshuaTrujillo15/JoshuaTrujillo15](https://github.com/JoshuaTrujillo15/JoshuaTrujillo15) - an active member of the Superfluid community.
