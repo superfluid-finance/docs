@@ -8,7 +8,7 @@ description: Building Programmable Cashflows
 
 Super Apps allow us to build smart contracts that are fully integrated with Superfluid at the protocol level.&#x20;
 
-If you've looked at our [Tradeable Cashflow](https://github.com/superfluid-finance/super-examples/tree/main/examples/tradeable-cashflow) tutorial or our [User Data](https://docs.superfluid.finance/superfluid/docs/user-data) tutorial, we are using a Super App in each of those sample applications.
+If you've looked at our[ Tradeable Cashflow](https://github.com/superfluid-finance/super-examples/tree/main/projects/tradeable-cashflow) tutorial or our [User Data](https://docs.superfluid.finance/superfluid/docs/user-data) tutorial, we are using a Super App in each of those sample applications.
 
 ![The Tradeable Cashflow NFT](<../../.gitbook/assets/image (30) (1).png>)
 

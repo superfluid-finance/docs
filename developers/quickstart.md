@@ -57,7 +57,7 @@ You want to create a smart contract that does instant distributions on its own.
 * ****[**Set Up**](https://docs.superfluid.finance/superfluid/developers/solidity-examples/solidity-libraries/idav1-library#importing-and-initialization): Set up your smart contract with the Instant Distribution Agreement (IDA) library to easily start instant distributions in Solidity.
 * ****[**Functionality**](https://docs.superfluid.finance/superfluid/developers/solidity-examples/solidity-libraries/idav1-library#api-specification): See the basic IDA management functions of the IDA Library
 * ****[**Simple Example**](https://github.com/superfluid-finance/super-examples/tree/main/projects/instant-distribution-intro): "Token Spreader" smart contract example showing the very basics of coding IDA management into a smart contract
-* ****[**Written Tutorial**](https://github.com/superfluid-finance/super-examples/tree/main/examples/instant-distribution-intro#ida-tutorial): Tutorial demonstrating coding the Token Spreader contract
+* ****[**Written Tutorial**](https://github.com/superfluid-finance/super-examples/tree/main/projects/instant-distribution-intro): Tutorial demonstrating coding the Token Spreader contract
 
 ###
 
