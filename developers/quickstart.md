@@ -22,7 +22,7 @@ The Constant Flow Agreement (CFA) allows for money streaming. Read this [short e
 * [**Set Up**](https://docs.superfluid.finance/superfluid/developers/solidity-examples/solidity-libraries/cfav1-library#the-cfa-library): Set up your smart contract with the SuperTokenV1Library to easily manage money streams in Solidity.
 * [**Functionality**](https://docs.superfluid.finance/superfluid/developers/solidity-examples/solidity-libraries/cfav1-library#using-the-cfa-library): See the basic stream management functions of the SuperTokenV1Library
 * [**ACL**:](constant-flow-agreement-cfa/cfa-access-control-list-acl/) See how you can provide other addresses with the ability to create, update, and delete streams on your behalf
-* ****[**Simple Example**](https://github.com/superfluid-finance/super-examples/tree/main/examples/money-streaming-intro): "Money Router" smart contract example showing the very basics of coding stream management into a smart contract
+* ****[**Simple Example**](https://github.com/superfluid-finance/super-examples/tree/main/projects/money-streaming-intro): "Money Router" smart contract example showing the very basics of coding stream management into a smart contract
 * [**Video Tutorial**](https://www.youtube.com/watch?v=1mwbYQ429IU): Tutorial demonstrating coding the Money Router contract
 
 
@@ -30,7 +30,7 @@ The Constant Flow Agreement (CFA) allows for money streaming. Read this [short e
 ### Testing With Money Streams
 
 * [**Initializing**](https://docs.superfluid.finance/superfluid/developers/sdk-initialization/sdk-core/sdk-core-initialization#hardhat-signer-example): How to initialize our SDK Core for your Hardhat testing script to start conveniently accessing Superfluid functionality.
-* [**Simple Example**](https://github.com/superfluid-finance/super-examples/tree/main/examples/tradeable-cashflow): Our "Tradeable Cashflow" example project Hardhat test script shows a lot of the basics.
+* ****[**Simple Example**](https://github.com/superfluid-finance/super-examples/tree/main/projects/tradeable-cashflow): Our "Tradeable Cashflow" example project Hardhat test script shows a lot of the basics.
 {% endtab %}
 
 {% tab title="Distributions" %}
