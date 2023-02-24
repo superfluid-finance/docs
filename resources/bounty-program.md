@@ -10,11 +10,6 @@ The Superfluid Bounty Program allows developers to tackle a variety of technical
 
 Pick a bounty issue you would like to complete in our repo [**HERE**](https://github.com/orgs/superfluid-finance/projects/17/). They range in skill utilization (Solidity, Node.js, DevOps, etc.) and size.
 
-Featured bounties 💡:
-
-* **Superfluid Gitcoin Aquaduct**: Adding Superfluid streams as a method of payment within Gitcoin Aqueducts
-* **SuperPool**: A generic smart contract pool that allows deposits and withdrawals via stream
-
 **Referrals**
 
 If you find someone to complete a bounty, you can earn **20%** of the bounty value as a referral payout!&#x20;

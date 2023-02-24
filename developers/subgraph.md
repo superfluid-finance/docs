@@ -129,6 +129,28 @@ The number of items returned by a query can sometimes be limited. In this exampl
 }
 ```
 
+### Get All Streams for a Given Account
+
+List all streams that an account is currently receiving. You can swap receiver for sender to get all streams that an account is currently sending.&#x20;
+
+```javascript
+//graphql
+query MyQuery {
+  streams(where: {receiver: "YOUR_ADDRESS_HERE"}) {
+    currentFlowRate
+    token {
+      symbol
+    }
+    sender {
+      id
+    }
+    receiver {
+      id
+    }
+  }
+}
+```
+
 ### Getting Stream Data Between 2 Parties
 
 The following query will allow us to answer the following questions for an active stream between Alice ("0x658...") and Bob ("0xd66...")
