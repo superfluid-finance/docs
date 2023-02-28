@@ -22,4 +22,4 @@ ERC20 tokens are the most composable Web3 primitive - you can borrow against the
 
 You can do all those basic ERC20 things in addition to the many possibilities introduced by money streams and instant distributions. Imagine a contract where you stake an NFT and receive a stream of Super Tokens straight to your wallet in return (no need to claim). Or, imagine a dollar-cost averaging protocol that scalably distributes Super Tokens straight to investor wallets with a fixed gas cost.&#x20;
 
-Unprecendented mechanisms like this are made possible by the composability of Super Tokens.&#x20;
+Unprecedented mechanisms like this are made possible by the composability of Super Tokens.&#x20;
