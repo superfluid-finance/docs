@@ -97,6 +97,28 @@ In order to become the PIC, you can either use the Dapp at https://toga.superflu
 4 week default `exitPeriod`
 {% endtab %}
 
+{% tab title="Ethereum Mainnet" %}
+**Minimum Deposit Specifications**
+
+* ETHx: 0.042 ETHx
+* USDCx & DAIx: 69 tokens
+* Learn more about minimum deposits and building on Ethereum L1 [here](../resources/superfluid-on-ethereum-mainnet.md).&#x20;
+
+**Deposit**&#x20;
+
+4 hour `deposit` (note that this value only applies if the deposit is > the min deposit)
+
+4 hour maximum `owedDeposit`
+
+30 minutes `patrician period`
+
+**TOGA**
+
+1 week minimum `exitPeriod`
+
+4 week default `exitPeriod`
+{% endtab %}
+
 {% tab title="Gnosis Chain" %}
 **Deposit**
 
@@ -162,7 +184,9 @@ In order to become the PIC, you can either use the Dapp at https://toga.superflu
 {% endtab %}
 {% endtabs %}
 
+{% hint style="info" %}
 Note that this parameter definitions in terms of time units refer to simplified idealized scenarios and are basically lower bounds.
+{% endhint %}
 
 \
 The deposit related timeframes directly apply for streams where the sender account has no incoming streams and where the net flowrate is thus equal to the outgoing flowrate. If however the sender account has incoming streams, this timeframes are stretched proportionally. If for example the aggregate incoming flowrate is half of the aggregate outgoing flowrate, the time for the buffer to be consumed (critial period) doubles, as do the patrician period and the plebs period. If the aggregate incoming flowrate equals the aggregate outgoing flowrate (net flowrate = zero), those periods become potentially infinite (as long as the net flowrate doesn't change), because in that case the buffer wouldn't be consumed further, but not restored either, leaving outgoing streams critical in perpetuity.

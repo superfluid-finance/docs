@@ -44,7 +44,7 @@ Just like with traditional ERC20 tokens, you can get an account’s balance by c
 
 1\) Calling `balanceOf()` on the contract’s [ISuperToken interface](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/interfaces/superfluid/ISuperToken.sol) as you normally would with any other token:
 
-<figure><img src="../../../.gitbook/assets/Screen Shot 2022-08-04 at 1.26.57 PM (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screen Shot 2022-08-04 at 1.26.57 PM.png" alt=""><figcaption></figcaption></figure>
 
 2\) Using the Superfluid [SDK Core:](https://docs.superfluid.finance/superfluid/developers/sdk-initialization/sdk-core/super-token-operations)
 

@@ -4,7 +4,7 @@ description: One transaction to distribute to any number of receivers with a fix
 
 # ✳ Distributions (IDA)
 
-<figure><img src="../../../.gitbook/assets/image (6) (3).png" alt=""><figcaption><p>Alice can distribute funds to any number of recipients, at a fixed gas cost, based on pre-determined proportions (units) </p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption><p>Alice can distribute funds to any number of recipients, at a fixed gas cost, based on pre-determined proportions (units) </p></figcaption></figure>
 
 ## **Definition**
 
@@ -44,7 +44,7 @@ When a distribution is called, the publisher's Super Token balance falls by the 
 
 Calculating the current balance of an account subscribed to one or many IDA Indices.&#x20;
 
-![](<../../../.gitbook/assets/image (56) (1).png>)
+![](<../../../.gitbook/assets/image (56).png>)
 
 {% hint style="info" %}
 **NOTE:** Accounts are not limited to publishing one index; they are able to concurrently own and utilize multiple indices, each with their own unique subscriber proportions. Likewise, subscribers can be subscribed to multiple indices at once.

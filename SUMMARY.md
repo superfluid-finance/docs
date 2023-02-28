@@ -22,7 +22,7 @@
 
 ## Developers
 
-* [🏃♀ Quickstart](developers/quickstart.md)
+* [🏃♀ 🏃♀ Quickstart](developers/quickstart.md)
 * [🪙 Super Tokens](developers/super-tokens/README.md)
   * [Super Tokens - Solidity](developers/super-tokens/super-tokens-solidity.md)
   * [Super Tokens - SDK Core](developers/super-tokens/super-token-operations.md)
@@ -112,6 +112,7 @@
 
 ## Resources
 
+* [📜 Superfluid on Ethereum Mainnet](resources/superfluid-on-ethereum-mainnet.md)
 * [🏗 Integration Guides](resources/integration-guides/README.md)
   * [For Your Integration: The Basics](resources/superfluid-integration-guide/for-your-integration-the-basics/README.md)
     * [Supporting Super Tokens](resources/superfluid-integration-guide/for-your-integration-the-basics/supporting-super-tokens.md)
