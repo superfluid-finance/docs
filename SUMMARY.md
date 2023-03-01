@@ -125,6 +125,7 @@
     * [Super Token Events](resources/superfluid-integration-guide/useful-queries-for-your-integration/super-token-events.md)
     * [Other Helpful Queries](resources/superfluid-integration-guide/useful-queries-for-your-integration/other-helpful-queries.md)
   * [Constructing Links to The Superfluid Dashboard](resources/superfluid-integration-guide/constructing-links-to-the-superfluid-dashboard.md)
+  * [Supporting Superfluid for Subscriptions](resources/integration-guides/supporting-superfluid-for-subscriptions.md)
 * [🌊 Superfluid Wave Pool](resources/superfluid-wave-pool.md)
 * [💰 Bounty Program](resources/bounty-program.md)
 * [🛡 Security & Bug Bounties](resources/security-and-bug-bounties.md)
