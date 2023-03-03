@@ -40,7 +40,7 @@ Prize winner or not, you'll be given exposure to the Superfluid team and communi
 
 ## Current Prizes
 
-The top three submissions to the February Wave will earn one of the below prizes 🥇
+The top three submissions to the March Wave will earn one of the below prizes 🥇
 
 **1st Place** - $2,000
 
@@ -48,7 +48,7 @@ The top three submissions to the February Wave will earn one of the below prizes
 
 **3rd Place** - $1,000
 
-**Co-Sponsor Prize** - Best Payment/Payroll Projects on Gnosis Chain
+**Co-Sponsor Prize** - Best Project Using Superfluid with Chainlink (see some [project ideas](https://superfluidhq.notion.site/Chainlink-x-Superfluid-Project-Ideas-a29df6679ef647b794d3332f0028db73))
 
 &#x20;    **1st Place** - $2,000&#x20;
 
