@@ -54,8 +54,8 @@ Want to Use Our SDKs?
 
 ### CONNECT TO A SUPPORTED NETWORK
 
-{% content-ref url="resources/archived-tutorials-docs/networks/" %}
-[networks](resources/archived-tutorials-docs/networks/)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 ### EXAMPLE APPS

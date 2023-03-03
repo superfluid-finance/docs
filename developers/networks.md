@@ -37,7 +37,7 @@ Note: these addresses can also be found in the [Superfluid Console](https://cons
 {% endtab %}
 
 {% tab title="Polygon" %}
-**​​ ❓See** [**Polygon (Matic)**](../resources/archived-tutorials-docs/networks/polygon-network-matic.md) **for more help**
+**​​ ❓See** [**Polygon (Matic)**](broken-reference) **for more help**
 
 **Framework**
 
@@ -95,7 +95,7 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 {% endtab %}
 
 {% tab title="Optimism" %}
-**​​ ​​❓ See** [**Optimism**](../resources/archived-tutorials-docs/networks/optimism.md) **for more help**
+**​​ ​​❓ See** [**Optimism**](broken-reference) **for more help**
 
 **Framework**
 
@@ -120,7 +120,7 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 {% endtab %}
 
 {% tab title="Arbitrum" %}
-**​​ ​❓ See** [**Arbitrum**](../resources/archived-tutorials-docs/networks/arbitrum.md) **for more help**
+**​​ ​❓ See** [**Arbitrum**](broken-reference) **for more help**
 
 **Framework**
 
@@ -145,7 +145,7 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 {% endtab %}
 
 {% tab title="Avalanche" %}
-**❓ See** [**Avalanche**](../resources/archived-tutorials-docs/networks/avalanche.md) **for more help**
+**❓ See** [**Avalanche**](broken-reference) **for more help**
 
 **Framework**
 
@@ -168,7 +168,7 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 {% endtab %}
 
 {% tab title="BNB Chain" %}
-**❓ See** [**BNB Chain**](../resources/archived-tutorials-docs/networks/bnbchain.md) **for more help**
+**❓ See** [**BNB Chain**](broken-reference) **for more help**
 
 **Framework**
 
@@ -222,7 +222,7 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 {% endtab %}
 
 {% tab title="Mumbai" %}
-**See** [**Polygon (Matic)**](../resources/archived-tutorials-docs/networks/polygon-network-matic.md) **for more help**
+**See** [**Polygon (Matic)**](broken-reference) **for more help**
 
 **Framework**
 

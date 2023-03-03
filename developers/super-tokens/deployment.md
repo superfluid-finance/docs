@@ -13,7 +13,7 @@ Anyone can deploy a Super Token Wrapper for any ERC20 token. The deployer accoun
 1\. Head to Super Token Factory contract for appropriate network 👇
 
 * [**Polygon**](https://polygonscan.com/address/0x2C90719f25B10Fc5646c82DA3240C76Fa5BcCF34#writeProxyContract)
-* [Ethereum Mainnet](https://etherscan.io/address/0x0422689cc4087b6B7280e0a7e7F655200ec86Ae1)
+* ****[**Ethereum Mainnet**](https://etherscan.io/address/0x0422689cc4087b6B7280e0a7e7F655200ec86Ae1)****
 * [**Gnosis Chain**](https://blockscout.com/xdai/mainnet/address/0x23410e2659380784498509698ed70E414D384880/write-contract)
 * [**Optimism**](https://optimistic.etherscan.io/address/0x8276469a443d5c6b7146bed45e2abcad3b6adad9#writeProxyContract)
 * [**Arbitrum**](https://arbiscan.io/address/0x1C21Ead77fd45C84a4c916Db7A6635D0C6FF09D6)
