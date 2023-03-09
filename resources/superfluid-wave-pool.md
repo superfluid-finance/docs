@@ -56,6 +56,8 @@ The top three submissions to the March Wave will earn one of the below prizes �
 
 **Pool Prize** - $1,000 (split among hackers who did great work, but didn’t quite make the Top 3 cut)
 
+&#x20;   We may refer to Pool Prize winners as "Honorable Mentions" in announcement material!
+
 _Notice: Wave Pool payouts are subject to KYC screening as per_ [_international sanctions laws_](bounty-program.md#note-bounty-hunters-must-adhere-to-the-following-statement)_._
 
 ## Get Started 🙋‍♀️
