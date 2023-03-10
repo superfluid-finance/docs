@@ -52,12 +52,6 @@ Want to Use Our SDKs?
 [liquidations-and-toga.md](sentinels/liquidations-and-toga.md)
 {% endcontent-ref %}
 
-### CONNECT TO A SUPPORTED NETWORK
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
 ### EXAMPLE APPS
 
 {% content-ref url="resources/examples.md" %}
