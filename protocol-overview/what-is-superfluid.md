@@ -6,7 +6,7 @@ description: A token-centric protocol improving how we move tokens
 
 ## Token-Centric Framework
 
-Superfluid is an token-centric smart EVM contract framework that introduces the **Super Token**. The Super Token is an extension of the ERC20 standard that has additional powerful value-movement abilities beyond the basic "transfer". We call these abilities Super Agreements.
+Superfluid is an token-centric EVM smart contract framework that introduces the **Super Token**. The Super Token is an extension of the ERC20 standard that has additional powerful value-movement abilities beyond the basic "transfer". We call these abilities Super Agreements.
 
 Currently there are two additional Super Agreements:
 
