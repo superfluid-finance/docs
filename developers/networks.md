@@ -23,6 +23,7 @@ Note: these addresses can also be found in the [Superfluid Console](https://cons
 | [SuperTokenFactory](https://etherscan.io/address/0x0422689cc4087b6B7280e0a7e7F655200ec86Ae1)                    | 0x0422689cc4087b6B7280e0a7e7F655200ec86Ae1 |
 | [SuperfluidLoaderV1](https://etherscan.io/address/0x9775EEBdfF8AE845e7Ad3d1D04B85e6c6d284aCB)                   | 0x9775EEBdfF8AE845e7Ad3d1D04B85e6c6d284aCB |
 | [TOGA](https://etherscan.io/address/0x8B5a2CF69a56d7F8Fa027edcA23594cdDF544dDc)                                 | 0x8B5a2CF69a56d7F8Fa027edcA23594cdDF544dDc |
+| [Vesting Scheduler](https://etherscan.io/address/0x39D5cBBa9adEBc25085a3918d36D5325546C001B)                    | 0x39D5cBBa9adEBc25085a3918d36D5325546C001B |
 | <p><a href="https://etherscan.io/address/0xcfA132E353cB4E398080B9700609bb008eceB125">CFAV1Forwarder</a><br></p> | 0xcfA132E353cB4E398080B9700609bb008eceB125 |
 
 #### Tokens
@@ -32,8 +33,6 @@ Note: these addresses can also be found in the [Superfluid Console](https://cons
 | [USDCx](https://etherscan.io/address/0x1BA8603DA702602A8657980e825A6DAa03Dee93a) | 0x1BA8603DA702602A8657980e825A6DAa03Dee93a |
 | [DAIx](https://etherscan.io/address/0x4f228bf911ed67730e4b51b1f82ac291b49053ee)  | 0x4F228bf911ed67730e4B51B1F82AC291B49053ee |
 | [ETHx](https://etherscan.io/address/0xc22bea0be9872d8b7b3933cec70ece4d53a900da)  | 0xC22BeA0Be9872d8B7B3933CEc70Ece4D53A900da |
-
-
 {% endtab %}
 
 {% tab title="Polygon" %}
@@ -51,6 +50,7 @@ Note: these addresses can also be found in the [Superfluid Console](https://cons
 | [SuperfluidLoader v1](https://polygonscan.com/address/0x15F0Ca26781C3852f8166eD2ebce5D18265cceb7) | 0x15F0Ca26781C3852f8166eD2ebce5D18265cceb7 |
 | [TOGA](https://polygonscan.com/address/0x6AEAeE5Fd4D05A741723D752D30EE4D72690A8f7)                | 0x6AEAeE5Fd4D05A741723D752D30EE4D72690A8f7 |
 | [CFAv1Forwarder](https://polygonscan.com/address/0xcfA132E353cB4E398080B9700609bb008eceB125)      | 0xcfA132E353cB4E398080B9700609bb008eceB125 |
+| [Vesting Scheduler](https://polygonscan.com/address/0xcFE6382B33F2AdaFbE46e6A26A88E0182ae32b0c)   | 0xcFE6382B33F2AdaFbE46e6A26A88E0182ae32b0c |
 | [Stream Scheduler](https://polygonscan.com/address/0x47D34512492D95A3531A628e5B85e32fAFaC1b42)    | 0x47D34512492D95A3531A628e5B85e32fAFaC1b42 |
 | [Auto Wrap Manager](https://polygonscan.com/address/0x2581c27E7f6D6AF452E63fCe884EDE3EDd716b32)   | 0x2581c27E7f6D6AF452E63fCe884EDE3EDd716b32 |
 | [Auto Wrap Strategy](https://polygonscan.com/address/0xb4afa36BAd8c76976Dc77a21c9Ad711EF720eE4b)  | 0xb4afa36BAd8c76976Dc77a21c9Ad711EF720eE4b |
@@ -86,6 +86,7 @@ Note: these addresses can also be found in the [Superfluid Console](https://cons
 | [SuperfluidLoader v1](https://blockscout.com/xdai/mainnet/address/0x21d4E9fbB9DB742E6ef4f29d189a7C18B0b59136) | 0x21d4E9fbB9DB742E6ef4f29d189a7C18B0b59136 |
 | [TOGA](https://blockscout.com/xdai/mainnet/address/0xb7DE52F4281a7a276E18C40F94cd93159C4A2d22/contracts)      | 0xb7DE52F4281a7a276E18C40F94cd93159C4A2d22 |
 | [CFAv1Forwarder](https://blockscout.com/xdai/mainnet/address/0xcfA132E353cB4E398080B9700609bb008eceB125)      | 0xcfA132E353cB4E398080B9700609bb008eceB125 |
+| [Vesting Scheduler](https://gnosisscan.io/address/0x0170FFCC75d178d426EBad5b1a31451d00Ddbd0D)                 | 0x0170FFCC75d178d426EBad5b1a31451d00Ddbd0D |
 
 **Tokens**
 
@@ -112,6 +113,7 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 | [SuperfluidLoader v1](https://optimistic.etherscan.io/address/0x8E310ce29Ab7Fa2878944A65BB0eaF97B1853d40) | 0x8E310ce29Ab7Fa2878944A65BB0eaF97B1853d40 |
 | [TOGA](https://optimistic.etherscan.io/address/0xA3c8502187fD7a7118eAD59dc811281448946C8f)                | 0xA3c8502187fD7a7118eAD59dc811281448946C8f |
 | [CFAv1Forwarder](https://optimistic.etherscan.io/address/0xcfA132E353cB4E398080B9700609bb008eceB125)      | 0xcfA132E353cB4E398080B9700609bb008eceB125 |
+| [Vesting Scheduler](https://optimistic.etherscan.io/address/0x65377d4dfE9c01639A41952B5083D58964782892)   | 0x65377d4dfE9c01639A41952B5083D58964782892 |
 
 **Tokens**
 
@@ -137,6 +139,8 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 | [SuperfluidLoader v1](https://arbiscan.io/address/0xB99cA401e10D277345BcFb281AC148a2e16Db466) | 0xB99cA401e10D277345BcFb281AC148a2e16Db466 |
 | [TOGA](https://arbiscan.io/address/0xFC63B7C762B10670Eda15cF3ca3970bCDB28C9eF)                | 0xFC63B7C762B10670Eda15cF3ca3970bCDB28C9eF |
 | [CFAv1Forwarder](https://arbiscan.io/address/0xcfA132E353cB4E398080B9700609bb008eceB125)      | 0xcfA132E353cB4E398080B9700609bb008eceB125 |
+| [Vesting Scheduler](https://arbiscan.io/address/0x55c8fc400833eEa791087cF343Ff2409A39DeBcC)   | 0x55c8fc400833eEa791087cF343Ff2409A39DeBcC |
+|                                                                                               |                                            |
 
 **Tokens**
 
@@ -162,6 +166,7 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 | [SuperToken Loader v1](https://snowtrace.io/address/0x2601E69a2D16C8Ccc8aEe8cE9F59d24a59986B9E) | 0x2601E69a2D16C8Ccc8aEe8cE9F59d24a59986B9E |
 | [TOGA](https://snowtrace.io/address/0x3D9A67D5ec1E72CEcA8157e028855056786b6159)                 | 0x3D9A67D5ec1E72CEcA8157e028855056786b6159 |
 | [CFAv1Forwarder](https://snowtrace.io/address/0xcfA132E353cB4E398080B9700609bb008eceB125)       | 0xcfA132E353cB4E398080B9700609bb008eceB125 |
+| [Vesting Scheduler](https://snowtrace.io/address/0x3fA8B653F9abf91428800C0ba0F8D145a71F97A1)    | 0x3fA8B653F9abf91428800C0ba0F8D145a71F97A1 |
 
 **Tokens**
 
@@ -185,6 +190,7 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 | [SuperToken Loader v1](https://bscscan.com/address/0x3C26e5bEbc68EaAf4efcd88F8E5A6Aeb77b65579) | 0x3C26e5bEbc68EaAf4efcd88F8E5A6Aeb77b65579 |
 | [TOGA](https://bscscan.com/address/0xFCD84210f5d51Cd40a30443d44d6A5500d5D10dF)                 | 0xFCD84210f5d51Cd40a30443d44d6A5500d5D10dF |
 | [CFAv1Forwarder](https://bscscan.com/address/0xcfA132E353cB4E398080B9700609bb008eceB125)       | 0xcfA132E353cB4E398080B9700609bb008eceB125 |
+| [Vesting Scheduler](https://bscscan.com/address/0x9B91c27f78376383003C6A12Ad12B341d016C5b9)    | 0x9B91c27f78376383003C6A12Ad12B341d016C5b9 |
 | [Stream Scheduler](https://bscscan.com/address/0x1D65c6d3AD39d454Ea8F682c49aE7744706eA96d)     | 0x1D65c6d3AD39d454Ea8F682c49aE7744706eA96d |
 | [Auto Wrap Manager](https://bscscan.com/address/0x2AcdD61ac1EFFe1535109449c31889bdE8d7f325)    | 0x2AcdD61ac1EFFe1535109449c31889bdE8d7f325 |
 | [Auto Wrap Strategy](https://bscscan.com/address/0x9e308cb079ae130790F604b1030cDf386670f199)   | 0x9e308cb079ae130790F604b1030cDf386670f199 |
