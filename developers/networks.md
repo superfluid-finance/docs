@@ -51,6 +51,9 @@ Note: these addresses can also be found in the [Superfluid Console](https://cons
 | [SuperfluidLoader v1](https://polygonscan.com/address/0x15F0Ca26781C3852f8166eD2ebce5D18265cceb7) | 0x15F0Ca26781C3852f8166eD2ebce5D18265cceb7 |
 | [TOGA](https://polygonscan.com/address/0x6AEAeE5Fd4D05A741723D752D30EE4D72690A8f7)                | 0x6AEAeE5Fd4D05A741723D752D30EE4D72690A8f7 |
 | [CFAv1Forwarder](https://polygonscan.com/address/0xcfA132E353cB4E398080B9700609bb008eceB125)      | 0xcfA132E353cB4E398080B9700609bb008eceB125 |
+| [Stream Scheduler](https://polygonscan.com/address/0x47D34512492D95A3531A628e5B85e32fAFaC1b42)    | 0x47D34512492D95A3531A628e5B85e32fAFaC1b42 |
+| [Auto Wrap Manager](https://polygonscan.com/address/0x2581c27E7f6D6AF452E63fCe884EDE3EDd716b32)   | 0x2581c27E7f6D6AF452E63fCe884EDE3EDd716b32 |
+| [Auto Wrap Strategy](https://polygonscan.com/address/0xb4afa36BAd8c76976Dc77a21c9Ad711EF720eE4b)  | 0xb4afa36BAd8c76976Dc77a21c9Ad711EF720eE4b |
 
 **Tokens**
 
@@ -182,6 +185,9 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 | [SuperToken Loader v1](https://bscscan.com/address/0x3C26e5bEbc68EaAf4efcd88F8E5A6Aeb77b65579) | 0x3C26e5bEbc68EaAf4efcd88F8E5A6Aeb77b65579 |
 | [TOGA](https://bscscan.com/address/0xFCD84210f5d51Cd40a30443d44d6A5500d5D10dF)                 | 0xFCD84210f5d51Cd40a30443d44d6A5500d5D10dF |
 | [CFAv1Forwarder](https://bscscan.com/address/0xcfA132E353cB4E398080B9700609bb008eceB125)       | 0xcfA132E353cB4E398080B9700609bb008eceB125 |
+| [Stream Scheduler](https://bscscan.com/address/0x1D65c6d3AD39d454Ea8F682c49aE7744706eA96d)     | 0x1D65c6d3AD39d454Ea8F682c49aE7744706eA96d |
+| [Auto Wrap Manager](https://bscscan.com/address/0x2AcdD61ac1EFFe1535109449c31889bdE8d7f325)    | 0x2AcdD61ac1EFFe1535109449c31889bdE8d7f325 |
+| [Auto Wrap Strategy](https://bscscan.com/address/0x9e308cb079ae130790F604b1030cDf386670f199)   | 0x9e308cb079ae130790F604b1030cDf386670f199 |
 
 **Tokens**
 
@@ -194,33 +200,6 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 ## Test Networks
 
 {% tabs %}
-{% tab title="Goerli" %}
-**Framework**
-
-| Resource                                                                                                 |                   Address                  |
-| -------------------------------------------------------------------------------------------------------- | :----------------------------------------: |
-| [Resolver](http://goerli.etherscan.io/address/0x3710AB3fDE2B61736B8BB0CE845D6c61F667a78E)                | 0x3710AB3fDE2B61736B8BB0CE845D6c61F667a78E |
-| [Host](http://goerli.etherscan.io/address/0x22ff293e14F1EC3A09B137e9e06084AFd63adDF9)                    | 0x22ff293e14F1EC3A09B137e9e06084AFd63adDF9 |
-| [CFAv1](http://goerli.etherscan.io/address/0xEd6BcbF6907D4feEEe8a8875543249bEa9D308E8)                   | 0xEd6BcbF6907D4feEEe8a8875543249bEa9D308E8 |
-| [IDAv1](http://goerli.etherscan.io/address/0xfDdcdac21D64B639546f3Ce2868C7EF06036990c)                   | 0xfDdcdac21D64B639546f3Ce2868C7EF06036990c |
-| [SuperTokenFactory](https://goerli.etherscan.io/address/0x94f26B4c8AD12B18c12f38E878618f7664bdcCE2#code) | 0x94f26B4c8AD12B18c12f38E878618f7664bdcCE2 |
-| [SuperfluidLoader v1](https://goerli.etherscan.io/address/0x74d860243Ff08A243d5485899f343117EbDa6eA8)    | 0x74d860243Ff08A243d5485899f343117EbDa6eA8 |
-| [TOGA](https://goerli.etherscan.io/address/0xa54FC15FC75693447d70a57262F37a70B614721b)                   | 0xa54FC15FC75693447d70a57262F37a70B614721b |
-| [CFAv1Forwarder](https://goerli.etherscan.io/address/0xcfA132E353cB4E398080B9700609bb008eceB125)         | 0xcfA132E353cB4E398080B9700609bb008eceB125 |
-
-**Tokens**
-
-| Resource                                                                                |                   Address                  |
-| --------------------------------------------------------------------------------------- | :----------------------------------------: |
-| [ETHx](https://goerli.etherscan.io/address/0x5943F705aBb6834Cad767e6E4bB258Bc48D9C947)  | 0x5943F705aBb6834Cad767e6E4bB258Bc48D9C947 |
-| [fDAI](http://goerli.etherscan.io/address/0x88271d333C72e51516B67f5567c728E702b3eeE8)   | 0x88271d333C72e51516B67f5567c728E702b3eeE8 |
-| [fUSDC](http://goerli.etherscan.io/address/0xc94dd466416A7dFE166aB2cF916D3875C049EBB7)  | 0xc94dd466416A7dFE166aB2cF916D3875C049EBB7 |
-| [fTUSD](http://goerli.etherscan.io/address/0x53d00397f03147A9bD9c40443A105A82780deAF1)  | 0x53d00397f03147A9bD9c40443A105A82780deAF1 |
-| [fDAIx](http://goerli.etherscan.io/address/0xF2d68898557cCb2Cf4C10c3Ef2B034b2a69DAD00)  | 0xF2d68898557cCb2Cf4C10c3Ef2B034b2a69DAD00 |
-| [fUSDCx](http://goerli.etherscan.io/address/0x8aE68021f6170E5a766bE613cEA0d75236ECCa9a) | 0x8aE68021f6170E5a766bE613cEA0d75236ECCa9a |
-| [fTUSDx](http://goerli.etherscan.io/address/0x95697ec24439E3Eb7ba588c7B279b9B369236941) | 0x95697ec24439E3Eb7ba588c7B279b9B369236941 |
-{% endtab %}
-
 {% tab title="Mumbai" %}
 **See** [**Polygon (Matic)**](broken-reference) **for more help**
 
@@ -235,6 +214,9 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 | [SuperTokenFactory](https://mumbai.polygonscan.com/address/0x200657E2f123761662567A1744f9ACAe50dF47E6)   | 0x200657E2f123761662567A1744f9ACAe50dF47E6 |
 | [SuperfluidLoader v1](https://mumbai.polygonscan.com/address/0x0d56ED56b63382B0FC964490feB9AE438B6B4b79) | 0x0d56ED56b63382B0FC964490feB9AE438B6B4b79 |
 | [CFAv1Forwarder](https://mumbai.polygonscan.com/address/0xcfA132E353cB4E398080B9700609bb008eceB125)      | 0xcfA132E353cB4E398080B9700609bb008eceB125 |
+| [Stream Scheduler](https://mumbai.polygonscan.com/address/0xF18825d412C061aEfEFB4dF46a1c077636dA50bf)    | 0xF18825d412C061aEfEFB4dF46a1c077636dA50bf |
+| [Auto Wrap Manager](https://mumbai.polygonscan.com/address/0x3eAB3c6207F488E475b7955B631B564F0E6317B9)   | 0x3eAB3c6207F488E475b7955B631B564F0E6317B9 |
+| [Auto Wrap Strategy](https://mumbai.polygonscan.com/address/0x544728AFDBeEafBeC9e1329031788edb53017bC4)  | 0x544728AFDBeEafBeC9e1329031788edb53017bC4 |
 
 **Tokens**
 
@@ -247,6 +229,36 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 | [fDAIx](https://mumbai.polygonscan.com/address/0x5D8B4C2554aeB7e86F387B4d6c00Ac33499Ed01f)       | 0x5D8B4C2554aeB7e86F387B4d6c00Ac33499Ed01f |
 | [fUSDCx](https://mumbai.polygonscan.com/address/0x42bb40bF79730451B11f6De1CbA222F17b87Afd7)      | 0x42bb40bF79730451B11f6De1CbA222F17b87Afd7 |
 | [fTUSDx](https://mumbai.polygonscan.com/address/0x918E0d5C96cAC79674E2D38066651212be3C9C48)      | 0x918E0d5C96cAC79674E2D38066651212be3C9C48 |
+{% endtab %}
+
+{% tab title="Goerli" %}
+**Framework**
+
+| Resource                                                                                                 |                   Address                  |
+| -------------------------------------------------------------------------------------------------------- | :----------------------------------------: |
+| [Resolver](http://goerli.etherscan.io/address/0x3710AB3fDE2B61736B8BB0CE845D6c61F667a78E)                | 0x3710AB3fDE2B61736B8BB0CE845D6c61F667a78E |
+| [Host](http://goerli.etherscan.io/address/0x22ff293e14F1EC3A09B137e9e06084AFd63adDF9)                    | 0x22ff293e14F1EC3A09B137e9e06084AFd63adDF9 |
+| [CFAv1](http://goerli.etherscan.io/address/0xEd6BcbF6907D4feEEe8a8875543249bEa9D308E8)                   | 0xEd6BcbF6907D4feEEe8a8875543249bEa9D308E8 |
+| [IDAv1](http://goerli.etherscan.io/address/0xfDdcdac21D64B639546f3Ce2868C7EF06036990c)                   | 0xfDdcdac21D64B639546f3Ce2868C7EF06036990c |
+| [SuperTokenFactory](https://goerli.etherscan.io/address/0x94f26B4c8AD12B18c12f38E878618f7664bdcCE2#code) | 0x94f26B4c8AD12B18c12f38E878618f7664bdcCE2 |
+| [SuperfluidLoader v1](https://goerli.etherscan.io/address/0x74d860243Ff08A243d5485899f343117EbDa6eA8)    | 0x74d860243Ff08A243d5485899f343117EbDa6eA8 |
+| [TOGA](https://goerli.etherscan.io/address/0xa54FC15FC75693447d70a57262F37a70B614721b)                   | 0xa54FC15FC75693447d70a57262F37a70B614721b |
+| [CFAv1Forwarder](https://goerli.etherscan.io/address/0xcfA132E353cB4E398080B9700609bb008eceB125)         | 0xcfA132E353cB4E398080B9700609bb008eceB125 |
+| [Stream Scheduler](https://goerli.etherscan.io/address/0xA6134E107FCAEAab6140CB8fb92Dbf5bd9EF6C86)       | 0xA6134E107FCAEAab6140CB8fb92Dbf5bd9EF6C86 |
+| [Auto Wrap Manager](https://goerli.etherscan.io/address/0x0B82D14E9616ca4d260E77454834AdCf5887595F)      | 0x0B82D14E9616ca4d260E77454834AdCf5887595F |
+| [Auto Wrap Strategy](https://goerli.etherscan.io/address/0xea49af829d3e28d3ec49e0e0a0ba1e7860a56f60)     | 0xea49af829d3e28d3ec49e0e0a0ba1e7860a56f60 |
+
+**Tokens**
+
+| Resource                                                                                |                   Address                  |
+| --------------------------------------------------------------------------------------- | :----------------------------------------: |
+| [ETHx](https://goerli.etherscan.io/address/0x5943F705aBb6834Cad767e6E4bB258Bc48D9C947)  | 0x5943F705aBb6834Cad767e6E4bB258Bc48D9C947 |
+| [fDAI](http://goerli.etherscan.io/address/0x88271d333C72e51516B67f5567c728E702b3eeE8)   | 0x88271d333C72e51516B67f5567c728E702b3eeE8 |
+| [fUSDC](http://goerli.etherscan.io/address/0xc94dd466416A7dFE166aB2cF916D3875C049EBB7)  | 0xc94dd466416A7dFE166aB2cF916D3875C049EBB7 |
+| [fTUSD](http://goerli.etherscan.io/address/0x53d00397f03147A9bD9c40443A105A82780deAF1)  | 0x53d00397f03147A9bD9c40443A105A82780deAF1 |
+| [fDAIx](http://goerli.etherscan.io/address/0xF2d68898557cCb2Cf4C10c3Ef2B034b2a69DAD00)  | 0xF2d68898557cCb2Cf4C10c3Ef2B034b2a69DAD00 |
+| [fUSDCx](http://goerli.etherscan.io/address/0x8aE68021f6170E5a766bE613cEA0d75236ECCa9a) | 0x8aE68021f6170E5a766bE613cEA0d75236ECCa9a |
+| [fTUSDx](http://goerli.etherscan.io/address/0x95697ec24439E3Eb7ba588c7B279b9B369236941) | 0x95697ec24439E3Eb7ba588c7B279b9B369236941 |
 {% endtab %}
 
 {% tab title="Optimism Goerli" %}
