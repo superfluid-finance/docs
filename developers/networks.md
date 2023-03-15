@@ -201,6 +201,27 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 | ------------------------------------------------------------------------------ | ------------------------------------------ |
 | [BNBx](https://bscscan.com/address/0x529a4116f160c833c61311569d6b33dff41fd657) | 0x529a4116f160c833c61311569d6b33dff41fd657 |
 {% endtab %}
+
+{% tab title="Celo" %}
+**Framework**
+
+| Resource                                                                                       | Address                                    |
+| ---------------------------------------------------------------------------------------------- | ------------------------------------------ |
+| [Resolver](https://celoscan.io/address/0x05eE721BD4D803d6d477Aa7607395452B65373FF)             | 0x05eE721BD4D803d6d477Aa7607395452B65373FF |
+| [Host](https://celoscan.io/address/0xA4Ff07cF81C02CFD356184879D953970cA957585)                 | 0xA4Ff07cF81C02CFD356184879D953970cA957585 |
+| [CFAv1](https://celoscan.io/address/0x9d369e78e1a682cE0F8d9aD849BeA4FE1c3bD3Ad)                | 0x9d369e78e1a682cE0F8d9aD849BeA4FE1c3bD3Ad |
+| [IDAv1](https://celoscan.io/address/0x26747Fe93fAC8bF28E1e24A558a2bC7E4d9846cA)                | 0x26747Fe93fAC8bF28E1e24A558a2bC7E4d9846cA |
+| [SuperToken Factory](https://celoscan.io/address/0x36be86dEe6BC726Ed0Cbd170ccD2F21760BC73D9)   | 0x36be86dEe6BC726Ed0Cbd170ccD2F21760BC73D9 |
+| [Superfluid Loader V1](https://celoscan.io/address/0xAd6e6849d8eEa62AF9271808afb726610fB451a6) | 0xAd6e6849d8eEa62AF9271808afb726610fB451a6 |
+| [TOGA](https://celoscan.io/address/0x9bCa3a623e7b2e248510d88B2894F54898d88F91)                 | 0x9bCa3a623e7b2e248510d88B2894F54898d88F91 |
+
+**Tokens**
+
+| Resource                                                                        | Address                                    |
+| ------------------------------------------------------------------------------- | ------------------------------------------ |
+| [CELOx](https://celoscan.io/address/0x671425ae1f272bc6f79bec3ed5c4b00e9c628240) | 0x671425ae1f272bc6f79bec3ed5c4b00e9c628240 |
+|                                                                                 |                                            |
+{% endtab %}
 {% endtabs %}
 
 ## Test Networks
