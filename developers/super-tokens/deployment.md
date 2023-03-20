@@ -8,7 +8,13 @@ description: >-
 
 Anyone can deploy a Super Token Wrapper for any ERC20 token. The deployer account doesn't receive any control or admin powers, and all Super Token logic upgrades are handled by Superfluid Protocol Governance.
 
-### Using a Block Explorer to Deploy Your Wrapper
+### Deploying Using Community Deployer Interface
+
+This web app by community member [serox.eth](https://twitter.com/seroxdesigns) provides an easy way to deploy a wrapper
+
+{% embed url="https://deploy-supertoken-deployment.vercel.app/" %}
+
+### Deploying Using Block Explorer
 
 1\. Head to Super Token Factory contract for appropriate network 👇
 
@@ -40,7 +46,7 @@ Alternatively, search your token in the top right search bar and find it in the 
 
 ![](<../../.gitbook/assets/image (31) (1).png>)
 
-### Using Deployment Scripts to Deploy Your Wrapper
+### Deploying Using Deployment Scripts
 
 We've created some handy scripts for deploying the ERC20 Wrapper contract.
 
