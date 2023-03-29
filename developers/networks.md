@@ -232,18 +232,19 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 
 **Framework**
 
-| Resource                                                                                                 |                   Address                  |
-| -------------------------------------------------------------------------------------------------------- | :----------------------------------------: |
-| [Resolver](https://mumbai.polygonscan.com/address/0x8C54C83FbDe3C59e59dd6E324531FB93d4F504d3)            | 0x8C54C83FbDe3C59e59dd6E324531FB93d4F504d3 |
-| [Host](https://mumbai.polygonscan.com/address/0xEB796bdb90fFA0f28255275e16936D25d3418603)                | 0xEB796bdb90fFA0f28255275e16936D25d3418603 |
-| [CFAv1](https://mumbai.polygonscan.com/address/0x49e565Ed1bdc17F3d220f72DF0857C26FA83F873)               | 0x49e565Ed1bdc17F3d220f72DF0857C26FA83F873 |
-| [IDAv1](https://mumbai.polygonscan.com/address/0x804348D4960a61f2d5F9ce9103027A3E849E09b8)               | 0x804348D4960a61f2d5F9ce9103027A3E849E09b8 |
-| [SuperTokenFactory](https://mumbai.polygonscan.com/address/0x200657E2f123761662567A1744f9ACAe50dF47E6)   | 0x200657E2f123761662567A1744f9ACAe50dF47E6 |
-| [SuperfluidLoader v1](https://mumbai.polygonscan.com/address/0x0d56ED56b63382B0FC964490feB9AE438B6B4b79) | 0x0d56ED56b63382B0FC964490feB9AE438B6B4b79 |
-| [CFAv1Forwarder](https://mumbai.polygonscan.com/address/0xcfA132E353cB4E398080B9700609bb008eceB125)      | 0xcfA132E353cB4E398080B9700609bb008eceB125 |
-| [Stream Scheduler](https://mumbai.polygonscan.com/address/0xF18825d412C061aEfEFB4dF46a1c077636dA50bf)    | 0xF18825d412C061aEfEFB4dF46a1c077636dA50bf |
-| [Auto Wrap Manager](https://mumbai.polygonscan.com/address/0x3eAB3c6207F488E475b7955B631B564F0E6317B9)   | 0x3eAB3c6207F488E475b7955B631B564F0E6317B9 |
-| [Auto Wrap Strategy](https://mumbai.polygonscan.com/address/0x544728AFDBeEafBeC9e1329031788edb53017bC4)  | 0x544728AFDBeEafBeC9e1329031788edb53017bC4 |
+| Resource                                                                                                             |                   Address                  |
+| -------------------------------------------------------------------------------------------------------------------- | :----------------------------------------: |
+| [Resolver](https://mumbai.polygonscan.com/address/0x8C54C83FbDe3C59e59dd6E324531FB93d4F504d3)                        | 0x8C54C83FbDe3C59e59dd6E324531FB93d4F504d3 |
+| [Host](https://mumbai.polygonscan.com/address/0xEB796bdb90fFA0f28255275e16936D25d3418603)                            | 0xEB796bdb90fFA0f28255275e16936D25d3418603 |
+| [CFAv1](https://mumbai.polygonscan.com/address/0x49e565Ed1bdc17F3d220f72DF0857C26FA83F873)                           | 0x49e565Ed1bdc17F3d220f72DF0857C26FA83F873 |
+| [IDAv1](https://mumbai.polygonscan.com/address/0x804348D4960a61f2d5F9ce9103027A3E849E09b8)                           | 0x804348D4960a61f2d5F9ce9103027A3E849E09b8 |
+| [SuperTokenFactory](https://mumbai.polygonscan.com/address/0x200657E2f123761662567A1744f9ACAe50dF47E6)               | 0x200657E2f123761662567A1744f9ACAe50dF47E6 |
+| [SuperfluidLoader v1](https://mumbai.polygonscan.com/address/0x0d56ED56b63382B0FC964490feB9AE438B6B4b79)             | 0x0d56ED56b63382B0FC964490feB9AE438B6B4b79 |
+| [CFAv1Forwarder](https://mumbai.polygonscan.com/address/0xcfA132E353cB4E398080B9700609bb008eceB125)                  | 0xcfA132E353cB4E398080B9700609bb008eceB125 |
+| [Vesting Scheduler](https://mumbai.polygonscan.com/address/0x2a00b420848D723A74c231B559C117Ee003B1829#writeContract) | 0x2a00b420848D723A74c231B559C117Ee003B1829 |
+| [Stream Scheduler](https://mumbai.polygonscan.com/address/0xF18825d412C061aEfEFB4dF46a1c077636dA50bf)                | 0xF18825d412C061aEfEFB4dF46a1c077636dA50bf |
+| [Auto Wrap Manager](https://mumbai.polygonscan.com/address/0x3eAB3c6207F488E475b7955B631B564F0E6317B9)               | 0x3eAB3c6207F488E475b7955B631B564F0E6317B9 |
+| [Auto Wrap Strategy](https://mumbai.polygonscan.com/address/0x544728AFDBeEafBeC9e1329031788edb53017bC4)              | 0x544728AFDBeEafBeC9e1329031788edb53017bC4 |
 
 **Tokens**
 
