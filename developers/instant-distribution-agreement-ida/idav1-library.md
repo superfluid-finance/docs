@@ -6,7 +6,15 @@ description: >-
 
 # IDA - Solidity
 
+#### **SuperTokenV1Library Contract**
+
 {% embed url="https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/apps/SuperTokenV1Library.sol" %}
+
+#### **Example Code & Guide**
+
+{% embed url="https://github.com/superfluid-finance/super-examples/tree/main/projects/instant-distribution-intro" %}
+Simple contract showing usage of many IDA functions
+{% endembed %}
 
 ### Agreement Abstraction
 

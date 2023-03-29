@@ -28,8 +28,8 @@ npm install @superfluid-finance/ethereum-contracts
 [cfav1-library.md](../constant-flow-agreement-cfa/cfav1-library.md)
 {% endcontent-ref %}
 
-{% content-ref url="../instant-distribution-agreement-ida/idav1-library/" %}
-[idav1-library](../instant-distribution-agreement-ida/idav1-library/)
+{% content-ref url="../instant-distribution-agreement-ida/idav1-library.md" %}
+[idav1-library.md](../instant-distribution-agreement-ida/idav1-library.md)
 {% endcontent-ref %}
 
 ### Access Control List

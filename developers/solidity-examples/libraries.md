@@ -12,6 +12,6 @@ Simplify money streaming in Solidity
 
 Simplify performing instant distributions in Solidity
 
-{% content-ref url="../instant-distribution-agreement-ida/idav1-library/" %}
-[idav1-library](../instant-distribution-agreement-ida/idav1-library/)
+{% content-ref url="../instant-distribution-agreement-ida/idav1-library.md" %}
+[idav1-library.md](../instant-distribution-agreement-ida/idav1-library.md)
 {% endcontent-ref %}
