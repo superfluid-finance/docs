@@ -55,12 +55,12 @@ To unwrap, the opposite happens; a desired amount of Super Tokens are burned and
 
 ![](<../../.gitbook/assets/image (40).png>)
 
-### Custom
+### Pure
 
-Custom Super Tokens don't have an underlying token. They exist only as Super Tokens so there's no wrapping or unwrapping required. Custom Super Tokens are deployed directly as Super Tokens with all of the associated Superfluid functionality out of the box. These tokens inherently have all the functionality of a basic ERC20 token plus Superfluid's Super Agreement abilities.
+Pure Super Tokens don't have an underlying token. They exist only as Super Tokens so there's no wrapping or unwrapping required. Pure Super Tokens are deployed directly as Super Tokens with all of the associated Superfluid functionality out of the box. These tokens inherently have all the functionality of a basic ERC20 token plus Superfluid's Super Agreement abilities.
 
 **Example**
 
-$RIC is a governance token deployed by [Ricochet DAO](https://ricochet.exchange/), a community building Superfluid-powered investment tools. Knowing that they would be heavily using Super Agreements (money streaming and instant distributions) on $RIC, they chose to deploy it directly as a Custom Super Token, rather than a plain ERC20 with an accompanying Wrapper Super Token.
+$RIC is a governance token deployed by [Ricochet DAO](https://ricochet.exchange/), a community building Superfluid-powered investment tools. Knowing that they would be heavily using Super Agreements (money streaming and instant distributions) on $RIC, they chose to deploy it directly as a Pure Super Token, rather than a plain ERC20 with an accompanying Wrapper Super Token.
 
-![](<../../.gitbook/assets/image (31) (2).png>)
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
