@@ -152,6 +152,7 @@ Sign up for Devfolio [here](https://devfolio.co/) and then fill out your project
 
 _**Please include a video demo** _ - it's better for showcasing your project and helping us judge.
 
+* Keep it under 5 minutes
 * Make sure to cover high level usage of your project and the technical elements that used Superfluid (so yes, feel free to dig into the code!).
 * We're _not_ expecting this to be super tidy - just a rough unscripted walk-through is fine regardless the length
 
