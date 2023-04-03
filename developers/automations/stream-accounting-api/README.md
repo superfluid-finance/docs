@@ -38,7 +38,7 @@ You want to get accounting info on the stream Alice is sending on a monthly basi
 
 The Stream Accounting API gives you information for the months between June 1st and September 15th.
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 Let’s say Alice had updated her stream to 0.2 ETHx/month on September 15th.
 

@@ -63,4 +63,4 @@ Pure Super Tokens don't have an underlying token. They exist only as Super Token
 
 $RIC is a governance token deployed by [Ricochet DAO](https://ricochet.exchange/), a community building Superfluid-powered investment tools. Knowing that they would be heavily using Super Agreements (money streaming and instant distributions) on $RIC, they chose to deploy it directly as a Pure Super Token, rather than a plain ERC20 with an accompanying Wrapper Super Token.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>

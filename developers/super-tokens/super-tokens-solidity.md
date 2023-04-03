@@ -30,9 +30,7 @@ Import the Super Token interface in your .sol file.
 import { ISuperToken } from "@superfluid-finance/ethereum-contracts/contracts/interfaces/superfluid/ISuperToken.sol";
 ```
 
-## Interacting With Super Tokens
-
-### **ERC20** Functions
+## **ERC20** Functions
 
 Super Tokens offer you all the basic ERC20 features. Learn more about these functions [here](https://docs.openzeppelin.com/contracts/2.x/api/token/erc20) on OpenZeppelin.
 
@@ -55,7 +53,7 @@ function decreaseAllowance(address spender, uint256 subtractedValue) external re
 ISuperToken(superTokenAddress).transfer(receiverAddress, amountToTransfer) 
 ```
 
-### ERC20 **W**rapping Functions
+## ERC20 **W**rapping Functions
 
 These are functions for Wrapper Super Tokens to implement such that you can wrap an underlying ERC20 token into and out of the Wrapper Super Token contract. See this [quick explainer](https://docs.superfluid.finance/superfluid/protocol-overview/in-depth-overview/super-tokens#wrapper) on Wrapper Super Tokens.
 
@@ -101,7 +99,7 @@ Unwrap your Super Tokens into the underlying ERC20 tokens.
 ISuperToken(superTokenAddress).downgrade(amountToUnwrap)
 ```
 
-### **ERC777** Functions
+## **ERC777** Functions
 
 Super Tokens also have some ERC777 features. Learn more about these functions [here](https://docs.openzeppelin.com/contracts/2.x/api/token/erc777) on OpenZeppelin. Note that not all ERC777 functionality is available - read more below 👇
 
@@ -134,7 +132,35 @@ function operatorBurn(
 ) external override(IERC777);
 ```
 
-### Full Super Token Interface
+## Native Asset Functions
+
+These are functions that only Native Asset Super Tokens possess to allow wrapping and unwrapping of native assets (like MATIC or AVAX). While the interface is named ISETH.sol, it is used for all Native Assets Super Tokens (MATICx, AVAXx, etc.).
+
+#### Import the [ISETH Interface](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/interfaces/tokens/ISETH.sol) in Your .sol File.
+
+```
+import "@superfluid-finance/ethereum-contracts/contracts/interfaces/tokens/ISETH.sol";
+```
+
+#### Interface
+
+```solidity
+function upgradeByETH() external payable;
+function upgradeByETHTo(address to) external payable;
+function downgradeToETH(uint wad) external;
+```
+
+**Example - Wrapping a Native Asset**
+
+```solidity
+ISETH(superTokenAddress).{ value : amountToUpgrade }.upgradeByETH()
+```
+
+{% hint style="info" %}
+You can also wrap a native asset by simply [transferring](https://docs.soliditylang.org/en/v0.8.19/types.html#members-of-addresses) it to the appropriate Native Asset Super Token contract where a [`receive()`](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/tokens/SETH.sol#L23) function is implemented to handle the wrapping on receipt.
+{% endhint %}
+
+## Full Super Token Interface
 
 See our GitHub for full comments
 
@@ -262,55 +288,3 @@ See our GitHub for full comments
    
 }
 </code></pre>
-
-### Native Asset Super Tokens
-
-Note that native asset super tokens work a bit differently. Here is the interface for ETHx (SETH.sol), but this also applies to other native assets like MATICx or AVAXx.
-
-Tokens are wrapped by sending a transfer of that native asset to the token contract, where a `receive()` function is implemented to handle the wrapping on reciept. Downgrading is done using `downgradeToETH`.
-
-```solidity
-// SPDX-License-Identifier: AGPLv3
-pragma solidity 0.8.16;
-
-import {
-    ISuperToken,
-    CustomSuperTokenBase
-}
-from "../interfaces/superfluid/CustomSuperTokenBase.sol";
-import { ISETHCustom } from "../interfaces/tokens/ISETH.sol";
-import { UUPSProxy } from "../upgradability/UUPSProxy.sol";
-
-/**
- * @dev Super ETH (SETH) custom super token implementation
- * @author Superfluid
- *
- * It is also called a Native-Asset Super Token.
- */
-contract SETHProxy is ISETHCustom, CustomSuperTokenBase, UUPSProxy {
-    event TokenUpgraded(address indexed account, uint256 amount);
-    event TokenDowngraded(address indexed account, uint256 amount);
-
-    // fallback function which mints Super Tokens for received ETH
-    receive() external payable override {
-        ISuperToken(address(this)).selfMint(msg.sender, msg.value, new bytes(0));
-        emit TokenUpgraded(msg.sender, msg.value);
-    }
-
-    function upgradeByETH() external override payable {
-        ISuperToken(address(this)).selfMint(msg.sender, msg.value, new bytes(0));
-        emit TokenUpgraded(msg.sender, msg.value);
-    }
-
-    function upgradeByETHTo(address to) external override payable {
-        ISuperToken(address(this)).selfMint(to, msg.value, new bytes(0));
-        emit TokenUpgraded(to, msg.value);
-    }
-
-    function downgradeToETH(uint wad) external override {
-        ISuperToken(address(this)).selfBurn(msg.sender, wad, new bytes(0));
-        payable(msg.sender).transfer(wad);
-        emit TokenDowngraded(msg.sender, wad);
-    }
-}
-```

@@ -44,6 +44,6 @@ For instance, you could create a lending Super App where loan repayment is be do
 
 For more inspiration, check out these Super App examples below :point\_down:
 
-{% content-ref url="../../resources/examples.md" %}
-[examples.md](../../resources/examples.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}

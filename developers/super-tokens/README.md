@@ -22,6 +22,6 @@ Super Tokens can do everything that a traditional ERC20 token can PLUS new modes
 
 While all Super Tokens share the same basic features, there are three primary variations:
 
-* [**Wrapper**](super-tokens/types-of-super-tokens/erc20-wrapper-tokens.md) - wrap an existing underlying ERC20
-* [**Pure**](super-tokens/types-of-super-tokens/pure-super-tokens.md) **** - exist only as Super Tokens, no underlying token
-* [**Native**](super-tokens/types-of-super-tokens/native-asset-super-tokens.md) **** - wrap a native asset (such as MATICx for MATIC on Polygon chain)
+* **Wrapper** - wrap an existing underlying ERC20
+* **Pure** - exist only as Super Tokens, no underlying token
+* **Native** - wrap a native asset (such as MATICx for MATIC on Polygon chain)

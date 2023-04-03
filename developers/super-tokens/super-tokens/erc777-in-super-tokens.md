@@ -1,3 +1,7 @@
+---
+description: What is ERC777 and how is it applied in Super Tokens
+---
+
 # ERC777 in Super Tokens
 
 ### What's an ERC777?
@@ -31,7 +35,7 @@ Note that the ability to use approve to set transfer allowances is still availab
 
 The Super Token overrides `transferFrom` on the ERC777 such that it does not trigger any hooks but leaves the `send` function as is.
 
-You can see the `send` function exposed on the USDCx Super Token interface [**HERE**](https://polygonscan.com/address/0xCAa7349CEA390F89641fe306D93591f87595dc1F#writeProxyContract) on Polygonscan.
+For example, you can see the `send` function exposed on the USDCx Super Token interface [**HERE**](https://polygonscan.com/address/0xCAa7349CEA390F89641fe306D93591f87595dc1F#writeProxyContract) on Polygonscan.
 
 <figure><img src="../../../.gitbook/assets/image (2) (2).png" alt=""><figcaption></figcaption></figure>
 
@@ -57,9 +61,9 @@ More formal description in EIP-777
 
 {% embed url="https://eips.ethereum.org/EIPS/eip-777" %}
 
-See the transfer function code on OpenZeppelin's ERC777 contract
+See the `transferFrom` function code on OpenZeppelin's ERC777 contract
 
-{% embed url="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC777/ERC777.sol#L275" %}
+{% embed url="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/2c69f9f9f5d0e59bba030f6eba5495f7a6991162/contracts/token/ERC777/ERC777.sol#L269" %}
 
 See the SuperToken code and how it utilizes ERC777
 

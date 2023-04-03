@@ -1,12 +1,14 @@
 ---
-description: >-
-  Looking to make an Super Token Wrapper for your ERC20 token? You've come to
-  the right place!
+description: Let's make a Super Token Wrapper for your ERC20 token
 ---
 
 # Deploying a Wrapper Super Token
 
-Anyone can deploy a Super Token Wrapper for any ERC20 token. The deployer account doesn't receive any control or admin powers, and all Super Token logic upgrades are handled by Superfluid Protocol Governance.
+{% hint style="info" %}
+You can learn more about what Wrapper Super Tokens are [HERE](../types-of-super-tokens.md#1.-wrapper-super-tokens).
+{% endhint %}
+
+Anyone can deploy a Wrapper Super Token for any ERC20 token. The deployer account doesn't receive any control or admin powers, and all Super Token logic upgrades are handled by Superfluid Protocol Governance.
 
 ### Deploying Using Community Deployer Interface
 
@@ -30,21 +32,21 @@ This web app by community member [serox.eth](https://twitter.com/seroxdesigns) p
 
 2\. Connect wallet.
 
-![](<../../.gitbook/assets/image (68).png>)
+![](<../../../.gitbook/assets/image (68).png>)
 
 3\. Find the `createERC20Wrapper` function. Refer to the below image and provide the required parameters with **no additional characters**.
 
-![](<../../.gitbook/assets/image (54).png>)
+![](<../../../.gitbook/assets/image (54).png>)
 
 4\. Click `Write` and confirm through your wallet. Congrats, you've created a new Wrapper Super Token!
 
 5\. To find the address of your new Wrapper Super Token, go to the transaction hash and click on the "Logs" tab. The address is in the "InterfaceImplementerSet" event log ([SUNNYx example](https://polygonscan.com/tx/0xd23df49ac21f5c92049ede689e835d5dcbbd3c9670428ce7dd22f391fd5f9564#eventlog)).
 
-![](<../../.gitbook/assets/image (29).png>)
+![](<../../../.gitbook/assets/image (29).png>)
 
 Alternatively, search your token in the top right search bar and find it in the drop down
 
-![](<../../.gitbook/assets/image (31) (1).png>)
+![](<../../../.gitbook/assets/image (31) (1).png>)
 
 ### Deploying Using Deployment Scripts
 
@@ -77,6 +79,6 @@ If you are wrapping an existing token, like DAI or USDC, please use suffix "x" i
 
 Congrats on deploying your Super Token! If you'd like to see it listed on the [Superfluid Dashboard](https://app.superfluid.finance/), check out this page 👇
 
-{% content-ref url="../../resources/token-dashboard-submission/" %}
-[token-dashboard-submission](../../resources/token-dashboard-submission/)
+{% content-ref url="../../../resources/token-dashboard-submission.md" %}
+[token-dashboard-submission.md](../../../resources/token-dashboard-submission.md)
 {% endcontent-ref %}
