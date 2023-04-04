@@ -69,7 +69,7 @@
   * [Batch Calls - SDK Core](developers/batch-calls/batch-calls.md)
   * [Batch Calls - Frontend Examples](developers/batch-calls/batching-transactions.md)
 * [⚙ Automations](developers/automations/README.md)
-  * [Auto Wrap](developers/automations/auto-wrap/README.md)
+  * [Auto-Wrap](developers/automations/auto-wrap/README.md)
     * [Dev Guide](https://www.notion.so/superfluidhq/Setting-Up-Superfluid-Auto-Wrap-9a565d53bbee4bdc953cc2a656c43761)
   * [Stream Scheduler](developers/automations/stream-scheduler/README.md)
     * [Dev Guide](https://superfluidhq.notion.site/Setting-Up-Stream-Scheduling-551888de690e402caee50e8d87cb6930)
