@@ -48,11 +48,11 @@ The top three submissions to the March Wave will earn one of the below prizes �
 
 **3rd Place** - $1,000
 
-**Co-Sponsor Prize** - Best Project Using Superfluid with Chainlink (see some [project ideas](https://superfluidhq.notion.site/Chainlink-x-Superfluid-Project-Ideas-a29df6679ef647b794d3332f0028db73))
+**Co-Sponsor Prize** - Best Projects Using Superfluid with [Safe](https://safe.global/) 🏦
 
-&#x20;    **1st Place** - $2,000&#x20;
+&#x20;    **1st Place** - $1,500&#x20;
 
-&#x20;    **2nd Place** - $1,000
+&#x20;    **Pool Prize** - $1,000
 
 **Pool Prize** - $1,000 (split among hackers who did great work, but didn’t quite make the Top 3 cut)
 
