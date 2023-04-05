@@ -11,7 +11,7 @@ Note: these addresses can also be found in the [Superfluid Console](https://cons
 ## Mainnet Networks
 
 {% tabs %}
-{% tab title="Mainnet" %}
+{% tab title="Ethereum" %}
 #### Framework
 
 | Resource                                                                                                        |                   Address                  |
@@ -36,8 +36,6 @@ Note: these addresses can also be found in the [Superfluid Console](https://cons
 {% endtab %}
 
 {% tab title="Polygon" %}
-**​​ ❓See** [**Polygon (Matic)**](broken-reference) **for more help**
-
 **Framework**
 
 | Resource                                                                                          | Address                                    |
@@ -72,7 +70,7 @@ Note: these addresses can also be found in the [Superfluid Console](https://cons
 {% endtab %}
 
 {% tab title="Gnosis Chain" %}
-**​​ ​​ ❓ See** [**Gnosis Chain**](https://docs.gnosischain.com/) **for more help**
+**​​ ​​ ❓ See** [**Gnosis Chain**](https://docs.gnosischain.com/) **for more details**
 
 **Framework**
 
@@ -99,8 +97,6 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 {% endtab %}
 
 {% tab title="Optimism" %}
-**​​ ​​❓ See** [**Optimism**](broken-reference) **for more help**
-
 **Framework**
 
 | Resource                                                                                                  | Address                                    |
@@ -125,8 +121,6 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 {% endtab %}
 
 {% tab title="Arbitrum" %}
-**​​ ​❓ See** [**Arbitrum**](broken-reference) **for more help**
-
 **Framework**
 
 | Resource                                                                                      | Address                                    |
@@ -152,8 +146,6 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 {% endtab %}
 
 {% tab title="Avalanche" %}
-**❓ See** [**Avalanche**](broken-reference) **for more help**
-
 **Framework**
 
 | Resource                                                                                        | Address                                    |
@@ -176,8 +168,6 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 {% endtab %}
 
 {% tab title="BNB Chain" %}
-**❓ See** [**BNB Chain**](broken-reference) **for more help**
-
 **Framework**
 
 | Resource                                                                                       | Address                                    |
@@ -228,8 +218,6 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 
 {% tabs %}
 {% tab title="Mumbai" %}
-**See** [**Polygon (Matic)**](broken-reference) **for more help**
-
 **Framework**
 
 | Resource                                                                                                             |                   Address                  |
