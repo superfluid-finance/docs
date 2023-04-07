@@ -16,9 +16,7 @@ Make a contract that streams money in under 10 minutes!
 
 #### **Example Code**
 
-{% embed url="https://github.com/superfluid-finance/super-examples/blob/main/projects/money-streaming-intro/contracts/MoneyRouter.sol" %}
-Simple contract showing usage of many CFAv1Library functions
-{% endembed %}
+{% embed url="https://github.com/superfluid-finance/super-examples/blob/main/projects/money-streaming-intro/money-streaming-intro-hardhat/contracts/MoneyRouter.sol" %}
 
 ## Getting Set To Start Streams
 
@@ -139,7 +137,7 @@ token.getNetFlowRate(
 );
 ```
 
-### Create, Update, Delete Streams _With_ [_User Data_](../super-apps/user-data/)__
+### Create, Update, Delete Streams _With_ [_User Data_](../super-apps/user-data/)
 
 <pre class="language-solidity"><code class="lang-solidity">// Same function call just with additional parameter for user data
 <strong>token.createFlow(address receiver, int96 flowRate, bytes memory userData);
@@ -149,7 +147,7 @@ token.deleteFlow(address sender, address receiver, bytes memory userData);
 
 **`userData`** - an optional `bytes` value which represents additional data you'd like to pass along with your function call. You can learn more about the usefulness of user data [here](../super-apps/user-data/).
 
-### Create, Update, Delete Streams _In a_ [_Super App Callbacks_](../super-apps/super-app-callbacks/calling-agreements-in-super-apps.md)__
+### Create, Update, Delete Streams _In a_ [_Super App Callbacks_](../super-apps/super-app-callbacks/calling-agreements-in-super-apps.md)
 
 As you can learn about [here](../super-apps/super-app-callbacks/calling-agreements-in-super-apps.md), Super Agreement calls in Super App callbacks require the updating of a context bytes variable. That context is returned at the end of the callback.
 
