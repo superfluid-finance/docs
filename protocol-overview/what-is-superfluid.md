@@ -10,7 +10,7 @@ We have a thriving ecosystem of over 600 projects built on Superfluid that have 
 
 ## Token-Centric Framework
 
-Superfluid is an token-centric EVM smart contract framework that introduces the **Super Token**. The Super Token is an extension of the ERC20 standard that has additional powerful value-movement abilities beyond the basic "transfer". We call these abilities Super Agreements.
+The **Super Token** is an extension of the ERC20 standard that has additional powerful value-movement abilities beyond the basic "transfer". We call these abilities Super Agreements.
 
 Currently there are two additional Super Agreements:
 
@@ -22,7 +22,7 @@ These agreements modify the balance of Super Tokens just like basic transfers wo
 
 ## Composable
 
-ERC20 tokens are the most composable Web3 primitive - you can borrow against them, exchange them, stake them, the list is endless. Since all Superfluid boils down to is an extended ERC20 token, its composability is limitless as well.
+ERC20 tokens are the most composable Web3 primitive we know of - you can borrow against them, exchange them, stake them, the list is endless. Since all Superfluid boils down to is an extended ERC20 token, its composability is limitless as well.
 
 You can do all those basic ERC20 things in addition to the many possibilities introduced by money streams and instant distributions. Imagine a contract where you stake an NFT and receive a stream of Super Tokens straight to your wallet in return (no need to claim). Or, imagine a dollar-cost averaging protocol that scalably distributes Super Tokens straight to investor wallets with a fixed gas cost.
 
