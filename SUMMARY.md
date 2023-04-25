@@ -128,7 +128,6 @@
 * [💰 Bounty Program](resources/bounty-program.md)
 * [🛡 Security & Bug Bounties](resources/security-and-bug-bounties.md)
 * [👩💻 Project Ideas](https://www.notion.so/superfluidhq/Superfluid-Wave-Project-Ideas-7e8c792758004bd2ae452d1f9810cc58)
-* [Project Ideas](https://superfluidhq.notion.site/Superfluid-Wave-Pool-Ideas-7e8c792758004bd2ae452d1f9810cc58)
 * [🗳 Token Dashboard Submission](resources/token-dashboard-submission.md)
 * [🎥 Videos](resources/videos.md)
 * [Superfluid Deployment Guide](https://github.com/superfluid-finance/protocol-monorepo/wiki/Framework-Deployment-Guide/)
