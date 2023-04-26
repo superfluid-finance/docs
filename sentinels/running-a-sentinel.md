@@ -38,9 +38,11 @@ The TOGA Dashboard
 
 ### Additional Resources
 
-Various communities are beginning to emerge around running Sentinels. If you're interested in learning more about these communities and engaging them directly, we recommend checking out the Sentinel Guild:
+Running sentinels does require some active management.&#x20;
 
-{% embed url="https://discord.gg/XWHGJxEgQJ" %}
+We recommend you to join our discord server, and specifically the sentinels channel to keep in touch with any news and updates!
+
+{% embed url="http://discord.superfluid.finance" %}
 
 ## Glossary of Terms:
 
