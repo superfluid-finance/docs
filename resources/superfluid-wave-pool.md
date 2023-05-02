@@ -16,7 +16,7 @@ description: >-
 
 The Wave Pool is a "continuous hackathon" that repeats every month. During the month, community members may submit Superfluid-related work to each Wave and be put in the running for the Wave's prizes (like a hackathon!).
 
-However, unlike a hackathon, the Wave Pool is **not just for technical work**! __ Non-technical work such as articles, videos, documentation, and tutorials are all considered and encouraged for submission.
+However, unlike a hackathon, the Wave Pool is **not just for technical work**! Non-technical work such as articles, videos, documentation, and tutorials are all considered and encouraged for submission.
 
 &#x20;The Wave Pool is somewhat like a fill-in-the-blank bounty program that aims to reward the wide variety of work that Superfluid community members complete without us explicitly targeting those work items with bounties. Let's reward and recognize good work when we see it!
 
@@ -24,7 +24,7 @@ However, unlike a hackathon, the Wave Pool is **not just for technical work**! _
 
 **Waves last over each month** - For example, Wave #1 will span from September 1st to September 30th. Right after one finishes, the next one starts!
 
-**Start or Submit **_**ANYTIME**_** ** - Wave Projects can be started or submitted at _any time_. The only limitation is that you can't submit old work from a previous month. So for example, a project you finished 3 months ago wouldn't be eligible for this month's Wave.
+**Start or Submit **_**ANYTIME**_ - Wave Projects can be started or submitted at _any time_. The only limitation is that you can't submit old work from a previous month. So for example, a project you finished 3 months ago wouldn't be eligible for this month's Wave.
 
 </details>
 
@@ -40,7 +40,7 @@ Prize winner or not, you'll be given exposure to the Superfluid team and communi
 
 ## Current Prizes
 
-The top three submissions to the March Wave will earn one of the below prizes 🥇
+The top three submissions to the May Wave will earn one of the below prizes 🥇
 
 **1st Place** - $2,000
 
@@ -48,7 +48,7 @@ The top three submissions to the March Wave will earn one of the below prizes �
 
 **3rd Place** - $1,000
 
-**Co-Sponsor Prize** - Best Projects Using Superfluid with [Safe](https://safe.global/) 🏦
+**Co-Sponsor Prize** - Best Projects Using Superfluid with [Gelato](http://localhost:5000/s/MYhu8kEOiGEJPzxtx8NL/) :icecream:
 
 &#x20;    **1st Place** - $1,500&#x20;
 
@@ -150,7 +150,7 @@ Sign up for Devfolio [here](https://devfolio.co/) and then fill out your project
 
 * Here's an [example ](https://devfolio.co/projects/test-a7d3)of a solid Devfolio project page
 
-_**Please include a video demo** _ - it's better for showcasing your project and helping us judge.
+_**Please include a video demo**_ - it's better for showcasing your project and helping us judge.
 
 * Keep it under 5 minutes
 * Make sure to cover high level usage of your project and the technical elements that used Superfluid (so yes, feel free to dig into the code!).
