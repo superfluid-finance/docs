@@ -160,6 +160,8 @@ _**Please include a video demo**_ - it's better for showcasing your project and 
 
 If you worked together on a team on your Wave Project, just submit once for the whole team
 
+_Submissions are due on the last day of the month at 11:59pm PST._
+
 Submit your Wave Project to the Wave Pool Submission Form 👇
 
 {% embed url="https://airtable.com/shrg58mocu5zrxRSk" %}
