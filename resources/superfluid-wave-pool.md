@@ -168,8 +168,10 @@ Submit your Wave Project to the Wave Pool Submission Form 👇
 
 #### **6. Winners are announced**&#x20;
 
-If you have a winning submission, in the days after the Wave completes, we will DM you with details on how to claim your prize along with a POAP to commemorate your accomplishment!&#x20;
+If you have a winning submission, you will be invited to the monthly Wave Pool Award Ceremony where you'll find out what award you won and have the chance to present your work to the community!
+
+After the ceremony, we will DM you with details on how to claim your prize along with a POAP to commemorate your accomplishment!&#x20;
 
 <figure><img src="../.gitbook/assets/wave-pool-poaps.gif" alt=""><figcaption></figcaption></figure>
 
-We will also announce winners publicly in our Discord and highlight interesting submissions on our socials or during Community Calls.
+Build on! 🤘
