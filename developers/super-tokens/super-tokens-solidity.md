@@ -80,7 +80,7 @@ ISuperToken(superTokenAddress).upgrade(amountToWrap);
 
 #### Example: Calling `upgradeTo`
 
-Usage of `upgradeTo` is rare but useful. **** It allows you to designate another address that will receive the upgraded tokens and call the `tokensReceived` implementation on it. Essentially, it combines the ERC777 `send` with plain `upgrade`. &#x20;
+Usage of `upgradeTo` is rare but useful. It allows you to designate another address that will receive the upgraded tokens and call the `tokensReceived` implementation on it. Essentially, it combines the ERC777 `send` with plain `upgrade`. &#x20;
 
 ```solidity
 // approving

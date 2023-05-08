@@ -2,7 +2,7 @@
 description: Lets you stream tokens
 ---
 
-# 🚰 Constant Flow Agreement (CFA)
+# 🚰 Money Streaming (CFA)
 
 ## Definition
 
@@ -14,7 +14,7 @@ The Constant Flow Agreement lets you stream money! What do we mean by streaming?
 * **Netflow Rate**: The per-second rate that an account's Super Token's balance is changing. It is the sum of the account's inbound and outbound CFA flow rates.
 * **Sender**: The account that starts the CFA by specifying a receiver and a flow rate after which its netflow rate decreases.
 * **Receiver**: The account on the receiving end of a CFA which has its netflow rate increased.
-* ****[**CRUD**](https://en.wikipedia.org/wiki/Create,\_read,\_update\_and\_delete) **timestamp**: The timestamp of when an account creates, updates, or deletes a CFA.
+* [**CRUD**](https://en.wikipedia.org/wiki/Create,\_read,\_update\_and\_delete) **timestamp**: The timestamp of when an account creates, updates, or deletes a CFA.
 * **CFA Real-Time Balance**: The amount the account's Super Token balance has changed since the latest CRUD timestamp due to the CFA. Can be positive or negative.
 * **Static Balance**: The Super Token balance of the account at the latest CRUD timestamp.&#x20;
 * **Current Balance**: The actual Super Token balance of an account. It is the sum of the Static Balance and the CFA Real-Time Balance.
@@ -78,13 +78,13 @@ Current Balance = 1000 USDCx + -10 USDCx = <mark style="color:green;">**990 USDC
 
 Current timestamp = 165340**1**000
 
-Static Balance = <mark style="color:green;">**990**</mark> <mark style="color:green;"></mark><mark style="color:green;"></mark> <mark style="color:green;"></mark><mark style="color:green;">**USDCx**</mark>** ** ( recorded to CFA contract, takes the Current Balance value from 1. )
+Static Balance = <mark style="color:green;">**990**</mark> <mark style="color:green;">**USDCx**</mark> ( recorded to CFA contract, takes the Current Balance value from 1. )
 
 Real-Time Balance = -0.02 USDCx/second \* **0** seconds = 0 USDCx ( time elapsed has reset )
 
 Current Balance = 990 USDCx + 0 USDCx = **990 USDCx**
 
-#### **3. **_****_** Another 2000 seconds elapse**
+#### **3.** **Another 2000 seconds elapse**
 
 ![](<../../../.gitbook/assets/image (59) (1).png>)
 
@@ -112,7 +112,7 @@ Real-Time Balance = **+0.02** USDCx/second \* **0** seconds = 0 USDCx
 
 Current Balance = 950 USDCx - 0 USDCx = **950 USDCx**
 
-#### **5. **_****_** Another 1000 seconds elapse**
+#### **5.** **Another 1000 seconds elapse**
 
 ![](<../../../.gitbook/assets/image (39).png>)
 
@@ -126,7 +126,7 @@ Real-Time Balance = **+0.02** USDCx/second \* **1000** seconds = 20 USDCx
 
 Current Balance = 950 USDCx + 20 USDCx = <mark style="color:green;">**970 USDCx**</mark>
 
-#### **6. **_****_** Account A deletes the outbound stream of 0.02 USDCx/sec to Account B. The CFA contract records the new status.**
+#### **6.** **Account A deletes the outbound stream of 0.02 USDCx/sec to Account B. The CFA contract records the new status.**
 
 ![](<../../../.gitbook/assets/image (38).png>)
 

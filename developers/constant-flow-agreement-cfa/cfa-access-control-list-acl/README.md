@@ -10,7 +10,7 @@ The Access Control List (ACL) allows any account (plain EOA or contract) to conf
 
 It's basically the money streaming equivalent of the ERC20 approval mechanism!
 
-<figure><img src="../../../.gitbook/assets/image (9) (2).png" alt=""><figcaption><p><code></code><a href="https://docs.openzeppelin.com/contracts/2.x/api/token/erc20#IERC20-allowance-address-address-"><code>allowance</code></a>, <a href="https://docs.openzeppelin.com/contracts/2.x/api/token/erc20#IERC20-approve-address-uint256-"><code>approval</code></a>, and <a href="https://docs.openzeppelin.com/contracts/2.x/api/token/erc20#IERC20-transferFrom-address-address-uint256-"><code>transferFrom</code></a> are to ERC20 transfers as <code>getFlowOperatorData</code>, <code>updateFlowOperatorPermissions</code>, and <code>(create/update/delete)FlowByOperator</code> are to Superfluid streams.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9) (2).png" alt=""><figcaption><p><a href="https://docs.openzeppelin.com/contracts/2.x/api/token/erc20#IERC20-allowance-address-address-"><code>allowance</code></a>, <a href="https://docs.openzeppelin.com/contracts/2.x/api/token/erc20#IERC20-approve-address-uint256-"><code>approval</code></a>, and <a href="https://docs.openzeppelin.com/contracts/2.x/api/token/erc20#IERC20-transferFrom-address-address-uint256-"><code>transferFrom</code></a> are to ERC20 transfers as <code>getFlowOperatorData</code>, <code>updateFlowOperatorPermissions</code>, and <code>(create/update/delete)FlowByOperator</code> are to Superfluid streams.</p></figcaption></figure>
 
 Before checking out the functions ACL provides you, you'll want to understand the `flowRateAllowance` and `permissions` parameters.
 
@@ -24,7 +24,7 @@ You can think of `flowRateAllowance` as a tank. When you set `flowRateAllowance`
 
 That`flowOperator` account can spend its `flowRateAllowance` tank as it likes. Every time it **increases** a flow rate on your behalf, its `flowRateAllowance` tank is depleted by the amount of the increase.&#x20;
 
-On the other side, actions that **decrease** __ your flow rate (updating a stream to a lower flow rate or deleting one) **don't affect** `flowRateAllowance`.&#x20;
+On the other side, actions that **decrease** your flow rate (updating a stream to a lower flow rate or deleting one) **don't affect** `flowRateAllowance`.&#x20;
 
 If a `flowOperator`'s `flowRateAllowance` is too small for it to create/increase a flow, then its action is reverted. This entire dynamic is just like the ERC20 allowance mechanism! Here's an example to drive it home 👇
 

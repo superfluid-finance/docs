@@ -16,7 +16,7 @@ When getting wrapper Super Tokens, you first deposit the underlying tokens into 
 
 To unwrap, the opposite happens; a desired amount of Super Tokens are burned and an equal amount of the underlying token is returned.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Custom Wrapper Super Tokens
 

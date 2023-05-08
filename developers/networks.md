@@ -216,6 +216,8 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 
 ## Test Networks
 
+_Mumbai is our encouraged testnet. Goerli is sunsetting, we suggest you refrain from using it._
+
 {% tabs %}
 {% tab title="Mumbai" %}
 **Framework**
@@ -245,36 +247,6 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 | [fDAIx](https://mumbai.polygonscan.com/address/0x5D8B4C2554aeB7e86F387B4d6c00Ac33499Ed01f)       | 0x5D8B4C2554aeB7e86F387B4d6c00Ac33499Ed01f |
 | [fUSDCx](https://mumbai.polygonscan.com/address/0x42bb40bF79730451B11f6De1CbA222F17b87Afd7)      | 0x42bb40bF79730451B11f6De1CbA222F17b87Afd7 |
 | [fTUSDx](https://mumbai.polygonscan.com/address/0x918E0d5C96cAC79674E2D38066651212be3C9C48)      | 0x918E0d5C96cAC79674E2D38066651212be3C9C48 |
-{% endtab %}
-
-{% tab title="Goerli" %}
-**Framework**
-
-| Resource                                                                                                 |                   Address                  |
-| -------------------------------------------------------------------------------------------------------- | :----------------------------------------: |
-| [Resolver](http://goerli.etherscan.io/address/0x3710AB3fDE2B61736B8BB0CE845D6c61F667a78E)                | 0x3710AB3fDE2B61736B8BB0CE845D6c61F667a78E |
-| [Host](http://goerli.etherscan.io/address/0x22ff293e14F1EC3A09B137e9e06084AFd63adDF9)                    | 0x22ff293e14F1EC3A09B137e9e06084AFd63adDF9 |
-| [CFAv1](http://goerli.etherscan.io/address/0xEd6BcbF6907D4feEEe8a8875543249bEa9D308E8)                   | 0xEd6BcbF6907D4feEEe8a8875543249bEa9D308E8 |
-| [IDAv1](http://goerli.etherscan.io/address/0xfDdcdac21D64B639546f3Ce2868C7EF06036990c)                   | 0xfDdcdac21D64B639546f3Ce2868C7EF06036990c |
-| [SuperTokenFactory](https://goerli.etherscan.io/address/0x94f26B4c8AD12B18c12f38E878618f7664bdcCE2#code) | 0x94f26B4c8AD12B18c12f38E878618f7664bdcCE2 |
-| [SuperfluidLoader v1](https://goerli.etherscan.io/address/0x74d860243Ff08A243d5485899f343117EbDa6eA8)    | 0x74d860243Ff08A243d5485899f343117EbDa6eA8 |
-| [TOGA](https://goerli.etherscan.io/address/0xa54FC15FC75693447d70a57262F37a70B614721b)                   | 0xa54FC15FC75693447d70a57262F37a70B614721b |
-| [CFAv1Forwarder](https://goerli.etherscan.io/address/0xcfA132E353cB4E398080B9700609bb008eceB125)         | 0xcfA132E353cB4E398080B9700609bb008eceB125 |
-| [Stream Scheduler](https://goerli.etherscan.io/address/0xA6134E107FCAEAab6140CB8fb92Dbf5bd9EF6C86)       | 0xA6134E107FCAEAab6140CB8fb92Dbf5bd9EF6C86 |
-| [Auto Wrap Manager](https://goerli.etherscan.io/address/0x0B82D14E9616ca4d260E77454834AdCf5887595F)      | 0x0B82D14E9616ca4d260E77454834AdCf5887595F |
-| [Auto Wrap Strategy](https://goerli.etherscan.io/address/0xea49af829d3e28d3ec49e0e0a0ba1e7860a56f60)     | 0xea49af829d3e28d3ec49e0e0a0ba1e7860a56f60 |
-
-**Tokens**
-
-| Resource                                                                                |                   Address                  |
-| --------------------------------------------------------------------------------------- | :----------------------------------------: |
-| [ETHx](https://goerli.etherscan.io/address/0x5943F705aBb6834Cad767e6E4bB258Bc48D9C947)  | 0x5943F705aBb6834Cad767e6E4bB258Bc48D9C947 |
-| [fDAI](http://goerli.etherscan.io/address/0x88271d333C72e51516B67f5567c728E702b3eeE8)   | 0x88271d333C72e51516B67f5567c728E702b3eeE8 |
-| [fUSDC](http://goerli.etherscan.io/address/0xc94dd466416A7dFE166aB2cF916D3875C049EBB7)  | 0xc94dd466416A7dFE166aB2cF916D3875C049EBB7 |
-| [fTUSD](http://goerli.etherscan.io/address/0x53d00397f03147A9bD9c40443A105A82780deAF1)  | 0x53d00397f03147A9bD9c40443A105A82780deAF1 |
-| [fDAIx](http://goerli.etherscan.io/address/0xF2d68898557cCb2Cf4C10c3Ef2B034b2a69DAD00)  | 0xF2d68898557cCb2Cf4C10c3Ef2B034b2a69DAD00 |
-| [fUSDCx](http://goerli.etherscan.io/address/0x8aE68021f6170E5a766bE613cEA0d75236ECCa9a) | 0x8aE68021f6170E5a766bE613cEA0d75236ECCa9a |
-| [fTUSDx](http://goerli.etherscan.io/address/0x95697ec24439E3Eb7ba588c7B279b9B369236941) | 0x95697ec24439E3Eb7ba588c7B279b9B369236941 |
 {% endtab %}
 
 {% tab title="Optimism Goerli" %}
@@ -341,5 +313,35 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 | [fDAIx](https://testnet.snowtrace.io/address/0x296E9c01f80D408741f6e15d62013DDbe1041f1D)  | 0x296E9c01f80D408741f6e15d62013DDbe1041f1D |
 | [fUSDCx](https://testnet.snowtrace.io/address/0x896C3e90446237be3e27eB4D67e0D3c97FB3b03F) | 0x896C3e90446237be3e27eB4D67e0D3c97FB3b03F |
 | [fTUSDx](https://testnet.snowtrace.io/address/0x36BBF94e66f0c953CB451b302e345D6E50c2A215) | 0x36BBF94e66f0c953CB451b302e345D6E50c2A215 |
+{% endtab %}
+
+{% tab title="Goerli" %}
+**Framework**
+
+| Resource                                                                                                 |                   Address                  |
+| -------------------------------------------------------------------------------------------------------- | :----------------------------------------: |
+| [Resolver](http://goerli.etherscan.io/address/0x3710AB3fDE2B61736B8BB0CE845D6c61F667a78E)                | 0x3710AB3fDE2B61736B8BB0CE845D6c61F667a78E |
+| [Host](http://goerli.etherscan.io/address/0x22ff293e14F1EC3A09B137e9e06084AFd63adDF9)                    | 0x22ff293e14F1EC3A09B137e9e06084AFd63adDF9 |
+| [CFAv1](http://goerli.etherscan.io/address/0xEd6BcbF6907D4feEEe8a8875543249bEa9D308E8)                   | 0xEd6BcbF6907D4feEEe8a8875543249bEa9D308E8 |
+| [IDAv1](http://goerli.etherscan.io/address/0xfDdcdac21D64B639546f3Ce2868C7EF06036990c)                   | 0xfDdcdac21D64B639546f3Ce2868C7EF06036990c |
+| [SuperTokenFactory](https://goerli.etherscan.io/address/0x94f26B4c8AD12B18c12f38E878618f7664bdcCE2#code) | 0x94f26B4c8AD12B18c12f38E878618f7664bdcCE2 |
+| [SuperfluidLoader v1](https://goerli.etherscan.io/address/0x74d860243Ff08A243d5485899f343117EbDa6eA8)    | 0x74d860243Ff08A243d5485899f343117EbDa6eA8 |
+| [TOGA](https://goerli.etherscan.io/address/0xa54FC15FC75693447d70a57262F37a70B614721b)                   | 0xa54FC15FC75693447d70a57262F37a70B614721b |
+| [CFAv1Forwarder](https://goerli.etherscan.io/address/0xcfA132E353cB4E398080B9700609bb008eceB125)         | 0xcfA132E353cB4E398080B9700609bb008eceB125 |
+| [Stream Scheduler](https://goerli.etherscan.io/address/0xA6134E107FCAEAab6140CB8fb92Dbf5bd9EF6C86)       | 0xA6134E107FCAEAab6140CB8fb92Dbf5bd9EF6C86 |
+| [Auto Wrap Manager](https://goerli.etherscan.io/address/0x0B82D14E9616ca4d260E77454834AdCf5887595F)      | 0x0B82D14E9616ca4d260E77454834AdCf5887595F |
+| [Auto Wrap Strategy](https://goerli.etherscan.io/address/0xea49af829d3e28d3ec49e0e0a0ba1e7860a56f60)     | 0xea49af829d3e28d3ec49e0e0a0ba1e7860a56f60 |
+
+**Tokens**
+
+| Resource                                                                                |                   Address                  |
+| --------------------------------------------------------------------------------------- | :----------------------------------------: |
+| [ETHx](https://goerli.etherscan.io/address/0x5943F705aBb6834Cad767e6E4bB258Bc48D9C947)  | 0x5943F705aBb6834Cad767e6E4bB258Bc48D9C947 |
+| [fDAI](http://goerli.etherscan.io/address/0x88271d333C72e51516B67f5567c728E702b3eeE8)   | 0x88271d333C72e51516B67f5567c728E702b3eeE8 |
+| [fUSDC](http://goerli.etherscan.io/address/0xc94dd466416A7dFE166aB2cF916D3875C049EBB7)  | 0xc94dd466416A7dFE166aB2cF916D3875C049EBB7 |
+| [fTUSD](http://goerli.etherscan.io/address/0x53d00397f03147A9bD9c40443A105A82780deAF1)  | 0x53d00397f03147A9bD9c40443A105A82780deAF1 |
+| [fDAIx](http://goerli.etherscan.io/address/0xF2d68898557cCb2Cf4C10c3Ef2B034b2a69DAD00)  | 0xF2d68898557cCb2Cf4C10c3Ef2B034b2a69DAD00 |
+| [fUSDCx](http://goerli.etherscan.io/address/0x8aE68021f6170E5a766bE613cEA0d75236ECCa9a) | 0x8aE68021f6170E5a766bE613cEA0d75236ECCa9a |
+| [fTUSDx](http://goerli.etherscan.io/address/0x95697ec24439E3Eb7ba588c7B279b9B369236941) | 0x95697ec24439E3Eb7ba588c7B279b9B369236941 |
 {% endtab %}
 {% endtabs %}

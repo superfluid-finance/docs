@@ -10,7 +10,7 @@ The Superfluid Host Contract is the centerpiece of the Superfluid Protocol which
 
 ![](<../../.gitbook/assets/image (68) (1).png>)
 
-That looks complicated. Let's break down the basic linkages from core pieces of the Superfluid Protocol to the Host contract :point\_down:****
+That looks complicated. Let's break down the basic linkages from core pieces of the Superfluid Protocol to the Host contract :point\_down:
 
 ## Super Agreements 🔗 Host Contract
 

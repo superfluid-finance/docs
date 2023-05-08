@@ -49,7 +49,7 @@ const daix = await sf.loadSuperToken("DAIx");
 
 [`getNetFlow`](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-operations/read-methods/getnetflow): Get the net flow rate of an account for a certain Super Token
 
-[`getAccountFlowInfo`](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-operations/read-methods/getaccountflowinfo): **** Get summed flow data of an account for a certain Super Token
+[`getAccountFlowInfo`](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-operations/read-methods/getaccountflowinfo): Get summed flow data of an account for a certain Super Token
 
 ### **Write Methods**
 
