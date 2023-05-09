@@ -48,7 +48,9 @@ contract SomeContractWithSuperTokenV1Library {
     constructor(ISuperToken _token) {
         token = _token;
     }
-    //your contract code here...
+    
+    // your contract code here...
+    
 }
 ```
 

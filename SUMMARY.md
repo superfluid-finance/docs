@@ -54,6 +54,7 @@
   * [CFA - Frontend Examples](developers/constant-flow-agreement-cfa/money-streaming-1.md)
   * [Access Control List (ACL)](developers/constant-flow-agreement-cfa/cfa-access-control-list-acl/README.md)
     * [ACL Features - SDK](developers/constant-flow-agreement-cfa/cfa-access-control-list-acl/acl-features.md)
+  * [Flow NFTs](developers/constant-flow-agreement-cfa/flow-nfts.md)
 * [✳ Distributions (IDA)](developers/instant-distribution-agreement-ida/README.md)
   * [IDA - Solidity](developers/instant-distribution-agreement-ida/idav1-library.md)
   * [IDA - SDK Core](developers/instant-distribution-agreement-ida/ida-operations.md)
