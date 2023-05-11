@@ -40,6 +40,12 @@ Want to Use Our SDKs?
 [sdk-core](developers/sdk-core/)
 {% endcontent-ref %}
 
+Try out Superfluid's never-ending hackathon
+
+{% content-ref url="resources/superfluid-wave-pool.md" %}
+[superfluid-wave-pool.md](resources/superfluid-wave-pool.md)
+{% endcontent-ref %}
+
 ### CONTRACT ADDRESSES
 
 {% content-ref url="developers/networks.md" %}
