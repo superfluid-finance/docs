@@ -39,7 +39,7 @@ _Flow Rate_: 100 AMZNx/mo.
 
 **Note: there were no actions to be taken on the Feb. 1st start date as a cliff date was provided**
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 3\.   It’s June 1st and the vesting is complete - the stream is cancelled.
 

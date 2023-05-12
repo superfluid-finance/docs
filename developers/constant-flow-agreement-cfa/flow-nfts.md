@@ -17,7 +17,7 @@ Flow NFTs are non-transferrable ERC721 tokens that are minted when a stream is o
 
 ## Flow NFT Dynamics
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Flow NFTs are minted when a stream is opened and burned when it's closed</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Flow NFTs are minted when a stream is opened and burned when it's closed</p></figcaption></figure>
 
 #### **Opening a stream**
 
