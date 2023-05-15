@@ -22,7 +22,7 @@ The SuperAppBaseFlow is an inheritable base contract that simplifies writing cal
 
 ## SuperAppBaseFlow Simplifies Callbacks
 
-The original _SuperAppBase_ callback functions have elaborate function headers and rarely used parameters. The SuperAppBase_Flow_ consolidates all callback development into 3 virtual functions (`onFlowCreated`, `onFlowUpdated`, `onFlowDeleted`) with much more readable parameters, making development easier for you.
+The original _SuperAppBase_ callback function headers are elaborate with unobvious parameter meanings. The SuperAppBase_Flow_ consolidates all callback development into 3 virtual functions (`onFlowCreated`, `onFlowUpdated`, `onFlowDeleted`) with much more readable parameters, making development easier for you.
 
 <figure><img src="../../.gitbook/assets/image (30).png" alt=""><figcaption><p>Example: onFlowCreated is a more intuitive function than afterAgreementCreated </p></figcaption></figure>
 
@@ -33,7 +33,7 @@ The original _SuperAppBase_ callback functions have elaborate function headers a
 ```solidity
 // Example Code
 ...
-import { SuperAppBaseFlow } from "@superfluid-finance/ethereum-contracts/contracts/apps/SuperAppBaseFlow.sol";
+import { SuperAppBaseCFA } from "@superfluid-finance/ethereum-contracts/contracts/apps/SuperAppBaseFlow.sol";
 
 contract SomeSuperAppContract is SuperAppBaseCFA {
 ...
