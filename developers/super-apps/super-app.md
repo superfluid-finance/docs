@@ -171,7 +171,7 @@ One additional thing to note about the `beforeAgreement` callbacks is that they 
 
 **`cbdata` -** this contains data that was returned by the `beforeAgreement` callback _if_ it was run prior to the calling of `afterAgreement` callback. **Note**: this is only passed to the `afterAgreement` callback
 
-**`ctx`** - this contains data about the call to the constant flow agreement contract itself. 'Ctx' is short for 'context' and is explained in depth inside of our tutorial on userData (which you can access inside of the `ctx` value).
+**`ctx`** - this contains data about the call to the Constant Flow Agreement contract itself. 'Ctx' is short for 'context' and is explained in depth inside of our tutorial on userData (which you can access inside of the `ctx` value).
 
 ### Super App Rules (Jail System)
 

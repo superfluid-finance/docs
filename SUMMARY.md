@@ -65,6 +65,7 @@
     * [Calling Agreements In Super Apps](developers/super-apps/super-app-callbacks/calling-agreements-in-super-apps.md)
   * [User Data](developers/super-apps/user-data/README.md)
     * [NFT Billboard Example](developers/super-apps/user-data/nft-billboard-example.md)
+  * [SuperAppBaseFlow](developers/super-apps/superappbaseflow.md)
   * [Super App Deployment Guide](developers/super-apps/super-app-deployment-guide.md)
 * [🧺 Batch Calls](developers/batch-calls/README.md)
   * [Batch Calls - SDK Core](developers/batch-calls/batch-calls.md)
