@@ -63,9 +63,15 @@ The Flow NFT visuals will always show:
 
  
 
-<figure><img src="../../.gitbook/assets/getsvg (1).svg" alt="" width="350"><figcaption><p>Example <strong>Outflow</strong> NFT for an account being streamed TDLx</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/getsvg (1).svg" alt="" width="350"><figcaption><p>Example <strong>Outflow</strong> NFT for an account streaming TDLx</p></figcaption></figure>
 
 </div>
+
+#### Flow NFT API
+
+Generate Flow NFT SVGs and metadata using our Superfluid NFT API
+
+{% embed url="https://github.com/superfluid-finance/sfnft" %}
 
 ## Useful Functions
 
