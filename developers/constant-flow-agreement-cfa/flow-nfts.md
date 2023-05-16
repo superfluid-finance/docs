@@ -55,7 +55,7 @@ The Flow NFT visuals will always show:
 
 1. Monthly Flow Rate
 2. Super Token being streamed
-3. Sender & Receiver
+3. Sender (for Inflow NFTs) or Receiver (for Outflow NFTs)
 
 <div>
 
