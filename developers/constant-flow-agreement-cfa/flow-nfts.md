@@ -17,7 +17,7 @@ Flow NFTs are non-transferrable ERC721 tokens that are minted when a stream is o
 
 ## Flow NFT Dynamics
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Flow NFTs are minted when a stream is opened and burned when it's closed</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (35).png" alt="" width="519"><figcaption></figcaption></figure>
 
 #### **Opening a stream**
 
@@ -57,7 +57,15 @@ The Flow NFT visuals will always show:
 2. Super Token being streamed
 3. Sender & Receiver
 
-<figure><img src="../../.gitbook/assets/da2d536c191acc0a59d692321cbe3245.svg" alt="" width="350"><figcaption></figcaption></figure>
+<div>
+
+<figure><img src="../../.gitbook/assets/getsvg.svg" alt="" width="350"><figcaption><p>Example <strong>Inflow</strong> NFT for an account being streamed TDLx</p></figcaption></figure>
+
+ 
+
+<figure><img src="../../.gitbook/assets/getsvg (1).svg" alt="" width="350"><figcaption><p>Example <strong>Outflow</strong> NFT for an account being streamed TDLx</p></figcaption></figure>
+
+</div>
 
 ## Useful Functions
 

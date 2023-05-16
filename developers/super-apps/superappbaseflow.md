@@ -24,7 +24,7 @@ The SuperAppBaseFlow is an inheritable base contract that simplifies writing cal
 
 The original _SuperAppBase_ callback function headers are elaborate with unobvious parameter meanings. The SuperAppBase_Flow_ consolidates all callback development into 3 virtual functions (`onFlowCreated`, `onFlowUpdated`, `onFlowDeleted`) with much more readable parameters, making development easier for you.
 
-<figure><img src="../../.gitbook/assets/image (30).png" alt=""><figcaption><p>Example: onFlowCreated is a more intuitive function than afterAgreementCreated </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (30) (2).png" alt=""><figcaption><p>Example: onFlowCreated is a more intuitive function than afterAgreementCreated </p></figcaption></figure>
 
 ## Using the SuperAppBaseFlow
 
