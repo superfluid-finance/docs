@@ -56,6 +56,8 @@ The Flow NFT visuals will always show:
 1. Monthly Flow Rate
 2. Super Token being streamed
 3. Sender (for Inflow NFTs) or Receiver (for Outflow NFTs)
+4. Network, indicated by a small flag on the top right
+5. Start day of stream, shown in small font on left edge
 
 <div>
 
