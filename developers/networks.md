@@ -228,7 +228,7 @@ _Mumbai is our encouraged testnet. Goerli is sunsetting, we suggest you refrain 
 | [Host](https://mumbai.polygonscan.com/address/0xEB796bdb90fFA0f28255275e16936D25d3418603)                            | 0xEB796bdb90fFA0f28255275e16936D25d3418603 |
 | [CFAv1](https://mumbai.polygonscan.com/address/0x49e565Ed1bdc17F3d220f72DF0857C26FA83F873)                           | 0x49e565Ed1bdc17F3d220f72DF0857C26FA83F873 |
 | [IDAv1](https://mumbai.polygonscan.com/address/0x804348D4960a61f2d5F9ce9103027A3E849E09b8)                           | 0x804348D4960a61f2d5F9ce9103027A3E849E09b8 |
-| [SuperTokenFactory](https://mumbai.polygonscan.com/address/0x200657E2f123761662567A1744f9ACAe50dF47E6)               | 0x200657E2f123761662567A1744f9ACAe50dF47E6 |
+| [SuperTokenFactory](https://mumbai.polygonscan.com/address/0xb798553db6eb3d3c56912378409370145e97324b)               | 0xb798553db6eb3d3c56912378409370145e97324b |
 | [SuperfluidLoader v1](https://mumbai.polygonscan.com/address/0x0d56ED56b63382B0FC964490feB9AE438B6B4b79)             | 0x0d56ED56b63382B0FC964490feB9AE438B6B4b79 |
 | [CFAv1Forwarder](https://mumbai.polygonscan.com/address/0xcfA132E353cB4E398080B9700609bb008eceB125)                  | 0xcfA132E353cB4E398080B9700609bb008eceB125 |
 | [Vesting Scheduler](https://mumbai.polygonscan.com/address/0x2a00b420848D723A74c231B559C117Ee003B1829#writeContract) | 0x2a00b420848D723A74c231B559C117Ee003B1829 |
