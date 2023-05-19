@@ -294,25 +294,25 @@ _Mumbai is our encouraged testnet. Goerli is sunsetting, we suggest you refrain 
 
 | Resource                                                                                               |                   Address                  |
 | ------------------------------------------------------------------------------------------------------ | :----------------------------------------: |
-| [Resolver](https://testnet.snowtrace.io/address/0x141920741bC45b962B59c833cd849bA617F7ef38)            | 0x141920741bC45b962B59c833cd849bA617F7ef38 |
-| [Host](https://testnet.snowtrace.io/address/0xf04F2C525819691ed9ABD3D2B7109E1633795e68)                | 0xf04F2C525819691ed9ABD3D2B7109E1633795e68 |
-| [CFAv1](https://testnet.snowtrace.io/address/0xED74d30B8034152b0638CB03cc5c3c906dd1c482)               | 0xED74d30B8034152b0638CB03cc5c3c906dd1c482 |
-| [IDAv1](https://testnet.snowtrace.io/address/0x997d745884F54a93E6662b055c5e6c09F688718b)               | 0x997d745884F54a93E6662b055c5e6c09F688718b |
-| [SuperTokenFactory](https://testnet.snowtrace.io/address/0xA25dbEa94C5824892006b30a629213E7Bf238624)   | 0xA25dbEa94C5824892006b30a629213E7Bf238624 |
-| [SuperfluidLoader v1](https://testnet.snowtrace.io/address/0x777Be25F9fdcA87e8a0E06Ad4be93d65429FCb9f) | 0x777Be25F9fdcA87e8a0E06Ad4be93d65429FCb9f |
-| [CFAv1Forwarder](https://testnet.snowtrace.io/address/0xcfA132E353cB4E398080B9700609bb008eceB125)      | 0xcfA132E353cB4E398080B9700609bb008eceB125 |
+| [Resolver](https://testnet.snowtrace.io/address/0xf0ec6A8842Ca72Aec8A4D4573E731242389e18A8)            | 0xf0ec6A8842Ca72Aec8A4D4573E731242389e18A8 |
+| [Host](https://testnet.snowtrace.io/address/0x85Fe79b998509B77BF10A8BD4001D58475D29386)                | 0x85Fe79b998509B77BF10A8BD4001D58475D29386 |
+| [CFAv1](https://testnet.snowtrace.io/address/0x16843ac25Ccc58Aa7960ba05f61cBB17b36b130A)               | 0x16843ac25Ccc58Aa7960ba05f61cBB17b36b130A |
+| [IDAv1](https://testnet.snowtrace.io/address/0xA44dEC7A0Dde1a56AeDe4143C1ef89cf5d956782)               | 0xA44dEC7A0Dde1a56AeDe4143C1ef89cf5d956782 |
+| [SuperTokenFactory](https://testnet.snowtrace.io/address/0x1C92042426B6bAAe497bEf461B6d8342D03aEc92)   | 0x1C92042426B6bAAe497bEf461B6d8342D03aEc92 |
+| [SuperfluidLoader v1](https://testnet.snowtrace.io/address/0x96C3C2d23d143301cF363a02cB7fe3596d2834d7) | 0x96C3C2d23d143301cF363a02cB7fe3596d2834d7 |
+| [CFAv1Forwarder](https://testnet.snowtrace.io/address/0x2CDd45c5182602a36d391F7F16DD9f8386C3bD8D)      | 0x2CDd45c5182602a36d391F7F16DD9f8386C3bD8D |
 
 **Tokens**
 
 | Resource                                                                                  |                   Address                  |
 | ----------------------------------------------------------------------------------------- | :----------------------------------------: |
-| [AVAXx](https://testnet.snowtrace.io/address/0x5735C32C38f5Af0FB04a7c77C832Ba4D7aBfFeC8)  | 0x5735C32C38f5Af0FB04a7c77C832Ba4D7aBfFeC8 |
-| [fDAI](https://testnet.snowtrace.io/address/0x87E00Dced5670e01BEe33a9a724B1dac790937eF)   | 0x87E00Dced5670e01BEe33a9a724B1dac790937eF |
-| [fUSDC](https://testnet.snowtrace.io/address/0xE01F8743677Da897F4e7De9073b57Bf034FC2433)  | 0xE01F8743677Da897F4e7De9073b57Bf034FC2433 |
-| [fTUSD](https://testnet.snowtrace.io/address/0x1031b9bD6544d266A7B462744dF28Dc4A7A08CAe)  | 0x1031b9bD6544d266A7B462744dF28Dc4A7A08CAe |
-| [fDAIx](https://testnet.snowtrace.io/address/0x296E9c01f80D408741f6e15d62013DDbe1041f1D)  | 0x296E9c01f80D408741f6e15d62013DDbe1041f1D |
-| [fUSDCx](https://testnet.snowtrace.io/address/0x896C3e90446237be3e27eB4D67e0D3c97FB3b03F) | 0x896C3e90446237be3e27eB4D67e0D3c97FB3b03F |
-| [fTUSDx](https://testnet.snowtrace.io/address/0x36BBF94e66f0c953CB451b302e345D6E50c2A215) | 0x36BBF94e66f0c953CB451b302e345D6E50c2A215 |
+| [AVAXx](https://testnet.snowtrace.io/address/0xfFD0f6d73ee52c68BF1b01C8AfA2529C97ca17F3)  | 0xfFD0f6d73ee52c68BF1b01C8AfA2529C97ca17F3 |
+| [fDAI](https://testnet.snowtrace.io/address/0x3b526B50709a5551030673BE284bC9C1e38351ac)   | 0x3b526B50709a5551030673BE284bC9C1e38351ac |
+| [fUSDC](https://testnet.snowtrace.io/address/0x37A024D7f9EA1c7EBb658F5a14CAeddd30F212B7)  | 0x37A024D7f9EA1c7EBb658F5a14CAeddd30F212B7 |
+| [fTUSD](https://testnet.snowtrace.io/address/0x2616c0ab36CAC1e6dF7F79ae7c3e297D579FE547)  | 0x2616c0ab36CAC1e6dF7F79ae7c3e297D579FE547 |
+| [fDAIx](https://testnet.snowtrace.io/address/0x24f3631dbbf6880C684c5e59578C21194e285Baf)  | 0x24f3631dbbf6880C684c5e59578C21194e285Baf |
+| [fUSDCx](https://testnet.snowtrace.io/address/0x00d05Eed85Bad962bA5237DD4aFFF12004455a8a) | 0x00d05Eed85Bad962bA5237DD4aFFF12004455a8a |
+| [fTUSDx](https://testnet.snowtrace.io/address/0x232a9CF3DED0f9F708099eb0CB8ED56313c02A4b) | 0x232a9CF3DED0f9F708099eb0CB8ED56313c02A4b |
 {% endtab %}
 
 {% tab title="Goerli" %}
