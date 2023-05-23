@@ -53,7 +53,7 @@ To unwrap, the opposite happens; a desired amount of Super Tokens are burned and
 
 **Example**
 
-![](<../../.gitbook/assets/image (40).png>)
+![](<../../.gitbook/assets/image (37) (1).png>)
 
 ### Pure
 

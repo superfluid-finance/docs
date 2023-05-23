@@ -6,7 +6,7 @@ description: NFTs that are held by the sender and receiver of an active stream
 
 ## What are Flow NFTs
 
-You can think of Flow NFTs as on-chain labels of the sender and receiver of a certain stream. They enhance the visibility of streams on-chain.&#x20;
+You can think of Flow NFTs as on-chain labels of the sender and receiver of a certain stream. They enhance the visibility of streams on-chain.
 
 Flow NFTs are non-transferrable ERC721 tokens that are minted when a stream is opened and burned when closed.
 
@@ -17,7 +17,7 @@ Flow NFTs are non-transferrable ERC721 tokens that are minted when a stream is o
 
 ## Flow NFT Dynamics
 
-<figure><img src="../../.gitbook/assets/image (35).png" alt="" width="519"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (30).png" alt="" width="519"><figcaption></figcaption></figure>
 
 #### **Opening a stream**
 
@@ -32,7 +32,7 @@ When a stream is cancelled, both the sender and receiver's Flow NFTs are burned.
 Flow NFTs are non-transferrable.
 
 {% hint style="warning" %}
-#### Each Super Token has its own distinct Inflow and Outflow NFT contracts.&#x20;
+**Each Super Token has its own distinct Inflow and Outflow NFT contracts.**
 
 For instance, if a fUSDCx stream is started to you and then a fDAIx stream is started to you on Mumbai testnet, the Inflow NFTs you receive will originate from separate contracts. The fUSDCx Inflow NFT address is [here](https://mumbai.polygonscan.com/address/0x92db74808afbd8f6e90ec476fa78b2ac99cca4bc#readContract) while the fDAIx address is [here](https://mumbai.polygonscan.com/token/0xda1b6d12b2a17c1a64211dab7224973fdacbb4fb). They are not the same contract!
 {% endhint %}
@@ -88,7 +88,7 @@ address inflowNFT = superToken.CONSTANT_INFLOW_NFT();
 
 #### Flow NFT Functions
 
-Flow NFTs are ERC721s. On top of the ERC721 interface, these read functions they provide allow you to work with the stream data pertaining to the Flow NFTs.&#x20;
+Flow NFTs are ERC721s. On top of the ERC721 interface, these read functions they provide allow you to work with the stream data pertaining to the Flow NFTs.
 
 ```
 struct FlowNFTData {

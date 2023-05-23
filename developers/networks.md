@@ -12,7 +12,7 @@ Note: these addresses can also be found in the [Superfluid Console](https://cons
 
 {% tabs %}
 {% tab title="Ethereum" %}
-#### Framework
+**Framework**
 
 | Resource                                                                                                        |                   Address                  |
 | --------------------------------------------------------------------------------------------------------------- | :----------------------------------------: |
@@ -26,7 +26,7 @@ Note: these addresses can also be found in the [Superfluid Console](https://cons
 | [Vesting Scheduler](https://etherscan.io/address/0x39D5cBBa9adEBc25085a3918d36D5325546C001B)                    | 0x39D5cBBa9adEBc25085a3918d36D5325546C001B |
 | <p><a href="https://etherscan.io/address/0xcfA132E353cB4E398080B9700609bb008eceB125">CFAV1Forwarder</a><br></p> | 0xcfA132E353cB4E398080B9700609bb008eceB125 |
 
-#### Tokens
+**Tokens**
 
 | Resource                                                                         |                   Address                  |
 | -------------------------------------------------------------------------------- | :----------------------------------------: |
@@ -301,6 +301,7 @@ _Mumbai is our encouraged testnet. Goerli is sunsetting, we suggest you refrain 
 | [SuperTokenFactory](https://testnet.snowtrace.io/address/0x1C92042426B6bAAe497bEf461B6d8342D03aEc92)   | 0x1C92042426B6bAAe497bEf461B6d8342D03aEc92 |
 | [SuperfluidLoader v1](https://testnet.snowtrace.io/address/0x96C3C2d23d143301cF363a02cB7fe3596d2834d7) | 0x96C3C2d23d143301cF363a02cB7fe3596d2834d7 |
 | [CFAv1Forwarder](https://testnet.snowtrace.io/address/0x2CDd45c5182602a36d391F7F16DD9f8386C3bD8D)      | 0x2CDd45c5182602a36d391F7F16DD9f8386C3bD8D |
+| [GDA](https://testnet.avascan.info/blockchain/all/address/0x51f571D934C59185f13d17301a36c07A2268B814)  | 0x51f571D934C59185f13d17301a36c07A2268B814 |
 
 **Tokens**
 
