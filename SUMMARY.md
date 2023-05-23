@@ -22,7 +22,7 @@
 
 ## Developers
 
-* [🏃♀ 🏃♀ Quickstart](developers/quickstart.md)
+* [🏃♀ Quickstart](developers/quickstart.md)
 * [🪙 Super Tokens](developers/super-tokens/README.md)
   * [Super Tokens - Solidity](developers/super-tokens/super-tokens-solidity.md)
   * [Super Tokens - SDK Core](developers/super-tokens/super-token-operations.md)
@@ -54,7 +54,9 @@
   * [CFA - Frontend Examples](developers/constant-flow-agreement-cfa/money-streaming-1.md)
   * [Access Control List (ACL)](developers/constant-flow-agreement-cfa/cfa-access-control-list-acl/README.md)
     * [ACL Features - SDK](developers/constant-flow-agreement-cfa/cfa-access-control-list-acl/acl-features.md)
-  * [Flow NFTs](developers/constant-flow-agreement-cfa/flow-nfts.md)
+  * [More...](developers/constant-flow-agreement-cfa/more.../README.md)
+    * [Building Batched Streams in Safe](developers/constant-flow-agreement-cfa/more.../building-batched-streams-in-safe.md)
+    * [Flow NFTs](developers/constant-flow-agreement-cfa/more.../flow-nfts.md)
 * [✳ Distributions (IDA)](developers/instant-distribution-agreement-ida/README.md)
   * [IDA - Solidity](developers/instant-distribution-agreement-ida/idav1-library.md)
   * [IDA - SDK Core](developers/instant-distribution-agreement-ida/ida-operations.md)
@@ -129,7 +131,7 @@
 * [📜 Superfluid on Ethereum Mainnet](resources/superfluid-on-ethereum-mainnet.md)
 * [💰 Bounty Program](resources/bounty-program.md)
 * [🛡 Security & Bug Bounties](resources/security-and-bug-bounties.md)
-* [👩💻 Project Ideas](https://www.notion.so/superfluidhq/Superfluid-Wave-Project-Ideas-7e8c792758004bd2ae452d1f9810cc58)
+* [💡 Project Ideas](https://www.notion.so/superfluidhq/Superfluid-Wave-Project-Ideas-7e8c792758004bd2ae452d1f9810cc58)
 * [🗳 Token Dashboard Submission](resources/token-dashboard-submission.md)
 * [🎥 Videos](resources/videos.md)
 * [Superfluid Deployment Guide](https://github.com/superfluid-finance/protocol-monorepo/wiki/Framework-Deployment-Guide/)

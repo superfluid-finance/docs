@@ -17,7 +17,7 @@ Flow NFTs are non-transferrable ERC721 tokens that are minted when a stream is o
 
 ## Flow NFT Dynamics
 
-<figure><img src="../../.gitbook/assets/image (30).png" alt="" width="519"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (30).png" alt="" width="519"><figcaption></figcaption></figure>
 
 #### **Opening a stream**
 
@@ -61,11 +61,11 @@ The Flow NFT visuals will always show:
 
 <div>
 
-<figure><img src="../../.gitbook/assets/getsvg.svg" alt="" width="350"><figcaption><p>Example <strong>Inflow</strong> NFT for an account being streamed TDLx</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/getsvg.svg" alt="" width="350"><figcaption><p>Example <strong>Inflow</strong> NFT for an account being streamed TDLx</p></figcaption></figure>
 
  
 
-<figure><img src="../../.gitbook/assets/getsvg (1).svg" alt="" width="350"><figcaption><p>Example <strong>Outflow</strong> NFT for an account streaming TDLx</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/getsvg (1).svg" alt="" width="350"><figcaption><p>Example <strong>Outflow</strong> NFT for an account streaming TDLx</p></figcaption></figure>
 
 </div>
 
