@@ -81,6 +81,7 @@
     * [Dev Guide](https://www.notion.so/superfluidhq/Setting-Up-Automated-Vesting-f3e11a257a2d4b0b89210def54a59278)
   * [Stream Accounting API](developers/automations/stream-accounting-api/README.md)
     * [Dev Guide](https://superfluidhq.notion.site/Using-the-Stream-Accounting-API-3d161745acfe4750acf43c546f84c724)
+* [🧾 Superfluid Subscriptions](developers/superfluid-subscriptions.md)
 * [🏗 Integration Guides](resources/integration-guides/README.md)
   * [For Your Integration: The Basics](resources/superfluid-integration-guide/for-your-integration-the-basics/README.md)
     * [Supporting Super Tokens](resources/superfluid-integration-guide/for-your-integration-the-basics/supporting-super-tokens.md)

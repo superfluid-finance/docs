@@ -14,10 +14,7 @@ If you have a [Safe](https://app.safe.global/welcome) and are looking to send mu
 
 Find the CFAv1Forwarder address for the desired network below:
 
-| Network                                                                                                                                                        | Address                                    |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
-| <p>Ethereum Mainnet<br>Polygon<br>Gnosis Chain<br>Optimism<br>Arbitrum<br>Avalanche<br>BNB Chain<br>Goerli<br>Arbitrum Goerli<br>Optimism Goerli<br>Mumbai</p> | 0xcfA132E353cB4E398080B9700609bb008eceB125 |
-| Avalanche Fuji                                                                                                                                                 | 0x2CDd45c5182602a36d391F7F16DD9f8386C3bD8D |
+<table><thead><tr><th width="255">Network</th><th>Address</th></tr></thead><tbody><tr><td>Ethereum Mainnet<br>Polygon<br>Gnosis Chain<br>Optimism<br>Arbitrum<br>Avalanche<br>BNB Chain<br>Goerli<br>Arbitrum Goerli<br>Optimism Goerli<br>Mumbai</td><td>0xcfA132E353cB4E398080B9700609bb008eceB125</td></tr><tr><td>Avalanche Fuji</td><td>0x2CDd45c5182602a36d391F7F16DD9f8386C3bD8D</td></tr></tbody></table>
 
 Paste that address in the _Enter Address or ENS Name_ box on the Transaction Builder interface.
 

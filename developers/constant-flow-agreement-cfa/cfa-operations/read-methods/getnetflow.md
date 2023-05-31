@@ -14,18 +14,13 @@ const daix = await sf.loadSuperToken("DAIx");
 
 ### Parameters
 
-| Parameter          | Type                                             | Description                                         |
-| ------------------ | ------------------------------------------------ | --------------------------------------------------- |
-| `account`          | `string`                                         | Address of account you're getting net flow rate for |
-| `providerOrSigner` | `ethers.providers.Provider` _or_ `ethers.Signer` | ethers provider or ethers signer object             |
+<table><thead><tr><th width="182">Parameter</th><th width="231.33333333333331">Type</th><th>Description</th></tr></thead><tbody><tr><td><code>account</code></td><td><code>string</code></td><td>Address of account you're getting net flow rate for</td></tr><tr><td><code>providerOrSigner</code></td><td><code>ethers.providers.Provider</code> <em>or</em> <code>ethers.Signer</code></td><td>ethers provider or ethers signer object</td></tr></tbody></table>
 
 ### Return Value(s)
 
 Returns a string with the below info:
 
-| Type     | Description                                                                                                                                                                                                          |
-| -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `string` | <p>Net flow rate (wei/second) of <code>account</code> for the specified <code>superToken</code>. </p><p></p><p>Can be positive or negative as it's the sum of the account's inbound and outbound CFA flow rates.</p> |
+<table><thead><tr><th width="126.33333333333331">Type</th><th>Description</th></tr></thead><tbody><tr><td><code>string</code></td><td><p>Net flow rate (wei/second) of <code>account</code> for the specified <code>superToken</code>. </p><p></p><p>Can be positive or negative as it's the sum of the account's inbound and outbound CFA flow rates.</p></td></tr></tbody></table>
 
 ### Example Usage
 

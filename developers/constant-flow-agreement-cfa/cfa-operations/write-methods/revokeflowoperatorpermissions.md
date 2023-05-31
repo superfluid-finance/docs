@@ -16,9 +16,7 @@ await flowOp.exec( <<ethers signer>> );
 
 ### Parameters
 
-| Parameter      | Type     | Description                                                         |
-| -------------- | -------- | ------------------------------------------------------------------- |
-| `flowOperator` | `string` | Address of the account whose ACL permissions the caller is revoking |
+<table><thead><tr><th width="182">Parameter</th><th width="231.33333333333331">Type</th><th>Description</th></tr></thead><tbody><tr><td><code>flowOperator</code></td><td><code>string</code></td><td>Address of the account whose ACL permissions the caller is revoking</td></tr></tbody></table>
 
 ### Example Usage
 

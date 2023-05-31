@@ -12,18 +12,7 @@ Super App callbacks are run when a Super App is on the receiving end of a transa
 
 The Constant Flow Agreement and Instant Distribution Agreement activate different callbacks in different scenarios. In the following table, the Constant Flow Agreement is referred to as CFAv1 and the Instant Distribution Agreement is referred to as IDAv1.
 
-| Agreement | Callback                                            | Condition                                                                          |
-| --------- | --------------------------------------------------- | ---------------------------------------------------------------------------------- |
-| CFAv1     | beforeAgreementCreated, afterAgreementCreated       | A stream to a Super App is created.                                                |
-| CFAv1     | beforeAgreementUpdated, afterAgreementUpdated       | A stream to a Super App is updated.                                                |
-| CFAv1     | beforeAgreementTerminated, afterAgreementTerminated | A stream to a Super App is deleted.                                                |
-| IDAv1     | beforeAgreementCreated, afterAgreementCreated       | A subscription (with zero units) to an index published by a Super App is approved. |
-| IDAv1     | beforeAgreementUpdated, afterAgreementUpdated       | A subscription (with units) to an index published by a Super App is approved.      |
-| IDAv1     | beforeAgreementTerminated, afterAgreementTerminated | A subscription to an index published by a Super App is revoked.                    |
-| IDAv1     | beforeAgreementUpdated, afterAgreementUpdated       | A subscription to an index published by a Super App is claimed                     |
-| IDAv1     | beforeAgreementCreated, afterAgreementCreated       | Units of an index are issued to a Super App if the units were previously zero.     |
-| IDAv1     | beforeAgreementUpdated, afterAgreementUpdated       | Units of an index are issued to a Super App if the units were previously non-zero. |
-| IDAv1     | beforeAgreementTerminated, afterAgreementTerminated | Units of an index issued to a Super App are deleted.                               |
+<table><thead><tr><th width="150">Agreement</th><th width="273.3632148377125">Callback</th><th>Condition</th></tr></thead><tbody><tr><td>CFAv1</td><td>beforeAgreementCreated, afterAgreementCreated</td><td>A stream to a Super App is created.</td></tr><tr><td>CFAv1</td><td>beforeAgreementUpdated, afterAgreementUpdated</td><td>A stream to a Super App is updated.</td></tr><tr><td>CFAv1</td><td>beforeAgreementTerminated, afterAgreementTerminated</td><td>A stream to a Super App is deleted.</td></tr><tr><td>IDAv1</td><td>beforeAgreementCreated, afterAgreementCreated</td><td>A subscription (with zero units) to an index published by a Super App is approved.</td></tr><tr><td>IDAv1</td><td>beforeAgreementUpdated, afterAgreementUpdated</td><td>A subscription (with units) to an index published by a Super App is approved.</td></tr><tr><td>IDAv1</td><td>beforeAgreementTerminated, afterAgreementTerminated</td><td>A subscription to an index published by a Super App is revoked.</td></tr><tr><td>IDAv1</td><td>beforeAgreementUpdated, afterAgreementUpdated</td><td>A subscription to an index published by a Super App is claimed</td></tr><tr><td>IDAv1</td><td>beforeAgreementCreated, afterAgreementCreated</td><td>Units of an index are issued to a Super App if the units were previously zero.</td></tr><tr><td>IDAv1</td><td>beforeAgreementUpdated, afterAgreementUpdated</td><td>Units of an index are issued to a Super App if the units were previously non-zero.</td></tr><tr><td>IDAv1</td><td>beforeAgreementTerminated, afterAgreementTerminated</td><td>Units of an index issued to a Super App are deleted.</td></tr></tbody></table>
 
 **Who is Calling the Super App Callback?**
 

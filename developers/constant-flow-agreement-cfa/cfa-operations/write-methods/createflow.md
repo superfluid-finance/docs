@@ -18,12 +18,7 @@ await flowOp.exec( &#x3C;&#x3C;ethers signer>> ); // should have same address as
 
 ### Parameters
 
-| Parameter  | Type     | Description                                                                                        |
-| ---------- | -------- | -------------------------------------------------------------------------------------------------- |
-| `sender`   | `string` | Address of sender                                                                                  |
-| `receiver` | `string` | Address of receiver                                                                                |
-| `flowRate` | `string` | Desired wei/second flow rate at which the `sender` wants to start streaming to the `receiver`      |
-| `userData` | `string` | _Optional_ [user data](https://docs.superfluid.finance/superfluid/developers/super-apps/user-data) |
+<table><thead><tr><th width="182">Parameter</th><th width="231.33333333333331">Type</th><th>Description</th></tr></thead><tbody><tr><td><code>sender</code></td><td><code>string</code></td><td>Address of sender</td></tr><tr><td><code>receiver</code></td><td><code>string</code></td><td>Address of receiver</td></tr><tr><td><code>flowRate</code></td><td><code>string</code></td><td>Desired wei/second flow rate at which the <code>sender</code> wants to start streaming to the <code>receiver</code></td></tr><tr><td><code>userData</code></td><td><code>string</code></td><td><em>Optional</em> <a href="https://docs.superfluid.finance/superfluid/developers/super-apps/user-data">user data</a></td></tr></tbody></table>
 
 ### Example Usage
 
