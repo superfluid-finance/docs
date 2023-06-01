@@ -5,7 +5,7 @@ description: Using the Superfluid Checkout Widget for Web3-Native Subscriptions
 # 🧾 Superfluid Subscriptions
 
 {% hint style="info" %}
-NOTE: **the checkout widget is in beta** and is subject to change. We are iterating quickly and are open to feedback!
+NOTE: **the checkout widget is in open alpha** and is subject to change. We are iterating quickly and are open to feedback!
 {% endhint %}
 
 ## What is the Superfluid Checkout Widget?
