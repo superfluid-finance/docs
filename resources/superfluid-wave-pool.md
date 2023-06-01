@@ -38,25 +38,25 @@ Prize winner or not, you'll be given exposure to the Superfluid team and communi
 
 </details>
 
-## Current Prizes
+## $10,000 in Prizes for the June Wave Pool
 
-The top three submissions to the May Wave will earn one of the below prizes 🥇
+**The Best Projects integrating Superfluid & **<mark style="color:green;">**Lens Protocol**</mark>** will be eligible for the below prizes:**
 
-**1st Place** - $2,000
+:first\_place: 1st Place - $3,000
 
-**2nd Place** - $1,500
+:second\_place: 2nd Place - $2,000
 
-**3rd Place** - $1,000
+:third\_place: 3rd Place - $1,000
 
-**Co-Sponsor Prize** - Best Projects Using Superfluid with [Gelato](http://localhost:5000/s/MYhu8kEOiGEJPzxtx8NL/) :icecream:
+:man\_swimming: Pool Prize\* - $2,000 (split among hackers who did great work, but didn’t quite make the Top 3 cut)
 
-&#x20;    **1st Place** - $1,500&#x20;
+**The Best Project Using** [**Superfluid Subscriptions**](../developers/superfluid-subscriptions.md)&#x20;
 
-&#x20;    **Pool Prize** - $1,000
+:trophy: Top Prize - $2,000
 
-**Pool Prize** - $1,000 (split among hackers who did great work, but didn’t quite make the Top 3 cut)
 
-&#x20;   We may refer to Pool Prize winners as "Honorable Mentions" in announcement material!
+
+_\* We may refer to Pool Prize winners as "Honorable Mentions" in announcement material!_
 
 _Notice: Wave Pool payouts are subject to KYC screening as per_ [_international sanctions laws_](bounty-program.md#note-bounty-hunters-must-adhere-to-the-following-statement)_._
 
