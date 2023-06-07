@@ -23,7 +23,7 @@ Ex: Convert a flow rate of 10 DAIx/month to a wei/sec flow rate.
 </code></pre>
 
 {% hint style="info" %}
-If you didn't follow our recommendation and did this calculation by dividing by `(60 * 60 * 24 * 30)`, you'd end up with a larger wei/sec flow rate of `3805175038052` which would result in your stream showing as slightly larger on our Dashboard and Console.
+If you didn't follow our recommendation and did this calculation by dividing by `(60 * 60 * 24 * 30)`, you'd end up with a slightly larger wei/sec flow rate of `3805175038052` which would result in your stream showing as slightly larger on our Dashboard and Console.
 {% endhint %}
 
 #### From Year
