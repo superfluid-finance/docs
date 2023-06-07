@@ -10,7 +10,7 @@ Super Apps are smart contracts that are registered with the Superfluid Protocol 
 
 ![The Tradeable Cashflow NFT](<../../.gitbook/assets/image (29) (1).png>)
 
-For example, upon the tradeable cashflow NFT contract receiving a stream, special callbacks functions within the Super App are triggered which automatically open up a new stream from the NFT contract to the owner of the NFT. The contract 'listens' for a call to a Superfluid super agreement contract (the Constant Flow Agreement contract), and runs a single callback function in response to the following 3 actions:
+For example, upon the [tradeable cashflow NFT contract](https://github.com/superfluid-finance/super-examples/tree/c784d239557d6fb5e56a2c8951ac4353256d611d/projects/tradeable-cashflow) receiving a stream, special callbacks functions within the Super App are triggered which automatically open up a new stream from the NFT contract to the owner of the NFT. The contract 'listens' for a call to a Superfluid super agreement contract (the Constant Flow Agreement contract), and runs a single callback function in response to the following 3 actions:
 
 1. A flow is opened with the Super App as the `receiver`
 2. A flow is updated which has the Super App as the `receiver`
