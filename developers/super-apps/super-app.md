@@ -6,13 +6,11 @@ description: Using Super Apps To Create Programmable Cashflows
 
 ### **What is a Super App?**
 
-Super Apps allow us to build smart contracts that are fully integrated with Superfluid at the protocol level.
-
-&#x20;If you've looked at our [Tradeable Cashflow](https://docs.superfluid.finance/superfluid/protocol-tutorials/super-apps) tutorial or our [User Data](https://docs.superfluid.finance/superfluid/docs/user-data) tutorial, we are using a Super App in each of those sample applications.
+Super Apps are smart contracts that are registered with the Superfluid Protocol allowing them to **react to Super Agreements** (like money streams). If you're familiar with ERC777 hooks, they're like those but for Super Agreements.
 
 ![The Tradeable Cashflow NFT](<../../.gitbook/assets/image (29) (1).png>)
 
-For example, the tradeable cashflow NFT contract receives a stream, and then uses special callbacks within the SuperApp to automatically open up a new stream from the NFT to the owner of the NFT. The contract 'listens' for a call to a Superfluid super agreement contract (the Constant Flow Agreement contract), and runs a single callback function in response to the following 3 actions:
+For example, upon the tradeable cashflow NFT contract receiving a stream, special callbacks functions within the Super App are triggered which automatically open up a new stream from the NFT contract to the owner of the NFT. The contract 'listens' for a call to a Superfluid super agreement contract (the Constant Flow Agreement contract), and runs a single callback function in response to the following 3 actions:
 
 1. A flow is opened with the Super App as the `receiver`
 2. A flow is updated which has the Super App as the `receiver`
