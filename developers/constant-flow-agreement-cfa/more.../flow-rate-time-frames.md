@@ -4,7 +4,7 @@ description: Understand flow rate time denominations better
 
 # Flow Rate Time Frames
 
-Superfluid Protocol accepts flow rates in wei/second! When you call `createFlow`, be that with our Solidity library or with our SDK, you have to pass in a per-second rate.
+Superfluid Protocol accepts flow rates in wei/second! When you call `createFlow` or do any kind of operation where a `flowRate` parameter is required, be that with our Solidity library or with our SDK, you have to pass in a per-second rate.
 
 So when I say I'm streaming you 10 DAIx/month, what flow rate am I really choosing under the hood? Read on to understand how to properly translate your desired flow rate into wei/second _as per our standards_.
 
@@ -35,7 +35,7 @@ Ex: Convert a flow rate of 100 DAIx/year to a wei/sec flow rate.
   Monthly Time Frame = 100 DAIx / year
                      = 100 DAIx / (60 * 60 * 24 * 365)
                      = 100 * (10^18) / (60 * 60 * 24 * 365)
- Wei/Sec Flow Rate   = 3170979198376 wei / second
+  Wei/Sec Flow Rate  = 3170979198376 wei / second
 ```
 {% endcode %}
 
