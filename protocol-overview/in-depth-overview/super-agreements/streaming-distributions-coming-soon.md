@@ -7,7 +7,7 @@ description: The General Distribution Agreement
 The Superfluid Protocol team also has a groundbreaking new agreement that is currently in development: the General Distribution Agreement (GDA). The GDA introduces a new primitive which enables one-to-many Superfluid streaming distributions, becoming most scalable way to distribute recurring funds to a large set of recipients in web3.
 
 {% hint style="info" %}
-The GDA is currently available on select testnets - see Contract Addresses
+
 {% endhint %}
 
 The GDA will allow anyone to create a **pool** and to give units within that pool to any non-pool address. These accounts which are given units within the pool will be called **pool members**. This is similar to the IDA's function with indexes & subscribers, with the key difference being that, instead of only having a function which distributes tokens in discrete amounts, **distributors** (any account who wants to stream to a pool) will be able to start streaming funds to all pool members or update the total amount that is being streamed.
@@ -45,3 +45,7 @@ This final diagram outlines the case where a distributor updates the GDA flow ra
 The GDA manages for scenarios in which there is a remainder in the amount of tokens to be sent to the pool because solidity does not allow for floating point arithmetic. This is done with an **adjustment flow rate** which is sent to the pool admin, and is best explained via an example:
 
 Alice creates a pool and assigns 3 units each to Bob, Carol and Dave. Alice's pool has 9 total units. She then does a flow distribution of 100 DAIx/second. The issue here is that 100 / 9 is not fully divisible. Therefore, an adjustment flow is required. The adjustment flow rate handles the cases where the desired flow rate is not divisible by the total number of units. In the case of Alice's pool, the flow rate that will be sent to the members is 99/s and 1/s will be the adjustment flow rate. This adjustment flow rate will always go to the admin (creator) of the pool.
+
+{% hint style="info" %}
+The GDA is currently available on select testnets - see [Contract Addresses](../../../developers/networks.md). We are in the process of solidifying its security and developer experience.
+{% endhint %}
