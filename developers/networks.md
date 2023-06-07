@@ -261,6 +261,7 @@ _Mumbai is our encouraged testnet. Goerli is sunsetting, we suggest you refrain 
 | [SuperTokenFactory](https://goerli-optimism.etherscan.io/address/0x9aCc39d15e3f168c111a1D4F80271a9E526c9a9F)   | 0x9aCc39d15e3f168c111a1D4F80271a9E526c9a9F |
 | [SuperfluidLoader v1](https://goerli-optimism.etherscan.io/address/0x5Bb5908dcCC9Bb0fC39a78CfDf9e47B4C08E9521) | 0x5Bb5908dcCC9Bb0fC39a78CfDf9e47B4C08E9521 |
 | [CFAv1Forwarder](https://goerli-optimism.etherscan.io/address/0xcfA132E353cB4E398080B9700609bb008eceB125)      | 0xcfA132E353cB4E398080B9700609bb008eceB125 |
+| [GDA](https://goerli-optimism.etherscan.io/address/0xe87f46a15c410f151309bf7516e130087fc6a5e5)                 | 0xe87F46A15C410F151309Bf7516e130087Fc6a5E5 |
 
 **Tokens**
 

@@ -2,9 +2,13 @@
 description: The General Distribution Agreement
 ---
 
-# 🌊 Streaming Distributions \[Coming Soon]
+# 🌊 Streaming Distributions
 
 The Superfluid Protocol team also has a groundbreaking new agreement that is currently in development: the General Distribution Agreement (GDA). The GDA introduces a new primitive which enables one-to-many Superfluid streaming distributions, becoming most scalable way to distribute recurring funds to a large set of recipients in web3.
+
+{% hint style="info" %}
+The GDA is currently available on select testnets - see Contract Addresses
+{% endhint %}
 
 The GDA will allow anyone to create a **pool** and to give units within that pool to any non-pool address. These accounts which are given units within the pool will be called **pool members**. This is similar to the IDA's function with indexes & subscribers, with the key difference being that, instead of only having a function which distributes tokens in discrete amounts, **distributors** (any account who wants to stream to a pool) will be able to start streaming funds to all pool members or update the total amount that is being streamed.
 
