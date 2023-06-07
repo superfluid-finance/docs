@@ -10,7 +10,7 @@
   * [Super Agreements](protocol-overview/in-depth-overview/super-agreements/README.md)
     * [🚰 Money Streaming (CFA)](protocol-overview/in-depth-overview/super-agreements/constant-flow-agreement-cfa.md)
     * [✳ Distributions (IDA)](protocol-overview/in-depth-overview/super-agreements/instant-distribution-agreement-ida.md)
-    * [🌊 Streaming Distributions \[Coming Soon\]](protocol-overview/in-depth-overview/super-agreements/streaming-distributions-coming-soon.md)
+    * [🌊 Streaming Distributions](protocol-overview/in-depth-overview/super-agreements/streaming-distributions-coming-soon.md)
   * [Super Apps](protocol-overview/in-depth-overview/super-apps.md)
   * [Superfluid Host](protocol-overview/in-depth-overview/superfluid-host.md)
 * [🧠 Use Cases](protocol-overview/use-cases/README.md)
