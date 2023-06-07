@@ -55,6 +55,7 @@
   * [Access Control List (ACL)](developers/constant-flow-agreement-cfa/cfa-access-control-list-acl/README.md)
     * [ACL Features - SDK](developers/constant-flow-agreement-cfa/cfa-access-control-list-acl/acl-features.md)
   * [More...](developers/constant-flow-agreement-cfa/more.../README.md)
+    * [Flow Rate Time Frames](developers/constant-flow-agreement-cfa/more.../flow-rate-time-frames.md)
     * [Building Batched Streams in Safe](developers/constant-flow-agreement-cfa/more.../building-batched-streams-in-safe.md)
     * [Flow NFTs](developers/constant-flow-agreement-cfa/more.../flow-nfts.md)
 * [✳ Distributions (IDA)](developers/instant-distribution-agreement-ida/README.md)
