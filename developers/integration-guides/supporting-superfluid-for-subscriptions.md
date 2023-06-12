@@ -60,7 +60,7 @@ We have several examples like what you can find [here](../constant-flow-agreemen
 
 💡An Important Note About the Buffer: When you create a flow, 4 hours worth of the stream is temporarily deducted from the streamer’s balance. This is a security mechanism which is very important for the protocol, and it is part of the reason that users can create streams without having to lock up the full stream amount in advance. If users forget to close their stream before their token balance hits zero, then this buffer amount will be liquidated. As such, we recommend educating users about this when creating a stream. You can see an example of how we do this in our [dashboard](https://app.superfluid.finance/send):
 
-<figure><img src="../../.gitbook/assets/image (14).png" alt="" width="375"><figcaption><p>disclosing the buffer amount - example</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt="" width="375"><figcaption><p>disclosing the buffer amount - example</p></figcaption></figure>
 
 ### Getting Stream Data
 
