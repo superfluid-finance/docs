@@ -6,7 +6,7 @@
 
 The Flow Splitter is a Super App that reacts to an incoming money stream by with two outgoing money streams split it between two receiver accounts.
 
-<figure><img src="../../.gitbook/assets/image (14).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (14) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ## Growing NFT 🌼
 

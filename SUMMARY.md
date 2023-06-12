@@ -94,6 +94,7 @@
     * [Money Streaming Events](resources/superfluid-integration-guide/useful-queries-for-your-integration/money-streaming-events.md)
     * [Super Token Events](resources/superfluid-integration-guide/useful-queries-for-your-integration/super-token-events.md)
     * [Other Helpful Queries](resources/superfluid-integration-guide/useful-queries-for-your-integration/other-helpful-queries.md)
+  * [Supporting Superfluid for Subscriptions](developers/integration-guides/supporting-superfluid-for-subscriptions.md)
   * [Constructing Links to The Superfluid Dashboard](resources/superfluid-integration-guide/constructing-links-to-the-superfluid-dashboard.md)
 * [🧾 Superfluid Subscriptions](developers/superfluid-subscriptions.md)
 * [SDK Core General](developers/sdk-core/README.md)
