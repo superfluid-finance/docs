@@ -50,7 +50,7 @@ Prize winner or not, you'll be given exposure to the Superfluid team and communi
 
 :man\_swimming: Pool Prize\* - $2,000 (split among hackers who did great work, but didn’t quite make the Top 3 cut)
 
-**The Best Project Using** [**Superfluid Subscriptions**](../developers/superfluid-subscriptions.md)&#x20;
+**The Best Project Using** [**Superfluid Subscriptions**](../developers/superfluid-subscriptions/superfluid-checkout-widget.md)&#x20;
 
 :trophy: Top Prize - $2,000
 
