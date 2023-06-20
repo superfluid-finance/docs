@@ -1,3 +1,9 @@
+---
+description: >-
+  Superfluid's contract template for simplifying automation of stream start and
+  end dates
+---
+
 # Stream Scheduler
 
 ## What’s the Stream Scheduler?
@@ -8,7 +14,7 @@ The Stream Scheduler allows you to:
 2. Schedule when to start a new stream
 3. Schedule when to start a new stream and when that new stream is to be closed
 
-This can be soon performed on the Superfluid Dashboard or by making use of the underlying contracts in conjunction with off-chain automations (detailed in documentation here).
+This feature can be be used directly in the Superfluid Dashboard after getting [approved for access](https://use.superfluid.finance/schedulestreams) or by making use of the underlying contracts in conjunction with off-chain automations (detailed in documentation here).
 
 ## Why Schedule Streams?
 
