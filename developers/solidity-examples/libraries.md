@@ -4,8 +4,8 @@
 
 Simplify money streaming in Solidity
 
-{% content-ref url="../constant-flow-agreement-cfa/cfav1-library.md" %}
-[cfav1-library.md](../constant-flow-agreement-cfa/cfav1-library.md)
+{% content-ref url="../constant-flow-agreement-cfa/cfav1-library/" %}
+[cfav1-library](../constant-flow-agreement-cfa/cfav1-library/)
 {% endcontent-ref %}
 
 ## IDAv1 Library

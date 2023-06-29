@@ -2,7 +2,7 @@
 description: The Super Token Library allows you to work with money streams in Solidity
 ---
 
-# CFA - Solidity
+# Solidity
 
 #### **SuperTokenV1Library Contract**
 
@@ -95,9 +95,9 @@ token.revokeFlowPermissions(flowOperator);
 
 `allowDelete` - a boolean, if `true`, the `flowOperator` can _delete_ streams on behalf of `msg.sender`
 
-`flowRateAllowance` - the total allowance provided to the `flowOperator`. More on this [here](cfa-access-control-list-acl/#flowrateallowance-parameter) (note that there is some nuance with flow rate allowances)
+`flowRateAllowance` - the total allowance provided to the `flowOperator`. More on this [here](../cfa-access-control-list-acl/#flowrateallowance-parameter) (note that there is some nuance with flow rate allowances)
 
-### Create, Update, and Delete Streams as an Operator
+### Create, Update, and Delete Streams [_as an Operator_](../cfa-access-control-list-acl/)
 
 ```solidity
 // create, update, and delete flow as operator
@@ -107,39 +107,7 @@ token.updateFlowFrom(sender, receiver, flowRate);
 token.deleteFlowFrom(sender, receiver);
 ```
 
-### Getting Stream Data
-
-To view stream data, you can use the following functions
-
-```solidity
-// Get the flow data between `sender` and `receiver` of `token`
-token.getFlowInfo(
-    address sender,
-    address receiver
-) external view returns (
-    uint256 timestamp,     // when the stream was started
-    int96 flowRate,        // wei/second flow rate between sender and receiver
-    uint256 deposit,       // security buffer held during the lifetime of the flow
-    uint256 owedDeposit    // Extra deposit amount borrowed to a SuperApp receiver by the flow sender
-);
-
-token.getFlowRate(
-    address sender,
-    address receiver
-) external view returns (
-    int96 flowRate        // wei/second flow rate between sender and receiver
-);
-
-
-// Get the net flow rate of the account, accounting for all inbound/outbound streams
-token.getNetFlowRate(
-    address account
-) external view returns (
-    int96 flowRate         // net flow rate
-);
-```
-
-### Create, Update, Delete Streams _With_ [_User Data_](../super-apps/user-data/)
+### Create, Update, Delete Streams _With_ [_User Data_](../../super-apps/user-data/)
 
 <pre class="language-solidity"><code class="lang-solidity">// Same function call just with additional parameter for user data
 <strong>token.createFlow(address receiver, int96 flowRate, bytes memory userData);
@@ -147,11 +115,11 @@ token.getNetFlowRate(
 token.deleteFlow(address sender, address receiver, bytes memory userData);
 </code></pre>
 
-**`userData`** - an optional `bytes` value which represents additional data you'd like to pass along with your function call. You can learn more about the usefulness of user data [here](../super-apps/user-data/).
+**`userData`** - an optional `bytes` value which represents additional data you'd like to pass along with your function call. You can learn more about the usefulness of user data [here](../../super-apps/user-data/).
 
-### Create, Update, Delete Streams _In a_ [_Super App Callbacks_](../super-apps/super-app-callbacks/calling-agreements-in-super-apps.md)
+### Create, Update, Delete Streams _In a_ [_Super App Callbacks_](../../super-apps/super-app-callbacks/calling-agreements-in-super-apps.md)
 
-As you can learn about [here](../super-apps/super-app-callbacks/calling-agreements-in-super-apps.md), Super Agreement calls in Super App callbacks require the updating of a context bytes variable. That context is returned at the end of the callback.
+As you can learn about [here](../../super-apps/super-app-callbacks/calling-agreements-in-super-apps.md), Super Agreement calls in Super App callbacks require the updating of a context bytes variable. That context is returned at the end of the callback.
 
 Below, the `newCtx` is the context bytes variable that will be updated with each Super Agreement call.
 
