@@ -38,23 +38,24 @@ Prize winner or not, you'll be given exposure to the Superfluid team and communi
 
 </details>
 
-## $10,000 in Prizes for the June Wave Pool
+## $10,000 in Prizes for the July Wave Pool
 
-**The Best Projects integrating Superfluid & **<mark style="color:green;">**Lens Protocol**</mark>** will be eligible for the below prizes:**
+**The Best Superfluid Projects Deployed on** [<mark style="color:yellow;">**Celo Mainnet**</mark>](https://celo.org/developers) **will be eligible for the below prizes:**
 
-:first\_place: 1st Place - $3,000
+:first\_place: 1st Place - $2,500
 
 :second\_place: 2nd Place - $2,000
 
-:third\_place: 3rd Place - $1,000
+:third\_place: 3rd Place - $1,500
 
-:man\_swimming: Pool Prize\* - $2,000 (split among hackers who did great work, but didn’t quite make the Top 3 cut)
+:man\_swimming: Pool Prize\* - $1,000 (split among hackers who did great work, but didn’t quite make the Top 3 cut)
 
-**The Best Project Using** [**Superfluid Subscriptions**](../developers/superfluid-subscriptions/superfluid-checkout-widget.md)&#x20;
+**Best Project Using Superfluid Subscriptions on Celo Mainnet** :credit\_card:
 
-:trophy: Top Prize - $2,000
+:trophy: Top Prize - $1,500
 
-
+**Best Project using Superfluid and GoodDollar on Celo Mainnet** :palms\_up\_together:\
+:trophy: Top Prize - $1,500
 
 _\* We may refer to Pool Prize winners as "Honorable Mentions" in announcement material!_
 
