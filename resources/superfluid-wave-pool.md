@@ -8,6 +8,10 @@ description: >-
 
 ![Surf's up](../.gitbook/assets/waves-illustration.png)
 
+{% hint style="info" %}
+Check out the [<mark style="color:green;">**Wave Pool Landing Page**</mark>](https://www.superfluid.finance/wave-pool)
+{% endhint %}
+
 ## General Info
 
 <details>
