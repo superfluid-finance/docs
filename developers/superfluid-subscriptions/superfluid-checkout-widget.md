@@ -53,8 +53,9 @@ Before you include the widget in your file, you'll need to generate a Widget JSO
 
 Providing [user data](../super-apps/user-data/#in-conclusion) with your stream can enhance its on-chain traceability, help with record keeping, and be useful for Super Apps. Here's how you can set default user data for streams created through your Superfluid Widget
 
-1. On the top right of the Checkout Builder page, you'll find a JSON Editor. Open it to view the Widget JSON.
-2. In for each Payment Option, you can insert a `userData` field
+1. Customize the Superfluid Widget to your liking on the [Checkout Builder page](https://checkout-builder.superfluid.finance/).
+2. On the top right of the Checkout Builder page, you'll find a JSON Editor. Open it to view your Widget JSON.
+3. In for each Payment Option, you can insert a `userData` field
 
 ```json
   "paymentDetails": {
