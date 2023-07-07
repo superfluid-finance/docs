@@ -20,8 +20,6 @@ The Superfluid **Checkout Widget** demonstrates a clean pattern for subscription
 
 The widget is meant to be imported into existing Wagmi front ends using a React or Vue component. You can import the widget library, include JSON that defines your widget’s behavior in the props of the subscription checkout component, and your widget will behave as expected. You can create your own custom JSON with our [no code widget builder](https://superfluid-widget-builder.vercel.app/):
 
-{% embed url="https://superfluid-widget-builder.vercel.app/" %}
-
 ## Building Your Own Custom Checkout Widget
 
 > Note: if you're looking to get started quickly, check out the [examples below](superfluid-checkout-widget.md#checkout-widget-examples) which will work with Web3Modal or RainbowKit.
@@ -43,9 +41,43 @@ import { WagmiConfig } from "wagmi";
 import SuperfluidWidget from '@superfluid-finance/widget';
 ```
 
-Before you include the widget in your file, you'll need to generate JSON that you'll pass as a prop to the widget component. This JSON specifies most of your widget's properties, and you can use our hosted, no code widget builder to visually see what your widget will look like. You can find the widget builder [here](https://superfluid-widget-builder.vercel.app/).
+Before you include the widget in your file, you'll need to generate a Widget JSON that you'll pass as a prop to the widget component. This Widget JSON specifies most of your widget's properties, and you can use our hosted, no code widget builder to visually see what your widget will look like. You can find the widget builder [here](https://superfluid-widget-builder.vercel.app/).
+
+{% embed url="https://checkout-builder.superfluid.finance/" %}
 
 <figure><img src="../../.gitbook/assets/Recording 2023-05-31 at 10.21.31.gif" alt=""><figcaption><p>The widget builder in action.</p></figcaption></figure>
+
+<details>
+
+<summary>User Data in the Widget JSON</summary>
+
+Providing [user data](../super-apps/user-data/#in-conclusion) with your stream can enhance its on-chain traceability, help with record keeping, and be useful for Super Apps. Here's how you can set default user data for streams created through your Superfluid Widget
+
+1. On the top right of the Checkout Builder page, you'll find a JSON Editor. Open it to view the Widget JSON.
+2. In for each Payment Option, you can insert a `userData` field
+
+```json
+  "paymentDetails": {
+    "paymentOptions": [
+      {
+        "receiverAddress": "0x...",
+        "chainId": 5,
+        "superToken": {
+          "address": "0x..."
+        },
+        "flowRate": {
+          "amountEther": "1",
+          "period": "month"
+        },
+        "userData": ( your user data goes here )     <-- !!
+      }
+    ]
+  }
+```
+
+3. `userData` must be provided as a bytestring - this is most conveniently generated using viem's [toHex](https://viem.sh/docs/utilities/toHex.html) function.
+
+</details>
 
 Once you have your JSON, you add the file to your project, import it, and use the javascript spread operator to pass it as props to your widget component. See `{...data}` here:
 

@@ -46,7 +46,8 @@ This is from the host interface ([ISuperfluid.sol)](https://github.com/superflui
     address appAddress;
     // app allowance in super token
     ISuperfluidToken appAllowanceToken;
-}</code></pre>
+}
+</code></pre>
 
 Whenever you see `ctx` being moved around within the protocol, this struct is what's under the hood (it's just compiled down to bytes each time it's passed between functions).
 
@@ -153,6 +154,8 @@ function afterAgreementCreated(
 }
 ```
 
+#### In Conclusion
+
 UserData can be _any_ arbitrary piece of data. Think of it as metadata that's associated with anything you do in a Super Agreement.
 
 This metadata could be used for a wide variety of use cases:
@@ -163,4 +166,4 @@ This metadata could be used for a wide variety of use cases:
 
 We invite you to be creative with this!
 
-Next up: a tutorial on how to leverage UserData within your applications.
+Next up: [a tutorial on how to leverage UserData within your applications](nft-billboard-example.md).
