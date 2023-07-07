@@ -146,3 +146,7 @@ Web3Modal Example:
 IPFS Hosted + Full Page Example:
 
 {% embed url="https://github.com/superfluid-finance/widget/tree/master/apps/hosted-widget" %}
+
+#### Reference Documentation
+
+{% embed url="https://superfluid-widget-reference-docs.vercel.app/variables/cfAv1ForwarderAddress.html" %}
