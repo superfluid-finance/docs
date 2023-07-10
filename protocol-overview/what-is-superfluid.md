@@ -1,6 +1,6 @@
 # 💡 What is Superfluid?
 
-Superfluid is a revolutionary asset streaming protocol that brings subscriptions, salaries, vesting, and rewards to DAOs and crypto-native businesses worldwide. This is made possible by the protocol’s smart contract framework which introduces the Super Token - an extension to the ERC20 standard that enables digital value to be moved in entirely novel ways.
+**Superfluid** is a revolutionary asset streaming protocol that brings subscriptions, salaries, vesting, and rewards to DAOs and crypto-native businesses worldwide. This is made possible by the protocol’s smart contract framework which introduces the Super Token - an extension to the ERC20 standard that enables digital value to be moved in entirely novel ways.
 
 \
 The Superfluid framework & Super Token standard can be used to add dynamic balances to tokens on chain, describing cash flows and executing them automatically over time in a non-interactive way. Any token can be transferred in Superfluid streams, which are programmable, composable, and modular. No capital is locked up, and all inflows and outflows are netted in real-time at every block without consuming any gas. The code is fully open source, while the protocol is non-custodial and permissionless.
