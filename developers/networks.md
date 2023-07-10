@@ -210,6 +210,7 @@ Don't see your token listed? Get it added using the form [here](https://www.noti
 | Resource                                                                        | Address                                    |
 | ------------------------------------------------------------------------------- | ------------------------------------------ |
 | [CELOx](https://celoscan.io/address/0x671425ae1f272bc6f79bec3ed5c4b00e9c628240) | 0x671425ae1f272bc6f79bec3ed5c4b00e9c628240 |
+| [cUSDx](https://celoscan.io/address/0x3AcB9A08697b6Db4cD977e8Ab42b6f24722e6D6e) | 0x3acb9a08697b6db4cd977e8ab42b6f24722e6d6e |
 |                                                                                 |                                            |
 {% endtab %}
 {% endtabs %}
