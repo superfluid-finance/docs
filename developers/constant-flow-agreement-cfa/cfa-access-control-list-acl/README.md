@@ -15,7 +15,7 @@ It's basically the money streaming equivalent of the ERC20 approval mechanism!
 Before checking out the functions ACL provides you, you'll want to understand the `flowRateAllowance` and `permissions` parameters.
 
 {% hint style="info" %}
-NOTE: this page is a deep dive into how the access control list system works at the protocol level. We recommend using the SuperTokenV1Library and the functions found [here](http://localhost:5000/o/-MKEeXlqDp8Or6mOgLxr/s/-MKEcOOf\_qoYMObicyRu/) to give allowances to flowOperators & to create, update, and delete flows as an operator.
+NOTE: this page is a deep dive into how the access control list system works at the protocol level. We recommend using the SuperTokenV1Library and the functions found [here](http://127.0.0.1:5000/o/-MKEeXlqDp8Or6mOgLxr/s/-MKEcOOf\_qoYMObicyRu/) to give allowances to flowOperators & to create, update, and delete flows as an operator.
 {% endhint %}
 
 ## `flowRateAllowance` Parameter

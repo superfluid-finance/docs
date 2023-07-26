@@ -104,6 +104,7 @@
     * [Supporting Super Tokens](resources/superfluid-integration-guide/for-your-integration-the-basics/supporting-super-tokens.md)
     * [Supporting Money Streams](resources/superfluid-integration-guide/for-your-integration-the-basics/supporting-money-streams.md)
     * [Supporting Instant Distributions](resources/superfluid-integration-guide/for-your-integration-the-basics/supporting-instant-distributions.md)
+  * [Gating with Superfluid Subscriptions & Guild.xyz](developers/integration-guides/gating-with-superfluid-subscriptions-and-guild.xyz.md)
   * [Displaying Token Balances](resources/superfluid-integration-guide/displaying-token-balances.md)
   * [Useful Queries for Your Integration](resources/superfluid-integration-guide/useful-queries-for-your-integration/README.md)
     * [Instant Distribution Events](resources/superfluid-integration-guide/useful-queries-for-your-integration/instant-distribution-events.md)
