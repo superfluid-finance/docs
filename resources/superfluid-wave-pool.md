@@ -9,7 +9,7 @@ description: >-
 ![Surf's up](../.gitbook/assets/waves-illustration.png)
 
 {% hint style="info" %}
-Check out the [<mark style="color:green;">**Wave Pool Landing Page**</mark>](https://www.superfluid.finance/wave-pool)
+Check out the [<mark style="color:green;">**Wave Pool Landing Page**</mark>](https://www.superfluid.finance/wave-pool) <mark style="color:green;">**👈**</mark>
 {% endhint %}
 
 ## General Info
@@ -42,23 +42,17 @@ Prize winner or not, you'll be given exposure to the Superfluid team and communi
 
 </details>
 
-## $10,000 in Prizes for the July Wave Pool
+## $4,500 in Prizes for the July Wave Pool
 
-**The Best Superfluid Projects Deployed on** [<mark style="color:yellow;">**Celo Mainnet**</mark>](https://celo.org/developers) **will be eligible for the below prizes:**
+**Best Project Using Superfluid Subscriptions** :credit\_card:
 
-:first\_place: 1st Place - $2,500
+:trophy: Top Prize - $2,000
 
-:second\_place: 2nd Place - $2,000
+**Best integration of the checkout into a marketplace/ecommerce plugin** :palms\_up\_together:\
+:trophy: Top Prize - $1,000
 
-:third\_place: 3rd Place - $1,500
+**Top Project Using Collab.land & Superfluid 🤖**
 
-:man\_swimming: Pool Prize\* - $1,000 (split among hackers who did great work, but didn’t quite make the Top 3 cut)
-
-**Best Project Using Superfluid Subscriptions on Celo Mainnet** :credit\_card:
-
-:trophy: Top Prize - $1,500
-
-**Best Project using Superfluid and GoodDollar on Celo Mainnet** :palms\_up\_together:\
 :trophy: Top Prize - $1,500
 
 _\* We may refer to Pool Prize winners as "Honorable Mentions" in announcement material!_
