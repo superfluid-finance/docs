@@ -42,13 +42,14 @@ Prize winner or not, you'll be given exposure to the Superfluid team and communi
 
 </details>
 
-## $4,500 in Prizes for the July Wave Pool
+## $4,500 in Prizes for the August Wave Pool
 
 **Best Project Using Superfluid Subscriptions** :credit\_card:
 
 :trophy: Top Prize - $2,000
 
-**Best integration of the checkout into a marketplace/ecommerce plugin** :palms\_up\_together:\
+**Best integration of the checkout into a marketplace/ecommerce plugin** :palms\_up\_together:
+
 :trophy: Top Prize - $1,000
 
 **Top Project Using Collab.land & Superfluid 🤖**
