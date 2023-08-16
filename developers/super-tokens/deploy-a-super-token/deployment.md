@@ -20,15 +20,19 @@ This web app by community member [serox.eth](https://twitter.com/seroxdesigns) p
 
 1\. Head to Super Token Factory contract for appropriate network 👇
 
+* [**Ethereum Mainnet**](https://etherscan.io/address/0x0422689cc4087b6B7280e0a7e7F655200ec86Ae1#writeProxyContract)
 * [**Polygon**](https://polygonscan.com/address/0x2C90719f25B10Fc5646c82DA3240C76Fa5BcCF34#writeProxyContract)
-* ****[**Ethereum Mainnet**](https://etherscan.io/address/0x0422689cc4087b6B7280e0a7e7F655200ec86Ae1)****
-* [**Gnosis Chain**](https://blockscout.com/xdai/mainnet/address/0x23410e2659380784498509698ed70E414D384880/write-contract)
+* [**Gnosis Chain**](https://gnosisscan.io/address/0x23410e2659380784498509698ed70E414D384880#writeProxyContract)
 * [**Optimism**](https://optimistic.etherscan.io/address/0x8276469a443d5c6b7146bed45e2abcad3b6adad9#writeProxyContract)
-* [**Arbitrum**](https://arbiscan.io/address/0x1C21Ead77fd45C84a4c916Db7A6635D0C6FF09D6)
-* [**BNB Chain**](https://www.bscscan.com/address/0x8bde47397301f0cd31b9000032fd517a39c946eb#writeProxyContract)
+* [**Arbitrum**](https://arbiscan.io/address/0x1C21Ead77fd45C84a4c916Db7A6635D0C6FF09D6#writeProxyContract)
 * [**Avalanche**](https://snowtrace.io/address/0x464AADdBB2B80f3Cb666522EB7381bE610F638b4#writeProxyContract)
-* [**Goerli (testnet)**](https://goerli.etherscan.io/address/0x94f26B4c8AD12B18c12f38E878618f7664bdcCE2#writeProxyContract)
+* [**BNB Chain**](https://bscscan.com/address/0x8bde47397301f0cd31b9000032fd517a39c946eb#writeProxyContract)
+* [**Celo**](https://celoscan.io/address/0x36be86dEe6BC726Ed0Cbd170ccD2F21760BC73D9#writeProxyContract)
+* [**Base**](https://basescan.org/address/0xe20B9a38E0c96F61d1bA6b42a61512D56Fea1Eb3#writeProxyContract)
 * [**Mumbai (testnet)**](https://mumbai.polygonscan.com/address/0x200657E2f123761662567A1744f9ACAe50dF47E6#writeProxyContract)
+* [**Goerli (testnet)**](https://goerli.etherscan.io/address/0x94f26B4c8AD12B18c12f38E878618f7664bdcCE2#writeProxyContract)
+
+If a network is missing here, head over to the [Superfluid Console](https://console.superfluid.finance/matic/protocol), select the network and click the explorer link for the `SuperTokenFactory` contract address.
 
 2\. Connect wallet.
 
