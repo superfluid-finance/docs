@@ -2,7 +2,7 @@
 description: Find what you need to getting off the ground quick with building on Superfluid
 ---
 
-# 🏃♀ 🏃♀ Quickstart
+# 🏃 Quickstart
 
 {% tabs %}
 {% tab title="Money Streaming" %}

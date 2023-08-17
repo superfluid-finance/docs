@@ -22,7 +22,7 @@
 
 ## Developers
 
-* [🏃♀ 🏃♀ Quickstart](developers/quickstart.md)
+* [🏃 Quickstart](developers/quickstart.md)
 * [🪙 Super Tokens](developers/super-tokens/README.md)
   * [Super Tokens - Solidity](developers/super-tokens/super-tokens-solidity.md)
   * [Super Tokens - SDK Core](developers/super-tokens/super-token-operations.md)
