@@ -22,7 +22,7 @@
 
 ## Developers
 
-* [🏃♀ Quickstart](developers/quickstart.md)
+* [🏃♀ 🏃♀ Quickstart](developers/quickstart.md)
 * [🪙 Super Tokens](developers/super-tokens/README.md)
   * [Super Tokens - Solidity](developers/super-tokens/super-tokens-solidity.md)
   * [Super Tokens - SDK Core](developers/super-tokens/super-token-operations.md)
@@ -68,9 +68,8 @@
       * [updateFlowOperatorPermissions](developers/constant-flow-agreement-cfa/cfa-operations/write-methods/updateflowoperatorpermissions.md)
       * [revokeFlowOperatorPermissions](developers/constant-flow-agreement-cfa/cfa-operations/write-methods/revokeflowoperatorpermissions.md)
   * [Frontend Examples](developers/constant-flow-agreement-cfa/money-streaming-1.md)
-  * [Access Control List (ACL)](developers/constant-flow-agreement-cfa/cfa-access-control-list-acl/README.md)
-    * [ACL Features - SDK](developers/constant-flow-agreement-cfa/cfa-access-control-list-acl/acl-features.md)
   * [More...](developers/constant-flow-agreement-cfa/more.../README.md)
+    * [Access Control List (ACL)](developers/constant-flow-agreement-cfa/more.../cfa-access-control-list-acl.md)
     * [Flow Rate Time Frames](developers/constant-flow-agreement-cfa/more.../flow-rate-time-frames.md)
     * [Building Batched Streams in Safe](developers/constant-flow-agreement-cfa/more.../building-batched-streams-in-safe.md)
     * [Flow NFTs](developers/constant-flow-agreement-cfa/more.../flow-nfts.md)

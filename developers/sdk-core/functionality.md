@@ -16,8 +16,8 @@ Each Superfluid Developer Subject (Super Tokens, CFA, etc.) has a page dedicated
 
 ## Access Control List for CFA
 
-{% content-ref url="../constant-flow-agreement-cfa/cfa-access-control-list-acl/acl-features.md" %}
-[acl-features.md](../constant-flow-agreement-cfa/cfa-access-control-list-acl/acl-features.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 ## Instant Distribution Agreement (IDA)

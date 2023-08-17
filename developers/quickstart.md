@@ -2,7 +2,7 @@
 description: Find what you need to getting off the ground quick with building on Superfluid
 ---
 
-# 🏃♀ Quickstart
+# 🏃♀ 🏃♀ Quickstart
 
 {% tabs %}
 {% tab title="Money Streaming" %}
@@ -21,7 +21,7 @@ The Constant Flow Agreement (CFA) allows for money streaming. Read this [short e
 
 * [**Set Up**](https://docs.superfluid.finance/superfluid/developers/solidity-examples/solidity-libraries/cfav1-library#the-cfa-library): Set up your smart contract with the SuperTokenV1Library to easily manage money streams in Solidity.
 * [**Functionality**](https://docs.superfluid.finance/superfluid/developers/solidity-examples/solidity-libraries/cfav1-library#using-the-cfa-library): See the basic stream management functions of the SuperTokenV1Library
-* [**ACL**:](constant-flow-agreement-cfa/cfa-access-control-list-acl/) See how you can provide other addresses with the ability to create, update, and delete streams on your behalf
+* [**ACL**:](constant-flow-agreement-cfa/more.../cfa-access-control-list-acl.md) See how you can provide other addresses with the ability to create, update, and delete streams on your behalf
 * [**Simple Example**](https://github.com/superfluid-finance/super-examples/tree/main/projects/money-streaming-intro): "Money Router" smart contract example showing the very basics of coding stream management into a smart contract
 * [**Video Tutorial**](https://www.youtube.com/watch?v=1mwbYQ429IU): Tutorial demonstrating coding the Money Router contract
 

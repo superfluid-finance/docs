@@ -1,5 +1,11 @@
 # More...
 
+Some important reference material around the Superfluid ACL (Access Control List) feature
+
+{% content-ref url="cfa-access-control-list-acl.md" %}
+[cfa-access-control-list-acl.md](cfa-access-control-list-acl.md)
+{% endcontent-ref %}
+
 Understand how to properly translate your desired flow rate to wei/sec - the dimension that's needed for flow operations.
 
 {% content-ref url="flow-rate-time-frames.md" %}

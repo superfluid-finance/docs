@@ -1,6 +1,6 @@
 # createFlowByOperator
 
-Starts a stream from a `sender` to a `receiver` using [ACL permissions](../../cfa-access-control-list-acl/).
+Starts a stream from a `sender` to a `receiver` using [ACL permissions](../../more.../cfa-access-control-list-acl.md).
 
 ```javascript
 //load the token you'd like to use like this 

@@ -11,7 +11,7 @@ const daix = await sf.loadSuperToken("DAIx");
 
 // 1) Instantiate operation to create a 100,000 wei/second stream
 let createFlowOp = daix.createFlow({
-  sender: "0xAbC...",
+  sender: "0xAbC...",    // Alice's address
   receiver: "0xXyZ...",
   flowRate: "100000",
 });
@@ -23,7 +23,7 @@ await createFlowOp.exec(aliceSigner);
 Conveniently, this lets you recycle the operation. Say you want to call the same `createFlow` operation again - you can reuse the operation object on `aliceSigner`!
 
 ```javascript
-// 3) USe the same operation object to create 100,000 wei/second stream again
+// 3) Use the same operation object to create 100,000 wei/second stream again
 await createFlowOp.exec(aliceSigner);
 ```
 
@@ -56,7 +56,7 @@ daix.deleteFlow({
   userData?: string
 });
 
-//ACL Usage
+// Flow Operator Usage
 
 daix.updateFlowOperatorPermissions({
   flowOperator: string,

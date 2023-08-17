@@ -34,8 +34,8 @@ npm install @superfluid-finance/ethereum-contracts
 
 ### Access Control List
 
-{% content-ref url="../constant-flow-agreement-cfa/cfa-access-control-list-acl/" %}
-[cfa-access-control-list-acl](../constant-flow-agreement-cfa/cfa-access-control-list-acl/)
+{% content-ref url="../constant-flow-agreement-cfa/more.../cfa-access-control-list-acl.md" %}
+[cfa-access-control-list-acl.md](../constant-flow-agreement-cfa/more.../cfa-access-control-list-acl.md)
 {% endcontent-ref %}
 
 ### Deploying the Framework
