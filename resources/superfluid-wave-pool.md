@@ -56,9 +56,14 @@ Prize winner or not, you'll be given exposure to the Superfluid team and communi
 
 :trophy: Top Prize - $1,500
 
-_\* We may refer to Pool Prize winners as "Honorable Mentions" in announcement material!_
+**Bonus Prize - Building in Public**
 
-_Notice: Wave Pool payouts are subject to KYC screening as per_ [_international sanctions laws_](bounty-program.md#note-bounty-hunters-must-adhere-to-the-following-statement)_._
+:money\_with\_wings: Winning hackers that post about their work on Twitter or other social media platforms are eligible for a bonus prize of up to $100. For example, see [**here**](https://twitter.com/madfiprotocol/status/1674821037752479748?s=20).
+
+{% hint style="info" %}
+1. We may refer to Pool Prize winners as "Honorable Mentions" in announcement material
+2. _Wave Pool payouts are subject to KYC screening as per_ [_international sanctions laws_](bounty-program.md#note-bounty-hunters-must-adhere-to-the-following-statement)_._
+{% endhint %}
 
 ## Get Started 🙋‍♀️
 
