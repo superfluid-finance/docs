@@ -8,7 +8,7 @@ If you have a [Safe](https://app.safe.global/welcome) and are looking to send mu
 
 ## 1. Go the Safe Transaction Builder
 
-<figure><img src="../../../.gitbook/assets/image (5).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (3).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ## 2. Get CFAv1Forwarder Address
 

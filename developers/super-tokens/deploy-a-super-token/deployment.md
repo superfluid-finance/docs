@@ -38,9 +38,9 @@ If a network is missing here, head over to the [Superfluid Console](https://cons
 
 ![](<../../../.gitbook/assets/image (68).png>)
 
-3\. Find the `createERC20Wrapper` function. Refer to the below image and provide the required parameters with **no additional characters**.
+3\. Find the `createERC20Wrapper` function with 5 parameters. Refer to the below image and provide the required parameters with **no additional characters**.
 
-![](<../../../.gitbook/assets/image (54).png>)
+<figure><img src="../../../.gitbook/assets/image (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 4\. Click `Write` and confirm through your wallet. Congrats, you've created a new Wrapper Super Token!
 

@@ -25,7 +25,7 @@ All payroll admin needs to do is ensure they’re holding enough USDC in their w
 
 1\.  Auto-Wrap identifies that the DAO’s DAIx balance is running low. In this example, it’s less than a two days away from running out of DAIx.
 
-<figure><img src="../../../.gitbook/assets/image (5) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 2\.  Auto-Wrap automatically steps in and replenishes the DAIx balance back to seven days worth of outgoing stream so payment continues without interruption. No manual triggering required!
 
