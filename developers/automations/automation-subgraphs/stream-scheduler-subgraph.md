@@ -30,7 +30,7 @@ Learn more about the the Stream Scheduler below :point\_down:
 
 [Ethereum Goerli](https://thegraph.com/hosted-service/subgraph/superfluid-finance/scheduling-v1-eth-goerli)
 
-## Basic Queries
+## Basic Example Queries
 
 You can test these out in the [Ethereum Mainnet](https://thegraph.com/hosted-service/subgraph/superfluid-finance/scheduling-v1-eth-mainnet) sandbox.
 

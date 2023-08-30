@@ -30,6 +30,6 @@ Learn more about the the Vesting Scheduler below :point\_down:
 
 [Ethereum Goerli](https://thegraph.com/hosted-service/subgraph/superfluid-finance/vesting-v1-eth-goerli)
 
-## Basic Queries
+## Basic Example Queries
 
 :construction\_site: Coming soon!

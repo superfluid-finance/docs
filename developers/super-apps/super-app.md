@@ -208,4 +208,16 @@ These rules have been written into the protocol at the software level, and are s
 * Any time a protocol function returns a `ctx`, that `ctx` should be passed to the next called function. It will repeat this process even in the return of the callback itself.
 * For more information on `ctx` and how it works you can check out our tutorial on userData.
 
-For good Super App examples, you can head to our examples repo, as well as the Super App tutorial and User Data tutorial. If you have a Super App you'd like to build, please reach out to us in the #developers channel of our discord and someone on our team will be there to help you get started.
+#### Checking for Jailing
+
+You can check if a Super App is jailed by calling `isAppJailed` on the Superfluid Host contract on the appropriate network and passing in the Super App address in concern. You can conveniently call this in the Read Contract section on Etherscan for our Host contracts which are all verified (for example, see function #19 on [Polygonscan](https://polygonscan.com/address/0x3E14dC1b13c488a8d5D310918780c983bD5982E7#readProxyContract)). Host addresses can be found in our [Protocol directory](https://console.superfluid.finance/matic/protocol).
+
+Also, when a Super App is jailed, it emits a `Jail` event (see [here](https://github.com/superfluid-finance/protocol-monorepo/blob/0594cdc01ee13780f715f2c38c1a356830d67721/packages/ethereum-contracts/contracts/interfaces/superfluid/ISuperfluid.sol#L445C5-L445C55)). So, you can query all Jail events through our subgraph. The below query returns the addresses of all the jailed Super Apps on a network. Try running it in our Console's [subgraph sandbox](https://console.superfluid.finance/subgraph).
+
+```
+query JailedAppsQuery {
+  jailEvents {
+    app
+  }
+}
+```
