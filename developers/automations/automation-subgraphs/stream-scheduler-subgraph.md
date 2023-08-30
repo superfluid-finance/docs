@@ -60,14 +60,17 @@ Remember that subgraph queries expect all letters within provided addresses to b
 Note that that the `id` attribute is formatted as "{Event Name}-{Transaction Hash}-{Log Index}". Log index is provided as it's possible that multiple of the same event occur in the same transaction, so with the log index gives unique identification.\
 
 
-_For example_:\
-`id`: `"FlowScheduleCreated-0x04ca752e609289f6144df3e0096ccb9772ba4923781612096ec5582f62c3ff46-171"`
+`id:` `"FlowScheduleCreated-0x04ca752e609289f6144df3e0096ccb9772ba4923781612096ec5582f62c3ff46-171"`
 
-Event Name: FlowScheduleCreated
+\
+indicates...\
 
-Transaction Hash: [`0x04ca752e609289f6144df3e0096ccb9772ba4923781612096ec5582f62c3ff46`](https://etherscan.io/tx/0x04ca752e609289f6144df3e0096ccb9772ba4923781612096ec5582f62c3ff46)
 
-Log Index: 171
+_Event Name_: FlowScheduleCreated
+
+_Transaction Hash_: [`0x04ca752e609289f6144df3e0096ccb9772ba4923781612096ec5582f62c3ff46`](https://etherscan.io/tx/0x04ca752e609289f6144df3e0096ccb9772ba4923781612096ec5582f62c3ff46)
+
+_Log Index_: 171
 {% endhint %}
 
 #### Fetching all Flow Deletion tasks executed before a certain time
