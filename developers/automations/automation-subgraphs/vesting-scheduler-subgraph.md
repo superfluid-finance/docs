@@ -1,6 +1,6 @@
 # Vesting Scheduler Subgraph
 
-Learn more about the the Vesting Scheduler below :point\_down:
+Learn more about the the Vesting Scheduler on this page :point\_down:
 
 {% content-ref url="../vesting-scheduler/" %}
 [vesting-scheduler](../vesting-scheduler/)

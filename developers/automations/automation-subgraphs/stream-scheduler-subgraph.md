@@ -1,6 +1,6 @@
 # Stream Scheduler Subgraph
 
-Learn more about the the Stream Scheduler below :point\_down:
+Learn more about the the Stream Scheduler on this page :point\_down:
 
 {% content-ref url="../stream-scheduler/" %}
 [stream-scheduler](../stream-scheduler/)

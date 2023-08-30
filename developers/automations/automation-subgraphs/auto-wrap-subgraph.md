@@ -1,6 +1,6 @@
 # Auto Wrap Subgraph
 
-Learn more about Auto Wrap below :point\_down:
+Learn more about Auto Wrap on this page :point\_down:
 
 {% content-ref url="../auto-wrap/" %}
 [auto-wrap](../auto-wrap/)
@@ -29,3 +29,7 @@ Learn more about Auto Wrap below :point\_down:
 [Polygon Mumbai](https://thegraph.com/hosted-service/subgraph/superfluid-finance/auto-wrap-v1-polygon-mumbai)
 
 [Ethereum Goerli](https://thegraph.com/hosted-service/subgraph/superfluid-finance/auto-wrap-v1-eth-goerli)
+
+## Basic Example Queries
+
+:construction\_site: Coming soon!
