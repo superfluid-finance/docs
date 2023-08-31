@@ -55,7 +55,9 @@ query MyQuery {
 
 ### Events
 
-There is more than one way to handle updates to subscriptions. However, it may be useful for you to listen for specific events that are thrown on chain when streams are created, updated, or deleted. The event you’re looking for here is the flowUpdated event. You can get flowUpdated events from our subgraph, or query them on chain if you’d like. If you want to get these events from the subgraph, then you can do so with a query like this:
+There is more than one way to handle updates to subscriptions. However, it may be useful for you to listen for specific events that are thrown on chain when streams are created, updated, or deleted. The event you’re looking for here is the flowUpdated event. You can get flowUpdated events from our subgraph, or query them on chain. You can also set up no-code alerts with [Boto.io](http://boto.io/) and trigger actions like membership record creation and NFT minting [using a webhook](https://www.superfluid.finance/post/boto-integrates-superfluid-in-their-automation-recipes).
+
+If you want to get these events from the subgraph, then you can do so with a query like this:
 
 ```javascript
 // graph query
