@@ -156,7 +156,7 @@ What happens when an account's balance hits zero? When an account with a negativ
 
 ### Buffer
 
-When a stream is opened, a certain amount of Super Tokens are witheld as a buffer in case the account hits critical. If an account cancels outbound streams before going critical, it will be refunded its buffer.
+When a stream is opened, a certain amount of Super Tokens are withheld as a buffer in case the account hits critical. If an account cancels outbound streams before going critical, it will be refunded its buffer.
 
 However, when an account does go critical, Super Tokens can no longer be streamed from the account's balance (because there are none). As a result, Super Tokens from the buffer are used to continue the account's outbound stream(s) until external accounts (Sentinels) step in and cancel them.
 
