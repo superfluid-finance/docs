@@ -1,10 +1,8 @@
 # Vesting Scheduler Subgraph
 
-Learn more about the the Vesting Scheduler on this page :point\_down:
+## Repo
 
-{% content-ref url="../vesting-scheduler/" %}
-[vesting-scheduler](../vesting-scheduler/)
-{% endcontent-ref %}
+{% embed url="https://github.com/superfluid-finance/platform-monorepo/tree/master/packages/subgraph/vesting-scheduler" %}
 
 ## Subgraph Explorers
 

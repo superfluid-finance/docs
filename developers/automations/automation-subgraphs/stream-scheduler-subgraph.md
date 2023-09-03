@@ -1,10 +1,8 @@
 # Stream Scheduler Subgraph
 
-Learn more about the the Stream Scheduler on this page :point\_down:
+## Repo
 
-{% content-ref url="../stream-scheduler/" %}
-[stream-scheduler](../stream-scheduler/)
-{% endcontent-ref %}
+{% embed url="https://github.com/superfluid-finance/platform-monorepo/tree/master/packages/subgraph/flow-scheduler" %}
 
 ## Subgraph Explorers
 

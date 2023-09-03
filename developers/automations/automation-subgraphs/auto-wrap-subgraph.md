@@ -1,10 +1,8 @@
 # Auto Wrap Subgraph
 
-Learn more about Auto Wrap on this page :point\_down:
+## Repo
 
-{% content-ref url="../auto-wrap/" %}
-[auto-wrap](../auto-wrap/)
-{% endcontent-ref %}
+{% embed url="https://github.com/superfluid-finance/platform-monorepo/tree/master/packages/subgraph/wrap-scheduler" %}
 
 ## Subgraph Explorers
 
