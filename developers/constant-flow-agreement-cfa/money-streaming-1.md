@@ -67,4 +67,4 @@ Deleting a flow as an operator
 
 The flow rate is the # of tokens you'd like to send per second, denominated in wei. You can use the calculator below to get the flow rate for an amount of tokens you want to send per month. You can pass this calculated flow rate into the examples above to create & update your streams.
 
-{% embed url="https://codesandbox.io/embed/flowratecalc-hz89i?fontsize=12&module=%2Fsrc%2FCalculateFlowRate.js&theme=dark" %}
+{% embed url="https://codesandbox.io/embed/flowratecalc-8h8ksz?fontsize=12&hidenavigation=1&theme=dark&view=preview" %}
