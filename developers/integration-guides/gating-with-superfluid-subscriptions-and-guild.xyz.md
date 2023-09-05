@@ -28,7 +28,7 @@ This guide will thoroughly explain how to utilize Superfluid Subscriptions with 
 
 ## 3. Get Wei/Sec Flow Rate
 
-Head to our [Flow Rate Calculator](https://hz89i.csb.app/) to convert the monthly rate you elected for your Checkout Widget Payment Option into a wei/sec rate. Copy it down.
+Head to our [Flow Rate Calculator](https://8h8ksz.csb.app/) to convert the monthly rate you elected for your Checkout Widget Payment Option into a wei/sec rate. Copy it down.
 
 ## 4. Create Your Guild Gate
 
