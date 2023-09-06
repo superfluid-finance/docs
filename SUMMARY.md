@@ -151,7 +151,6 @@
 
 ## Resources
 
-* [🌊 Superfluid Wave Pool](https://www.superfluid.finance/wave-pool)
 * [🌊 Superfluid Wave Pool](resources/superfluid-wave-pool.md)
 * [📜 Superfluid on Ethereum Mainnet](resources/superfluid-on-ethereum-mainnet.md)
 * [💰 Bounty Program](resources/bounty-program.md)
