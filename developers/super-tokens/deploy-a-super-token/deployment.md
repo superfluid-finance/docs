@@ -44,7 +44,7 @@ If a network is missing here, head over to the [Superfluid Console](https://cons
 
 4\. Click `Write` and confirm through your wallet. Congrats, you've created a new Wrapper Super Token!
 
-5\. To find the address of your new Wrapper Super Token, go to the transaction hash and click on the "Logs" tab. The address is in the "InterfaceImplementerSet" event log ([SUNNYx example](https://polygonscan.com/tx/0xd23df49ac21f5c92049ede689e835d5dcbbd3c9670428ce7dd22f391fd5f9564#eventlog)).
+5\. To find the address of your new Wrapper Super Token, go to the transaction hash and click on the "Logs" tab. The address is in the "SuperTokenCreated" event log ([SUNNYx example](https://polygonscan.com/tx/0xd23df49ac21f5c92049ede689e835d5dcbbd3c9670428ce7dd22f391fd5f9564#eventlog)).
 
 ![](<../../../.gitbook/assets/image (29).png>)
 
