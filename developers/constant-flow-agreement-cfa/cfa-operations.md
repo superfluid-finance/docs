@@ -2,9 +2,9 @@
 description: Stream money with the Constant Flow Agreement using the SDK Core
 ---
 
-# CFA - SDK Core
+# SDK Core
 
-The `ConstantFlowAgreementV1` helper class provides access to create/update/delete flows. You can access this via the `Framework` class (`sf.cfaV1`) or initialize this as a standalone class.
+The `ConstantFlowAgreementV1` class provides access to the `ConstantFlowAgreementV1` smart contract, allowing you to create/update/delete flows, update ACL permissions for an operator and modify flows on behalf of another account as an operator. You can access this class via the `Framework` class (`sf.cfaV1`) or initialize this as a standalone class.
 
 ## Accessing the CFAv1 Contract
 
@@ -20,9 +20,13 @@ const sf = await Framework.create({
   provider
 });
 
-// access the cfaV1 object via the Framework class
-// see below for a complete example
-const flowInfo = await sf.cfaV1.getFlowInfo(...)
+// access the cfaV1 object and get a flow via the created Framework class
+const flowInfo = await sf.cfaV1.getFlow({
+  superToken: "0x...",
+  sender: "0x...",
+  receiver: "0x...",
+  providerOrSigner: "0x..."
+});
 ```
 
 **Direct Initialization**
@@ -30,15 +34,18 @@ const flowInfo = await sf.cfaV1.getFlowInfo(...)
 ```typescript
 import { ConstantFlowAgreementV1 } from "@superfluid-finance/sdk-core";
 
-const config = {
-  hostAddress: "0x3E14dC1b13c488a8d5D310918780c983bD5982E7",
-  cfaV1Address: "0x6EeE6060f715257b970700bc2656De21dEdF074C",
-  idaV1Address: "0xB0aABBA4B2783A72C52956CDEF62d438ecA2d7a1"
-};
+const hostAddress = "0x3E14dC1b13c488a8d5D310918780c983bD5982E7";
+const cfaV1Address = "0x6EeE6060f715257b970700bc2656De21dEdF074C";
+const cfaV1ForwarderAddress = "0xcfA132E353cB4E398080B9700609bb008eceB125";
 
-const cfaV1 = new ConstantFlowAgreementV1({ options: config });
-//super tokens can be loaded directly as well 
-const daix = await sf.loadSuperToken("DAIx");
+const cfaV1 = new ConstantFlowAgreementV1(hostAddress, cfaV1Address, cfaV1ForwarderAddress);
+// get a flow via the standalone ConstantFlowAgreementV1 class
+const flowInfo = await cfaV1.getFlow({
+  superToken: "0x...",
+  sender: "0x...",
+  receiver: "0x...",
+  providerOrSigner: "0x..."
+});
 ```
 
 ## **Methods**
