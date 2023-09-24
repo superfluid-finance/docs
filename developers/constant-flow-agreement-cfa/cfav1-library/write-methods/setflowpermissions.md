@@ -18,7 +18,7 @@ function setFlowPermissions(
     bool allowUpdate,
     bool allowDelete,
     int96 flowRateAllowance
-) internal returns (bool) {
+) internal returns (bool)
 </code></pre>
 
 {% hint style="info" %}
