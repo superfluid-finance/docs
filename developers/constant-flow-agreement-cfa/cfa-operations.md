@@ -52,35 +52,35 @@ const flowInfo = await cfaV1.getFlow({
 
 ### **Read Methods**
 
-[`getFlow`](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-operations/read-methods/getflow): Get data on a stream between two accounts
+[`getFlow`](cfa-operations/read-methods/getflow.md): Get data on a stream between two accounts
 
-[`getNetFlow`](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-operations/read-methods/getnetflow): Get the net flow rate of an account for a certain Super Token
+[`getNetFlow`](cfa-operations/read-methods/getnetflow.md): Get the net flow rate of an account for a certain Super Token
 
-[`getAccountFlowInfo`](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-operations/read-methods/getaccountflowinfo): Get summed flow data of an account for a certain Super Token
+[`getAccountFlowInfo`](cfa-operations/read-methods/getaccountflowinfo.md): Get summed flow data of an account for a certain Super Token
 
 ### **Write Methods**
 
 #### **Create, Update, Delete**
 
-[`createFlow`](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-operations/write-methods/createflow): Starts a stream from a sender to a chosen receiver&#x20;
+[`createFlow`](cfa-operations/write-methods/createflow.md): Starts a stream from a sender to a chosen receiver&#x20;
 
-[`updateFlow`](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-operations/write-methods/updateflow): Updates an existing stream from a sender to a chosen receiver
+[`updateFlow`](cfa-operations/write-methods/updateflow.md): Updates an existing stream from a sender to a chosen receiver
 
-[`deleteFlow`](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-operations/write-methods/deleteflow): Cancels an existing stream from a sender to a chosen receiver
+[`deleteFlow`](cfa-operations/write-methods/deleteflow.md): Cancels an existing stream from a sender to a chosen receiver
 
 #### **Create, Update, Delete with ACL Permissions**
 
-[`createFlowByOperator`](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-access-control-list-acl/acl-features): Starts a stream between two accounts using ACL permissions
+[`createFlowByOperator`](cfa-operations/write-methods/createflowbyoperator.md): Starts a stream between two accounts using ACL permissions
 
-[`updateFlowByOperator`](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-access-control-list-acl/acl-features): Updates a stream between two accounts using ACL permissions&#x20;
+[`updateFlowByOperator`](cfa-operations/write-methods/updateflowbyoperator.md): Updates a stream between two accounts using ACL permissions&#x20;
 
-[`deleteFlowByOperator`](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-access-control-list-acl/acl-features): Deletes a stream between two accounts using ACL permissions
+[`deleteFlowByOperator`](cfa-operations/write-methods/deleteflowbyoperator.md): Deletes a stream between two accounts using ACL permissions
 
 #### **Manage ACL Permissions**
 
-[`updateFlowOperatorPermissions`](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-access-control-list-acl/acl-features): Lets a sender set the ACL permissions of another account
+[`updateFlowOperatorPermissions`](cfa-operations/write-methods/updateflowoperatorpermissions.md): Lets a sender set the ACL permissions of another account
 
-[`revokeFlowOperatorPermissions`](https://docs.superfluid.finance/superfluid/developers/constant-flow-agreement-cfa/cfa-access-control-list-acl/acl-features): Revokes all ACL permissions that an account has over the sender's account
+[`revokeFlowOperatorPermissions`](cfa-operations/write-methods/revokeflowoperatorpermissions.md): Revokes all ACL permissions that an account has over the sender's account
 
 ## **Example Usage**
 
