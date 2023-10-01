@@ -49,6 +49,7 @@
       * [setMaxFlowPermissions](developers/constant-flow-agreement-cfa/cfav1-library/write-methods/setmaxflowpermissions.md)
       * [revokeFlowPermissions](developers/constant-flow-agreement-cfa/cfav1-library/write-methods/revokeflowpermissions.md)
       * [increaseFlowRateAllowanceWithPermissions](developers/constant-flow-agreement-cfa/cfav1-library/write-methods/increaseflowrateallowancewithpermissions.md)
+      * [decreaseFlowRateAllowanceWithPermissions](developers/constant-flow-agreement-cfa/cfav1-library/write-methods/decreaseflowrateallowancewithpermissions.md)
       * [createFlowFrom](developers/constant-flow-agreement-cfa/cfav1-library/write-methods/createflowfrom.md)
       * [updateFlowFrom](developers/constant-flow-agreement-cfa/cfav1-library/write-methods/updateflowfrom.md)
       * [deleteFlowFrom](developers/constant-flow-agreement-cfa/cfav1-library/write-methods/deleteflowfrom.md)
