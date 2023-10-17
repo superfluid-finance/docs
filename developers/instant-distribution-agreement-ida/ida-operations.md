@@ -12,7 +12,7 @@ The `InstantDistributionAgreementV1` helper class provides access to a variety o
 
 ```typescript
 // Some code
-import { Framework } from "@superfluid.finance/sdk-core"
+import { Framework } from "@superfluid-finance/sdk-core"
 import { ethers } from "ethers";
 
 const sf = await Framework.create({

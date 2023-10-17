@@ -41,6 +41,8 @@ Here we're using a `web3Provider` (i.e. a Metamask connection in the browser) in
 
 Modify permissions of an account to manage streams on your behalf.
 
+{% embed url="https://codesandbox.io/embed/cfa-deleteflow-metamask-3mio8c?fontsize=14&hidenavigation=1&theme=dark" %}
+
 {% embed url="https://codesandbox.io/embed/updateflowpermissions-example-3k8hor?fontsize=14&hidenavigation=1&module=%2Fsrc%2FUpdateFlowPermissions.js&theme=dark&view=split" %}
 Updating flow permissions
 {% endembed %}
