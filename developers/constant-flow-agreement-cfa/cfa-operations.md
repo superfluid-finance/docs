@@ -70,17 +70,17 @@ const flowInfo = await cfaV1.getFlow({
 
 #### **Create, Update, Delete with ACL Permissions**
 
-[`createFlowByOperator`](cfa-operations/write-methods/createflowbyoperator.md): Starts a stream between two accounts using ACL permissions
+[`createFlowByOperator`](cfa-access-control-list-acl/sdk-core/createflowbyoperator.md): Starts a stream between two accounts using ACL permissions
 
-[`updateFlowByOperator`](cfa-operations/write-methods/updateflowbyoperator.md): Updates a stream between two accounts using ACL permissions&#x20;
+[`updateFlowByOperator`](cfa-access-control-list-acl/sdk-core/updateflowbyoperator.md): Updates a stream between two accounts using ACL permissions&#x20;
 
-[`deleteFlowByOperator`](cfa-operations/write-methods/deleteflowbyoperator.md): Deletes a stream between two accounts using ACL permissions
+[`deleteFlowByOperator`](cfa-access-control-list-acl/sdk-core/deleteflowbyoperator.md): Deletes a stream between two accounts using ACL permissions
 
 #### **Manage ACL Permissions**
 
-[`updateFlowOperatorPermissions`](cfa-operations/write-methods/updateflowoperatorpermissions.md): Lets a sender set the ACL permissions of another account
+[`updateFlowOperatorPermissions`](cfa-access-control-list-acl/sdk-core/updateflowoperatorpermissions.md): Lets a sender set the ACL permissions of another account
 
-[`revokeFlowOperatorPermissions`](cfa-operations/write-methods/revokeflowoperatorpermissions.md): Revokes all ACL permissions that an account has over the sender's account
+[`revokeFlowOperatorPermissions`](cfa-access-control-list-acl/sdk-core/revokeflowoperatorpermissions.md): Revokes all ACL permissions that an account has over the sender's account
 
 ## **Example Usage**
 

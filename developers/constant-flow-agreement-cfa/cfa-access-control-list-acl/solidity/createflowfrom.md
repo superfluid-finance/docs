@@ -1,6 +1,6 @@
 # createFlowFrom
 
-Creating a flow on behalf of a certain sender account using [ACL permissions](../../more.../cfa-access-control-list-acl.md)
+Creating a flow on behalf of a certain sender account using [ACL permissions](../)
 
 #### Function Header
 

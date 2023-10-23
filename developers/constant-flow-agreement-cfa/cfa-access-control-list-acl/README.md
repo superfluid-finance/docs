@@ -16,7 +16,7 @@ If you're checking out the functions ACL provides you, you'll want to understand
 
 ## `flowRateAllowance` Parameter
 
-You can think of `flowRateAllowance` as a tank. When you set `flowRateAllowance` in your [`updateFlowOperatorPermissions`](../cfa-operations/write-methods/updateflowoperatorpermissions.md) call imagine you've filled up that tank to a level of your choosing for the `flowOperator` account.
+You can think of `flowRateAllowance` as a tank. When you set `flowRateAllowance` in your [`updateFlowOperatorPermissions`](sdk-core/updateflowoperatorpermissions.md) call imagine you've filled up that tank to a level of your choosing for the `flowOperator` account.
 
 That`flowOperator` account can spend its `flowRateAllowance` tank as it likes. Every time it **increases** a flow rate on your behalf, its `flowRateAllowance` tank is depleted by the amount of the increase.&#x20;
 
@@ -30,7 +30,7 @@ Let’s assume that we enable an operator to create and update streams with a fl
 
 ## `permissions` Parameter
 
-The `permissions` value is a `uint256` from 1 to 7 representing a specific level of access that an operator gets over your streams. You pass in `permissions` when calling [`updateFlowOperatorPermissions`](../cfa-operations/write-methods/updateflowoperatorpermissions.md).
+The `permissions` value is a `uint256` from 1 to 7 representing a specific level of access that an operator gets over your streams. You pass in `permissions` when calling [`updateFlowOperatorPermissions`](sdk-core/updateflowoperatorpermissions.md).
 
 | Permission Type           | Parameter Value |
 | ------------------------- | --------------- |

@@ -1,6 +1,6 @@
 # updateFlowFrom
 
-Update a flow on behalf of a certain sender account using [ACL permissions](../../more.../cfa-access-control-list-acl.md)
+Update a flow on behalf of a certain sender account using [ACL permissions](../)
 
 #### Function Header
 

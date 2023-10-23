@@ -1,6 +1,6 @@
 # deleteFlowFrom
 
-Delete a flow on behalf of a certain sender account using [ACL permissions](../../more.../cfa-access-control-list-acl.md)
+Delete a flow on behalf of a certain sender account using [ACL permissions](../)
 
 #### Function Header
 

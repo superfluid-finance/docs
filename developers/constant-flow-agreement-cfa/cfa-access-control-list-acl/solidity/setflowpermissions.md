@@ -22,7 +22,7 @@ function setFlowPermissions(
 </code></pre>
 
 {% hint style="info" %}
-The `flowRateAllowance` works just like [allowance](https://docs.openzeppelin.com/contracts/2.x/api/token/erc20#IERC20-allowance-address-address-) for regular ERC20 tokens. See it explained [**here**](../../more.../cfa-access-control-list-acl.md#flowrateallowance-parameter).
+The `flowRateAllowance` works just like [allowance](https://docs.openzeppelin.com/contracts/2.x/api/token/erc20#IERC20-allowance-address-address-) for regular ERC20 tokens. See it explained [**here**](../#flowrateallowance-parameter).
 {% endhint %}
 
 #### Example Usage

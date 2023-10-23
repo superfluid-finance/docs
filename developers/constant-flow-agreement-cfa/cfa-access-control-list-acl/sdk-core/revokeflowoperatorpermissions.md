@@ -1,6 +1,6 @@
 # revokeFlowOperatorPermissions
 
-Revokes all [ACL permissions](../../more.../cfa-access-control-list-acl.md) that an account has over the caller's account for streams of a certain Super Token.
+Revokes all [ACL permissions](../) that an account has over the caller's account for streams of a certain Super Token.
 
 ```javascript
 //load the token you'd like to use like this 

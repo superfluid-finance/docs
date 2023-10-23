@@ -20,7 +20,7 @@ Make a contract that streams money in under 10 minutes!
 
 ## Getting Set To Start Streams
 
-Initialize the CFAv1Library in your constructor with the below code.
+Initialize the SuperTokenV1Library in your constructor with the below code.
 
 ### Initializing the Library
 

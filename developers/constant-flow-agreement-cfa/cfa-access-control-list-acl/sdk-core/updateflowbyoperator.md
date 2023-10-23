@@ -1,6 +1,6 @@
 # updateFlowByOperator
 
-Updates an existing stream from a `sender` to a `receiver` using [ACL permissions](../../more.../cfa-access-control-list-acl.md).
+Updates an existing stream from a `sender` to a `receiver` using [ACL permissions](../).
 
 ```javascript
 //load the token you'd like to use like this 

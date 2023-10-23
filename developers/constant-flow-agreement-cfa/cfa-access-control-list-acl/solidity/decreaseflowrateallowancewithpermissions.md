@@ -27,7 +27,7 @@ function decreaseFlowRateAllowanceWithPermissions(
 
 Using `decreaseFlowRateAllowanceWithPermissions` requires understanding the `permissionsToAdd` parameter.&#x20;
 
-ACL Permission are designated with the [ACL permissions bitmask](../../more.../cfa-access-control-list-acl.md#permissions-parameter). Basically, the permissions level you provide in `permissionsToAdd` is appended to the existing permissions as though you are saying this account now has its **existing permissions **<mark style="color:red;">**EXCEPT**</mark>** the new permissions defined by `permissionsToAdd`**. See the example below.
+ACL Permission are designated with the [ACL permissions bitmask](../#permissions-parameter). Basically, the permissions level you provide in `permissionsToAdd` is appended to the existing permissions as though you are saying this account now has its **existing permissions **<mark style="color:red;">**EXCEPT**</mark>** the new permissions defined by `permissionsToAdd`**. See the example below.
 
 #### Example Usage
 

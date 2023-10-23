@@ -1,6 +1,6 @@
 # updateFlowOperatorPermissions
 
-Lets the caller grant another account the desired [ACL permissions ](../../more.../cfa-access-control-list-acl.md)for streams of a certain Super Token.
+Lets the caller grant another account the desired [ACL permissions ](../)for streams of a certain Super Token.
 
 ```javascript
 //load the token you'd like to use like this 
