@@ -22,7 +22,7 @@ await flowOp.exec( <<ethers signer>> );
 
 ### Parameters
 
-<table><thead><tr><th width="218">Parameter</th><th width="231.33333333333331">Type</th><th>Description</th></tr></thead><tbody><tr><td><code>flowOperator</code></td><td><code>string</code></td><td>Address of the account whose ACL permissions the caller is revoking</td></tr><tr><td><code>flowRateAllowanceDelta</code></td><td><code>string</code></td><td>Wei/sec increase in <a href="../#flowrateallowance-parameter">flow rate allowance</a></td></tr><tr><td><code>permissionsDelta</code></td><td><code>number</code></td><td>New permissions you are providing the flowOperator. Explained <a href="../solidity/increaseflowrateallowancewithpermissions.md#permissionstoadd"><strong>here</strong></a>.</td></tr></tbody></table>
+<table><thead><tr><th width="218">Parameter</th><th width="231.33333333333331">Type</th><th>Description</th></tr></thead><tbody><tr><td><code>flowOperator</code></td><td><code>string</code></td><td>Address of the account whose ACL permissions the caller is revoking</td></tr><tr><td><code>flowRateAllowanceDelta</code></td><td><code>string</code></td><td>Wei/sec increase in <a href="../#flowrateallowance-parameter">flow rate allowance</a></td></tr><tr><td><code>permissionsDelta</code></td><td><code>number</code></td><td>New permissions you are providing the flowOperator. Explained <a href="../../cfav1-library/write-methods/increaseflowrateallowancewithpermissions.md#permissionstoadd"><strong>here</strong></a>.</td></tr></tbody></table>
 
 ### Example Usage
 
