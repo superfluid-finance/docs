@@ -149,4 +149,4 @@ IPFS Hosted + Full Page Example:
 
 #### Reference Documentation
 
-{% embed url="https://superfluid-widget-reference-docs.vercel.app/variables/cfAv1ForwarderAddress.html" %}
+{% embed url="https://superfluid-widget-reference-docs.vercel.app/" %}
