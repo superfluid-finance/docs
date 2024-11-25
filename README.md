@@ -1,3 +1,5 @@
+# !!! The docs have moved to https://github.com/superfluid-finance/docs-v2 !!!
+
 ---
 description: A new DeFi primitive to automate recurring transactions and monetize Web3
 ---
